@@ -134,7 +134,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button8.Location = new System.Drawing.Point(965, 669);
+            this.button8.Location = new System.Drawing.Point(1520, 1018);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(169, 27);
             this.button8.TabIndex = 12;
@@ -145,7 +145,7 @@
             // btnVacuum
             // 
             this.btnVacuum.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnVacuum.Location = new System.Drawing.Point(961, 292);
+            this.btnVacuum.Location = new System.Drawing.Point(1517, 292);
             this.btnVacuum.Name = "btnVacuum";
             this.btnVacuum.Size = new System.Drawing.Size(85, 60);
             this.btnVacuum.TabIndex = 13;
@@ -156,7 +156,7 @@
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button10.Location = new System.Drawing.Point(1049, 292);
+            this.button10.Location = new System.Drawing.Point(1605, 292);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(85, 60);
             this.button10.TabIndex = 14;
@@ -165,16 +165,17 @@
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(12, 74);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(945, 589);
+            this.panel1.Size = new System.Drawing.Size(1502, 940);
             this.panel1.TabIndex = 15;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HyTemplate.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(964, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(1520, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(173, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -185,7 +186,7 @@
             // 
             this.lblaccount.AutoSize = true;
             this.lblaccount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblaccount.Location = new System.Drawing.Point(971, 149);
+            this.lblaccount.Location = new System.Drawing.Point(1527, 149);
             this.lblaccount.Name = "lblaccount";
             this.lblaccount.Size = new System.Drawing.Size(90, 21);
             this.lblaccount.TabIndex = 16;
@@ -196,7 +197,7 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblID.Location = new System.Drawing.Point(1072, 149);
+            this.lblID.Location = new System.Drawing.Point(1628, 149);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(52, 21);
             this.lblID.TabIndex = 17;
@@ -207,7 +208,7 @@
             // 
             this.lblPLC_Connect.AutoSize = true;
             this.lblPLC_Connect.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblPLC_Connect.Location = new System.Drawing.Point(971, 185);
+            this.lblPLC_Connect.Location = new System.Drawing.Point(1527, 185);
             this.lblPLC_Connect.Name = "lblPLC_Connect";
             this.lblPLC_Connect.Size = new System.Drawing.Size(107, 21);
             this.lblPLC_Connect.TabIndex = 25;
@@ -222,7 +223,7 @@
             this.statusPictureBox1._Reverse = false;
             this.statusPictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.statusPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("statusPictureBox1.Image")));
-            this.statusPictureBox1.Location = new System.Drawing.Point(1092, 185);
+            this.statusPictureBox1.Location = new System.Drawing.Point(1648, 185);
             this.statusPictureBox1.Name = "statusPictureBox1";
             this.statusPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.statusPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -240,10 +241,10 @@
             this.displayTextBox_Alarm._PlcDevice = "";
             this.displayTextBox_Alarm.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox_Alarm.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.displayTextBox_Alarm.Location = new System.Drawing.Point(13, 669);
+            this.displayTextBox_Alarm.Location = new System.Drawing.Point(12, 1020);
             this.displayTextBox_Alarm.Name = "displayTextBox_Alarm";
             this.displayTextBox_Alarm.ReadOnly = true;
-            this.displayTextBox_Alarm.Size = new System.Drawing.Size(946, 27);
+            this.displayTextBox_Alarm.Size = new System.Drawing.Size(1502, 27);
             this.displayTextBox_Alarm.TabIndex = 11;
             this.displayTextBox_Alarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -256,7 +257,7 @@
             this.switchButton2._Reverse = false;
             this.switchButton2.BackColor = System.Drawing.Color.Red;
             this.switchButton2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.switchButton2.Location = new System.Drawing.Point(1049, 226);
+            this.switchButton2.Location = new System.Drawing.Point(1605, 226);
             this.switchButton2.Name = "switchButton2";
             this.switchButton2.Size = new System.Drawing.Size(85, 60);
             this.switchButton2.TabIndex = 10;
@@ -272,7 +273,7 @@
             this.switchButton1._Reverse = false;
             this.switchButton1.BackColor = System.Drawing.Color.Red;
             this.switchButton1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.switchButton1.Location = new System.Drawing.Point(961, 226);
+            this.switchButton1.Location = new System.Drawing.Point(1517, 226);
             this.switchButton1.Name = "switchButton1";
             this.switchButton1.Size = new System.Drawing.Size(85, 60);
             this.switchButton1.TabIndex = 9;
@@ -284,7 +285,7 @@
             this.currentDateTime1.AutoSize = true;
             this.currentDateTime1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.currentDateTime1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.currentDateTime1.Location = new System.Drawing.Point(964, 75);
+            this.currentDateTime1.Location = new System.Drawing.Point(1520, 75);
             this.currentDateTime1.Margin = new System.Windows.Forms.Padding(4);
             this.currentDateTime1.Name = "currentDateTime1";
             this.currentDateTime1.Size = new System.Drawing.Size(173, 63);
@@ -294,7 +295,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 700);
+            this.ClientSize = new System.Drawing.Size(1696, 1059);
             this.Controls.Add(this.lblPLC_Connect);
             this.Controls.Add(this.statusPictureBox1);
             this.Controls.Add(this.lblID);

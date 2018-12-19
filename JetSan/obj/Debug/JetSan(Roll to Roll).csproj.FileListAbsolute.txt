@@ -22,3 +22,5 @@ D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.Properties.Resources.
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.GenerateResource.Cache
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\DB.dll
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojResolveAssemblyReference.cache
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
