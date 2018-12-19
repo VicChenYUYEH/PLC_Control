@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    ActLogicalStationNumber: MX Component Connect Utility No.
+    ActControls: Connect Type RS232 Or Ethernet ...
+    Tag: Link
+             Attribute: Name      -> Signal Name
+             Attribute: Device    -> PLC Device
+             Attribute: Description -> Notes
+             Attribute: ValueType -> 0: Boolen ; 1: Integer; 2: DWord; 3:ASCII     
+             
+    <PLC CPUType="1025" ActLogicalStationNumber="2" ActControls="RS232" PortNo="1" NetworkNo="0" StationNo="255">
+    <PLC CPUType="1025" ActLogicalStationNumber="1" ActControls="Ethernet" PortNo="1" NetworkNo="0" StationNo="255">
+-->
+<PLC ActLogicalStationNumber="3" ActControls="RS232" PortNo="1" NetworkNo="0" StationNo="255">
+    <Group ID="PLC">
+    	<Link Name="PLC_DI_WATER_FLOW_1"     Device="X00000" LogToDb="0" ValueType="0" ReadOnly="1" Description="Water1水流量檢知" />
+        <Link Name="PLC_DI_WATER_FLOW_2"     Device="X00001" LogToDb="0" ValueType="0" ReadOnly="1" Description="Water2水流量檢知" />
+        <Link Name="PLC_DI_POWER_1_ARC"      Device="X00002" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power01_I-ARC" />
+        <Link Name="PLC_DI_POWER_1_OUTPUT"   Device="X00003" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power01_OUTPUT" />
+        <Link Name="PLC_DI_POWER_1_OVERTEMP" Device="X00004" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power01_OVERTEMP" />
+        <Link Name="PLC_DI_POWER_2_PULSE"    Device="X00005" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_R-Lock" />
+        <Link Name="PLC_DI_POWER_2_DC_ON"    Device="X00006" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_Ready" />
+        <Link Name="PLC_DI_POWER_2_READY"    Device="X00007" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_Plasma" />
+		<Link Name="PLC_DI_POWER_2_ARC"      Device="X00008" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_Overload" />
+		<Link Name="PLC_DI_POWER_2_PLASMA"   Device="X00009" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_Arc" />
+		<Link Name="PLC_DI_POWER_2_OVERLOAD" Device="X0000A" LogToDb="0" ValueType="0" ReadOnly="1" Description="EMO" />
+		<Link Name="PLC_DI_HOME_SENSOR"      Device="X0000B" LogToDb="0" ValueType="0" ReadOnly="1" Description="Home Sensor" />
+		<Link Name="PLC_DI_TP_2_ROTATION"    Device="X0000C" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_ROTATION" />
+		<Link Name="PLC_DI_TP_2_NORMAL"      Device="X0000D" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_NORMAL" />
+		<Link Name="PLC_DI_TP_2_ACC"         Device="X0000E" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_ACCELERATION" />
+		<Link Name="PLC_DI_TP_2_BRAKE"       Device="X0000F" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_BRAKE" />
+		
+		<Link Name="PLC_DI_TP_2_REMOTE"      Device="X00010" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_REMOTE" />
+        <Link Name="PLC_DI_TP_2_ALARM"       Device="X00011" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_ALARM" />
+        <Link Name="PLC_DI_TP_2_WARNING"     Device="X00012" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_WARNING" />
+        <Link Name="PLC_DI_TP_2_CONN"        Device="X00013" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_CONNECTION" />
+        <Link Name="PLC_DI_TP_3_ROTATION"    Device="X00014" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_ROTATION" />
+        <Link Name="PLC_DI_TP_3_NORMAL"      Device="X00015" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_NORMAL" />
+        <Link Name="PLC_DI_TP_3_ACC"         Device="X00016" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_ACCELERATION" />
+        <Link Name="PLC_DI_TP_3_BRAKE"       Device="X00017" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_BRAKE" />
+		<Link Name="PLC_DI_TP_3_REMOTE"      Device="X00018" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_REMOTE" />
+		<Link Name="PLC_DI_TP_3_ALARM"       Device="X00019" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_ALARM" />
+		<Link Name="PLC_DI_TP_3_WARNING"     Device="X0001A" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_WARNING" />
+		<Link Name="PLC_DI_TP_3_CONN"        Device="X0001B" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_CONNECTION" />
+		<Link Name="PLC_DI_RP_1_ON"          Device="X0001C" LogToDb="0" ValueType="0" ReadOnly="1" Description="RP1_ON" />
+		<Link Name="PLC_DI_BP_1_ON"          Device="X0001D" LogToDb="0" ValueType="0" ReadOnly="1" Description="BP1_ON" />
+		<Link Name="PLC_DI_RP_2_ON"          Device="X0001E" LogToDb="0" ValueType="0" ReadOnly="1" Description="RP2_ON" />
+		<Link Name="PLC_DI_RP_3_ON"          Device="X0001F" LogToDb="0" ValueType="0" ReadOnly="1" Description="RP3_ON" />
+		
+		<Link Name="PLC_DI_LVG_1_ON"         Device="X00020" LogToDb="0" ValueType="0" ReadOnly="1" Description="低真空計1_ON" />
+        <Link Name="PLC_DI_LVG_2_ON"         Device="X00021" LogToDb="0" ValueType="0" ReadOnly="1" Description="低真空計2_ON" />
+        <Link Name="PLC_DI_LVG_3_ON"         Device="X00022" LogToDb="0" ValueType="0" ReadOnly="1" Description="低真空計3_ON" />
+        <Link Name="PLC_DI_HVG_ATM"          Device="X00023" LogToDb="0" ValueType="0" ReadOnly="1" Description="高真空計_大氣" />
+        <Link Name="PLC_DI_HVG_L"            Device="X00024" LogToDb="0" ValueType="0" ReadOnly="1" Description="高真空計_低" />
+        <Link Name="PLC_DI_HVG_H"            Device="X00025" LogToDb="0" ValueType="0" ReadOnly="1" Description="高真空計_高" />
+        <Link Name="PLC_DI_LVG_PROCESS"      Device="X00026" LogToDb="0" ValueType="0" ReadOnly="1" Description="高真空計_製程" />
+        <Link Name="PLC_DI_POWER_3_HV"       Device="X00027" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="PLC_DI_EMO"              Device="X00028" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="PLC_DI_VALVE_1_OPEN"     Device="X00029" LogToDb="0" ValueType="0" ReadOnly="1" Description="VALVE_1_OPEN"  />
+		<Link Name="PLC_DI_VALVE_2_OPEN"     Device="X0002A" LogToDb="0" ValueType="0" ReadOnly="1" Description="VALVE_2_OPEN"  />
+		<Link Name="PLC_DI_VALVE_3_OPEN"     Device="X0002B" LogToDb="0" ValueType="0" ReadOnly="1" Description="VALVE_3_OPEN"  />
+		<Link Name="PLC_DI_VALVE_3_CLOSE"    Device="X0002C" LogToDb="0" ValueType="0" ReadOnly="1" Description="VALVE_3_CLOSE" />
+		<Link Name="PLC_DI_VALVE_4_OPEN"     Device="X0002D" LogToDb="0" ValueType="0" ReadOnly="1" Description="VALVE_4_OPEN"  />
+		<Link Name="PLC_DI_VALVE_5_OPEN"     Device="X0002E" LogToDb="0" ValueType="0" ReadOnly="1" Description="VALVE_5_OPEN"  />
+		<Link Name="PLC_DI_VALVE_5_CLOSE"    Device="X0002F" LogToDb="0" ValueType="0" ReadOnly="1" Description="VALVE_5_CLOSE" />
+        
+        <Link Name="PLC_DO_MFC_1"             Device="Y00100" LogToDb="0" ValueType="0" ReadOnly="0" Description="MFC_1電磁閥" />
+        <Link Name="PLC_DO_MFC_2"             Device="Y00101" LogToDb="0" ValueType="0" ReadOnly="0" Description="MFC_2電磁閥" />
+        <Link Name="PLC_DO_MFC_3"             Device="Y00102" LogToDb="0" ValueType="0" ReadOnly="0" Description="MFC_3電磁閥" />
+        <Link Name="PLC_DO_MFC_4"             Device="Y00103" LogToDb="0" ValueType="0" ReadOnly="0" Description="MFC_4電磁閥" />
+        <Link Name="PLC_DO_POWER_1_OUTPUT"    Device="Y00104" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_OUTPUT ON" />
+        <Link Name="PLC_DO_POWER_1_PLUSE_OFF" Device="Y00105" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_PULSE OFF" />
+        <Link Name="PLC_DO_POWER_1_TAP_1"     Device="Y00106" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_TAP 1" />
+        <Link Name="PLC_DO_POWER_1_TAP_2"     Device="Y00107" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_TAP 2" />
+        <Link Name="PLC_DO_POWER_1_TAP_3"     Device="Y00108" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_TAP 3" />
+		<Link Name="PLC_DO_POWER_1_INTERLOCK" Device="Y00109" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_INTERLOCK" />
+		<Link Name="PLC_DO_POWER_2_INTERLOCK" Device="Y0010A" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Control Mode I" />
+        <Link Name="PLC_DO_POWER_2_OUTPUT"    Device="Y0010B" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Control Mode V" />
+        <Link Name="PLC_DO_POWER_2_PULSE"     Device="Y0010C" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Option2" />
+        <Link Name="PLC_DO_POWER_2_REMOTE"    Device="Y0010D" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Option1" />
+        <Link Name="PLC_DO_POWER_2_OFF"       Device="Y0010E" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Enable" />
+		<Link Name="PLC_DO_POWER_2_REGULATION" Device="Y0010F" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_External ON" />
+		
+		<Link Name="PLC_DO_VALVE_1"           Device="Y00110" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve1" />
+        <Link Name="PLC_DO_VALVE_2"           Device="Y00111" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve2" />
+        <Link Name="PLC_DO_VALVE_3"           Device="Y00112" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve3" />
+        <Link Name="PLC_DO_VALVE_4"           Device="Y00113" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve4" />
+        <Link Name="PLC_DO_VALVE_5"           Device="Y00114" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve5" />
+        <Link Name="PLC_DO_VENT"              Device="Y00115" LogToDb="0" ValueType="0" ReadOnly="0" Description="VENT" />
+        <Link Name="PLC_DO_TP_2_START"        Device="Y00116" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP2_START" />
+        <Link Name="PLC_DO_TP_2_STOP"         Device="Y00117" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP2_STOP" />
+        <Link Name="PLC_DO_TP_2_RESET"        Device="Y00118" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP2_RESET" />
+		<Link Name="PLC_DO_TP_2_LOW"          Device="Y00119" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP2_LOW SPEED" />
+		<Link Name="PLC_DO_TP_3_START"        Device="Y0011A" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP3_START" />
+        <Link Name="PLC_DO_TP_3_STOP"         Device="Y0011B" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP3_STOP" />
+        <Link Name="PLC_DO_TP_3_RESET"        Device="Y0011C" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP3_RESET" />
+        <Link Name="PLC_DO_TP_3_LOW"          Device="Y0011D" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP3_LOW" />
+        <Link Name="PLC_DO_RP_1_ON"           Device="Y0011E" LogToDb="0" ValueType="0" ReadOnly="0" Description="RP1_ON" />
+		<Link Name="PLC_DO_BP_1_ON"           Device="Y0011F" LogToDb="0" ValueType="0" ReadOnly="0" Description="BP1_ON" />
+		
+		<Link Name="PLC_DO_RP_2_ON"           Device="Y00120" LogToDb="0" ValueType="0" ReadOnly="0" Description="RP2_ON" />
+        <Link Name="PLC_DO_RP_3_ON"           Device="Y00121" LogToDb="0" ValueType="0" ReadOnly="0" Description="RP3_ON" />
+        <Link Name="PLC_DO_POWER_3_INTERLOCK" Device="Y00122" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_POWER_3_RESET"     Device="Y00123" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_POWER_3_INT"       Device="Y00124" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_POWER_3_REMOTE"    Device="Y00125" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_"                  Device="Y00126" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_"                  Device="Y00127" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_"                  Device="Y00128" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="PLC_DO_"                  Device="Y00129" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="PLC_DO_"                  Device="Y0012A" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_"                  Device="Y0012B" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_"                  Device="Y0012C" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_"                  Device="Y0012D" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_DO_"                  Device="Y0012E" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="PLC_DO_"                  Device="Y0012F" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+      
+        <Link Name="PLC_AI_MFC_AR_1"           Device="W00100" LogToDb="0" ValueType="0" ReadOnly="1" Description="Ar_1實際值" />
+        <Link Name="PLC_AI_MFC_AR_2"           Device="W00101" LogToDb="0" ValueType="0" ReadOnly="1" Description="Ar_2實際值" />
+        <Link Name="PLC_AI_MFC_O2_1"           Device="W00102" LogToDb="0" ValueType="0" ReadOnly="1" Description="O2_1實際值" />
+        <Link Name="PLC_AI_MFC_O2_2"           Device="W00103" LogToDb="0" ValueType="0" ReadOnly="1" Description="O2_2實際值" />
+        <Link Name="PLC_AI_POWER_1_ACT_I"      Device="W00104" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER1 Actual I(電流)" />
+        <Link Name="PLC_AI_POWER_1_ACT_V"      Device="W00105" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER1 Actual V(電壓)" />
+        <Link Name="PLC_AI_POWER_1_ACT_P"      Device="W00106" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER1 Actual P(功率)" />
+        <Link Name="PLC_AI_POWER_2_ACT_I"      Device="W00107" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER2 Actual I(電流)" />
+        <Link Name="PLC_AI_POWER_2_ACT_V"      Device="W00108" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER2 Actual V(電壓)" />
+		<Link Name="PLC_AI_POWER_2_ACT_P"      Device="W00109" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER2 Actual P(功率)" />
+        <Link Name="PLC_AI_POWER_3_ACT_I"      Device="W0010A" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER3 Actual I(電流)" />
+        <Link Name="PLC_AI_POWER_3_ACT_V"      Device="W0010B" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER3 Actual V(電壓)" />
+		<Link Name="PLC_AI_POWER_3_ACT_P"      Device="W0010C" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER3 Actual P(功率)" />
+		<Link Name="PLC_AI_"                   Device="W0010D" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="PLC_AI_"                   Device="W0010E" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="PLC_AI_"                   Device="W0010F" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+
+        <Link Name="PLC_AO_MFC_AR_1"           Device="W00110" LogToDb="0" ValueType="0" ReadOnly="0" Description="Ar_1設定值" />
+        <Link Name="PLC_AO_MFC_AR_2"           Device="W00111" LogToDb="0" ValueType="0" ReadOnly="0" Description="Ar_2設定值" />
+        <Link Name="PLC_AO_MFC_O2_1"           Device="W00112" LogToDb="0" ValueType="0" ReadOnly="0" Description="O2_1設定值" />
+        <Link Name="PLC_AO_MFC_O2_2"           Device="W00113" LogToDb="0" ValueType="0" ReadOnly="0" Description="O2_2設定值" />
+        <Link Name="PLC_AO_POWER_1_SV"         Device="W00114" LogToDb="0" ValueType="0" ReadOnly="0" Description="POWER1 Set P" />
+        <Link Name="PLC_AO_POWER_2_SV"         Device="W00115" LogToDb="0" ValueType="0" ReadOnly="0" Description="POWER2 Set P" />
+		<Link Name="PLC_AO_POWER_3_SV"         Device="W00117" LogToDb="0" ValueType="0" ReadOnly="0" Description="POWER3 Set P" />
+        <Link Name="PLC_AO_"                   Device="W00118" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="PLC_AO_"                   Device="W00119" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_AO_"                   Device="W0011A" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="PLC_AO_"                   Device="W0011B" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="PLC_AO_"                   Device="W0011C" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="PLC_AO_"                   Device="W0011D" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="PLC_AO_"                   Device="W0011E" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="PLC_AO_"                   Device="W0011F" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+      
+	    <Link Name="PLC_BUF_ALM_RST"           Device="M00150" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        
+	    <Link Name="PLC_BUF_AXIS_1_POS_PV_L" Device="R10002" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1目前位置" />
+        <Link Name="PLC_BUF_AXIS_1_POS_PV_H" Device="R10003" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1目前位置" />
+        <Link Name="PLC_BUF_AXIS_1_SPD_SV_L" Device="R10012" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1速度設定" />
+	    <Link Name="PLC_BUF_AXIS_1_SPD_SV_H" Device="R10013" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1速度設定" />
+	    <Link Name="PLC_BUF_AXIS_2_POS_PV_L" Device="R10102" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2目前位置" />
+        <Link Name="PLC_BUF_AXIS_2_POS_PV_H" Device="R10103" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2目前位置" />
+        <Link Name="PLC_BUF_AXIS_2_SPD_SV_L" Device="R10112" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2速度設定" />
+		<Link Name="PLC_BUF_AXIS_2_SPD_SV_H" Device="R10113" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2速度設定" />
+
+		
+	    <Link Name="PLC_BUF_AXIS_1_JOG_FOR" Device="L10002" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1JOG+" />
+        <Link Name="PLC_BUF_AXIS_1_JOG_REV" Device="L10003" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1JOG-" />
+	    <Link Name="PLC_BUF_AXIS_2_JOG_FOR" Device="L10102" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2JOG+" />
+        <Link Name="PLC_BUF_AXIS_2_JOG_REV" Device="L10103" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2JOG-" />
+		
+    </Group>
+</PLC>

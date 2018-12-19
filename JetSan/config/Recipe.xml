@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Recipe>
+  <Group ID="RCP1" Name="RCP11">
+    <Link Name="MFC_Ar_1" Value="10" DeviceName="W0110" Unit="s" Description="Ar_1設定值" />
+    <Link Name="MFC_Ar_2" Value="20" DeviceName="W0111" Unit="s" Description="Ar_2設定值" />
+	<Link Name="MFC_O2_1" Value="20" DeviceName="W0112" Unit="s" Description="O2_1設定值" />
+	<Link Name="MFC_O2_2" Value="20" DeviceName="W0113" Unit="s" Description="O2_2設定值" />
+	<Link Name="Power_1" Value="20" DeviceName="W0114" Unit="s" Description="POWER1 Set P" />
+	<Link Name="Power_2" Value="20" DeviceName="W0115" Unit="s" Description="POWER2 Set P" />
+  </Group>
+  <Group ID="RCP3" Name="RCP31">
+    <Link Name="MFC_Ar_1" Value="10" DeviceName="W0110" Unit="s" Description="Ar_1設定值" />
+    <Link Name="MFC_Ar_2" Value="20" DeviceName="W0111" Unit="s" Description="Ar_2設定值" />
+	<Link Name="MFC_O2_1" Value="20" DeviceName="W0112" Unit="s" Description="O2_1設定值" />
+	<Link Name="MFC_O2_2" Value="20" DeviceName="W0113" Unit="s" Description="O2_2設定值" />
+	<Link Name="Power_1" Value="20" DeviceName="W0114" Unit="s" Description="POWER1 Set P" />
+	<Link Name="Power_2" Value="20" DeviceName="W0115" Unit="s" Description="POWER2 Set P" />
+  </Group>
+  <Group ID="System" Name="System">
+    <Link Name="PLC_IN_L1030" Value="12" DeviceName="W1001" Unit="s" Description="EMO" />
+    <Link Name="PLC_IN_L1031" Value="24" DeviceName="W1001" Unit="s" Description="大氣檢測" />
+  </Group>
+</Recipe>

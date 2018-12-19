@@ -1,0 +1,117 @@
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe.config
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\bin\Debug\HyTemplate.pdb
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.CurrentDateTime.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.InputTextBox.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.Motor.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.frmMain.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgConfirm.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgMotorSwitch.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgSwitch.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryAlarm.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryLog.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmIoView.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmLogin.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmOverview.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmRecipe.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmSystemParameter.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmUserRegister.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.Properties.Resources.resources
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.csproj.GenerateResource.Cache
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.exe
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.pdb
+Y:\Project\04.HY\寶源\Batch Sputter真空實驗機\Code\HyTemplate\HyTemplate\obj\Debug\HyTemplate.csprojResolveAssemblyReference.cache
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe.config
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\bin\Debug\HyTemplate.pdb
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.CurrentDateTime.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.InputTextBox.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.Motor.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.frmMain.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgConfirm.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgMotorSwitch.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgSwitch.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryAlarm.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryLog.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmIoView.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmLogin.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmOverview.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmRecipe.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmSystemParameter.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmUserRegister.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.Properties.Resources.resources
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.csproj.GenerateResource.Cache
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.exe
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.pdb
+C:\_Code\_RD\Template\HyTemplate\HyTemplate\obj\Debug\HyTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe.config
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.exe
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.pdb
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\bin\Debug\HyTemplate.pdb
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.CurrentDateTime.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.InputTextBox.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.Motor.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.frmMain.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgConfirm.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgMotorSwitch.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgSwitch.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryAlarm.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryLog.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmIoView.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmLogin.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmOverview.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmRecipe.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmSystemParameter.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmUserRegister.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.Properties.Resources.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.csproj.GenerateResource.Cache
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\bin\Debug\HyTemplate.exe.config
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.exe
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.pdb
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\bin\Debug\HyTemplate.exe
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\bin\Debug\HyTemplate.pdb
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.csprojResolveAssemblyReference.cache
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.components.CurrentDateTime.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.components.InputTextBox.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.components.Motor.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.frmMain.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.dlgConfirm.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.dlgMotorSwitch.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.dlgSwitch.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryAlarm.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryLog.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.frmIoView.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.frmLogin.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.frmOverview.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.frmRecipe.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.frmSystemParameter.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.gui.frmUserRegister.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.Properties.Resources.resources
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate_Ori\HyTemplate\obj\Debug\HyTemplate.csproj.GenerateResource.Cache
+C:\Users\Vic-Chen\Desktop\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.csprojResolveAssemblyReference.cache
+D:\實驗機相關\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe.config
+D:\實驗機相關\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe
+D:\實驗機相關\HyTemplate\HyTemplate\bin\Debug\HyTemplate.pdb
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.CurrentDateTime.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.InputTextBox.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.components.Motor.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.frmMain.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgConfirm.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgMotorSwitch.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.dlgSwitch.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryAlarm.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmHistoryLog.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmIoView.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmLogin.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmOverview.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmRecipe.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmSystemParameter.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.gui.frmUserRegister.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.Properties.Resources.resources
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.csproj.GenerateResource.Cache
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.exe
+D:\實驗機相關\HyTemplate\HyTemplate\obj\Debug\HyTemplate.pdb
+D:\傑聖\HyTemplate\HyTemplate\bin\Debug\HyTemplate.exe.config
+D:\傑聖\HyTemplate\HyTemplate\obj\Debug\HyTemplate.exe
+D:\傑聖\HyTemplate\HyTemplate\obj\Debug\HyTemplate.pdb

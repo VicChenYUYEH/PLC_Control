@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    ActLogicalStationNumber: MX Component Connect Utility No.
+    ActControls: Connect Type RS232 Or Ethernet ...
+    Tag: Link
+             Attribute: Name      -> Signal Name
+             Attribute: Device    -> PLC Device
+             Attribute: Description -> Notes
+             Attribute: ValueType -> 0: Boolen ; 1: Integer; 2: DWord; 3:ASCII     
+             
+    <PLC CPUType="1025" ActLogicalStationNumber="2" ActControls="RS232" PortNo="1" NetworkNo="0" StationNo="255">
+    <PLC CPUType="1025" ActLogicalStationNumber="1" ActControls="Ethernet" PortNo="1" NetworkNo="0" StationNo="255">
+-->
+<Alarms>
+    <Alarm Id="X00000" Device="X00000" HeavyAlarm="0" Description="Water1水流量檢知" />
+    <Alarm Id="X00001" Device="X00001" HeavyAlarm="0" Description="Water2水流量檢知" />
+    <Alarm Id="X00002" Device="X00002" HeavyAlarm="0" Description="Power01_I-ARC" />
+    <Alarm Id="X00003" Device="X00003" HeavyAlarm="0" Description="Power01_OUTPUT" />
+    <Alarm Id="X00004" Device="X00004" HeavyAlarm="0" Description="Power01_OVERTEMP" />
+    <Alarm Id="X00005" Device="X00005" HeavyAlarm="0" Description="Power02_R-Lock" />
+    <Alarm Id="X00006" Device="X00006" HeavyAlarm="0" Description="Power02_Ready" />
+    <Alarm Id="X00007" Device="X00007" HeavyAlarm="0" Description="Power02_Plasma" />
+	<Alarm Id="X00008" Device="X00008" HeavyAlarm="0" Description="Power02_Overload" />
+	<Alarm Id="X00009" Device="X00009" HeavyAlarm="0" Description="Power02_Arc" />
+	<Alarm Id="X0000A" Device="X0000A" HeavyAlarm="1" Description="EMO" />
+	<Alarm Id="X0000B" Device="X0000B" HeavyAlarm="0" Description="Home Sensor" />
+	<Alarm Id="X0000C" Device="X0000C" HeavyAlarm="0" Description="TP2_ROTATION" />
+	<Alarm Id="X0000D" Device="X0000D" HeavyAlarm="0" Description="TP2_NORMAL" />
+	<Alarm Id="X0000E" Device="X0000E" HeavyAlarm="0" Description="TP2_ACCELERATION" />
+	<Alarm Id="X0000F" Device="X0000F" HeavyAlarm="0" Description="TP2_BRAKE" />
+</Alarms>

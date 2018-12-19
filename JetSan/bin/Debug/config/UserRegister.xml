@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UserList>
+  <User ID="RCP1" Name="ABC" Password="2D2816FE" Authority="B184AC52" />
+  <User ID="RCP2" Name="aaa" Password="2D2816FE" Authority="B184AC52" />
+  <User ID="RCP13" Name="HIJ" Password="52F319DE" Authority="CED8E09D" />
+  <User ID="keith" Name="keith" Authority="445F41EA" Password="73270370" />
+  <User ID="vic" Name="vic" Authority="445F41EA" Password="vicchen" />
+</UserList>

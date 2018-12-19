@@ -1,0 +1,24 @@
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.exe.config
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.exe
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.pdb
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.exe
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.pdb
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.components.CurrentDateTime.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.components.InputTextBox.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.components.Motor.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.frmMain.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.dlgConfirm.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.dlgMotorSwitch.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.dlgSwitch.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmHistoryAlarm.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmHistoryLog.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmIoView.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmLogin.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmOverview.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmRecipe.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmSystemParameter.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmUserRegister.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.Properties.Resources.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.GenerateResource.Cache
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\DB.dll
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojResolveAssemblyReference.cache

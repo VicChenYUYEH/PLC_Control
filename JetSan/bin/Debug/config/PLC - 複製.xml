@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    ActLogicalStationNumber: MX Component Connect Utility No.
+    ActControls: Connect Type RS232 Or Ethernet ...
+    Tag: Link
+             Attribute: Name      -> Signal Name
+             Attribute: Device    -> PLC Device
+             Attribute: Description -> Notes
+             Attribute: ValueType -> 0: Boolen ; 1: Integer; 2: DWord; 3:ASCII     
+             
+    <PLC CPUType="1025" ActLogicalStationNumber="2" ActControls="RS232" PortNo="1" NetworkNo="0" StationNo="255">
+    <PLC CPUType="1025" ActLogicalStationNumber="1" ActControls="Ethernet" PortNo="1" NetworkNo="0" StationNo="255">
+-->
+<PLC ActLogicalStationNumber="3" ActControls="RS232" PortNo="1" NetworkNo="0" StationNo="255">
+    <Group ID="PLC">
+    	<Link Name="X00000" Device="X00000" LogToDb="0" ValueType="0" ReadOnly="1" Description="Water1水流量檢知" />
+        <Link Name="X00001" Device="X00001" LogToDb="0" ValueType="0" ReadOnly="1" Description="Water2水流量檢知" />
+        <Link Name="X00002" Device="X00002" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power01_I-ARC" />
+        <Link Name="X00003" Device="X00003" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power01_OUTPUT" />
+        <Link Name="X00004" Device="X00004" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power01_OVERTEMP" />
+        <Link Name="X00005" Device="X00005" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_R-Lock" />
+        <Link Name="X00006" Device="X00006" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_Ready" />
+        <Link Name="X00007" Device="X00007" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_Plasma" />
+		<Link Name="X00008" Device="X00008" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_Overload" />
+		<Link Name="X00009" Device="X00009" LogToDb="0" ValueType="0" ReadOnly="1" Description="Power02_Arc" />
+		<Link Name="X0000A" Device="X0000A" LogToDb="0" ValueType="0" ReadOnly="1" Description="EMO" />
+		<Link Name="X0000B" Device="X0000B" LogToDb="0" ValueType="0" ReadOnly="1" Description="Home Sensor" />
+		<Link Name="X0000C" Device="X0000C" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_ROTATION" />
+		<Link Name="X0000D" Device="X0000D" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_NORMAL" />
+		<Link Name="X0000E" Device="X0000E" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_ACCELERATION" />
+		<Link Name="X0000F" Device="X0000F" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_BRAKE" />
+		
+		<Link Name="X00010" Device="X00010" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_REMOTE" />
+        <Link Name="X00011" Device="X00011" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_ALARM" />
+        <Link Name="X00012" Device="X00012" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_WARNING" />
+        <Link Name="X00013" Device="X00013" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP2_CONNECTION" />
+        <Link Name="X00014" Device="X00014" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_ROTATION" />
+        <Link Name="X00015" Device="X00015" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_NORMAL" />
+        <Link Name="X00016" Device="X00016" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_ACCELERATION" />
+        <Link Name="X00017" Device="X00017" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_BRAKE" />
+		<Link Name="X00018" Device="X00018" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_REMOTE" />
+		<Link Name="X00019" Device="X00019" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_ALARM" />
+		<Link Name="X0001A" Device="X0001A" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_WARNING" />
+		<Link Name="X0001B" Device="X0001B" LogToDb="0" ValueType="0" ReadOnly="1" Description="TP3_CONNECTION" />
+		<Link Name="X0001C" Device="X0001C" LogToDb="0" ValueType="0" ReadOnly="1" Description="RP1_ON" />
+		<Link Name="X0001D" Device="X0001D" LogToDb="0" ValueType="0" ReadOnly="1" Description="BP1_ON" />
+		<Link Name="X0001E" Device="X0001E" LogToDb="0" ValueType="0" ReadOnly="1" Description="RP2_ON" />
+		<Link Name="X0001F" Device="X0001F" LogToDb="0" ValueType="0" ReadOnly="1" Description="RP3_ON" />
+		
+		<Link Name="X00020" Device="X00020" LogToDb="0" ValueType="0" ReadOnly="1" Description="低真空計1_ON" />
+        <Link Name="X00021" Device="X00021" LogToDb="0" ValueType="0" ReadOnly="1" Description="低真空計2_ON" />
+        <Link Name="X00022" Device="X00022" LogToDb="0" ValueType="0" ReadOnly="1" Description="低真空計3_ON" />
+        <Link Name="X00023" Device="X00023" LogToDb="0" ValueType="0" ReadOnly="1" Description="高真空計_大氣" />
+        <Link Name="X00024" Device="X00024" LogToDb="0" ValueType="0" ReadOnly="1" Description="高真空計_低" />
+        <Link Name="X00025" Device="X00025" LogToDb="0" ValueType="0" ReadOnly="1" Description="高真空計_高" />
+        <Link Name="X00026" Device="X00026" LogToDb="0" ValueType="0" ReadOnly="1" Description="高真空計_製程" />
+        <Link Name="X00027" Device="X00027" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="X00028" Device="X00028" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="X00029" Device="X00029" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="X0002A" Device="X0002A" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="X0002B" Device="X0002B" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="X0002C" Device="X0002C" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="X0002D" Device="X0002D" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="X0002E" Device="X0002E" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="X0002F" Device="X0002F" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+        
+        <Link Name="Y00100" Device="Y00100" LogToDb="0" ValueType="0" ReadOnly="0" Description="MPC_1電磁閥" />
+        <Link Name="Y00101" Device="Y00101" LogToDb="0" ValueType="0" ReadOnly="0" Description="MFC_2電磁閥" />
+        <Link Name="Y00102" Device="Y00102" LogToDb="0" ValueType="0" ReadOnly="0" Description="MFC_3電磁閥" />
+        <Link Name="Y00103" Device="Y00103" LogToDb="0" ValueType="0" ReadOnly="0" Description="MFC_4電磁閥" />
+        <Link Name="Y00104" Device="Y00104" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_OUTPUT ON" />
+        <Link Name="Y00105" Device="Y00105" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_PULSE OFF" />
+        <Link Name="Y00106" Device="Y00106" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_TAP 1" />
+        <Link Name="Y00107" Device="Y00107" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_TAP 2" />
+        <Link Name="Y00108" Device="Y00108" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_TAP 3" />
+		<Link Name="Y00109" Device="Y00109" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power01_INTERLOCK" />
+		<Link Name="Y0010A" Device="Y0010A" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Control Mode I" />
+        <Link Name="Y0010B" Device="Y0010B" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Control Mode V" />
+        <Link Name="Y0010C" Device="Y0010C" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Option2" />
+        <Link Name="Y0010D" Device="Y0010D" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Option1" />
+        <Link Name="Y0010E" Device="Y0010E" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_Enable" />
+		<Link Name="Y0010F" Device="Y0010F" LogToDb="0" ValueType="0" ReadOnly="0" Description="Power02_External ON" />
+		
+		<Link Name="Y00110" Device="Y00110" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve1" />
+        <Link Name="Y00111" Device="Y00111" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve2" />
+        <Link Name="Y00112" Device="Y00112" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve3" />
+        <Link Name="Y00113" Device="Y00113" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve4" />
+        <Link Name="Y00114" Device="Y00114" LogToDb="0" ValueType="0" ReadOnly="0" Description="Valve5" />
+        <Link Name="Y00115" Device="Y00115" LogToDb="0" ValueType="0" ReadOnly="0" Description="VENT" />
+        <Link Name="Y00116" Device="Y00116" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP2_START" />
+        <Link Name="Y00117" Device="Y00117" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP2_STOP" />
+        <Link Name="Y00118" Device="Y00118" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP2_RESET" />
+		<Link Name="Y00119" Device="Y00119" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP2_LOW SPEED" />
+		<Link Name="Y0011A" Device="Y0011A" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP3_START" />
+        <Link Name="Y0011B" Device="Y0011B" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP3_STOP" />
+        <Link Name="Y0011C" Device="Y0011C" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP3_RESET" />
+        <Link Name="Y0011D" Device="Y0011D" LogToDb="0" ValueType="0" ReadOnly="0" Description="TP3_LOW" />
+        <Link Name="Y0011E" Device="Y0011E" LogToDb="0" ValueType="0" ReadOnly="0" Description="RP1_ON" />
+		<Link Name="Y0011F" Device="Y0011F" LogToDb="0" ValueType="0" ReadOnly="0" Description="BP1_ON" />
+		
+		<Link Name="Y00120" Device="Y00120" LogToDb="0" ValueType="0" ReadOnly="0" Description="RP2_ON" />
+        <Link Name="Y00121" Device="Y00121" LogToDb="0" ValueType="0" ReadOnly="0" Description="RP3_ON" />
+        <Link Name="Y00122" Device="Y00122" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y00123" Device="Y00123" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y00124" Device="Y00124" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y00125" Device="Y00125" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y00126" Device="Y00126" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y00127" Device="Y00127" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y00128" Device="Y00128" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="Y00129" Device="Y00129" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="Y0012A" Device="Y0012A" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y0012B" Device="Y0012B" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y0012C" Device="Y0012C" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y0012D" Device="Y0012D" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="Y0012E" Device="Y0012E" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="Y0012F" Device="Y0012F" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+      
+        <Link Name="W00100" Device="W00100" LogToDb="0" ValueType="0" ReadOnly="1" Description="Ar_1實際值" />
+        <Link Name="W00101" Device="W00101" LogToDb="0" ValueType="0" ReadOnly="1" Description="Ar_2實際值" />
+        <Link Name="W00102" Device="W00102" LogToDb="0" ValueType="0" ReadOnly="1" Description="O2_1實際值" />
+        <Link Name="W00103" Device="W00103" LogToDb="0" ValueType="0" ReadOnly="1" Description="O2_2實際值" />
+        <Link Name="W00104" Device="W00104" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER1 Actual I(電流)" />
+        <Link Name="W00105" Device="W00105" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER1 Actual V(電壓)" />
+        <Link Name="W00106" Device="W00106" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER1 Actual P(功率)" />
+        <Link Name="W00107" Device="W00107" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER2 Actual I(電流)" />
+        <Link Name="W00108" Device="W00108" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER2 Actual V(電壓)" />
+		<Link Name="W00109" Device="W00109" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER2 Actual P(功率)" />
+        <Link Name="W0010A" Device="W0010A" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER3 Actual I(電流)" />
+        <Link Name="W0010B" Device="W0010B" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER3 Actual V(電壓)" />
+		<Link Name="W0010C" Device="W0010C" LogToDb="0" ValueType="0" ReadOnly="1" Description="POWER3 Actual P(功率)" />
+		<Link Name="W0010D" Device="W0010D" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="W0010E" Device="W0010E" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+		<Link Name="W0010F" Device="W0010F" LogToDb="0" ValueType="0" ReadOnly="1" Description="" />
+
+        <Link Name="W00110" Device="W00110" LogToDb="0" ValueType="0" ReadOnly="0" Description="Ar_1設定值" />
+        <Link Name="W00111" Device="W00111" LogToDb="0" ValueType="0" ReadOnly="0" Description="Ar_2設定值" />
+        <Link Name="W00112" Device="W00112" LogToDb="0" ValueType="0" ReadOnly="0" Description="O2_1設定值" />
+        <Link Name="W00113" Device="W00113" LogToDb="0" ValueType="0" ReadOnly="0" Description="O2_2設定值" />
+        <Link Name="W00114" Device="W00114" LogToDb="0" ValueType="0" ReadOnly="0" Description="POWER1 Set P" />
+        <Link Name="W00115" Device="W00115" LogToDb="0" ValueType="0" ReadOnly="0" Description="POWER2 Set P" />
+		<Link Name="W00117" Device="W00117" LogToDb="0" ValueType="0" ReadOnly="0" Description="POWER3 Set P" />
+        <Link Name="W00118" Device="W00118" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="W00119" Device="W00119" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="W0011A" Device="W0011A" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+        <Link Name="W0011B" Device="W0011B" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="W0011C" Device="W0011C" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="W0011D" Device="W0011D" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="W0011E" Device="W0011E" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+		<Link Name="W0011F" Device="W0011F" LogToDb="0" ValueType="0" ReadOnly="0" Description="" />
+      
+	    <Link Name="R10002" Device="R10002" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1目前位置" />
+        <Link Name="R10003" Device="R10003" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1目前位置" />
+        <Link Name="R10012" Device="R10012" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1速度設定" />
+	    <Link Name="R10013" Device="R10013" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1速度設定" />
+	    <Link Name="R10102" Device="R10102" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2目前位置" />
+        <Link Name="R10103" Device="R10103" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2目前位置" />
+        <Link Name="R10112" Device="R10112" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2速度設定" />
+		<Link Name="R10113" Device="R10113" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2速度設定" />
+
+		
+	    <Link Name="L10002" Device="L10002" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1JOG+" />
+        <Link Name="L10003" Device="L10003" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-1JOG-" />
+	    <Link Name="L10102" Device="L10102" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2JOG+" />
+        <Link Name="L10103" Device="L10103" LogToDb="0" ValueType="0" ReadOnly="0" Description="軸1-2JOG-" />
+		
+    </Group>
+</PLC>

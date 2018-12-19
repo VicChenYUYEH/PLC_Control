@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Recipe>
+  <Group ID="RCP1" Name="RCP11">
+    <Link Name="PLC_AO_MFC_AR_1" Value="10" DeviceName="W00110" Unit="s" Description="Ar_1設定值" />
+    <Link Name="PLC_AO_MFC_AR_2" Value="20" DeviceName="W00111" Unit="s" Description="Ar_2設定值" />
+    <Link Name="PLC_AO_MFC_O2_1" Value="20" DeviceName="W00112" Unit="s" Description="O2_1設定值" />
+    <Link Name="PLC_AO_MFC_O2_2" Value="20" DeviceName="W00113" Unit="s" Description="O2_2設定值" />
+    <Link Name="PLC_AO_POWER_1_SV" Value="20" DeviceName="W00114" Unit="s" Description="POWER1 Set P" />
+    <Link Name="PLC_AO_POWER_2_SV" Value="20" DeviceName="W00115" Unit="s" Description="POWER2 Set P" />
+  </Group>
+  <Group ID="System" Name="System">
+    <Link Name="PLC_IN_L1030" Value="12" DeviceName="W01001" Unit="s" Description="EMO" />
+    <Link Name="PLC_IN_L1031" Value="24" DeviceName="W01002" Unit="s" Description="大氣檢測" />
+  </Group>
+  <Group ID="RCP3" Name="RCP3">
+    <Link Name="PLC_AO_MFC_AR_1" Value="5" Unit="s" DeviceName="W00110" Description="Ar_1設定值" />
+    <Link Name="PLC_AO_MFC_AR_2" Value="5" Unit="s" DeviceName="W00111" Description="Ar_2設定值" />
+    <Link Name="PLC_AO_MFC_O2_1" Value="70" Unit="s" DeviceName="W00112" Description="O2_1設定值" />
+    <Link Name="PLC_AO_MFC_O2_2" Value="20" Unit="s" DeviceName="W00113" Description="O2_2設定值" />
+    <Link Name="PLC_AO_POWER_1_SV" Value="3" Unit="s" DeviceName="W00114" Description="POWER1 Set P" />
+    <Link Name="PLC_AO_POWER_2_SV" Value="50" Unit="s" DeviceName="W00115" Description="POWER2 Set P" />
+  </Group>
+</Recipe>
