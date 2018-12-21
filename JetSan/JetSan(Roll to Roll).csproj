@@ -129,6 +129,12 @@
     <Compile Include="components\SwitchButton.Designer.cs">
       <DependentUpon>SwitchButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="components\PolyCold.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\PolyCold.Designer.cs">
+      <DependentUpon>PolyCold.cs</DependentUpon>
+    </Compile>
     <Compile Include="components\TurboPump.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -183,11 +189,17 @@
     <Compile Include="gui\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frmOverview.cs">
+    <Compile Include="gui\frmOverveiw_2nd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frmOverview.Designer.cs">
-      <DependentUpon>frmOverview.cs</DependentUpon>
+    <Compile Include="gui\frmOverveiw_2nd.Designer.cs">
+      <DependentUpon>frmOverveiw_2nd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmOverview_1st.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmOverview_1st.Designer.cs">
+      <DependentUpon>frmOverview_1st.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frmRecipe.cs">
       <SubType>Form</SubType>
@@ -206,6 +218,12 @@
     </Compile>
     <Compile Include="gui\frmUserRegister.Designer.cs">
       <DependentUpon>frmUserRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -249,8 +267,11 @@
     <EmbeddedResource Include="gui\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frmOverview.resx">
-      <DependentUpon>frmOverview.cs</DependentUpon>
+    <EmbeddedResource Include="gui\frmOverveiw_2nd.resx">
+      <DependentUpon>frmOverveiw_2nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmOverview_1st.resx">
+      <DependentUpon>frmOverview_1st.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmRecipe.resx">
       <DependentUpon>frmRecipe.cs</DependentUpon>
@@ -260,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmUserRegister.resx">
       <DependentUpon>frmUserRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -281,6 +305,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="config\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="dll\Interop.ActProgTypeLib.dll" />
@@ -295,6 +320,11 @@
     <Content Include="image\CATH_On.bmp" />
     <Content Include="image\Cath_Ready.png" />
     <Content Include="image\Cath_Stop.png" />
+    <None Include="image\Heater\Heater_On.png" />
+    <None Include="image\Heater\Heater_Off.png" />
+    <None Include="image\Document\Loading.gif" />
+    <None Include="image\Document\PLC Connect Fail.png" />
+    <None Include="image\Document\PLC.png" />
     <Content Include="image\HVG_Off.png" />
     <Content Include="image\HVG_On.png" />
     <Content Include="image\LVG_Off.png" />
@@ -307,6 +337,11 @@
     <Content Include="image\Moto_Stop.png" />
     <Content Include="image\Moto_Stop_Left.png" />
     <Content Include="image\Moto_Stop_Right.png" />
+    <None Include="image\Polycold\Polycold_Alarm.png" />
+    <None Include="image\Polycold\Polycold_Cooling.png" />
+    <None Include="image\Polycold\Polycold_Defrosting.png" />
+    <None Include="image\Polycold\Polycold_Off.png" />
+    <None Include="image\Polycold\Polycold_Run.png" />
     <Content Include="image\Power.jpg" />
     <Content Include="image\RP_Off.bmp" />
     <Content Include="image\RP_Off_L.png" />

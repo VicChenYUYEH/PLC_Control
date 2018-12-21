@@ -35,7 +35,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnIoView = new System.Windows.Forms.Button();
             this.btnSysPara = new System.Windows.Forms.Button();
-            this.btnOverview = new System.Windows.Forms.Button();
+            this.btnOverview1st = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.btnVacuum = new System.Windows.Forms.Button();
@@ -50,6 +50,7 @@
             this.switchButton2 = new HyTemplate.components.SwitchButton();
             this.switchButton1 = new HyTemplate.components.SwitchButton();
             this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
+            this.Overview2nd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +58,7 @@
             // btnHistoryLog
             // 
             this.btnHistoryLog.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnHistoryLog.Location = new System.Drawing.Point(148, 8);
+            this.btnHistoryLog.Location = new System.Drawing.Point(704, 8);
             this.btnHistoryLog.Name = "btnHistoryLog";
             this.btnHistoryLog.Size = new System.Drawing.Size(130, 60);
             this.btnHistoryLog.TabIndex = 1;
@@ -68,7 +69,7 @@
             // btnRecipe
             // 
             this.btnRecipe.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRecipe.Location = new System.Drawing.Point(420, 8);
+            this.btnRecipe.Location = new System.Drawing.Point(976, 8);
             this.btnRecipe.Name = "btnRecipe";
             this.btnRecipe.Size = new System.Drawing.Size(130, 60);
             this.btnRecipe.TabIndex = 2;
@@ -79,7 +80,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(284, 8);
+            this.button3.Location = new System.Drawing.Point(840, 8);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(130, 60);
             this.button3.TabIndex = 3;
@@ -90,7 +91,7 @@
             // btnIoView
             // 
             this.btnIoView.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnIoView.Location = new System.Drawing.Point(692, 8);
+            this.btnIoView.Location = new System.Drawing.Point(1248, 8);
             this.btnIoView.Name = "btnIoView";
             this.btnIoView.Size = new System.Drawing.Size(130, 60);
             this.btnIoView.TabIndex = 4;
@@ -101,7 +102,7 @@
             // btnSysPara
             // 
             this.btnSysPara.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSysPara.Location = new System.Drawing.Point(556, 8);
+            this.btnSysPara.Location = new System.Drawing.Point(1112, 8);
             this.btnSysPara.Name = "btnSysPara";
             this.btnSysPara.Size = new System.Drawing.Size(130, 60);
             this.btnSysPara.TabIndex = 5;
@@ -109,21 +110,21 @@
             this.btnSysPara.UseVisualStyleBackColor = true;
             this.btnSysPara.Click += new System.EventHandler(this.btnSysPara_Click);
             // 
-            // btnOverview
+            // btnOverview1st
             // 
-            this.btnOverview.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnOverview.Location = new System.Drawing.Point(12, 8);
-            this.btnOverview.Name = "btnOverview";
-            this.btnOverview.Size = new System.Drawing.Size(130, 60);
-            this.btnOverview.TabIndex = 6;
-            this.btnOverview.Text = "Overview";
-            this.btnOverview.UseVisualStyleBackColor = true;
-            this.btnOverview.Click += new System.EventHandler(this.btnOverview_Click);
+            this.btnOverview1st.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnOverview1st.Location = new System.Drawing.Point(12, 8);
+            this.btnOverview1st.Name = "btnOverview1st";
+            this.btnOverview1st.Size = new System.Drawing.Size(130, 60);
+            this.btnOverview1st.TabIndex = 6;
+            this.btnOverview1st.Text = "Overview_Page_1";
+            this.btnOverview1st.UseVisualStyleBackColor = true;
+            this.btnOverview1st.Click += new System.EventHandler(this.btnOverview_Click);
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnLogin.Location = new System.Drawing.Point(828, 8);
+            this.btnLogin.Location = new System.Drawing.Point(1384, 8);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(130, 60);
             this.btnLogin.TabIndex = 7;
@@ -145,7 +146,7 @@
             // btnVacuum
             // 
             this.btnVacuum.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnVacuum.Location = new System.Drawing.Point(1517, 292);
+            this.btnVacuum.Location = new System.Drawing.Point(1520, 363);
             this.btnVacuum.Name = "btnVacuum";
             this.btnVacuum.Size = new System.Drawing.Size(85, 60);
             this.btnVacuum.TabIndex = 13;
@@ -156,7 +157,7 @@
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button10.Location = new System.Drawing.Point(1605, 292);
+            this.button10.Location = new System.Drawing.Point(1608, 363);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(85, 60);
             this.button10.TabIndex = 14;
@@ -257,7 +258,7 @@
             this.switchButton2._Reverse = false;
             this.switchButton2.BackColor = System.Drawing.Color.Red;
             this.switchButton2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.switchButton2.Location = new System.Drawing.Point(1605, 226);
+            this.switchButton2.Location = new System.Drawing.Point(1608, 297);
             this.switchButton2.Name = "switchButton2";
             this.switchButton2.Size = new System.Drawing.Size(85, 60);
             this.switchButton2.TabIndex = 10;
@@ -273,7 +274,7 @@
             this.switchButton1._Reverse = false;
             this.switchButton1.BackColor = System.Drawing.Color.Red;
             this.switchButton1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.switchButton1.Location = new System.Drawing.Point(1517, 226);
+            this.switchButton1.Location = new System.Drawing.Point(1520, 297);
             this.switchButton1.Name = "switchButton1";
             this.switchButton1.Size = new System.Drawing.Size(85, 60);
             this.switchButton1.TabIndex = 9;
@@ -291,11 +292,23 @@
             this.currentDateTime1.Size = new System.Drawing.Size(173, 63);
             this.currentDateTime1.TabIndex = 0;
             // 
+            // Overview2nd
+            // 
+            this.Overview2nd.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Overview2nd.Location = new System.Drawing.Point(163, 8);
+            this.Overview2nd.Name = "Overview2nd";
+            this.Overview2nd.Size = new System.Drawing.Size(130, 60);
+            this.Overview2nd.TabIndex = 26;
+            this.Overview2nd.Text = "Overview_Page_2";
+            this.Overview2nd.UseVisualStyleBackColor = true;
+            this.Overview2nd.Click += new System.EventHandler(this.Overview2nd_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1696, 1059);
+            this.Controls.Add(this.Overview2nd);
             this.Controls.Add(this.lblPLC_Connect);
             this.Controls.Add(this.statusPictureBox1);
             this.Controls.Add(this.lblID);
@@ -309,7 +322,7 @@
             this.Controls.Add(this.switchButton1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnOverview);
+            this.Controls.Add(this.btnOverview1st);
             this.Controls.Add(this.btnSysPara);
             this.Controls.Add(this.btnIoView);
             this.Controls.Add(this.button3);
@@ -338,7 +351,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnIoView;
         private System.Windows.Forms.Button btnSysPara;
-        private System.Windows.Forms.Button btnOverview;
+        private System.Windows.Forms.Button btnOverview1st;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private components.SwitchButton switchButton1;
@@ -352,6 +365,7 @@
         private System.Windows.Forms.Label lblID;
         private components.StatusPictureBox statusPictureBox1;
         private System.Windows.Forms.Label lblPLC_Connect;
+        private System.Windows.Forms.Button Overview2nd;
     }
 }
 

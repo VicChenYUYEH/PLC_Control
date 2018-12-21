@@ -38,12 +38,12 @@ namespace HyTemplate.components
         public string _PlcDecDevice { get; set; }
         public string _PlcAlarmDevice { get; set; }
         public bool _Reverse { get; set; }
-        //public bool _CurrentStatus { get; set; }
         public ImageSize _ImageSize { get; set; }
         public EqBase _EqBase { get; set; }
 
         public bool ReadyToStart { get; set; }
         #endregion
+
         ToolTip trackTip;
         bool bTipDisplay = false;
         TurboStatus tsCurrentStatus;

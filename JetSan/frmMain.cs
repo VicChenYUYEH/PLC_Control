@@ -28,7 +28,8 @@ namespace HyTemplate
         frmSystemParameter frmSysPara;
         frmIoView frmIoView;
         frmLogin frmLogin;
-        frmOverview frmOverview;
+        frmOverview_1st frmOverview_1st;
+        frmOverview_2nd frmOverview_2nd;       
 
         RdEqKernel rdKernel;
 
@@ -44,14 +45,15 @@ namespace HyTemplate
             rdKernel = new RdEqKernel();
 
             rRecipe = new Recipe();
-
             frmLog = new frmHistoryLog();
             frmAlarm = new frmHistoryAlarm();
             frmRecipe = new frmRecipe(rRecipe);
             frmSysPara = new frmSystemParameter(rRecipe);
             frmIoView = new frmIoView(rdKernel);
             frmLogin = new frmLogin();
-            frmOverview = new frmOverview(rdKernel);
+            frmOverview_1st = new frmOverview_1st(rdKernel);
+            frmOverview_2nd = new frmOverview_2nd(rdKernel);
+
 
             //timerStatus.Enabled = true;
 
@@ -59,7 +61,7 @@ namespace HyTemplate
 
             System.Threading.Thread.Sleep(2000);
 
-            ReloadGui(frmOverview);
+            ReloadGui(frmOverview_1st);
 
             checkInitialStatus();
 
@@ -146,8 +148,8 @@ namespace HyTemplate
 
         private void btnOverview_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmOverview);
-            frmOverview.Show();
+            ReloadGui(frmOverview_1st);
+            frmOverview_1st.Show();
         }
 
         private void btnSysPara_Click(object sender, EventArgs e)
@@ -277,6 +279,12 @@ namespace HyTemplate
 
             ecClient.SendMessage(data);
             rdKernel.PlcKernel[ConstPlcDefine.PLC_BUF_ALM_RST] = 0;
+        }
+
+        private void Overview2nd_Click(object sender, EventArgs e)
+        {
+            ReloadGui(frmOverview_2nd);
+            frmOverview_2nd.Show();
         }
     }
 }

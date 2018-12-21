@@ -28,7 +28,8 @@ namespace HyTemplate.components
             otPower,
             otATM,
             otLVG,
-            otHVG
+            otHVG,
+            otHeater
         }
 
         #region Properties
@@ -72,6 +73,7 @@ namespace HyTemplate.components
             on_small_image.Add(ObjectType.otATM, Properties.Resources.ATM_On);
             on_small_image.Add(ObjectType.otLVG, Properties.Resources.LVG_On);
             on_small_image.Add(ObjectType.otHVG, Properties.Resources.HVG_On);
+            on_small_image.Add(ObjectType.otHeater, Properties.Resources.Heater_On);
 
             //Dictionary<ImageSize, Dictionary<ObjectType, Bitmap>> on_small = new Dictionary<ImageSize, Dictionary<ObjectType, Bitmap>>();
             OBJECT_ON_IMAGE.Add(ImageSize.isSmall, on_small_image);
@@ -106,6 +108,7 @@ namespace HyTemplate.components
             off_small_image.Add(ObjectType.otATM, Properties.Resources.ATM_Off);
             off_small_image.Add(ObjectType.otLVG, Properties.Resources.LVG_Off);
             off_small_image.Add(ObjectType.otHVG, Properties.Resources.HVG_Off);
+            off_small_image.Add(ObjectType.otHeater, Properties.Resources.Heater_Off);
 
             // Dictionary<ImageSize, Dictionary<ObjectType, Bitmap>> off_small = new Dictionary<ImageSize, Dictionary<ObjectType, Bitmap>>();
             OBJECT_OFF_IMAGE.Add(ImageSize.isSmall, off_small_image);

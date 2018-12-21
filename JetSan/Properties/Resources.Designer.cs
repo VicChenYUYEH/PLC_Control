@@ -163,6 +163,26 @@ namespace HyTemplate.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap Heater_Off {
+            get {
+                object obj = ResourceManager.GetObject("Heater_Off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Heater_On {
+            get {
+                object obj = ResourceManager.GetObject("Heater_On", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap HVG_Off {
             get {
                 object obj = ResourceManager.GetObject("HVG_Off", resourceCulture);
@@ -396,6 +416,66 @@ namespace HyTemplate.Properties {
         internal static System.Drawing.Bitmap Nstep {
             get {
                 object obj = ResourceManager.GetObject("Nstep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap PLC {
+            get {
+                object obj = ResourceManager.GetObject("PLC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Polycold_Alarm {
+            get {
+                object obj = ResourceManager.GetObject("Polycold_Alarm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Polycold_Cooling {
+            get {
+                object obj = ResourceManager.GetObject("Polycold_Cooling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Polycold_Defrosting {
+            get {
+                object obj = ResourceManager.GetObject("Polycold_Defrosting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Polycold_Off {
+            get {
+                object obj = ResourceManager.GetObject("Polycold_Off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Polycold_Run {
+            get {
+                object obj = ResourceManager.GetObject("Polycold_Run", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

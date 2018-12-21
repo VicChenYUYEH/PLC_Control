@@ -5,13 +5,13 @@ using HyTemplate.components;
 
 namespace HyTemplate.gui
 {
-    public partial class frmOverview : Form
+    public partial class frmOverview_1st : Form
     {
         private EqBase ebKernel;
         //bool bDisplayStatus = false;
         bool bIsInitial = false;
 
-        public frmOverview(EqBase m_EqBase)
+        public frmOverview_1st(EqBase m_EqBase)
         {
             InitializeComponent();
 

@@ -6,6 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Xml;
+using HyTemplate.gui;
 
 namespace HyTemplate
 {
@@ -50,6 +51,7 @@ namespace HyTemplate
         private bool isConnect = false;
         private bool isChange = true;
         private bool openFlag = false;
+        private frmLoading loading = new frmLoading();
 
         public bool IsConnect { get { return isConnect; } }
         bool bDisponse = false;
@@ -125,15 +127,22 @@ namespace HyTemplate
             isConnect = (melPlcAccessor.readDeviceBlock("W0100", 24, out values) == 0) ? true : false;
             isChange = (plcStatusReg != isConnect) ? true : false;
 
-            if(!isConnect && !openFlag)
+            if (!isConnect && !openFlag)
             {
-                if (melPlcAccessor.Open() == 0)
+                loading.ShowDialog();
+                loading.Refresh();
+                if(loading.DialogResult == System.Windows.Forms.DialogResult.OK)
                 {
-                    openFlag = true;
+                    if (melPlcAccessor.Open() == 0)
+                    {
+                        openFlag = true;
+                    }
                 }
-                else Thread.Sleep(60000); //1 min 重連一次
+                else
+                {
+                    Thread.Sleep(300000); //5 min 要求重連一次
+                }
             }
-
             if (isChange) //Update Signal
             {
                 isChange = false;
