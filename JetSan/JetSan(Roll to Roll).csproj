@@ -99,6 +99,12 @@
     <Compile Include="components\DisplayTextBox.Designer.cs">
       <DependentUpon>DisplayTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="components\ControlBtn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\ControlBtn.Designer.cs">
+      <DependentUpon>ControlBtn.cs</DependentUpon>
+    </Compile>
     <Compile Include="components\InputTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -195,6 +201,12 @@
     <Compile Include="gui\frmOverveiw_2nd.Designer.cs">
       <DependentUpon>frmOverveiw_2nd.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frmGasview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmGasview.Designer.cs">
+      <DependentUpon>frmGasview.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\frmOverview_1st.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +249,9 @@
     <EmbeddedResource Include="components\CurrentDateTime.resx">
       <DependentUpon>CurrentDateTime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="components\ControlBtn.resx">
+      <DependentUpon>ControlBtn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\InputTextBox.resx">
       <DependentUpon>InputTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmOverveiw_2nd.resx">
       <DependentUpon>frmOverveiw_2nd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmGasview.resx">
+      <DependentUpon>frmGasview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmOverview_1st.resx">
       <DependentUpon>frmOverview_1st.cs</DependentUpon>
@@ -322,9 +340,8 @@
     <Content Include="image\Cath_Stop.png" />
     <None Include="image\Heater\Heater_On.png" />
     <None Include="image\Heater\Heater_Off.png" />
-    <None Include="image\Document\Loading.gif" />
-    <None Include="image\Document\PLC Connect Fail.png" />
     <None Include="image\Document\PLC.png" />
+    <None Include="image\FV_W_H1.png" />
     <Content Include="image\HVG_Off.png" />
     <Content Include="image\HVG_On.png" />
     <Content Include="image\LVG_Off.png" />

@@ -51,6 +51,7 @@
             this.switchButton1 = new HyTemplate.components.SwitchButton();
             this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
             this.Overview2nd = new System.Windows.Forms.Button();
+            this.btnGasView = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -303,11 +304,23 @@
             this.Overview2nd.UseVisualStyleBackColor = true;
             this.Overview2nd.Click += new System.EventHandler(this.Overview2nd_Click);
             // 
+            // btnGasView
+            // 
+            this.btnGasView.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnGasView.Location = new System.Drawing.Point(316, 8);
+            this.btnGasView.Name = "btnGasView";
+            this.btnGasView.Size = new System.Drawing.Size(130, 60);
+            this.btnGasView.TabIndex = 27;
+            this.btnGasView.Text = "Gas View";
+            this.btnGasView.UseVisualStyleBackColor = true;
+            this.btnGasView.Click += new System.EventHandler(this.btnGasView_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1696, 1059);
+            this.Controls.Add(this.btnGasView);
             this.Controls.Add(this.Overview2nd);
             this.Controls.Add(this.lblPLC_Connect);
             this.Controls.Add(this.statusPictureBox1);
@@ -366,6 +379,7 @@
         private components.StatusPictureBox statusPictureBox1;
         private System.Windows.Forms.Label lblPLC_Connect;
         private System.Windows.Forms.Button Overview2nd;
+        private System.Windows.Forms.Button btnGasView;
     }
 }
 

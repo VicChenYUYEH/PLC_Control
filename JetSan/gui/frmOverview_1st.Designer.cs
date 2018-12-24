@@ -32,16 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOverview_1st));
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
-            this.inputTextBox5 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox2 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox6 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox1 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox31 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox30 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox29 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox28 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox27 = new HyTemplate.components.DisplayTextBox();
             this.Label165 = new System.Windows.Forms.Label();
             this.Label166 = new System.Windows.Forms.Label();
             this.Label168 = new System.Windows.Forms.Label();
             this.Label178 = new System.Windows.Forms.Label();
             this.Label180 = new System.Windows.Forms.Label();
-            this.inputTextBox3 = new HyTemplate.components.InputTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -295,10 +295,10 @@
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
-            this.inputTextBox26 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox25 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox24 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox23 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox4 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox3 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox2 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox1 = new HyTemplate.components.DisplayTextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.Label77 = new System.Windows.Forms.Label();
             this.Label107 = new System.Windows.Forms.Label();
@@ -466,28 +466,28 @@
             this.plcObject2 = new HyTemplate.components.PlcObject();
             this.plcObject7 = new HyTemplate.components.PlcObject();
             this.plcObject5 = new HyTemplate.components.PlcObject();
-            this.inputTextBox17 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox31 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox20 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox19 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox21 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox30 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox14 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox10 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox11 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox13 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox16 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox8 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox18 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox28 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox9 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox22 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox29 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox27 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox4 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox15 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox12 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox7 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox5 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox6 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox7 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox8 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox9 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox10 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox11 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox12 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox13 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox14 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox15 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox16 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox17 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox18 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox19 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox20 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox21 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox22 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox23 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox24 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox25 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox26 = new HyTemplate.components.DisplayTextBox();
             this.GroupBox3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.polyCold5)).BeginInit();
@@ -615,16 +615,16 @@
             // 
             // GroupBox3
             // 
-            this.GroupBox3.Controls.Add(this.inputTextBox5);
-            this.GroupBox3.Controls.Add(this.inputTextBox2);
-            this.GroupBox3.Controls.Add(this.inputTextBox6);
-            this.GroupBox3.Controls.Add(this.inputTextBox1);
+            this.GroupBox3.Controls.Add(this.displayTextBox31);
+            this.GroupBox3.Controls.Add(this.displayTextBox30);
+            this.GroupBox3.Controls.Add(this.displayTextBox29);
+            this.GroupBox3.Controls.Add(this.displayTextBox28);
+            this.GroupBox3.Controls.Add(this.displayTextBox27);
             this.GroupBox3.Controls.Add(this.Label165);
             this.GroupBox3.Controls.Add(this.Label166);
             this.GroupBox3.Controls.Add(this.Label168);
             this.GroupBox3.Controls.Add(this.Label178);
             this.GroupBox3.Controls.Add(this.Label180);
-            this.GroupBox3.Controls.Add(this.inputTextBox3);
             this.GroupBox3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.GroupBox3.Location = new System.Drawing.Point(1059, 12);
             this.GroupBox3.Name = "GroupBox3";
@@ -633,77 +633,90 @@
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Text = "廠務 - 出入水溫度 / 壓力";
             // 
-            // inputTextBox5
+            // displayTextBox31
             // 
-            this.inputTextBox5._Division = 1;
-            this.inputTextBox5._DoubleWord = false;
-            this.inputTextBox5._EqBase = null;
-            this.inputTextBox5._FloatNumber = false;
-            this.inputTextBox5._MaxLimit = 999D;
-            this.inputTextBox5._MinLimit = 0D;
-            this.inputTextBox5._Multiplication = 1;
-            this.inputTextBox5._NumberOnly = true;
-            this.inputTextBox5._PlcDevice = "";
-            this.inputTextBox5.BackColor = System.Drawing.Color.White;
-            this.inputTextBox5.Location = new System.Drawing.Point(326, 51);
-            this.inputTextBox5.Name = "inputTextBox5";
-            this.inputTextBox5.Size = new System.Drawing.Size(60, 23);
-            this.inputTextBox5.TabIndex = 2056;
-            this.inputTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox31._Division = ((short)(1));
+            this.displayTextBox31._DoubleWord = false;
+            this.displayTextBox31._EqBase = null;
+            this.displayTextBox31._MaxLimit = 999D;
+            this.displayTextBox31._MinLimit = 0D;
+            this.displayTextBox31._Multiplication = ((short)(1));
+            this.displayTextBox31._PlcDevice = "";
+            this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox31.Location = new System.Drawing.Point(327, 51);
+            this.displayTextBox31.Name = "displayTextBox31";
+            this.displayTextBox31.ReadOnly = true;
+            this.displayTextBox31.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox31.TabIndex = 2365;
+            this.displayTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox2
+            // displayTextBox30
             // 
-            this.inputTextBox2._Division = 1;
-            this.inputTextBox2._DoubleWord = false;
-            this.inputTextBox2._EqBase = null;
-            this.inputTextBox2._FloatNumber = false;
-            this.inputTextBox2._MaxLimit = 999D;
-            this.inputTextBox2._MinLimit = 0D;
-            this.inputTextBox2._Multiplication = 1;
-            this.inputTextBox2._NumberOnly = true;
-            this.inputTextBox2._PlcDevice = "";
-            this.inputTextBox2.BackColor = System.Drawing.Color.White;
-            this.inputTextBox2.Location = new System.Drawing.Point(127, 51);
-            this.inputTextBox2.Name = "inputTextBox2";
-            this.inputTextBox2.Size = new System.Drawing.Size(60, 23);
-            this.inputTextBox2.TabIndex = 2054;
-            this.inputTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox30._Division = ((short)(1));
+            this.displayTextBox30._DoubleWord = false;
+            this.displayTextBox30._EqBase = null;
+            this.displayTextBox30._MaxLimit = 999D;
+            this.displayTextBox30._MinLimit = 0D;
+            this.displayTextBox30._Multiplication = ((short)(1));
+            this.displayTextBox30._PlcDevice = "";
+            this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox30.Location = new System.Drawing.Point(327, 24);
+            this.displayTextBox30.Name = "displayTextBox30";
+            this.displayTextBox30.ReadOnly = true;
+            this.displayTextBox30.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox30.TabIndex = 2364;
+            this.displayTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox6
+            // displayTextBox29
             // 
-            this.inputTextBox6._Division = 1;
-            this.inputTextBox6._DoubleWord = false;
-            this.inputTextBox6._EqBase = null;
-            this.inputTextBox6._FloatNumber = false;
-            this.inputTextBox6._MaxLimit = 999D;
-            this.inputTextBox6._MinLimit = 0D;
-            this.inputTextBox6._Multiplication = 1;
-            this.inputTextBox6._NumberOnly = true;
-            this.inputTextBox6._PlcDevice = "";
-            this.inputTextBox6.BackColor = System.Drawing.Color.White;
-            this.inputTextBox6.Location = new System.Drawing.Point(326, 24);
-            this.inputTextBox6.Name = "inputTextBox6";
-            this.inputTextBox6.Size = new System.Drawing.Size(60, 23);
-            this.inputTextBox6.TabIndex = 2055;
-            this.inputTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox29._Division = ((short)(1));
+            this.displayTextBox29._DoubleWord = false;
+            this.displayTextBox29._EqBase = null;
+            this.displayTextBox29._MaxLimit = 999D;
+            this.displayTextBox29._MinLimit = 0D;
+            this.displayTextBox29._Multiplication = ((short)(1));
+            this.displayTextBox29._PlcDevice = "";
+            this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox29.Location = new System.Drawing.Point(127, 25);
+            this.displayTextBox29.Name = "displayTextBox29";
+            this.displayTextBox29.ReadOnly = true;
+            this.displayTextBox29.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox29.TabIndex = 2363;
+            this.displayTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox1
+            // displayTextBox28
             // 
-            this.inputTextBox1._Division = 1;
-            this.inputTextBox1._DoubleWord = false;
-            this.inputTextBox1._EqBase = null;
-            this.inputTextBox1._FloatNumber = false;
-            this.inputTextBox1._MaxLimit = 999D;
-            this.inputTextBox1._MinLimit = 0D;
-            this.inputTextBox1._Multiplication = 1;
-            this.inputTextBox1._NumberOnly = true;
-            this.inputTextBox1._PlcDevice = "";
-            this.inputTextBox1.BackColor = System.Drawing.Color.White;
-            this.inputTextBox1.Location = new System.Drawing.Point(127, 25);
-            this.inputTextBox1.Name = "inputTextBox1";
-            this.inputTextBox1.Size = new System.Drawing.Size(60, 23);
-            this.inputTextBox1.TabIndex = 2053;
-            this.inputTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox28._Division = ((short)(1));
+            this.displayTextBox28._DoubleWord = false;
+            this.displayTextBox28._EqBase = null;
+            this.displayTextBox28._MaxLimit = 999D;
+            this.displayTextBox28._MinLimit = 0D;
+            this.displayTextBox28._Multiplication = ((short)(1));
+            this.displayTextBox28._PlcDevice = "";
+            this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox28.Location = new System.Drawing.Point(127, 51);
+            this.displayTextBox28.Name = "displayTextBox28";
+            this.displayTextBox28.ReadOnly = true;
+            this.displayTextBox28.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox28.TabIndex = 2362;
+            this.displayTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox27
+            // 
+            this.displayTextBox27._Division = ((short)(1));
+            this.displayTextBox27._DoubleWord = false;
+            this.displayTextBox27._EqBase = null;
+            this.displayTextBox27._MaxLimit = 999D;
+            this.displayTextBox27._MinLimit = 0D;
+            this.displayTextBox27._Multiplication = ((short)(1));
+            this.displayTextBox27._PlcDevice = "";
+            this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox27.Location = new System.Drawing.Point(127, 77);
+            this.displayTextBox27.Name = "displayTextBox27";
+            this.displayTextBox27.ReadOnly = true;
+            this.displayTextBox27.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox27.TabIndex = 2361;
+            this.displayTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label165
             // 
@@ -754,24 +767,6 @@
             this.Label180.Size = new System.Drawing.Size(93, 16);
             this.Label180.TabIndex = 4;
             this.Label180.Text = "入水溫度 (℃)";
-            // 
-            // inputTextBox3
-            // 
-            this.inputTextBox3._Division = 1;
-            this.inputTextBox3._DoubleWord = false;
-            this.inputTextBox3._EqBase = null;
-            this.inputTextBox3._FloatNumber = false;
-            this.inputTextBox3._MaxLimit = 999D;
-            this.inputTextBox3._MinLimit = 0D;
-            this.inputTextBox3._Multiplication = 1;
-            this.inputTextBox3._NumberOnly = true;
-            this.inputTextBox3._PlcDevice = "";
-            this.inputTextBox3.BackColor = System.Drawing.Color.White;
-            this.inputTextBox3.Location = new System.Drawing.Point(127, 77);
-            this.inputTextBox3.Name = "inputTextBox3";
-            this.inputTextBox3.Size = new System.Drawing.Size(60, 23);
-            this.inputTextBox3.TabIndex = 2054;
-            this.inputTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -3215,10 +3210,10 @@
             // 
             // GroupBox2
             // 
-            this.GroupBox2.Controls.Add(this.inputTextBox26);
-            this.GroupBox2.Controls.Add(this.inputTextBox25);
-            this.GroupBox2.Controls.Add(this.inputTextBox24);
-            this.GroupBox2.Controls.Add(this.inputTextBox23);
+            this.GroupBox2.Controls.Add(this.displayTextBox4);
+            this.GroupBox2.Controls.Add(this.displayTextBox3);
+            this.GroupBox2.Controls.Add(this.displayTextBox2);
+            this.GroupBox2.Controls.Add(this.displayTextBox1);
             this.GroupBox2.Controls.Add(this.label59);
             this.GroupBox2.Controls.Add(this.Label77);
             this.GroupBox2.Controls.Add(this.Label107);
@@ -3231,77 +3226,73 @@
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = " Cathode MKS  (Torr)";
             // 
-            // inputTextBox26
+            // displayTextBox4
             // 
-            this.inputTextBox26._Division = 1;
-            this.inputTextBox26._DoubleWord = false;
-            this.inputTextBox26._EqBase = null;
-            this.inputTextBox26._FloatNumber = false;
-            this.inputTextBox26._MaxLimit = 999D;
-            this.inputTextBox26._MinLimit = 0D;
-            this.inputTextBox26._Multiplication = 1;
-            this.inputTextBox26._NumberOnly = true;
-            this.inputTextBox26._PlcDevice = "";
-            this.inputTextBox26.BackColor = System.Drawing.Color.White;
-            this.inputTextBox26.Location = new System.Drawing.Point(96, 88);
-            this.inputTextBox26.Name = "inputTextBox26";
-            this.inputTextBox26.Size = new System.Drawing.Size(60, 22);
-            this.inputTextBox26.TabIndex = 2233;
-            this.inputTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox4._Division = ((short)(1));
+            this.displayTextBox4._DoubleWord = false;
+            this.displayTextBox4._EqBase = null;
+            this.displayTextBox4._MaxLimit = 999D;
+            this.displayTextBox4._MinLimit = 0D;
+            this.displayTextBox4._Multiplication = ((short)(1));
+            this.displayTextBox4._PlcDevice = "";
+            this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox4.Location = new System.Drawing.Point(94, 93);
+            this.displayTextBox4.Name = "displayTextBox4";
+            this.displayTextBox4.ReadOnly = true;
+            this.displayTextBox4.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox4.TabIndex = 2352;
+            this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox25
+            // displayTextBox3
             // 
-            this.inputTextBox25._Division = 1;
-            this.inputTextBox25._DoubleWord = false;
-            this.inputTextBox25._EqBase = null;
-            this.inputTextBox25._FloatNumber = false;
-            this.inputTextBox25._MaxLimit = 999D;
-            this.inputTextBox25._MinLimit = 0D;
-            this.inputTextBox25._Multiplication = 1;
-            this.inputTextBox25._NumberOnly = true;
-            this.inputTextBox25._PlcDevice = "";
-            this.inputTextBox25.BackColor = System.Drawing.Color.White;
-            this.inputTextBox25.Location = new System.Drawing.Point(96, 45);
-            this.inputTextBox25.Name = "inputTextBox25";
-            this.inputTextBox25.Size = new System.Drawing.Size(60, 22);
-            this.inputTextBox25.TabIndex = 2233;
-            this.inputTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox3._Division = ((short)(1));
+            this.displayTextBox3._DoubleWord = false;
+            this.displayTextBox3._EqBase = null;
+            this.displayTextBox3._MaxLimit = 999D;
+            this.displayTextBox3._MinLimit = 0D;
+            this.displayTextBox3._Multiplication = ((short)(1));
+            this.displayTextBox3._PlcDevice = "";
+            this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox3.Location = new System.Drawing.Point(18, 93);
+            this.displayTextBox3.Name = "displayTextBox3";
+            this.displayTextBox3.ReadOnly = true;
+            this.displayTextBox3.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox3.TabIndex = 1952;
+            this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox24
+            // displayTextBox2
             // 
-            this.inputTextBox24._Division = 1;
-            this.inputTextBox24._DoubleWord = false;
-            this.inputTextBox24._EqBase = null;
-            this.inputTextBox24._FloatNumber = false;
-            this.inputTextBox24._MaxLimit = 999D;
-            this.inputTextBox24._MinLimit = 0D;
-            this.inputTextBox24._Multiplication = 1;
-            this.inputTextBox24._NumberOnly = true;
-            this.inputTextBox24._PlcDevice = "";
-            this.inputTextBox24.BackColor = System.Drawing.Color.White;
-            this.inputTextBox24.Location = new System.Drawing.Point(17, 87);
-            this.inputTextBox24.Name = "inputTextBox24";
-            this.inputTextBox24.Size = new System.Drawing.Size(60, 22);
-            this.inputTextBox24.TabIndex = 2233;
-            this.inputTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox2._Division = ((short)(1));
+            this.displayTextBox2._DoubleWord = false;
+            this.displayTextBox2._EqBase = null;
+            this.displayTextBox2._MaxLimit = 999D;
+            this.displayTextBox2._MinLimit = 0D;
+            this.displayTextBox2._Multiplication = ((short)(1));
+            this.displayTextBox2._PlcDevice = "";
+            this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox2.Location = new System.Drawing.Point(94, 43);
+            this.displayTextBox2.Name = "displayTextBox2";
+            this.displayTextBox2.ReadOnly = true;
+            this.displayTextBox2.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox2.TabIndex = 1951;
+            this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox23
+            // displayTextBox1
             // 
-            this.inputTextBox23._Division = 1;
-            this.inputTextBox23._DoubleWord = false;
-            this.inputTextBox23._EqBase = null;
-            this.inputTextBox23._FloatNumber = false;
-            this.inputTextBox23._MaxLimit = 999D;
-            this.inputTextBox23._MinLimit = 0D;
-            this.inputTextBox23._Multiplication = 1;
-            this.inputTextBox23._NumberOnly = true;
-            this.inputTextBox23._PlcDevice = "";
-            this.inputTextBox23.BackColor = System.Drawing.Color.White;
-            this.inputTextBox23.Location = new System.Drawing.Point(17, 44);
-            this.inputTextBox23.Name = "inputTextBox23";
-            this.inputTextBox23.Size = new System.Drawing.Size(60, 22);
-            this.inputTextBox23.TabIndex = 2233;
-            this.inputTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox1._Division = ((short)(1));
+            this.displayTextBox1._DoubleWord = false;
+            this.displayTextBox1._EqBase = null;
+            this.displayTextBox1._MaxLimit = 999D;
+            this.displayTextBox1._MinLimit = 0D;
+            this.displayTextBox1._Multiplication = ((short)(1));
+            this.displayTextBox1._PlcDevice = "";
+            this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox1.Location = new System.Drawing.Point(18, 43);
+            this.displayTextBox1.Name = "displayTextBox1";
+            this.displayTextBox1.ReadOnly = true;
+            this.displayTextBox1.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox1.TabIndex = 1950;
+            this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label59
             // 
@@ -5946,407 +5937,407 @@
             this.plcObject5.TabIndex = 2055;
             this.plcObject5.TabStop = false;
             // 
-            // inputTextBox17
+            // displayTextBox5
             // 
-            this.inputTextBox17._Division = 1;
-            this.inputTextBox17._DoubleWord = false;
-            this.inputTextBox17._EqBase = null;
-            this.inputTextBox17._FloatNumber = false;
-            this.inputTextBox17._MaxLimit = 999D;
-            this.inputTextBox17._MinLimit = 0D;
-            this.inputTextBox17._Multiplication = 1;
-            this.inputTextBox17._NumberOnly = true;
-            this.inputTextBox17._PlcDevice = "";
-            this.inputTextBox17.BackColor = System.Drawing.Color.White;
-            this.inputTextBox17.Location = new System.Drawing.Point(1134, 446);
-            this.inputTextBox17.Name = "inputTextBox17";
-            this.inputTextBox17.Size = new System.Drawing.Size(62, 25);
-            this.inputTextBox17.TabIndex = 2165;
-            this.inputTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox5._Division = ((short)(1));
+            this.displayTextBox5._DoubleWord = false;
+            this.displayTextBox5._EqBase = null;
+            this.displayTextBox5._MaxLimit = 999D;
+            this.displayTextBox5._MinLimit = 0D;
+            this.displayTextBox5._Multiplication = ((short)(1));
+            this.displayTextBox5._PlcDevice = "";
+            this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox5.Location = new System.Drawing.Point(23, 754);
+            this.displayTextBox5.Name = "displayTextBox5";
+            this.displayTextBox5.ReadOnly = true;
+            this.displayTextBox5.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox5.TabIndex = 2352;
+            this.displayTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox31
+            // displayTextBox6
             // 
-            this.inputTextBox31._Division = 1;
-            this.inputTextBox31._DoubleWord = false;
-            this.inputTextBox31._EqBase = null;
-            this.inputTextBox31._FloatNumber = false;
-            this.inputTextBox31._MaxLimit = 999D;
-            this.inputTextBox31._MinLimit = 0D;
-            this.inputTextBox31._Multiplication = 1;
-            this.inputTextBox31._NumberOnly = true;
-            this.inputTextBox31._PlcDevice = "";
-            this.inputTextBox31.BackColor = System.Drawing.Color.White;
-            this.inputTextBox31.Location = new System.Drawing.Point(1266, 780);
-            this.inputTextBox31.Name = "inputTextBox31";
-            this.inputTextBox31.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox31.TabIndex = 2324;
-            this.inputTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox6._Division = ((short)(1));
+            this.displayTextBox6._DoubleWord = false;
+            this.displayTextBox6._EqBase = null;
+            this.displayTextBox6._MaxLimit = 999D;
+            this.displayTextBox6._MinLimit = 0D;
+            this.displayTextBox6._Multiplication = ((short)(1));
+            this.displayTextBox6._PlcDevice = "";
+            this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox6.Location = new System.Drawing.Point(206, 811);
+            this.displayTextBox6.Name = "displayTextBox6";
+            this.displayTextBox6.ReadOnly = true;
+            this.displayTextBox6.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox6.TabIndex = 2353;
+            this.displayTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox20
+            // displayTextBox7
             // 
-            this.inputTextBox20._Division = 1;
-            this.inputTextBox20._DoubleWord = false;
-            this.inputTextBox20._EqBase = null;
-            this.inputTextBox20._FloatNumber = false;
-            this.inputTextBox20._MaxLimit = 999D;
-            this.inputTextBox20._MinLimit = 0D;
-            this.inputTextBox20._Multiplication = 1;
-            this.inputTextBox20._NumberOnly = true;
-            this.inputTextBox20._PlcDevice = "";
-            this.inputTextBox20.BackColor = System.Drawing.Color.White;
-            this.inputTextBox20.Location = new System.Drawing.Point(19, 761);
-            this.inputTextBox20.Name = "inputTextBox20";
-            this.inputTextBox20.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox20.TabIndex = 2195;
-            this.inputTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox7._Division = ((short)(1));
+            this.displayTextBox7._DoubleWord = false;
+            this.displayTextBox7._EqBase = null;
+            this.displayTextBox7._MaxLimit = 999D;
+            this.displayTextBox7._MinLimit = 0D;
+            this.displayTextBox7._Multiplication = ((short)(1));
+            this.displayTextBox7._PlcDevice = "";
+            this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox7.Location = new System.Drawing.Point(311, 799);
+            this.displayTextBox7.Name = "displayTextBox7";
+            this.displayTextBox7.ReadOnly = true;
+            this.displayTextBox7.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox7.TabIndex = 2354;
+            this.displayTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox19
+            // displayTextBox8
             // 
-            this.inputTextBox19._Division = 1;
-            this.inputTextBox19._DoubleWord = false;
-            this.inputTextBox19._EqBase = null;
-            this.inputTextBox19._FloatNumber = false;
-            this.inputTextBox19._MaxLimit = 999D;
-            this.inputTextBox19._MinLimit = 0D;
-            this.inputTextBox19._Multiplication = 1;
-            this.inputTextBox19._NumberOnly = true;
-            this.inputTextBox19._PlcDevice = "";
-            this.inputTextBox19.BackColor = System.Drawing.Color.White;
-            this.inputTextBox19.Location = new System.Drawing.Point(1343, 424);
-            this.inputTextBox19.Name = "inputTextBox19";
-            this.inputTextBox19.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox19.TabIndex = 2167;
-            this.inputTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox8._Division = ((short)(1));
+            this.displayTextBox8._DoubleWord = false;
+            this.displayTextBox8._EqBase = null;
+            this.displayTextBox8._MaxLimit = 999D;
+            this.displayTextBox8._MinLimit = 0D;
+            this.displayTextBox8._Multiplication = ((short)(1));
+            this.displayTextBox8._PlcDevice = "";
+            this.displayTextBox8.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox8.Location = new System.Drawing.Point(593, 803);
+            this.displayTextBox8.Name = "displayTextBox8";
+            this.displayTextBox8.ReadOnly = true;
+            this.displayTextBox8.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox8.TabIndex = 2355;
+            this.displayTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox21
+            // displayTextBox9
             // 
-            this.inputTextBox21._Division = 1;
-            this.inputTextBox21._DoubleWord = false;
-            this.inputTextBox21._EqBase = null;
-            this.inputTextBox21._FloatNumber = false;
-            this.inputTextBox21._MaxLimit = 999D;
-            this.inputTextBox21._MinLimit = 0D;
-            this.inputTextBox21._Multiplication = 1;
-            this.inputTextBox21._NumberOnly = true;
-            this.inputTextBox21._PlcDevice = "";
-            this.inputTextBox21.BackColor = System.Drawing.Color.White;
-            this.inputTextBox21.Location = new System.Drawing.Point(198, 811);
-            this.inputTextBox21.Name = "inputTextBox21";
-            this.inputTextBox21.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox21.TabIndex = 2215;
-            this.inputTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox9._Division = ((short)(1));
+            this.displayTextBox9._DoubleWord = false;
+            this.displayTextBox9._EqBase = null;
+            this.displayTextBox9._MaxLimit = 999D;
+            this.displayTextBox9._MinLimit = 0D;
+            this.displayTextBox9._Multiplication = ((short)(1));
+            this.displayTextBox9._PlcDevice = "";
+            this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox9.Location = new System.Drawing.Point(743, 808);
+            this.displayTextBox9.Name = "displayTextBox9";
+            this.displayTextBox9.ReadOnly = true;
+            this.displayTextBox9.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox9.TabIndex = 2356;
+            this.displayTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox30
+            // displayTextBox10
             // 
-            this.inputTextBox30._Division = 1;
-            this.inputTextBox30._DoubleWord = false;
-            this.inputTextBox30._EqBase = null;
-            this.inputTextBox30._FloatNumber = false;
-            this.inputTextBox30._MaxLimit = 999D;
-            this.inputTextBox30._MinLimit = 0D;
-            this.inputTextBox30._Multiplication = 1;
-            this.inputTextBox30._NumberOnly = true;
-            this.inputTextBox30._PlcDevice = "";
-            this.inputTextBox30.BackColor = System.Drawing.Color.White;
-            this.inputTextBox30.Location = new System.Drawing.Point(1068, 808);
-            this.inputTextBox30.Name = "inputTextBox30";
-            this.inputTextBox30.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox30.TabIndex = 2306;
-            this.inputTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox10._Division = ((short)(1));
+            this.displayTextBox10._DoubleWord = false;
+            this.displayTextBox10._EqBase = null;
+            this.displayTextBox10._MaxLimit = 999D;
+            this.displayTextBox10._MinLimit = 0D;
+            this.displayTextBox10._Multiplication = ((short)(1));
+            this.displayTextBox10._PlcDevice = "";
+            this.displayTextBox10.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox10.Location = new System.Drawing.Point(887, 789);
+            this.displayTextBox10.Name = "displayTextBox10";
+            this.displayTextBox10.ReadOnly = true;
+            this.displayTextBox10.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox10.TabIndex = 2357;
+            this.displayTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox14
+            // displayTextBox11
             // 
-            this.inputTextBox14._Division = 1;
-            this.inputTextBox14._DoubleWord = false;
-            this.inputTextBox14._EqBase = null;
-            this.inputTextBox14._FloatNumber = false;
-            this.inputTextBox14._MaxLimit = 999D;
-            this.inputTextBox14._MinLimit = 0D;
-            this.inputTextBox14._Multiplication = 1;
-            this.inputTextBox14._NumberOnly = true;
-            this.inputTextBox14._PlcDevice = "";
-            this.inputTextBox14.BackColor = System.Drawing.Color.White;
-            this.inputTextBox14.Location = new System.Drawing.Point(584, 474);
-            this.inputTextBox14.Name = "inputTextBox14";
-            this.inputTextBox14.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox14.TabIndex = 2160;
-            this.inputTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox11._Division = ((short)(1));
+            this.displayTextBox11._DoubleWord = false;
+            this.displayTextBox11._EqBase = null;
+            this.displayTextBox11._MaxLimit = 999D;
+            this.displayTextBox11._MinLimit = 0D;
+            this.displayTextBox11._Multiplication = ((short)(1));
+            this.displayTextBox11._PlcDevice = "";
+            this.displayTextBox11.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox11.Location = new System.Drawing.Point(1070, 811);
+            this.displayTextBox11.Name = "displayTextBox11";
+            this.displayTextBox11.ReadOnly = true;
+            this.displayTextBox11.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox11.TabIndex = 2358;
+            this.displayTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox10
+            // displayTextBox12
             // 
-            this.inputTextBox10._Division = 1;
-            this.inputTextBox10._DoubleWord = false;
-            this.inputTextBox10._EqBase = null;
-            this.inputTextBox10._FloatNumber = false;
-            this.inputTextBox10._MaxLimit = 999D;
-            this.inputTextBox10._MinLimit = 0D;
-            this.inputTextBox10._Multiplication = 1;
-            this.inputTextBox10._NumberOnly = true;
-            this.inputTextBox10._PlcDevice = "";
-            this.inputTextBox10.BackColor = System.Drawing.Color.White;
-            this.inputTextBox10.Location = new System.Drawing.Point(370, 378);
-            this.inputTextBox10.Name = "inputTextBox10";
-            this.inputTextBox10.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox10.TabIndex = 2156;
-            this.inputTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox12._Division = ((short)(1));
+            this.displayTextBox12._DoubleWord = false;
+            this.displayTextBox12._EqBase = null;
+            this.displayTextBox12._MaxLimit = 999D;
+            this.displayTextBox12._MinLimit = 0D;
+            this.displayTextBox12._Multiplication = ((short)(1));
+            this.displayTextBox12._PlcDevice = "";
+            this.displayTextBox12.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox12.Location = new System.Drawing.Point(1273, 785);
+            this.displayTextBox12.Name = "displayTextBox12";
+            this.displayTextBox12.ReadOnly = true;
+            this.displayTextBox12.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox12.TabIndex = 2359;
+            this.displayTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox11
+            // displayTextBox13
             // 
-            this.inputTextBox11._Division = 1;
-            this.inputTextBox11._DoubleWord = false;
-            this.inputTextBox11._EqBase = null;
-            this.inputTextBox11._FloatNumber = false;
-            this.inputTextBox11._MaxLimit = 999D;
-            this.inputTextBox11._MinLimit = 0D;
-            this.inputTextBox11._Multiplication = 1;
-            this.inputTextBox11._NumberOnly = true;
-            this.inputTextBox11._PlcDevice = "";
-            this.inputTextBox11.BackColor = System.Drawing.Color.White;
-            this.inputTextBox11.Location = new System.Drawing.Point(442, 474);
-            this.inputTextBox11.Name = "inputTextBox11";
-            this.inputTextBox11.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox11.TabIndex = 2157;
-            this.inputTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox13._Division = ((short)(1));
+            this.displayTextBox13._DoubleWord = false;
+            this.displayTextBox13._EqBase = null;
+            this.displayTextBox13._MaxLimit = 999D;
+            this.displayTextBox13._MinLimit = 0D;
+            this.displayTextBox13._Multiplication = ((short)(1));
+            this.displayTextBox13._PlcDevice = "";
+            this.displayTextBox13.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox13.Location = new System.Drawing.Point(1343, 371);
+            this.displayTextBox13.Name = "displayTextBox13";
+            this.displayTextBox13.ReadOnly = true;
+            this.displayTextBox13.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox13.TabIndex = 2360;
+            this.displayTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox13
+            // displayTextBox14
             // 
-            this.inputTextBox13._Division = 1;
-            this.inputTextBox13._DoubleWord = false;
-            this.inputTextBox13._EqBase = null;
-            this.inputTextBox13._FloatNumber = false;
-            this.inputTextBox13._MaxLimit = 999D;
-            this.inputTextBox13._MinLimit = 0D;
-            this.inputTextBox13._Multiplication = 1;
-            this.inputTextBox13._NumberOnly = true;
-            this.inputTextBox13._PlcDevice = "";
-            this.inputTextBox13.BackColor = System.Drawing.Color.White;
-            this.inputTextBox13.Location = new System.Drawing.Point(513, 399);
-            this.inputTextBox13.Name = "inputTextBox13";
-            this.inputTextBox13.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox13.TabIndex = 2159;
-            this.inputTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox14._Division = ((short)(1));
+            this.displayTextBox14._DoubleWord = false;
+            this.displayTextBox14._EqBase = null;
+            this.displayTextBox14._MaxLimit = 999D;
+            this.displayTextBox14._MinLimit = 0D;
+            this.displayTextBox14._Multiplication = ((short)(1));
+            this.displayTextBox14._PlcDevice = "";
+            this.displayTextBox14.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox14.Location = new System.Drawing.Point(1343, 426);
+            this.displayTextBox14.Name = "displayTextBox14";
+            this.displayTextBox14.ReadOnly = true;
+            this.displayTextBox14.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox14.TabIndex = 2361;
+            this.displayTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox16
+            // displayTextBox15
             // 
-            this.inputTextBox16._Division = 1;
-            this.inputTextBox16._DoubleWord = false;
-            this.inputTextBox16._EqBase = null;
-            this.inputTextBox16._FloatNumber = false;
-            this.inputTextBox16._MaxLimit = 999D;
-            this.inputTextBox16._MinLimit = 0D;
-            this.inputTextBox16._Multiplication = 1;
-            this.inputTextBox16._NumberOnly = true;
-            this.inputTextBox16._PlcDevice = "";
-            this.inputTextBox16.BackColor = System.Drawing.Color.White;
-            this.inputTextBox16.Location = new System.Drawing.Point(1134, 399);
-            this.inputTextBox16.Name = "inputTextBox16";
-            this.inputTextBox16.Size = new System.Drawing.Size(62, 25);
-            this.inputTextBox16.TabIndex = 2164;
-            this.inputTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox15._Division = ((short)(1));
+            this.displayTextBox15._DoubleWord = false;
+            this.displayTextBox15._EqBase = null;
+            this.displayTextBox15._MaxLimit = 999D;
+            this.displayTextBox15._MinLimit = 0D;
+            this.displayTextBox15._Multiplication = ((short)(1));
+            this.displayTextBox15._PlcDevice = "";
+            this.displayTextBox15.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox15.Location = new System.Drawing.Point(1134, 399);
+            this.displayTextBox15.Name = "displayTextBox15";
+            this.displayTextBox15.ReadOnly = true;
+            this.displayTextBox15.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox15.TabIndex = 2362;
+            this.displayTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox8
+            // displayTextBox16
             // 
-            this.inputTextBox8._Division = 1;
-            this.inputTextBox8._DoubleWord = false;
-            this.inputTextBox8._EqBase = null;
-            this.inputTextBox8._FloatNumber = false;
-            this.inputTextBox8._MaxLimit = 999D;
-            this.inputTextBox8._MinLimit = 0D;
-            this.inputTextBox8._Multiplication = 1;
-            this.inputTextBox8._NumberOnly = true;
-            this.inputTextBox8._PlcDevice = "";
-            this.inputTextBox8.BackColor = System.Drawing.Color.White;
-            this.inputTextBox8.Location = new System.Drawing.Point(457, 30);
-            this.inputTextBox8.Name = "inputTextBox8";
-            this.inputTextBox8.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox8.TabIndex = 2136;
-            this.inputTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox16._Division = ((short)(1));
+            this.displayTextBox16._DoubleWord = false;
+            this.displayTextBox16._EqBase = null;
+            this.displayTextBox16._MaxLimit = 999D;
+            this.displayTextBox16._MinLimit = 0D;
+            this.displayTextBox16._Multiplication = ((short)(1));
+            this.displayTextBox16._PlcDevice = "";
+            this.displayTextBox16.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox16.Location = new System.Drawing.Point(1134, 449);
+            this.displayTextBox16.Name = "displayTextBox16";
+            this.displayTextBox16.ReadOnly = true;
+            this.displayTextBox16.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox16.TabIndex = 2363;
+            this.displayTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox18
+            // displayTextBox17
             // 
-            this.inputTextBox18._Division = 1;
-            this.inputTextBox18._DoubleWord = false;
-            this.inputTextBox18._EqBase = null;
-            this.inputTextBox18._FloatNumber = false;
-            this.inputTextBox18._MaxLimit = 999D;
-            this.inputTextBox18._MinLimit = 0D;
-            this.inputTextBox18._Multiplication = 1;
-            this.inputTextBox18._NumberOnly = true;
-            this.inputTextBox18._PlcDevice = "";
-            this.inputTextBox18.BackColor = System.Drawing.Color.White;
-            this.inputTextBox18.Location = new System.Drawing.Point(1343, 371);
-            this.inputTextBox18.Name = "inputTextBox18";
-            this.inputTextBox18.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox18.TabIndex = 2166;
-            this.inputTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox17._Division = ((short)(1));
+            this.displayTextBox17._DoubleWord = false;
+            this.displayTextBox17._EqBase = null;
+            this.displayTextBox17._MaxLimit = 999D;
+            this.displayTextBox17._MinLimit = 0D;
+            this.displayTextBox17._Multiplication = ((short)(1));
+            this.displayTextBox17._PlcDevice = "";
+            this.displayTextBox17.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox17.Location = new System.Drawing.Point(644, 374);
+            this.displayTextBox17.Name = "displayTextBox17";
+            this.displayTextBox17.ReadOnly = true;
+            this.displayTextBox17.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox17.TabIndex = 2364;
+            this.displayTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox28
+            // displayTextBox18
             // 
-            this.inputTextBox28._Division = 1;
-            this.inputTextBox28._DoubleWord = false;
-            this.inputTextBox28._EqBase = null;
-            this.inputTextBox28._FloatNumber = false;
-            this.inputTextBox28._MaxLimit = 999D;
-            this.inputTextBox28._MinLimit = 0D;
-            this.inputTextBox28._Multiplication = 1;
-            this.inputTextBox28._NumberOnly = true;
-            this.inputTextBox28._PlcDevice = "";
-            this.inputTextBox28.BackColor = System.Drawing.Color.White;
-            this.inputTextBox28.Location = new System.Drawing.Point(739, 808);
-            this.inputTextBox28.Name = "inputTextBox28";
-            this.inputTextBox28.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox28.TabIndex = 2270;
-            this.inputTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox18._Division = ((short)(1));
+            this.displayTextBox18._DoubleWord = false;
+            this.displayTextBox18._EqBase = null;
+            this.displayTextBox18._MaxLimit = 999D;
+            this.displayTextBox18._MinLimit = 0D;
+            this.displayTextBox18._Multiplication = ((short)(1));
+            this.displayTextBox18._PlcDevice = "";
+            this.displayTextBox18.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox18.Location = new System.Drawing.Point(588, 477);
+            this.displayTextBox18.Name = "displayTextBox18";
+            this.displayTextBox18.ReadOnly = true;
+            this.displayTextBox18.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox18.TabIndex = 2365;
+            this.displayTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox9
+            // displayTextBox19
             // 
-            this.inputTextBox9._Division = 1;
-            this.inputTextBox9._DoubleWord = false;
-            this.inputTextBox9._EqBase = null;
-            this.inputTextBox9._FloatNumber = false;
-            this.inputTextBox9._MaxLimit = 999D;
-            this.inputTextBox9._MinLimit = 0D;
-            this.inputTextBox9._Multiplication = 1;
-            this.inputTextBox9._NumberOnly = true;
-            this.inputTextBox9._PlcDevice = "";
-            this.inputTextBox9.BackColor = System.Drawing.Color.White;
-            this.inputTextBox9.Location = new System.Drawing.Point(567, 30);
-            this.inputTextBox9.Name = "inputTextBox9";
-            this.inputTextBox9.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox9.TabIndex = 2142;
-            this.inputTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox19._Division = ((short)(1));
+            this.displayTextBox19._DoubleWord = false;
+            this.displayTextBox19._EqBase = null;
+            this.displayTextBox19._MaxLimit = 999D;
+            this.displayTextBox19._MinLimit = 0D;
+            this.displayTextBox19._Multiplication = ((short)(1));
+            this.displayTextBox19._PlcDevice = "";
+            this.displayTextBox19.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox19.Location = new System.Drawing.Point(442, 477);
+            this.displayTextBox19.Name = "displayTextBox19";
+            this.displayTextBox19.ReadOnly = true;
+            this.displayTextBox19.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox19.TabIndex = 2366;
+            this.displayTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox22
+            // displayTextBox20
             // 
-            this.inputTextBox22._Division = 1;
-            this.inputTextBox22._DoubleWord = false;
-            this.inputTextBox22._EqBase = null;
-            this.inputTextBox22._FloatNumber = false;
-            this.inputTextBox22._MaxLimit = 999D;
-            this.inputTextBox22._MinLimit = 0D;
-            this.inputTextBox22._Multiplication = 1;
-            this.inputTextBox22._NumberOnly = true;
-            this.inputTextBox22._PlcDevice = "";
-            this.inputTextBox22.BackColor = System.Drawing.Color.White;
-            this.inputTextBox22.Location = new System.Drawing.Point(306, 808);
-            this.inputTextBox22.Name = "inputTextBox22";
-            this.inputTextBox22.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox22.TabIndex = 2231;
-            this.inputTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox20._Division = ((short)(1));
+            this.displayTextBox20._DoubleWord = false;
+            this.displayTextBox20._EqBase = null;
+            this.displayTextBox20._MaxLimit = 999D;
+            this.displayTextBox20._MinLimit = 0D;
+            this.displayTextBox20._Multiplication = ((short)(1));
+            this.displayTextBox20._PlcDevice = "";
+            this.displayTextBox20.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox20.Location = new System.Drawing.Point(369, 378);
+            this.displayTextBox20.Name = "displayTextBox20";
+            this.displayTextBox20.ReadOnly = true;
+            this.displayTextBox20.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox20.TabIndex = 2367;
+            this.displayTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox29
+            // displayTextBox21
             // 
-            this.inputTextBox29._Division = 1;
-            this.inputTextBox29._DoubleWord = false;
-            this.inputTextBox29._EqBase = null;
-            this.inputTextBox29._FloatNumber = false;
-            this.inputTextBox29._MaxLimit = 999D;
-            this.inputTextBox29._MinLimit = 0D;
-            this.inputTextBox29._Multiplication = 1;
-            this.inputTextBox29._NumberOnly = true;
-            this.inputTextBox29._PlcDevice = "";
-            this.inputTextBox29.BackColor = System.Drawing.Color.White;
-            this.inputTextBox29.Location = new System.Drawing.Point(884, 794);
-            this.inputTextBox29.Name = "inputTextBox29";
-            this.inputTextBox29.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox29.TabIndex = 2298;
-            this.inputTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox21._Division = ((short)(1));
+            this.displayTextBox21._DoubleWord = false;
+            this.displayTextBox21._EqBase = null;
+            this.displayTextBox21._MaxLimit = 999D;
+            this.displayTextBox21._MinLimit = 0D;
+            this.displayTextBox21._Multiplication = ((short)(1));
+            this.displayTextBox21._PlcDevice = "";
+            this.displayTextBox21.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox21.Location = new System.Drawing.Point(514, 355);
+            this.displayTextBox21.Name = "displayTextBox21";
+            this.displayTextBox21.ReadOnly = true;
+            this.displayTextBox21.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox21.TabIndex = 2368;
+            this.displayTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox27
+            // displayTextBox22
             // 
-            this.inputTextBox27._Division = 1;
-            this.inputTextBox27._DoubleWord = false;
-            this.inputTextBox27._EqBase = null;
-            this.inputTextBox27._FloatNumber = false;
-            this.inputTextBox27._MaxLimit = 999D;
-            this.inputTextBox27._MinLimit = 0D;
-            this.inputTextBox27._Multiplication = 1;
-            this.inputTextBox27._NumberOnly = true;
-            this.inputTextBox27._PlcDevice = "";
-            this.inputTextBox27.BackColor = System.Drawing.Color.White;
-            this.inputTextBox27.Location = new System.Drawing.Point(590, 808);
-            this.inputTextBox27.Name = "inputTextBox27";
-            this.inputTextBox27.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox27.TabIndex = 2252;
-            this.inputTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox22._Division = ((short)(1));
+            this.displayTextBox22._DoubleWord = false;
+            this.displayTextBox22._EqBase = null;
+            this.displayTextBox22._MaxLimit = 999D;
+            this.displayTextBox22._MinLimit = 0D;
+            this.displayTextBox22._Multiplication = ((short)(1));
+            this.displayTextBox22._PlcDevice = "";
+            this.displayTextBox22.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox22.Location = new System.Drawing.Point(514, 399);
+            this.displayTextBox22.Name = "displayTextBox22";
+            this.displayTextBox22.ReadOnly = true;
+            this.displayTextBox22.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox22.TabIndex = 2369;
+            this.displayTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox4
+            // displayTextBox23
             // 
-            this.inputTextBox4._Division = 1;
-            this.inputTextBox4._DoubleWord = false;
-            this.inputTextBox4._EqBase = null;
-            this.inputTextBox4._FloatNumber = false;
-            this.inputTextBox4._MaxLimit = 999D;
-            this.inputTextBox4._MinLimit = 0D;
-            this.inputTextBox4._Multiplication = 1;
-            this.inputTextBox4._NumberOnly = true;
-            this.inputTextBox4._PlcDevice = "";
-            this.inputTextBox4.BackColor = System.Drawing.Color.White;
-            this.inputTextBox4.Location = new System.Drawing.Point(80, 356);
-            this.inputTextBox4.Name = "inputTextBox4";
-            this.inputTextBox4.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox4.TabIndex = 2130;
-            this.inputTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox23._Division = ((short)(1));
+            this.displayTextBox23._DoubleWord = false;
+            this.displayTextBox23._EqBase = null;
+            this.displayTextBox23._MaxLimit = 999D;
+            this.displayTextBox23._MinLimit = 0D;
+            this.displayTextBox23._Multiplication = ((short)(1));
+            this.displayTextBox23._PlcDevice = "";
+            this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox23.Location = new System.Drawing.Point(78, 354);
+            this.displayTextBox23.Name = "displayTextBox23";
+            this.displayTextBox23.ReadOnly = true;
+            this.displayTextBox23.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox23.TabIndex = 2370;
+            this.displayTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox15
+            // displayTextBox24
             // 
-            this.inputTextBox15._Division = 1;
-            this.inputTextBox15._DoubleWord = false;
-            this.inputTextBox15._EqBase = null;
-            this.inputTextBox15._FloatNumber = false;
-            this.inputTextBox15._MaxLimit = 999D;
-            this.inputTextBox15._MinLimit = 0D;
-            this.inputTextBox15._Multiplication = 1;
-            this.inputTextBox15._NumberOnly = true;
-            this.inputTextBox15._PlcDevice = "";
-            this.inputTextBox15.BackColor = System.Drawing.Color.White;
-            this.inputTextBox15.Location = new System.Drawing.Point(640, 374);
-            this.inputTextBox15.Name = "inputTextBox15";
-            this.inputTextBox15.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox15.TabIndex = 2163;
-            this.inputTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox24._Division = ((short)(1));
+            this.displayTextBox24._DoubleWord = false;
+            this.displayTextBox24._EqBase = null;
+            this.displayTextBox24._MaxLimit = 999D;
+            this.displayTextBox24._MinLimit = 0D;
+            this.displayTextBox24._Multiplication = ((short)(1));
+            this.displayTextBox24._PlcDevice = "";
+            this.displayTextBox24.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox24.Location = new System.Drawing.Point(78, 405);
+            this.displayTextBox24.Name = "displayTextBox24";
+            this.displayTextBox24.ReadOnly = true;
+            this.displayTextBox24.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox24.TabIndex = 2371;
+            this.displayTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox12
+            // displayTextBox25
             // 
-            this.inputTextBox12._Division = 1;
-            this.inputTextBox12._DoubleWord = false;
-            this.inputTextBox12._EqBase = null;
-            this.inputTextBox12._FloatNumber = false;
-            this.inputTextBox12._MaxLimit = 999D;
-            this.inputTextBox12._MinLimit = 0D;
-            this.inputTextBox12._Multiplication = 1;
-            this.inputTextBox12._NumberOnly = true;
-            this.inputTextBox12._PlcDevice = "";
-            this.inputTextBox12.BackColor = System.Drawing.Color.White;
-            this.inputTextBox12.Location = new System.Drawing.Point(514, 356);
-            this.inputTextBox12.Name = "inputTextBox12";
-            this.inputTextBox12.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox12.TabIndex = 2158;
-            this.inputTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox25._Division = ((short)(1));
+            this.displayTextBox25._DoubleWord = false;
+            this.displayTextBox25._EqBase = null;
+            this.displayTextBox25._MaxLimit = 999D;
+            this.displayTextBox25._MinLimit = 0D;
+            this.displayTextBox25._Multiplication = ((short)(1));
+            this.displayTextBox25._PlcDevice = "";
+            this.displayTextBox25.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox25.Location = new System.Drawing.Point(567, 30);
+            this.displayTextBox25.Name = "displayTextBox25";
+            this.displayTextBox25.ReadOnly = true;
+            this.displayTextBox25.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox25.TabIndex = 2372;
+            this.displayTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox7
+            // displayTextBox26
             // 
-            this.inputTextBox7._Division = 1;
-            this.inputTextBox7._DoubleWord = false;
-            this.inputTextBox7._EqBase = null;
-            this.inputTextBox7._FloatNumber = false;
-            this.inputTextBox7._MaxLimit = 999D;
-            this.inputTextBox7._MinLimit = 0D;
-            this.inputTextBox7._Multiplication = 1;
-            this.inputTextBox7._NumberOnly = true;
-            this.inputTextBox7._PlcDevice = "";
-            this.inputTextBox7.BackColor = System.Drawing.Color.White;
-            this.inputTextBox7.Location = new System.Drawing.Point(80, 404);
-            this.inputTextBox7.Name = "inputTextBox7";
-            this.inputTextBox7.Size = new System.Drawing.Size(60, 25);
-            this.inputTextBox7.TabIndex = 2131;
-            this.inputTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.displayTextBox26._Division = ((short)(1));
+            this.displayTextBox26._DoubleWord = false;
+            this.displayTextBox26._EqBase = null;
+            this.displayTextBox26._MaxLimit = 999D;
+            this.displayTextBox26._MinLimit = 0D;
+            this.displayTextBox26._Multiplication = ((short)(1));
+            this.displayTextBox26._PlcDevice = "";
+            this.displayTextBox26.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox26.Location = new System.Drawing.Point(456, 30);
+            this.displayTextBox26.Name = "displayTextBox26";
+            this.displayTextBox26.ReadOnly = true;
+            this.displayTextBox26.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox26.TabIndex = 2373;
+            this.displayTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmOverview_1st
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1475, 967);
+            this.Controls.Add(this.displayTextBox26);
+            this.Controls.Add(this.displayTextBox25);
+            this.Controls.Add(this.displayTextBox24);
+            this.Controls.Add(this.displayTextBox23);
+            this.Controls.Add(this.displayTextBox22);
+            this.Controls.Add(this.displayTextBox21);
+            this.Controls.Add(this.displayTextBox20);
+            this.Controls.Add(this.displayTextBox19);
+            this.Controls.Add(this.displayTextBox18);
+            this.Controls.Add(this.displayTextBox17);
+            this.Controls.Add(this.displayTextBox16);
+            this.Controls.Add(this.displayTextBox15);
+            this.Controls.Add(this.displayTextBox14);
+            this.Controls.Add(this.displayTextBox13);
+            this.Controls.Add(this.displayTextBox12);
+            this.Controls.Add(this.displayTextBox11);
+            this.Controls.Add(this.displayTextBox10);
+            this.Controls.Add(this.displayTextBox9);
+            this.Controls.Add(this.displayTextBox8);
+            this.Controls.Add(this.displayTextBox7);
+            this.Controls.Add(this.displayTextBox6);
+            this.Controls.Add(this.displayTextBox5);
             this.Controls.Add(this.polyCold5);
             this.Controls.Add(this.polyCold4);
             this.Controls.Add(this.polyCold3);
@@ -6603,34 +6594,12 @@
             this.Controls.Add(this.plcObject2);
             this.Controls.Add(this.plcObject7);
             this.Controls.Add(this.plcObject5);
-            this.Controls.Add(this.inputTextBox11);
-            this.Controls.Add(this.inputTextBox31);
-            this.Controls.Add(this.inputTextBox27);
-            this.Controls.Add(this.inputTextBox9);
-            this.Controls.Add(this.inputTextBox21);
-            this.Controls.Add(this.inputTextBox14);
-            this.Controls.Add(this.inputTextBox4);
-            this.Controls.Add(this.inputTextBox10);
-            this.Controls.Add(this.inputTextBox13);
-            this.Controls.Add(this.inputTextBox8);
-            this.Controls.Add(this.inputTextBox15);
-            this.Controls.Add(this.inputTextBox22);
-            this.Controls.Add(this.inputTextBox20);
-            this.Controls.Add(this.inputTextBox28);
-            this.Controls.Add(this.inputTextBox12);
-            this.Controls.Add(this.inputTextBox17);
-            this.Controls.Add(this.inputTextBox16);
-            this.Controls.Add(this.inputTextBox18);
-            this.Controls.Add(this.inputTextBox7);
-            this.Controls.Add(this.inputTextBox29);
-            this.Controls.Add(this.inputTextBox30);
-            this.Controls.Add(this.inputTextBox19);
             this.Controls.Add(this.GroupBox3);
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmOverview_1st";
-            this.Text = "frmOverview";
+            this.Text = "Overview";
             this.Shown += new System.EventHandler(this.frmOverview_Shown);
             this.GroupBox3.ResumeLayout(false);
             this.GroupBox3.PerformLayout();
@@ -6761,16 +6730,11 @@
         private System.Windows.Forms.Timer timerStatus;
         private components.Motor motor1;
         internal System.Windows.Forms.GroupBox GroupBox3;
-        private components.InputTextBox inputTextBox1;
         internal System.Windows.Forms.Label Label165;
         internal System.Windows.Forms.Label Label166;
         internal System.Windows.Forms.Label Label168;
         internal System.Windows.Forms.Label Label178;
         internal System.Windows.Forms.Label Label180;
-        private components.InputTextBox inputTextBox5;
-        private components.InputTextBox inputTextBox2;
-        private components.InputTextBox inputTextBox6;
-        private components.InputTextBox inputTextBox3;
         private components.PlcObject plcObject5;
         private components.PlcObject plcObject1;
         private components.PlcObject plcObject7;
@@ -6840,8 +6804,6 @@
         internal System.Windows.Forms.Label Label25;
         internal System.Windows.Forms.Label Label124;
         private System.Windows.Forms.Label label3;
-        private components.InputTextBox inputTextBox4;
-        private components.InputTextBox inputTextBox7;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape18;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape5;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape17;
@@ -6875,14 +6837,12 @@
         private System.Windows.Forms.Label label4;
         private components.TurboPump turboPump2;
         private System.Windows.Forms.Label label6;
-        private components.InputTextBox inputTextBox8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private components.TurboPump turboPump3;
         private System.Windows.Forms.Label label10;
         private components.PlcObject plcObject9;
         private System.Windows.Forms.Label label12;
-        private components.InputTextBox inputTextBox9;
         private components.PlcObject plcObject10;
         private System.Windows.Forms.Label label13;
         private components.PlcObject plcObject11;
@@ -6895,20 +6855,14 @@
         private components.TurboPump turboPump4;
         private System.Windows.Forms.Label label18;
         private components.PlcObject plcObject14;
-        private components.InputTextBox inputTextBox10;
-        private components.InputTextBox inputTextBox11;
-        private components.InputTextBox inputTextBox12;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape36;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape11;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape35;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape10;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape34;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape9;
-        private components.InputTextBox inputTextBox13;
-        private components.InputTextBox inputTextBox14;
         internal System.Windows.Forms.Label label19;
         internal System.Windows.Forms.Label label20;
-        private components.InputTextBox inputTextBox15;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape26;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape51;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape25;
@@ -6963,10 +6917,6 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape53;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape27;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape52;
-        private components.InputTextBox inputTextBox16;
-        private components.InputTextBox inputTextBox17;
-        private components.InputTextBox inputTextBox18;
-        private components.InputTextBox inputTextBox19;
         private components.PlcObject plcObject15;
         private components.PlcObject plcObject16;
         private components.PlcObject plcObject17;
@@ -7008,7 +6958,6 @@
         private components.PlcObject plcObject24;
         internal System.Windows.Forms.Label label39;
         internal System.Windows.Forms.Label label40;
-        private components.InputTextBox inputTextBox20;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private components.PlcObject plcObject25;
@@ -7037,7 +6986,6 @@
         private components.PlcObject plcObject32;
         private components.PlcObject plcObject33;
         internal System.Windows.Forms.Label label50;
-        private components.InputTextBox inputTextBox21;
         private components.PlcObject plcObject34;
         private components.TurboPump turboPump10;
         internal System.Windows.Forms.Label label51;
@@ -7053,12 +7001,7 @@
         internal System.Windows.Forms.Label label57;
         private components.PlcObject plcObject37;
         internal System.Windows.Forms.Label label58;
-        private components.InputTextBox inputTextBox22;
         internal System.Windows.Forms.GroupBox GroupBox2;
-        private components.InputTextBox inputTextBox26;
-        private components.InputTextBox inputTextBox25;
-        private components.InputTextBox inputTextBox24;
-        private components.InputTextBox inputTextBox23;
         internal System.Windows.Forms.Label label59;
         internal System.Windows.Forms.Label Label77;
         internal System.Windows.Forms.Label Label107;
@@ -7115,7 +7058,6 @@
         private System.Windows.Forms.Label label71;
         private components.PlcObject plcObject42;
         private components.PlcObject plcObject43;
-        private components.InputTextBox inputTextBox27;
         private components.PlcObject plcObject44;
         private components.TurboPump turboPump16;
         internal System.Windows.Forms.Label label72;
@@ -7133,7 +7075,6 @@
         private components.PlcObject plcObject48;
         private components.PlcObject plcObject49;
         internal System.Windows.Forms.Label label87;
-        private components.InputTextBox inputTextBox28;
         private components.PlcObject plcObject50;
         private components.TurboPump turboPump19;
         internal System.Windows.Forms.Label label88;
@@ -7161,7 +7102,6 @@
         private components.PlcObject plcObject57;
         private components.PlcObject plcObject58;
         internal System.Windows.Forms.Label label102;
-        private components.InputTextBox inputTextBox29;
         internal System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label104;
         private System.Windows.Forms.Label label105;
@@ -7169,7 +7109,6 @@
         private components.PlcObject plcObject60;
         private components.PlcObject plcObject61;
         internal System.Windows.Forms.Label label109;
-        private components.InputTextBox inputTextBox30;
         private components.PlcObject plcObject62;
         internal System.Windows.Forms.Label label110;
         private components.PlcObject plcObject63;
@@ -7187,7 +7126,6 @@
         private components.PlcObject plcObject67;
         internal System.Windows.Forms.Label label118;
         internal System.Windows.Forms.Label label119;
-        private components.InputTextBox inputTextBox31;
         private System.Windows.Forms.Label label120;
         private System.Windows.Forms.Label label121;
         private components.PlcObject plcObject68;
@@ -7217,5 +7155,36 @@
         private components.PolyCold polyCold5;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape127;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape126;
+        private components.DisplayTextBox displayTextBox31;
+        private components.DisplayTextBox displayTextBox30;
+        private components.DisplayTextBox displayTextBox29;
+        private components.DisplayTextBox displayTextBox28;
+        private components.DisplayTextBox displayTextBox27;
+        private components.DisplayTextBox displayTextBox4;
+        private components.DisplayTextBox displayTextBox3;
+        private components.DisplayTextBox displayTextBox2;
+        private components.DisplayTextBox displayTextBox1;
+        private components.DisplayTextBox displayTextBox5;
+        private components.DisplayTextBox displayTextBox6;
+        private components.DisplayTextBox displayTextBox7;
+        private components.DisplayTextBox displayTextBox8;
+        private components.DisplayTextBox displayTextBox9;
+        private components.DisplayTextBox displayTextBox10;
+        private components.DisplayTextBox displayTextBox11;
+        private components.DisplayTextBox displayTextBox12;
+        private components.DisplayTextBox displayTextBox13;
+        private components.DisplayTextBox displayTextBox14;
+        private components.DisplayTextBox displayTextBox15;
+        private components.DisplayTextBox displayTextBox16;
+        private components.DisplayTextBox displayTextBox17;
+        private components.DisplayTextBox displayTextBox18;
+        private components.DisplayTextBox displayTextBox19;
+        private components.DisplayTextBox displayTextBox20;
+        private components.DisplayTextBox displayTextBox21;
+        private components.DisplayTextBox displayTextBox22;
+        private components.DisplayTextBox displayTextBox23;
+        private components.DisplayTextBox displayTextBox24;
+        private components.DisplayTextBox displayTextBox25;
+        private components.DisplayTextBox displayTextBox26;
     }
 }

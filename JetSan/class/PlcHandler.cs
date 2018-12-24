@@ -50,7 +50,7 @@ namespace HyTemplate
         private FileLog flLog;
         private bool isConnect = false;
         private bool isChange = true;
-        private bool openFlag = false;
+        private bool needRetry = true;
         private frmLoading loading = new frmLoading();
 
         public bool IsConnect { get { return isConnect; } }
@@ -71,7 +71,10 @@ namespace HyTemplate
 
 #else
                 melPlcAccessor = new MelsecAccessor(iLogicalStationNumber);
-                melPlcAccessor.Open();
+                if (melPlcAccessor.Open() == 0)
+                {
+                    needRetry = false;
+                }
                 thExecute = new Thread(DoExecute);
                 thExecute.Start();
                 Thread.Sleep(100);
@@ -127,7 +130,18 @@ namespace HyTemplate
             isConnect = (melPlcAccessor.readDeviceBlock("W0100", 24, out values) == 0) ? true : false;
             isChange = (plcStatusReg != isConnect) ? true : false;
 
-            if (!isConnect && !openFlag)
+            if (isChange) //Update Signal
+            {
+                if (!isConnect)
+                {
+                    needRetry = true;
+                }
+                isChange = false;
+                TEvent data = new TEvent();
+                data.MessageName = ProxyMessage.MSG_PLC_CONNECT;
+                ecClient.SendMessage(data);
+            }
+            if (!isConnect && needRetry)
             {
                 loading.ShowDialog();
                 loading.Refresh();
@@ -135,20 +149,13 @@ namespace HyTemplate
                 {
                     if (melPlcAccessor.Open() == 0)
                     {
-                        openFlag = true;
-                    }
+                        needRetry = false;
+                    }                
                 }
                 else
                 {
-                    Thread.Sleep(300000); //5 min 要求重連一次
+                    Thread.Sleep(30); //5 min
                 }
-            }
-            if (isChange) //Update Signal
-            {
-                isChange = false;
-                TEvent data = new TEvent();
-                data.MessageName = ProxyMessage.MSG_PLC_CONNECT;
-                ecClient.SendMessage(data);
             }
         }
 

@@ -163,6 +163,16 @@ namespace HyTemplate.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap FV_W_H1 {
+            get {
+                object obj = ResourceManager.GetObject("FV_W_H1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap Heater_Off {
             get {
                 object obj = ResourceManager.GetObject("Heater_Off", resourceCulture);
