@@ -207,42 +207,6 @@
             this.Label57 = new System.Windows.Forms.Label();
             this.Label58 = new System.Windows.Forms.Label();
             this.Label52 = new System.Windows.Forms.Label();
-            this.plcObject36 = new HyTemplate.components.PlcObject();
-            this.plcObject35 = new HyTemplate.components.PlcObject();
-            this.plcObject34 = new HyTemplate.components.PlcObject();
-            this.plcObject33 = new HyTemplate.components.PlcObject();
-            this.plcObject32 = new HyTemplate.components.PlcObject();
-            this.plcObject31 = new HyTemplate.components.PlcObject();
-            this.plcObject30 = new HyTemplate.components.PlcObject();
-            this.plcObject29 = new HyTemplate.components.PlcObject();
-            this.plcObject28 = new HyTemplate.components.PlcObject();
-            this.plcObject27 = new HyTemplate.components.PlcObject();
-            this.plcObject26 = new HyTemplate.components.PlcObject();
-            this.plcObject25 = new HyTemplate.components.PlcObject();
-            this.plcObject24 = new HyTemplate.components.PlcObject();
-            this.plcObject23 = new HyTemplate.components.PlcObject();
-            this.plcObject22 = new HyTemplate.components.PlcObject();
-            this.plcObject21 = new HyTemplate.components.PlcObject();
-            this.plcObject20 = new HyTemplate.components.PlcObject();
-            this.plcObject19 = new HyTemplate.components.PlcObject();
-            this.plcObject18 = new HyTemplate.components.PlcObject();
-            this.plcObject17 = new HyTemplate.components.PlcObject();
-            this.plcObject16 = new HyTemplate.components.PlcObject();
-            this.plcObject15 = new HyTemplate.components.PlcObject();
-            this.plcObject13 = new HyTemplate.components.PlcObject();
-            this.plcObject12 = new HyTemplate.components.PlcObject();
-            this.plcObject11 = new HyTemplate.components.PlcObject();
-            this.plcObject10 = new HyTemplate.components.PlcObject();
-            this.plcObject9 = new HyTemplate.components.PlcObject();
-            this.plcObject8 = new HyTemplate.components.PlcObject();
-            this.plcObject7 = new HyTemplate.components.PlcObject();
-            this.plcObject6 = new HyTemplate.components.PlcObject();
-            this.plcObject5 = new HyTemplate.components.PlcObject();
-            this.plcObject4 = new HyTemplate.components.PlcObject();
-            this.plcObject3 = new HyTemplate.components.PlcObject();
-            this.plcObject2 = new HyTemplate.components.PlcObject();
-            this.plcObject1 = new HyTemplate.components.PlcObject();
-            this.plcObject14 = new HyTemplate.components.PlcObject();
             this.PictureBox40 = new System.Windows.Forms.PictureBox();
             this.PictureBox39 = new System.Windows.Forms.PictureBox();
             this.PictureBox38 = new System.Windows.Forms.PictureBox();
@@ -295,22 +259,6 @@
             this.Label207 = new System.Windows.Forms.Label();
             this.Label195 = new System.Windows.Forms.Label();
             this.Label194 = new System.Windows.Forms.Label();
-            this.displayTextBox23 = new HyTemplate.components.DisplayTextBox();
-            this.inputTextBox4 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox1 = new HyTemplate.components.InputTextBox();
-            this.displayTextBox1 = new HyTemplate.components.DisplayTextBox();
-            this.inputTextBox2 = new HyTemplate.components.InputTextBox();
-            this.displayTextBox2 = new HyTemplate.components.DisplayTextBox();
-            this.inputTextBox3 = new HyTemplate.components.InputTextBox();
-            this.displayTextBox3 = new HyTemplate.components.DisplayTextBox();
-            this.inputTextBox5 = new HyTemplate.components.InputTextBox();
-            this.displayTextBox4 = new HyTemplate.components.DisplayTextBox();
-            this.inputTextBox6 = new HyTemplate.components.InputTextBox();
-            this.displayTextBox5 = new HyTemplate.components.DisplayTextBox();
-            this.inputTextBox7 = new HyTemplate.components.InputTextBox();
-            this.displayTextBox6 = new HyTemplate.components.DisplayTextBox();
-            this.inputTextBox8 = new HyTemplate.components.InputTextBox();
-            this.displayTextBox7 = new HyTemplate.components.DisplayTextBox();
             this.Label240 = new System.Windows.Forms.Label();
             this.Label239 = new System.Windows.Forms.Label();
             this.Label238 = new System.Windows.Forms.Label();
@@ -334,30 +282,116 @@
             this.Label198 = new System.Windows.Forms.Label();
             this.Label196 = new System.Windows.Forms.Label();
             this.Label197 = new System.Windows.Forms.Label();
-            this.inputTextBox10 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox11 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox12 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox13 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox14 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox15 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox16 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox17 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox18 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox19 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox20 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox21 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox22 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox23 = new HyTemplate.components.InputTextBox();
+            this.TabControl1 = new System.Windows.Forms.TabControl();
+            this.TabPage1 = new System.Windows.Forms.TabPage();
+            this.TabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Label60 = new System.Windows.Forms.Label();
+            this.Label87 = new System.Windows.Forms.Label();
+            this.Label141 = new System.Windows.Forms.Label();
+            this.Label224 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.Label246 = new System.Windows.Forms.Label();
+            this.Label245 = new System.Windows.Forms.Label();
+            this.Label244 = new System.Windows.Forms.Label();
+            this.Label243 = new System.Windows.Forms.Label();
+            this.Label242 = new System.Windows.Forms.Label();
+            this.Label241 = new System.Windows.Forms.Label();
+            this.Label229 = new System.Windows.Forms.Label();
+            this.TxtRecipeName = new System.Windows.Forms.TextBox();
+            this.Label228 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Label83 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.plcObject33 = new HyTemplate.components.PlcObject();
+            this.plcObject32 = new HyTemplate.components.PlcObject();
+            this.plcObject30 = new HyTemplate.components.PlcObject();
+            this.plcObject29 = new HyTemplate.components.PlcObject();
+            this.plcObject27 = new HyTemplate.components.PlcObject();
+            this.plcObject26 = new HyTemplate.components.PlcObject();
+            this.plcObject20 = new HyTemplate.components.PlcObject();
+            this.plcObject19 = new HyTemplate.components.PlcObject();
+            this.plcObject18 = new HyTemplate.components.PlcObject();
+            this.plcObject17 = new HyTemplate.components.PlcObject();
+            this.plcObject16 = new HyTemplate.components.PlcObject();
+            this.plcObject15 = new HyTemplate.components.PlcObject();
+            this.plcObject13 = new HyTemplate.components.PlcObject();
+            this.plcObject12 = new HyTemplate.components.PlcObject();
+            this.plcObject11 = new HyTemplate.components.PlcObject();
+            this.plcObject10 = new HyTemplate.components.PlcObject();
+            this.plcObject9 = new HyTemplate.components.PlcObject();
+            this.plcObject8 = new HyTemplate.components.PlcObject();
+            this.plcObject14 = new HyTemplate.components.PlcObject();
+            this.inputTextBox7 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox6 = new HyTemplate.components.DisplayTextBox();
+            this.inputTextBox8 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox7 = new HyTemplate.components.DisplayTextBox();
+            this.inputTextBox5 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox4 = new HyTemplate.components.DisplayTextBox();
+            this.inputTextBox6 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox5 = new HyTemplate.components.DisplayTextBox();
+            this.inputTextBox2 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox2 = new HyTemplate.components.DisplayTextBox();
+            this.inputTextBox3 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox3 = new HyTemplate.components.DisplayTextBox();
+            this.inputTextBox1 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox1 = new HyTemplate.components.DisplayTextBox();
+            this.inputTextBox4 = new HyTemplate.components.InputTextBox();
+            this.displayTextBox23 = new HyTemplate.components.DisplayTextBox();
+            this.plcObject36 = new HyTemplate.components.PlcObject();
+            this.plcObject28 = new HyTemplate.components.PlcObject();
+            this.plcObject31 = new HyTemplate.components.PlcObject();
+            this.plcObject25 = new HyTemplate.components.PlcObject();
+            this.plcObject35 = new HyTemplate.components.PlcObject();
+            this.plcObject34 = new HyTemplate.components.PlcObject();
+            this.plcObject24 = new HyTemplate.components.PlcObject();
+            this.plcObject23 = new HyTemplate.components.PlcObject();
+            this.plcObject22 = new HyTemplate.components.PlcObject();
+            this.plcObject21 = new HyTemplate.components.PlcObject();
+            this.plcObject7 = new HyTemplate.components.PlcObject();
+            this.plcObject6 = new HyTemplate.components.PlcObject();
+            this.plcObject5 = new HyTemplate.components.PlcObject();
+            this.plcObject4 = new HyTemplate.components.PlcObject();
+            this.plcObject3 = new HyTemplate.components.PlcObject();
+            this.plcObject2 = new HyTemplate.components.PlcObject();
+            this.plcObject1 = new HyTemplate.components.PlcObject();
+            this.inputTextBox9 = new HyTemplate.components.InputTextBox();
             this.inputTextBox24 = new HyTemplate.components.InputTextBox();
             this.inputTextBox25 = new HyTemplate.components.InputTextBox();
             this.inputTextBox26 = new HyTemplate.components.InputTextBox();
             this.inputTextBox27 = new HyTemplate.components.InputTextBox();
             this.inputTextBox28 = new HyTemplate.components.InputTextBox();
-            this.TabControl1 = new System.Windows.Forms.TabControl();
-            this.TabPage1 = new System.Windows.Forms.TabPage();
-            this.TabPage2 = new System.Windows.Forms.TabPage();
-            this.inputTextBox9 = new HyTemplate.components.InputTextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.inputTextBox19 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox20 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox21 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox22 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox23 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox10 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox14 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox11 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox15 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox12 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox16 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox13 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox17 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox18 = new HyTemplate.components.InputTextBox();
             this.controlBtn7 = new HyTemplate.components.ControlBtn();
             this.controlBtn3 = new HyTemplate.components.ControlBtn();
             this.controlBtn4 = new HyTemplate.components.ControlBtn();
@@ -379,14 +413,6 @@
             this.inputTextBox31 = new HyTemplate.components.InputTextBox();
             this.inputTextBox30 = new HyTemplate.components.InputTextBox();
             this.inputTextBox29 = new HyTemplate.components.InputTextBox();
-            this.Label60 = new System.Windows.Forms.Label();
-            this.Label87 = new System.Windows.Forms.Label();
-            this.Label141 = new System.Windows.Forms.Label();
-            this.Label224 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.controlBtn15 = new HyTemplate.components.ControlBtn();
             this.controlBtn14 = new HyTemplate.components.ControlBtn();
             this.controlBtn13 = new HyTemplate.components.ControlBtn();
@@ -459,38 +485,12 @@
             this.inputTextBox44 = new HyTemplate.components.InputTextBox();
             this.inputTextBox43 = new HyTemplate.components.InputTextBox();
             this.inputTextBox42 = new HyTemplate.components.InputTextBox();
-            this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.inputTextBox41 = new HyTemplate.components.InputTextBox();
             this.inputTextBox40 = new HyTemplate.components.InputTextBox();
             this.inputTextBox39 = new HyTemplate.components.InputTextBox();
             this.inputTextBox38 = new HyTemplate.components.InputTextBox();
             this.inputTextBox37 = new HyTemplate.components.InputTextBox();
             this.inputTextBox36 = new HyTemplate.components.InputTextBox();
-            this.Label246 = new System.Windows.Forms.Label();
-            this.Label245 = new System.Windows.Forms.Label();
-            this.Label244 = new System.Windows.Forms.Label();
-            this.Label243 = new System.Windows.Forms.Label();
-            this.Label242 = new System.Windows.Forms.Label();
-            this.Label241 = new System.Windows.Forms.Label();
-            this.Label229 = new System.Windows.Forms.Label();
-            this.TxtRecipeName = new System.Windows.Forms.TextBox();
-            this.Label228 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Label83 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
-            this.Label7 = new System.Windows.Forms.Label();
-            this.Label6 = new System.Windows.Forms.Label();
-            this.Label5 = new System.Windows.Forms.Label();
             this.Panel10.SuspendLayout();
             this.Panel11.SuspendLayout();
             this.ADD_Panel_4.SuspendLayout();
@@ -503,42 +503,6 @@
             this.Panel2.SuspendLayout();
             this.Panel3.SuspendLayout();
             this.ADD_Panel_1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox38)).BeginInit();
@@ -585,6 +549,42 @@
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject1)).BeginInit();
             this.SuspendLayout();
             // 
             // timerStatus
@@ -2348,654 +2348,6 @@
             this.Label52.TabIndex = 2140;
             this.Label52.Text = "CA102";
             // 
-            // plcObject36
-            // 
-            this.plcObject36._CurrentStatus = false;
-            this.plcObject36._EqBase = null;
-            this.plcObject36._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject36._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject36._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject36._PlcDisplayOffDevice = null;
-            this.plcObject36._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject36._Reverse = false;
-            this.plcObject36.Image = ((System.Drawing.Image)(resources.GetObject("plcObject36.Image")));
-            this.plcObject36.Location = new System.Drawing.Point(998, 184);
-            this.plcObject36.Name = "plcObject36";
-            this.plcObject36.Size = new System.Drawing.Size(30, 36);
-            this.plcObject36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject36.TabIndex = 2350;
-            this.plcObject36.TabStop = false;
-            // 
-            // plcObject35
-            // 
-            this.plcObject35._CurrentStatus = false;
-            this.plcObject35._EqBase = null;
-            this.plcObject35._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject35._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject35._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject35._PlcDisplayOffDevice = null;
-            this.plcObject35._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject35._Reverse = false;
-            this.plcObject35.Image = ((System.Drawing.Image)(resources.GetObject("plcObject35.Image")));
-            this.plcObject35.Location = new System.Drawing.Point(1155, 255);
-            this.plcObject35.Name = "plcObject35";
-            this.plcObject35.Size = new System.Drawing.Size(30, 36);
-            this.plcObject35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject35.TabIndex = 2349;
-            this.plcObject35.TabStop = false;
-            // 
-            // plcObject34
-            // 
-            this.plcObject34._CurrentStatus = false;
-            this.plcObject34._EqBase = null;
-            this.plcObject34._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject34._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject34._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject34._PlcDisplayOffDevice = null;
-            this.plcObject34._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject34._Reverse = false;
-            this.plcObject34.Image = ((System.Drawing.Image)(resources.GetObject("plcObject34.Image")));
-            this.plcObject34.Location = new System.Drawing.Point(1074, 255);
-            this.plcObject34.Name = "plcObject34";
-            this.plcObject34.Size = new System.Drawing.Size(30, 36);
-            this.plcObject34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject34.TabIndex = 2348;
-            this.plcObject34.TabStop = false;
-            // 
-            // plcObject33
-            // 
-            this.plcObject33._CurrentStatus = false;
-            this.plcObject33._EqBase = null;
-            this.plcObject33._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject33._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject33._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject33._PlcDisplayOffDevice = null;
-            this.plcObject33._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject33._Reverse = false;
-            this.plcObject33.Image = ((System.Drawing.Image)(resources.GetObject("plcObject33.Image")));
-            this.plcObject33.Location = new System.Drawing.Point(858, 255);
-            this.plcObject33.Name = "plcObject33";
-            this.plcObject33.Size = new System.Drawing.Size(30, 36);
-            this.plcObject33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject33.TabIndex = 2347;
-            this.plcObject33.TabStop = false;
-            // 
-            // plcObject32
-            // 
-            this.plcObject32._CurrentStatus = false;
-            this.plcObject32._EqBase = null;
-            this.plcObject32._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject32._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject32._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject32._PlcDisplayOffDevice = null;
-            this.plcObject32._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject32._Reverse = false;
-            this.plcObject32.Image = ((System.Drawing.Image)(resources.GetObject("plcObject32.Image")));
-            this.plcObject32.Location = new System.Drawing.Point(777, 255);
-            this.plcObject32.Name = "plcObject32";
-            this.plcObject32.Size = new System.Drawing.Size(30, 36);
-            this.plcObject32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject32.TabIndex = 2346;
-            this.plcObject32.TabStop = false;
-            // 
-            // plcObject31
-            // 
-            this.plcObject31._CurrentStatus = false;
-            this.plcObject31._EqBase = null;
-            this.plcObject31._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject31._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject31._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject31._PlcDisplayOffDevice = null;
-            this.plcObject31._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject31._Reverse = false;
-            this.plcObject31.Image = ((System.Drawing.Image)(resources.GetObject("plcObject31.Image")));
-            this.plcObject31.Location = new System.Drawing.Point(702, 184);
-            this.plcObject31.Name = "plcObject31";
-            this.plcObject31.Size = new System.Drawing.Size(30, 36);
-            this.plcObject31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject31.TabIndex = 2345;
-            this.plcObject31.TabStop = false;
-            // 
-            // plcObject30
-            // 
-            this.plcObject30._CurrentStatus = false;
-            this.plcObject30._EqBase = null;
-            this.plcObject30._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject30._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject30._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject30._PlcDisplayOffDevice = null;
-            this.plcObject30._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject30._Reverse = false;
-            this.plcObject30.Image = ((System.Drawing.Image)(resources.GetObject("plcObject30.Image")));
-            this.plcObject30.Location = new System.Drawing.Point(550, 255);
-            this.plcObject30.Name = "plcObject30";
-            this.plcObject30.Size = new System.Drawing.Size(30, 36);
-            this.plcObject30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject30.TabIndex = 2344;
-            this.plcObject30.TabStop = false;
-            // 
-            // plcObject29
-            // 
-            this.plcObject29._CurrentStatus = false;
-            this.plcObject29._EqBase = null;
-            this.plcObject29._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject29._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject29._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject29._PlcDisplayOffDevice = null;
-            this.plcObject29._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject29._Reverse = false;
-            this.plcObject29.Image = ((System.Drawing.Image)(resources.GetObject("plcObject29.Image")));
-            this.plcObject29.Location = new System.Drawing.Point(469, 255);
-            this.plcObject29.Name = "plcObject29";
-            this.plcObject29.Size = new System.Drawing.Size(30, 36);
-            this.plcObject29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject29.TabIndex = 2343;
-            this.plcObject29.TabStop = false;
-            // 
-            // plcObject28
-            // 
-            this.plcObject28._CurrentStatus = false;
-            this.plcObject28._EqBase = null;
-            this.plcObject28._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject28._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject28._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject28._PlcDisplayOffDevice = null;
-            this.plcObject28._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject28._Reverse = false;
-            this.plcObject28.Image = ((System.Drawing.Image)(resources.GetObject("plcObject28.Image")));
-            this.plcObject28.Location = new System.Drawing.Point(390, 184);
-            this.plcObject28.Name = "plcObject28";
-            this.plcObject28.Size = new System.Drawing.Size(30, 36);
-            this.plcObject28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject28.TabIndex = 2342;
-            this.plcObject28.TabStop = false;
-            // 
-            // plcObject27
-            // 
-            this.plcObject27._CurrentStatus = false;
-            this.plcObject27._EqBase = null;
-            this.plcObject27._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject27._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject27._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject27._PlcDisplayOffDevice = null;
-            this.plcObject27._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject27._Reverse = false;
-            this.plcObject27.Image = ((System.Drawing.Image)(resources.GetObject("plcObject27.Image")));
-            this.plcObject27.Location = new System.Drawing.Point(230, 255);
-            this.plcObject27.Name = "plcObject27";
-            this.plcObject27.Size = new System.Drawing.Size(30, 36);
-            this.plcObject27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject27.TabIndex = 2341;
-            this.plcObject27.TabStop = false;
-            // 
-            // plcObject26
-            // 
-            this.plcObject26._CurrentStatus = false;
-            this.plcObject26._EqBase = null;
-            this.plcObject26._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject26._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject26._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject26._PlcDisplayOffDevice = null;
-            this.plcObject26._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject26._Reverse = false;
-            this.plcObject26.Image = ((System.Drawing.Image)(resources.GetObject("plcObject26.Image")));
-            this.plcObject26.Location = new System.Drawing.Point(149, 255);
-            this.plcObject26.Name = "plcObject26";
-            this.plcObject26.Size = new System.Drawing.Size(30, 36);
-            this.plcObject26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject26.TabIndex = 2340;
-            this.plcObject26.TabStop = false;
-            // 
-            // plcObject25
-            // 
-            this.plcObject25._CurrentStatus = false;
-            this.plcObject25._EqBase = null;
-            this.plcObject25._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject25._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject25._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject25._PlcDisplayOffDevice = null;
-            this.plcObject25._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject25._Reverse = false;
-            this.plcObject25.Image = ((System.Drawing.Image)(resources.GetObject("plcObject25.Image")));
-            this.plcObject25.Location = new System.Drawing.Point(74, 184);
-            this.plcObject25.Name = "plcObject25";
-            this.plcObject25.Size = new System.Drawing.Size(30, 36);
-            this.plcObject25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject25.TabIndex = 2339;
-            this.plcObject25.TabStop = false;
-            // 
-            // plcObject24
-            // 
-            this.plcObject24._CurrentStatus = false;
-            this.plcObject24._EqBase = null;
-            this.plcObject24._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject24._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject24._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject24._PlcDisplayOffDevice = null;
-            this.plcObject24._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject24._Reverse = false;
-            this.plcObject24.Image = ((System.Drawing.Image)(resources.GetObject("plcObject24.Image")));
-            this.plcObject24.Location = new System.Drawing.Point(1196, 108);
-            this.plcObject24.Name = "plcObject24";
-            this.plcObject24.Size = new System.Drawing.Size(30, 36);
-            this.plcObject24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject24.TabIndex = 2338;
-            this.plcObject24.TabStop = false;
-            // 
-            // plcObject23
-            // 
-            this.plcObject23._CurrentStatus = false;
-            this.plcObject23._EqBase = null;
-            this.plcObject23._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject23._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject23._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject23._PlcDisplayOffDevice = null;
-            this.plcObject23._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject23._Reverse = false;
-            this.plcObject23.Image = ((System.Drawing.Image)(resources.GetObject("plcObject23.Image")));
-            this.plcObject23.Location = new System.Drawing.Point(1140, 108);
-            this.plcObject23.Name = "plcObject23";
-            this.plcObject23.Size = new System.Drawing.Size(30, 36);
-            this.plcObject23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject23.TabIndex = 2337;
-            this.plcObject23.TabStop = false;
-            // 
-            // plcObject22
-            // 
-            this.plcObject22._CurrentStatus = false;
-            this.plcObject22._EqBase = null;
-            this.plcObject22._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject22._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject22._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject22._PlcDisplayOffDevice = null;
-            this.plcObject22._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject22._Reverse = false;
-            this.plcObject22.Image = ((System.Drawing.Image)(resources.GetObject("plcObject22.Image")));
-            this.plcObject22.Location = new System.Drawing.Point(1096, 108);
-            this.plcObject22.Name = "plcObject22";
-            this.plcObject22.Size = new System.Drawing.Size(30, 36);
-            this.plcObject22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject22.TabIndex = 2336;
-            this.plcObject22.TabStop = false;
-            // 
-            // plcObject21
-            // 
-            this.plcObject21._CurrentStatus = false;
-            this.plcObject21._EqBase = null;
-            this.plcObject21._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject21._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject21._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject21._PlcDisplayOffDevice = null;
-            this.plcObject21._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject21._Reverse = false;
-            this.plcObject21.Image = ((System.Drawing.Image)(resources.GetObject("plcObject21.Image")));
-            this.plcObject21.Location = new System.Drawing.Point(1036, 108);
-            this.plcObject21.Name = "plcObject21";
-            this.plcObject21.Size = new System.Drawing.Size(30, 36);
-            this.plcObject21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject21.TabIndex = 2335;
-            this.plcObject21.TabStop = false;
-            // 
-            // plcObject20
-            // 
-            this.plcObject20._CurrentStatus = false;
-            this.plcObject20._EqBase = null;
-            this.plcObject20._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject20._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject20._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject20._PlcDisplayOffDevice = null;
-            this.plcObject20._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject20._Reverse = false;
-            this.plcObject20.Image = ((System.Drawing.Image)(resources.GetObject("plcObject20.Image")));
-            this.plcObject20.Location = new System.Drawing.Point(900, 108);
-            this.plcObject20.Name = "plcObject20";
-            this.plcObject20.Size = new System.Drawing.Size(30, 36);
-            this.plcObject20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject20.TabIndex = 2334;
-            this.plcObject20.TabStop = false;
-            // 
-            // plcObject19
-            // 
-            this.plcObject19._CurrentStatus = false;
-            this.plcObject19._EqBase = null;
-            this.plcObject19._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject19._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject19._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject19._PlcDisplayOffDevice = null;
-            this.plcObject19._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject19._Reverse = false;
-            this.plcObject19.Image = ((System.Drawing.Image)(resources.GetObject("plcObject19.Image")));
-            this.plcObject19.Location = new System.Drawing.Point(836, 108);
-            this.plcObject19.Name = "plcObject19";
-            this.plcObject19.Size = new System.Drawing.Size(30, 36);
-            this.plcObject19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject19.TabIndex = 2333;
-            this.plcObject19.TabStop = false;
-            // 
-            // plcObject18
-            // 
-            this.plcObject18._CurrentStatus = false;
-            this.plcObject18._EqBase = null;
-            this.plcObject18._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject18._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject18._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject18._PlcDisplayOffDevice = null;
-            this.plcObject18._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject18._Reverse = false;
-            this.plcObject18.Image = ((System.Drawing.Image)(resources.GetObject("plcObject18.Image")));
-            this.plcObject18.Location = new System.Drawing.Point(799, 108);
-            this.plcObject18.Name = "plcObject18";
-            this.plcObject18.Size = new System.Drawing.Size(30, 36);
-            this.plcObject18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject18.TabIndex = 2332;
-            this.plcObject18.TabStop = false;
-            // 
-            // plcObject17
-            // 
-            this.plcObject17._CurrentStatus = false;
-            this.plcObject17._EqBase = null;
-            this.plcObject17._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject17._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject17._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject17._PlcDisplayOffDevice = null;
-            this.plcObject17._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject17._Reverse = false;
-            this.plcObject17.Image = ((System.Drawing.Image)(resources.GetObject("plcObject17.Image")));
-            this.plcObject17.Location = new System.Drawing.Point(739, 108);
-            this.plcObject17.Name = "plcObject17";
-            this.plcObject17.Size = new System.Drawing.Size(30, 36);
-            this.plcObject17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject17.TabIndex = 2331;
-            this.plcObject17.TabStop = false;
-            // 
-            // plcObject16
-            // 
-            this.plcObject16._CurrentStatus = false;
-            this.plcObject16._EqBase = null;
-            this.plcObject16._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject16._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject16._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject16._PlcDisplayOffDevice = null;
-            this.plcObject16._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject16._Reverse = false;
-            this.plcObject16.Image = ((System.Drawing.Image)(resources.GetObject("plcObject16.Image")));
-            this.plcObject16.Location = new System.Drawing.Point(592, 108);
-            this.plcObject16.Name = "plcObject16";
-            this.plcObject16.Size = new System.Drawing.Size(30, 36);
-            this.plcObject16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject16.TabIndex = 2330;
-            this.plcObject16.TabStop = false;
-            // 
-            // plcObject15
-            // 
-            this.plcObject15._CurrentStatus = false;
-            this.plcObject15._EqBase = null;
-            this.plcObject15._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject15._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject15._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject15._PlcDisplayOffDevice = null;
-            this.plcObject15._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject15._Reverse = false;
-            this.plcObject15.Image = ((System.Drawing.Image)(resources.GetObject("plcObject15.Image")));
-            this.plcObject15.Location = new System.Drawing.Point(535, 108);
-            this.plcObject15.Name = "plcObject15";
-            this.plcObject15.Size = new System.Drawing.Size(30, 36);
-            this.plcObject15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject15.TabIndex = 2329;
-            this.plcObject15.TabStop = false;
-            // 
-            // plcObject13
-            // 
-            this.plcObject13._CurrentStatus = false;
-            this.plcObject13._EqBase = null;
-            this.plcObject13._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject13._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject13._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject13._PlcDisplayOffDevice = null;
-            this.plcObject13._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject13._Reverse = false;
-            this.plcObject13.Image = ((System.Drawing.Image)(resources.GetObject("plcObject13.Image")));
-            this.plcObject13.Location = new System.Drawing.Point(491, 108);
-            this.plcObject13.Name = "plcObject13";
-            this.plcObject13.Size = new System.Drawing.Size(30, 36);
-            this.plcObject13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject13.TabIndex = 2328;
-            this.plcObject13.TabStop = false;
-            // 
-            // plcObject12
-            // 
-            this.plcObject12._CurrentStatus = false;
-            this.plcObject12._EqBase = null;
-            this.plcObject12._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject12._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject12._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject12._PlcDisplayOffDevice = null;
-            this.plcObject12._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject12._Reverse = false;
-            this.plcObject12.Image = ((System.Drawing.Image)(resources.GetObject("plcObject12.Image")));
-            this.plcObject12.Location = new System.Drawing.Point(430, 108);
-            this.plcObject12.Name = "plcObject12";
-            this.plcObject12.Size = new System.Drawing.Size(30, 36);
-            this.plcObject12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject12.TabIndex = 2327;
-            this.plcObject12.TabStop = false;
-            // 
-            // plcObject11
-            // 
-            this.plcObject11._CurrentStatus = false;
-            this.plcObject11._EqBase = null;
-            this.plcObject11._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject11._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject11._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject11._PlcDisplayOffDevice = null;
-            this.plcObject11._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject11._Reverse = false;
-            this.plcObject11.Image = ((System.Drawing.Image)(resources.GetObject("plcObject11.Image")));
-            this.plcObject11.Location = new System.Drawing.Point(271, 108);
-            this.plcObject11.Name = "plcObject11";
-            this.plcObject11.Size = new System.Drawing.Size(30, 36);
-            this.plcObject11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject11.TabIndex = 2326;
-            this.plcObject11.TabStop = false;
-            // 
-            // plcObject10
-            // 
-            this.plcObject10._CurrentStatus = false;
-            this.plcObject10._EqBase = null;
-            this.plcObject10._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject10._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject10._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject10._PlcDisplayOffDevice = null;
-            this.plcObject10._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject10._Reverse = false;
-            this.plcObject10.Image = ((System.Drawing.Image)(resources.GetObject("plcObject10.Image")));
-            this.plcObject10.Location = new System.Drawing.Point(208, 108);
-            this.plcObject10.Name = "plcObject10";
-            this.plcObject10.Size = new System.Drawing.Size(30, 36);
-            this.plcObject10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject10.TabIndex = 2325;
-            this.plcObject10.TabStop = false;
-            // 
-            // plcObject9
-            // 
-            this.plcObject9._CurrentStatus = false;
-            this.plcObject9._EqBase = null;
-            this.plcObject9._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject9._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject9._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject9._PlcDisplayOffDevice = null;
-            this.plcObject9._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject9._Reverse = false;
-            this.plcObject9.Image = ((System.Drawing.Image)(resources.GetObject("plcObject9.Image")));
-            this.plcObject9.Location = new System.Drawing.Point(171, 108);
-            this.plcObject9.Name = "plcObject9";
-            this.plcObject9.Size = new System.Drawing.Size(30, 36);
-            this.plcObject9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject9.TabIndex = 2324;
-            this.plcObject9.TabStop = false;
-            // 
-            // plcObject8
-            // 
-            this.plcObject8._CurrentStatus = false;
-            this.plcObject8._EqBase = null;
-            this.plcObject8._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject8._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject8._PlcDevice = "PLC_DO_VALVE_2";
-            this.plcObject8._PlcDisplayOffDevice = null;
-            this.plcObject8._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
-            this.plcObject8._Reverse = false;
-            this.plcObject8.Image = ((System.Drawing.Image)(resources.GetObject("plcObject8.Image")));
-            this.plcObject8.Location = new System.Drawing.Point(112, 108);
-            this.plcObject8.Name = "plcObject8";
-            this.plcObject8.Size = new System.Drawing.Size(30, 36);
-            this.plcObject8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject8.TabIndex = 2323;
-            this.plcObject8.TabStop = false;
-            // 
-            // plcObject7
-            // 
-            this.plcObject7._CurrentStatus = false;
-            this.plcObject7._EqBase = null;
-            this.plcObject7._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject7._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject7._PlcDevice = "PLC_DO_MFC_1";
-            this.plcObject7._PlcDisplayOffDevice = null;
-            this.plcObject7._PlcDisplayOnDevice = "PLC_DO_MFC_1";
-            this.plcObject7._Reverse = false;
-            this.plcObject7.Image = ((System.Drawing.Image)(resources.GetObject("plcObject7.Image")));
-            this.plcObject7.Location = new System.Drawing.Point(1168, 30);
-            this.plcObject7.Name = "plcObject7";
-            this.plcObject7.Size = new System.Drawing.Size(24, 33);
-            this.plcObject7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject7.TabIndex = 2322;
-            this.plcObject7.TabStop = false;
-            // 
-            // plcObject6
-            // 
-            this.plcObject6._CurrentStatus = false;
-            this.plcObject6._EqBase = null;
-            this.plcObject6._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject6._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject6._PlcDevice = "PLC_DO_MFC_1";
-            this.plcObject6._PlcDisplayOffDevice = null;
-            this.plcObject6._PlcDisplayOnDevice = "PLC_DO_MFC_1";
-            this.plcObject6._Reverse = false;
-            this.plcObject6.Image = ((System.Drawing.Image)(resources.GetObject("plcObject6.Image")));
-            this.plcObject6.Location = new System.Drawing.Point(1070, 30);
-            this.plcObject6.Name = "plcObject6";
-            this.plcObject6.Size = new System.Drawing.Size(24, 33);
-            this.plcObject6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject6.TabIndex = 2321;
-            this.plcObject6.TabStop = false;
-            // 
-            // plcObject5
-            // 
-            this.plcObject5._CurrentStatus = false;
-            this.plcObject5._EqBase = null;
-            this.plcObject5._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject5._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject5._PlcDevice = "PLC_DO_MFC_1";
-            this.plcObject5._PlcDisplayOffDevice = null;
-            this.plcObject5._PlcDisplayOnDevice = "PLC_DO_MFC_1";
-            this.plcObject5._Reverse = false;
-            this.plcObject5.Image = ((System.Drawing.Image)(resources.GetObject("plcObject5.Image")));
-            this.plcObject5.Location = new System.Drawing.Point(871, 30);
-            this.plcObject5.Name = "plcObject5";
-            this.plcObject5.Size = new System.Drawing.Size(24, 33);
-            this.plcObject5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject5.TabIndex = 2320;
-            this.plcObject5.TabStop = false;
-            // 
-            // plcObject4
-            // 
-            this.plcObject4._CurrentStatus = false;
-            this.plcObject4._EqBase = null;
-            this.plcObject4._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject4._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject4._PlcDevice = "PLC_DO_MFC_1";
-            this.plcObject4._PlcDisplayOffDevice = null;
-            this.plcObject4._PlcDisplayOnDevice = "PLC_DO_MFC_1";
-            this.plcObject4._Reverse = false;
-            this.plcObject4.Image = ((System.Drawing.Image)(resources.GetObject("plcObject4.Image")));
-            this.plcObject4.Location = new System.Drawing.Point(776, 30);
-            this.plcObject4.Name = "plcObject4";
-            this.plcObject4.Size = new System.Drawing.Size(24, 33);
-            this.plcObject4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject4.TabIndex = 2319;
-            this.plcObject4.TabStop = false;
-            // 
-            // plcObject3
-            // 
-            this.plcObject3._CurrentStatus = false;
-            this.plcObject3._EqBase = null;
-            this.plcObject3._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject3._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject3._PlcDevice = "PLC_DO_MFC_1";
-            this.plcObject3._PlcDisplayOffDevice = null;
-            this.plcObject3._PlcDisplayOnDevice = "PLC_DO_MFC_1";
-            this.plcObject3._Reverse = false;
-            this.plcObject3.Image = ((System.Drawing.Image)(resources.GetObject("plcObject3.Image")));
-            this.plcObject3.Location = new System.Drawing.Point(563, 30);
-            this.plcObject3.Name = "plcObject3";
-            this.plcObject3.Size = new System.Drawing.Size(24, 33);
-            this.plcObject3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject3.TabIndex = 2318;
-            this.plcObject3.TabStop = false;
-            // 
-            // plcObject2
-            // 
-            this.plcObject2._CurrentStatus = false;
-            this.plcObject2._EqBase = null;
-            this.plcObject2._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject2._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject2._PlcDevice = "PLC_DO_MFC_1";
-            this.plcObject2._PlcDisplayOffDevice = null;
-            this.plcObject2._PlcDisplayOnDevice = "PLC_DO_MFC_1";
-            this.plcObject2._Reverse = false;
-            this.plcObject2.Image = ((System.Drawing.Image)(resources.GetObject("plcObject2.Image")));
-            this.plcObject2.Location = new System.Drawing.Point(465, 30);
-            this.plcObject2.Name = "plcObject2";
-            this.plcObject2.Size = new System.Drawing.Size(24, 33);
-            this.plcObject2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject2.TabIndex = 2317;
-            this.plcObject2.TabStop = false;
-            // 
-            // plcObject1
-            // 
-            this.plcObject1._CurrentStatus = false;
-            this.plcObject1._EqBase = null;
-            this.plcObject1._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject1._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject1._PlcDevice = "PLC_DO_MFC_1";
-            this.plcObject1._PlcDisplayOffDevice = null;
-            this.plcObject1._PlcDisplayOnDevice = "PLC_DO_MFC_1";
-            this.plcObject1._Reverse = false;
-            this.plcObject1.Image = ((System.Drawing.Image)(resources.GetObject("plcObject1.Image")));
-            this.plcObject1.Location = new System.Drawing.Point(243, 28);
-            this.plcObject1.Name = "plcObject1";
-            this.plcObject1.Size = new System.Drawing.Size(24, 33);
-            this.plcObject1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject1.TabIndex = 2316;
-            this.plcObject1.TabStop = false;
-            // 
-            // plcObject14
-            // 
-            this.plcObject14._CurrentStatus = false;
-            this.plcObject14._EqBase = null;
-            this.plcObject14._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
-            this.plcObject14._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject14._PlcDevice = "PLC_DO_MFC_1";
-            this.plcObject14._PlcDisplayOffDevice = null;
-            this.plcObject14._PlcDisplayOnDevice = "PLC_DO_MFC_1";
-            this.plcObject14._Reverse = false;
-            this.plcObject14.Image = ((System.Drawing.Image)(resources.GetObject("plcObject14.Image")));
-            this.plcObject14.Location = new System.Drawing.Point(145, 30);
-            this.plcObject14.Name = "plcObject14";
-            this.plcObject14.Size = new System.Drawing.Size(24, 33);
-            this.plcObject14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plcObject14.TabIndex = 2315;
-            this.plcObject14.TabStop = false;
-            // 
             // PictureBox40
             // 
             this.PictureBox40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -3500,286 +2852,6 @@
             this.Label194.TabIndex = 2355;
             this.Label194.Text = "Ar (500sccm)";
             // 
-            // displayTextBox23
-            // 
-            this.displayTextBox23._Division = ((short)(1));
-            this.displayTextBox23._DoubleWord = false;
-            this.displayTextBox23._EqBase = null;
-            this.displayTextBox23._MaxLimit = 999D;
-            this.displayTextBox23._MinLimit = 0D;
-            this.displayTextBox23._Multiplication = ((short)(1));
-            this.displayTextBox23._PlcDevice = "";
-            this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox23.Location = new System.Drawing.Point(152, 586);
-            this.displayTextBox23.Name = "displayTextBox23";
-            this.displayTextBox23.ReadOnly = true;
-            this.displayTextBox23.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox23.TabIndex = 2371;
-            this.displayTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox4
-            // 
-            this.inputTextBox4._Division = 1;
-            this.inputTextBox4._DoubleWord = false;
-            this.inputTextBox4._EqBase = null;
-            this.inputTextBox4._FloatNumber = false;
-            this.inputTextBox4._MaxLimit = 999D;
-            this.inputTextBox4._MinLimit = 0D;
-            this.inputTextBox4._Multiplication = 1;
-            this.inputTextBox4._NumberOnly = true;
-            this.inputTextBox4._PlcDevice = "";
-            this.inputTextBox4.BackColor = System.Drawing.Color.White;
-            this.inputTextBox4.Location = new System.Drawing.Point(216, 586);
-            this.inputTextBox4.Name = "inputTextBox4";
-            this.inputTextBox4.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox4.TabIndex = 2372;
-            this.inputTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox1
-            // 
-            this.inputTextBox1._Division = 1;
-            this.inputTextBox1._DoubleWord = false;
-            this.inputTextBox1._EqBase = null;
-            this.inputTextBox1._FloatNumber = false;
-            this.inputTextBox1._MaxLimit = 999D;
-            this.inputTextBox1._MinLimit = 0D;
-            this.inputTextBox1._Multiplication = 1;
-            this.inputTextBox1._NumberOnly = true;
-            this.inputTextBox1._PlcDevice = "";
-            this.inputTextBox1.BackColor = System.Drawing.Color.White;
-            this.inputTextBox1.Location = new System.Drawing.Point(216, 620);
-            this.inputTextBox1.Name = "inputTextBox1";
-            this.inputTextBox1.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox1.TabIndex = 2374;
-            this.inputTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox1
-            // 
-            this.displayTextBox1._Division = ((short)(1));
-            this.displayTextBox1._DoubleWord = false;
-            this.displayTextBox1._EqBase = null;
-            this.displayTextBox1._MaxLimit = 999D;
-            this.displayTextBox1._MinLimit = 0D;
-            this.displayTextBox1._Multiplication = ((short)(1));
-            this.displayTextBox1._PlcDevice = "";
-            this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox1.Location = new System.Drawing.Point(152, 620);
-            this.displayTextBox1.Name = "displayTextBox1";
-            this.displayTextBox1.ReadOnly = true;
-            this.displayTextBox1.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox1.TabIndex = 2373;
-            this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox2
-            // 
-            this.inputTextBox2._Division = 1;
-            this.inputTextBox2._DoubleWord = false;
-            this.inputTextBox2._EqBase = null;
-            this.inputTextBox2._FloatNumber = false;
-            this.inputTextBox2._MaxLimit = 999D;
-            this.inputTextBox2._MinLimit = 0D;
-            this.inputTextBox2._Multiplication = 1;
-            this.inputTextBox2._NumberOnly = true;
-            this.inputTextBox2._PlcDevice = "";
-            this.inputTextBox2.BackColor = System.Drawing.Color.White;
-            this.inputTextBox2.Location = new System.Drawing.Point(530, 620);
-            this.inputTextBox2.Name = "inputTextBox2";
-            this.inputTextBox2.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox2.TabIndex = 2378;
-            this.inputTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox2
-            // 
-            this.displayTextBox2._Division = ((short)(1));
-            this.displayTextBox2._DoubleWord = false;
-            this.displayTextBox2._EqBase = null;
-            this.displayTextBox2._MaxLimit = 999D;
-            this.displayTextBox2._MinLimit = 0D;
-            this.displayTextBox2._Multiplication = ((short)(1));
-            this.displayTextBox2._PlcDevice = "";
-            this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox2.Location = new System.Drawing.Point(466, 620);
-            this.displayTextBox2.Name = "displayTextBox2";
-            this.displayTextBox2.ReadOnly = true;
-            this.displayTextBox2.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox2.TabIndex = 2377;
-            this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox3
-            // 
-            this.inputTextBox3._Division = 1;
-            this.inputTextBox3._DoubleWord = false;
-            this.inputTextBox3._EqBase = null;
-            this.inputTextBox3._FloatNumber = false;
-            this.inputTextBox3._MaxLimit = 999D;
-            this.inputTextBox3._MinLimit = 0D;
-            this.inputTextBox3._Multiplication = 1;
-            this.inputTextBox3._NumberOnly = true;
-            this.inputTextBox3._PlcDevice = "";
-            this.inputTextBox3.BackColor = System.Drawing.Color.White;
-            this.inputTextBox3.Location = new System.Drawing.Point(530, 586);
-            this.inputTextBox3.Name = "inputTextBox3";
-            this.inputTextBox3.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox3.TabIndex = 2376;
-            this.inputTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox3
-            // 
-            this.displayTextBox3._Division = ((short)(1));
-            this.displayTextBox3._DoubleWord = false;
-            this.displayTextBox3._EqBase = null;
-            this.displayTextBox3._MaxLimit = 999D;
-            this.displayTextBox3._MinLimit = 0D;
-            this.displayTextBox3._Multiplication = ((short)(1));
-            this.displayTextBox3._PlcDevice = "";
-            this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox3.Location = new System.Drawing.Point(466, 586);
-            this.displayTextBox3.Name = "displayTextBox3";
-            this.displayTextBox3.ReadOnly = true;
-            this.displayTextBox3.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox3.TabIndex = 2375;
-            this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox5
-            // 
-            this.inputTextBox5._Division = 1;
-            this.inputTextBox5._DoubleWord = false;
-            this.inputTextBox5._EqBase = null;
-            this.inputTextBox5._FloatNumber = false;
-            this.inputTextBox5._MaxLimit = 999D;
-            this.inputTextBox5._MinLimit = 0D;
-            this.inputTextBox5._Multiplication = 1;
-            this.inputTextBox5._NumberOnly = true;
-            this.inputTextBox5._PlcDevice = "";
-            this.inputTextBox5.BackColor = System.Drawing.Color.White;
-            this.inputTextBox5.Location = new System.Drawing.Point(839, 620);
-            this.inputTextBox5.Name = "inputTextBox5";
-            this.inputTextBox5.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox5.TabIndex = 2382;
-            this.inputTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox4
-            // 
-            this.displayTextBox4._Division = ((short)(1));
-            this.displayTextBox4._DoubleWord = false;
-            this.displayTextBox4._EqBase = null;
-            this.displayTextBox4._MaxLimit = 999D;
-            this.displayTextBox4._MinLimit = 0D;
-            this.displayTextBox4._Multiplication = ((short)(1));
-            this.displayTextBox4._PlcDevice = "";
-            this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox4.Location = new System.Drawing.Point(775, 620);
-            this.displayTextBox4.Name = "displayTextBox4";
-            this.displayTextBox4.ReadOnly = true;
-            this.displayTextBox4.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox4.TabIndex = 2381;
-            this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox6
-            // 
-            this.inputTextBox6._Division = 1;
-            this.inputTextBox6._DoubleWord = false;
-            this.inputTextBox6._EqBase = null;
-            this.inputTextBox6._FloatNumber = false;
-            this.inputTextBox6._MaxLimit = 999D;
-            this.inputTextBox6._MinLimit = 0D;
-            this.inputTextBox6._Multiplication = 1;
-            this.inputTextBox6._NumberOnly = true;
-            this.inputTextBox6._PlcDevice = "";
-            this.inputTextBox6.BackColor = System.Drawing.Color.White;
-            this.inputTextBox6.Location = new System.Drawing.Point(839, 586);
-            this.inputTextBox6.Name = "inputTextBox6";
-            this.inputTextBox6.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox6.TabIndex = 2380;
-            this.inputTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox5
-            // 
-            this.displayTextBox5._Division = ((short)(1));
-            this.displayTextBox5._DoubleWord = false;
-            this.displayTextBox5._EqBase = null;
-            this.displayTextBox5._MaxLimit = 999D;
-            this.displayTextBox5._MinLimit = 0D;
-            this.displayTextBox5._Multiplication = ((short)(1));
-            this.displayTextBox5._PlcDevice = "";
-            this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox5.Location = new System.Drawing.Point(775, 586);
-            this.displayTextBox5.Name = "displayTextBox5";
-            this.displayTextBox5.ReadOnly = true;
-            this.displayTextBox5.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox5.TabIndex = 2379;
-            this.displayTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox7
-            // 
-            this.inputTextBox7._Division = 1;
-            this.inputTextBox7._DoubleWord = false;
-            this.inputTextBox7._EqBase = null;
-            this.inputTextBox7._FloatNumber = false;
-            this.inputTextBox7._MaxLimit = 999D;
-            this.inputTextBox7._MinLimit = 0D;
-            this.inputTextBox7._Multiplication = 1;
-            this.inputTextBox7._NumberOnly = true;
-            this.inputTextBox7._PlcDevice = "";
-            this.inputTextBox7.BackColor = System.Drawing.Color.White;
-            this.inputTextBox7.Location = new System.Drawing.Point(1136, 620);
-            this.inputTextBox7.Name = "inputTextBox7";
-            this.inputTextBox7.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox7.TabIndex = 2386;
-            this.inputTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox6
-            // 
-            this.displayTextBox6._Division = ((short)(1));
-            this.displayTextBox6._DoubleWord = false;
-            this.displayTextBox6._EqBase = null;
-            this.displayTextBox6._MaxLimit = 999D;
-            this.displayTextBox6._MinLimit = 0D;
-            this.displayTextBox6._Multiplication = ((short)(1));
-            this.displayTextBox6._PlcDevice = "";
-            this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox6.Location = new System.Drawing.Point(1072, 620);
-            this.displayTextBox6.Name = "displayTextBox6";
-            this.displayTextBox6.ReadOnly = true;
-            this.displayTextBox6.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox6.TabIndex = 2385;
-            this.displayTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox8
-            // 
-            this.inputTextBox8._Division = 1;
-            this.inputTextBox8._DoubleWord = false;
-            this.inputTextBox8._EqBase = null;
-            this.inputTextBox8._FloatNumber = false;
-            this.inputTextBox8._MaxLimit = 999D;
-            this.inputTextBox8._MinLimit = 0D;
-            this.inputTextBox8._Multiplication = 1;
-            this.inputTextBox8._NumberOnly = true;
-            this.inputTextBox8._PlcDevice = "";
-            this.inputTextBox8.BackColor = System.Drawing.Color.White;
-            this.inputTextBox8.Location = new System.Drawing.Point(1136, 586);
-            this.inputTextBox8.Name = "inputTextBox8";
-            this.inputTextBox8.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox8.TabIndex = 2384;
-            this.inputTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox7
-            // 
-            this.displayTextBox7._Division = ((short)(1));
-            this.displayTextBox7._DoubleWord = false;
-            this.displayTextBox7._EqBase = null;
-            this.displayTextBox7._MaxLimit = 999D;
-            this.displayTextBox7._MinLimit = 0D;
-            this.displayTextBox7._Multiplication = ((short)(1));
-            this.displayTextBox7._PlcDevice = "";
-            this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox7.Location = new System.Drawing.Point(1072, 586);
-            this.displayTextBox7.Name = "displayTextBox7";
-            this.displayTextBox7.ReadOnly = true;
-            this.displayTextBox7.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox7.TabIndex = 2383;
-            this.displayTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Label240
             // 
             this.Label240.BackColor = System.Drawing.Color.DimGray;
@@ -4026,348 +3098,6 @@
             this.Label197.Size = new System.Drawing.Size(86, 18);
             this.Label197.TabIndex = 2389;
             this.Label197.Text = "CN107 (%)";
-            // 
-            // inputTextBox10
-            // 
-            this.inputTextBox10._Division = 1;
-            this.inputTextBox10._DoubleWord = false;
-            this.inputTextBox10._EqBase = null;
-            this.inputTextBox10._FloatNumber = false;
-            this.inputTextBox10._MaxLimit = 999D;
-            this.inputTextBox10._MinLimit = 0D;
-            this.inputTextBox10._Multiplication = 1;
-            this.inputTextBox10._NumberOnly = true;
-            this.inputTextBox10._PlcDevice = "";
-            this.inputTextBox10.BackColor = System.Drawing.Color.White;
-            this.inputTextBox10.Location = new System.Drawing.Point(155, 90);
-            this.inputTextBox10.Name = "inputTextBox10";
-            this.inputTextBox10.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox10.TabIndex = 2414;
-            this.inputTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox11
-            // 
-            this.inputTextBox11._Division = 1;
-            this.inputTextBox11._DoubleWord = false;
-            this.inputTextBox11._EqBase = null;
-            this.inputTextBox11._FloatNumber = false;
-            this.inputTextBox11._MaxLimit = 999D;
-            this.inputTextBox11._MinLimit = 0D;
-            this.inputTextBox11._Multiplication = 1;
-            this.inputTextBox11._NumberOnly = true;
-            this.inputTextBox11._PlcDevice = "";
-            this.inputTextBox11.BackColor = System.Drawing.Color.White;
-            this.inputTextBox11.Location = new System.Drawing.Point(155, 175);
-            this.inputTextBox11.Name = "inputTextBox11";
-            this.inputTextBox11.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox11.TabIndex = 2415;
-            this.inputTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox12
-            // 
-            this.inputTextBox12._Division = 1;
-            this.inputTextBox12._DoubleWord = false;
-            this.inputTextBox12._EqBase = null;
-            this.inputTextBox12._FloatNumber = false;
-            this.inputTextBox12._MaxLimit = 999D;
-            this.inputTextBox12._MinLimit = 0D;
-            this.inputTextBox12._Multiplication = 1;
-            this.inputTextBox12._NumberOnly = true;
-            this.inputTextBox12._PlcDevice = "";
-            this.inputTextBox12.BackColor = System.Drawing.Color.White;
-            this.inputTextBox12.Location = new System.Drawing.Point(155, 217);
-            this.inputTextBox12.Name = "inputTextBox12";
-            this.inputTextBox12.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox12.TabIndex = 2416;
-            this.inputTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox13
-            // 
-            this.inputTextBox13._Division = 1;
-            this.inputTextBox13._DoubleWord = false;
-            this.inputTextBox13._EqBase = null;
-            this.inputTextBox13._FloatNumber = false;
-            this.inputTextBox13._MaxLimit = 999D;
-            this.inputTextBox13._MinLimit = 0D;
-            this.inputTextBox13._Multiplication = 1;
-            this.inputTextBox13._NumberOnly = true;
-            this.inputTextBox13._PlcDevice = "";
-            this.inputTextBox13.BackColor = System.Drawing.Color.White;
-            this.inputTextBox13.Location = new System.Drawing.Point(155, 259);
-            this.inputTextBox13.Name = "inputTextBox13";
-            this.inputTextBox13.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox13.TabIndex = 2417;
-            this.inputTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox14
-            // 
-            this.inputTextBox14._Division = 1;
-            this.inputTextBox14._DoubleWord = false;
-            this.inputTextBox14._EqBase = null;
-            this.inputTextBox14._FloatNumber = false;
-            this.inputTextBox14._MaxLimit = 999D;
-            this.inputTextBox14._MinLimit = 0D;
-            this.inputTextBox14._Multiplication = 1;
-            this.inputTextBox14._NumberOnly = true;
-            this.inputTextBox14._PlcDevice = "";
-            this.inputTextBox14.BackColor = System.Drawing.Color.White;
-            this.inputTextBox14.Location = new System.Drawing.Point(418, 259);
-            this.inputTextBox14.Name = "inputTextBox14";
-            this.inputTextBox14.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox14.TabIndex = 2422;
-            this.inputTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox15
-            // 
-            this.inputTextBox15._Division = 1;
-            this.inputTextBox15._DoubleWord = false;
-            this.inputTextBox15._EqBase = null;
-            this.inputTextBox15._FloatNumber = false;
-            this.inputTextBox15._MaxLimit = 999D;
-            this.inputTextBox15._MinLimit = 0D;
-            this.inputTextBox15._Multiplication = 1;
-            this.inputTextBox15._NumberOnly = true;
-            this.inputTextBox15._PlcDevice = "";
-            this.inputTextBox15.BackColor = System.Drawing.Color.White;
-            this.inputTextBox15.Location = new System.Drawing.Point(418, 217);
-            this.inputTextBox15.Name = "inputTextBox15";
-            this.inputTextBox15.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox15.TabIndex = 2421;
-            this.inputTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox16
-            // 
-            this.inputTextBox16._Division = 1;
-            this.inputTextBox16._DoubleWord = false;
-            this.inputTextBox16._EqBase = null;
-            this.inputTextBox16._FloatNumber = false;
-            this.inputTextBox16._MaxLimit = 999D;
-            this.inputTextBox16._MinLimit = 0D;
-            this.inputTextBox16._Multiplication = 1;
-            this.inputTextBox16._NumberOnly = true;
-            this.inputTextBox16._PlcDevice = "";
-            this.inputTextBox16.BackColor = System.Drawing.Color.White;
-            this.inputTextBox16.Location = new System.Drawing.Point(418, 175);
-            this.inputTextBox16.Name = "inputTextBox16";
-            this.inputTextBox16.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox16.TabIndex = 2420;
-            this.inputTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox17
-            // 
-            this.inputTextBox17._Division = 1;
-            this.inputTextBox17._DoubleWord = false;
-            this.inputTextBox17._EqBase = null;
-            this.inputTextBox17._FloatNumber = false;
-            this.inputTextBox17._MaxLimit = 999D;
-            this.inputTextBox17._MinLimit = 0D;
-            this.inputTextBox17._Multiplication = 1;
-            this.inputTextBox17._NumberOnly = true;
-            this.inputTextBox17._PlcDevice = "";
-            this.inputTextBox17.BackColor = System.Drawing.Color.White;
-            this.inputTextBox17.Location = new System.Drawing.Point(418, 133);
-            this.inputTextBox17.Name = "inputTextBox17";
-            this.inputTextBox17.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox17.TabIndex = 2419;
-            this.inputTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox18
-            // 
-            this.inputTextBox18._Division = 1;
-            this.inputTextBox18._DoubleWord = false;
-            this.inputTextBox18._EqBase = null;
-            this.inputTextBox18._FloatNumber = false;
-            this.inputTextBox18._MaxLimit = 999D;
-            this.inputTextBox18._MinLimit = 0D;
-            this.inputTextBox18._Multiplication = 1;
-            this.inputTextBox18._NumberOnly = true;
-            this.inputTextBox18._PlcDevice = "";
-            this.inputTextBox18.BackColor = System.Drawing.Color.White;
-            this.inputTextBox18.Location = new System.Drawing.Point(418, 91);
-            this.inputTextBox18.Name = "inputTextBox18";
-            this.inputTextBox18.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox18.TabIndex = 2418;
-            this.inputTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox19
-            // 
-            this.inputTextBox19._Division = 1;
-            this.inputTextBox19._DoubleWord = false;
-            this.inputTextBox19._EqBase = null;
-            this.inputTextBox19._FloatNumber = false;
-            this.inputTextBox19._MaxLimit = 999D;
-            this.inputTextBox19._MinLimit = 0D;
-            this.inputTextBox19._Multiplication = 1;
-            this.inputTextBox19._NumberOnly = true;
-            this.inputTextBox19._PlcDevice = "";
-            this.inputTextBox19.BackColor = System.Drawing.Color.White;
-            this.inputTextBox19.Location = new System.Drawing.Point(695, 258);
-            this.inputTextBox19.Name = "inputTextBox19";
-            this.inputTextBox19.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox19.TabIndex = 2427;
-            this.inputTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox20
-            // 
-            this.inputTextBox20._Division = 1;
-            this.inputTextBox20._DoubleWord = false;
-            this.inputTextBox20._EqBase = null;
-            this.inputTextBox20._FloatNumber = false;
-            this.inputTextBox20._MaxLimit = 999D;
-            this.inputTextBox20._MinLimit = 0D;
-            this.inputTextBox20._Multiplication = 1;
-            this.inputTextBox20._NumberOnly = true;
-            this.inputTextBox20._PlcDevice = "";
-            this.inputTextBox20.BackColor = System.Drawing.Color.White;
-            this.inputTextBox20.Location = new System.Drawing.Point(695, 216);
-            this.inputTextBox20.Name = "inputTextBox20";
-            this.inputTextBox20.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox20.TabIndex = 2426;
-            this.inputTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox21
-            // 
-            this.inputTextBox21._Division = 1;
-            this.inputTextBox21._DoubleWord = false;
-            this.inputTextBox21._EqBase = null;
-            this.inputTextBox21._FloatNumber = false;
-            this.inputTextBox21._MaxLimit = 999D;
-            this.inputTextBox21._MinLimit = 0D;
-            this.inputTextBox21._Multiplication = 1;
-            this.inputTextBox21._NumberOnly = true;
-            this.inputTextBox21._PlcDevice = "";
-            this.inputTextBox21.BackColor = System.Drawing.Color.White;
-            this.inputTextBox21.Location = new System.Drawing.Point(695, 174);
-            this.inputTextBox21.Name = "inputTextBox21";
-            this.inputTextBox21.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox21.TabIndex = 2425;
-            this.inputTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox22
-            // 
-            this.inputTextBox22._Division = 1;
-            this.inputTextBox22._DoubleWord = false;
-            this.inputTextBox22._EqBase = null;
-            this.inputTextBox22._FloatNumber = false;
-            this.inputTextBox22._MaxLimit = 999D;
-            this.inputTextBox22._MinLimit = 0D;
-            this.inputTextBox22._Multiplication = 1;
-            this.inputTextBox22._NumberOnly = true;
-            this.inputTextBox22._PlcDevice = "";
-            this.inputTextBox22.BackColor = System.Drawing.Color.White;
-            this.inputTextBox22.Location = new System.Drawing.Point(695, 132);
-            this.inputTextBox22.Name = "inputTextBox22";
-            this.inputTextBox22.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox22.TabIndex = 2424;
-            this.inputTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox23
-            // 
-            this.inputTextBox23._Division = 1;
-            this.inputTextBox23._DoubleWord = false;
-            this.inputTextBox23._EqBase = null;
-            this.inputTextBox23._FloatNumber = false;
-            this.inputTextBox23._MaxLimit = 999D;
-            this.inputTextBox23._MinLimit = 0D;
-            this.inputTextBox23._Multiplication = 1;
-            this.inputTextBox23._NumberOnly = true;
-            this.inputTextBox23._PlcDevice = "";
-            this.inputTextBox23.BackColor = System.Drawing.Color.White;
-            this.inputTextBox23.Location = new System.Drawing.Point(695, 90);
-            this.inputTextBox23.Name = "inputTextBox23";
-            this.inputTextBox23.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox23.TabIndex = 2423;
-            this.inputTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox24
-            // 
-            this.inputTextBox24._Division = 1;
-            this.inputTextBox24._DoubleWord = false;
-            this.inputTextBox24._EqBase = null;
-            this.inputTextBox24._FloatNumber = false;
-            this.inputTextBox24._MaxLimit = 999D;
-            this.inputTextBox24._MinLimit = 0D;
-            this.inputTextBox24._Multiplication = 1;
-            this.inputTextBox24._NumberOnly = true;
-            this.inputTextBox24._PlcDevice = "";
-            this.inputTextBox24.BackColor = System.Drawing.Color.White;
-            this.inputTextBox24.Location = new System.Drawing.Point(948, 258);
-            this.inputTextBox24.Name = "inputTextBox24";
-            this.inputTextBox24.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox24.TabIndex = 2432;
-            this.inputTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox25
-            // 
-            this.inputTextBox25._Division = 1;
-            this.inputTextBox25._DoubleWord = false;
-            this.inputTextBox25._EqBase = null;
-            this.inputTextBox25._FloatNumber = false;
-            this.inputTextBox25._MaxLimit = 999D;
-            this.inputTextBox25._MinLimit = 0D;
-            this.inputTextBox25._Multiplication = 1;
-            this.inputTextBox25._NumberOnly = true;
-            this.inputTextBox25._PlcDevice = "";
-            this.inputTextBox25.BackColor = System.Drawing.Color.White;
-            this.inputTextBox25.Location = new System.Drawing.Point(948, 216);
-            this.inputTextBox25.Name = "inputTextBox25";
-            this.inputTextBox25.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox25.TabIndex = 2431;
-            this.inputTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox26
-            // 
-            this.inputTextBox26._Division = 1;
-            this.inputTextBox26._DoubleWord = false;
-            this.inputTextBox26._EqBase = null;
-            this.inputTextBox26._FloatNumber = false;
-            this.inputTextBox26._MaxLimit = 999D;
-            this.inputTextBox26._MinLimit = 0D;
-            this.inputTextBox26._Multiplication = 1;
-            this.inputTextBox26._NumberOnly = true;
-            this.inputTextBox26._PlcDevice = "";
-            this.inputTextBox26.BackColor = System.Drawing.Color.White;
-            this.inputTextBox26.Location = new System.Drawing.Point(948, 174);
-            this.inputTextBox26.Name = "inputTextBox26";
-            this.inputTextBox26.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox26.TabIndex = 2430;
-            this.inputTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox27
-            // 
-            this.inputTextBox27._Division = 1;
-            this.inputTextBox27._DoubleWord = false;
-            this.inputTextBox27._EqBase = null;
-            this.inputTextBox27._FloatNumber = false;
-            this.inputTextBox27._MaxLimit = 999D;
-            this.inputTextBox27._MinLimit = 0D;
-            this.inputTextBox27._Multiplication = 1;
-            this.inputTextBox27._NumberOnly = true;
-            this.inputTextBox27._PlcDevice = "";
-            this.inputTextBox27.BackColor = System.Drawing.Color.White;
-            this.inputTextBox27.Location = new System.Drawing.Point(948, 132);
-            this.inputTextBox27.Name = "inputTextBox27";
-            this.inputTextBox27.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox27.TabIndex = 2429;
-            this.inputTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox28
-            // 
-            this.inputTextBox28._Division = 1;
-            this.inputTextBox28._DoubleWord = false;
-            this.inputTextBox28._EqBase = null;
-            this.inputTextBox28._FloatNumber = false;
-            this.inputTextBox28._MaxLimit = 999D;
-            this.inputTextBox28._MinLimit = 0D;
-            this.inputTextBox28._Multiplication = 1;
-            this.inputTextBox28._NumberOnly = true;
-            this.inputTextBox28._PlcDevice = "";
-            this.inputTextBox28.BackColor = System.Drawing.Color.White;
-            this.inputTextBox28.Location = new System.Drawing.Point(948, 90);
-            this.inputTextBox28.Name = "inputTextBox28";
-            this.inputTextBox28.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox28.TabIndex = 2428;
-            this.inputTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TabControl1
             // 
@@ -4677,22 +3407,22 @@
             this.TabPage2.Controls.Add(this.Label210);
             this.TabPage2.Controls.Add(this.Label209);
             this.TabPage2.Controls.Add(this.Label208);
-            this.TabPage2.Controls.Add(this.inputTextBox24);
             this.TabPage2.Controls.Add(this.Label219);
-            this.TabPage2.Controls.Add(this.inputTextBox25);
             this.TabPage2.Controls.Add(this.Label218);
-            this.TabPage2.Controls.Add(this.inputTextBox26);
             this.TabPage2.Controls.Add(this.Label217);
-            this.TabPage2.Controls.Add(this.inputTextBox27);
             this.TabPage2.Controls.Add(this.Label216);
-            this.TabPage2.Controls.Add(this.inputTextBox28);
             this.TabPage2.Controls.Add(this.Label215);
-            this.TabPage2.Controls.Add(this.inputTextBox19);
             this.TabPage2.Controls.Add(this.Label238);
-            this.TabPage2.Controls.Add(this.inputTextBox20);
             this.TabPage2.Controls.Add(this.Label239);
-            this.TabPage2.Controls.Add(this.inputTextBox21);
             this.TabPage2.Controls.Add(this.Label240);
+            this.TabPage2.Controls.Add(this.inputTextBox24);
+            this.TabPage2.Controls.Add(this.inputTextBox25);
+            this.TabPage2.Controls.Add(this.inputTextBox26);
+            this.TabPage2.Controls.Add(this.inputTextBox27);
+            this.TabPage2.Controls.Add(this.inputTextBox28);
+            this.TabPage2.Controls.Add(this.inputTextBox19);
+            this.TabPage2.Controls.Add(this.inputTextBox20);
+            this.TabPage2.Controls.Add(this.inputTextBox21);
             this.TabPage2.Controls.Add(this.inputTextBox22);
             this.TabPage2.Controls.Add(this.inputTextBox23);
             this.TabPage2.Controls.Add(this.inputTextBox10);
@@ -4711,24 +3441,6 @@
             this.TabPage2.TabIndex = 1;
             this.TabPage2.Text = "比例式電磁閥 - 輸出百分比設定";
             this.TabPage2.UseVisualStyleBackColor = true;
-            // 
-            // inputTextBox9
-            // 
-            this.inputTextBox9._Division = 1;
-            this.inputTextBox9._DoubleWord = false;
-            this.inputTextBox9._EqBase = null;
-            this.inputTextBox9._FloatNumber = false;
-            this.inputTextBox9._MaxLimit = 999D;
-            this.inputTextBox9._MinLimit = 0D;
-            this.inputTextBox9._Multiplication = 1;
-            this.inputTextBox9._NumberOnly = true;
-            this.inputTextBox9._PlcDevice = "";
-            this.inputTextBox9.BackColor = System.Drawing.Color.White;
-            this.inputTextBox9.Location = new System.Drawing.Point(155, 132);
-            this.inputTextBox9.Name = "inputTextBox9";
-            this.inputTextBox9.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox9.TabIndex = 2433;
-            this.inputTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabPage3
             // 
@@ -4767,6 +3479,1736 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Chamber Gas  - 流量設定 / 控制";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // Label60
+            // 
+            this.Label60.AutoSize = true;
+            this.Label60.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label60.Location = new System.Drawing.Point(385, 128);
+            this.Label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label60.Name = "Label60";
+            this.Label60.Size = new System.Drawing.Size(67, 18);
+            this.Label60.TabIndex = 2051;
+            this.Label60.Text = "M3_4 Ar";
+            // 
+            // Label87
+            // 
+            this.Label87.AutoSize = true;
+            this.Label87.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label87.Location = new System.Drawing.Point(385, 70);
+            this.Label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label87.Name = "Label87";
+            this.Label87.Size = new System.Drawing.Size(73, 18);
+            this.Label87.TabIndex = 2050;
+            this.Label87.Text = "M3_3 O2";
+            // 
+            // Label141
+            // 
+            this.Label141.AutoSize = true;
+            this.Label141.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label141.Location = new System.Drawing.Point(385, 254);
+            this.Label141.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label141.Name = "Label141";
+            this.Label141.Size = new System.Drawing.Size(67, 18);
+            this.Label141.TabIndex = 2049;
+            this.Label141.Text = "M3_2 Ar";
+            this.Label141.Visible = false;
+            // 
+            // Label224
+            // 
+            this.Label224.AutoSize = true;
+            this.Label224.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label224.Location = new System.Drawing.Point(385, 189);
+            this.Label224.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label224.Name = "Label224";
+            this.Label224.Size = new System.Drawing.Size(73, 18);
+            this.Label224.TabIndex = 2048;
+            this.Label224.Text = "M3_1 O2";
+            this.Label224.Visible = false;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Arial", 12F);
+            this.label56.Location = new System.Drawing.Point(28, 202);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(52, 18);
+            this.label56.TabIndex = 2047;
+            this.label56.Text = "H2 N2";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial", 12F);
+            this.label59.Location = new System.Drawing.Point(28, 141);
+            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(53, 18);
+            this.label59.TabIndex = 2046;
+            this.label59.Text = "H2 O2";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Arial", 12F);
+            this.label99.Location = new System.Drawing.Point(28, 75);
+            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(47, 18);
+            this.label99.TabIndex = 2045;
+            this.label99.Text = "H2 Ar";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.controlBtn15);
+            this.tabPage4.Controls.Add(this.controlBtn14);
+            this.tabPage4.Controls.Add(this.controlBtn13);
+            this.tabPage4.Controls.Add(this.controlBtn12);
+            this.tabPage4.Controls.Add(this.controlBtn11);
+            this.tabPage4.Controls.Add(this.controlBtn10);
+            this.tabPage4.Controls.Add(this.controlBtn9);
+            this.tabPage4.Controls.Add(this.controlBtn8);
+            this.tabPage4.Controls.Add(this.displayTextBox44);
+            this.tabPage4.Controls.Add(this.displayTextBox45);
+            this.tabPage4.Controls.Add(this.displayTextBox46);
+            this.tabPage4.Controls.Add(this.displayTextBox47);
+            this.tabPage4.Controls.Add(this.displayTextBox40);
+            this.tabPage4.Controls.Add(this.displayTextBox41);
+            this.tabPage4.Controls.Add(this.displayTextBox42);
+            this.tabPage4.Controls.Add(this.displayTextBox43);
+            this.tabPage4.Controls.Add(this.displayTextBox36);
+            this.tabPage4.Controls.Add(this.displayTextBox37);
+            this.tabPage4.Controls.Add(this.displayTextBox38);
+            this.tabPage4.Controls.Add(this.displayTextBox39);
+            this.tabPage4.Controls.Add(this.displayTextBox32);
+            this.tabPage4.Controls.Add(this.displayTextBox33);
+            this.tabPage4.Controls.Add(this.displayTextBox34);
+            this.tabPage4.Controls.Add(this.displayTextBox35);
+            this.tabPage4.Controls.Add(this.displayTextBox28);
+            this.tabPage4.Controls.Add(this.displayTextBox29);
+            this.tabPage4.Controls.Add(this.displayTextBox30);
+            this.tabPage4.Controls.Add(this.displayTextBox31);
+            this.tabPage4.Controls.Add(this.displayTextBox24);
+            this.tabPage4.Controls.Add(this.displayTextBox25);
+            this.tabPage4.Controls.Add(this.displayTextBox26);
+            this.tabPage4.Controls.Add(this.displayTextBox27);
+            this.tabPage4.Controls.Add(this.displayTextBox19);
+            this.tabPage4.Controls.Add(this.displayTextBox20);
+            this.tabPage4.Controls.Add(this.displayTextBox21);
+            this.tabPage4.Controls.Add(this.displayTextBox22);
+            this.tabPage4.Controls.Add(this.displayTextBox18);
+            this.tabPage4.Controls.Add(this.displayTextBox17);
+            this.tabPage4.Controls.Add(this.displayTextBox16);
+            this.tabPage4.Controls.Add(this.displayTextBox15);
+            this.tabPage4.Controls.Add(this.inputTextBox70);
+            this.tabPage4.Controls.Add(this.inputTextBox71);
+            this.tabPage4.Controls.Add(this.inputTextBox72);
+            this.tabPage4.Controls.Add(this.inputTextBox73);
+            this.tabPage4.Controls.Add(this.inputTextBox66);
+            this.tabPage4.Controls.Add(this.inputTextBox67);
+            this.tabPage4.Controls.Add(this.inputTextBox68);
+            this.tabPage4.Controls.Add(this.inputTextBox69);
+            this.tabPage4.Controls.Add(this.inputTextBox62);
+            this.tabPage4.Controls.Add(this.inputTextBox63);
+            this.tabPage4.Controls.Add(this.inputTextBox64);
+            this.tabPage4.Controls.Add(this.inputTextBox65);
+            this.tabPage4.Controls.Add(this.inputTextBox58);
+            this.tabPage4.Controls.Add(this.inputTextBox59);
+            this.tabPage4.Controls.Add(this.inputTextBox60);
+            this.tabPage4.Controls.Add(this.inputTextBox61);
+            this.tabPage4.Controls.Add(this.inputTextBox54);
+            this.tabPage4.Controls.Add(this.inputTextBox55);
+            this.tabPage4.Controls.Add(this.inputTextBox56);
+            this.tabPage4.Controls.Add(this.inputTextBox57);
+            this.tabPage4.Controls.Add(this.inputTextBox50);
+            this.tabPage4.Controls.Add(this.inputTextBox51);
+            this.tabPage4.Controls.Add(this.inputTextBox52);
+            this.tabPage4.Controls.Add(this.inputTextBox53);
+            this.tabPage4.Controls.Add(this.inputTextBox46);
+            this.tabPage4.Controls.Add(this.inputTextBox47);
+            this.tabPage4.Controls.Add(this.inputTextBox48);
+            this.tabPage4.Controls.Add(this.inputTextBox49);
+            this.tabPage4.Controls.Add(this.inputTextBox45);
+            this.tabPage4.Controls.Add(this.inputTextBox44);
+            this.tabPage4.Controls.Add(this.inputTextBox43);
+            this.tabPage4.Controls.Add(this.inputTextBox42);
+            this.tabPage4.Controls.Add(this.GroupBox1);
+            this.tabPage4.Controls.Add(this.Label229);
+            this.tabPage4.Controls.Add(this.TxtRecipeName);
+            this.tabPage4.Controls.Add(this.Label228);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.label9);
+            this.tabPage4.Controls.Add(this.label10);
+            this.tabPage4.Controls.Add(this.Label83);
+            this.tabPage4.Controls.Add(this.label11);
+            this.tabPage4.Controls.Add(this.label12);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Controls.Add(this.label54);
+            this.tabPage4.Controls.Add(this.label55);
+            this.tabPage4.Controls.Add(this.Label8);
+            this.tabPage4.Controls.Add(this.Label7);
+            this.tabPage4.Controls.Add(this.Label6);
+            this.tabPage4.Controls.Add(this.Label5);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1279, 663);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Power Supply";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // GroupBox1
+            // 
+            this.GroupBox1.Controls.Add(this.inputTextBox41);
+            this.GroupBox1.Controls.Add(this.inputTextBox40);
+            this.GroupBox1.Controls.Add(this.inputTextBox39);
+            this.GroupBox1.Controls.Add(this.inputTextBox38);
+            this.GroupBox1.Controls.Add(this.inputTextBox37);
+            this.GroupBox1.Controls.Add(this.inputTextBox36);
+            this.GroupBox1.Controls.Add(this.Label246);
+            this.GroupBox1.Controls.Add(this.Label245);
+            this.GroupBox1.Controls.Add(this.Label244);
+            this.GroupBox1.Controls.Add(this.Label243);
+            this.GroupBox1.Controls.Add(this.Label242);
+            this.GroupBox1.Controls.Add(this.Label241);
+            this.GroupBox1.Location = new System.Drawing.Point(1030, 61);
+            this.GroupBox1.Name = "GroupBox1";
+            this.GroupBox1.Size = new System.Drawing.Size(222, 331);
+            this.GroupBox1.TabIndex = 2474;
+            this.GroupBox1.TabStop = false;
+            this.GroupBox1.Text = "Pre Sputter time (Sec)";
+            // 
+            // Label246
+            // 
+            this.Label246.AutoSize = true;
+            this.Label246.Location = new System.Drawing.Point(25, 272);
+            this.Label246.Name = "Label246";
+            this.Label246.Size = new System.Drawing.Size(49, 17);
+            this.Label246.TabIndex = 2085;
+            this.Label246.Text = "DC4_2";
+            // 
+            // Label245
+            // 
+            this.Label245.AutoSize = true;
+            this.Label245.Location = new System.Drawing.Point(25, 227);
+            this.Label245.Name = "Label245";
+            this.Label245.Size = new System.Drawing.Size(49, 17);
+            this.Label245.TabIndex = 2083;
+            this.Label245.Text = "DC4_1";
+            // 
+            // Label244
+            // 
+            this.Label244.AutoSize = true;
+            this.Label244.Location = new System.Drawing.Point(25, 182);
+            this.Label244.Name = "Label244";
+            this.Label244.Size = new System.Drawing.Size(49, 17);
+            this.Label244.TabIndex = 2081;
+            this.Label244.Text = "DC3_2";
+            // 
+            // Label243
+            // 
+            this.Label243.AutoSize = true;
+            this.Label243.Location = new System.Drawing.Point(25, 137);
+            this.Label243.Name = "Label243";
+            this.Label243.Size = new System.Drawing.Size(49, 17);
+            this.Label243.TabIndex = 2079;
+            this.Label243.Text = "DC3_1";
+            // 
+            // Label242
+            // 
+            this.Label242.AutoSize = true;
+            this.Label242.Location = new System.Drawing.Point(25, 92);
+            this.Label242.Name = "Label242";
+            this.Label242.Size = new System.Drawing.Size(50, 17);
+            this.Label242.TabIndex = 2077;
+            this.Label242.Text = "MF2_1";
+            // 
+            // Label241
+            // 
+            this.Label241.AutoSize = true;
+            this.Label241.Location = new System.Drawing.Point(25, 47);
+            this.Label241.Name = "Label241";
+            this.Label241.Size = new System.Drawing.Size(50, 17);
+            this.Label241.TabIndex = 2075;
+            this.Label241.Text = "MF1_1";
+            // 
+            // Label229
+            // 
+            this.Label229.AutoSize = true;
+            this.Label229.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label229.Location = new System.Drawing.Point(28, 24);
+            this.Label229.Name = "Label229";
+            this.Label229.Size = new System.Drawing.Size(135, 18);
+            this.Label229.TabIndex = 2473;
+            this.Label229.Text = "製程 匯入 配方：";
+            // 
+            // TxtRecipeName
+            // 
+            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
+            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
+            this.TxtRecipeName.Location = new System.Drawing.Point(171, 20);
+            this.TxtRecipeName.Name = "TxtRecipeName";
+            this.TxtRecipeName.ReadOnly = true;
+            this.TxtRecipeName.Size = new System.Drawing.Size(430, 25);
+            this.TxtRecipeName.TabIndex = 2472;
+            this.TxtRecipeName.Text = "N/A";
+            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Label228
+            // 
+            this.Label228.AutoSize = true;
+            this.Label228.Location = new System.Drawing.Point(30, 206);
+            this.Label228.Name = "Label228";
+            this.Label228.Size = new System.Drawing.Size(106, 17);
+            this.Label228.TabIndex = 2471;
+            this.Label228.Text = "Pre_Sputter(sec)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(511, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 17);
+            this.label4.TabIndex = 2470;
+            this.label4.Text = "MF2_2(10kw)";
+            this.label4.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(270, 61);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(94, 17);
+            this.label9.TabIndex = 2469;
+            this.label9.Text = "MF2_1 (10kw)";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(391, 63);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 17);
+            this.label10.TabIndex = 2468;
+            this.label10.Text = "MF1_2 (10kw)";
+            this.label10.Visible = false;
+            // 
+            // Label83
+            // 
+            this.Label83.AutoSize = true;
+            this.Label83.ForeColor = System.Drawing.Color.Black;
+            this.Label83.Location = new System.Drawing.Point(151, 61);
+            this.Label83.Name = "Label83";
+            this.Label83.Size = new System.Drawing.Size(94, 17);
+            this.Label83.TabIndex = 2467;
+            this.Label83.Text = "MF1_1 (10kw)";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(29, 426);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 17);
+            this.label11.TabIndex = 2466;
+            this.label11.Text = "啟動 / 關閉";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(30, 330);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(78, 17);
+            this.label12.TabIndex = 2465;
+            this.label12.Text = "實際電壓 (v)";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(30, 375);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(80, 17);
+            this.label13.TabIndex = 2464;
+            this.label13.Text = "實際電流 (A)";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(30, 288);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(88, 17);
+            this.label14.TabIndex = 2463;
+            this.label14.Text = "實際功率 (kw)";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(29, 90);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(88, 17);
+            this.label15.TabIndex = 2459;
+            this.label15.Text = "開始功率 (kw)";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(29, 127);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(88, 17);
+            this.label16.TabIndex = 2460;
+            this.label16.Text = "結束功率 (kw)";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(30, 248);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(88, 17);
+            this.label54.TabIndex = 2462;
+            this.label54.Text = "設定功率 (kw)";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(30, 170);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(88, 17);
+            this.label55.TabIndex = 2461;
+            this.label55.Text = "製程功率 (kw)";
+            // 
+            // Label8
+            // 
+            this.Label8.AutoSize = true;
+            this.Label8.ForeColor = System.Drawing.Color.Black;
+            this.Label8.Location = new System.Drawing.Point(826, 61);
+            this.Label8.Name = "Label8";
+            this.Label8.Size = new System.Drawing.Size(93, 17);
+            this.Label8.TabIndex = 2449;
+            this.Label8.Text = "DC4_2 (20kw)";
+            // 
+            // Label7
+            // 
+            this.Label7.AutoSize = true;
+            this.Label7.ForeColor = System.Drawing.Color.Black;
+            this.Label7.Location = new System.Drawing.Point(931, 61);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(93, 17);
+            this.Label7.TabIndex = 2448;
+            this.Label7.Text = "DC4_1 (20kw)";
+            // 
+            // Label6
+            // 
+            this.Label6.AutoSize = true;
+            this.Label6.ForeColor = System.Drawing.Color.Black;
+            this.Label6.Location = new System.Drawing.Point(625, 61);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(93, 17);
+            this.Label6.TabIndex = 2447;
+            this.Label6.Text = "DC3_2 (20kw)";
+            // 
+            // Label5
+            // 
+            this.Label5.AutoSize = true;
+            this.Label5.ForeColor = System.Drawing.Color.Black;
+            this.Label5.Location = new System.Drawing.Point(724, 61);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(93, 17);
+            this.Label5.TabIndex = 2446;
+            this.Label5.Text = "DC3_1 (20kw)";
+            // 
+            // plcObject33
+            // 
+            this.plcObject33._CurrentStatus = false;
+            this.plcObject33._EqBase = null;
+            this.plcObject33._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject33._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject33._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject33._PlcDisplayOffDevice = null;
+            this.plcObject33._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject33._Reverse = false;
+            this.plcObject33.Image = ((System.Drawing.Image)(resources.GetObject("plcObject33.Image")));
+            this.plcObject33.Location = new System.Drawing.Point(858, 255);
+            this.plcObject33.Name = "plcObject33";
+            this.plcObject33.Size = new System.Drawing.Size(30, 36);
+            this.plcObject33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject33.TabIndex = 2347;
+            this.plcObject33.TabStop = false;
+            // 
+            // plcObject32
+            // 
+            this.plcObject32._CurrentStatus = false;
+            this.plcObject32._EqBase = null;
+            this.plcObject32._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject32._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject32._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject32._PlcDisplayOffDevice = null;
+            this.plcObject32._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject32._Reverse = false;
+            this.plcObject32.Image = ((System.Drawing.Image)(resources.GetObject("plcObject32.Image")));
+            this.plcObject32.Location = new System.Drawing.Point(777, 255);
+            this.plcObject32.Name = "plcObject32";
+            this.plcObject32.Size = new System.Drawing.Size(30, 36);
+            this.plcObject32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject32.TabIndex = 2346;
+            this.plcObject32.TabStop = false;
+            // 
+            // plcObject30
+            // 
+            this.plcObject30._CurrentStatus = false;
+            this.plcObject30._EqBase = null;
+            this.plcObject30._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject30._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject30._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject30._PlcDisplayOffDevice = null;
+            this.plcObject30._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject30._Reverse = false;
+            this.plcObject30.Image = ((System.Drawing.Image)(resources.GetObject("plcObject30.Image")));
+            this.plcObject30.Location = new System.Drawing.Point(550, 255);
+            this.plcObject30.Name = "plcObject30";
+            this.plcObject30.Size = new System.Drawing.Size(30, 36);
+            this.plcObject30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject30.TabIndex = 2344;
+            this.plcObject30.TabStop = false;
+            // 
+            // plcObject29
+            // 
+            this.plcObject29._CurrentStatus = false;
+            this.plcObject29._EqBase = null;
+            this.plcObject29._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject29._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject29._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject29._PlcDisplayOffDevice = null;
+            this.plcObject29._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject29._Reverse = false;
+            this.plcObject29.Image = ((System.Drawing.Image)(resources.GetObject("plcObject29.Image")));
+            this.plcObject29.Location = new System.Drawing.Point(469, 255);
+            this.plcObject29.Name = "plcObject29";
+            this.plcObject29.Size = new System.Drawing.Size(30, 36);
+            this.plcObject29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject29.TabIndex = 2343;
+            this.plcObject29.TabStop = false;
+            // 
+            // plcObject27
+            // 
+            this.plcObject27._CurrentStatus = false;
+            this.plcObject27._EqBase = null;
+            this.plcObject27._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject27._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject27._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject27._PlcDisplayOffDevice = null;
+            this.plcObject27._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject27._Reverse = false;
+            this.plcObject27.Image = ((System.Drawing.Image)(resources.GetObject("plcObject27.Image")));
+            this.plcObject27.Location = new System.Drawing.Point(230, 255);
+            this.plcObject27.Name = "plcObject27";
+            this.plcObject27.Size = new System.Drawing.Size(30, 36);
+            this.plcObject27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject27.TabIndex = 2341;
+            this.plcObject27.TabStop = false;
+            // 
+            // plcObject26
+            // 
+            this.plcObject26._CurrentStatus = false;
+            this.plcObject26._EqBase = null;
+            this.plcObject26._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject26._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject26._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject26._PlcDisplayOffDevice = null;
+            this.plcObject26._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject26._Reverse = false;
+            this.plcObject26.Image = ((System.Drawing.Image)(resources.GetObject("plcObject26.Image")));
+            this.plcObject26.Location = new System.Drawing.Point(149, 255);
+            this.plcObject26.Name = "plcObject26";
+            this.plcObject26.Size = new System.Drawing.Size(30, 36);
+            this.plcObject26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject26.TabIndex = 2340;
+            this.plcObject26.TabStop = false;
+            // 
+            // plcObject20
+            // 
+            this.plcObject20._CurrentStatus = false;
+            this.plcObject20._EqBase = null;
+            this.plcObject20._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject20._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject20._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject20._PlcDisplayOffDevice = null;
+            this.plcObject20._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject20._Reverse = false;
+            this.plcObject20.Image = ((System.Drawing.Image)(resources.GetObject("plcObject20.Image")));
+            this.plcObject20.Location = new System.Drawing.Point(900, 108);
+            this.plcObject20.Name = "plcObject20";
+            this.plcObject20.Size = new System.Drawing.Size(30, 36);
+            this.plcObject20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject20.TabIndex = 2334;
+            this.plcObject20.TabStop = false;
+            // 
+            // plcObject19
+            // 
+            this.plcObject19._CurrentStatus = false;
+            this.plcObject19._EqBase = null;
+            this.plcObject19._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject19._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject19._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject19._PlcDisplayOffDevice = null;
+            this.plcObject19._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject19._Reverse = false;
+            this.plcObject19.Image = ((System.Drawing.Image)(resources.GetObject("plcObject19.Image")));
+            this.plcObject19.Location = new System.Drawing.Point(836, 108);
+            this.plcObject19.Name = "plcObject19";
+            this.plcObject19.Size = new System.Drawing.Size(30, 36);
+            this.plcObject19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject19.TabIndex = 2333;
+            this.plcObject19.TabStop = false;
+            // 
+            // plcObject18
+            // 
+            this.plcObject18._CurrentStatus = false;
+            this.plcObject18._EqBase = null;
+            this.plcObject18._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject18._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject18._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject18._PlcDisplayOffDevice = null;
+            this.plcObject18._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject18._Reverse = false;
+            this.plcObject18.Image = ((System.Drawing.Image)(resources.GetObject("plcObject18.Image")));
+            this.plcObject18.Location = new System.Drawing.Point(799, 108);
+            this.plcObject18.Name = "plcObject18";
+            this.plcObject18.Size = new System.Drawing.Size(30, 36);
+            this.plcObject18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject18.TabIndex = 2332;
+            this.plcObject18.TabStop = false;
+            // 
+            // plcObject17
+            // 
+            this.plcObject17._CurrentStatus = false;
+            this.plcObject17._EqBase = null;
+            this.plcObject17._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject17._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject17._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject17._PlcDisplayOffDevice = null;
+            this.plcObject17._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject17._Reverse = false;
+            this.plcObject17.Image = ((System.Drawing.Image)(resources.GetObject("plcObject17.Image")));
+            this.plcObject17.Location = new System.Drawing.Point(739, 108);
+            this.plcObject17.Name = "plcObject17";
+            this.plcObject17.Size = new System.Drawing.Size(30, 36);
+            this.plcObject17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject17.TabIndex = 2331;
+            this.plcObject17.TabStop = false;
+            // 
+            // plcObject16
+            // 
+            this.plcObject16._CurrentStatus = false;
+            this.plcObject16._EqBase = null;
+            this.plcObject16._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject16._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject16._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject16._PlcDisplayOffDevice = null;
+            this.plcObject16._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject16._Reverse = false;
+            this.plcObject16.Image = ((System.Drawing.Image)(resources.GetObject("plcObject16.Image")));
+            this.plcObject16.Location = new System.Drawing.Point(592, 108);
+            this.plcObject16.Name = "plcObject16";
+            this.plcObject16.Size = new System.Drawing.Size(30, 36);
+            this.plcObject16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject16.TabIndex = 2330;
+            this.plcObject16.TabStop = false;
+            // 
+            // plcObject15
+            // 
+            this.plcObject15._CurrentStatus = false;
+            this.plcObject15._EqBase = null;
+            this.plcObject15._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject15._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject15._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject15._PlcDisplayOffDevice = null;
+            this.plcObject15._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject15._Reverse = false;
+            this.plcObject15.Image = ((System.Drawing.Image)(resources.GetObject("plcObject15.Image")));
+            this.plcObject15.Location = new System.Drawing.Point(535, 108);
+            this.plcObject15.Name = "plcObject15";
+            this.plcObject15.Size = new System.Drawing.Size(30, 36);
+            this.plcObject15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject15.TabIndex = 2329;
+            this.plcObject15.TabStop = false;
+            // 
+            // plcObject13
+            // 
+            this.plcObject13._CurrentStatus = false;
+            this.plcObject13._EqBase = null;
+            this.plcObject13._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject13._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject13._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject13._PlcDisplayOffDevice = null;
+            this.plcObject13._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject13._Reverse = false;
+            this.plcObject13.Image = ((System.Drawing.Image)(resources.GetObject("plcObject13.Image")));
+            this.plcObject13.Location = new System.Drawing.Point(491, 108);
+            this.plcObject13.Name = "plcObject13";
+            this.plcObject13.Size = new System.Drawing.Size(30, 36);
+            this.plcObject13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject13.TabIndex = 2328;
+            this.plcObject13.TabStop = false;
+            // 
+            // plcObject12
+            // 
+            this.plcObject12._CurrentStatus = false;
+            this.plcObject12._EqBase = null;
+            this.plcObject12._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject12._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject12._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject12._PlcDisplayOffDevice = null;
+            this.plcObject12._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject12._Reverse = false;
+            this.plcObject12.Image = ((System.Drawing.Image)(resources.GetObject("plcObject12.Image")));
+            this.plcObject12.Location = new System.Drawing.Point(430, 108);
+            this.plcObject12.Name = "plcObject12";
+            this.plcObject12.Size = new System.Drawing.Size(30, 36);
+            this.plcObject12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject12.TabIndex = 2327;
+            this.plcObject12.TabStop = false;
+            // 
+            // plcObject11
+            // 
+            this.plcObject11._CurrentStatus = false;
+            this.plcObject11._EqBase = null;
+            this.plcObject11._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject11._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject11._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject11._PlcDisplayOffDevice = null;
+            this.plcObject11._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject11._Reverse = false;
+            this.plcObject11.Image = ((System.Drawing.Image)(resources.GetObject("plcObject11.Image")));
+            this.plcObject11.Location = new System.Drawing.Point(271, 108);
+            this.plcObject11.Name = "plcObject11";
+            this.plcObject11.Size = new System.Drawing.Size(30, 36);
+            this.plcObject11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject11.TabIndex = 2326;
+            this.plcObject11.TabStop = false;
+            // 
+            // plcObject10
+            // 
+            this.plcObject10._CurrentStatus = false;
+            this.plcObject10._EqBase = null;
+            this.plcObject10._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject10._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject10._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject10._PlcDisplayOffDevice = null;
+            this.plcObject10._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject10._Reverse = false;
+            this.plcObject10.Image = ((System.Drawing.Image)(resources.GetObject("plcObject10.Image")));
+            this.plcObject10.Location = new System.Drawing.Point(208, 108);
+            this.plcObject10.Name = "plcObject10";
+            this.plcObject10.Size = new System.Drawing.Size(30, 36);
+            this.plcObject10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject10.TabIndex = 2325;
+            this.plcObject10.TabStop = false;
+            // 
+            // plcObject9
+            // 
+            this.plcObject9._CurrentStatus = false;
+            this.plcObject9._EqBase = null;
+            this.plcObject9._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject9._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject9._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject9._PlcDisplayOffDevice = null;
+            this.plcObject9._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject9._Reverse = false;
+            this.plcObject9.Image = ((System.Drawing.Image)(resources.GetObject("plcObject9.Image")));
+            this.plcObject9.Location = new System.Drawing.Point(171, 108);
+            this.plcObject9.Name = "plcObject9";
+            this.plcObject9.Size = new System.Drawing.Size(30, 36);
+            this.plcObject9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject9.TabIndex = 2324;
+            this.plcObject9.TabStop = false;
+            // 
+            // plcObject8
+            // 
+            this.plcObject8._CurrentStatus = false;
+            this.plcObject8._EqBase = null;
+            this.plcObject8._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject8._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject8._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject8._PlcDisplayOffDevice = null;
+            this.plcObject8._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject8._Reverse = false;
+            this.plcObject8.Image = ((System.Drawing.Image)(resources.GetObject("plcObject8.Image")));
+            this.plcObject8.Location = new System.Drawing.Point(112, 108);
+            this.plcObject8.Name = "plcObject8";
+            this.plcObject8.Size = new System.Drawing.Size(30, 36);
+            this.plcObject8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject8.TabIndex = 2323;
+            this.plcObject8.TabStop = false;
+            // 
+            // plcObject14
+            // 
+            this.plcObject14._CurrentStatus = false;
+            this.plcObject14._EqBase = null;
+            this.plcObject14._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject14._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
+            this.plcObject14._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject14._PlcDisplayOffDevice = null;
+            this.plcObject14._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject14._Reverse = false;
+            this.plcObject14.Image = ((System.Drawing.Image)(resources.GetObject("plcObject14.Image")));
+            this.plcObject14.Location = new System.Drawing.Point(145, 30);
+            this.plcObject14.Name = "plcObject14";
+            this.plcObject14.Size = new System.Drawing.Size(24, 33);
+            this.plcObject14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject14.TabIndex = 2315;
+            this.plcObject14.TabStop = false;
+            // 
+            // inputTextBox7
+            // 
+            this.inputTextBox7._Division = 1;
+            this.inputTextBox7._DoubleWord = false;
+            this.inputTextBox7._EqBase = null;
+            this.inputTextBox7._FloatNumber = false;
+            this.inputTextBox7._MaxLimit = 999D;
+            this.inputTextBox7._MinLimit = 0D;
+            this.inputTextBox7._Multiplication = 1;
+            this.inputTextBox7._NumberOnly = true;
+            this.inputTextBox7._PlcDevice = "";
+            this.inputTextBox7.BackColor = System.Drawing.Color.White;
+            this.inputTextBox7.Location = new System.Drawing.Point(1136, 620);
+            this.inputTextBox7.Name = "inputTextBox7";
+            this.inputTextBox7.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox7.TabIndex = 2386;
+            this.inputTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox6
+            // 
+            this.displayTextBox6._Division = ((short)(1));
+            this.displayTextBox6._DoubleWord = false;
+            this.displayTextBox6._EqBase = null;
+            this.displayTextBox6._MaxLimit = 999D;
+            this.displayTextBox6._MinLimit = 0D;
+            this.displayTextBox6._Multiplication = ((short)(1));
+            this.displayTextBox6._PlcDevice = "";
+            this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox6.Location = new System.Drawing.Point(1072, 620);
+            this.displayTextBox6.Name = "displayTextBox6";
+            this.displayTextBox6.ReadOnly = true;
+            this.displayTextBox6.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox6.TabIndex = 2385;
+            this.displayTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox8
+            // 
+            this.inputTextBox8._Division = 1;
+            this.inputTextBox8._DoubleWord = false;
+            this.inputTextBox8._EqBase = null;
+            this.inputTextBox8._FloatNumber = false;
+            this.inputTextBox8._MaxLimit = 999D;
+            this.inputTextBox8._MinLimit = 0D;
+            this.inputTextBox8._Multiplication = 1;
+            this.inputTextBox8._NumberOnly = true;
+            this.inputTextBox8._PlcDevice = "";
+            this.inputTextBox8.BackColor = System.Drawing.Color.White;
+            this.inputTextBox8.Location = new System.Drawing.Point(1136, 586);
+            this.inputTextBox8.Name = "inputTextBox8";
+            this.inputTextBox8.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox8.TabIndex = 2384;
+            this.inputTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox7
+            // 
+            this.displayTextBox7._Division = ((short)(1));
+            this.displayTextBox7._DoubleWord = false;
+            this.displayTextBox7._EqBase = null;
+            this.displayTextBox7._MaxLimit = 999D;
+            this.displayTextBox7._MinLimit = 0D;
+            this.displayTextBox7._Multiplication = ((short)(1));
+            this.displayTextBox7._PlcDevice = "";
+            this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox7.Location = new System.Drawing.Point(1072, 586);
+            this.displayTextBox7.Name = "displayTextBox7";
+            this.displayTextBox7.ReadOnly = true;
+            this.displayTextBox7.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox7.TabIndex = 2383;
+            this.displayTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox5
+            // 
+            this.inputTextBox5._Division = 1;
+            this.inputTextBox5._DoubleWord = false;
+            this.inputTextBox5._EqBase = null;
+            this.inputTextBox5._FloatNumber = false;
+            this.inputTextBox5._MaxLimit = 999D;
+            this.inputTextBox5._MinLimit = 0D;
+            this.inputTextBox5._Multiplication = 1;
+            this.inputTextBox5._NumberOnly = true;
+            this.inputTextBox5._PlcDevice = "";
+            this.inputTextBox5.BackColor = System.Drawing.Color.White;
+            this.inputTextBox5.Location = new System.Drawing.Point(839, 620);
+            this.inputTextBox5.Name = "inputTextBox5";
+            this.inputTextBox5.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox5.TabIndex = 2382;
+            this.inputTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox4
+            // 
+            this.displayTextBox4._Division = ((short)(1));
+            this.displayTextBox4._DoubleWord = false;
+            this.displayTextBox4._EqBase = null;
+            this.displayTextBox4._MaxLimit = 999D;
+            this.displayTextBox4._MinLimit = 0D;
+            this.displayTextBox4._Multiplication = ((short)(1));
+            this.displayTextBox4._PlcDevice = "";
+            this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox4.Location = new System.Drawing.Point(775, 620);
+            this.displayTextBox4.Name = "displayTextBox4";
+            this.displayTextBox4.ReadOnly = true;
+            this.displayTextBox4.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox4.TabIndex = 2381;
+            this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox6
+            // 
+            this.inputTextBox6._Division = 1;
+            this.inputTextBox6._DoubleWord = false;
+            this.inputTextBox6._EqBase = null;
+            this.inputTextBox6._FloatNumber = false;
+            this.inputTextBox6._MaxLimit = 999D;
+            this.inputTextBox6._MinLimit = 0D;
+            this.inputTextBox6._Multiplication = 1;
+            this.inputTextBox6._NumberOnly = true;
+            this.inputTextBox6._PlcDevice = "";
+            this.inputTextBox6.BackColor = System.Drawing.Color.White;
+            this.inputTextBox6.Location = new System.Drawing.Point(839, 586);
+            this.inputTextBox6.Name = "inputTextBox6";
+            this.inputTextBox6.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox6.TabIndex = 2380;
+            this.inputTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox5
+            // 
+            this.displayTextBox5._Division = ((short)(1));
+            this.displayTextBox5._DoubleWord = false;
+            this.displayTextBox5._EqBase = null;
+            this.displayTextBox5._MaxLimit = 999D;
+            this.displayTextBox5._MinLimit = 0D;
+            this.displayTextBox5._Multiplication = ((short)(1));
+            this.displayTextBox5._PlcDevice = "";
+            this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox5.Location = new System.Drawing.Point(775, 586);
+            this.displayTextBox5.Name = "displayTextBox5";
+            this.displayTextBox5.ReadOnly = true;
+            this.displayTextBox5.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox5.TabIndex = 2379;
+            this.displayTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox2
+            // 
+            this.inputTextBox2._Division = 1;
+            this.inputTextBox2._DoubleWord = false;
+            this.inputTextBox2._EqBase = null;
+            this.inputTextBox2._FloatNumber = false;
+            this.inputTextBox2._MaxLimit = 999D;
+            this.inputTextBox2._MinLimit = 0D;
+            this.inputTextBox2._Multiplication = 1;
+            this.inputTextBox2._NumberOnly = true;
+            this.inputTextBox2._PlcDevice = "";
+            this.inputTextBox2.BackColor = System.Drawing.Color.White;
+            this.inputTextBox2.Location = new System.Drawing.Point(530, 620);
+            this.inputTextBox2.Name = "inputTextBox2";
+            this.inputTextBox2.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox2.TabIndex = 2378;
+            this.inputTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox2
+            // 
+            this.displayTextBox2._Division = ((short)(1));
+            this.displayTextBox2._DoubleWord = false;
+            this.displayTextBox2._EqBase = null;
+            this.displayTextBox2._MaxLimit = 999D;
+            this.displayTextBox2._MinLimit = 0D;
+            this.displayTextBox2._Multiplication = ((short)(1));
+            this.displayTextBox2._PlcDevice = "";
+            this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox2.Location = new System.Drawing.Point(466, 620);
+            this.displayTextBox2.Name = "displayTextBox2";
+            this.displayTextBox2.ReadOnly = true;
+            this.displayTextBox2.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox2.TabIndex = 2377;
+            this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox3
+            // 
+            this.inputTextBox3._Division = 1;
+            this.inputTextBox3._DoubleWord = false;
+            this.inputTextBox3._EqBase = null;
+            this.inputTextBox3._FloatNumber = false;
+            this.inputTextBox3._MaxLimit = 999D;
+            this.inputTextBox3._MinLimit = 0D;
+            this.inputTextBox3._Multiplication = 1;
+            this.inputTextBox3._NumberOnly = true;
+            this.inputTextBox3._PlcDevice = "";
+            this.inputTextBox3.BackColor = System.Drawing.Color.White;
+            this.inputTextBox3.Location = new System.Drawing.Point(530, 586);
+            this.inputTextBox3.Name = "inputTextBox3";
+            this.inputTextBox3.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox3.TabIndex = 2376;
+            this.inputTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox3
+            // 
+            this.displayTextBox3._Division = ((short)(1));
+            this.displayTextBox3._DoubleWord = false;
+            this.displayTextBox3._EqBase = null;
+            this.displayTextBox3._MaxLimit = 999D;
+            this.displayTextBox3._MinLimit = 0D;
+            this.displayTextBox3._Multiplication = ((short)(1));
+            this.displayTextBox3._PlcDevice = "";
+            this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox3.Location = new System.Drawing.Point(466, 586);
+            this.displayTextBox3.Name = "displayTextBox3";
+            this.displayTextBox3.ReadOnly = true;
+            this.displayTextBox3.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox3.TabIndex = 2375;
+            this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox1
+            // 
+            this.inputTextBox1._Division = 1;
+            this.inputTextBox1._DoubleWord = false;
+            this.inputTextBox1._EqBase = null;
+            this.inputTextBox1._FloatNumber = false;
+            this.inputTextBox1._MaxLimit = 999D;
+            this.inputTextBox1._MinLimit = 0D;
+            this.inputTextBox1._Multiplication = 1;
+            this.inputTextBox1._NumberOnly = true;
+            this.inputTextBox1._PlcDevice = "";
+            this.inputTextBox1.BackColor = System.Drawing.Color.White;
+            this.inputTextBox1.Location = new System.Drawing.Point(216, 620);
+            this.inputTextBox1.Name = "inputTextBox1";
+            this.inputTextBox1.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox1.TabIndex = 2374;
+            this.inputTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox1
+            // 
+            this.displayTextBox1._Division = ((short)(1));
+            this.displayTextBox1._DoubleWord = false;
+            this.displayTextBox1._EqBase = null;
+            this.displayTextBox1._MaxLimit = 999D;
+            this.displayTextBox1._MinLimit = 0D;
+            this.displayTextBox1._Multiplication = ((short)(1));
+            this.displayTextBox1._PlcDevice = "";
+            this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox1.Location = new System.Drawing.Point(152, 620);
+            this.displayTextBox1.Name = "displayTextBox1";
+            this.displayTextBox1.ReadOnly = true;
+            this.displayTextBox1.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox1.TabIndex = 2373;
+            this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox4
+            // 
+            this.inputTextBox4._Division = 1;
+            this.inputTextBox4._DoubleWord = false;
+            this.inputTextBox4._EqBase = null;
+            this.inputTextBox4._FloatNumber = false;
+            this.inputTextBox4._MaxLimit = 999D;
+            this.inputTextBox4._MinLimit = 0D;
+            this.inputTextBox4._Multiplication = 1;
+            this.inputTextBox4._NumberOnly = true;
+            this.inputTextBox4._PlcDevice = "";
+            this.inputTextBox4.BackColor = System.Drawing.Color.White;
+            this.inputTextBox4.Location = new System.Drawing.Point(216, 586);
+            this.inputTextBox4.Name = "inputTextBox4";
+            this.inputTextBox4.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox4.TabIndex = 2372;
+            this.inputTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox23
+            // 
+            this.displayTextBox23._Division = ((short)(1));
+            this.displayTextBox23._DoubleWord = false;
+            this.displayTextBox23._EqBase = null;
+            this.displayTextBox23._MaxLimit = 999D;
+            this.displayTextBox23._MinLimit = 0D;
+            this.displayTextBox23._Multiplication = ((short)(1));
+            this.displayTextBox23._PlcDevice = "";
+            this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox23.Location = new System.Drawing.Point(152, 586);
+            this.displayTextBox23.Name = "displayTextBox23";
+            this.displayTextBox23.ReadOnly = true;
+            this.displayTextBox23.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox23.TabIndex = 2371;
+            this.displayTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // plcObject36
+            // 
+            this.plcObject36._CurrentStatus = false;
+            this.plcObject36._EqBase = null;
+            this.plcObject36._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject36._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject36._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject36._PlcDisplayOffDevice = null;
+            this.plcObject36._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject36._Reverse = false;
+            this.plcObject36.Image = ((System.Drawing.Image)(resources.GetObject("plcObject36.Image")));
+            this.plcObject36.Location = new System.Drawing.Point(998, 184);
+            this.plcObject36.Name = "plcObject36";
+            this.plcObject36.Size = new System.Drawing.Size(30, 36);
+            this.plcObject36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject36.TabIndex = 2350;
+            this.plcObject36.TabStop = false;
+            // 
+            // plcObject28
+            // 
+            this.plcObject28._CurrentStatus = false;
+            this.plcObject28._EqBase = null;
+            this.plcObject28._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject28._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject28._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject28._PlcDisplayOffDevice = null;
+            this.plcObject28._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject28._Reverse = false;
+            this.plcObject28.Image = ((System.Drawing.Image)(resources.GetObject("plcObject28.Image")));
+            this.plcObject28.Location = new System.Drawing.Point(390, 184);
+            this.plcObject28.Name = "plcObject28";
+            this.plcObject28.Size = new System.Drawing.Size(30, 36);
+            this.plcObject28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject28.TabIndex = 2342;
+            this.plcObject28.TabStop = false;
+            // 
+            // plcObject31
+            // 
+            this.plcObject31._CurrentStatus = false;
+            this.plcObject31._EqBase = null;
+            this.plcObject31._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject31._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject31._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject31._PlcDisplayOffDevice = null;
+            this.plcObject31._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject31._Reverse = false;
+            this.plcObject31.Image = ((System.Drawing.Image)(resources.GetObject("plcObject31.Image")));
+            this.plcObject31.Location = new System.Drawing.Point(702, 184);
+            this.plcObject31.Name = "plcObject31";
+            this.plcObject31.Size = new System.Drawing.Size(30, 36);
+            this.plcObject31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject31.TabIndex = 2345;
+            this.plcObject31.TabStop = false;
+            // 
+            // plcObject25
+            // 
+            this.plcObject25._CurrentStatus = false;
+            this.plcObject25._EqBase = null;
+            this.plcObject25._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject25._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject25._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject25._PlcDisplayOffDevice = null;
+            this.plcObject25._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject25._Reverse = false;
+            this.plcObject25.Image = ((System.Drawing.Image)(resources.GetObject("plcObject25.Image")));
+            this.plcObject25.Location = new System.Drawing.Point(74, 184);
+            this.plcObject25.Name = "plcObject25";
+            this.plcObject25.Size = new System.Drawing.Size(30, 36);
+            this.plcObject25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject25.TabIndex = 2339;
+            this.plcObject25.TabStop = false;
+            // 
+            // plcObject35
+            // 
+            this.plcObject35._CurrentStatus = false;
+            this.plcObject35._EqBase = null;
+            this.plcObject35._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject35._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject35._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject35._PlcDisplayOffDevice = null;
+            this.plcObject35._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject35._Reverse = false;
+            this.plcObject35.Image = ((System.Drawing.Image)(resources.GetObject("plcObject35.Image")));
+            this.plcObject35.Location = new System.Drawing.Point(1155, 255);
+            this.plcObject35.Name = "plcObject35";
+            this.plcObject35.Size = new System.Drawing.Size(30, 36);
+            this.plcObject35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject35.TabIndex = 2349;
+            this.plcObject35.TabStop = false;
+            // 
+            // plcObject34
+            // 
+            this.plcObject34._CurrentStatus = false;
+            this.plcObject34._EqBase = null;
+            this.plcObject34._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject34._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject34._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject34._PlcDisplayOffDevice = null;
+            this.plcObject34._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject34._Reverse = false;
+            this.plcObject34.Image = ((System.Drawing.Image)(resources.GetObject("plcObject34.Image")));
+            this.plcObject34.Location = new System.Drawing.Point(1074, 255);
+            this.plcObject34.Name = "plcObject34";
+            this.plcObject34.Size = new System.Drawing.Size(30, 36);
+            this.plcObject34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject34.TabIndex = 2348;
+            this.plcObject34.TabStop = false;
+            // 
+            // plcObject24
+            // 
+            this.plcObject24._CurrentStatus = false;
+            this.plcObject24._EqBase = null;
+            this.plcObject24._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject24._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject24._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject24._PlcDisplayOffDevice = null;
+            this.plcObject24._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject24._Reverse = false;
+            this.plcObject24.Image = ((System.Drawing.Image)(resources.GetObject("plcObject24.Image")));
+            this.plcObject24.Location = new System.Drawing.Point(1196, 108);
+            this.plcObject24.Name = "plcObject24";
+            this.plcObject24.Size = new System.Drawing.Size(30, 36);
+            this.plcObject24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject24.TabIndex = 2338;
+            this.plcObject24.TabStop = false;
+            // 
+            // plcObject23
+            // 
+            this.plcObject23._CurrentStatus = false;
+            this.plcObject23._EqBase = null;
+            this.plcObject23._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject23._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject23._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject23._PlcDisplayOffDevice = null;
+            this.plcObject23._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject23._Reverse = false;
+            this.plcObject23.Image = ((System.Drawing.Image)(resources.GetObject("plcObject23.Image")));
+            this.plcObject23.Location = new System.Drawing.Point(1140, 108);
+            this.plcObject23.Name = "plcObject23";
+            this.plcObject23.Size = new System.Drawing.Size(30, 36);
+            this.plcObject23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject23.TabIndex = 2337;
+            this.plcObject23.TabStop = false;
+            // 
+            // plcObject22
+            // 
+            this.plcObject22._CurrentStatus = false;
+            this.plcObject22._EqBase = null;
+            this.plcObject22._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject22._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject22._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject22._PlcDisplayOffDevice = null;
+            this.plcObject22._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject22._Reverse = false;
+            this.plcObject22.Image = ((System.Drawing.Image)(resources.GetObject("plcObject22.Image")));
+            this.plcObject22.Location = new System.Drawing.Point(1096, 108);
+            this.plcObject22.Name = "plcObject22";
+            this.plcObject22.Size = new System.Drawing.Size(30, 36);
+            this.plcObject22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject22.TabIndex = 2336;
+            this.plcObject22.TabStop = false;
+            // 
+            // plcObject21
+            // 
+            this.plcObject21._CurrentStatus = false;
+            this.plcObject21._EqBase = null;
+            this.plcObject21._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject21._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
+            this.plcObject21._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject21._PlcDisplayOffDevice = null;
+            this.plcObject21._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject21._Reverse = false;
+            this.plcObject21.Image = ((System.Drawing.Image)(resources.GetObject("plcObject21.Image")));
+            this.plcObject21.Location = new System.Drawing.Point(1036, 108);
+            this.plcObject21.Name = "plcObject21";
+            this.plcObject21.Size = new System.Drawing.Size(30, 36);
+            this.plcObject21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject21.TabIndex = 2335;
+            this.plcObject21.TabStop = false;
+            // 
+            // plcObject7
+            // 
+            this.plcObject7._CurrentStatus = false;
+            this.plcObject7._EqBase = null;
+            this.plcObject7._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject7._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
+            this.plcObject7._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject7._PlcDisplayOffDevice = null;
+            this.plcObject7._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject7._Reverse = false;
+            this.plcObject7.Image = ((System.Drawing.Image)(resources.GetObject("plcObject7.Image")));
+            this.plcObject7.Location = new System.Drawing.Point(1168, 30);
+            this.plcObject7.Name = "plcObject7";
+            this.plcObject7.Size = new System.Drawing.Size(24, 33);
+            this.plcObject7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject7.TabIndex = 2322;
+            this.plcObject7.TabStop = false;
+            // 
+            // plcObject6
+            // 
+            this.plcObject6._CurrentStatus = false;
+            this.plcObject6._EqBase = null;
+            this.plcObject6._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject6._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
+            this.plcObject6._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject6._PlcDisplayOffDevice = null;
+            this.plcObject6._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject6._Reverse = false;
+            this.plcObject6.Image = ((System.Drawing.Image)(resources.GetObject("plcObject6.Image")));
+            this.plcObject6.Location = new System.Drawing.Point(1070, 30);
+            this.plcObject6.Name = "plcObject6";
+            this.plcObject6.Size = new System.Drawing.Size(24, 33);
+            this.plcObject6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject6.TabIndex = 2321;
+            this.plcObject6.TabStop = false;
+            // 
+            // plcObject5
+            // 
+            this.plcObject5._CurrentStatus = false;
+            this.plcObject5._EqBase = null;
+            this.plcObject5._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject5._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
+            this.plcObject5._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject5._PlcDisplayOffDevice = null;
+            this.plcObject5._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject5._Reverse = false;
+            this.plcObject5.Image = ((System.Drawing.Image)(resources.GetObject("plcObject5.Image")));
+            this.plcObject5.Location = new System.Drawing.Point(871, 30);
+            this.plcObject5.Name = "plcObject5";
+            this.plcObject5.Size = new System.Drawing.Size(24, 33);
+            this.plcObject5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject5.TabIndex = 2320;
+            this.plcObject5.TabStop = false;
+            // 
+            // plcObject4
+            // 
+            this.plcObject4._CurrentStatus = false;
+            this.plcObject4._EqBase = null;
+            this.plcObject4._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject4._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
+            this.plcObject4._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject4._PlcDisplayOffDevice = null;
+            this.plcObject4._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject4._Reverse = false;
+            this.plcObject4.Image = ((System.Drawing.Image)(resources.GetObject("plcObject4.Image")));
+            this.plcObject4.Location = new System.Drawing.Point(776, 30);
+            this.plcObject4.Name = "plcObject4";
+            this.plcObject4.Size = new System.Drawing.Size(24, 33);
+            this.plcObject4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject4.TabIndex = 2319;
+            this.plcObject4.TabStop = false;
+            // 
+            // plcObject3
+            // 
+            this.plcObject3._CurrentStatus = false;
+            this.plcObject3._EqBase = null;
+            this.plcObject3._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject3._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
+            this.plcObject3._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject3._PlcDisplayOffDevice = null;
+            this.plcObject3._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject3._Reverse = false;
+            this.plcObject3.Image = ((System.Drawing.Image)(resources.GetObject("plcObject3.Image")));
+            this.plcObject3.Location = new System.Drawing.Point(563, 30);
+            this.plcObject3.Name = "plcObject3";
+            this.plcObject3.Size = new System.Drawing.Size(24, 33);
+            this.plcObject3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject3.TabIndex = 2318;
+            this.plcObject3.TabStop = false;
+            // 
+            // plcObject2
+            // 
+            this.plcObject2._CurrentStatus = false;
+            this.plcObject2._EqBase = null;
+            this.plcObject2._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject2._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
+            this.plcObject2._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject2._PlcDisplayOffDevice = null;
+            this.plcObject2._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject2._Reverse = false;
+            this.plcObject2.Image = ((System.Drawing.Image)(resources.GetObject("plcObject2.Image")));
+            this.plcObject2.Location = new System.Drawing.Point(465, 30);
+            this.plcObject2.Name = "plcObject2";
+            this.plcObject2.Size = new System.Drawing.Size(24, 33);
+            this.plcObject2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject2.TabIndex = 2317;
+            this.plcObject2.TabStop = false;
+            // 
+            // plcObject1
+            // 
+            this.plcObject1._CurrentStatus = false;
+            this.plcObject1._EqBase = null;
+            this.plcObject1._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject1._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
+            this.plcObject1._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject1._PlcDisplayOffDevice = null;
+            this.plcObject1._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject1._Reverse = false;
+            this.plcObject1.Image = ((System.Drawing.Image)(resources.GetObject("plcObject1.Image")));
+            this.plcObject1.Location = new System.Drawing.Point(243, 28);
+            this.plcObject1.Name = "plcObject1";
+            this.plcObject1.Size = new System.Drawing.Size(24, 33);
+            this.plcObject1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plcObject1.TabIndex = 2316;
+            this.plcObject1.TabStop = false;
+            // 
+            // inputTextBox9
+            // 
+            this.inputTextBox9._Division = 1;
+            this.inputTextBox9._DoubleWord = false;
+            this.inputTextBox9._EqBase = null;
+            this.inputTextBox9._FloatNumber = false;
+            this.inputTextBox9._MaxLimit = 999D;
+            this.inputTextBox9._MinLimit = 0D;
+            this.inputTextBox9._Multiplication = 1;
+            this.inputTextBox9._NumberOnly = true;
+            this.inputTextBox9._PlcDevice = "";
+            this.inputTextBox9.BackColor = System.Drawing.Color.White;
+            this.inputTextBox9.Location = new System.Drawing.Point(155, 132);
+            this.inputTextBox9.Name = "inputTextBox9";
+            this.inputTextBox9.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox9.TabIndex = 2433;
+            this.inputTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox24
+            // 
+            this.inputTextBox24._Division = 1;
+            this.inputTextBox24._DoubleWord = false;
+            this.inputTextBox24._EqBase = null;
+            this.inputTextBox24._FloatNumber = false;
+            this.inputTextBox24._MaxLimit = 999D;
+            this.inputTextBox24._MinLimit = 0D;
+            this.inputTextBox24._Multiplication = 1;
+            this.inputTextBox24._NumberOnly = true;
+            this.inputTextBox24._PlcDevice = "";
+            this.inputTextBox24.BackColor = System.Drawing.Color.White;
+            this.inputTextBox24.Location = new System.Drawing.Point(948, 258);
+            this.inputTextBox24.Name = "inputTextBox24";
+            this.inputTextBox24.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox24.TabIndex = 2432;
+            this.inputTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox25
+            // 
+            this.inputTextBox25._Division = 1;
+            this.inputTextBox25._DoubleWord = false;
+            this.inputTextBox25._EqBase = null;
+            this.inputTextBox25._FloatNumber = false;
+            this.inputTextBox25._MaxLimit = 999D;
+            this.inputTextBox25._MinLimit = 0D;
+            this.inputTextBox25._Multiplication = 1;
+            this.inputTextBox25._NumberOnly = true;
+            this.inputTextBox25._PlcDevice = "";
+            this.inputTextBox25.BackColor = System.Drawing.Color.White;
+            this.inputTextBox25.Location = new System.Drawing.Point(948, 216);
+            this.inputTextBox25.Name = "inputTextBox25";
+            this.inputTextBox25.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox25.TabIndex = 2431;
+            this.inputTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox26
+            // 
+            this.inputTextBox26._Division = 1;
+            this.inputTextBox26._DoubleWord = false;
+            this.inputTextBox26._EqBase = null;
+            this.inputTextBox26._FloatNumber = false;
+            this.inputTextBox26._MaxLimit = 999D;
+            this.inputTextBox26._MinLimit = 0D;
+            this.inputTextBox26._Multiplication = 1;
+            this.inputTextBox26._NumberOnly = true;
+            this.inputTextBox26._PlcDevice = "";
+            this.inputTextBox26.BackColor = System.Drawing.Color.White;
+            this.inputTextBox26.Location = new System.Drawing.Point(948, 174);
+            this.inputTextBox26.Name = "inputTextBox26";
+            this.inputTextBox26.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox26.TabIndex = 2430;
+            this.inputTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox27
+            // 
+            this.inputTextBox27._Division = 1;
+            this.inputTextBox27._DoubleWord = false;
+            this.inputTextBox27._EqBase = null;
+            this.inputTextBox27._FloatNumber = false;
+            this.inputTextBox27._MaxLimit = 999D;
+            this.inputTextBox27._MinLimit = 0D;
+            this.inputTextBox27._Multiplication = 1;
+            this.inputTextBox27._NumberOnly = true;
+            this.inputTextBox27._PlcDevice = "";
+            this.inputTextBox27.BackColor = System.Drawing.Color.White;
+            this.inputTextBox27.Location = new System.Drawing.Point(948, 132);
+            this.inputTextBox27.Name = "inputTextBox27";
+            this.inputTextBox27.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox27.TabIndex = 2429;
+            this.inputTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox28
+            // 
+            this.inputTextBox28._Division = 1;
+            this.inputTextBox28._DoubleWord = false;
+            this.inputTextBox28._EqBase = null;
+            this.inputTextBox28._FloatNumber = false;
+            this.inputTextBox28._MaxLimit = 999D;
+            this.inputTextBox28._MinLimit = 0D;
+            this.inputTextBox28._Multiplication = 1;
+            this.inputTextBox28._NumberOnly = true;
+            this.inputTextBox28._PlcDevice = "";
+            this.inputTextBox28.BackColor = System.Drawing.Color.White;
+            this.inputTextBox28.Location = new System.Drawing.Point(948, 90);
+            this.inputTextBox28.Name = "inputTextBox28";
+            this.inputTextBox28.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox28.TabIndex = 2428;
+            this.inputTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox19
+            // 
+            this.inputTextBox19._Division = 1;
+            this.inputTextBox19._DoubleWord = false;
+            this.inputTextBox19._EqBase = null;
+            this.inputTextBox19._FloatNumber = false;
+            this.inputTextBox19._MaxLimit = 999D;
+            this.inputTextBox19._MinLimit = 0D;
+            this.inputTextBox19._Multiplication = 1;
+            this.inputTextBox19._NumberOnly = true;
+            this.inputTextBox19._PlcDevice = "";
+            this.inputTextBox19.BackColor = System.Drawing.Color.White;
+            this.inputTextBox19.Location = new System.Drawing.Point(695, 258);
+            this.inputTextBox19.Name = "inputTextBox19";
+            this.inputTextBox19.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox19.TabIndex = 2427;
+            this.inputTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox20
+            // 
+            this.inputTextBox20._Division = 1;
+            this.inputTextBox20._DoubleWord = false;
+            this.inputTextBox20._EqBase = null;
+            this.inputTextBox20._FloatNumber = false;
+            this.inputTextBox20._MaxLimit = 999D;
+            this.inputTextBox20._MinLimit = 0D;
+            this.inputTextBox20._Multiplication = 1;
+            this.inputTextBox20._NumberOnly = true;
+            this.inputTextBox20._PlcDevice = "";
+            this.inputTextBox20.BackColor = System.Drawing.Color.White;
+            this.inputTextBox20.Location = new System.Drawing.Point(695, 216);
+            this.inputTextBox20.Name = "inputTextBox20";
+            this.inputTextBox20.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox20.TabIndex = 2426;
+            this.inputTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox21
+            // 
+            this.inputTextBox21._Division = 1;
+            this.inputTextBox21._DoubleWord = false;
+            this.inputTextBox21._EqBase = null;
+            this.inputTextBox21._FloatNumber = false;
+            this.inputTextBox21._MaxLimit = 999D;
+            this.inputTextBox21._MinLimit = 0D;
+            this.inputTextBox21._Multiplication = 1;
+            this.inputTextBox21._NumberOnly = true;
+            this.inputTextBox21._PlcDevice = "";
+            this.inputTextBox21.BackColor = System.Drawing.Color.White;
+            this.inputTextBox21.Location = new System.Drawing.Point(695, 174);
+            this.inputTextBox21.Name = "inputTextBox21";
+            this.inputTextBox21.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox21.TabIndex = 2425;
+            this.inputTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox22
+            // 
+            this.inputTextBox22._Division = 1;
+            this.inputTextBox22._DoubleWord = false;
+            this.inputTextBox22._EqBase = null;
+            this.inputTextBox22._FloatNumber = false;
+            this.inputTextBox22._MaxLimit = 999D;
+            this.inputTextBox22._MinLimit = 0D;
+            this.inputTextBox22._Multiplication = 1;
+            this.inputTextBox22._NumberOnly = true;
+            this.inputTextBox22._PlcDevice = "";
+            this.inputTextBox22.BackColor = System.Drawing.Color.White;
+            this.inputTextBox22.Location = new System.Drawing.Point(695, 132);
+            this.inputTextBox22.Name = "inputTextBox22";
+            this.inputTextBox22.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox22.TabIndex = 2424;
+            this.inputTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox23
+            // 
+            this.inputTextBox23._Division = 1;
+            this.inputTextBox23._DoubleWord = false;
+            this.inputTextBox23._EqBase = null;
+            this.inputTextBox23._FloatNumber = false;
+            this.inputTextBox23._MaxLimit = 999D;
+            this.inputTextBox23._MinLimit = 0D;
+            this.inputTextBox23._Multiplication = 1;
+            this.inputTextBox23._NumberOnly = true;
+            this.inputTextBox23._PlcDevice = "";
+            this.inputTextBox23.BackColor = System.Drawing.Color.White;
+            this.inputTextBox23.Location = new System.Drawing.Point(695, 90);
+            this.inputTextBox23.Name = "inputTextBox23";
+            this.inputTextBox23.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox23.TabIndex = 2423;
+            this.inputTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox10
+            // 
+            this.inputTextBox10._Division = 1;
+            this.inputTextBox10._DoubleWord = false;
+            this.inputTextBox10._EqBase = null;
+            this.inputTextBox10._FloatNumber = false;
+            this.inputTextBox10._MaxLimit = 999D;
+            this.inputTextBox10._MinLimit = 0D;
+            this.inputTextBox10._Multiplication = 1;
+            this.inputTextBox10._NumberOnly = true;
+            this.inputTextBox10._PlcDevice = "";
+            this.inputTextBox10.BackColor = System.Drawing.Color.White;
+            this.inputTextBox10.Location = new System.Drawing.Point(155, 90);
+            this.inputTextBox10.Name = "inputTextBox10";
+            this.inputTextBox10.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox10.TabIndex = 2414;
+            this.inputTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox14
+            // 
+            this.inputTextBox14._Division = 1;
+            this.inputTextBox14._DoubleWord = false;
+            this.inputTextBox14._EqBase = null;
+            this.inputTextBox14._FloatNumber = false;
+            this.inputTextBox14._MaxLimit = 999D;
+            this.inputTextBox14._MinLimit = 0D;
+            this.inputTextBox14._Multiplication = 1;
+            this.inputTextBox14._NumberOnly = true;
+            this.inputTextBox14._PlcDevice = "";
+            this.inputTextBox14.BackColor = System.Drawing.Color.White;
+            this.inputTextBox14.Location = new System.Drawing.Point(418, 259);
+            this.inputTextBox14.Name = "inputTextBox14";
+            this.inputTextBox14.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox14.TabIndex = 2422;
+            this.inputTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox11
+            // 
+            this.inputTextBox11._Division = 1;
+            this.inputTextBox11._DoubleWord = false;
+            this.inputTextBox11._EqBase = null;
+            this.inputTextBox11._FloatNumber = false;
+            this.inputTextBox11._MaxLimit = 999D;
+            this.inputTextBox11._MinLimit = 0D;
+            this.inputTextBox11._Multiplication = 1;
+            this.inputTextBox11._NumberOnly = true;
+            this.inputTextBox11._PlcDevice = "";
+            this.inputTextBox11.BackColor = System.Drawing.Color.White;
+            this.inputTextBox11.Location = new System.Drawing.Point(155, 175);
+            this.inputTextBox11.Name = "inputTextBox11";
+            this.inputTextBox11.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox11.TabIndex = 2415;
+            this.inputTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox15
+            // 
+            this.inputTextBox15._Division = 1;
+            this.inputTextBox15._DoubleWord = false;
+            this.inputTextBox15._EqBase = null;
+            this.inputTextBox15._FloatNumber = false;
+            this.inputTextBox15._MaxLimit = 999D;
+            this.inputTextBox15._MinLimit = 0D;
+            this.inputTextBox15._Multiplication = 1;
+            this.inputTextBox15._NumberOnly = true;
+            this.inputTextBox15._PlcDevice = "";
+            this.inputTextBox15.BackColor = System.Drawing.Color.White;
+            this.inputTextBox15.Location = new System.Drawing.Point(418, 217);
+            this.inputTextBox15.Name = "inputTextBox15";
+            this.inputTextBox15.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox15.TabIndex = 2421;
+            this.inputTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox12
+            // 
+            this.inputTextBox12._Division = 1;
+            this.inputTextBox12._DoubleWord = false;
+            this.inputTextBox12._EqBase = null;
+            this.inputTextBox12._FloatNumber = false;
+            this.inputTextBox12._MaxLimit = 999D;
+            this.inputTextBox12._MinLimit = 0D;
+            this.inputTextBox12._Multiplication = 1;
+            this.inputTextBox12._NumberOnly = true;
+            this.inputTextBox12._PlcDevice = "";
+            this.inputTextBox12.BackColor = System.Drawing.Color.White;
+            this.inputTextBox12.Location = new System.Drawing.Point(155, 217);
+            this.inputTextBox12.Name = "inputTextBox12";
+            this.inputTextBox12.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox12.TabIndex = 2416;
+            this.inputTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox16
+            // 
+            this.inputTextBox16._Division = 1;
+            this.inputTextBox16._DoubleWord = false;
+            this.inputTextBox16._EqBase = null;
+            this.inputTextBox16._FloatNumber = false;
+            this.inputTextBox16._MaxLimit = 999D;
+            this.inputTextBox16._MinLimit = 0D;
+            this.inputTextBox16._Multiplication = 1;
+            this.inputTextBox16._NumberOnly = true;
+            this.inputTextBox16._PlcDevice = "";
+            this.inputTextBox16.BackColor = System.Drawing.Color.White;
+            this.inputTextBox16.Location = new System.Drawing.Point(418, 175);
+            this.inputTextBox16.Name = "inputTextBox16";
+            this.inputTextBox16.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox16.TabIndex = 2420;
+            this.inputTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox13
+            // 
+            this.inputTextBox13._Division = 1;
+            this.inputTextBox13._DoubleWord = false;
+            this.inputTextBox13._EqBase = null;
+            this.inputTextBox13._FloatNumber = false;
+            this.inputTextBox13._MaxLimit = 999D;
+            this.inputTextBox13._MinLimit = 0D;
+            this.inputTextBox13._Multiplication = 1;
+            this.inputTextBox13._NumberOnly = true;
+            this.inputTextBox13._PlcDevice = "";
+            this.inputTextBox13.BackColor = System.Drawing.Color.White;
+            this.inputTextBox13.Location = new System.Drawing.Point(155, 259);
+            this.inputTextBox13.Name = "inputTextBox13";
+            this.inputTextBox13.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox13.TabIndex = 2417;
+            this.inputTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox17
+            // 
+            this.inputTextBox17._Division = 1;
+            this.inputTextBox17._DoubleWord = false;
+            this.inputTextBox17._EqBase = null;
+            this.inputTextBox17._FloatNumber = false;
+            this.inputTextBox17._MaxLimit = 999D;
+            this.inputTextBox17._MinLimit = 0D;
+            this.inputTextBox17._Multiplication = 1;
+            this.inputTextBox17._NumberOnly = true;
+            this.inputTextBox17._PlcDevice = "";
+            this.inputTextBox17.BackColor = System.Drawing.Color.White;
+            this.inputTextBox17.Location = new System.Drawing.Point(418, 133);
+            this.inputTextBox17.Name = "inputTextBox17";
+            this.inputTextBox17.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox17.TabIndex = 2419;
+            this.inputTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox18
+            // 
+            this.inputTextBox18._Division = 1;
+            this.inputTextBox18._DoubleWord = false;
+            this.inputTextBox18._EqBase = null;
+            this.inputTextBox18._FloatNumber = false;
+            this.inputTextBox18._MaxLimit = 999D;
+            this.inputTextBox18._MinLimit = 0D;
+            this.inputTextBox18._Multiplication = 1;
+            this.inputTextBox18._NumberOnly = true;
+            this.inputTextBox18._PlcDevice = "";
+            this.inputTextBox18.BackColor = System.Drawing.Color.White;
+            this.inputTextBox18.Location = new System.Drawing.Point(418, 91);
+            this.inputTextBox18.Name = "inputTextBox18";
+            this.inputTextBox18.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox18.TabIndex = 2418;
+            this.inputTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // controlBtn7
             // 
@@ -5145,187 +5587,6 @@
             this.inputTextBox29.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox29.TabIndex = 2415;
             this.inputTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Label60
-            // 
-            this.Label60.AutoSize = true;
-            this.Label60.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label60.Location = new System.Drawing.Point(385, 128);
-            this.Label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label60.Name = "Label60";
-            this.Label60.Size = new System.Drawing.Size(67, 18);
-            this.Label60.TabIndex = 2051;
-            this.Label60.Text = "M3_4 Ar";
-            // 
-            // Label87
-            // 
-            this.Label87.AutoSize = true;
-            this.Label87.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label87.Location = new System.Drawing.Point(385, 70);
-            this.Label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label87.Name = "Label87";
-            this.Label87.Size = new System.Drawing.Size(73, 18);
-            this.Label87.TabIndex = 2050;
-            this.Label87.Text = "M3_3 O2";
-            // 
-            // Label141
-            // 
-            this.Label141.AutoSize = true;
-            this.Label141.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label141.Location = new System.Drawing.Point(385, 254);
-            this.Label141.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label141.Name = "Label141";
-            this.Label141.Size = new System.Drawing.Size(67, 18);
-            this.Label141.TabIndex = 2049;
-            this.Label141.Text = "M3_2 Ar";
-            this.Label141.Visible = false;
-            // 
-            // Label224
-            // 
-            this.Label224.AutoSize = true;
-            this.Label224.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label224.Location = new System.Drawing.Point(385, 189);
-            this.Label224.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label224.Name = "Label224";
-            this.Label224.Size = new System.Drawing.Size(73, 18);
-            this.Label224.TabIndex = 2048;
-            this.Label224.Text = "M3_1 O2";
-            this.Label224.Visible = false;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Arial", 12F);
-            this.label56.Location = new System.Drawing.Point(28, 202);
-            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(52, 18);
-            this.label56.TabIndex = 2047;
-            this.label56.Text = "H2 N2";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Arial", 12F);
-            this.label59.Location = new System.Drawing.Point(28, 141);
-            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(53, 18);
-            this.label59.TabIndex = 2046;
-            this.label59.Text = "H2 O2";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Arial", 12F);
-            this.label99.Location = new System.Drawing.Point(28, 75);
-            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(47, 18);
-            this.label99.TabIndex = 2045;
-            this.label99.Text = "H2 Ar";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.controlBtn15);
-            this.tabPage4.Controls.Add(this.controlBtn14);
-            this.tabPage4.Controls.Add(this.controlBtn13);
-            this.tabPage4.Controls.Add(this.controlBtn12);
-            this.tabPage4.Controls.Add(this.controlBtn11);
-            this.tabPage4.Controls.Add(this.controlBtn10);
-            this.tabPage4.Controls.Add(this.controlBtn9);
-            this.tabPage4.Controls.Add(this.controlBtn8);
-            this.tabPage4.Controls.Add(this.displayTextBox44);
-            this.tabPage4.Controls.Add(this.displayTextBox45);
-            this.tabPage4.Controls.Add(this.displayTextBox46);
-            this.tabPage4.Controls.Add(this.displayTextBox47);
-            this.tabPage4.Controls.Add(this.displayTextBox40);
-            this.tabPage4.Controls.Add(this.displayTextBox41);
-            this.tabPage4.Controls.Add(this.displayTextBox42);
-            this.tabPage4.Controls.Add(this.displayTextBox43);
-            this.tabPage4.Controls.Add(this.displayTextBox36);
-            this.tabPage4.Controls.Add(this.displayTextBox37);
-            this.tabPage4.Controls.Add(this.displayTextBox38);
-            this.tabPage4.Controls.Add(this.displayTextBox39);
-            this.tabPage4.Controls.Add(this.displayTextBox32);
-            this.tabPage4.Controls.Add(this.displayTextBox33);
-            this.tabPage4.Controls.Add(this.displayTextBox34);
-            this.tabPage4.Controls.Add(this.displayTextBox35);
-            this.tabPage4.Controls.Add(this.displayTextBox28);
-            this.tabPage4.Controls.Add(this.displayTextBox29);
-            this.tabPage4.Controls.Add(this.displayTextBox30);
-            this.tabPage4.Controls.Add(this.displayTextBox31);
-            this.tabPage4.Controls.Add(this.displayTextBox24);
-            this.tabPage4.Controls.Add(this.displayTextBox25);
-            this.tabPage4.Controls.Add(this.displayTextBox26);
-            this.tabPage4.Controls.Add(this.displayTextBox27);
-            this.tabPage4.Controls.Add(this.displayTextBox19);
-            this.tabPage4.Controls.Add(this.displayTextBox20);
-            this.tabPage4.Controls.Add(this.displayTextBox21);
-            this.tabPage4.Controls.Add(this.displayTextBox22);
-            this.tabPage4.Controls.Add(this.displayTextBox18);
-            this.tabPage4.Controls.Add(this.displayTextBox17);
-            this.tabPage4.Controls.Add(this.displayTextBox16);
-            this.tabPage4.Controls.Add(this.displayTextBox15);
-            this.tabPage4.Controls.Add(this.inputTextBox70);
-            this.tabPage4.Controls.Add(this.inputTextBox71);
-            this.tabPage4.Controls.Add(this.inputTextBox72);
-            this.tabPage4.Controls.Add(this.inputTextBox73);
-            this.tabPage4.Controls.Add(this.inputTextBox66);
-            this.tabPage4.Controls.Add(this.inputTextBox67);
-            this.tabPage4.Controls.Add(this.inputTextBox68);
-            this.tabPage4.Controls.Add(this.inputTextBox69);
-            this.tabPage4.Controls.Add(this.inputTextBox62);
-            this.tabPage4.Controls.Add(this.inputTextBox63);
-            this.tabPage4.Controls.Add(this.inputTextBox64);
-            this.tabPage4.Controls.Add(this.inputTextBox65);
-            this.tabPage4.Controls.Add(this.inputTextBox58);
-            this.tabPage4.Controls.Add(this.inputTextBox59);
-            this.tabPage4.Controls.Add(this.inputTextBox60);
-            this.tabPage4.Controls.Add(this.inputTextBox61);
-            this.tabPage4.Controls.Add(this.inputTextBox54);
-            this.tabPage4.Controls.Add(this.inputTextBox55);
-            this.tabPage4.Controls.Add(this.inputTextBox56);
-            this.tabPage4.Controls.Add(this.inputTextBox57);
-            this.tabPage4.Controls.Add(this.inputTextBox50);
-            this.tabPage4.Controls.Add(this.inputTextBox51);
-            this.tabPage4.Controls.Add(this.inputTextBox52);
-            this.tabPage4.Controls.Add(this.inputTextBox53);
-            this.tabPage4.Controls.Add(this.inputTextBox46);
-            this.tabPage4.Controls.Add(this.inputTextBox47);
-            this.tabPage4.Controls.Add(this.inputTextBox48);
-            this.tabPage4.Controls.Add(this.inputTextBox49);
-            this.tabPage4.Controls.Add(this.inputTextBox45);
-            this.tabPage4.Controls.Add(this.inputTextBox44);
-            this.tabPage4.Controls.Add(this.inputTextBox43);
-            this.tabPage4.Controls.Add(this.inputTextBox42);
-            this.tabPage4.Controls.Add(this.GroupBox1);
-            this.tabPage4.Controls.Add(this.Label229);
-            this.tabPage4.Controls.Add(this.TxtRecipeName);
-            this.tabPage4.Controls.Add(this.Label228);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.Label83);
-            this.tabPage4.Controls.Add(this.label11);
-            this.tabPage4.Controls.Add(this.label12);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.label54);
-            this.tabPage4.Controls.Add(this.label55);
-            this.tabPage4.Controls.Add(this.Label8);
-            this.tabPage4.Controls.Add(this.Label7);
-            this.tabPage4.Controls.Add(this.Label6);
-            this.tabPage4.Controls.Add(this.Label5);
-            this.tabPage4.Location = new System.Drawing.Point(4, 26);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1279, 663);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Power Supply";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // controlBtn15
             // 
@@ -6599,27 +6860,6 @@
             this.inputTextBox42.TabIndex = 2475;
             this.inputTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // GroupBox1
-            // 
-            this.GroupBox1.Controls.Add(this.inputTextBox41);
-            this.GroupBox1.Controls.Add(this.inputTextBox40);
-            this.GroupBox1.Controls.Add(this.inputTextBox39);
-            this.GroupBox1.Controls.Add(this.inputTextBox38);
-            this.GroupBox1.Controls.Add(this.inputTextBox37);
-            this.GroupBox1.Controls.Add(this.inputTextBox36);
-            this.GroupBox1.Controls.Add(this.Label246);
-            this.GroupBox1.Controls.Add(this.Label245);
-            this.GroupBox1.Controls.Add(this.Label244);
-            this.GroupBox1.Controls.Add(this.Label243);
-            this.GroupBox1.Controls.Add(this.Label242);
-            this.GroupBox1.Controls.Add(this.Label241);
-            this.GroupBox1.Location = new System.Drawing.Point(1030, 61);
-            this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(222, 331);
-            this.GroupBox1.TabIndex = 2474;
-            this.GroupBox1.TabStop = false;
-            this.GroupBox1.Text = "Pre Sputter time (Sec)";
-            // 
             // inputTextBox41
             // 
             this.inputTextBox41._Division = 1;
@@ -6728,246 +6968,6 @@
             this.inputTextBox36.TabIndex = 2475;
             this.inputTextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Label246
-            // 
-            this.Label246.AutoSize = true;
-            this.Label246.Location = new System.Drawing.Point(25, 272);
-            this.Label246.Name = "Label246";
-            this.Label246.Size = new System.Drawing.Size(49, 17);
-            this.Label246.TabIndex = 2085;
-            this.Label246.Text = "DC4_2";
-            // 
-            // Label245
-            // 
-            this.Label245.AutoSize = true;
-            this.Label245.Location = new System.Drawing.Point(25, 227);
-            this.Label245.Name = "Label245";
-            this.Label245.Size = new System.Drawing.Size(49, 17);
-            this.Label245.TabIndex = 2083;
-            this.Label245.Text = "DC4_1";
-            // 
-            // Label244
-            // 
-            this.Label244.AutoSize = true;
-            this.Label244.Location = new System.Drawing.Point(25, 182);
-            this.Label244.Name = "Label244";
-            this.Label244.Size = new System.Drawing.Size(49, 17);
-            this.Label244.TabIndex = 2081;
-            this.Label244.Text = "DC3_2";
-            // 
-            // Label243
-            // 
-            this.Label243.AutoSize = true;
-            this.Label243.Location = new System.Drawing.Point(25, 137);
-            this.Label243.Name = "Label243";
-            this.Label243.Size = new System.Drawing.Size(49, 17);
-            this.Label243.TabIndex = 2079;
-            this.Label243.Text = "DC3_1";
-            // 
-            // Label242
-            // 
-            this.Label242.AutoSize = true;
-            this.Label242.Location = new System.Drawing.Point(25, 92);
-            this.Label242.Name = "Label242";
-            this.Label242.Size = new System.Drawing.Size(50, 17);
-            this.Label242.TabIndex = 2077;
-            this.Label242.Text = "MF2_1";
-            // 
-            // Label241
-            // 
-            this.Label241.AutoSize = true;
-            this.Label241.Location = new System.Drawing.Point(25, 47);
-            this.Label241.Name = "Label241";
-            this.Label241.Size = new System.Drawing.Size(50, 17);
-            this.Label241.TabIndex = 2075;
-            this.Label241.Text = "MF1_1";
-            // 
-            // Label229
-            // 
-            this.Label229.AutoSize = true;
-            this.Label229.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label229.Location = new System.Drawing.Point(28, 24);
-            this.Label229.Name = "Label229";
-            this.Label229.Size = new System.Drawing.Size(135, 18);
-            this.Label229.TabIndex = 2473;
-            this.Label229.Text = "製程 匯入 配方：";
-            // 
-            // TxtRecipeName
-            // 
-            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
-            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TxtRecipeName.Location = new System.Drawing.Point(171, 20);
-            this.TxtRecipeName.Name = "TxtRecipeName";
-            this.TxtRecipeName.ReadOnly = true;
-            this.TxtRecipeName.Size = new System.Drawing.Size(430, 25);
-            this.TxtRecipeName.TabIndex = 2472;
-            this.TxtRecipeName.Text = "N/A";
-            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Label228
-            // 
-            this.Label228.AutoSize = true;
-            this.Label228.Location = new System.Drawing.Point(30, 206);
-            this.Label228.Name = "Label228";
-            this.Label228.Size = new System.Drawing.Size(106, 17);
-            this.Label228.TabIndex = 2471;
-            this.Label228.Text = "Pre_Sputter(sec)";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(511, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 17);
-            this.label4.TabIndex = 2470;
-            this.label4.Text = "MF2_2(10kw)";
-            this.label4.Visible = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(270, 61);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 17);
-            this.label9.TabIndex = 2469;
-            this.label9.Text = "MF2_1 (10kw)";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(391, 63);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 17);
-            this.label10.TabIndex = 2468;
-            this.label10.Text = "MF1_2 (10kw)";
-            this.label10.Visible = false;
-            // 
-            // Label83
-            // 
-            this.Label83.AutoSize = true;
-            this.Label83.ForeColor = System.Drawing.Color.Black;
-            this.Label83.Location = new System.Drawing.Point(151, 61);
-            this.Label83.Name = "Label83";
-            this.Label83.Size = new System.Drawing.Size(94, 17);
-            this.Label83.TabIndex = 2467;
-            this.Label83.Text = "MF1_1 (10kw)";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(29, 426);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 17);
-            this.label11.TabIndex = 2466;
-            this.label11.Text = "啟動 / 關閉";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(30, 330);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 17);
-            this.label12.TabIndex = 2465;
-            this.label12.Text = "實際電壓 (v)";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(30, 375);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 17);
-            this.label13.TabIndex = 2464;
-            this.label13.Text = "實際電流 (A)";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(30, 288);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 17);
-            this.label14.TabIndex = 2463;
-            this.label14.Text = "實際功率 (kw)";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(29, 90);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(88, 17);
-            this.label15.TabIndex = 2459;
-            this.label15.Text = "開始功率 (kw)";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(29, 127);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 17);
-            this.label16.TabIndex = 2460;
-            this.label16.Text = "結束功率 (kw)";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(30, 248);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(88, 17);
-            this.label54.TabIndex = 2462;
-            this.label54.Text = "設定功率 (kw)";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(30, 170);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(88, 17);
-            this.label55.TabIndex = 2461;
-            this.label55.Text = "製程功率 (kw)";
-            // 
-            // Label8
-            // 
-            this.Label8.AutoSize = true;
-            this.Label8.ForeColor = System.Drawing.Color.Black;
-            this.Label8.Location = new System.Drawing.Point(826, 61);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(93, 17);
-            this.Label8.TabIndex = 2449;
-            this.Label8.Text = "DC4_2 (20kw)";
-            // 
-            // Label7
-            // 
-            this.Label7.AutoSize = true;
-            this.Label7.ForeColor = System.Drawing.Color.Black;
-            this.Label7.Location = new System.Drawing.Point(931, 61);
-            this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(93, 17);
-            this.Label7.TabIndex = 2448;
-            this.Label7.Text = "DC4_1 (20kw)";
-            // 
-            // Label6
-            // 
-            this.Label6.AutoSize = true;
-            this.Label6.ForeColor = System.Drawing.Color.Black;
-            this.Label6.Location = new System.Drawing.Point(625, 61);
-            this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(93, 17);
-            this.Label6.TabIndex = 2447;
-            this.Label6.Text = "DC3_2 (20kw)";
-            // 
-            // Label5
-            // 
-            this.Label5.AutoSize = true;
-            this.Label5.ForeColor = System.Drawing.Color.Black;
-            this.Label5.Location = new System.Drawing.Point(724, 61);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(93, 17);
-            this.Label5.TabIndex = 2446;
-            this.Label5.Text = "DC3_1 (20kw)";
-            // 
             // frmGasview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -7003,42 +7003,6 @@
             this.Panel3.PerformLayout();
             this.ADD_Panel_1.ResumeLayout(false);
             this.ADD_Panel_1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.plcObject14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox38)).EndInit();
@@ -7090,6 +7054,42 @@
             this.tabPage4.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plcObject1)).EndInit();
             this.ResumeLayout(false);
 
         }

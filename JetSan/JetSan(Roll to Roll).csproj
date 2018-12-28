@@ -207,6 +207,12 @@
     <Compile Include="gui\frmGasview.Designer.cs">
       <DependentUpon>frmGasview.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frmProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmProcess.Designer.cs">
+      <DependentUpon>frmProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\frmOverview_1st.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmGasview.resx">
       <DependentUpon>frmGasview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmProcess.resx">
+      <DependentUpon>frmProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmOverview_1st.resx">
       <DependentUpon>frmOverview_1st.cs</DependentUpon>

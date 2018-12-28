@@ -31,6 +31,7 @@ namespace HyTemplate
         frmOverview_1st frmOverview_1st;
         frmOverview_2nd frmOverview_2nd;
         frmGasview frmGasview;
+        frmProcess frmProcess;
 
         RdEqKernel rdKernel;
 
@@ -55,6 +56,7 @@ namespace HyTemplate
             frmOverview_1st = new frmOverview_1st(rdKernel);
             frmOverview_2nd = new frmOverview_2nd(rdKernel);
             frmGasview = new frmGasview(rdKernel);
+            frmProcess = new frmProcess(rdKernel);
 
 
             //timerStatus.Enabled = true;
@@ -291,6 +293,11 @@ namespace HyTemplate
         private void btnGasView_Click(object sender, EventArgs e)
         {
             ReloadGui(frmGasview);
+        }
+
+        private void btnProcView_Click(object sender, EventArgs e)
+        {
+            ReloadGui(frmProcess);
         }
     }
 }

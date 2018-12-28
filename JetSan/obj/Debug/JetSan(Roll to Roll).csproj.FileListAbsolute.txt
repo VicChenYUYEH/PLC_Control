@@ -27,3 +27,5 @@ D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.exe
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.pdb
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.components.ControlBtn.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmGasview.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojResolveAssemblyReference.cache
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmProcess.resources
