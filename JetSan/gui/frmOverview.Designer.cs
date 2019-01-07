@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmOverview_1st
+    partial class frmOverview
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOverview_1st));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOverview));
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
             this.displayTextBox31 = new HyTemplate.components.DisplayTextBox();
@@ -350,6 +350,28 @@
             this.label121 = new System.Windows.Forms.Label();
             this.label123 = new System.Windows.Forms.Label();
             this.label125 = new System.Windows.Forms.Label();
+            this.displayTextBox26 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox25 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox24 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox23 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox22 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox21 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox20 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox19 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox18 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox17 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox16 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox15 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox14 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox13 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox12 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox11 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox10 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox9 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox8 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox7 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox6 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox5 = new HyTemplate.components.DisplayTextBox();
             this.polyCold5 = new HyTemplate.components.PolyCold();
             this.polyCold4 = new HyTemplate.components.PolyCold();
             this.polyCold3 = new HyTemplate.components.PolyCold();
@@ -466,28 +488,6 @@
             this.plcObject2 = new HyTemplate.components.PlcObject();
             this.plcObject7 = new HyTemplate.components.PlcObject();
             this.plcObject5 = new HyTemplate.components.PlcObject();
-            this.displayTextBox5 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox6 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox7 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox8 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox9 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox10 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox11 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox12 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox13 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox14 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox15 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox16 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox17 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox18 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox19 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox20 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox21 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox22 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox23 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox24 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox25 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox26 = new HyTemplate.components.DisplayTextBox();
             this.GroupBox3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.polyCold5)).BeginInit();
@@ -641,7 +641,7 @@
             this.displayTextBox31._MaxLimit = 999D;
             this.displayTextBox31._MinLimit = 0D;
             this.displayTextBox31._Multiplication = ((short)(1));
-            this.displayTextBox31._PlcDevice = "";
+            this.displayTextBox31._PlcDevice = "Compressed_Air";
             this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox31.Location = new System.Drawing.Point(327, 51);
             this.displayTextBox31.Name = "displayTextBox31";
@@ -658,7 +658,7 @@
             this.displayTextBox30._MaxLimit = 999D;
             this.displayTextBox30._MinLimit = 0D;
             this.displayTextBox30._Multiplication = ((short)(1));
-            this.displayTextBox30._PlcDevice = "";
+            this.displayTextBox30._PlcDevice = "Water_Pressureof_Outlet";
             this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox30.Location = new System.Drawing.Point(327, 24);
             this.displayTextBox30.Name = "displayTextBox30";
@@ -675,7 +675,7 @@
             this.displayTextBox29._MaxLimit = 999D;
             this.displayTextBox29._MinLimit = 0D;
             this.displayTextBox29._Multiplication = ((short)(1));
-            this.displayTextBox29._PlcDevice = "";
+            this.displayTextBox29._PlcDevice = "Water_Teof_Inlet";
             this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox29.Location = new System.Drawing.Point(127, 25);
             this.displayTextBox29.Name = "displayTextBox29";
@@ -692,7 +692,7 @@
             this.displayTextBox28._MaxLimit = 999D;
             this.displayTextBox28._MinLimit = 0D;
             this.displayTextBox28._Multiplication = ((short)(1));
-            this.displayTextBox28._PlcDevice = "";
+            this.displayTextBox28._PlcDevice = "Water_Teof_Outlet";
             this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox28.Location = new System.Drawing.Point(127, 51);
             this.displayTextBox28.Name = "displayTextBox28";
@@ -709,7 +709,7 @@
             this.displayTextBox27._MaxLimit = 999D;
             this.displayTextBox27._MinLimit = 0D;
             this.displayTextBox27._Multiplication = ((short)(1));
-            this.displayTextBox27._PlcDevice = "";
+            this.displayTextBox27._PlcDevice = "Water_Pressureof_Inlet";
             this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox27.Location = new System.Drawing.Point(127, 77);
             this.displayTextBox27.Name = "displayTextBox27";
@@ -3234,7 +3234,7 @@
             this.displayTextBox4._MaxLimit = 999D;
             this.displayTextBox4._MinLimit = 0D;
             this.displayTextBox4._Multiplication = ((short)(1));
-            this.displayTextBox4._PlcDevice = "";
+            this.displayTextBox4._PlcDevice = "MKS_BTG2_M3_2";
             this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox4.Location = new System.Drawing.Point(94, 93);
             this.displayTextBox4.Name = "displayTextBox4";
@@ -3251,7 +3251,7 @@
             this.displayTextBox3._MaxLimit = 999D;
             this.displayTextBox3._MinLimit = 0D;
             this.displayTextBox3._Multiplication = ((short)(1));
-            this.displayTextBox3._PlcDevice = "";
+            this.displayTextBox3._PlcDevice = "MKS_BTG3_M3_2";
             this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox3.Location = new System.Drawing.Point(18, 93);
             this.displayTextBox3.Name = "displayTextBox3";
@@ -3268,7 +3268,7 @@
             this.displayTextBox2._MaxLimit = 999D;
             this.displayTextBox2._MinLimit = 0D;
             this.displayTextBox2._Multiplication = ((short)(1));
-            this.displayTextBox2._PlcDevice = "";
+            this.displayTextBox2._PlcDevice = "MKS_BTG1_M3_2";
             this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox2.Location = new System.Drawing.Point(94, 43);
             this.displayTextBox2.Name = "displayTextBox2";
@@ -3285,7 +3285,7 @@
             this.displayTextBox1._MaxLimit = 999D;
             this.displayTextBox1._MinLimit = 0D;
             this.displayTextBox1._Multiplication = ((short)(1));
-            this.displayTextBox1._PlcDevice = "";
+            this.displayTextBox1._PlcDevice = "MKS_BTG4_M3_2";
             this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox1.Location = new System.Drawing.Point(18, 43);
             this.displayTextBox1.Name = "displayTextBox1";
@@ -3742,9 +3742,9 @@
             this.label118.Font = new System.Drawing.Font("Arial", 8F);
             this.label118.Location = new System.Drawing.Point(1378, 736);
             this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(28, 14);
+            this.label118.Size = new System.Drawing.Size(27, 14);
             this.label118.TabIndex = 2321;
-            this.label118.Text = "RV1";
+            this.label118.Text = "PV1";
             // 
             // label119
             // 
@@ -3792,15 +3792,388 @@
             this.label125.TabIndex = 2331;
             this.label125.Text = "BP2";
             // 
+            // displayTextBox26
+            // 
+            this.displayTextBox26._Division = ((short)(1));
+            this.displayTextBox26._DoubleWord = false;
+            this.displayTextBox26._EqBase = null;
+            this.displayTextBox26._MaxLimit = 999D;
+            this.displayTextBox26._MinLimit = 0D;
+            this.displayTextBox26._Multiplication = ((short)(1));
+            this.displayTextBox26._PlcDevice = "PLVG7_M3_1";
+            this.displayTextBox26.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox26.Location = new System.Drawing.Point(456, 30);
+            this.displayTextBox26.Name = "displayTextBox26";
+            this.displayTextBox26.ReadOnly = true;
+            this.displayTextBox26.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox26.TabIndex = 2373;
+            this.displayTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox25
+            // 
+            this.displayTextBox25._Division = ((short)(1));
+            this.displayTextBox25._DoubleWord = false;
+            this.displayTextBox25._EqBase = null;
+            this.displayTextBox25._MaxLimit = 999D;
+            this.displayTextBox25._MinLimit = 0D;
+            this.displayTextBox25._Multiplication = ((short)(1));
+            this.displayTextBox25._PlcDevice = "PLVG6_M3_1";
+            this.displayTextBox25.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox25.Location = new System.Drawing.Point(567, 30);
+            this.displayTextBox25.Name = "displayTextBox25";
+            this.displayTextBox25.ReadOnly = true;
+            this.displayTextBox25.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox25.TabIndex = 2372;
+            this.displayTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox24
+            // 
+            this.displayTextBox24._Division = ((short)(1));
+            this.displayTextBox24._DoubleWord = false;
+            this.displayTextBox24._EqBase = null;
+            this.displayTextBox24._MaxLimit = 999D;
+            this.displayTextBox24._MinLimit = 0D;
+            this.displayTextBox24._Multiplication = ((short)(1));
+            this.displayTextBox24._PlcDevice = "LVG4_M4";
+            this.displayTextBox24.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox24.Location = new System.Drawing.Point(78, 405);
+            this.displayTextBox24.Name = "displayTextBox24";
+            this.displayTextBox24.ReadOnly = true;
+            this.displayTextBox24.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox24.TabIndex = 2371;
+            this.displayTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox23
+            // 
+            this.displayTextBox23._Division = ((short)(1));
+            this.displayTextBox23._DoubleWord = false;
+            this.displayTextBox23._EqBase = null;
+            this.displayTextBox23._MaxLimit = 999D;
+            this.displayTextBox23._MinLimit = 0D;
+            this.displayTextBox23._Multiplication = ((short)(1));
+            this.displayTextBox23._PlcDevice = "HVG4_M4";
+            this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox23.Location = new System.Drawing.Point(78, 354);
+            this.displayTextBox23.Name = "displayTextBox23";
+            this.displayTextBox23.ReadOnly = true;
+            this.displayTextBox23.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox23.TabIndex = 2370;
+            this.displayTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox22
+            // 
+            this.displayTextBox22._Division = ((short)(1));
+            this.displayTextBox22._DoubleWord = false;
+            this.displayTextBox22._EqBase = null;
+            this.displayTextBox22._MaxLimit = 999D;
+            this.displayTextBox22._MinLimit = 0D;
+            this.displayTextBox22._Multiplication = ((short)(1));
+            this.displayTextBox22._PlcDevice = "LVG3_M3";
+            this.displayTextBox22.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox22.Location = new System.Drawing.Point(514, 399);
+            this.displayTextBox22.Name = "displayTextBox22";
+            this.displayTextBox22.ReadOnly = true;
+            this.displayTextBox22.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox22.TabIndex = 2369;
+            this.displayTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox21
+            // 
+            this.displayTextBox21._Division = ((short)(1));
+            this.displayTextBox21._DoubleWord = false;
+            this.displayTextBox21._EqBase = null;
+            this.displayTextBox21._MaxLimit = 999D;
+            this.displayTextBox21._MinLimit = 0D;
+            this.displayTextBox21._Multiplication = ((short)(1));
+            this.displayTextBox21._PlcDevice = "HVG3_M3_1";
+            this.displayTextBox21.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox21.Location = new System.Drawing.Point(514, 355);
+            this.displayTextBox21.Name = "displayTextBox21";
+            this.displayTextBox21.ReadOnly = true;
+            this.displayTextBox21.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox21.TabIndex = 2368;
+            this.displayTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox20
+            // 
+            this.displayTextBox20._Division = ((short)(1));
+            this.displayTextBox20._DoubleWord = false;
+            this.displayTextBox20._EqBase = null;
+            this.displayTextBox20._MaxLimit = 999D;
+            this.displayTextBox20._MinLimit = 0D;
+            this.displayTextBox20._Multiplication = ((short)(1));
+            this.displayTextBox20._PlcDevice = "DC4_HVG";
+            this.displayTextBox20.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox20.Location = new System.Drawing.Point(369, 378);
+            this.displayTextBox20.Name = "displayTextBox20";
+            this.displayTextBox20.ReadOnly = true;
+            this.displayTextBox20.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox20.TabIndex = 2367;
+            this.displayTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox19
+            // 
+            this.displayTextBox19._Division = ((short)(1));
+            this.displayTextBox19._DoubleWord = false;
+            this.displayTextBox19._EqBase = null;
+            this.displayTextBox19._MaxLimit = 999D;
+            this.displayTextBox19._MinLimit = 0D;
+            this.displayTextBox19._Multiplication = ((short)(1));
+            this.displayTextBox19._PlcDevice = "DC3_HVG";
+            this.displayTextBox19.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox19.Location = new System.Drawing.Point(442, 477);
+            this.displayTextBox19.Name = "displayTextBox19";
+            this.displayTextBox19.ReadOnly = true;
+            this.displayTextBox19.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox19.TabIndex = 2366;
+            this.displayTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox18
+            // 
+            this.displayTextBox18._Division = ((short)(1));
+            this.displayTextBox18._DoubleWord = false;
+            this.displayTextBox18._EqBase = null;
+            this.displayTextBox18._MaxLimit = 999D;
+            this.displayTextBox18._MinLimit = 0D;
+            this.displayTextBox18._Multiplication = ((short)(1));
+            this.displayTextBox18._PlcDevice = "MF2_HVG";
+            this.displayTextBox18.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox18.Location = new System.Drawing.Point(588, 477);
+            this.displayTextBox18.Name = "displayTextBox18";
+            this.displayTextBox18.ReadOnly = true;
+            this.displayTextBox18.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox18.TabIndex = 2365;
+            this.displayTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox17
+            // 
+            this.displayTextBox17._Division = ((short)(1));
+            this.displayTextBox17._DoubleWord = false;
+            this.displayTextBox17._EqBase = null;
+            this.displayTextBox17._MaxLimit = 999D;
+            this.displayTextBox17._MinLimit = 0D;
+            this.displayTextBox17._Multiplication = ((short)(1));
+            this.displayTextBox17._PlcDevice = "MF1_HVG";
+            this.displayTextBox17.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox17.Location = new System.Drawing.Point(644, 374);
+            this.displayTextBox17.Name = "displayTextBox17";
+            this.displayTextBox17.ReadOnly = true;
+            this.displayTextBox17.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox17.TabIndex = 2364;
+            this.displayTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox16
+            // 
+            this.displayTextBox16._Division = ((short)(1));
+            this.displayTextBox16._DoubleWord = false;
+            this.displayTextBox16._EqBase = null;
+            this.displayTextBox16._MaxLimit = 999D;
+            this.displayTextBox16._MinLimit = 0D;
+            this.displayTextBox16._Multiplication = ((short)(1));
+            this.displayTextBox16._PlcDevice = "LVG2_M2";
+            this.displayTextBox16.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox16.Location = new System.Drawing.Point(1134, 449);
+            this.displayTextBox16.Name = "displayTextBox16";
+            this.displayTextBox16.ReadOnly = true;
+            this.displayTextBox16.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox16.TabIndex = 2363;
+            this.displayTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox15
+            // 
+            this.displayTextBox15._Division = ((short)(1));
+            this.displayTextBox15._DoubleWord = false;
+            this.displayTextBox15._EqBase = null;
+            this.displayTextBox15._MaxLimit = 999D;
+            this.displayTextBox15._MinLimit = 0D;
+            this.displayTextBox15._Multiplication = ((short)(1));
+            this.displayTextBox15._PlcDevice = "HVG2_M2";
+            this.displayTextBox15.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox15.Location = new System.Drawing.Point(1134, 399);
+            this.displayTextBox15.Name = "displayTextBox15";
+            this.displayTextBox15.ReadOnly = true;
+            this.displayTextBox15.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox15.TabIndex = 2362;
+            this.displayTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox14
+            // 
+            this.displayTextBox14._Division = ((short)(1));
+            this.displayTextBox14._DoubleWord = false;
+            this.displayTextBox14._EqBase = null;
+            this.displayTextBox14._MaxLimit = 999D;
+            this.displayTextBox14._MinLimit = 0D;
+            this.displayTextBox14._Multiplication = ((short)(1));
+            this.displayTextBox14._PlcDevice = "LVG1_M1";
+            this.displayTextBox14.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox14.Location = new System.Drawing.Point(1343, 426);
+            this.displayTextBox14.Name = "displayTextBox14";
+            this.displayTextBox14.ReadOnly = true;
+            this.displayTextBox14.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox14.TabIndex = 2361;
+            this.displayTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox13
+            // 
+            this.displayTextBox13._Division = ((short)(1));
+            this.displayTextBox13._DoubleWord = false;
+            this.displayTextBox13._EqBase = null;
+            this.displayTextBox13._MaxLimit = 999D;
+            this.displayTextBox13._MinLimit = 0D;
+            this.displayTextBox13._Multiplication = ((short)(1));
+            this.displayTextBox13._PlcDevice = "HVG1_M1";
+            this.displayTextBox13.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox13.Location = new System.Drawing.Point(1343, 371);
+            this.displayTextBox13.Name = "displayTextBox13";
+            this.displayTextBox13.ReadOnly = true;
+            this.displayTextBox13.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox13.TabIndex = 2360;
+            this.displayTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox12
+            // 
+            this.displayTextBox12._Division = ((short)(1));
+            this.displayTextBox12._DoubleWord = false;
+            this.displayTextBox12._EqBase = null;
+            this.displayTextBox12._MaxLimit = 999D;
+            this.displayTextBox12._MinLimit = 0D;
+            this.displayTextBox12._Multiplication = ((short)(1));
+            this.displayTextBox12._PlcDevice = "PLVG1_M1";
+            this.displayTextBox12.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox12.Location = new System.Drawing.Point(1273, 785);
+            this.displayTextBox12.Name = "displayTextBox12";
+            this.displayTextBox12.ReadOnly = true;
+            this.displayTextBox12.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox12.TabIndex = 2359;
+            this.displayTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox11
+            // 
+            this.displayTextBox11._Division = ((short)(1));
+            this.displayTextBox11._DoubleWord = false;
+            this.displayTextBox11._EqBase = null;
+            this.displayTextBox11._MaxLimit = 999D;
+            this.displayTextBox11._MinLimit = 0D;
+            this.displayTextBox11._Multiplication = ((short)(1));
+            this.displayTextBox11._PlcDevice = "PLVG2_M2";
+            this.displayTextBox11.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox11.Location = new System.Drawing.Point(1070, 811);
+            this.displayTextBox11.Name = "displayTextBox11";
+            this.displayTextBox11.ReadOnly = true;
+            this.displayTextBox11.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox11.TabIndex = 2358;
+            this.displayTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox10
+            // 
+            this.displayTextBox10._Division = ((short)(1));
+            this.displayTextBox10._DoubleWord = false;
+            this.displayTextBox10._EqBase = null;
+            this.displayTextBox10._MaxLimit = 999D;
+            this.displayTextBox10._MinLimit = 0D;
+            this.displayTextBox10._Multiplication = ((short)(1));
+            this.displayTextBox10._PlcDevice = "PLVG3_M2";
+            this.displayTextBox10.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox10.Location = new System.Drawing.Point(887, 789);
+            this.displayTextBox10.Name = "displayTextBox10";
+            this.displayTextBox10.ReadOnly = true;
+            this.displayTextBox10.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox10.TabIndex = 2357;
+            this.displayTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox9
+            // 
+            this.displayTextBox9._Division = ((short)(1));
+            this.displayTextBox9._DoubleWord = false;
+            this.displayTextBox9._EqBase = null;
+            this.displayTextBox9._MaxLimit = 999D;
+            this.displayTextBox9._MinLimit = 0D;
+            this.displayTextBox9._Multiplication = ((short)(1));
+            this.displayTextBox9._PlcDevice = "PLVG4_M3_1";
+            this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox9.Location = new System.Drawing.Point(743, 808);
+            this.displayTextBox9.Name = "displayTextBox9";
+            this.displayTextBox9.ReadOnly = true;
+            this.displayTextBox9.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox9.TabIndex = 2356;
+            this.displayTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox8
+            // 
+            this.displayTextBox8._Division = ((short)(1));
+            this.displayTextBox8._DoubleWord = false;
+            this.displayTextBox8._EqBase = null;
+            this.displayTextBox8._MaxLimit = 999D;
+            this.displayTextBox8._MinLimit = 0D;
+            this.displayTextBox8._Multiplication = ((short)(1));
+            this.displayTextBox8._PlcDevice = "PLVG5_M3_1";
+            this.displayTextBox8.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox8.Location = new System.Drawing.Point(593, 803);
+            this.displayTextBox8.Name = "displayTextBox8";
+            this.displayTextBox8.ReadOnly = true;
+            this.displayTextBox8.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox8.TabIndex = 2355;
+            this.displayTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox7
+            // 
+            this.displayTextBox7._Division = ((short)(1));
+            this.displayTextBox7._DoubleWord = false;
+            this.displayTextBox7._EqBase = null;
+            this.displayTextBox7._MaxLimit = 999D;
+            this.displayTextBox7._MinLimit = 0D;
+            this.displayTextBox7._Multiplication = ((short)(1));
+            this.displayTextBox7._PlcDevice = "PLVG8_M3_1";
+            this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox7.Location = new System.Drawing.Point(311, 799);
+            this.displayTextBox7.Name = "displayTextBox7";
+            this.displayTextBox7.ReadOnly = true;
+            this.displayTextBox7.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox7.TabIndex = 2354;
+            this.displayTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox6
+            // 
+            this.displayTextBox6._Division = ((short)(1));
+            this.displayTextBox6._DoubleWord = false;
+            this.displayTextBox6._EqBase = null;
+            this.displayTextBox6._MaxLimit = 999D;
+            this.displayTextBox6._MinLimit = 0D;
+            this.displayTextBox6._Multiplication = ((short)(1));
+            this.displayTextBox6._PlcDevice = "PLVG9_M3_1";
+            this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox6.Location = new System.Drawing.Point(206, 811);
+            this.displayTextBox6.Name = "displayTextBox6";
+            this.displayTextBox6.ReadOnly = true;
+            this.displayTextBox6.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox6.TabIndex = 2353;
+            this.displayTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox5
+            // 
+            this.displayTextBox5._Division = ((short)(1));
+            this.displayTextBox5._DoubleWord = false;
+            this.displayTextBox5._EqBase = null;
+            this.displayTextBox5._MaxLimit = 999D;
+            this.displayTextBox5._MinLimit = 0D;
+            this.displayTextBox5._Multiplication = ((short)(1));
+            this.displayTextBox5._PlcDevice = "PLVG10_M4";
+            this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox5.Location = new System.Drawing.Point(23, 754);
+            this.displayTextBox5.Name = "displayTextBox5";
+            this.displayTextBox5.ReadOnly = true;
+            this.displayTextBox5.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox5.TabIndex = 2352;
+            this.displayTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // polyCold5
             // 
             this.polyCold5._EqBase = null;
             this.polyCold5._ImageSize = HyTemplate.components.PolyCold.ImageSize.isSmall;
-            this.polyCold5._PlcAlarmDevice = "";
-            this.polyCold5._PlcCoolingDevice = "";
-            this.polyCold5._PlcDefrostingDevice = "";
-            this.polyCold5._PlcOffDevice = "";
-            this.polyCold5._PlcRunDevice = "";
+            this.polyCold5._PlcAlarmDevice = "PolyCold3_Alarm_XC";
+            this.polyCold5._PlcCoolingDevice = "PolyCold3_Cool_XC";
+            this.polyCold5._PlcDefrostingDevice = "PolyCold3_Deforst_XC";
+            this.polyCold5._PlcRunDevice = "PolyCold3_Ready_XC";
             this.polyCold5._Reverse = false;
             this.polyCold5.Image = ((System.Drawing.Image)(resources.GetObject("polyCold5.Image")));
             this.polyCold5.Location = new System.Drawing.Point(414, 308);
@@ -3815,11 +4188,10 @@
             // 
             this.polyCold4._EqBase = null;
             this.polyCold4._ImageSize = HyTemplate.components.PolyCold.ImageSize.isSmall;
-            this.polyCold4._PlcAlarmDevice = "";
-            this.polyCold4._PlcCoolingDevice = "";
-            this.polyCold4._PlcDefrostingDevice = "";
-            this.polyCold4._PlcOffDevice = "";
-            this.polyCold4._PlcRunDevice = "";
+            this.polyCold4._PlcAlarmDevice = "PolyCold2_Alarm_XC";
+            this.polyCold4._PlcCoolingDevice = "PolyCold2_Cool_XC";
+            this.polyCold4._PlcDefrostingDevice = "PolyCold2_Deforst_XC";
+            this.polyCold4._PlcRunDevice = "PolyCold2_Ready_XC";
             this.polyCold4._Reverse = false;
             this.polyCold4.Image = ((System.Drawing.Image)(resources.GetObject("polyCold4.Image")));
             this.polyCold4.Location = new System.Drawing.Point(1146, 317);
@@ -3834,11 +4206,10 @@
             // 
             this.polyCold3._EqBase = null;
             this.polyCold3._ImageSize = HyTemplate.components.PolyCold.ImageSize.isSmall;
-            this.polyCold3._PlcAlarmDevice = "";
-            this.polyCold3._PlcCoolingDevice = "";
-            this.polyCold3._PlcDefrostingDevice = "";
-            this.polyCold3._PlcOffDevice = "";
-            this.polyCold3._PlcRunDevice = "";
+            this.polyCold3._PlcAlarmDevice = "PolyCold1_Alarm_XC";
+            this.polyCold3._PlcCoolingDevice = "PolyCold1_Cool_XC";
+            this.polyCold3._PlcDefrostingDevice = "PolyCold1_Deforst_XC";
+            this.polyCold3._PlcRunDevice = "PolyCold1_Ready_XC";
             this.polyCold3._Reverse = false;
             this.polyCold3.Image = ((System.Drawing.Image)(resources.GetObject("polyCold3.Image")));
             this.polyCold3.Location = new System.Drawing.Point(1247, 396);
@@ -3853,11 +4224,10 @@
             // 
             this.polyCold2._EqBase = null;
             this.polyCold2._ImageSize = HyTemplate.components.PolyCold.ImageSize.isSmall;
-            this.polyCold2._PlcAlarmDevice = "";
-            this.polyCold2._PlcCoolingDevice = "";
-            this.polyCold2._PlcDefrostingDevice = "";
-            this.polyCold2._PlcOffDevice = "";
-            this.polyCold2._PlcRunDevice = "";
+            this.polyCold2._PlcAlarmDevice = "PolyCold4_Alarm_XC";
+            this.polyCold2._PlcCoolingDevice = "PolyCold4_Cool_XC";
+            this.polyCold2._PlcDefrostingDevice = "PolyCold4_Deforst_XC";
+            this.polyCold2._PlcRunDevice = "PolyCold4_Ready_XC";
             this.polyCold2._Reverse = false;
             this.polyCold2.Image = ((System.Drawing.Image)(resources.GetObject("polyCold2.Image")));
             this.polyCold2.Location = new System.Drawing.Point(739, 458);
@@ -3872,11 +4242,10 @@
             // 
             this.polyCold1._EqBase = null;
             this.polyCold1._ImageSize = HyTemplate.components.PolyCold.ImageSize.isSmall;
-            this.polyCold1._PlcAlarmDevice = "";
-            this.polyCold1._PlcCoolingDevice = "";
-            this.polyCold1._PlcDefrostingDevice = "";
-            this.polyCold1._PlcOffDevice = "";
-            this.polyCold1._PlcRunDevice = "";
+            this.polyCold1._PlcAlarmDevice = "PolyCold5_Alarm_XC";
+            this.polyCold1._PlcCoolingDevice = "PolyCold5_Cool_XC";
+            this.polyCold1._PlcDefrostingDevice = "PolyCold5_Deforst_XC";
+            this.polyCold1._PlcRunDevice = "PolyCold5_Ready_XC";
             this.polyCold1._Reverse = false;
             this.polyCold1.Image = ((System.Drawing.Image)(resources.GetObject("polyCold1.Image")));
             this.polyCold1.Location = new System.Drawing.Point(304, 464);
@@ -3893,9 +4262,9 @@
             this.plcObject85._EqBase = null;
             this.plcObject85._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject85._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject85._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject85._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject85._PlcDisplayOffDevice = null;
-            this.plcObject85._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject85._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject85._Reverse = false;
             this.plcObject85.Image = ((System.Drawing.Image)(resources.GetObject("plcObject85.Image")));
             this.plcObject85.Location = new System.Drawing.Point(1098, 295);
@@ -3911,9 +4280,9 @@
             this.plcObject84._EqBase = null;
             this.plcObject84._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject84._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject84._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject84._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject84._PlcDisplayOffDevice = null;
-            this.plcObject84._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject84._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject84._Reverse = false;
             this.plcObject84.Image = ((System.Drawing.Image)(resources.GetObject("plcObject84.Image")));
             this.plcObject84.Location = new System.Drawing.Point(1043, 296);
@@ -3929,9 +4298,9 @@
             this.plcObject83._EqBase = null;
             this.plcObject83._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject83._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject83._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject83._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject83._PlcDisplayOffDevice = null;
-            this.plcObject83._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject83._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject83._Reverse = false;
             this.plcObject83.Image = ((System.Drawing.Image)(resources.GetObject("plcObject83.Image")));
             this.plcObject83.Location = new System.Drawing.Point(985, 297);
@@ -3947,9 +4316,9 @@
             this.plcObject82._EqBase = null;
             this.plcObject82._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject82._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject82._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject82._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject82._PlcDisplayOffDevice = null;
-            this.plcObject82._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject82._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject82._Reverse = false;
             this.plcObject82.Image = ((System.Drawing.Image)(resources.GetObject("plcObject82.Image")));
             this.plcObject82.Location = new System.Drawing.Point(930, 296);
@@ -3965,9 +4334,9 @@
             this.plcObject81._EqBase = null;
             this.plcObject81._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject81._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject81._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject81._PlcDevice = "Heater1_On_YMC_M2";
             this.plcObject81._PlcDisplayOffDevice = null;
-            this.plcObject81._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject81._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject81._Reverse = false;
             this.plcObject81.Image = ((System.Drawing.Image)(resources.GetObject("plcObject81.Image")));
             this.plcObject81.Location = new System.Drawing.Point(873, 297);
@@ -3983,9 +4352,9 @@
             this.plcObject80._EqBase = null;
             this.plcObject80._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject80._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject80._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject80._PlcDevice = "";
             this.plcObject80._PlcDisplayOffDevice = null;
-            this.plcObject80._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject80._PlcDisplayOnDevice = "ATM2_XC_M3_1";
             this.plcObject80._Reverse = false;
             this.plcObject80.Image = ((System.Drawing.Image)(resources.GetObject("plcObject80.Image")));
             this.plcObject80.Location = new System.Drawing.Point(562, 230);
@@ -4001,9 +4370,9 @@
             this.plcObject79._EqBase = null;
             this.plcObject79._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject79._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject79._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject79._PlcDevice = "MF1_ON_YMC";
             this.plcObject79._PlcDisplayOffDevice = null;
-            this.plcObject79._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject79._PlcDisplayOnDevice = "MF1_ON_YMC";
             this.plcObject79._Reverse = false;
             this.plcObject79.Image = ((System.Drawing.Image)(resources.GetObject("plcObject79.Image")));
             this.plcObject79.Location = new System.Drawing.Point(655, 405);
@@ -4019,9 +4388,9 @@
             this.plcObject78._EqBase = null;
             this.plcObject78._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject78._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject78._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject78._PlcDevice = "DC4_ON_YMC";
             this.plcObject78._PlcDisplayOffDevice = null;
-            this.plcObject78._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject78._PlcDisplayOnDevice = "DC4_ON_YMC";
             this.plcObject78._Reverse = false;
             this.plcObject78.Image = ((System.Drawing.Image)(resources.GetObject("plcObject78.Image")));
             this.plcObject78.Location = new System.Drawing.Point(406, 412);
@@ -4037,9 +4406,9 @@
             this.plcObject77._EqBase = null;
             this.plcObject77._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject77._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject77._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject77._PlcDevice = "DC3_ON_YMC";
             this.plcObject77._PlcDisplayOffDevice = null;
-            this.plcObject77._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject77._PlcDisplayOnDevice = "DC3_ON_YMC";
             this.plcObject77._Reverse = false;
             this.plcObject77.Image = ((System.Drawing.Image)(resources.GetObject("plcObject77.Image")));
             this.plcObject77.Location = new System.Drawing.Point(366, 412);
@@ -4055,9 +4424,9 @@
             this.plcObject76._EqBase = null;
             this.plcObject76._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject76._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject76._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject76._PlcDevice = "MF2_ON_YMC";
             this.plcObject76._PlcDisplayOffDevice = null;
-            this.plcObject76._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject76._PlcDisplayOnDevice = "MF2_ON_YMC";
             this.plcObject76._Reverse = false;
             this.plcObject76.Image = ((System.Drawing.Image)(resources.GetObject("plcObject76.Image")));
             this.plcObject76.Location = new System.Drawing.Point(593, 505);
@@ -4073,9 +4442,9 @@
             this.plcObject75._EqBase = null;
             this.plcObject75._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject75._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject75._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject75._PlcDevice = "DC2_ON_YMC";
             this.plcObject75._PlcDisplayOffDevice = null;
-            this.plcObject75._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject75._PlcDisplayOnDevice = "DC2_ON_YMC";
             this.plcObject75._Reverse = false;
             this.plcObject75.Image = ((System.Drawing.Image)(resources.GetObject("plcObject75.Image")));
             this.plcObject75.Location = new System.Drawing.Point(478, 505);
@@ -4091,9 +4460,9 @@
             this.plcObject74._EqBase = null;
             this.plcObject74._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject74._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject74._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject74._PlcDevice = "DC1_ON_YMC";
             this.plcObject74._PlcDisplayOffDevice = null;
-            this.plcObject74._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject74._PlcDisplayOnDevice = "DC1_ON_YMC";
             this.plcObject74._Reverse = false;
             this.plcObject74.Image = ((System.Drawing.Image)(resources.GetObject("plcObject74.Image")));
             this.plcObject74.Location = new System.Drawing.Point(440, 505);
@@ -4109,9 +4478,9 @@
             this.plcObject73._EqBase = null;
             this.plcObject73._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject73._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject73._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject73._PlcDevice = "";
             this.plcObject73._PlcDisplayOffDevice = null;
-            this.plcObject73._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject73._PlcDisplayOnDevice = "ATM1_XC_M1";
             this.plcObject73._Reverse = false;
             this.plcObject73.Image = ((System.Drawing.Image)(resources.GetObject("plcObject73.Image")));
             this.plcObject73.Location = new System.Drawing.Point(1403, 274);
@@ -4127,9 +4496,9 @@
             this.plcObject72._EqBase = null;
             this.plcObject72._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject72._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject72._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject72._PlcDevice = "";
             this.plcObject72._PlcDisplayOffDevice = null;
-            this.plcObject72._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject72._PlcDisplayOnDevice = "ATM3_XC_M4";
             this.plcObject72._Reverse = false;
             this.plcObject72.Image = ((System.Drawing.Image)(resources.GetObject("plcObject72.Image")));
             this.plcObject72.Location = new System.Drawing.Point(27, 266);
@@ -4145,9 +4514,9 @@
             this.plcObject70._EqBase = null;
             this.plcObject70._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject70._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject70._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject70._PlcDevice = "RP2_OpenYMC";
             this.plcObject70._PlcDisplayOffDevice = null;
-            this.plcObject70._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject70._PlcDisplayOnDevice = "RP2_OpenYMC";
             this.plcObject70._Reverse = false;
             this.plcObject70.Image = ((System.Drawing.Image)(resources.GetObject("plcObject70.Image")));
             this.plcObject70.Location = new System.Drawing.Point(1242, 900);
@@ -4163,9 +4532,9 @@
             this.plcObject71._EqBase = null;
             this.plcObject71._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject71._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject71._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject71._PlcDevice = "BP2_OpenYMC";
             this.plcObject71._PlcDisplayOffDevice = null;
-            this.plcObject71._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject71._PlcDisplayOnDevice = "BP2_OpenYMC";
             this.plcObject71._Reverse = false;
             this.plcObject71.Image = ((System.Drawing.Image)(resources.GetObject("plcObject71.Image")));
             this.plcObject71.Location = new System.Drawing.Point(1242, 839);
@@ -4181,9 +4550,9 @@
             this.plcObject68._EqBase = null;
             this.plcObject68._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject68._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject68._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject68._PlcDevice = "RP1_OpenYMC";
             this.plcObject68._PlcDisplayOffDevice = null;
-            this.plcObject68._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject68._PlcDisplayOnDevice = "RP1_OpenYMC";
             this.plcObject68._Reverse = false;
             this.plcObject68.Image = ((System.Drawing.Image)(resources.GetObject("plcObject68.Image")));
             this.plcObject68.Location = new System.Drawing.Point(1361, 900);
@@ -4199,9 +4568,9 @@
             this.plcObject69._EqBase = null;
             this.plcObject69._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject69._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject69._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject69._PlcDevice = "BP1_OpenYMC";
             this.plcObject69._PlcDisplayOffDevice = null;
-            this.plcObject69._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject69._PlcDisplayOnDevice = "BP1_OpenYMC";
             this.plcObject69._Reverse = false;
             this.plcObject69.Image = ((System.Drawing.Image)(resources.GetObject("plcObject69.Image")));
             this.plcObject69.Location = new System.Drawing.Point(1361, 839);
@@ -4217,9 +4586,9 @@
             this.plcObject67._EqBase = null;
             this.plcObject67._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject67._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject67._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject67._PlcDevice = "PV1_Open_YMC";
             this.plcObject67._PlcDisplayOffDevice = null;
-            this.plcObject67._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject67._PlcDisplayOnDevice = "PV1_Open_YMC";
             this.plcObject67._Reverse = false;
             this.plcObject67.Image = ((System.Drawing.Image)(resources.GetObject("plcObject67.Image")));
             this.plcObject67.Location = new System.Drawing.Point(1381, 761);
@@ -4235,9 +4604,9 @@
             this.plcObject66._EqBase = null;
             this.plcObject66._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject66._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject66._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject66._PlcDevice = "RV1_Open_YMC";
             this.plcObject66._PlcDisplayOffDevice = null;
-            this.plcObject66._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject66._PlcDisplayOnDevice = "RV1_Open_XC";
             this.plcObject66._Reverse = false;
             this.plcObject66.Image = ((System.Drawing.Image)(resources.GetObject("plcObject66.Image")));
             this.plcObject66.Location = new System.Drawing.Point(1381, 549);
@@ -4253,9 +4622,9 @@
             this.plcObject65._EqBase = null;
             this.plcObject65._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject65._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject65._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject65._PlcDevice = "FV1_Open_YMC";
             this.plcObject65._PlcDisplayOffDevice = null;
-            this.plcObject65._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject65._PlcDisplayOnDevice = "FV1_Open_XC";
             this.plcObject65._Reverse = false;
             this.plcObject65.Image = ((System.Drawing.Image)(resources.GetObject("plcObject65.Image")));
             this.plcObject65.Location = new System.Drawing.Point(1295, 547);
@@ -4269,12 +4638,12 @@
             // 
             this.turboPump26._EqBase = null;
             this.turboPump26._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump26._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump26._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump26._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump26._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump26._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump26._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump26._PlcAccDevice = "TP1_Acc_XC";
+            this.turboPump26._PlcAlarmDevice = "TP1_Alarm_XC";
+            this.turboPump26._PlcDecDevice = "TP1_Dec_XC";
+            this.turboPump26._PlcReadyDevice = "TP1_Ready_XC";
+            this.turboPump26._PlcStartDevice = "TP1_Run_YMC_101";
+            this.turboPump26._PlcStopDevice = "";
             this.turboPump26._Reverse = false;
             this.turboPump26.Image = ((System.Drawing.Image)(resources.GetObject("turboPump26.Image")));
             this.turboPump26.Location = new System.Drawing.Point(1245, 547);
@@ -4291,9 +4660,9 @@
             this.plcObject64._EqBase = null;
             this.plcObject64._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject64._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject64._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject64._PlcDevice = "FV2_Open_YMC";
             this.plcObject64._PlcDisplayOffDevice = null;
-            this.plcObject64._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject64._PlcDisplayOnDevice = "FV2_Open_XC";
             this.plcObject64._Reverse = false;
             this.plcObject64.Image = ((System.Drawing.Image)(resources.GetObject("plcObject64.Image")));
             this.plcObject64.Location = new System.Drawing.Point(1294, 612);
@@ -4307,12 +4676,12 @@
             // 
             this.turboPump25._EqBase = null;
             this.turboPump25._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump25._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump25._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump25._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump25._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump25._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump25._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump25._PlcAccDevice = "TP2_Acc_XC";
+            this.turboPump25._PlcAlarmDevice = "TP2_Alarm_XC";
+            this.turboPump25._PlcDecDevice = "TP2_Dec_XC";
+            this.turboPump25._PlcReadyDevice = "TP2_Ready_XC";
+            this.turboPump25._PlcStartDevice = "TP2_Run_YMC_102";
+            this.turboPump25._PlcStopDevice = "";
             this.turboPump25._Reverse = false;
             this.turboPump25.Image = ((System.Drawing.Image)(resources.GetObject("turboPump25.Image")));
             this.turboPump25.Location = new System.Drawing.Point(1244, 612);
@@ -4329,9 +4698,9 @@
             this.plcObject63._EqBase = null;
             this.plcObject63._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject63._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject63._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject63._PlcDevice = "RV2_Open_YMC";
             this.plcObject63._PlcDisplayOffDevice = null;
-            this.plcObject63._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject63._PlcDisplayOnDevice = "RV2_Open_XC";
             this.plcObject63._Reverse = false;
             this.plcObject63.Image = ((System.Drawing.Image)(resources.GetObject("plcObject63.Image")));
             this.plcObject63.Location = new System.Drawing.Point(1165, 544);
@@ -4347,9 +4716,9 @@
             this.plcObject62._EqBase = null;
             this.plcObject62._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject62._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject62._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject62._PlcDevice = "RV3_Open_YMC";
             this.plcObject62._PlcDisplayOffDevice = null;
-            this.plcObject62._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject62._PlcDisplayOnDevice = "RV3_Open_XC";
             this.plcObject62._Reverse = false;
             this.plcObject62.Image = ((System.Drawing.Image)(resources.GetObject("plcObject62.Image")));
             this.plcObject62.Location = new System.Drawing.Point(992, 544);
@@ -4365,9 +4734,9 @@
             this.plcObject59._EqBase = null;
             this.plcObject59._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject59._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject59._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject59._PlcDevice = "RP3_OpenYMC";
             this.plcObject59._PlcDisplayOffDevice = null;
-            this.plcObject59._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject59._PlcDisplayOnDevice = "RP3_OpenYMC";
             this.plcObject59._Reverse = false;
             this.plcObject59.Image = ((System.Drawing.Image)(resources.GetObject("plcObject59.Image")));
             this.plcObject59.Location = new System.Drawing.Point(1101, 900);
@@ -4383,9 +4752,9 @@
             this.plcObject60._EqBase = null;
             this.plcObject60._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject60._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject60._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject60._PlcDevice = "BP3_OpenYMC";
             this.plcObject60._PlcDisplayOffDevice = null;
-            this.plcObject60._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject60._PlcDisplayOnDevice = "BP3_OpenYMC";
             this.plcObject60._Reverse = false;
             this.plcObject60.Image = ((System.Drawing.Image)(resources.GetObject("plcObject60.Image")));
             this.plcObject60.Location = new System.Drawing.Point(1101, 839);
@@ -4401,9 +4770,9 @@
             this.plcObject61._EqBase = null;
             this.plcObject61._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject61._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject61._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject61._PlcDevice = "PV2_Open_YMC";
             this.plcObject61._PlcDisplayOffDevice = null;
-            this.plcObject61._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject61._PlcDisplayOnDevice = "PV2_Open_YMC";
             this.plcObject61._Reverse = false;
             this.plcObject61.Image = ((System.Drawing.Image)(resources.GetObject("plcObject61.Image")));
             this.plcObject61.Location = new System.Drawing.Point(1160, 785);
@@ -4419,9 +4788,9 @@
             this.plcObject56._EqBase = null;
             this.plcObject56._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject56._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject56._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject56._PlcDevice = "RP4_OpenYMC";
             this.plcObject56._PlcDisplayOffDevice = null;
-            this.plcObject56._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject56._PlcDisplayOnDevice = "RP4_OpenYMC";
             this.plcObject56._Reverse = false;
             this.plcObject56.Image = ((System.Drawing.Image)(resources.GetObject("plcObject56.Image")));
             this.plcObject56.Location = new System.Drawing.Point(928, 900);
@@ -4437,9 +4806,9 @@
             this.plcObject57._EqBase = null;
             this.plcObject57._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject57._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject57._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject57._PlcDevice = "BP4_OpenYMC";
             this.plcObject57._PlcDisplayOffDevice = null;
-            this.plcObject57._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject57._PlcDisplayOnDevice = "BP4_OpenYMC";
             this.plcObject57._Reverse = false;
             this.plcObject57.Image = ((System.Drawing.Image)(resources.GetObject("plcObject57.Image")));
             this.plcObject57.Location = new System.Drawing.Point(928, 839);
@@ -4455,9 +4824,9 @@
             this.plcObject58._EqBase = null;
             this.plcObject58._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject58._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject58._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject58._PlcDevice = "PV3_Open_YMC";
             this.plcObject58._PlcDisplayOffDevice = null;
-            this.plcObject58._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject58._PlcDisplayOnDevice = "PV3_Open_YMC";
             this.plcObject58._Reverse = false;
             this.plcObject58.Image = ((System.Drawing.Image)(resources.GetObject("plcObject58.Image")));
             this.plcObject58.Location = new System.Drawing.Point(987, 785);
@@ -4473,9 +4842,9 @@
             this.plcObject53._EqBase = null;
             this.plcObject53._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject53._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject53._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject53._PlcDevice = "FV5_Open_YMC";
             this.plcObject53._PlcDisplayOffDevice = null;
-            this.plcObject53._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject53._PlcDisplayOnDevice = "FV5_Open_XC";
             this.plcObject53._Reverse = false;
             this.plcObject53.Image = ((System.Drawing.Image)(resources.GetObject("plcObject53.Image")));
             this.plcObject53.Location = new System.Drawing.Point(1086, 718);
@@ -4489,12 +4858,12 @@
             // 
             this.turboPump22._EqBase = null;
             this.turboPump22._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump22._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump22._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump22._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump22._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump22._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump22._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump22._PlcAccDevice = "TP5_Acc_XC";
+            this.turboPump22._PlcAlarmDevice = "TP5_Alarm_XC";
+            this.turboPump22._PlcDecDevice = "TP5_Dec_XC";
+            this.turboPump22._PlcReadyDevice = "TP5_Ready_XC";
+            this.turboPump22._PlcStartDevice = "TP5_Run_YMC_203";
+            this.turboPump22._PlcStopDevice = "";
             this.turboPump22._Reverse = false;
             this.turboPump22.Image = ((System.Drawing.Image)(resources.GetObject("turboPump22.Image")));
             this.turboPump22.Location = new System.Drawing.Point(1036, 718);
@@ -4511,9 +4880,9 @@
             this.plcObject54._EqBase = null;
             this.plcObject54._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject54._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject54._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject54._PlcDevice = "FV4_Open_YMC";
             this.plcObject54._PlcDisplayOffDevice = null;
-            this.plcObject54._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject54._PlcDisplayOnDevice = "FV4_Open_XC";
             this.plcObject54._Reverse = false;
             this.plcObject54.Image = ((System.Drawing.Image)(resources.GetObject("plcObject54.Image")));
             this.plcObject54.Location = new System.Drawing.Point(1086, 654);
@@ -4527,12 +4896,12 @@
             // 
             this.turboPump23._EqBase = null;
             this.turboPump23._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump23._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump23._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump23._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump23._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump23._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump23._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump23._PlcAccDevice = "TP4_Acc_XC";
+            this.turboPump23._PlcAlarmDevice = "TP4_Alarm_XC";
+            this.turboPump23._PlcDecDevice = "TP4_Dec_XC";
+            this.turboPump23._PlcReadyDevice = "TP4_Ready_XC";
+            this.turboPump23._PlcStartDevice = "TP4_Run_YMC_202";
+            this.turboPump23._PlcStopDevice = "";
             this.turboPump23._Reverse = false;
             this.turboPump23.Image = ((System.Drawing.Image)(resources.GetObject("turboPump23.Image")));
             this.turboPump23.Location = new System.Drawing.Point(1036, 654);
@@ -4549,9 +4918,9 @@
             this.plcObject55._EqBase = null;
             this.plcObject55._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject55._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject55._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject55._PlcDevice = "FV3_Open_YMC";
             this.plcObject55._PlcDisplayOffDevice = null;
-            this.plcObject55._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject55._PlcDisplayOnDevice = "FV3_Open_XC";
             this.plcObject55._Reverse = false;
             this.plcObject55.Image = ((System.Drawing.Image)(resources.GetObject("plcObject55.Image")));
             this.plcObject55.Location = new System.Drawing.Point(1086, 595);
@@ -4565,12 +4934,12 @@
             // 
             this.turboPump24._EqBase = null;
             this.turboPump24._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump24._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump24._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump24._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump24._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump24._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump24._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump24._PlcAccDevice = "TP3_Acc_XC";
+            this.turboPump24._PlcAlarmDevice = "TP3_Alarm_XC";
+            this.turboPump24._PlcDecDevice = "TP3_Dec_XC";
+            this.turboPump24._PlcReadyDevice = "TP3_Ready_XC";
+            this.turboPump24._PlcStartDevice = "TP3_Run_YMC_201";
+            this.turboPump24._PlcStopDevice = "";
             this.turboPump24._Reverse = false;
             this.turboPump24.Image = ((System.Drawing.Image)(resources.GetObject("turboPump24.Image")));
             this.turboPump24.Location = new System.Drawing.Point(1036, 595);
@@ -4587,9 +4956,9 @@
             this.plcObject50._EqBase = null;
             this.plcObject50._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject50._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject50._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject50._PlcDevice = "FV8_Open_YMC";
             this.plcObject50._PlcDisplayOffDevice = null;
-            this.plcObject50._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject50._PlcDisplayOnDevice = "FV8_Open_XC";
             this.plcObject50._Reverse = false;
             this.plcObject50.Image = ((System.Drawing.Image)(resources.GetObject("plcObject50.Image")));
             this.plcObject50.Location = new System.Drawing.Point(911, 667);
@@ -4603,12 +4972,12 @@
             // 
             this.turboPump19._EqBase = null;
             this.turboPump19._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump19._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump19._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump19._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump19._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump19._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump19._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump19._PlcAccDevice = "TP8_Acc_XC";
+            this.turboPump19._PlcAlarmDevice = "TP8_Alarm_XC";
+            this.turboPump19._PlcDecDevice = "TP8_Dec_XC";
+            this.turboPump19._PlcReadyDevice = "TP8_Ready_XC";
+            this.turboPump19._PlcStartDevice = "TP8_Run_YMC_213";
+            this.turboPump19._PlcStopDevice = "";
             this.turboPump19._Reverse = false;
             this.turboPump19.Image = ((System.Drawing.Image)(resources.GetObject("turboPump19.Image")));
             this.turboPump19.Location = new System.Drawing.Point(861, 667);
@@ -4625,9 +4994,9 @@
             this.plcObject51._EqBase = null;
             this.plcObject51._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject51._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject51._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject51._PlcDevice = "FV7_Open_YMC";
             this.plcObject51._PlcDisplayOffDevice = null;
-            this.plcObject51._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject51._PlcDisplayOnDevice = "FV7_Open_XC";
             this.plcObject51._Reverse = false;
             this.plcObject51.Image = ((System.Drawing.Image)(resources.GetObject("plcObject51.Image")));
             this.plcObject51.Location = new System.Drawing.Point(911, 603);
@@ -4641,12 +5010,12 @@
             // 
             this.turboPump20._EqBase = null;
             this.turboPump20._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump20._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump20._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump20._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump20._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump20._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump20._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump20._PlcAccDevice = "TP7_Acc_XC";
+            this.turboPump20._PlcAlarmDevice = "TP7_Alarm_XC";
+            this.turboPump20._PlcDecDevice = "TP7_Dec_XC";
+            this.turboPump20._PlcReadyDevice = "TP7_Ready_XC";
+            this.turboPump20._PlcStartDevice = "TP7_Run_YMC_212";
+            this.turboPump20._PlcStopDevice = "";
             this.turboPump20._Reverse = false;
             this.turboPump20.Image = ((System.Drawing.Image)(resources.GetObject("turboPump20.Image")));
             this.turboPump20.Location = new System.Drawing.Point(861, 603);
@@ -4663,9 +5032,9 @@
             this.plcObject52._EqBase = null;
             this.plcObject52._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject52._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject52._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject52._PlcDevice = "FV6_Open_YMC";
             this.plcObject52._PlcDisplayOffDevice = null;
-            this.plcObject52._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject52._PlcDisplayOnDevice = "FV6_Open_XC";
             this.plcObject52._Reverse = false;
             this.plcObject52.Image = ((System.Drawing.Image)(resources.GetObject("plcObject52.Image")));
             this.plcObject52.Location = new System.Drawing.Point(911, 544);
@@ -4679,12 +5048,12 @@
             // 
             this.turboPump21._EqBase = null;
             this.turboPump21._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump21._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump21._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump21._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump21._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump21._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump21._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump21._PlcAccDevice = "TP6_Acc_XC";
+            this.turboPump21._PlcAlarmDevice = "TP6_Alarm_XC";
+            this.turboPump21._PlcDecDevice = "TP6_Dec_XC";
+            this.turboPump21._PlcReadyDevice = "TP6_Ready_XC";
+            this.turboPump21._PlcStartDevice = "TP6_Run_YMC_211";
+            this.turboPump21._PlcStopDevice = "";
             this.turboPump21._Reverse = false;
             this.turboPump21.Image = ((System.Drawing.Image)(resources.GetObject("turboPump21.Image")));
             this.turboPump21.Location = new System.Drawing.Point(861, 544);
@@ -4701,9 +5070,9 @@
             this.plcObject47._EqBase = null;
             this.plcObject47._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject47._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject47._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject47._PlcDevice = "RP5_OpenYMC";
             this.plcObject47._PlcDisplayOffDevice = null;
-            this.plcObject47._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject47._PlcDisplayOnDevice = "RP5_OpenYMC";
             this.plcObject47._Reverse = false;
             this.plcObject47.Image = ((System.Drawing.Image)(resources.GetObject("plcObject47.Image")));
             this.plcObject47.Location = new System.Drawing.Point(772, 900);
@@ -4719,9 +5088,9 @@
             this.plcObject48._EqBase = null;
             this.plcObject48._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject48._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject48._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject48._PlcDevice = "BP5_OpenYMC";
             this.plcObject48._PlcDisplayOffDevice = null;
-            this.plcObject48._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject48._PlcDisplayOnDevice = "BP5_OpenYMC";
             this.plcObject48._Reverse = false;
             this.plcObject48.Image = ((System.Drawing.Image)(resources.GetObject("plcObject48.Image")));
             this.plcObject48.Location = new System.Drawing.Point(772, 839);
@@ -4737,9 +5106,9 @@
             this.plcObject49._EqBase = null;
             this.plcObject49._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject49._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject49._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject49._PlcDevice = "PV4_Open_YMC";
             this.plcObject49._PlcDisplayOffDevice = null;
-            this.plcObject49._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject49._PlcDisplayOnDevice = "PV4_Open_YMC";
             this.plcObject49._Reverse = false;
             this.plcObject49.Image = ((System.Drawing.Image)(resources.GetObject("plcObject49.Image")));
             this.plcObject49.Location = new System.Drawing.Point(831, 785);
@@ -4755,9 +5124,9 @@
             this.plcObject44._EqBase = null;
             this.plcObject44._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject44._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject44._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject44._PlcDevice = "FV11_Open_YMC";
             this.plcObject44._PlcDisplayOffDevice = null;
-            this.plcObject44._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject44._PlcDisplayOnDevice = "FV11_Open_XC";
             this.plcObject44._Reverse = false;
             this.plcObject44.Image = ((System.Drawing.Image)(resources.GetObject("plcObject44.Image")));
             this.plcObject44.Location = new System.Drawing.Point(763, 718);
@@ -4793,9 +5162,9 @@
             this.plcObject45._EqBase = null;
             this.plcObject45._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject45._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject45._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject45._PlcDevice = "FV10_Open_YMC";
             this.plcObject45._PlcDisplayOffDevice = null;
-            this.plcObject45._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject45._PlcDisplayOnDevice = "FV10_Open_XC";
             this.plcObject45._Reverse = false;
             this.plcObject45.Image = ((System.Drawing.Image)(resources.GetObject("plcObject45.Image")));
             this.plcObject45.Location = new System.Drawing.Point(763, 654);
@@ -4831,9 +5200,9 @@
             this.plcObject46._EqBase = null;
             this.plcObject46._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject46._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject46._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject46._PlcDevice = "FV9_Open_YMC";
             this.plcObject46._PlcDisplayOffDevice = null;
-            this.plcObject46._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject46._PlcDisplayOnDevice = "FV9_Open_XC";
             this.plcObject46._Reverse = false;
             this.plcObject46.Image = ((System.Drawing.Image)(resources.GetObject("plcObject46.Image")));
             this.plcObject46.Location = new System.Drawing.Point(763, 595);
@@ -4869,9 +5238,9 @@
             this.plcObject42._EqBase = null;
             this.plcObject42._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject42._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject42._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject42._PlcDevice = "RP6_OpenYMC";
             this.plcObject42._PlcDisplayOffDevice = null;
-            this.plcObject42._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject42._PlcDisplayOnDevice = "RP6_OpenYMC";
             this.plcObject42._Reverse = false;
             this.plcObject42.Image = ((System.Drawing.Image)(resources.GetObject("plcObject42.Image")));
             this.plcObject42.Location = new System.Drawing.Point(640, 900);
@@ -4887,9 +5256,9 @@
             this.plcObject43._EqBase = null;
             this.plcObject43._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject43._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject43._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject43._PlcDevice = "BP6_OpenYMC";
             this.plcObject43._PlcDisplayOffDevice = null;
-            this.plcObject43._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject43._PlcDisplayOnDevice = "BP6_OpenYMC";
             this.plcObject43._Reverse = false;
             this.plcObject43.Image = ((System.Drawing.Image)(resources.GetObject("plcObject43.Image")));
             this.plcObject43.Location = new System.Drawing.Point(640, 839);
@@ -4905,9 +5274,9 @@
             this.plcObject38._EqBase = null;
             this.plcObject38._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject38._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject38._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject38._PlcDevice = "PV5_Open_YMC";
             this.plcObject38._PlcDisplayOffDevice = null;
-            this.plcObject38._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject38._PlcDisplayOnDevice = "PV5_Open_YMC";
             this.plcObject38._Reverse = false;
             this.plcObject38.Image = ((System.Drawing.Image)(resources.GetObject("plcObject38.Image")));
             this.plcObject38.Location = new System.Drawing.Point(699, 785);
@@ -4923,9 +5292,9 @@
             this.plcObject39._EqBase = null;
             this.plcObject39._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject39._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject39._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject39._PlcDevice = "FV14_Open_YMC";
             this.plcObject39._PlcDisplayOffDevice = null;
-            this.plcObject39._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject39._PlcDisplayOnDevice = "FV14_Open_XC";
             this.plcObject39._Reverse = false;
             this.plcObject39.Image = ((System.Drawing.Image)(resources.GetObject("plcObject39.Image")));
             this.plcObject39.Location = new System.Drawing.Point(639, 718);
@@ -4961,9 +5330,9 @@
             this.plcObject40._EqBase = null;
             this.plcObject40._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject40._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject40._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject40._PlcDevice = "FV13_Open_YMC";
             this.plcObject40._PlcDisplayOffDevice = null;
-            this.plcObject40._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject40._PlcDisplayOnDevice = "FV13_Open_XC";
             this.plcObject40._Reverse = false;
             this.plcObject40.Image = ((System.Drawing.Image)(resources.GetObject("plcObject40.Image")));
             this.plcObject40.Location = new System.Drawing.Point(639, 654);
@@ -4999,9 +5368,9 @@
             this.plcObject41._EqBase = null;
             this.plcObject41._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject41._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject41._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject41._PlcDevice = "FV12_Open_YMC";
             this.plcObject41._PlcDisplayOffDevice = null;
-            this.plcObject41._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject41._PlcDisplayOnDevice = "FV12_Open_XC";
             this.plcObject41._Reverse = false;
             this.plcObject41.Image = ((System.Drawing.Image)(resources.GetObject("plcObject41.Image")));
             this.plcObject41.Location = new System.Drawing.Point(639, 595);
@@ -5037,9 +5406,9 @@
             this.plcObject37._EqBase = null;
             this.plcObject37._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject37._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject37._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject37._PlcDevice = "PV8_Open_YMC";
             this.plcObject37._PlcDisplayOffDevice = null;
-            this.plcObject37._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject37._PlcDisplayOnDevice = "PV8_Open_YMC";
             this.plcObject37._Reverse = false;
             this.plcObject37.Image = ((System.Drawing.Image)(resources.GetObject("plcObject37.Image")));
             this.plcObject37.Location = new System.Drawing.Point(414, 747);
@@ -5055,9 +5424,9 @@
             this.plcObject36._EqBase = null;
             this.plcObject36._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject36._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject36._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject36._PlcDevice = "FV21_Open_YMC";
             this.plcObject36._PlcDisplayOffDevice = null;
-            this.plcObject36._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject36._PlcDisplayOnDevice = "FV21_Open_XC";
             this.plcObject36._Reverse = false;
             this.plcObject36.Image = ((System.Drawing.Image)(resources.GetObject("plcObject36.Image")));
             this.plcObject36.Location = new System.Drawing.Point(352, 705);
@@ -5093,9 +5462,9 @@
             this.plcObject35._EqBase = null;
             this.plcObject35._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject35._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject35._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject35._PlcDevice = "FV20_Open_YMC";
             this.plcObject35._PlcDisplayOffDevice = null;
-            this.plcObject35._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject35._PlcDisplayOnDevice = "FV20_Open_XC";
             this.plcObject35._Reverse = false;
             this.plcObject35.Image = ((System.Drawing.Image)(resources.GetObject("plcObject35.Image")));
             this.plcObject35.Location = new System.Drawing.Point(352, 642);
@@ -5131,9 +5500,9 @@
             this.plcObject34._EqBase = null;
             this.plcObject34._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject34._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject34._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject34._PlcDevice = "FV19_Open_YMC";
             this.plcObject34._PlcDisplayOffDevice = null;
-            this.plcObject34._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject34._PlcDisplayOnDevice = "FV19_Open_XC";
             this.plcObject34._Reverse = false;
             this.plcObject34.Image = ((System.Drawing.Image)(resources.GetObject("plcObject34.Image")));
             this.plcObject34.Location = new System.Drawing.Point(352, 578);
@@ -5169,9 +5538,9 @@
             this.plcObject32._EqBase = null;
             this.plcObject32._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject32._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject32._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject32._PlcDevice = "RP9_OpenYMC";
             this.plcObject32._PlcDisplayOffDevice = null;
-            this.plcObject32._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject32._PlcDisplayOnDevice = "RP9_OpenYMC";
             this.plcObject32._Reverse = false;
             this.plcObject32.Image = ((System.Drawing.Image)(resources.GetObject("plcObject32.Image")));
             this.plcObject32.Location = new System.Drawing.Point(356, 900);
@@ -5187,9 +5556,9 @@
             this.plcObject33._EqBase = null;
             this.plcObject33._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject33._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject33._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject33._PlcDevice = "BP9_OpenYMC";
             this.plcObject33._PlcDisplayOffDevice = null;
-            this.plcObject33._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject33._PlcDisplayOnDevice = "BP9_OpenYMC";
             this.plcObject33._Reverse = false;
             this.plcObject33.Image = ((System.Drawing.Image)(resources.GetObject("plcObject33.Image")));
             this.plcObject33.Location = new System.Drawing.Point(356, 839);
@@ -5205,9 +5574,9 @@
             this.plcObject30._EqBase = null;
             this.plcObject30._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject30._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject30._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject30._PlcDevice = "RP10_OpenYMC";
             this.plcObject30._PlcDisplayOffDevice = null;
-            this.plcObject30._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject30._PlcDisplayOnDevice = "RP10_OpenYMC";
             this.plcObject30._Reverse = false;
             this.plcObject30.Image = ((System.Drawing.Image)(resources.GetObject("plcObject30.Image")));
             this.plcObject30.Location = new System.Drawing.Point(241, 900);
@@ -5223,9 +5592,9 @@
             this.plcObject31._EqBase = null;
             this.plcObject31._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject31._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject31._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject31._PlcDevice = "BP10_OpenYMC";
             this.plcObject31._PlcDisplayOffDevice = null;
-            this.plcObject31._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject31._PlcDisplayOnDevice = "BP10_OpenYMC";
             this.plcObject31._Reverse = false;
             this.plcObject31.Image = ((System.Drawing.Image)(resources.GetObject("plcObject31.Image")));
             this.plcObject31.Location = new System.Drawing.Point(241, 839);
@@ -5241,9 +5610,9 @@
             this.plcObject29._EqBase = null;
             this.plcObject29._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject29._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject29._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject29._PlcDevice = "PV9_Open_YMC";
             this.plcObject29._PlcDisplayOffDevice = null;
-            this.plcObject29._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject29._PlcDisplayOnDevice = "PV9_Open_YMC";
             this.plcObject29._Reverse = false;
             this.plcObject29.Image = ((System.Drawing.Image)(resources.GetObject("plcObject29.Image")));
             this.plcObject29.Location = new System.Drawing.Point(217, 747);
@@ -5259,9 +5628,9 @@
             this.plcObject27._EqBase = null;
             this.plcObject27._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject27._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject27._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject27._PlcDevice = "RP12_OpenYMC";
             this.plcObject27._PlcDisplayOffDevice = null;
-            this.plcObject27._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject27._PlcDisplayOnDevice = "RP12_OpenYMC";
             this.plcObject27._Reverse = false;
             this.plcObject27.Image = ((System.Drawing.Image)(resources.GetObject("plcObject27.Image")));
             this.plcObject27.Location = new System.Drawing.Point(19, 900);
@@ -5277,9 +5646,9 @@
             this.plcObject28._EqBase = null;
             this.plcObject28._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject28._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject28._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject28._PlcDevice = "BP12_OpenYMC";
             this.plcObject28._PlcDisplayOffDevice = null;
-            this.plcObject28._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject28._PlcDisplayOnDevice = "BP12_OpenYMC";
             this.plcObject28._Reverse = false;
             this.plcObject28.Image = ((System.Drawing.Image)(resources.GetObject("plcObject28.Image")));
             this.plcObject28.Location = new System.Drawing.Point(19, 839);
@@ -5295,9 +5664,9 @@
             this.plcObject25._EqBase = null;
             this.plcObject25._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject25._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject25._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject25._PlcDevice = "RP11_OpenYMC";
             this.plcObject25._PlcDisplayOffDevice = null;
-            this.plcObject25._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject25._PlcDisplayOnDevice = "RP11_OpenYMC";
             this.plcObject25._Reverse = false;
             this.plcObject25.Image = ((System.Drawing.Image)(resources.GetObject("plcObject25.Image")));
             this.plcObject25.Location = new System.Drawing.Point(132, 900);
@@ -5313,9 +5682,9 @@
             this.plcObject26._EqBase = null;
             this.plcObject26._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject26._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject26._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject26._PlcDevice = "BP11_OpenYMC";
             this.plcObject26._PlcDisplayOffDevice = null;
-            this.plcObject26._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject26._PlcDisplayOnDevice = "BP11_OpenYMC";
             this.plcObject26._Reverse = false;
             this.plcObject26.Image = ((System.Drawing.Image)(resources.GetObject("plcObject26.Image")));
             this.plcObject26.Location = new System.Drawing.Point(132, 839);
@@ -5331,9 +5700,9 @@
             this.plcObject24._EqBase = null;
             this.plcObject24._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject24._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject24._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject24._PlcDevice = "PV10_Open_YMC";
             this.plcObject24._PlcDisplayOffDevice = null;
-            this.plcObject24._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject24._PlcDisplayOnDevice = "PV10_Open_YMC";
             this.plcObject24._Reverse = false;
             this.plcObject24.Image = ((System.Drawing.Image)(resources.GetObject("plcObject24.Image")));
             this.plcObject24.Location = new System.Drawing.Point(137, 747);
@@ -5349,9 +5718,9 @@
             this.plcObject23._EqBase = null;
             this.plcObject23._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject23._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject23._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject23._PlcDevice = "RV6_Open_YMC";
             this.plcObject23._PlcDisplayOffDevice = null;
-            this.plcObject23._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject23._PlcDisplayOnDevice = "RV6_Open_XC";
             this.plcObject23._Reverse = false;
             this.plcObject23.Image = ((System.Drawing.Image)(resources.GetObject("plcObject23.Image")));
             this.plcObject23.Location = new System.Drawing.Point(132, 596);
@@ -5367,9 +5736,9 @@
             this.plcObject21._EqBase = null;
             this.plcObject21._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject21._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject21._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject21._PlcDevice = "FV26_Open_YMC";
             this.plcObject21._PlcDisplayOffDevice = null;
-            this.plcObject21._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject21._PlcDisplayOnDevice = "FV26_Open_XC";
             this.plcObject21._Reverse = false;
             this.plcObject21.Image = ((System.Drawing.Image)(resources.GetObject("plcObject21.Image")));
             this.plcObject21.Location = new System.Drawing.Point(62, 655);
@@ -5405,9 +5774,9 @@
             this.plcObject22._EqBase = null;
             this.plcObject22._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject22._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject22._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject22._PlcDevice = "FV25_Open_YMC";
             this.plcObject22._PlcDisplayOffDevice = null;
-            this.plcObject22._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject22._PlcDisplayOnDevice = "FV25_Open_XC";
             this.plcObject22._Reverse = false;
             this.plcObject22.Image = ((System.Drawing.Image)(resources.GetObject("plcObject22.Image")));
             this.plcObject22.Location = new System.Drawing.Point(62, 596);
@@ -5443,9 +5812,9 @@
             this.plcObject20._EqBase = null;
             this.plcObject20._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject20._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject20._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject20._PlcDevice = "FV24_Open_YMC";
             this.plcObject20._PlcDisplayOffDevice = null;
-            this.plcObject20._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject20._PlcDisplayOnDevice = "FV24_Open_XC";
             this.plcObject20._Reverse = false;
             this.plcObject20.Image = ((System.Drawing.Image)(resources.GetObject("plcObject20.Image")));
             this.plcObject20.Location = new System.Drawing.Point(236, 684);
@@ -5481,9 +5850,9 @@
             this.plcObject19._EqBase = null;
             this.plcObject19._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject19._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject19._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject19._PlcDevice = "FV23_Open_YMC";
             this.plcObject19._PlcDisplayOffDevice = null;
-            this.plcObject19._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject19._PlcDisplayOnDevice = "FV23_Open_XC";
             this.plcObject19._Reverse = false;
             this.plcObject19.Image = ((System.Drawing.Image)(resources.GetObject("plcObject19.Image")));
             this.plcObject19.Location = new System.Drawing.Point(236, 620);
@@ -5519,9 +5888,9 @@
             this.plcObject18._EqBase = null;
             this.plcObject18._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject18._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject18._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject18._PlcDevice = "FV22_Open_YMC";
             this.plcObject18._PlcDisplayOffDevice = null;
-            this.plcObject18._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject18._PlcDisplayOnDevice = "FV22_Open_XC";
             this.plcObject18._Reverse = false;
             this.plcObject18.Image = ((System.Drawing.Image)(resources.GetObject("plcObject18.Image")));
             this.plcObject18.Location = new System.Drawing.Point(236, 561);
@@ -5557,9 +5926,9 @@
             this.plcObject17._EqBase = null;
             this.plcObject17._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject17._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject17._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject17._PlcDevice = "VENT2_Open_YMC_M2";
             this.plcObject17._PlcDisplayOffDevice = null;
-            this.plcObject17._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject17._PlcDisplayOnDevice = "VENT2_Open_YMC_M2";
             this.plcObject17._Reverse = false;
             this.plcObject17.Image = ((System.Drawing.Image)(resources.GetObject("plcObject17.Image")));
             this.plcObject17.Location = new System.Drawing.Point(914, 167);
@@ -5575,9 +5944,9 @@
             this.plcObject16._EqBase = null;
             this.plcObject16._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject16._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject16._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject16._PlcDevice = "CVS1_Open_YMC";
             this.plcObject16._PlcDisplayOffDevice = null;
-            this.plcObject16._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject16._PlcDisplayOnDevice = "CVS1_Open_YMC";
             this.plcObject16._Reverse = false;
             this.plcObject16.Image = ((System.Drawing.Image)(resources.GetObject("plcObject16.Image")));
             this.plcObject16.Location = new System.Drawing.Point(1266, 190);
@@ -5593,9 +5962,9 @@
             this.plcObject15._EqBase = null;
             this.plcObject15._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject15._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject15._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject15._PlcDevice = "VENT1_Open_YMC_M1";
             this.plcObject15._PlcDisplayOffDevice = null;
-            this.plcObject15._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject15._PlcDisplayOnDevice = "VENT1_Open_YMC_M1";
             this.plcObject15._Reverse = false;
             this.plcObject15.Image = ((System.Drawing.Image)(resources.GetObject("plcObject15.Image")));
             this.plcObject15.Location = new System.Drawing.Point(1347, 190);
@@ -5631,9 +6000,9 @@
             this.plcObject14._EqBase = null;
             this.plcObject14._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject14._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject14._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject14._PlcDevice = "FV15_Open_YMC";
             this.plcObject14._PlcDisplayOffDevice = null;
-            this.plcObject14._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject14._PlcDisplayOnDevice = "FV15_Open_XC";
             this.plcObject14._Reverse = false;
             this.plcObject14.Image = ((System.Drawing.Image)(resources.GetObject("plcObject14.Image")));
             this.plcObject14.Location = new System.Drawing.Point(674, 162);
@@ -5649,9 +6018,9 @@
             this.plcObject13._EqBase = null;
             this.plcObject13._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject13._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject13._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject13._PlcDevice = "RV4_Open_YMC";
             this.plcObject13._PlcDisplayOffDevice = null;
-            this.plcObject13._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject13._PlcDisplayOnDevice = "RV4_Open_XC";
             this.plcObject13._Reverse = false;
             this.plcObject13.Image = ((System.Drawing.Image)(resources.GetObject("plcObject13.Image")));
             this.plcObject13.Location = new System.Drawing.Point(790, 96);
@@ -5667,9 +6036,9 @@
             this.plcObject12._EqBase = null;
             this.plcObject12._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject12._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject12._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject12._PlcDevice = "RP7_OpenYMC";
             this.plcObject12._PlcDisplayOffDevice = null;
-            this.plcObject12._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject12._PlcDisplayOnDevice = "RP7_OpenYMC";
             this.plcObject12._Reverse = false;
             this.plcObject12.Image = ((System.Drawing.Image)(resources.GetObject("plcObject12.Image")));
             this.plcObject12.Location = new System.Drawing.Point(957, 33);
@@ -5685,9 +6054,9 @@
             this.plcObject11._EqBase = null;
             this.plcObject11._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject11._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject11._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject11._PlcDevice = "BP7_OpenYMC";
             this.plcObject11._PlcDisplayOffDevice = null;
-            this.plcObject11._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject11._PlcDisplayOnDevice = "BP7_OpenYMC";
             this.plcObject11._Reverse = false;
             this.plcObject11.Image = ((System.Drawing.Image)(resources.GetObject("plcObject11.Image")));
             this.plcObject11.Location = new System.Drawing.Point(835, 32);
@@ -5703,9 +6072,9 @@
             this.plcObject10._EqBase = null;
             this.plcObject10._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject10._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject10._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject10._PlcDevice = "PV6_Open_YMC";
             this.plcObject10._PlcDisplayOffDevice = null;
-            this.plcObject10._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject10._PlcDisplayOnDevice = "PV6_Open_YMC";
             this.plcObject10._Reverse = false;
             this.plcObject10.Image = ((System.Drawing.Image)(resources.GetObject("plcObject10.Image")));
             this.plcObject10.Location = new System.Drawing.Point(694, 32);
@@ -5741,9 +6110,9 @@
             this.plcObject9._EqBase = null;
             this.plcObject9._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject9._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject9._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject9._PlcDevice = "FV16_Open_YMC";
             this.plcObject9._PlcDisplayOffDevice = null;
-            this.plcObject9._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject9._PlcDisplayOnDevice = "FV16_Open_XC";
             this.plcObject9._Reverse = false;
             this.plcObject9.Image = ((System.Drawing.Image)(resources.GetObject("plcObject9.Image")));
             this.plcObject9.Location = new System.Drawing.Point(614, 138);
@@ -5779,9 +6148,9 @@
             this.plcObject8._EqBase = null;
             this.plcObject8._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject8._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject8._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject8._PlcDevice = "FV18_Open_YMC";
             this.plcObject8._PlcDisplayOffDevice = null;
-            this.plcObject8._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject8._PlcDisplayOnDevice = "FV18_Open_XC";
             this.plcObject8._Reverse = false;
             this.plcObject8.Image = ((System.Drawing.Image)(resources.GetObject("plcObject8.Image")));
             this.plcObject8.Location = new System.Drawing.Point(457, 138);
@@ -5797,9 +6166,9 @@
             this.plcObject4._EqBase = null;
             this.plcObject4._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject4._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject4._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject4._PlcDevice = "CVS2_Open_YMC";
             this.plcObject4._PlcDisplayOffDevice = null;
-            this.plcObject4._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject4._PlcDisplayOnDevice = "CVS2_Open_YMC";
             this.plcObject4._Reverse = false;
             this.plcObject4.Image = ((System.Drawing.Image)(resources.GetObject("plcObject4.Image")));
             this.plcObject4.Location = new System.Drawing.Point(124, 186);
@@ -5815,9 +6184,9 @@
             this.plcObject3._EqBase = null;
             this.plcObject3._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject3._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject3._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject3._PlcDevice = "VENT3_Open_YMC_M4";
             this.plcObject3._PlcDisplayOffDevice = null;
-            this.plcObject3._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject3._PlcDisplayOnDevice = "VENT3_Open_YMC_M4";
             this.plcObject3._Reverse = false;
             this.plcObject3.Image = ((System.Drawing.Image)(resources.GetObject("plcObject3.Image")));
             this.plcObject3.Location = new System.Drawing.Point(62, 186);
@@ -5833,9 +6202,9 @@
             this.plcObject6._EqBase = null;
             this.plcObject6._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject6._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject6._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject6._PlcDevice = "FV17_Open_YMC";
             this.plcObject6._PlcDisplayOffDevice = null;
-            this.plcObject6._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject6._PlcDisplayOnDevice = "FV17_Open_XC";
             this.plcObject6._Reverse = false;
             this.plcObject6.Image = ((System.Drawing.Image)(resources.GetObject("plcObject6.Image")));
             this.plcObject6.Location = new System.Drawing.Point(392, 159);
@@ -5849,12 +6218,12 @@
             // 
             this.turboPump1._EqBase = null;
             this.turboPump1._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump1._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump1._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump1._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump1._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump1._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump1._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump1._PlcAccDevice = "TP1_Acc_XC";
+            this.turboPump1._PlcAlarmDevice = "TP1_Alarm_XC";
+            this.turboPump1._PlcDecDevice = "TP1_Dec_XC";
+            this.turboPump1._PlcReadyDevice = "TP1_Alarm_XC";
+            this.turboPump1._PlcStartDevice = "TP1_Run_YMC_101";
+            this.turboPump1._PlcStopDevice = "";
             this.turboPump1._Reverse = false;
             this.turboPump1.Image = ((System.Drawing.Image)(resources.GetObject("turboPump1.Image")));
             this.turboPump1.Location = new System.Drawing.Point(332, 159);
@@ -5871,9 +6240,9 @@
             this.plcObject1._EqBase = null;
             this.plcObject1._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject1._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject1._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject1._PlcDevice = "RV5_Open_YMC";
             this.plcObject1._PlcDisplayOffDevice = null;
-            this.plcObject1._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject1._PlcDisplayOnDevice = "RV5_Open_XC";
             this.plcObject1._Reverse = false;
             this.plcObject1.Image = ((System.Drawing.Image)(resources.GetObject("plcObject1.Image")));
             this.plcObject1.Location = new System.Drawing.Point(245, 94);
@@ -5889,9 +6258,9 @@
             this.plcObject2._EqBase = null;
             this.plcObject2._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject2._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
-            this.plcObject2._PlcDevice = "PLC_DO_BP_1_ON";
+            this.plcObject2._PlcDevice = "BP8_OpenYMC";
             this.plcObject2._PlcDisplayOffDevice = null;
-            this.plcObject2._PlcDisplayOnDevice = "PLC_DI_BP_1_ON";
+            this.plcObject2._PlcDisplayOnDevice = "BP8_OpenYMC";
             this.plcObject2._Reverse = false;
             this.plcObject2.Image = ((System.Drawing.Image)(resources.GetObject("plcObject2.Image")));
             this.plcObject2.Location = new System.Drawing.Point(136, 28);
@@ -5907,9 +6276,9 @@
             this.plcObject7._EqBase = null;
             this.plcObject7._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
             this.plcObject7._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
-            this.plcObject7._PlcDevice = "PLC_DO_RP_2_ON";
+            this.plcObject7._PlcDevice = "RP8_OpenYMC";
             this.plcObject7._PlcDisplayOffDevice = null;
-            this.plcObject7._PlcDisplayOnDevice = "PLC_DI_RP_2_ON";
+            this.plcObject7._PlcDisplayOnDevice = "RP8_OpenYMC";
             this.plcObject7._Reverse = false;
             this.plcObject7.Image = ((System.Drawing.Image)(resources.GetObject("plcObject7.Image")));
             this.plcObject7.Location = new System.Drawing.Point(28, 28);
@@ -5925,9 +6294,9 @@
             this.plcObject5._EqBase = null;
             this.plcObject5._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject5._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject5._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject5._PlcDevice = "PV7_Open_YMC";
             this.plcObject5._PlcDisplayOffDevice = null;
-            this.plcObject5._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject5._PlcDisplayOnDevice = "PV7_Open_YMC";
             this.plcObject5._Reverse = false;
             this.plcObject5.Image = ((System.Drawing.Image)(resources.GetObject("plcObject5.Image")));
             this.plcObject5.Location = new System.Drawing.Point(284, 33);
@@ -5937,381 +6306,7 @@
             this.plcObject5.TabIndex = 2055;
             this.plcObject5.TabStop = false;
             // 
-            // displayTextBox5
-            // 
-            this.displayTextBox5._Division = ((short)(1));
-            this.displayTextBox5._DoubleWord = false;
-            this.displayTextBox5._EqBase = null;
-            this.displayTextBox5._MaxLimit = 999D;
-            this.displayTextBox5._MinLimit = 0D;
-            this.displayTextBox5._Multiplication = ((short)(1));
-            this.displayTextBox5._PlcDevice = "";
-            this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox5.Location = new System.Drawing.Point(23, 754);
-            this.displayTextBox5.Name = "displayTextBox5";
-            this.displayTextBox5.ReadOnly = true;
-            this.displayTextBox5.Size = new System.Drawing.Size(51, 25);
-            this.displayTextBox5.TabIndex = 2352;
-            this.displayTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox6
-            // 
-            this.displayTextBox6._Division = ((short)(1));
-            this.displayTextBox6._DoubleWord = false;
-            this.displayTextBox6._EqBase = null;
-            this.displayTextBox6._MaxLimit = 999D;
-            this.displayTextBox6._MinLimit = 0D;
-            this.displayTextBox6._Multiplication = ((short)(1));
-            this.displayTextBox6._PlcDevice = "";
-            this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox6.Location = new System.Drawing.Point(206, 811);
-            this.displayTextBox6.Name = "displayTextBox6";
-            this.displayTextBox6.ReadOnly = true;
-            this.displayTextBox6.Size = new System.Drawing.Size(51, 25);
-            this.displayTextBox6.TabIndex = 2353;
-            this.displayTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox7
-            // 
-            this.displayTextBox7._Division = ((short)(1));
-            this.displayTextBox7._DoubleWord = false;
-            this.displayTextBox7._EqBase = null;
-            this.displayTextBox7._MaxLimit = 999D;
-            this.displayTextBox7._MinLimit = 0D;
-            this.displayTextBox7._Multiplication = ((short)(1));
-            this.displayTextBox7._PlcDevice = "";
-            this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox7.Location = new System.Drawing.Point(311, 799);
-            this.displayTextBox7.Name = "displayTextBox7";
-            this.displayTextBox7.ReadOnly = true;
-            this.displayTextBox7.Size = new System.Drawing.Size(51, 25);
-            this.displayTextBox7.TabIndex = 2354;
-            this.displayTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox8
-            // 
-            this.displayTextBox8._Division = ((short)(1));
-            this.displayTextBox8._DoubleWord = false;
-            this.displayTextBox8._EqBase = null;
-            this.displayTextBox8._MaxLimit = 999D;
-            this.displayTextBox8._MinLimit = 0D;
-            this.displayTextBox8._Multiplication = ((short)(1));
-            this.displayTextBox8._PlcDevice = "";
-            this.displayTextBox8.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox8.Location = new System.Drawing.Point(593, 803);
-            this.displayTextBox8.Name = "displayTextBox8";
-            this.displayTextBox8.ReadOnly = true;
-            this.displayTextBox8.Size = new System.Drawing.Size(51, 25);
-            this.displayTextBox8.TabIndex = 2355;
-            this.displayTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox9
-            // 
-            this.displayTextBox9._Division = ((short)(1));
-            this.displayTextBox9._DoubleWord = false;
-            this.displayTextBox9._EqBase = null;
-            this.displayTextBox9._MaxLimit = 999D;
-            this.displayTextBox9._MinLimit = 0D;
-            this.displayTextBox9._Multiplication = ((short)(1));
-            this.displayTextBox9._PlcDevice = "";
-            this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox9.Location = new System.Drawing.Point(743, 808);
-            this.displayTextBox9.Name = "displayTextBox9";
-            this.displayTextBox9.ReadOnly = true;
-            this.displayTextBox9.Size = new System.Drawing.Size(51, 25);
-            this.displayTextBox9.TabIndex = 2356;
-            this.displayTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox10
-            // 
-            this.displayTextBox10._Division = ((short)(1));
-            this.displayTextBox10._DoubleWord = false;
-            this.displayTextBox10._EqBase = null;
-            this.displayTextBox10._MaxLimit = 999D;
-            this.displayTextBox10._MinLimit = 0D;
-            this.displayTextBox10._Multiplication = ((short)(1));
-            this.displayTextBox10._PlcDevice = "";
-            this.displayTextBox10.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox10.Location = new System.Drawing.Point(887, 789);
-            this.displayTextBox10.Name = "displayTextBox10";
-            this.displayTextBox10.ReadOnly = true;
-            this.displayTextBox10.Size = new System.Drawing.Size(51, 25);
-            this.displayTextBox10.TabIndex = 2357;
-            this.displayTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox11
-            // 
-            this.displayTextBox11._Division = ((short)(1));
-            this.displayTextBox11._DoubleWord = false;
-            this.displayTextBox11._EqBase = null;
-            this.displayTextBox11._MaxLimit = 999D;
-            this.displayTextBox11._MinLimit = 0D;
-            this.displayTextBox11._Multiplication = ((short)(1));
-            this.displayTextBox11._PlcDevice = "";
-            this.displayTextBox11.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox11.Location = new System.Drawing.Point(1070, 811);
-            this.displayTextBox11.Name = "displayTextBox11";
-            this.displayTextBox11.ReadOnly = true;
-            this.displayTextBox11.Size = new System.Drawing.Size(51, 25);
-            this.displayTextBox11.TabIndex = 2358;
-            this.displayTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox12
-            // 
-            this.displayTextBox12._Division = ((short)(1));
-            this.displayTextBox12._DoubleWord = false;
-            this.displayTextBox12._EqBase = null;
-            this.displayTextBox12._MaxLimit = 999D;
-            this.displayTextBox12._MinLimit = 0D;
-            this.displayTextBox12._Multiplication = ((short)(1));
-            this.displayTextBox12._PlcDevice = "";
-            this.displayTextBox12.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox12.Location = new System.Drawing.Point(1273, 785);
-            this.displayTextBox12.Name = "displayTextBox12";
-            this.displayTextBox12.ReadOnly = true;
-            this.displayTextBox12.Size = new System.Drawing.Size(51, 25);
-            this.displayTextBox12.TabIndex = 2359;
-            this.displayTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox13
-            // 
-            this.displayTextBox13._Division = ((short)(1));
-            this.displayTextBox13._DoubleWord = false;
-            this.displayTextBox13._EqBase = null;
-            this.displayTextBox13._MaxLimit = 999D;
-            this.displayTextBox13._MinLimit = 0D;
-            this.displayTextBox13._Multiplication = ((short)(1));
-            this.displayTextBox13._PlcDevice = "";
-            this.displayTextBox13.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox13.Location = new System.Drawing.Point(1343, 371);
-            this.displayTextBox13.Name = "displayTextBox13";
-            this.displayTextBox13.ReadOnly = true;
-            this.displayTextBox13.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox13.TabIndex = 2360;
-            this.displayTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox14
-            // 
-            this.displayTextBox14._Division = ((short)(1));
-            this.displayTextBox14._DoubleWord = false;
-            this.displayTextBox14._EqBase = null;
-            this.displayTextBox14._MaxLimit = 999D;
-            this.displayTextBox14._MinLimit = 0D;
-            this.displayTextBox14._Multiplication = ((short)(1));
-            this.displayTextBox14._PlcDevice = "";
-            this.displayTextBox14.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox14.Location = new System.Drawing.Point(1343, 426);
-            this.displayTextBox14.Name = "displayTextBox14";
-            this.displayTextBox14.ReadOnly = true;
-            this.displayTextBox14.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox14.TabIndex = 2361;
-            this.displayTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox15
-            // 
-            this.displayTextBox15._Division = ((short)(1));
-            this.displayTextBox15._DoubleWord = false;
-            this.displayTextBox15._EqBase = null;
-            this.displayTextBox15._MaxLimit = 999D;
-            this.displayTextBox15._MinLimit = 0D;
-            this.displayTextBox15._Multiplication = ((short)(1));
-            this.displayTextBox15._PlcDevice = "";
-            this.displayTextBox15.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox15.Location = new System.Drawing.Point(1134, 399);
-            this.displayTextBox15.Name = "displayTextBox15";
-            this.displayTextBox15.ReadOnly = true;
-            this.displayTextBox15.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox15.TabIndex = 2362;
-            this.displayTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox16
-            // 
-            this.displayTextBox16._Division = ((short)(1));
-            this.displayTextBox16._DoubleWord = false;
-            this.displayTextBox16._EqBase = null;
-            this.displayTextBox16._MaxLimit = 999D;
-            this.displayTextBox16._MinLimit = 0D;
-            this.displayTextBox16._Multiplication = ((short)(1));
-            this.displayTextBox16._PlcDevice = "";
-            this.displayTextBox16.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox16.Location = new System.Drawing.Point(1134, 449);
-            this.displayTextBox16.Name = "displayTextBox16";
-            this.displayTextBox16.ReadOnly = true;
-            this.displayTextBox16.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox16.TabIndex = 2363;
-            this.displayTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox17
-            // 
-            this.displayTextBox17._Division = ((short)(1));
-            this.displayTextBox17._DoubleWord = false;
-            this.displayTextBox17._EqBase = null;
-            this.displayTextBox17._MaxLimit = 999D;
-            this.displayTextBox17._MinLimit = 0D;
-            this.displayTextBox17._Multiplication = ((short)(1));
-            this.displayTextBox17._PlcDevice = "";
-            this.displayTextBox17.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox17.Location = new System.Drawing.Point(644, 374);
-            this.displayTextBox17.Name = "displayTextBox17";
-            this.displayTextBox17.ReadOnly = true;
-            this.displayTextBox17.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox17.TabIndex = 2364;
-            this.displayTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox18
-            // 
-            this.displayTextBox18._Division = ((short)(1));
-            this.displayTextBox18._DoubleWord = false;
-            this.displayTextBox18._EqBase = null;
-            this.displayTextBox18._MaxLimit = 999D;
-            this.displayTextBox18._MinLimit = 0D;
-            this.displayTextBox18._Multiplication = ((short)(1));
-            this.displayTextBox18._PlcDevice = "";
-            this.displayTextBox18.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox18.Location = new System.Drawing.Point(588, 477);
-            this.displayTextBox18.Name = "displayTextBox18";
-            this.displayTextBox18.ReadOnly = true;
-            this.displayTextBox18.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox18.TabIndex = 2365;
-            this.displayTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox19
-            // 
-            this.displayTextBox19._Division = ((short)(1));
-            this.displayTextBox19._DoubleWord = false;
-            this.displayTextBox19._EqBase = null;
-            this.displayTextBox19._MaxLimit = 999D;
-            this.displayTextBox19._MinLimit = 0D;
-            this.displayTextBox19._Multiplication = ((short)(1));
-            this.displayTextBox19._PlcDevice = "";
-            this.displayTextBox19.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox19.Location = new System.Drawing.Point(442, 477);
-            this.displayTextBox19.Name = "displayTextBox19";
-            this.displayTextBox19.ReadOnly = true;
-            this.displayTextBox19.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox19.TabIndex = 2366;
-            this.displayTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox20
-            // 
-            this.displayTextBox20._Division = ((short)(1));
-            this.displayTextBox20._DoubleWord = false;
-            this.displayTextBox20._EqBase = null;
-            this.displayTextBox20._MaxLimit = 999D;
-            this.displayTextBox20._MinLimit = 0D;
-            this.displayTextBox20._Multiplication = ((short)(1));
-            this.displayTextBox20._PlcDevice = "";
-            this.displayTextBox20.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox20.Location = new System.Drawing.Point(369, 378);
-            this.displayTextBox20.Name = "displayTextBox20";
-            this.displayTextBox20.ReadOnly = true;
-            this.displayTextBox20.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox20.TabIndex = 2367;
-            this.displayTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox21
-            // 
-            this.displayTextBox21._Division = ((short)(1));
-            this.displayTextBox21._DoubleWord = false;
-            this.displayTextBox21._EqBase = null;
-            this.displayTextBox21._MaxLimit = 999D;
-            this.displayTextBox21._MinLimit = 0D;
-            this.displayTextBox21._Multiplication = ((short)(1));
-            this.displayTextBox21._PlcDevice = "";
-            this.displayTextBox21.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox21.Location = new System.Drawing.Point(514, 355);
-            this.displayTextBox21.Name = "displayTextBox21";
-            this.displayTextBox21.ReadOnly = true;
-            this.displayTextBox21.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox21.TabIndex = 2368;
-            this.displayTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox22
-            // 
-            this.displayTextBox22._Division = ((short)(1));
-            this.displayTextBox22._DoubleWord = false;
-            this.displayTextBox22._EqBase = null;
-            this.displayTextBox22._MaxLimit = 999D;
-            this.displayTextBox22._MinLimit = 0D;
-            this.displayTextBox22._Multiplication = ((short)(1));
-            this.displayTextBox22._PlcDevice = "";
-            this.displayTextBox22.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox22.Location = new System.Drawing.Point(514, 399);
-            this.displayTextBox22.Name = "displayTextBox22";
-            this.displayTextBox22.ReadOnly = true;
-            this.displayTextBox22.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox22.TabIndex = 2369;
-            this.displayTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox23
-            // 
-            this.displayTextBox23._Division = ((short)(1));
-            this.displayTextBox23._DoubleWord = false;
-            this.displayTextBox23._EqBase = null;
-            this.displayTextBox23._MaxLimit = 999D;
-            this.displayTextBox23._MinLimit = 0D;
-            this.displayTextBox23._Multiplication = ((short)(1));
-            this.displayTextBox23._PlcDevice = "";
-            this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox23.Location = new System.Drawing.Point(78, 354);
-            this.displayTextBox23.Name = "displayTextBox23";
-            this.displayTextBox23.ReadOnly = true;
-            this.displayTextBox23.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox23.TabIndex = 2370;
-            this.displayTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox24
-            // 
-            this.displayTextBox24._Division = ((short)(1));
-            this.displayTextBox24._DoubleWord = false;
-            this.displayTextBox24._EqBase = null;
-            this.displayTextBox24._MaxLimit = 999D;
-            this.displayTextBox24._MinLimit = 0D;
-            this.displayTextBox24._Multiplication = ((short)(1));
-            this.displayTextBox24._PlcDevice = "";
-            this.displayTextBox24.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox24.Location = new System.Drawing.Point(78, 405);
-            this.displayTextBox24.Name = "displayTextBox24";
-            this.displayTextBox24.ReadOnly = true;
-            this.displayTextBox24.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox24.TabIndex = 2371;
-            this.displayTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox25
-            // 
-            this.displayTextBox25._Division = ((short)(1));
-            this.displayTextBox25._DoubleWord = false;
-            this.displayTextBox25._EqBase = null;
-            this.displayTextBox25._MaxLimit = 999D;
-            this.displayTextBox25._MinLimit = 0D;
-            this.displayTextBox25._Multiplication = ((short)(1));
-            this.displayTextBox25._PlcDevice = "";
-            this.displayTextBox25.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox25.Location = new System.Drawing.Point(567, 30);
-            this.displayTextBox25.Name = "displayTextBox25";
-            this.displayTextBox25.ReadOnly = true;
-            this.displayTextBox25.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox25.TabIndex = 2372;
-            this.displayTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox26
-            // 
-            this.displayTextBox26._Division = ((short)(1));
-            this.displayTextBox26._DoubleWord = false;
-            this.displayTextBox26._EqBase = null;
-            this.displayTextBox26._MaxLimit = 999D;
-            this.displayTextBox26._MinLimit = 0D;
-            this.displayTextBox26._Multiplication = ((short)(1));
-            this.displayTextBox26._PlcDevice = "";
-            this.displayTextBox26.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox26.Location = new System.Drawing.Point(456, 30);
-            this.displayTextBox26.Name = "displayTextBox26";
-            this.displayTextBox26.ReadOnly = true;
-            this.displayTextBox26.Size = new System.Drawing.Size(60, 25);
-            this.displayTextBox26.TabIndex = 2373;
-            this.displayTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // frmOverview_1st
+            // frmOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -6598,7 +6593,7 @@
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmOverview_1st";
+            this.Name = "frmOverview";
             this.Text = "Overview";
             this.Shown += new System.EventHandler(this.frmOverview_Shown);
             this.GroupBox3.ResumeLayout(false);
@@ -6728,7 +6723,6 @@
 
         #endregion
         private System.Windows.Forms.Timer timerStatus;
-        private components.Motor motor1;
         internal System.Windows.Forms.GroupBox GroupBox3;
         internal System.Windows.Forms.Label Label165;
         internal System.Windows.Forms.Label Label166;

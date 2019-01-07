@@ -28,8 +28,8 @@ namespace HyTemplate
         frmSystemParameter frmSysPara;
         frmIoView frmIoView;
         frmLogin frmLogin;
-        frmOverview_1st frmOverview_1st;
-        frmOverview_2nd frmOverview_2nd;
+        frmOverview frmOverview;
+        frmControl frmControl;
         frmGasview frmGasview;
         frmProcess frmProcess;
 
@@ -53,19 +53,18 @@ namespace HyTemplate
             frmSysPara = new frmSystemParameter(rRecipe);
             frmIoView = new frmIoView(rdKernel);
             frmLogin = new frmLogin();
-            frmOverview_1st = new frmOverview_1st(rdKernel);
-            frmOverview_2nd = new frmOverview_2nd(rdKernel);
+            frmOverview = new frmOverview(rdKernel);
+            frmControl = new frmControl(rdKernel);
             frmGasview = new frmGasview(rdKernel);
             frmProcess = new frmProcess(rdKernel);
 
-
-            //timerStatus.Enabled = true;
+           
 
             this.LoadUserRegister();
 
             System.Threading.Thread.Sleep(2000);
 
-            ReloadGui(frmOverview_1st);
+            ReloadGui(frmOverview);
 
             checkInitialStatus();
 
@@ -76,7 +75,6 @@ namespace HyTemplate
         {
             if (rdKernel.PlcKernel["X00024"] == 1 || rdKernel.PlcKernel["X00024"] == 1 || rdKernel.PlcKernel["X00025"] == 1)
             {
-                btnVacuum.BackColor = Color.Yellow;
 
                 TEvent data = new TEvent();
                 data.MessageName = ProxyMessage.MSG_PROCESS_VACUUM;
@@ -87,14 +85,9 @@ namespace HyTemplate
 
         private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
         {
-            //            System.Threading.Thread.Sleep(100);
             if (m_MessageName == ProxyMessage.MSG_USER_REGISTER_CHANGED)
             {
                 this.LoadUserRegister();
-            }
-            else if (m_MessageName == ProxyMessage.MSG_PROCESS_VACUUM_COMPLETE)
-            {
-                btnVacuum.BackColor = Color.Lime;
             }
             else if (m_MessageName == ProxyMessage.MSG_ALARM_OCCURE)
             {
@@ -148,17 +141,19 @@ namespace HyTemplate
         private void btnRecipe_Click(object sender, EventArgs e)
         {
             ReloadGui(frmRecipe);
+            frmRecipe.Show();
         }
 
         private void btnOverview_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmOverview_1st);
-            frmOverview_1st.Show();
+            ReloadGui(frmOverview);
+            frmOverview.Show();
         }
 
         private void btnSysPara_Click(object sender, EventArgs e)
         {
             ReloadGui(frmSysPara);
+            frmSysPara.Show();
         }
 
         private void btnIoView_Click(object sender, EventArgs e)
@@ -264,8 +259,7 @@ namespace HyTemplate
                 MessageBox.Show("Please Check Water Flow !!");
                 return;
             }
-
-            btnVacuum.BackColor = Color.Yellow;
+            
 
             TEvent data = new TEvent();
             data.MessageName = ProxyMessage.MSG_PROCESS_VACUUM;
@@ -285,19 +279,22 @@ namespace HyTemplate
             rdKernel.PlcKernel[ConstPlcDefine.PLC_BUF_ALM_RST] = 0;
         }
 
-        private void Overview2nd_Click(object sender, EventArgs e)
+        private void Control_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmOverview_2nd);
+            ReloadGui(frmControl);
+            frmControl.Show();
         }
 
         private void btnGasView_Click(object sender, EventArgs e)
         {
             ReloadGui(frmGasview);
+            frmGasview.Show();
         }
 
         private void btnProcView_Click(object sender, EventArgs e)
         {
             ReloadGui(frmProcess);
+            frmProcess.Show();
         }
     }
 }

@@ -18,11 +18,11 @@ namespace HyTemplate.components
         public int _Multiplication { get; set; }
         public bool _NumberOnly { get; set; }
         public bool _FloatNumber { get; set; }
-        public bool _DoubleWord { get; set; }
         public double _MaxLimit { get; set; }
         public double _MinLimit { get; set; }
         public EqBase _EqBase { get; set; }
         #endregion
+        private bool isSetting = false;
 
         public InputTextBox()
         {
@@ -31,7 +31,6 @@ namespace HyTemplate.components
             _PlcDevice = "";
             _Division = 1;
             _Multiplication = 1;
-            _DoubleWord = false;
             _NumberOnly = true;
             _FloatNumber = false;
             _MaxLimit = 999;
@@ -41,7 +40,6 @@ namespace HyTemplate.components
             this.Enter += InputTextBox_Enter;
             this.Leave += InputTextBox_Leave;
             this.KeyUp += InputTextBox_KeyUp;
-            //this.KeyPress += InputTextBox_KeyPress;
 
             this.TextAlign = HorizontalAlignment.Center;
 
@@ -89,16 +87,12 @@ namespace HyTemplate.components
                 if (_Division <= 0) _Division = 1;
 
                 result = result * _Multiplication / _Division;
-                if (_DoubleWord)
-                    _EqBase.PlcKernel.setPlcDbValue(_PlcDevice, (short)result);
-                else
-                    _EqBase.PlcKernel[_PlcDevice] = (short)result;
+                _EqBase.PlcKernel[_PlcDevice] = (int)result;
                 
 
                 this.Parent.Focus();
                 InputTextBox_Leave(sender, e);
             }
-            
         }
 
         private void InputTextBox_HandleCreated(object sender, EventArgs e)
@@ -117,20 +111,22 @@ namespace HyTemplate.components
             if (this.ReadOnly) return;
 
             this.BackColor = Color.White;
+            isSetting = false;
         }
 
         private void InputTextBox_Enter(object sender, EventArgs e)
         {
             if (this.ReadOnly) return;
 
+            isSetting = true;
             this.BackColor = Color.FromArgb(255, 255, 192);
         }
 
         public void refreshData()
         {
-            if (_EqBase == null || _PlcDevice == null || _PlcDevice == "") return;
+            if (_EqBase == null || _PlcDevice == null || _PlcDevice == "" || isSetting) return;
 
-            float value = (_DoubleWord ? _EqBase.PlcKernel.getPlcDbValue(_PlcDevice) : _EqBase.PlcKernel[_PlcDevice]);
+            float value = _EqBase.PlcKernel[_PlcDevice];
             if (value == 0 || _Multiplication == 0 || _Division == 0)
                 this.Text = "0";
             else

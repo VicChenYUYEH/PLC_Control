@@ -154,7 +154,7 @@ namespace HyTemplate
                 }
                 else
                 {
-                    Thread.Sleep(30); //5 min
+                    Thread.Sleep(300000); //5 min
                 }
             }
         }
@@ -172,9 +172,10 @@ namespace HyTemplate
             XmlNodeList nodes = XmlDoc.SelectNodes("PLC/Group");
             foreach (XmlNode chile_node in nodes)
             {
+                if (chile_node.Attributes["ID"].Value == "Alarm") continue;
                 foreach (XmlNode node in chile_node)
                 {
-                    String device_name = node.Attributes["Name"].Value;
+                    string device_name = node.Attributes["Name"].Value;
 
                     if (dicPlcBuffer.ContainsKey(device_name))
                     {
@@ -182,7 +183,7 @@ namespace HyTemplate
                         continue;
                     }
 
-                    String device = node.Attributes["Device"].Value; //node.InnerText;
+                    string device = node.Attributes["Device"].Value; //node.InnerText;
 
                     PlcDeviceType device_type = getDeviceType(device);
                     if (device_type == PlcDeviceType.pdtZR)
@@ -203,26 +204,14 @@ namespace HyTemplate
                 }
             }
 
-#region 找出所有類型的起始點及長度
-            //foreach (KeyValuePair<PlcDeviceType, PlcDataInfo> info in dicPlcInfo)
+            #region 找出所有類型的起始點及長度
             for (int count = 0; count < dicPlcInfo.Count; count++)
             {
                 KeyValuePair<PlcDeviceType, PlcDataInfo> info = dicPlcInfo.ElementAt(count);
                 PlcDataInfo data = info.Value;
 
                 int length = (convertDecimal((info.Value.DeviceType == NumberStyles.HexNumber ? "0x" : "") + info.Value.LastDevice.Substring(info.Key == PlcDeviceType.pdtZR ? 2 : 1)) - data.Id);
-                //if (info.Value.DeviceType == NumberStyles.HexNumber)
-                //{
-                //    string first_device = info.Value.FirstDevice;
-                //    int index = info.Value.Id % 16;
-                //    if (index > 0)
-                //    {
-                //        data.Id = info.Value.Id - index;
-                //        data.FirstDevice = data.FirstDevice.Substring(0, (info.Key == PlcDeviceType.pdtZR ? 2 : 1)) + data.Id.ToString("X");
-                //    }
-                //    length = (convertHexToInt("0x" + info.Value.LastDevice.Substring(info.Key == PlcDeviceType.pdtZR ? 2 : 1)) - data.Id) / 16 + 1;
-                //}
-                //else 
+
                 if (   info.Key == PlcDeviceType.pdtX 
                     || info.Key == PlcDeviceType.pdtY
                     || info.Key == PlcDeviceType.pdtB
@@ -247,7 +236,7 @@ namespace HyTemplate
                 data.Length = length;
                 dicPlcInfo[info.Key] = data;
             }
-#endregion
+            #endregion
 
             return true;
         }
@@ -259,7 +248,10 @@ namespace HyTemplate
             {
                 foreach (KeyValuePair<PlcDeviceType, PlcDataInfo> info in dicPlcInfo)
                 {
-                    int loop_count = (int)((info.Value.Length / BATCH_READ_LENGTH) + 1);
+                    int TypeLength = (info.Key == PlcDeviceType.pdtM) ? (info.Value.Length / 16) + 1 : info.Value.Length;
+
+                    int loop_count = (int)((TypeLength / BATCH_READ_LENGTH) + 1);
+
                     int device_type_count = info.Key == PlcDeviceType.pdtZR ? 2 : 1;
                     for (int loop = 0; loop < loop_count; loop++)
                     {
@@ -268,16 +260,14 @@ namespace HyTemplate
 
                         start_adr = info.Value.FirstDevice.Substring(0, device_type_count) + (info.Value.Id + (loop * BATCH_READ_LENGTH)).ToString(device_type);
 
-                        int length = (int)(info.Value.Length - ((loop + 1) * BATCH_READ_LENGTH) > 0 ? BATCH_READ_LENGTH : (info.Value.Length - (loop * BATCH_READ_LENGTH)));
+                        int length = (int)(TypeLength - ((loop + 1) * BATCH_READ_LENGTH) > 0 ? (int)BATCH_READ_LENGTH : TypeLength);
                         short[] values;
 
                         if (melPlcAccessor.readDeviceBlock(start_adr, length, out values) == 0)
-                        //melPlcAccessor.readDeviceBlock(start_adr, length, out values);
                         {
                             if (   info.Key == PlcDeviceType.pdtX
                                 || info.Key == PlcDeviceType.pdtY
                                 || info.Key == PlcDeviceType.pdtB
-                                //|| info.Key == PlcDeviceType.pdtL
                                 || info.Key == PlcDeviceType.pdtM)
                             {                      
                                 for (int index = 0; index < length; )
@@ -297,9 +287,9 @@ namespace HyTemplate
                                         dicPlcBuffer[data.Key] = new_data;
                                     }
 
-                                    if (info.Value.DeviceType != NumberStyles.HexNumber)
+                                    if (!(info.Value.DeviceType == NumberStyles.HexNumber || info.Key == PlcDeviceType.pdtM)) 
                                         index += 16;
-                                    else
+                                    else//M type回傳資料型態為一個陣列內有16Bit的Bool值  ex:[0] = 2 M0與M1皆為為ON，其他M2~M15為OFF
                                         index++;
                                 }
                             }
@@ -435,7 +425,7 @@ namespace HyTemplate
         private void StorePlcInfo(PlcDeviceType m_DeviceType, string m_Device)
         {
             int index = 1;
-            Int32 device_id = 0;
+            int device_id = 0;
             if (m_DeviceType == PlcDeviceType.pdtZR)
             {
                 index = 2;
@@ -463,7 +453,8 @@ namespace HyTemplate
                 info.FirstDevice = m_Device;
                 info.LastDevice = m_Device;
 
-                if (m_DeviceType == PlcDeviceType.pdtX || m_DeviceType == PlcDeviceType.pdtY || m_DeviceType == PlcDeviceType.pdtB || m_DeviceType == PlcDeviceType.pdtW)
+                if (m_DeviceType == PlcDeviceType.pdtX || m_DeviceType == PlcDeviceType.pdtY || m_DeviceType == PlcDeviceType.pdtB 
+                    || m_DeviceType == PlcDeviceType.pdtW)
                 {
                     info.DeviceType = NumberStyles.HexNumber;
                 }
@@ -496,10 +487,10 @@ namespace HyTemplate
             if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return 0;
 
             string plc_device = dicPlcBuffer[m_DeviceName].Key;
-            string high_device = plc_device.Substring(0, 1) + (Convert.ToInt16(plc_device.Substring(1)) + 1).ToString();
-            KeyValuePair<String, KeyValuePair<string, int>> tmp = new KeyValuePair<string, KeyValuePair<string, int>>();
+            string high_device = plc_device.Substring(0, 1) + ((Convert.ToInt16(plc_device.Substring(1)) + 1).ToString()).PadLeft(5, '0'); //找LowDevice下一個Word並補滿5個數字
             System.Threading.Thread.Sleep(100);
-            tmp = dicPlcBuffer.FirstOrDefault(t => t.Value.Key == high_device);
+            //用寫入位址從Dictionary 找到 High Deveice的Device Name(XML需設定High Deveice資料)
+            KeyValuePair<String, KeyValuePair<string, int>> tmp = dicPlcBuffer.FirstOrDefault(t => t.Value.Key == high_device);
             if (tmp.Key == null) return 0;
 
             high_device = tmp.Key;
@@ -518,7 +509,9 @@ namespace HyTemplate
             if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return;
 
             string plc_device = dicPlcBuffer[m_DeviceName].Key;
-            string high_device = plc_device.Substring(0, 1) + (Convert.ToInt16(plc_device.Substring(1)) + 1).ToString();
+            string high_device = plc_device.Substring(0, 1) + ((Convert.ToInt16(plc_device.Substring(1)) + 1).ToString()).PadLeft(5,'0');//找LowDevice下一個Word並補滿5個數字
+
+            //用寫入位址從Dictionary 找到 High Deveice的Device Name(XML需設定High Deveice資料)
             KeyValuePair<String, KeyValuePair<string, int>> tmp = dicPlcBuffer.FirstOrDefault(t => t.Value.Key == high_device);
             if (tmp.Key == null) return;
 
@@ -534,21 +527,43 @@ namespace HyTemplate
             melPlcAccessor.writeDeviceRandom2(dicPlcBuffer[low_device].Key, (short)low_value);
         }
 
-        public short this[string m_DeviceName]
+        public int this[string m_DeviceName]
         {
             get
             {
-                return getPlcValue(m_DeviceName);
+                if (!dicPlcValueType.ContainsKey(m_DeviceName)) return 0;
+                if (dicPlcValueType[m_DeviceName] == PlcValueType.pvtDoubleWord)
+                {
+                    return getPlcDbValue(m_DeviceName);
+                }
+                else
+                {
+                    return getPlcValue(m_DeviceName);
+                }
             }
             set
             {
-                setPlcValue(m_DeviceName, value);
+                if (!dicPlcValueType.ContainsKey(m_DeviceName)) return;
+                if (dicPlcValueType[m_DeviceName] == PlcValueType.pvtDoubleWord)
+                {
+                    setPlcDbValue(m_DeviceName, value);
+                }
+                else
+                {
+                    setPlcValue(m_DeviceName, (short)value);
+                }
             }
         }
 
         public Dictionary<string, KeyValuePair<string, int>> getPlcMap()
         {
             return dicPlcBuffer;
+        }
+
+        public string getPlcMap(string m_DeviceName)
+        {
+            if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return "InVaild Address";
+            return dicPlcBuffer[m_DeviceName].Key;
         }
 
         private void writeLog(string m_Log)

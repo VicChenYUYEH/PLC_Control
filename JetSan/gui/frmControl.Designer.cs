@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmOverview_2nd
+    partial class frmControl
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.GroupBox4 = new System.Windows.Forms.GroupBox();
             this.displayTextBox10 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox9 = new HyTemplate.components.DisplayTextBox();
@@ -186,6 +187,7 @@
             this.controlBtn31 = new HyTemplate.components.ControlBtn();
             this.controlBtn28 = new HyTemplate.components.ControlBtn();
             this.controlBtn27 = new HyTemplate.components.ControlBtn();
+            this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.controlBtn29 = new HyTemplate.components.ControlBtn();
             this.controlBtn21 = new HyTemplate.components.ControlBtn();
             this.controlBtn22 = new HyTemplate.components.ControlBtn();
@@ -271,7 +273,7 @@
             this.displayTextBox10._MaxLimit = 999D;
             this.displayTextBox10._MinLimit = 0D;
             this.displayTextBox10._Multiplication = ((short)(1));
-            this.displayTextBox10._PlcDevice = "";
+            this.displayTextBox10._PlcDevice = "MI3_Temp_PV_M2_6";
             this.displayTextBox10.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox10.Location = new System.Drawing.Point(879, 45);
             this.displayTextBox10.Name = "displayTextBox10";
@@ -288,7 +290,7 @@
             this.displayTextBox9._MaxLimit = 999D;
             this.displayTextBox9._MinLimit = 0D;
             this.displayTextBox9._Multiplication = ((short)(1));
-            this.displayTextBox9._PlcDevice = "";
+            this.displayTextBox9._PlcDevice = "MI3_Temp_PV_M2_5";
             this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox9.Location = new System.Drawing.Point(819, 45);
             this.displayTextBox9.Name = "displayTextBox9";
@@ -305,7 +307,7 @@
             this.displayTextBox8._MaxLimit = 999D;
             this.displayTextBox8._MinLimit = 0D;
             this.displayTextBox8._Multiplication = ((short)(1));
-            this.displayTextBox8._PlcDevice = "";
+            this.displayTextBox8._PlcDevice = "MI3_Temp_PV_M2_4";
             this.displayTextBox8.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox8.Location = new System.Drawing.Point(759, 45);
             this.displayTextBox8.Name = "displayTextBox8";
@@ -322,7 +324,7 @@
             this.displayTextBox7._MaxLimit = 999D;
             this.displayTextBox7._MinLimit = 0D;
             this.displayTextBox7._Multiplication = ((short)(1));
-            this.displayTextBox7._PlcDevice = "";
+            this.displayTextBox7._PlcDevice = "MI3_Temp_PV_M2_3";
             this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox7.Location = new System.Drawing.Point(699, 45);
             this.displayTextBox7.Name = "displayTextBox7";
@@ -339,7 +341,7 @@
             this.displayTextBox6._MaxLimit = 999D;
             this.displayTextBox6._MinLimit = 0D;
             this.displayTextBox6._Multiplication = ((short)(1));
-            this.displayTextBox6._PlcDevice = "";
+            this.displayTextBox6._PlcDevice = "MI3_Temp_PV_M2_2";
             this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox6.Location = new System.Drawing.Point(639, 45);
             this.displayTextBox6.Name = "displayTextBox6";
@@ -356,7 +358,7 @@
             this.displayTextBox5._MaxLimit = 999D;
             this.displayTextBox5._MinLimit = 0D;
             this.displayTextBox5._Multiplication = ((short)(1));
-            this.displayTextBox5._PlcDevice = "";
+            this.displayTextBox5._PlcDevice = "MI3_Temp_PV_M2_1";
             this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox5.Location = new System.Drawing.Point(579, 45);
             this.displayTextBox5.Name = "displayTextBox5";
@@ -373,7 +375,7 @@
             this.displayTextBox3._MaxLimit = 999D;
             this.displayTextBox3._MinLimit = 0D;
             this.displayTextBox3._Multiplication = ((short)(1));
-            this.displayTextBox3._PlcDevice = "";
+            this.displayTextBox3._PlcDevice = "Heater4_PV";
             this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox3.Location = new System.Drawing.Point(277, 55);
             this.displayTextBox3.Name = "displayTextBox3";
@@ -390,7 +392,7 @@
             this.displayTextBox2._MaxLimit = 999D;
             this.displayTextBox2._MinLimit = 0D;
             this.displayTextBox2._Multiplication = ((short)(1));
-            this.displayTextBox2._PlcDevice = "";
+            this.displayTextBox2._PlcDevice = "Heater3_PV";
             this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox2.Location = new System.Drawing.Point(211, 55);
             this.displayTextBox2.Name = "displayTextBox2";
@@ -407,7 +409,7 @@
             this.displayTextBox1._MaxLimit = 999D;
             this.displayTextBox1._MinLimit = 0D;
             this.displayTextBox1._Multiplication = ((short)(1));
-            this.displayTextBox1._PlcDevice = "";
+            this.displayTextBox1._PlcDevice = "Heater2_PV";
             this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox1.Location = new System.Drawing.Point(151, 55);
             this.displayTextBox1.Name = "displayTextBox1";
@@ -424,7 +426,7 @@
             this.displayTextBox4._MaxLimit = 999D;
             this.displayTextBox4._MinLimit = 0D;
             this.displayTextBox4._Multiplication = ((short)(1));
-            this.displayTextBox4._PlcDevice = "";
+            this.displayTextBox4._PlcDevice = "Heater1_PV";
             this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox4.Location = new System.Drawing.Point(91, 54);
             this.displayTextBox4.Name = "displayTextBox4";
@@ -711,7 +713,7 @@
             this.TabControl1.Location = new System.Drawing.Point(12, 12);
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.SelectedIndex = 0;
-            this.TabControl1.Size = new System.Drawing.Size(358, 660);
+            this.TabControl1.Size = new System.Drawing.Size(359, 701);
             this.TabControl1.TabIndex = 2037;
             // 
             // TabPage1
@@ -769,7 +771,7 @@
             this.TabPage1.Location = new System.Drawing.Point(4, 22);
             this.TabPage1.Name = "TabPage1";
             this.TabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage1.Size = new System.Drawing.Size(350, 634);
+            this.TabPage1.Size = new System.Drawing.Size(336, 675);
             this.TabPage1.TabIndex = 0;
             this.TabPage1.Text = "Roller Data";
             this.TabPage1.UseVisualStyleBackColor = true;
@@ -778,15 +780,15 @@
             // 
             this.controlBtn13._CurrentStatus = false;
             this.controlBtn13._EqBase = null;
-            this.controlBtn13._PlcDevice = "";
+            this.controlBtn13._PlcDevice = "Set_SpeedRun";
             this.controlBtn13._PlcDisplayOffDevice = "";
-            this.controlBtn13._PlcDisplayOnDevice = "";
+            this.controlBtn13._PlcDisplayOnDevice = "Set_SpeedRun";
             this.controlBtn13._ReadOnly = false;
             this.controlBtn13._Reverse = false;
             this.controlBtn13._Text = "Speed On";
             this.controlBtn13.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn13.Font = new System.Drawing.Font("微軟正黑體", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn13.Location = new System.Drawing.Point(226, 32);
+            this.controlBtn13.Location = new System.Drawing.Point(228, 32);
             this.controlBtn13.Name = "controlBtn13";
             this.controlBtn13.Size = new System.Drawing.Size(76, 22);
             this.controlBtn13.TabIndex = 2050;
@@ -796,198 +798,198 @@
             // inputTextBox11
             // 
             this.inputTextBox11._Division = 1;
-            this.inputTextBox11._DoubleWord = false;
             this.inputTextBox11._EqBase = null;
             this.inputTextBox11._FloatNumber = false;
             this.inputTextBox11._MaxLimit = 999D;
             this.inputTextBox11._MinLimit = 0D;
             this.inputTextBox11._Multiplication = 1;
             this.inputTextBox11._NumberOnly = true;
-            this.inputTextBox11._PlcDevice = "";
+            this.inputTextBox11._PlcDevice = "SETP_Convey_FallRate";
             this.inputTextBox11.BackColor = System.Drawing.Color.White;
-            this.inputTextBox11.Location = new System.Drawing.Point(226, 592);
+            this.inputTextBox11.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox11.Location = new System.Drawing.Point(228, 592);
             this.inputTextBox11.Name = "inputTextBox11";
-            this.inputTextBox11.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox11.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox11.TabIndex = 2075;
             this.inputTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox10
             // 
             this.inputTextBox10._Division = 1;
-            this.inputTextBox10._DoubleWord = false;
             this.inputTextBox10._EqBase = null;
             this.inputTextBox10._FloatNumber = false;
             this.inputTextBox10._MaxLimit = 999D;
             this.inputTextBox10._MinLimit = 0D;
             this.inputTextBox10._Multiplication = 1;
             this.inputTextBox10._NumberOnly = true;
-            this.inputTextBox10._PlcDevice = "";
+            this.inputTextBox10._PlcDevice = "SETP_Rewind_Caliber";
             this.inputTextBox10.BackColor = System.Drawing.Color.White;
-            this.inputTextBox10.Location = new System.Drawing.Point(226, 564);
+            this.inputTextBox10.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox10.Location = new System.Drawing.Point(228, 564);
             this.inputTextBox10.Name = "inputTextBox10";
-            this.inputTextBox10.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox10.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox10.TabIndex = 2070;
             this.inputTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox9
             // 
             this.inputTextBox9._Division = 1;
-            this.inputTextBox9._DoubleWord = false;
             this.inputTextBox9._EqBase = null;
             this.inputTextBox9._FloatNumber = false;
             this.inputTextBox9._MaxLimit = 999D;
             this.inputTextBox9._MinLimit = 0D;
             this.inputTextBox9._Multiplication = 1;
             this.inputTextBox9._NumberOnly = true;
-            this.inputTextBox9._PlcDevice = "";
+            this.inputTextBox9._PlcDevice = "SETP_Rewind_Tension";
             this.inputTextBox9.BackColor = System.Drawing.Color.White;
-            this.inputTextBox9.Location = new System.Drawing.Point(226, 508);
+            this.inputTextBox9.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox9.Location = new System.Drawing.Point(228, 508);
             this.inputTextBox9.Name = "inputTextBox9";
-            this.inputTextBox9.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox9.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox9.TabIndex = 2070;
             this.inputTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox8
             // 
             this.inputTextBox8._Division = 1;
-            this.inputTextBox8._DoubleWord = false;
             this.inputTextBox8._EqBase = null;
             this.inputTextBox8._FloatNumber = false;
             this.inputTextBox8._MaxLimit = 999D;
             this.inputTextBox8._MinLimit = 0D;
             this.inputTextBox8._Multiplication = 1;
             this.inputTextBox8._NumberOnly = true;
-            this.inputTextBox8._PlcDevice = "";
+            this.inputTextBox8._PlcDevice = "SETP_Discharge_Diameter";
             this.inputTextBox8.BackColor = System.Drawing.Color.White;
-            this.inputTextBox8.Location = new System.Drawing.Point(226, 312);
+            this.inputTextBox8.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox8.Location = new System.Drawing.Point(228, 312);
             this.inputTextBox8.Name = "inputTextBox8";
-            this.inputTextBox8.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox8.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox8.TabIndex = 2070;
             this.inputTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox7
             // 
             this.inputTextBox7._Division = 1;
-            this.inputTextBox7._DoubleWord = false;
             this.inputTextBox7._EqBase = null;
             this.inputTextBox7._FloatNumber = false;
             this.inputTextBox7._MaxLimit = 999D;
             this.inputTextBox7._MinLimit = 0D;
             this.inputTextBox7._Multiplication = 1;
             this.inputTextBox7._NumberOnly = true;
-            this.inputTextBox7._PlcDevice = "";
+            this.inputTextBox7._PlcDevice = "SETP_Discharge_Caliber";
             this.inputTextBox7.BackColor = System.Drawing.Color.White;
-            this.inputTextBox7.Location = new System.Drawing.Point(226, 424);
+            this.inputTextBox7.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox7.Location = new System.Drawing.Point(228, 424);
             this.inputTextBox7.Name = "inputTextBox7";
-            this.inputTextBox7.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox7.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox7.TabIndex = 2074;
             this.inputTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox6
             // 
             this.inputTextBox6._Division = 1;
-            this.inputTextBox6._DoubleWord = false;
             this.inputTextBox6._EqBase = null;
             this.inputTextBox6._FloatNumber = false;
             this.inputTextBox6._MaxLimit = 999D;
             this.inputTextBox6._MinLimit = 0D;
             this.inputTextBox6._Multiplication = 1;
             this.inputTextBox6._NumberOnly = true;
-            this.inputTextBox6._PlcDevice = "";
+            this.inputTextBox6._PlcDevice = "SETP_Discharge_Tension";
             this.inputTextBox6.BackColor = System.Drawing.Color.White;
-            this.inputTextBox6.Location = new System.Drawing.Point(226, 368);
+            this.inputTextBox6.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox6.Location = new System.Drawing.Point(228, 368);
             this.inputTextBox6.Name = "inputTextBox6";
-            this.inputTextBox6.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox6.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox6.TabIndex = 2073;
             this.inputTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox5
             // 
             this.inputTextBox5._Division = 1;
-            this.inputTextBox5._DoubleWord = false;
             this.inputTextBox5._EqBase = null;
             this.inputTextBox5._FloatNumber = false;
             this.inputTextBox5._MaxLimit = 999D;
             this.inputTextBox5._MinLimit = 0D;
             this.inputTextBox5._Multiplication = 1;
             this.inputTextBox5._NumberOnly = true;
-            this.inputTextBox5._PlcDevice = "";
+            this.inputTextBox5._PlcDevice = "SETP_Convey_ClipOUT_Rate";
             this.inputTextBox5.BackColor = System.Drawing.Color.White;
-            this.inputTextBox5.Location = new System.Drawing.Point(226, 284);
+            this.inputTextBox5.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox5.Location = new System.Drawing.Point(228, 284);
             this.inputTextBox5.Name = "inputTextBox5";
-            this.inputTextBox5.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox5.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox5.TabIndex = 2072;
             this.inputTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox4
             // 
             this.inputTextBox4._Division = 1;
-            this.inputTextBox4._DoubleWord = false;
             this.inputTextBox4._EqBase = null;
             this.inputTextBox4._FloatNumber = false;
             this.inputTextBox4._MaxLimit = 999D;
             this.inputTextBox4._MinLimit = 0D;
             this.inputTextBox4._Multiplication = 1;
             this.inputTextBox4._NumberOnly = true;
-            this.inputTextBox4._PlcDevice = "";
+            this.inputTextBox4._PlcDevice = "SETP_Convey_ClipIN_Rate";
             this.inputTextBox4.BackColor = System.Drawing.Color.White;
-            this.inputTextBox4.Location = new System.Drawing.Point(226, 200);
+            this.inputTextBox4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox4.Location = new System.Drawing.Point(228, 200);
             this.inputTextBox4.Name = "inputTextBox4";
-            this.inputTextBox4.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox4.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox4.TabIndex = 2070;
             this.inputTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox3
             // 
             this.inputTextBox3._Division = 1;
-            this.inputTextBox3._DoubleWord = false;
             this.inputTextBox3._EqBase = null;
             this.inputTextBox3._FloatNumber = false;
             this.inputTextBox3._MaxLimit = 999D;
             this.inputTextBox3._MinLimit = 0D;
             this.inputTextBox3._Multiplication = 1;
             this.inputTextBox3._NumberOnly = true;
-            this.inputTextBox3._PlcDevice = "";
+            this.inputTextBox3._PlcDevice = "SETP_Convey_ProcessLength_Db";
             this.inputTextBox3.BackColor = System.Drawing.Color.White;
-            this.inputTextBox3.Location = new System.Drawing.Point(226, 88);
+            this.inputTextBox3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox3.Location = new System.Drawing.Point(228, 88);
             this.inputTextBox3.Name = "inputTextBox3";
-            this.inputTextBox3.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox3.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox3.TabIndex = 2071;
             this.inputTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox2
             // 
             this.inputTextBox2._Division = 1;
-            this.inputTextBox2._DoubleWord = false;
             this.inputTextBox2._EqBase = null;
             this.inputTextBox2._FloatNumber = false;
             this.inputTextBox2._MaxLimit = 999D;
             this.inputTextBox2._MinLimit = 0D;
             this.inputTextBox2._Multiplication = 1;
             this.inputTextBox2._NumberOnly = true;
-            this.inputTextBox2._PlcDevice = "";
+            this.inputTextBox2._PlcDevice = "SETP_MaterialThickness";
             this.inputTextBox2.BackColor = System.Drawing.Color.White;
-            this.inputTextBox2.Location = new System.Drawing.Point(226, 60);
+            this.inputTextBox2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox2.Location = new System.Drawing.Point(228, 60);
             this.inputTextBox2.Name = "inputTextBox2";
-            this.inputTextBox2.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox2.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox2.TabIndex = 2070;
             this.inputTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox1
             // 
             this.inputTextBox1._Division = 1;
-            this.inputTextBox1._DoubleWord = false;
             this.inputTextBox1._EqBase = null;
             this.inputTextBox1._FloatNumber = false;
             this.inputTextBox1._MaxLimit = 999D;
             this.inputTextBox1._MinLimit = 0D;
             this.inputTextBox1._Multiplication = 1;
             this.inputTextBox1._NumberOnly = true;
-            this.inputTextBox1._PlcDevice = "";
+            this.inputTextBox1._PlcDevice = "SETP_Convey_Speed";
             this.inputTextBox1.BackColor = System.Drawing.Color.White;
-            this.inputTextBox1.Location = new System.Drawing.Point(226, 4);
+            this.inputTextBox1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox1.Location = new System.Drawing.Point(228, 4);
             this.inputTextBox1.Name = "inputTextBox1";
-            this.inputTextBox1.Size = new System.Drawing.Size(76, 22);
+            this.inputTextBox1.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox1.TabIndex = 2069;
             this.inputTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -999,12 +1001,13 @@
             this.displayTextBox26._MaxLimit = 999D;
             this.displayTextBox26._MinLimit = 0D;
             this.displayTextBox26._Multiplication = ((short)(1));
-            this.displayTextBox26._PlcDevice = "";
+            this.displayTextBox26._PlcDevice = "Rewind_Torque";
             this.displayTextBox26.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox26.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox26.Location = new System.Drawing.Point(127, 536);
             this.displayTextBox26.Name = "displayTextBox26";
             this.displayTextBox26.ReadOnly = true;
-            this.displayTextBox26.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox26.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox26.TabIndex = 2068;
             this.displayTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1016,12 +1019,13 @@
             this.displayTextBox25._MaxLimit = 999D;
             this.displayTextBox25._MinLimit = 0D;
             this.displayTextBox25._Multiplication = ((short)(1));
-            this.displayTextBox25._PlcDevice = "";
+            this.displayTextBox25._PlcDevice = "Rewind_Tension";
             this.displayTextBox25.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox25.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox25.Location = new System.Drawing.Point(127, 508);
             this.displayTextBox25.Name = "displayTextBox25";
             this.displayTextBox25.ReadOnly = true;
-            this.displayTextBox25.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox25.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox25.TabIndex = 2067;
             this.displayTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1033,12 +1037,13 @@
             this.displayTextBox24._MaxLimit = 999D;
             this.displayTextBox24._MinLimit = 0D;
             this.displayTextBox24._Multiplication = ((short)(1));
-            this.displayTextBox24._PlcDevice = "";
+            this.displayTextBox24._PlcDevice = "Rewind_Length_Db";
             this.displayTextBox24.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox24.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox24.Location = new System.Drawing.Point(127, 480);
             this.displayTextBox24.Name = "displayTextBox24";
             this.displayTextBox24.ReadOnly = true;
-            this.displayTextBox24.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox24.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox24.TabIndex = 2066;
             this.displayTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1050,12 +1055,13 @@
             this.displayTextBox23._MaxLimit = 999D;
             this.displayTextBox23._MinLimit = 0D;
             this.displayTextBox23._Multiplication = ((short)(1));
-            this.displayTextBox23._PlcDevice = "";
+            this.displayTextBox23._PlcDevice = "Rewind_Diameter";
             this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox23.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox23.Location = new System.Drawing.Point(127, 452);
             this.displayTextBox23.Name = "displayTextBox23";
             this.displayTextBox23.ReadOnly = true;
-            this.displayTextBox23.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox23.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox23.TabIndex = 2056;
             this.displayTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1067,12 +1073,13 @@
             this.displayTextBox22._MaxLimit = 999D;
             this.displayTextBox22._MinLimit = 0D;
             this.displayTextBox22._Multiplication = ((short)(1));
-            this.displayTextBox22._PlcDevice = "";
+            this.displayTextBox22._PlcDevice = "Discharge_Torque";
             this.displayTextBox22.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox22.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox22.Location = new System.Drawing.Point(127, 396);
             this.displayTextBox22.Name = "displayTextBox22";
             this.displayTextBox22.ReadOnly = true;
-            this.displayTextBox22.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox22.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox22.TabIndex = 2065;
             this.displayTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1084,12 +1091,13 @@
             this.displayTextBox21._MaxLimit = 999D;
             this.displayTextBox21._MinLimit = 0D;
             this.displayTextBox21._Multiplication = ((short)(1));
-            this.displayTextBox21._PlcDevice = "";
+            this.displayTextBox21._PlcDevice = "Discharge_Tension";
             this.displayTextBox21.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox21.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox21.Location = new System.Drawing.Point(127, 368);
             this.displayTextBox21.Name = "displayTextBox21";
             this.displayTextBox21.ReadOnly = true;
-            this.displayTextBox21.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox21.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox21.TabIndex = 2064;
             this.displayTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1101,12 +1109,13 @@
             this.displayTextBox20._MaxLimit = 999D;
             this.displayTextBox20._MinLimit = 0D;
             this.displayTextBox20._Multiplication = ((short)(1));
-            this.displayTextBox20._PlcDevice = "";
+            this.displayTextBox20._PlcDevice = "Discharge_Db";
             this.displayTextBox20.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox20.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox20.Location = new System.Drawing.Point(127, 340);
             this.displayTextBox20.Name = "displayTextBox20";
             this.displayTextBox20.ReadOnly = true;
-            this.displayTextBox20.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox20.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox20.TabIndex = 2063;
             this.displayTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1118,12 +1127,13 @@
             this.displayTextBox19._MaxLimit = 999D;
             this.displayTextBox19._MinLimit = 0D;
             this.displayTextBox19._Multiplication = ((short)(1));
-            this.displayTextBox19._PlcDevice = "";
+            this.displayTextBox19._PlcDevice = "Discharge_Diameter";
             this.displayTextBox19.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox19.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox19.Location = new System.Drawing.Point(127, 312);
             this.displayTextBox19.Name = "displayTextBox19";
             this.displayTextBox19.ReadOnly = true;
-            this.displayTextBox19.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox19.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox19.TabIndex = 2062;
             this.displayTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1135,12 +1145,13 @@
             this.displayTextBox18._MaxLimit = 999D;
             this.displayTextBox18._MinLimit = 0D;
             this.displayTextBox18._Multiplication = ((short)(1));
-            this.displayTextBox18._PlcDevice = "";
+            this.displayTextBox18._PlcDevice = "Convey_ClipOUT_Torque";
             this.displayTextBox18.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox18.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox18.Location = new System.Drawing.Point(127, 256);
             this.displayTextBox18.Name = "displayTextBox18";
             this.displayTextBox18.ReadOnly = true;
-            this.displayTextBox18.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox18.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox18.TabIndex = 2061;
             this.displayTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1152,12 +1163,13 @@
             this.displayTextBox17._MaxLimit = 999D;
             this.displayTextBox17._MinLimit = 0D;
             this.displayTextBox17._Multiplication = ((short)(1));
-            this.displayTextBox17._PlcDevice = "";
+            this.displayTextBox17._PlcDevice = "Convey_ClipOUT_Speed";
             this.displayTextBox17.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox17.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox17.Location = new System.Drawing.Point(127, 228);
             this.displayTextBox17.Name = "displayTextBox17";
             this.displayTextBox17.ReadOnly = true;
-            this.displayTextBox17.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox17.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox17.TabIndex = 2060;
             this.displayTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1169,12 +1181,13 @@
             this.displayTextBox16._MaxLimit = 999D;
             this.displayTextBox16._MinLimit = 0D;
             this.displayTextBox16._Multiplication = ((short)(1));
-            this.displayTextBox16._PlcDevice = "";
+            this.displayTextBox16._PlcDevice = "Convey_ClipIN_Torque";
             this.displayTextBox16.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox16.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox16.Location = new System.Drawing.Point(127, 172);
             this.displayTextBox16.Name = "displayTextBox16";
             this.displayTextBox16.ReadOnly = true;
-            this.displayTextBox16.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox16.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox16.TabIndex = 2059;
             this.displayTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1186,12 +1199,13 @@
             this.displayTextBox15._MaxLimit = 999D;
             this.displayTextBox15._MinLimit = 0D;
             this.displayTextBox15._Multiplication = ((short)(1));
-            this.displayTextBox15._PlcDevice = "";
+            this.displayTextBox15._PlcDevice = "Convey_ClipIN_Speed";
             this.displayTextBox15.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox15.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox15.Location = new System.Drawing.Point(127, 144);
             this.displayTextBox15.Name = "displayTextBox15";
             this.displayTextBox15.ReadOnly = true;
-            this.displayTextBox15.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox15.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox15.TabIndex = 2058;
             this.displayTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1203,12 +1217,13 @@
             this.displayTextBox14._MaxLimit = 999D;
             this.displayTextBox14._MinLimit = 0D;
             this.displayTextBox14._Multiplication = ((short)(1));
-            this.displayTextBox14._PlcDevice = "";
+            this.displayTextBox14._PlcDevice = "Convey_FallRate";
             this.displayTextBox14.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox14.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox14.Location = new System.Drawing.Point(127, 116);
             this.displayTextBox14.Name = "displayTextBox14";
             this.displayTextBox14.ReadOnly = true;
-            this.displayTextBox14.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox14.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox14.TabIndex = 2057;
             this.displayTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1220,12 +1235,13 @@
             this.displayTextBox13._MaxLimit = 999D;
             this.displayTextBox13._MinLimit = 0D;
             this.displayTextBox13._Multiplication = ((short)(1));
-            this.displayTextBox13._PlcDevice = "";
+            this.displayTextBox13._PlcDevice = "Convey_ProcessLength_Db";
             this.displayTextBox13.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox13.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox13.Location = new System.Drawing.Point(127, 88);
             this.displayTextBox13.Name = "displayTextBox13";
             this.displayTextBox13.ReadOnly = true;
-            this.displayTextBox13.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox13.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox13.TabIndex = 2056;
             this.displayTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1237,12 +1253,13 @@
             this.displayTextBox12._MaxLimit = 999D;
             this.displayTextBox12._MinLimit = 0D;
             this.displayTextBox12._Multiplication = ((short)(1));
-            this.displayTextBox12._PlcDevice = "";
+            this.displayTextBox12._PlcDevice = "Convey_MaterialLength_Db";
             this.displayTextBox12.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox12.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox12.Location = new System.Drawing.Point(127, 32);
             this.displayTextBox12.Name = "displayTextBox12";
             this.displayTextBox12.ReadOnly = true;
-            this.displayTextBox12.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox12.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox12.TabIndex = 2056;
             this.displayTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1254,12 +1271,13 @@
             this.displayTextBox11._MaxLimit = 999D;
             this.displayTextBox11._MinLimit = 0D;
             this.displayTextBox11._Multiplication = ((short)(1));
-            this.displayTextBox11._PlcDevice = "";
+            this.displayTextBox11._PlcDevice = "Convey_Speed";
             this.displayTextBox11.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox11.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox11.Location = new System.Drawing.Point(127, 4);
             this.displayTextBox11.Name = "displayTextBox11";
             this.displayTextBox11.ReadOnly = true;
-            this.displayTextBox11.Size = new System.Drawing.Size(81, 22);
+            this.displayTextBox11.Size = new System.Drawing.Size(82, 25);
             this.displayTextBox11.TabIndex = 2055;
             this.displayTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1552,7 +1570,7 @@
             this.TabPage2.Location = new System.Drawing.Point(4, 22);
             this.TabPage2.Name = "TabPage2";
             this.TabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage2.Size = new System.Drawing.Size(350, 634);
+            this.TabPage2.Size = new System.Drawing.Size(351, 675);
             this.TabPage2.TabIndex = 1;
             this.TabPage2.Text = "Roller Control";
             this.TabPage2.UseVisualStyleBackColor = true;
@@ -1561,9 +1579,9 @@
             // 
             this.controlBtn70._CurrentStatus = false;
             this.controlBtn70._EqBase = null;
-            this.controlBtn70._PlcDevice = "";
+            this.controlBtn70._PlcDevice = "Set_Priority";
             this.controlBtn70._PlcDisplayOffDevice = "";
-            this.controlBtn70._PlcDisplayOnDevice = "";
+            this.controlBtn70._PlcDisplayOnDevice = "Set_Priority";
             this.controlBtn70._ReadOnly = false;
             this.controlBtn70._Reverse = false;
             this.controlBtn70._Text = "ON";
@@ -1580,9 +1598,9 @@
             // 
             this.controlBtn69._CurrentStatus = false;
             this.controlBtn69._EqBase = null;
-            this.controlBtn69._PlcDevice = "";
+            this.controlBtn69._PlcDevice = "Remove_length";
             this.controlBtn69._PlcDisplayOffDevice = "";
-            this.controlBtn69._PlcDisplayOnDevice = "";
+            this.controlBtn69._PlcDisplayOnDevice = "Remove_length";
             this.controlBtn69._ReadOnly = false;
             this.controlBtn69._Reverse = false;
             this.controlBtn69._Text = "ON";
@@ -1599,9 +1617,9 @@
             // 
             this.controlBtn68._CurrentStatus = false;
             this.controlBtn68._EqBase = null;
-            this.controlBtn68._PlcDevice = "";
+            this.controlBtn68._PlcDevice = "All_Remove_length";
             this.controlBtn68._PlcDisplayOffDevice = "";
-            this.controlBtn68._PlcDisplayOnDevice = "";
+            this.controlBtn68._PlcDisplayOnDevice = "All_Remove_length";
             this.controlBtn68._ReadOnly = false;
             this.controlBtn68._Reverse = false;
             this.controlBtn68._Text = "ON";
@@ -1618,9 +1636,9 @@
             // 
             this.controlBtn67._CurrentStatus = false;
             this.controlBtn67._EqBase = null;
-            this.controlBtn67._PlcDevice = "";
+            this.controlBtn67._PlcDevice = "Down_Rolor_Status";
             this.controlBtn67._PlcDisplayOffDevice = "";
-            this.controlBtn67._PlcDisplayOnDevice = "";
+            this.controlBtn67._PlcDisplayOnDevice = "Down_Rolor_Status";
             this.controlBtn67._ReadOnly = true;
             this.controlBtn67._Reverse = false;
             this.controlBtn67._Text = "下降";
@@ -1637,9 +1655,9 @@
             // 
             this.controlBtn66._CurrentStatus = false;
             this.controlBtn66._EqBase = null;
-            this.controlBtn66._PlcDevice = "";
+            this.controlBtn66._PlcDevice = "UP_Rolor_Status";
             this.controlBtn66._PlcDisplayOffDevice = "";
-            this.controlBtn66._PlcDisplayOnDevice = "";
+            this.controlBtn66._PlcDisplayOnDevice = "UP_Rolor_Status";
             this.controlBtn66._ReadOnly = true;
             this.controlBtn66._Reverse = false;
             this.controlBtn66._Text = "上升";
@@ -1656,28 +1674,28 @@
             // 
             this.controlBtn65._CurrentStatus = false;
             this.controlBtn65._EqBase = null;
-            this.controlBtn65._PlcDevice = "";
+            this.controlBtn65._PlcDevice = "Rolor_Control";
             this.controlBtn65._PlcDisplayOffDevice = "";
-            this.controlBtn65._PlcDisplayOnDevice = "";
+            this.controlBtn65._PlcDisplayOnDevice = "Rolor_Control";
             this.controlBtn65._ReadOnly = false;
             this.controlBtn65._Reverse = false;
-            this.controlBtn65._Text = "壓輪上升";
+            this.controlBtn65._Text = "壓輪升降";
             this.controlBtn65.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn65.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn65.Location = new System.Drawing.Point(276, 532);
             this.controlBtn65.Name = "controlBtn65";
             this.controlBtn65.Size = new System.Drawing.Size(71, 23);
             this.controlBtn65.TabIndex = 2148;
-            this.controlBtn65.Text = "壓輪上升";
+            this.controlBtn65.Text = "壓輪升降";
             this.controlBtn65.UseVisualStyleBackColor = false;
             // 
             // controlBtn64
             // 
             this.controlBtn64._CurrentStatus = false;
             this.controlBtn64._EqBase = null;
-            this.controlBtn64._PlcDevice = "";
+            this.controlBtn64._PlcDevice = "LineAll_Stop";
             this.controlBtn64._PlcDisplayOffDevice = "";
-            this.controlBtn64._PlcDisplayOnDevice = "";
+            this.controlBtn64._PlcDisplayOnDevice = "LineAll_Stop";
             this.controlBtn64._ReadOnly = false;
             this.controlBtn64._Reverse = false;
             this.controlBtn64._Text = "停止";
@@ -1694,9 +1712,9 @@
             // 
             this.controlBtn63._CurrentStatus = false;
             this.controlBtn63._EqBase = null;
-            this.controlBtn63._PlcDevice = "";
+            this.controlBtn63._PlcDevice = "Remove_RewindDiameter";
             this.controlBtn63._PlcDisplayOffDevice = "";
-            this.controlBtn63._PlcDisplayOnDevice = "";
+            this.controlBtn63._PlcDisplayOnDevice = "Remove_RewindDiameter";
             this.controlBtn63._ReadOnly = false;
             this.controlBtn63._Reverse = false;
             this.controlBtn63._Text = "重置";
@@ -1713,9 +1731,9 @@
             // 
             this.controlBtn62._CurrentStatus = false;
             this.controlBtn62._EqBase = null;
-            this.controlBtn62._PlcDevice = "";
+            this.controlBtn62._PlcDevice = "Remove_DischargeDiameter";
             this.controlBtn62._PlcDisplayOffDevice = "";
-            this.controlBtn62._PlcDisplayOnDevice = "";
+            this.controlBtn62._PlcDisplayOnDevice = "Remove_DischargeDiameter";
             this.controlBtn62._ReadOnly = false;
             this.controlBtn62._Reverse = false;
             this.controlBtn62._Text = "重置";
@@ -1732,9 +1750,9 @@
             // 
             this.controlBtn61._CurrentStatus = false;
             this.controlBtn61._EqBase = null;
-            this.controlBtn61._PlcDevice = "";
+            this.controlBtn61._PlcDevice = "LineAll_Start";
             this.controlBtn61._PlcDisplayOffDevice = "";
-            this.controlBtn61._PlcDisplayOnDevice = "";
+            this.controlBtn61._PlcDisplayOnDevice = "LineAll_Start";
             this.controlBtn61._ReadOnly = false;
             this.controlBtn61._Reverse = false;
             this.controlBtn61._Text = "啟動";
@@ -1751,9 +1769,9 @@
             // 
             this.controlBtn59._CurrentStatus = false;
             this.controlBtn59._EqBase = null;
-            this.controlBtn59._PlcDevice = "";
+            this.controlBtn59._PlcDevice = "Rewind_Reversal";
             this.controlBtn59._PlcDisplayOffDevice = "";
-            this.controlBtn59._PlcDisplayOnDevice = "";
+            this.controlBtn59._PlcDisplayOnDevice = "Rewind_Reversal";
             this.controlBtn59._ReadOnly = false;
             this.controlBtn59._Reverse = false;
             this.controlBtn59._Text = "順轉";
@@ -1770,9 +1788,9 @@
             // 
             this.controlBtn60._CurrentStatus = false;
             this.controlBtn60._EqBase = null;
-            this.controlBtn60._PlcDevice = "";
+            this.controlBtn60._PlcDevice = "Rewind_Forward";
             this.controlBtn60._PlcDisplayOffDevice = "";
-            this.controlBtn60._PlcDisplayOnDevice = "";
+            this.controlBtn60._PlcDisplayOnDevice = "Rewind_Forward";
             this.controlBtn60._ReadOnly = false;
             this.controlBtn60._Reverse = false;
             this.controlBtn60._Text = "逆轉";
@@ -1789,9 +1807,9 @@
             // 
             this.controlBtn57._CurrentStatus = false;
             this.controlBtn57._EqBase = null;
-            this.controlBtn57._PlcDevice = "";
+            this.controlBtn57._PlcDevice = "Discharge_Reversal";
             this.controlBtn57._PlcDisplayOffDevice = "";
-            this.controlBtn57._PlcDisplayOnDevice = "";
+            this.controlBtn57._PlcDisplayOnDevice = "Discharge_Reversal";
             this.controlBtn57._ReadOnly = false;
             this.controlBtn57._Reverse = false;
             this.controlBtn57._Text = "順轉";
@@ -1808,9 +1826,9 @@
             // 
             this.controlBtn58._CurrentStatus = false;
             this.controlBtn58._EqBase = null;
-            this.controlBtn58._PlcDevice = "";
+            this.controlBtn58._PlcDevice = "Discharge_Forward";
             this.controlBtn58._PlcDisplayOffDevice = "";
-            this.controlBtn58._PlcDisplayOnDevice = "";
+            this.controlBtn58._PlcDisplayOnDevice = "Discharge_Forward";
             this.controlBtn58._ReadOnly = false;
             this.controlBtn58._Reverse = false;
             this.controlBtn58._Text = "逆轉";
@@ -1827,9 +1845,9 @@
             // 
             this.controlBtn55._CurrentStatus = false;
             this.controlBtn55._EqBase = null;
-            this.controlBtn55._PlcDevice = "";
+            this.controlBtn55._PlcDevice = "Host_Reversal";
             this.controlBtn55._PlcDisplayOffDevice = "";
-            this.controlBtn55._PlcDisplayOnDevice = "";
+            this.controlBtn55._PlcDisplayOnDevice = "Host_Reversal";
             this.controlBtn55._ReadOnly = false;
             this.controlBtn55._Reverse = false;
             this.controlBtn55._Text = "順轉";
@@ -1846,9 +1864,9 @@
             // 
             this.controlBtn54._CurrentStatus = false;
             this.controlBtn54._EqBase = null;
-            this.controlBtn54._PlcDevice = "";
+            this.controlBtn54._PlcDevice = "Tension_Start";
             this.controlBtn54._PlcDisplayOffDevice = "";
-            this.controlBtn54._PlcDisplayOnDevice = "";
+            this.controlBtn54._PlcDisplayOnDevice = "Tension_Start";
             this.controlBtn54._ReadOnly = false;
             this.controlBtn54._Reverse = false;
             this.controlBtn54._Text = "啟動";
@@ -1865,9 +1883,9 @@
             // 
             this.controlBtn56._CurrentStatus = false;
             this.controlBtn56._EqBase = null;
-            this.controlBtn56._PlcDevice = "";
+            this.controlBtn56._PlcDevice = "Host_Forward";
             this.controlBtn56._PlcDisplayOffDevice = "";
-            this.controlBtn56._PlcDisplayOnDevice = "";
+            this.controlBtn56._PlcDisplayOnDevice = "Host_Forward";
             this.controlBtn56._ReadOnly = false;
             this.controlBtn56._Reverse = false;
             this.controlBtn56._Text = "逆轉";
@@ -1884,9 +1902,9 @@
             // 
             this.controlBtn53._CurrentStatus = false;
             this.controlBtn53._EqBase = null;
-            this.controlBtn53._PlcDevice = "";
+            this.controlBtn53._PlcDevice = "Manual_Acc";
             this.controlBtn53._PlcDisplayOffDevice = "";
-            this.controlBtn53._PlcDisplayOnDevice = "";
+            this.controlBtn53._PlcDisplayOnDevice = "Manual_Acc";
             this.controlBtn53._ReadOnly = false;
             this.controlBtn53._Reverse = false;
             this.controlBtn53._Text = "加速";
@@ -1903,9 +1921,9 @@
             // 
             this.controlBtn48._CurrentStatus = false;
             this.controlBtn48._EqBase = null;
-            this.controlBtn48._PlcDevice = "";
+            this.controlBtn48._PlcDevice = "Manual_Dec";
             this.controlBtn48._PlcDisplayOffDevice = "";
-            this.controlBtn48._PlcDisplayOnDevice = "";
+            this.controlBtn48._PlcDisplayOnDevice = "Manual_Dec";
             this.controlBtn48._ReadOnly = false;
             this.controlBtn48._Reverse = false;
             this.controlBtn48._Text = "減速";
@@ -1922,9 +1940,9 @@
             // 
             this.controlBtn49._CurrentStatus = false;
             this.controlBtn49._EqBase = null;
-            this.controlBtn49._PlcDevice = "";
+            this.controlBtn49._PlcDevice = "Rewind_DiameterReset";
             this.controlBtn49._PlcDisplayOffDevice = "";
-            this.controlBtn49._PlcDisplayOnDevice = "";
+            this.controlBtn49._PlcDisplayOnDevice = "Rewind_DiameterReset";
             this.controlBtn49._ReadOnly = true;
             this.controlBtn49._Reverse = false;
             this.controlBtn49._Text = "ON";
@@ -1941,9 +1959,9 @@
             // 
             this.controlBtn50._CurrentStatus = false;
             this.controlBtn50._EqBase = null;
-            this.controlBtn50._PlcDevice = "";
+            this.controlBtn50._PlcDevice = "Discharge_DiameterReset";
             this.controlBtn50._PlcDisplayOffDevice = "";
-            this.controlBtn50._PlcDisplayOnDevice = "";
+            this.controlBtn50._PlcDisplayOnDevice = "Discharge_DiameterReset";
             this.controlBtn50._ReadOnly = true;
             this.controlBtn50._Reverse = false;
             this.controlBtn50._Text = "ON";
@@ -1960,9 +1978,9 @@
             // 
             this.controlBtn51._CurrentStatus = false;
             this.controlBtn51._EqBase = null;
-            this.controlBtn51._PlcDevice = "";
+            this.controlBtn51._PlcDevice = "Speed_RatioAlarm";
             this.controlBtn51._PlcDisplayOffDevice = "";
-            this.controlBtn51._PlcDisplayOnDevice = "";
+            this.controlBtn51._PlcDisplayOnDevice = "Speed_RatioAlarm";
             this.controlBtn51._ReadOnly = true;
             this.controlBtn51._Reverse = false;
             this.controlBtn51._Text = "ON";
@@ -1979,9 +1997,9 @@
             // 
             this.controlBtn52._CurrentStatus = false;
             this.controlBtn52._EqBase = null;
-            this.controlBtn52._PlcDevice = "";
+            this.controlBtn52._PlcDevice = "Link_Avail";
             this.controlBtn52._PlcDisplayOffDevice = "";
-            this.controlBtn52._PlcDisplayOnDevice = "";
+            this.controlBtn52._PlcDisplayOnDevice = "Link_Avail";
             this.controlBtn52._ReadOnly = true;
             this.controlBtn52._Reverse = false;
             this.controlBtn52._Text = "ON";
@@ -1998,9 +2016,9 @@
             // 
             this.controlBtn40._CurrentStatus = false;
             this.controlBtn40._EqBase = null;
-            this.controlBtn40._PlcDevice = "";
+            this.controlBtn40._PlcDevice = "Rewind_TensionAlarm";
             this.controlBtn40._PlcDisplayOffDevice = "";
-            this.controlBtn40._PlcDisplayOnDevice = "";
+            this.controlBtn40._PlcDisplayOnDevice = "Rewind_TensionAlarm";
             this.controlBtn40._ReadOnly = true;
             this.controlBtn40._Reverse = false;
             this.controlBtn40._Text = "ON";
@@ -2017,9 +2035,9 @@
             // 
             this.controlBtn41._CurrentStatus = false;
             this.controlBtn41._EqBase = null;
-            this.controlBtn41._PlcDevice = "";
+            this.controlBtn41._PlcDevice = "Discharge_TensionAlarm";
             this.controlBtn41._PlcDisplayOffDevice = "";
-            this.controlBtn41._PlcDisplayOnDevice = "";
+            this.controlBtn41._PlcDisplayOnDevice = "Discharge_TensionAlarm";
             this.controlBtn41._ReadOnly = true;
             this.controlBtn41._Reverse = false;
             this.controlBtn41._Text = "ON";
@@ -2036,9 +2054,9 @@
             // 
             this.controlBtn42._CurrentStatus = false;
             this.controlBtn42._EqBase = null;
-            this.controlBtn42._PlcDevice = "";
+            this.controlBtn42._PlcDevice = "Uload_MotorAlarm";
             this.controlBtn42._PlcDisplayOffDevice = "";
-            this.controlBtn42._PlcDisplayOnDevice = "";
+            this.controlBtn42._PlcDisplayOnDevice = "Uload_MotorAlarm";
             this.controlBtn42._ReadOnly = true;
             this.controlBtn42._Reverse = false;
             this.controlBtn42._Text = "ON";
@@ -2055,9 +2073,9 @@
             // 
             this.controlBtn43._CurrentStatus = false;
             this.controlBtn43._EqBase = null;
-            this.controlBtn43._PlcDevice = "";
+            this.controlBtn43._PlcDevice = "Load_MotorAlarm";
             this.controlBtn43._PlcDisplayOffDevice = "";
-            this.controlBtn43._PlcDisplayOnDevice = "";
+            this.controlBtn43._PlcDisplayOnDevice = "Load_MotorAlarm";
             this.controlBtn43._ReadOnly = true;
             this.controlBtn43._Reverse = false;
             this.controlBtn43._Text = "ON";
@@ -2074,9 +2092,9 @@
             // 
             this.controlBtn44._CurrentStatus = false;
             this.controlBtn44._EqBase = null;
-            this.controlBtn44._PlcDevice = "";
+            this.controlBtn44._PlcDevice = "Host_MotorAlarm";
             this.controlBtn44._PlcDisplayOffDevice = "";
-            this.controlBtn44._PlcDisplayOnDevice = "";
+            this.controlBtn44._PlcDisplayOnDevice = "Host_MotorAlarm";
             this.controlBtn44._ReadOnly = true;
             this.controlBtn44._Reverse = false;
             this.controlBtn44._Text = "ON";
@@ -2093,9 +2111,9 @@
             // 
             this.controlBtn45._CurrentStatus = false;
             this.controlBtn45._EqBase = null;
-            this.controlBtn45._PlcDevice = "";
+            this.controlBtn45._PlcDevice = "Rewind_MotorAlarm";
             this.controlBtn45._PlcDisplayOffDevice = "";
-            this.controlBtn45._PlcDisplayOnDevice = "";
+            this.controlBtn45._PlcDisplayOnDevice = "Rewind_MotorAlarm";
             this.controlBtn45._ReadOnly = true;
             this.controlBtn45._Reverse = false;
             this.controlBtn45._Text = "ON";
@@ -2112,9 +2130,9 @@
             // 
             this.controlBtn46._CurrentStatus = false;
             this.controlBtn46._EqBase = null;
-            this.controlBtn46._PlcDevice = "";
+            this.controlBtn46._PlcDevice = "Discharge_MotorAlarm";
             this.controlBtn46._PlcDisplayOffDevice = "";
-            this.controlBtn46._PlcDisplayOnDevice = "";
+            this.controlBtn46._PlcDisplayOnDevice = "Discharge_MotorAlarm";
             this.controlBtn46._ReadOnly = true;
             this.controlBtn46._Reverse = false;
             this.controlBtn46._Text = "ON";
@@ -2131,9 +2149,9 @@
             // 
             this.controlBtn47._CurrentStatus = false;
             this.controlBtn47._EqBase = null;
-            this.controlBtn47._PlcDevice = "";
+            this.controlBtn47._PlcDevice = "Rewind_EPC_Start";
             this.controlBtn47._PlcDisplayOffDevice = "";
-            this.controlBtn47._PlcDisplayOnDevice = "";
+            this.controlBtn47._PlcDisplayOnDevice = "Rewind_EPC_Start";
             this.controlBtn47._ReadOnly = true;
             this.controlBtn47._Reverse = false;
             this.controlBtn47._Text = "ON";
@@ -2150,9 +2168,9 @@
             // 
             this.controlBtn36._CurrentStatus = false;
             this.controlBtn36._EqBase = null;
-            this.controlBtn36._PlcDevice = "";
+            this.controlBtn36._PlcDevice = "Discharge_EPC_Start";
             this.controlBtn36._PlcDisplayOffDevice = "";
-            this.controlBtn36._PlcDisplayOnDevice = "";
+            this.controlBtn36._PlcDisplayOnDevice = "Discharge_EPC_Start";
             this.controlBtn36._ReadOnly = true;
             this.controlBtn36._Reverse = false;
             this.controlBtn36._Text = "ON";
@@ -2169,9 +2187,9 @@
             // 
             this.controlBtn37._CurrentStatus = false;
             this.controlBtn37._EqBase = null;
-            this.controlBtn37._PlcDevice = "";
+            this.controlBtn37._PlcDevice = "Rewind_Steering";
             this.controlBtn37._PlcDisplayOffDevice = "";
-            this.controlBtn37._PlcDisplayOnDevice = "";
+            this.controlBtn37._PlcDisplayOnDevice = "Rewind_Steering";
             this.controlBtn37._ReadOnly = true;
             this.controlBtn37._Reverse = false;
             this.controlBtn37._Text = "ON";
@@ -2188,9 +2206,9 @@
             // 
             this.controlBtn38._CurrentStatus = false;
             this.controlBtn38._EqBase = null;
-            this.controlBtn38._PlcDevice = "";
+            this.controlBtn38._PlcDevice = "Discharge_Steering";
             this.controlBtn38._PlcDisplayOffDevice = "";
-            this.controlBtn38._PlcDisplayOnDevice = "";
+            this.controlBtn38._PlcDisplayOnDevice = "Discharge_Steering";
             this.controlBtn38._ReadOnly = true;
             this.controlBtn38._Reverse = false;
             this.controlBtn38._Text = "ON";
@@ -2207,9 +2225,9 @@
             // 
             this.controlBtn39._CurrentStatus = false;
             this.controlBtn39._EqBase = null;
-            this.controlBtn39._PlcDevice = "";
+            this.controlBtn39._PlcDevice = "Host_Steering";
             this.controlBtn39._PlcDisplayOffDevice = "";
-            this.controlBtn39._PlcDisplayOnDevice = "";
+            this.controlBtn39._PlcDisplayOnDevice = "Host_Steering";
             this.controlBtn39._ReadOnly = true;
             this.controlBtn39._Reverse = false;
             this.controlBtn39._Text = "ON";
@@ -2226,9 +2244,9 @@
             // 
             this.controlBtn34._CurrentStatus = false;
             this.controlBtn34._EqBase = null;
-            this.controlBtn34._PlcDevice = "";
+            this.controlBtn34._PlcDevice = "Meters_Ready";
             this.controlBtn34._PlcDisplayOffDevice = "";
-            this.controlBtn34._PlcDisplayOnDevice = "";
+            this.controlBtn34._PlcDisplayOnDevice = "Meters_Ready";
             this.controlBtn34._ReadOnly = true;
             this.controlBtn34._Reverse = false;
             this.controlBtn34._Text = "ON";
@@ -2245,9 +2263,9 @@
             // 
             this.controlBtn35._CurrentStatus = false;
             this.controlBtn35._EqBase = null;
-            this.controlBtn35._PlcDevice = "";
+            this.controlBtn35._PlcDevice = "AutoAcc_Ready";
             this.controlBtn35._PlcDisplayOffDevice = "";
-            this.controlBtn35._PlcDisplayOnDevice = "";
+            this.controlBtn35._PlcDisplayOnDevice = "AutoAcc_Ready";
             this.controlBtn35._ReadOnly = true;
             this.controlBtn35._Reverse = false;
             this.controlBtn35._Text = "ON";
@@ -2264,9 +2282,9 @@
             // 
             this.controlBtn33._CurrentStatus = false;
             this.controlBtn33._EqBase = null;
-            this.controlBtn33._PlcDevice = "";
+            this.controlBtn33._PlcDevice = "TensionStart";
             this.controlBtn33._PlcDisplayOffDevice = "";
-            this.controlBtn33._PlcDisplayOnDevice = "";
+            this.controlBtn33._PlcDisplayOnDevice = "TensionStart";
             this.controlBtn33._ReadOnly = true;
             this.controlBtn33._Reverse = false;
             this.controlBtn33._Text = "ON";
@@ -2283,9 +2301,9 @@
             // 
             this.controlBtn32._CurrentStatus = false;
             this.controlBtn32._EqBase = null;
-            this.controlBtn32._PlcDevice = "";
+            this.controlBtn32._PlcDevice = "ServoStart";
             this.controlBtn32._PlcDisplayOffDevice = "";
-            this.controlBtn32._PlcDisplayOnDevice = "";
+            this.controlBtn32._PlcDisplayOnDevice = "ServoStart";
             this.controlBtn32._ReadOnly = true;
             this.controlBtn32._Reverse = false;
             this.controlBtn32._Text = "ON";
@@ -2567,9 +2585,9 @@
             // 
             this.controlBtn30._CurrentStatus = false;
             this.controlBtn30._EqBase = null;
-            this.controlBtn30._PlcDevice = "";
+            this.controlBtn30._PlcDevice = "Temp_Hot_ON";
             this.controlBtn30._PlcDisplayOffDevice = "";
-            this.controlBtn30._PlcDisplayOnDevice = "";
+            this.controlBtn30._PlcDisplayOnDevice = "Temp_Hot_ON";
             this.controlBtn30._ReadOnly = false;
             this.controlBtn30._Reverse = false;
             this.controlBtn30._Text = "熱水輸出";
@@ -2587,9 +2605,9 @@
             // 
             this.controlBtn31._CurrentStatus = false;
             this.controlBtn31._EqBase = null;
-            this.controlBtn31._PlcDevice = "";
+            this.controlBtn31._PlcDevice = "Temp_Standby";
             this.controlBtn31._PlcDisplayOffDevice = "";
-            this.controlBtn31._PlcDisplayOnDevice = "";
+            this.controlBtn31._PlcDisplayOnDevice = "Temp_Standby";
             this.controlBtn31._ReadOnly = false;
             this.controlBtn31._Reverse = false;
             this.controlBtn31._Text = "待機";
@@ -2607,9 +2625,9 @@
             // 
             this.controlBtn28._CurrentStatus = false;
             this.controlBtn28._EqBase = null;
-            this.controlBtn28._PlcDevice = "";
+            this.controlBtn28._PlcDevice = "Temp_Lce_ON";
             this.controlBtn28._PlcDisplayOffDevice = "";
-            this.controlBtn28._PlcDisplayOnDevice = "";
+            this.controlBtn28._PlcDisplayOnDevice = "Temp_Lce_ON";
             this.controlBtn28._ReadOnly = false;
             this.controlBtn28._Reverse = false;
             this.controlBtn28._Text = "冷水輸出";
@@ -2627,9 +2645,9 @@
             // 
             this.controlBtn27._CurrentStatus = false;
             this.controlBtn27._EqBase = null;
-            this.controlBtn27._PlcDevice = "";
+            this.controlBtn27._PlcDevice = "Temp_Machine_ON";
             this.controlBtn27._PlcDisplayOffDevice = "";
-            this.controlBtn27._PlcDisplayOnDevice = "";
+            this.controlBtn27._PlcDisplayOnDevice = "Temp_Machine_ON";
             this.controlBtn27._ReadOnly = false;
             this.controlBtn27._Reverse = false;
             this.controlBtn27._Text = "ON";
@@ -2643,13 +2661,18 @@
             this.controlBtn27.Text = "ON";
             this.controlBtn27.UseVisualStyleBackColor = false;
             // 
+            // timerStatus
+            // 
+            this.timerStatus.Interval = 200;
+            this.timerStatus.Tick += new System.EventHandler(this.timerStatus_Tick);
+            // 
             // controlBtn29
             // 
             this.controlBtn29._CurrentStatus = false;
             this.controlBtn29._EqBase = null;
-            this.controlBtn29._PlcDevice = "";
+            this.controlBtn29._PlcDevice = "Temp_Cool_ON";
             this.controlBtn29._PlcDisplayOffDevice = "";
-            this.controlBtn29._PlcDisplayOnDevice = "";
+            this.controlBtn29._PlcDisplayOnDevice = "Temp_Cool_ON";
             this.controlBtn29._ReadOnly = false;
             this.controlBtn29._Reverse = false;
             this.controlBtn29._Text = "小冰水機ON";
@@ -2667,9 +2690,9 @@
             // 
             this.controlBtn21._CurrentStatus = false;
             this.controlBtn21._EqBase = null;
-            this.controlBtn21._PlcDevice = "";
+            this.controlBtn21._PlcDevice = "TP24_NC_Open";
             this.controlBtn21._PlcDisplayOffDevice = "";
-            this.controlBtn21._PlcDisplayOnDevice = "";
+            this.controlBtn21._PlcDisplayOnDevice = "TP24_NC_Open";
             this.controlBtn21._ReadOnly = false;
             this.controlBtn21._Reverse = false;
             this.controlBtn21._Text = "TP24 NC ON";
@@ -2687,9 +2710,9 @@
             // 
             this.controlBtn22._CurrentStatus = false;
             this.controlBtn22._EqBase = null;
-            this.controlBtn22._PlcDevice = "";
+            this.controlBtn22._PlcDevice = "TP23_NC_Open";
             this.controlBtn22._PlcDisplayOffDevice = "";
-            this.controlBtn22._PlcDisplayOnDevice = "";
+            this.controlBtn22._PlcDisplayOnDevice = "TP23_NC_Open";
             this.controlBtn22._ReadOnly = false;
             this.controlBtn22._Reverse = false;
             this.controlBtn22._Text = "TP23 NC ON";
@@ -2707,9 +2730,9 @@
             // 
             this.controlBtn23._CurrentStatus = false;
             this.controlBtn23._EqBase = null;
-            this.controlBtn23._PlcDevice = "";
+            this.controlBtn23._PlcDevice = "TP22_NC_Open";
             this.controlBtn23._PlcDisplayOffDevice = "";
-            this.controlBtn23._PlcDisplayOnDevice = "";
+            this.controlBtn23._PlcDisplayOnDevice = "TP22_NC_Open";
             this.controlBtn23._ReadOnly = false;
             this.controlBtn23._Reverse = false;
             this.controlBtn23._Text = "TP22 NC ON";
@@ -2727,9 +2750,9 @@
             // 
             this.controlBtn24._CurrentStatus = false;
             this.controlBtn24._EqBase = null;
-            this.controlBtn24._PlcDevice = "";
+            this.controlBtn24._PlcDevice = "TP21_NC_Open";
             this.controlBtn24._PlcDisplayOffDevice = "";
-            this.controlBtn24._PlcDisplayOnDevice = "";
+            this.controlBtn24._PlcDisplayOnDevice = "TP21_NC_Open";
             this.controlBtn24._ReadOnly = false;
             this.controlBtn24._Reverse = false;
             this.controlBtn24._Text = "TP21 NC ON";
@@ -2747,9 +2770,9 @@
             // 
             this.controlBtn25._CurrentStatus = false;
             this.controlBtn25._EqBase = null;
-            this.controlBtn25._PlcDevice = "";
+            this.controlBtn25._PlcDevice = "TP20_NC_Open";
             this.controlBtn25._PlcDisplayOffDevice = "";
-            this.controlBtn25._PlcDisplayOnDevice = "";
+            this.controlBtn25._PlcDisplayOnDevice = "TP20_NC_Open";
             this.controlBtn25._ReadOnly = false;
             this.controlBtn25._Reverse = false;
             this.controlBtn25._Text = "TP20 NC ON";
@@ -2767,9 +2790,9 @@
             // 
             this.controlBtn26._CurrentStatus = false;
             this.controlBtn26._EqBase = null;
-            this.controlBtn26._PlcDevice = "";
+            this.controlBtn26._PlcDevice = "TP19_NC_Open";
             this.controlBtn26._PlcDisplayOffDevice = "";
-            this.controlBtn26._PlcDisplayOnDevice = "";
+            this.controlBtn26._PlcDisplayOnDevice = "TP19_NC_Open";
             this.controlBtn26._ReadOnly = false;
             this.controlBtn26._Reverse = false;
             this.controlBtn26._Text = "TP19 NC ON";
@@ -2787,9 +2810,9 @@
             // 
             this.controlBtn15._CurrentStatus = false;
             this.controlBtn15._EqBase = null;
-            this.controlBtn15._PlcDevice = "";
+            this.controlBtn15._PlcDevice = "TP14_NC_Open";
             this.controlBtn15._PlcDisplayOffDevice = "";
-            this.controlBtn15._PlcDisplayOnDevice = "";
+            this.controlBtn15._PlcDisplayOnDevice = "TP14_NC_Open";
             this.controlBtn15._ReadOnly = false;
             this.controlBtn15._Reverse = false;
             this.controlBtn15._Text = "TP14 NC ON";
@@ -2807,9 +2830,9 @@
             // 
             this.controlBtn16._CurrentStatus = false;
             this.controlBtn16._EqBase = null;
-            this.controlBtn16._PlcDevice = "";
+            this.controlBtn16._PlcDevice = "TP13_NC_Open";
             this.controlBtn16._PlcDisplayOffDevice = "";
-            this.controlBtn16._PlcDisplayOnDevice = "";
+            this.controlBtn16._PlcDisplayOnDevice = "TP13_NC_Open";
             this.controlBtn16._ReadOnly = false;
             this.controlBtn16._Reverse = false;
             this.controlBtn16._Text = "TP13 NC ON";
@@ -2827,9 +2850,9 @@
             // 
             this.controlBtn17._CurrentStatus = false;
             this.controlBtn17._EqBase = null;
-            this.controlBtn17._PlcDevice = "";
+            this.controlBtn17._PlcDevice = "TP12_NC_Open";
             this.controlBtn17._PlcDisplayOffDevice = "";
-            this.controlBtn17._PlcDisplayOnDevice = "";
+            this.controlBtn17._PlcDisplayOnDevice = "TP12_NC_Open";
             this.controlBtn17._ReadOnly = false;
             this.controlBtn17._Reverse = false;
             this.controlBtn17._Text = "TP12 NC ON";
@@ -2847,9 +2870,9 @@
             // 
             this.controlBtn18._CurrentStatus = false;
             this.controlBtn18._EqBase = null;
-            this.controlBtn18._PlcDevice = "";
+            this.controlBtn18._PlcDevice = "TP11_NC_Open";
             this.controlBtn18._PlcDisplayOffDevice = "";
-            this.controlBtn18._PlcDisplayOnDevice = "";
+            this.controlBtn18._PlcDisplayOnDevice = "TP11_NC_Open";
             this.controlBtn18._ReadOnly = false;
             this.controlBtn18._Reverse = false;
             this.controlBtn18._Text = "TP11 NC ON";
@@ -2867,9 +2890,9 @@
             // 
             this.controlBtn19._CurrentStatus = false;
             this.controlBtn19._EqBase = null;
-            this.controlBtn19._PlcDevice = "";
+            this.controlBtn19._PlcDevice = "TP10_NC_Open";
             this.controlBtn19._PlcDisplayOffDevice = "";
-            this.controlBtn19._PlcDisplayOnDevice = "";
+            this.controlBtn19._PlcDisplayOnDevice = "TP10_NC_Open";
             this.controlBtn19._ReadOnly = false;
             this.controlBtn19._Reverse = false;
             this.controlBtn19._Text = "TP10 NC ON";
@@ -2887,9 +2910,9 @@
             // 
             this.controlBtn20._CurrentStatus = false;
             this.controlBtn20._EqBase = null;
-            this.controlBtn20._PlcDevice = "";
+            this.controlBtn20._PlcDevice = "TP9_NC_Open";
             this.controlBtn20._PlcDisplayOffDevice = "";
-            this.controlBtn20._PlcDisplayOnDevice = "";
+            this.controlBtn20._PlcDisplayOnDevice = "TP9_NC_Open";
             this.controlBtn20._ReadOnly = false;
             this.controlBtn20._Reverse = false;
             this.controlBtn20._Text = "TP9 NC ON";
@@ -2907,9 +2930,9 @@
             // 
             this.controlBtn14._CurrentStatus = false;
             this.controlBtn14._EqBase = null;
-            this.controlBtn14._PlcDevice = "";
+            this.controlBtn14._PlcDevice = "TP_NC_All_Open";
             this.controlBtn14._PlcDisplayOffDevice = "";
-            this.controlBtn14._PlcDisplayOnDevice = "";
+            this.controlBtn14._PlcDisplayOnDevice = "TP_NC_All_Open";
             this.controlBtn14._ReadOnly = false;
             this.controlBtn14._Reverse = false;
             this.controlBtn14._Text = "TP  NC ALL OFF";
@@ -2927,9 +2950,9 @@
             // 
             this.controlBtn12._CurrentStatus = false;
             this.controlBtn12._EqBase = null;
-            this.controlBtn12._PlcDevice = "";
+            this.controlBtn12._PlcDevice = "HMI_Alarm_Reset";
             this.controlBtn12._PlcDisplayOffDevice = "";
-            this.controlBtn12._PlcDisplayOnDevice = "";
+            this.controlBtn12._PlcDisplayOnDevice = "HMI_Alarm_Reset";
             this.controlBtn12._ReadOnly = false;
             this.controlBtn12._Reverse = false;
             this.controlBtn12._Text = "Alarm Reset";
@@ -2946,9 +2969,9 @@
             // 
             this.controlBtn11._CurrentStatus = false;
             this.controlBtn11._EqBase = null;
-            this.controlBtn11._PlcDevice = "";
+            this.controlBtn11._PlcDevice = "HMI_MF_Power_On";
             this.controlBtn11._PlcDisplayOffDevice = "";
-            this.controlBtn11._PlcDisplayOnDevice = "";
+            this.controlBtn11._PlcDisplayOnDevice = "HMI_MF_Power_On";
             this.controlBtn11._ReadOnly = false;
             this.controlBtn11._Reverse = false;
             this.controlBtn11._Text = "啟動MF Power";
@@ -2965,9 +2988,9 @@
             // 
             this.controlBtn10._CurrentStatus = false;
             this.controlBtn10._EqBase = null;
-            this.controlBtn10._PlcDevice = "";
+            this.controlBtn10._PlcDevice = "HMI_Heater_On";
             this.controlBtn10._PlcDisplayOffDevice = "";
-            this.controlBtn10._PlcDisplayOnDevice = "";
+            this.controlBtn10._PlcDisplayOnDevice = "HMI_Heater_On";
             this.controlBtn10._ReadOnly = false;
             this.controlBtn10._Reverse = false;
             this.controlBtn10._Text = "啟動加熱器";
@@ -2984,9 +3007,9 @@
             // 
             this.controlBtn9._CurrentStatus = false;
             this.controlBtn9._EqBase = null;
-            this.controlBtn9._PlcDevice = "";
+            this.controlBtn9._PlcDevice = "HMI_Vacuum_Off";
             this.controlBtn9._PlcDisplayOffDevice = "";
-            this.controlBtn9._PlcDisplayOnDevice = "";
+            this.controlBtn9._PlcDisplayOnDevice = "HMI_Vacuum_Off";
             this.controlBtn9._ReadOnly = false;
             this.controlBtn9._Reverse = false;
             this.controlBtn9._Text = "關閉抽真空";
@@ -3003,9 +3026,9 @@
             // 
             this.controlBtn8._CurrentStatus = false;
             this.controlBtn8._EqBase = null;
-            this.controlBtn8._PlcDevice = "";
+            this.controlBtn8._PlcDevice = "HMI_Process_Stop";
             this.controlBtn8._PlcDisplayOffDevice = "";
-            this.controlBtn8._PlcDisplayOnDevice = "";
+            this.controlBtn8._PlcDisplayOnDevice = "HMI_Process_Stop";
             this.controlBtn8._ReadOnly = false;
             this.controlBtn8._Reverse = false;
             this.controlBtn8._Text = "製程結束";
@@ -3022,11 +3045,11 @@
             // 
             this.controlBtn7._CurrentStatus = false;
             this.controlBtn7._EqBase = null;
-            this.controlBtn7._PlcDevice = "";
+            this.controlBtn7._PlcDevice = "HMI_Service_OnOff";
             this.controlBtn7._PlcDisplayOffDevice = "";
-            this.controlBtn7._PlcDisplayOnDevice = "";
+            this.controlBtn7._PlcDisplayOnDevice = "HMI_Service_OnOff";
             this.controlBtn7._ReadOnly = false;
-            this.controlBtn7._Reverse = false;
+            this.controlBtn7._Reverse = true;
             this.controlBtn7._Text = "自動模式";
             this.controlBtn7.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn7.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -3041,9 +3064,9 @@
             // 
             this.controlBtn6._CurrentStatus = false;
             this.controlBtn6._EqBase = null;
-            this.controlBtn6._PlcDevice = "";
+            this.controlBtn6._PlcDevice = "HMI_DC_Power_On";
             this.controlBtn6._PlcDisplayOffDevice = "";
-            this.controlBtn6._PlcDisplayOnDevice = "";
+            this.controlBtn6._PlcDisplayOnDevice = "HMI_DC_Power_On";
             this.controlBtn6._ReadOnly = false;
             this.controlBtn6._Reverse = false;
             this.controlBtn6._Text = "啟動DC Power";
@@ -3060,9 +3083,9 @@
             // 
             this.controlBtn5._CurrentStatus = false;
             this.controlBtn5._EqBase = null;
-            this.controlBtn5._PlcDevice = "";
+            this.controlBtn5._PlcDevice = "HMI_Power_On";
             this.controlBtn5._PlcDisplayOffDevice = "";
-            this.controlBtn5._PlcDisplayOnDevice = "";
+            this.controlBtn5._PlcDisplayOnDevice = "HMI_Power_On";
             this.controlBtn5._ReadOnly = false;
             this.controlBtn5._Reverse = false;
             this.controlBtn5._Text = "啟動Power";
@@ -3079,9 +3102,9 @@
             // 
             this.controlBtn4._CurrentStatus = false;
             this.controlBtn4._EqBase = null;
-            this.controlBtn4._PlcDevice = "";
+            this.controlBtn4._PlcDevice = "HMI_Vent_All_OnOff";
             this.controlBtn4._PlcDisplayOffDevice = "";
-            this.controlBtn4._PlcDisplayOnDevice = "";
+            this.controlBtn4._PlcDisplayOnDevice = "HMI_Vent_All_OnOff";
             this.controlBtn4._ReadOnly = false;
             this.controlBtn4._Reverse = false;
             this.controlBtn4._Text = "破真空";
@@ -3098,9 +3121,9 @@
             // 
             this.controlBtn3._CurrentStatus = false;
             this.controlBtn3._EqBase = null;
-            this.controlBtn3._PlcDevice = "";
+            this.controlBtn3._PlcDevice = "HMI_Auto_Vacuum_On";
             this.controlBtn3._PlcDisplayOffDevice = "";
-            this.controlBtn3._PlcDisplayOnDevice = "";
+            this.controlBtn3._PlcDisplayOnDevice = "HMI_Auto_Vacuum_On";
             this.controlBtn3._ReadOnly = false;
             this.controlBtn3._Reverse = false;
             this.controlBtn3._Text = "全抽真空";
@@ -3117,9 +3140,9 @@
             // 
             this.controlBtn2._CurrentStatus = false;
             this.controlBtn2._EqBase = null;
-            this.controlBtn2._PlcDevice = "";
+            this.controlBtn2._PlcDevice = "HMI_Process_Start";
             this.controlBtn2._PlcDisplayOffDevice = "";
-            this.controlBtn2._PlcDisplayOnDevice = "";
+            this.controlBtn2._PlcDisplayOnDevice = "HMI_Process_Start";
             this.controlBtn2._ReadOnly = false;
             this.controlBtn2._Reverse = false;
             this.controlBtn2._Text = "製程開始";
@@ -3136,9 +3159,9 @@
             // 
             this.controlBtn1._CurrentStatus = false;
             this.controlBtn1._EqBase = null;
-            this.controlBtn1._PlcDevice = "";
+            this.controlBtn1._PlcDevice = "HMI_Service_OnOff";
             this.controlBtn1._PlcDisplayOffDevice = "";
-            this.controlBtn1._PlcDisplayOnDevice = "";
+            this.controlBtn1._PlcDisplayOnDevice = "HMI_Service_OnOff";
             this.controlBtn1._ReadOnly = false;
             this.controlBtn1._Reverse = false;
             this.controlBtn1._Text = "手動模式";
@@ -3151,7 +3174,7 @@
             this.controlBtn1.Text = "手動模式";
             this.controlBtn1.UseVisualStyleBackColor = false;
             // 
-            // frmOverview_2nd
+            // frmControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -3185,8 +3208,8 @@
             this.Controls.Add(this.controlBtn1);
             this.Controls.Add(this.TabControl1);
             this.Controls.Add(this.GroupBox4);
-            this.Name = "frmOverview_2nd";
-            this.Text = "Overview_2nd";
+            this.Name = "frmControl";
+            this.Text = "Control";
             this.GroupBox4.ResumeLayout(false);
             this.GroupBox4.PerformLayout();
             this.TabControl1.ResumeLayout(false);
@@ -3385,5 +3408,6 @@
         private components.ControlBtn controlBtn63;
         private components.ControlBtn controlBtn62;
         private components.ControlBtn controlBtn61;
+        private System.Windows.Forms.Timer timerStatus;
     }
 }

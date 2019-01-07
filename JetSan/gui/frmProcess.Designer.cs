@@ -331,6 +331,12 @@
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape23 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.displayTextBox25 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox26 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox48 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox49 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox54 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox55 = new HyTemplate.components.DisplayTextBox();
             this.label90 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
@@ -470,8 +476,6 @@
             this.Label217 = new System.Windows.Forms.Label();
             this.Label225 = new System.Windows.Forms.Label();
             this.Label228 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -479,7 +483,6 @@
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -506,9 +509,7 @@
             this.controlBtn14 = new HyTemplate.components.ControlBtn();
             this.controlBtn13 = new HyTemplate.components.ControlBtn();
             this.controlBtn12 = new HyTemplate.components.ControlBtn();
-            this.controlBtn11 = new HyTemplate.components.ControlBtn();
             this.controlBtn10 = new HyTemplate.components.ControlBtn();
-            this.controlBtn9 = new HyTemplate.components.ControlBtn();
             this.controlBtn8 = new HyTemplate.components.ControlBtn();
             this.displayTextBox44 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox45 = new HyTemplate.components.DisplayTextBox();
@@ -526,54 +527,26 @@
             this.displayTextBox33 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox34 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox35 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox25 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox26 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox48 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox49 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox50 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox51 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox52 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox53 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox54 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox55 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox56 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox57 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox58 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox59 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox60 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox61 = new HyTemplate.components.DisplayTextBox();
             this.inputTextBox70 = new HyTemplate.components.InputTextBox();
             this.inputTextBox71 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox72 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox73 = new HyTemplate.components.InputTextBox();
             this.inputTextBox66 = new HyTemplate.components.InputTextBox();
             this.inputTextBox67 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox68 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox69 = new HyTemplate.components.InputTextBox();
             this.inputTextBox62 = new HyTemplate.components.InputTextBox();
             this.inputTextBox63 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox64 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox65 = new HyTemplate.components.InputTextBox();
             this.inputTextBox58 = new HyTemplate.components.InputTextBox();
             this.inputTextBox59 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox60 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox61 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox54 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox55 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox56 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox57 = new HyTemplate.components.InputTextBox();
             this.inputTextBox50 = new HyTemplate.components.InputTextBox();
             this.inputTextBox51 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox52 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox53 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox46 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox47 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox48 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox49 = new HyTemplate.components.InputTextBox();
             this.inputTextBox45 = new HyTemplate.components.InputTextBox();
             this.inputTextBox44 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox43 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox42 = new HyTemplate.components.InputTextBox();
             this.GroupBox3.SuspendLayout();
             this.ADD_Panel_1.SuspendLayout();
             this.ADD_Panel_2.SuspendLayout();
@@ -667,7 +640,7 @@
             this.displayTextBox31._MaxLimit = 999D;
             this.displayTextBox31._MinLimit = 0D;
             this.displayTextBox31._Multiplication = ((short)(1));
-            this.displayTextBox31._PlcDevice = "";
+            this.displayTextBox31._PlcDevice = "Compressed_Air";
             this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox31.Location = new System.Drawing.Point(310, 49);
             this.displayTextBox31.Name = "displayTextBox31";
@@ -684,7 +657,7 @@
             this.displayTextBox30._MaxLimit = 999D;
             this.displayTextBox30._MinLimit = 0D;
             this.displayTextBox30._Multiplication = ((short)(1));
-            this.displayTextBox30._PlcDevice = "";
+            this.displayTextBox30._PlcDevice = "Water_Pressureof_Outlet";
             this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox30.Location = new System.Drawing.Point(310, 22);
             this.displayTextBox30.Name = "displayTextBox30";
@@ -701,7 +674,7 @@
             this.displayTextBox29._MaxLimit = 999D;
             this.displayTextBox29._MinLimit = 0D;
             this.displayTextBox29._Multiplication = ((short)(1));
-            this.displayTextBox29._PlcDevice = "";
+            this.displayTextBox29._PlcDevice = "Water_Teof_Inlet";
             this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox29.Location = new System.Drawing.Point(127, 25);
             this.displayTextBox29.Name = "displayTextBox29";
@@ -718,7 +691,7 @@
             this.displayTextBox28._MaxLimit = 999D;
             this.displayTextBox28._MinLimit = 0D;
             this.displayTextBox28._Multiplication = ((short)(1));
-            this.displayTextBox28._PlcDevice = "";
+            this.displayTextBox28._PlcDevice = "Water_Teof_Outlet";
             this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox28.Location = new System.Drawing.Point(127, 51);
             this.displayTextBox28.Name = "displayTextBox28";
@@ -735,7 +708,7 @@
             this.displayTextBox27._MaxLimit = 999D;
             this.displayTextBox27._MinLimit = 0D;
             this.displayTextBox27._Multiplication = ((short)(1));
-            this.displayTextBox27._PlcDevice = "";
+            this.displayTextBox27._PlcDevice = "Water_Pressureof_Inlet";
             this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox27.Location = new System.Drawing.Point(127, 77);
             this.displayTextBox27.Name = "displayTextBox27";
@@ -2819,9 +2792,9 @@
             // 
             this.controlBtn30._CurrentStatus = false;
             this.controlBtn30._EqBase = null;
-            this.controlBtn30._PlcDevice = "";
+            this.controlBtn30._PlcDevice = "Temp_Hot_ON";
             this.controlBtn30._PlcDisplayOffDevice = "";
-            this.controlBtn30._PlcDisplayOnDevice = "";
+            this.controlBtn30._PlcDisplayOnDevice = "Temp_Hot_ON";
             this.controlBtn30._ReadOnly = false;
             this.controlBtn30._Reverse = false;
             this.controlBtn30._Text = "熱水輸出";
@@ -2839,9 +2812,9 @@
             // 
             this.controlBtn31._CurrentStatus = false;
             this.controlBtn31._EqBase = null;
-            this.controlBtn31._PlcDevice = "";
+            this.controlBtn31._PlcDevice = "Temp_Standby";
             this.controlBtn31._PlcDisplayOffDevice = "";
-            this.controlBtn31._PlcDisplayOnDevice = "";
+            this.controlBtn31._PlcDisplayOnDevice = "Temp_Standby";
             this.controlBtn31._ReadOnly = false;
             this.controlBtn31._Reverse = false;
             this.controlBtn31._Text = "待機";
@@ -2859,9 +2832,9 @@
             // 
             this.controlBtn28._CurrentStatus = false;
             this.controlBtn28._EqBase = null;
-            this.controlBtn28._PlcDevice = "";
+            this.controlBtn28._PlcDevice = "Temp_Lce_ON";
             this.controlBtn28._PlcDisplayOffDevice = "";
-            this.controlBtn28._PlcDisplayOnDevice = "";
+            this.controlBtn28._PlcDisplayOnDevice = "Temp_Lce_ON";
             this.controlBtn28._ReadOnly = false;
             this.controlBtn28._Reverse = false;
             this.controlBtn28._Text = "冷水輸出";
@@ -2879,9 +2852,9 @@
             // 
             this.controlBtn27._CurrentStatus = false;
             this.controlBtn27._EqBase = null;
-            this.controlBtn27._PlcDevice = "";
+            this.controlBtn27._PlcDevice = "Temp_Machine_ON";
             this.controlBtn27._PlcDisplayOffDevice = "";
-            this.controlBtn27._PlcDisplayOnDevice = "";
+            this.controlBtn27._PlcDisplayOnDevice = "Temp_Machine_ON";
             this.controlBtn27._ReadOnly = false;
             this.controlBtn27._Reverse = false;
             this.controlBtn27._Text = "ON";
@@ -2901,9 +2874,9 @@
             this.plcObject23._EqBase = null;
             this.plcObject23._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject23._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject23._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject23._PlcDevice = "CaNC_0403_Open";
             this.plcObject23._PlcDisplayOffDevice = null;
-            this.plcObject23._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject23._PlcDisplayOnDevice = "CaNC_0403_Open";
             this.plcObject23._Reverse = false;
             this.plcObject23.Image = ((System.Drawing.Image)(resources.GetObject("plcObject23.Image")));
             this.plcObject23.Location = new System.Drawing.Point(1044, 527);
@@ -2919,9 +2892,9 @@
             this.plcObject22._EqBase = null;
             this.plcObject22._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject22._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject22._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject22._PlcDevice = "CaNC_0402_Open";
             this.plcObject22._PlcDisplayOffDevice = null;
-            this.plcObject22._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject22._PlcDisplayOnDevice = "CaNC_0402_Open";
             this.plcObject22._Reverse = false;
             this.plcObject22.Image = ((System.Drawing.Image)(resources.GetObject("plcObject22.Image")));
             this.plcObject22.Location = new System.Drawing.Point(1000, 527);
@@ -2937,9 +2910,9 @@
             this.plcObject75._EqBase = null;
             this.plcObject75._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject75._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject75._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject75._PlcDevice = "DC2_ON_YMC";
             this.plcObject75._PlcDisplayOffDevice = null;
-            this.plcObject75._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject75._PlcDisplayOnDevice = "DC2_ON_YMC";
             this.plcObject75._Reverse = false;
             this.plcObject75.Image = ((System.Drawing.Image)(resources.GetObject("plcObject75.Image")));
             this.plcObject75.Location = new System.Drawing.Point(446, 292);
@@ -2957,7 +2930,7 @@
             this.displayTextBox3._MaxLimit = 999D;
             this.displayTextBox3._MinLimit = 0D;
             this.displayTextBox3._Multiplication = ((short)(1));
-            this.displayTextBox3._PlcDevice = "";
+            this.displayTextBox3._PlcDevice = "MKS_BTG3_M3_2";
             this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox3.Location = new System.Drawing.Point(308, 298);
             this.displayTextBox3.Name = "displayTextBox3";
@@ -2974,7 +2947,7 @@
             this.displayTextBox1._MaxLimit = 999D;
             this.displayTextBox1._MinLimit = 0D;
             this.displayTextBox1._Multiplication = ((short)(1));
-            this.displayTextBox1._PlcDevice = "";
+            this.displayTextBox1._PlcDevice = "MKS_BTG4_M3_2";
             this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox1.Location = new System.Drawing.Point(247, 196);
             this.displayTextBox1.Name = "displayTextBox1";
@@ -2991,7 +2964,7 @@
             this.displayTextBox4._MaxLimit = 999D;
             this.displayTextBox4._MinLimit = 0D;
             this.displayTextBox4._Multiplication = ((short)(1));
-            this.displayTextBox4._PlcDevice = "";
+            this.displayTextBox4._PlcDevice = "MKS_BTG2_M3_2";
             this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox4.Location = new System.Drawing.Point(667, 298);
             this.displayTextBox4.Name = "displayTextBox4";
@@ -3008,7 +2981,7 @@
             this.displayTextBox2._MaxLimit = 999D;
             this.displayTextBox2._MinLimit = 0D;
             this.displayTextBox2._Multiplication = ((short)(1));
-            this.displayTextBox2._PlcDevice = "";
+            this.displayTextBox2._PlcDevice = "MKS_BTG1_M3_2";
             this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox2.Location = new System.Drawing.Point(744, 194);
             this.displayTextBox2.Name = "displayTextBox2";
@@ -3025,7 +2998,7 @@
             this.displayTextBox24._MaxLimit = 999D;
             this.displayTextBox24._MinLimit = 0D;
             this.displayTextBox24._Multiplication = ((short)(1));
-            this.displayTextBox24._PlcDevice = "";
+            this.displayTextBox24._PlcDevice = "LVG4_M4";
             this.displayTextBox24.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox24.Location = new System.Drawing.Point(53, 197);
             this.displayTextBox24.Name = "displayTextBox24";
@@ -3042,7 +3015,7 @@
             this.displayTextBox23._MaxLimit = 999D;
             this.displayTextBox23._MinLimit = 0D;
             this.displayTextBox23._Multiplication = ((short)(1));
-            this.displayTextBox23._PlcDevice = "";
+            this.displayTextBox23._PlcDevice = "HVG4_M4";
             this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox23.Location = new System.Drawing.Point(53, 146);
             this.displayTextBox23.Name = "displayTextBox23";
@@ -3059,7 +3032,7 @@
             this.displayTextBox22._MaxLimit = 999D;
             this.displayTextBox22._MinLimit = 0D;
             this.displayTextBox22._Multiplication = ((short)(1));
-            this.displayTextBox22._PlcDevice = "";
+            this.displayTextBox22._PlcDevice = "LVG3_M3";
             this.displayTextBox22.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox22.Location = new System.Drawing.Point(487, 181);
             this.displayTextBox22.Name = "displayTextBox22";
@@ -3076,7 +3049,7 @@
             this.displayTextBox21._MaxLimit = 999D;
             this.displayTextBox21._MinLimit = 0D;
             this.displayTextBox21._Multiplication = ((short)(1));
-            this.displayTextBox21._PlcDevice = "";
+            this.displayTextBox21._PlcDevice = "HVG3_M3_1";
             this.displayTextBox21.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox21.Location = new System.Drawing.Point(487, 137);
             this.displayTextBox21.Name = "displayTextBox21";
@@ -3093,7 +3066,7 @@
             this.displayTextBox20._MaxLimit = 999D;
             this.displayTextBox20._MinLimit = 0D;
             this.displayTextBox20._Multiplication = ((short)(1));
-            this.displayTextBox20._PlcDevice = "";
+            this.displayTextBox20._PlcDevice = "DC4_HVG";
             this.displayTextBox20.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox20.Location = new System.Drawing.Point(337, 165);
             this.displayTextBox20.Name = "displayTextBox20";
@@ -3110,7 +3083,7 @@
             this.displayTextBox19._MaxLimit = 999D;
             this.displayTextBox19._MinLimit = 0D;
             this.displayTextBox19._Multiplication = ((short)(1));
-            this.displayTextBox19._PlcDevice = "";
+            this.displayTextBox19._PlcDevice = "DC3_HVG";
             this.displayTextBox19.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox19.Location = new System.Drawing.Point(410, 264);
             this.displayTextBox19.Name = "displayTextBox19";
@@ -3127,7 +3100,7 @@
             this.displayTextBox18._MaxLimit = 999D;
             this.displayTextBox18._MinLimit = 0D;
             this.displayTextBox18._Multiplication = ((short)(1));
-            this.displayTextBox18._PlcDevice = "";
+            this.displayTextBox18._PlcDevice = "MF2_HVG";
             this.displayTextBox18.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox18.Location = new System.Drawing.Point(561, 264);
             this.displayTextBox18.Name = "displayTextBox18";
@@ -3144,7 +3117,7 @@
             this.displayTextBox17._MaxLimit = 999D;
             this.displayTextBox17._MinLimit = 0D;
             this.displayTextBox17._Multiplication = ((short)(1));
-            this.displayTextBox17._PlcDevice = "";
+            this.displayTextBox17._PlcDevice = "MF1_HVG";
             this.displayTextBox17.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox17.Location = new System.Drawing.Point(638, 159);
             this.displayTextBox17.Name = "displayTextBox17";
@@ -3161,7 +3134,7 @@
             this.displayTextBox16._MaxLimit = 999D;
             this.displayTextBox16._MinLimit = 0D;
             this.displayTextBox16._Multiplication = ((short)(1));
-            this.displayTextBox16._PlcDevice = "";
+            this.displayTextBox16._PlcDevice = "LVG2_M2";
             this.displayTextBox16.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox16.Location = new System.Drawing.Point(1113, 245);
             this.displayTextBox16.Name = "displayTextBox16";
@@ -3178,7 +3151,7 @@
             this.displayTextBox15._MaxLimit = 999D;
             this.displayTextBox15._MinLimit = 0D;
             this.displayTextBox15._Multiplication = ((short)(1));
-            this.displayTextBox15._PlcDevice = "";
+            this.displayTextBox15._PlcDevice = "HVG2_M2";
             this.displayTextBox15.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox15.Location = new System.Drawing.Point(1113, 195);
             this.displayTextBox15.Name = "displayTextBox15";
@@ -3195,7 +3168,7 @@
             this.displayTextBox14._MaxLimit = 999D;
             this.displayTextBox14._MinLimit = 0D;
             this.displayTextBox14._Multiplication = ((short)(1));
-            this.displayTextBox14._PlcDevice = "";
+            this.displayTextBox14._PlcDevice = "LVG1_M1";
             this.displayTextBox14.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox14.Location = new System.Drawing.Point(1321, 220);
             this.displayTextBox14.Name = "displayTextBox14";
@@ -3212,7 +3185,7 @@
             this.displayTextBox13._MaxLimit = 999D;
             this.displayTextBox13._MinLimit = 0D;
             this.displayTextBox13._Multiplication = ((short)(1));
-            this.displayTextBox13._PlcDevice = "";
+            this.displayTextBox13._PlcDevice = "HVG1_M1";
             this.displayTextBox13.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox13.Location = new System.Drawing.Point(1321, 165);
             this.displayTextBox13.Name = "displayTextBox13";
@@ -3227,9 +3200,9 @@
             this.plcObject85._EqBase = null;
             this.plcObject85._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject85._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject85._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject85._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject85._PlcDisplayOffDevice = null;
-            this.plcObject85._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject85._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject85._Reverse = false;
             this.plcObject85.Image = ((System.Drawing.Image)(resources.GetObject("plcObject85.Image")));
             this.plcObject85.Location = new System.Drawing.Point(1074, 90);
@@ -3245,9 +3218,9 @@
             this.plcObject84._EqBase = null;
             this.plcObject84._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject84._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject84._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject84._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject84._PlcDisplayOffDevice = null;
-            this.plcObject84._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject84._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject84._Reverse = false;
             this.plcObject84.Image = ((System.Drawing.Image)(resources.GetObject("plcObject84.Image")));
             this.plcObject84.Location = new System.Drawing.Point(1018, 91);
@@ -3263,9 +3236,9 @@
             this.plcObject83._EqBase = null;
             this.plcObject83._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject83._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject83._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject83._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject83._PlcDisplayOffDevice = null;
-            this.plcObject83._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject83._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject83._Reverse = false;
             this.plcObject83.Image = ((System.Drawing.Image)(resources.GetObject("plcObject83.Image")));
             this.plcObject83.Location = new System.Drawing.Point(963, 92);
@@ -3281,9 +3254,9 @@
             this.plcObject82._EqBase = null;
             this.plcObject82._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject82._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject82._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject82._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject82._PlcDisplayOffDevice = null;
-            this.plcObject82._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject82._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.plcObject82._Reverse = false;
             this.plcObject82.Image = ((System.Drawing.Image)(resources.GetObject("plcObject82.Image")));
             this.plcObject82.Location = new System.Drawing.Point(907, 91);
@@ -3299,9 +3272,9 @@
             this.plcObject81._EqBase = null;
             this.plcObject81._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject81._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
-            this.plcObject81._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject81._PlcDevice = "Heater1_On_YMC_M2";
             this.plcObject81._PlcDisplayOffDevice = null;
-            this.plcObject81._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject81._PlcDisplayOnDevice = "Heater1_On_YMC_M2";
             this.plcObject81._Reverse = false;
             this.plcObject81.Image = ((System.Drawing.Image)(resources.GetObject("plcObject81.Image")));
             this.plcObject81.Location = new System.Drawing.Point(850, 92);
@@ -3317,9 +3290,9 @@
             this.plcObject80._EqBase = null;
             this.plcObject80._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject80._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject80._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject80._PlcDevice = "ATM2_XC_M3_1";
             this.plcObject80._PlcDisplayOffDevice = null;
-            this.plcObject80._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject80._PlcDisplayOnDevice = "ATM2_XC_M3_1";
             this.plcObject80._Reverse = false;
             this.plcObject80.Image = ((System.Drawing.Image)(resources.GetObject("plcObject80.Image")));
             this.plcObject80.Location = new System.Drawing.Point(530, 29);
@@ -3335,9 +3308,9 @@
             this.plcObject79._EqBase = null;
             this.plcObject79._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject79._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject79._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject79._PlcDevice = "MF1_ON_YMC";
             this.plcObject79._PlcDisplayOffDevice = null;
-            this.plcObject79._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject79._PlcDisplayOnDevice = "MF1_ON_YMC";
             this.plcObject79._Reverse = false;
             this.plcObject79.Image = ((System.Drawing.Image)(resources.GetObject("plcObject79.Image")));
             this.plcObject79.Location = new System.Drawing.Point(649, 190);
@@ -3353,9 +3326,9 @@
             this.plcObject78._EqBase = null;
             this.plcObject78._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject78._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject78._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject78._PlcDevice = "DC4_ON_YMC";
             this.plcObject78._PlcDisplayOffDevice = null;
-            this.plcObject78._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject78._PlcDisplayOnDevice = "DC4_ON_YMC";
             this.plcObject78._Reverse = false;
             this.plcObject78.Image = ((System.Drawing.Image)(resources.GetObject("plcObject78.Image")));
             this.plcObject78.Location = new System.Drawing.Point(374, 199);
@@ -3371,9 +3344,9 @@
             this.plcObject72._EqBase = null;
             this.plcObject72._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject72._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject72._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject72._PlcDevice = "ATM3_XC_M4";
             this.plcObject72._PlcDisplayOffDevice = null;
-            this.plcObject72._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject72._PlcDisplayOnDevice = "ATM3_XC_M4";
             this.plcObject72._Reverse = false;
             this.plcObject72.Image = ((System.Drawing.Image)(resources.GetObject("plcObject72.Image")));
             this.plcObject72.Location = new System.Drawing.Point(18, 59);
@@ -3389,9 +3362,9 @@
             this.plcObject77._EqBase = null;
             this.plcObject77._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject77._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject77._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject77._PlcDevice = "DC3_ON_YMC";
             this.plcObject77._PlcDisplayOffDevice = null;
-            this.plcObject77._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject77._PlcDisplayOnDevice = "DC3_ON_YMC";
             this.plcObject77._Reverse = false;
             this.plcObject77.Image = ((System.Drawing.Image)(resources.GetObject("plcObject77.Image")));
             this.plcObject77.Location = new System.Drawing.Point(334, 199);
@@ -3407,9 +3380,9 @@
             this.plcObject73._EqBase = null;
             this.plcObject73._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject73._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject73._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject73._PlcDevice = "ATM1_XC_M1";
             this.plcObject73._PlcDisplayOffDevice = null;
-            this.plcObject73._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject73._PlcDisplayOnDevice = "ATM1_XC_M1";
             this.plcObject73._Reverse = false;
             this.plcObject73.Image = ((System.Drawing.Image)(resources.GetObject("plcObject73.Image")));
             this.plcObject73.Location = new System.Drawing.Point(1379, 40);
@@ -3425,9 +3398,9 @@
             this.plcObject76._EqBase = null;
             this.plcObject76._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject76._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject76._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject76._PlcDevice = "MF2_ON_YMC";
             this.plcObject76._PlcDisplayOffDevice = null;
-            this.plcObject76._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject76._PlcDisplayOnDevice = "MF2_ON_YMC";
             this.plcObject76._Reverse = false;
             this.plcObject76.Image = ((System.Drawing.Image)(resources.GetObject("plcObject76.Image")));
             this.plcObject76.Location = new System.Drawing.Point(566, 292);
@@ -3443,9 +3416,9 @@
             this.plcObject74._EqBase = null;
             this.plcObject74._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject74._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
-            this.plcObject74._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject74._PlcDevice = "DC1_ON_YMC";
             this.plcObject74._PlcDisplayOffDevice = null;
-            this.plcObject74._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject74._PlcDisplayOnDevice = "DC1_ON_YMC";
             this.plcObject74._Reverse = false;
             this.plcObject74.Image = ((System.Drawing.Image)(resources.GetObject("plcObject74.Image")));
             this.plcObject74.Location = new System.Drawing.Point(408, 292);
@@ -3461,9 +3434,9 @@
             this.plcObject34._EqBase = null;
             this.plcObject34._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject34._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject34._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject34._PlcDevice = "CaNC_0405_Open";
             this.plcObject34._PlcDisplayOffDevice = null;
-            this.plcObject34._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject34._PlcDisplayOnDevice = "CaNC_0405_Open";
             this.plcObject34._Reverse = false;
             this.plcObject34.Image = ((System.Drawing.Image)(resources.GetObject("plcObject34.Image")));
             this.plcObject34.Location = new System.Drawing.Point(978, 674);
@@ -3479,9 +3452,9 @@
             this.plcObject35._EqBase = null;
             this.plcObject35._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject35._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject35._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject35._PlcDevice = "CaNC_0406_Open";
             this.plcObject35._PlcDisplayOffDevice = null;
-            this.plcObject35._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject35._PlcDisplayOnDevice = "CaNC_0406_Open";
             this.plcObject35._Reverse = false;
             this.plcObject35.Image = ((System.Drawing.Image)(resources.GetObject("plcObject35.Image")));
             this.plcObject35.Location = new System.Drawing.Point(1059, 674);
@@ -3497,9 +3470,9 @@
             this.plcObject14._EqBase = null;
             this.plcObject14._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject14._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject14._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject14._PlcDevice = "MFC_0304_Open_MC_O2";
             this.plcObject14._PlcDisplayOffDevice = null;
-            this.plcObject14._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject14._PlcDisplayOnDevice = "MFC_0304_Open_MC_O2";
             this.plcObject14._Reverse = false;
             this.plcObject14.Image = ((System.Drawing.Image)(resources.GetObject("plcObject14.Image")));
             this.plcObject14.Location = new System.Drawing.Point(94, 449);
@@ -3517,7 +3490,7 @@
             this.displayTextBox6._MaxLimit = 999D;
             this.displayTextBox6._MinLimit = 0D;
             this.displayTextBox6._Multiplication = ((short)(1));
-            this.displayTextBox6._PlcDevice = "";
+            this.displayTextBox6._PlcDevice = "MFC_0309_Ar";
             this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox6.Location = new System.Drawing.Point(1060, 792);
             this.displayTextBox6.Name = "displayTextBox6";
@@ -3534,7 +3507,7 @@
             this.displayTextBox7._MaxLimit = 999D;
             this.displayTextBox7._MinLimit = 0D;
             this.displayTextBox7._Multiplication = ((short)(1));
-            this.displayTextBox7._PlcDevice = "";
+            this.displayTextBox7._PlcDevice = "MFC_0310_O2";
             this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox7.Location = new System.Drawing.Point(1060, 758);
             this.displayTextBox7.Name = "displayTextBox7";
@@ -3551,7 +3524,7 @@
             this.displayTextBox5._MaxLimit = 999D;
             this.displayTextBox5._MinLimit = 0D;
             this.displayTextBox5._Multiplication = ((short)(1));
-            this.displayTextBox5._PlcDevice = "";
+            this.displayTextBox5._PlcDevice = "MFC_0307_Ar";
             this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox5.Location = new System.Drawing.Point(763, 792);
             this.displayTextBox5.Name = "displayTextBox5";
@@ -3568,7 +3541,7 @@
             this.displayTextBox8._MaxLimit = 999D;
             this.displayTextBox8._MinLimit = 0D;
             this.displayTextBox8._Multiplication = ((short)(1));
-            this.displayTextBox8._PlcDevice = "";
+            this.displayTextBox8._PlcDevice = "MFC_0308_O2";
             this.displayTextBox8.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox8.Location = new System.Drawing.Point(763, 758);
             this.displayTextBox8.Name = "displayTextBox8";
@@ -3585,7 +3558,7 @@
             this.displayTextBox9._MaxLimit = 999D;
             this.displayTextBox9._MinLimit = 0D;
             this.displayTextBox9._Multiplication = ((short)(1));
-            this.displayTextBox9._PlcDevice = "";
+            this.displayTextBox9._PlcDevice = "MFC_0305_Ar";
             this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox9.Location = new System.Drawing.Point(456, 793);
             this.displayTextBox9.Name = "displayTextBox9";
@@ -3602,7 +3575,7 @@
             this.displayTextBox10._MaxLimit = 999D;
             this.displayTextBox10._MinLimit = 0D;
             this.displayTextBox10._Multiplication = ((short)(1));
-            this.displayTextBox10._PlcDevice = "";
+            this.displayTextBox10._PlcDevice = "MFC_0306_O2";
             this.displayTextBox10.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox10.Location = new System.Drawing.Point(456, 759);
             this.displayTextBox10.Name = "displayTextBox10";
@@ -3619,7 +3592,7 @@
             this.displayTextBox11._MaxLimit = 999D;
             this.displayTextBox11._MinLimit = 0D;
             this.displayTextBox11._Multiplication = ((short)(1));
-            this.displayTextBox11._PlcDevice = "";
+            this.displayTextBox11._PlcDevice = "MFC_0303_Ar";
             this.displayTextBox11.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox11.Location = new System.Drawing.Point(142, 793);
             this.displayTextBox11.Name = "displayTextBox11";
@@ -3636,7 +3609,7 @@
             this.displayTextBox12._MaxLimit = 999D;
             this.displayTextBox12._MinLimit = 0D;
             this.displayTextBox12._Multiplication = ((short)(1));
-            this.displayTextBox12._PlcDevice = "";
+            this.displayTextBox12._PlcDevice = "MFC_0304_O2";
             this.displayTextBox12.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox12.Location = new System.Drawing.Point(142, 759);
             this.displayTextBox12.Name = "displayTextBox12";
@@ -3651,9 +3624,9 @@
             this.plcObject1._EqBase = null;
             this.plcObject1._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject1._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject1._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject1._PlcDevice = "MFC_0303_Open_MC_Ar";
             this.plcObject1._PlcDisplayOffDevice = null;
-            this.plcObject1._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject1._PlcDisplayOnDevice = "MFC_0303_Open_MC_Ar";
             this.plcObject1._Reverse = false;
             this.plcObject1.Image = ((System.Drawing.Image)(resources.GetObject("plcObject1.Image")));
             this.plcObject1.Location = new System.Drawing.Point(192, 447);
@@ -3669,9 +3642,9 @@
             this.plcObject2._EqBase = null;
             this.plcObject2._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject2._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject2._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject2._PlcDevice = "MFC_0306_Open_MC_O2";
             this.plcObject2._PlcDisplayOffDevice = null;
-            this.plcObject2._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject2._PlcDisplayOnDevice = "MFC_0306_Open_MC_O2";
             this.plcObject2._Reverse = false;
             this.plcObject2.Image = ((System.Drawing.Image)(resources.GetObject("plcObject2.Image")));
             this.plcObject2.Location = new System.Drawing.Point(382, 449);
@@ -3687,9 +3660,9 @@
             this.plcObject3._EqBase = null;
             this.plcObject3._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject3._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject3._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject3._PlcDevice = "MFC_0305_Open_MC_Ar";
             this.plcObject3._PlcDisplayOffDevice = null;
-            this.plcObject3._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject3._PlcDisplayOnDevice = "MFC_0305_Open_MC_Ar";
             this.plcObject3._Reverse = false;
             this.plcObject3.Image = ((System.Drawing.Image)(resources.GetObject("plcObject3.Image")));
             this.plcObject3.Location = new System.Drawing.Point(480, 449);
@@ -3705,9 +3678,9 @@
             this.plcObject4._EqBase = null;
             this.plcObject4._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject4._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject4._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject4._PlcDevice = "MFC_0308_Open_MC_O2";
             this.plcObject4._PlcDisplayOffDevice = null;
-            this.plcObject4._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject4._PlcDisplayOnDevice = "MFC_0308_Open_MC_O2";
             this.plcObject4._Reverse = false;
             this.plcObject4.Image = ((System.Drawing.Image)(resources.GetObject("plcObject4.Image")));
             this.plcObject4.Location = new System.Drawing.Point(682, 449);
@@ -3723,9 +3696,9 @@
             this.plcObject5._EqBase = null;
             this.plcObject5._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject5._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject5._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject5._PlcDevice = "MFC_0307_Open_MC_Ar";
             this.plcObject5._PlcDisplayOffDevice = null;
-            this.plcObject5._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject5._PlcDisplayOnDevice = "MFC_0307_Open_MC_Ar";
             this.plcObject5._Reverse = false;
             this.plcObject5.Image = ((System.Drawing.Image)(resources.GetObject("plcObject5.Image")));
             this.plcObject5.Location = new System.Drawing.Point(777, 449);
@@ -3741,9 +3714,9 @@
             this.plcObject6._EqBase = null;
             this.plcObject6._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject6._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject6._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject6._PlcDevice = "MFC_0310_Open_MC_O2";
             this.plcObject6._PlcDisplayOffDevice = null;
-            this.plcObject6._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject6._PlcDisplayOnDevice = "MFC_0310_Open_MC_O2";
             this.plcObject6._Reverse = false;
             this.plcObject6.Image = ((System.Drawing.Image)(resources.GetObject("plcObject6.Image")));
             this.plcObject6.Location = new System.Drawing.Point(974, 449);
@@ -3759,9 +3732,9 @@
             this.plcObject33._EqBase = null;
             this.plcObject33._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject33._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject33._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject33._PlcDevice = "CaNC_0306_Open";
             this.plcObject33._PlcDisplayOffDevice = null;
-            this.plcObject33._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject33._PlcDisplayOnDevice = "CaNC_0306_Open";
             this.plcObject33._Reverse = false;
             this.plcObject33.Image = ((System.Drawing.Image)(resources.GetObject("plcObject33.Image")));
             this.plcObject33.Location = new System.Drawing.Point(764, 674);
@@ -3777,9 +3750,9 @@
             this.plcObject7._EqBase = null;
             this.plcObject7._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject7._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
-            this.plcObject7._PlcDevice = "PLC_DO_MFC_1";
+            this.plcObject7._PlcDevice = "MFC_0309_Open_MC_Ar";
             this.plcObject7._PlcDisplayOffDevice = null;
-            this.plcObject7._PlcDisplayOnDevice = "PLC_DO_MFC_1";
+            this.plcObject7._PlcDisplayOnDevice = "MFC_0309_Open_MC_Ar";
             this.plcObject7._Reverse = false;
             this.plcObject7.Image = ((System.Drawing.Image)(resources.GetObject("plcObject7.Image")));
             this.plcObject7.Location = new System.Drawing.Point(1072, 449);
@@ -3795,9 +3768,9 @@
             this.plcObject32._EqBase = null;
             this.plcObject32._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject32._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject32._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject32._PlcDevice = "CaNC_0305_Open";
             this.plcObject32._PlcDisplayOffDevice = null;
-            this.plcObject32._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject32._PlcDisplayOnDevice = "CaNC_0305_Open";
             this.plcObject32._Reverse = false;
             this.plcObject32.Image = ((System.Drawing.Image)(resources.GetObject("plcObject32.Image")));
             this.plcObject32.Location = new System.Drawing.Point(683, 674);
@@ -3813,9 +3786,9 @@
             this.plcObject30._EqBase = null;
             this.plcObject30._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject30._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject30._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject30._PlcDevice = "CaNC_0206_Open";
             this.plcObject30._PlcDisplayOffDevice = null;
-            this.plcObject30._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject30._PlcDisplayOnDevice = "CaNC_0206_Open";
             this.plcObject30._Reverse = false;
             this.plcObject30.Image = ((System.Drawing.Image)(resources.GetObject("plcObject30.Image")));
             this.plcObject30.Location = new System.Drawing.Point(467, 674);
@@ -3831,9 +3804,9 @@
             this.plcObject29._EqBase = null;
             this.plcObject29._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject29._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject29._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject29._PlcDevice = "CaNC_0205_Open";
             this.plcObject29._PlcDisplayOffDevice = null;
-            this.plcObject29._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject29._PlcDisplayOnDevice = "CaNC_0205_Open";
             this.plcObject29._Reverse = false;
             this.plcObject29.Image = ((System.Drawing.Image)(resources.GetObject("plcObject29.Image")));
             this.plcObject29.Location = new System.Drawing.Point(386, 674);
@@ -3849,9 +3822,9 @@
             this.plcObject21._EqBase = null;
             this.plcObject21._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject21._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject21._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject21._PlcDevice = "CaNC_0401_Open";
             this.plcObject21._PlcDisplayOffDevice = null;
-            this.plcObject21._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject21._PlcDisplayOnDevice = "CaNC_0401_Open";
             this.plcObject21._Reverse = false;
             this.plcObject21.Image = ((System.Drawing.Image)(resources.GetObject("plcObject21.Image")));
             this.plcObject21.Location = new System.Drawing.Point(940, 527);
@@ -3867,9 +3840,9 @@
             this.plcObject27._EqBase = null;
             this.plcObject27._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject27._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject27._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject27._PlcDevice = "CaNC_0106_Open";
             this.plcObject27._PlcDisplayOffDevice = null;
-            this.plcObject27._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject27._PlcDisplayOnDevice = "CaNC_0106_Open";
             this.plcObject27._Reverse = false;
             this.plcObject27.Image = ((System.Drawing.Image)(resources.GetObject("plcObject27.Image")));
             this.plcObject27.Location = new System.Drawing.Point(179, 674);
@@ -3885,9 +3858,9 @@
             this.plcObject26._EqBase = null;
             this.plcObject26._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject26._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject26._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject26._PlcDevice = "CaNC_0105_Open";
             this.plcObject26._PlcDisplayOffDevice = null;
-            this.plcObject26._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject26._PlcDisplayOnDevice = "CaNC_0105_Open";
             this.plcObject26._Reverse = false;
             this.plcObject26.Image = ((System.Drawing.Image)(resources.GetObject("plcObject26.Image")));
             this.plcObject26.Location = new System.Drawing.Point(98, 674);
@@ -3903,9 +3876,9 @@
             this.plcObject24._EqBase = null;
             this.plcObject24._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject24._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject24._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject24._PlcDevice = "CaNC_0404_Open";
             this.plcObject24._PlcDisplayOffDevice = null;
-            this.plcObject24._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject24._PlcDisplayOnDevice = "CaNC_0404_Open";
             this.plcObject24._Reverse = false;
             this.plcObject24.Image = ((System.Drawing.Image)(resources.GetObject("plcObject24.Image")));
             this.plcObject24.Location = new System.Drawing.Point(1100, 527);
@@ -3921,9 +3894,9 @@
             this.plcObject20._EqBase = null;
             this.plcObject20._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject20._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject20._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject20._PlcDevice = "CaNC_0304_Open";
             this.plcObject20._PlcDisplayOffDevice = null;
-            this.plcObject20._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject20._PlcDisplayOnDevice = "CaNC_0304_Open";
             this.plcObject20._Reverse = false;
             this.plcObject20.Image = ((System.Drawing.Image)(resources.GetObject("plcObject20.Image")));
             this.plcObject20.Location = new System.Drawing.Point(806, 527);
@@ -3939,9 +3912,9 @@
             this.plcObject19._EqBase = null;
             this.plcObject19._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject19._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject19._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject19._PlcDevice = "CaNC_0303_Open";
             this.plcObject19._PlcDisplayOffDevice = null;
-            this.plcObject19._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject19._PlcDisplayOnDevice = "CaNC_0303_Open";
             this.plcObject19._Reverse = false;
             this.plcObject19.Image = ((System.Drawing.Image)(resources.GetObject("plcObject19.Image")));
             this.plcObject19.Location = new System.Drawing.Point(742, 527);
@@ -3957,9 +3930,9 @@
             this.plcObject18._EqBase = null;
             this.plcObject18._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject18._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject18._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject18._PlcDevice = "CaNC_0302_Open";
             this.plcObject18._PlcDisplayOffDevice = null;
-            this.plcObject18._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject18._PlcDisplayOnDevice = "CaNC_0302_Open";
             this.plcObject18._Reverse = false;
             this.plcObject18.Image = ((System.Drawing.Image)(resources.GetObject("plcObject18.Image")));
             this.plcObject18.Location = new System.Drawing.Point(705, 527);
@@ -3975,9 +3948,9 @@
             this.plcObject17._EqBase = null;
             this.plcObject17._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject17._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject17._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject17._PlcDevice = "CaNC_0301_Open";
             this.plcObject17._PlcDisplayOffDevice = null;
-            this.plcObject17._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject17._PlcDisplayOnDevice = "CaNC_0301_Open";
             this.plcObject17._Reverse = false;
             this.plcObject17.Image = ((System.Drawing.Image)(resources.GetObject("plcObject17.Image")));
             this.plcObject17.Location = new System.Drawing.Point(645, 527);
@@ -3993,9 +3966,9 @@
             this.plcObject16._EqBase = null;
             this.plcObject16._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject16._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject16._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject16._PlcDevice = "CaNC_0204_Open";
             this.plcObject16._PlcDisplayOffDevice = null;
-            this.plcObject16._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject16._PlcDisplayOnDevice = "CaNC_0204_Open";
             this.plcObject16._Reverse = false;
             this.plcObject16.Image = ((System.Drawing.Image)(resources.GetObject("plcObject16.Image")));
             this.plcObject16.Location = new System.Drawing.Point(509, 527);
@@ -4011,9 +3984,9 @@
             this.plcObject15._EqBase = null;
             this.plcObject15._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject15._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject15._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject15._PlcDevice = "CaNC_0203_Open";
             this.plcObject15._PlcDisplayOffDevice = null;
-            this.plcObject15._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject15._PlcDisplayOnDevice = "CaNC_0203_Open";
             this.plcObject15._Reverse = false;
             this.plcObject15.Image = ((System.Drawing.Image)(resources.GetObject("plcObject15.Image")));
             this.plcObject15.Location = new System.Drawing.Point(452, 527);
@@ -4029,9 +4002,9 @@
             this.plcObject13._EqBase = null;
             this.plcObject13._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject13._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject13._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject13._PlcDevice = "CaNC_0202_Open";
             this.plcObject13._PlcDisplayOffDevice = null;
-            this.plcObject13._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject13._PlcDisplayOnDevice = "CaNC_0202_Open";
             this.plcObject13._Reverse = false;
             this.plcObject13.Image = ((System.Drawing.Image)(resources.GetObject("plcObject13.Image")));
             this.plcObject13.Location = new System.Drawing.Point(408, 527);
@@ -4047,9 +4020,9 @@
             this.plcObject12._EqBase = null;
             this.plcObject12._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject12._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject12._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject12._PlcDevice = "CaNC_0201_Open";
             this.plcObject12._PlcDisplayOffDevice = null;
-            this.plcObject12._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject12._PlcDisplayOnDevice = "CaNC_0201_Open";
             this.plcObject12._Reverse = false;
             this.plcObject12.Image = ((System.Drawing.Image)(resources.GetObject("plcObject12.Image")));
             this.plcObject12.Location = new System.Drawing.Point(347, 527);
@@ -4065,9 +4038,9 @@
             this.plcObject11._EqBase = null;
             this.plcObject11._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject11._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject11._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject11._PlcDevice = "CaNC_0104_Open";
             this.plcObject11._PlcDisplayOffDevice = null;
-            this.plcObject11._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject11._PlcDisplayOnDevice = "CaNC_0104_Open";
             this.plcObject11._Reverse = false;
             this.plcObject11.Image = ((System.Drawing.Image)(resources.GetObject("plcObject11.Image")));
             this.plcObject11.Location = new System.Drawing.Point(220, 527);
@@ -4083,9 +4056,9 @@
             this.plcObject10._EqBase = null;
             this.plcObject10._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject10._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject10._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject10._PlcDevice = "CaNC_0103_Open";
             this.plcObject10._PlcDisplayOffDevice = null;
-            this.plcObject10._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject10._PlcDisplayOnDevice = "CaNC_0103_Open";
             this.plcObject10._Reverse = false;
             this.plcObject10.Image = ((System.Drawing.Image)(resources.GetObject("plcObject10.Image")));
             this.plcObject10.Location = new System.Drawing.Point(157, 527);
@@ -4101,9 +4074,9 @@
             this.plcObject9._EqBase = null;
             this.plcObject9._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject9._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject9._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject9._PlcDevice = "CaNC_0102_Open";
             this.plcObject9._PlcDisplayOffDevice = null;
-            this.plcObject9._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject9._PlcDisplayOnDevice = "CaNC_0102_Open";
             this.plcObject9._Reverse = false;
             this.plcObject9.Image = ((System.Drawing.Image)(resources.GetObject("plcObject9.Image")));
             this.plcObject9.Location = new System.Drawing.Point(120, 527);
@@ -4119,9 +4092,9 @@
             this.plcObject8._EqBase = null;
             this.plcObject8._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
             this.plcObject8._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
-            this.plcObject8._PlcDevice = "PLC_DO_VALVE_2";
+            this.plcObject8._PlcDevice = "CaNC_0101_Open";
             this.plcObject8._PlcDisplayOffDevice = null;
-            this.plcObject8._PlcDisplayOnDevice = "PLC_DO_VALVE_2";
+            this.plcObject8._PlcDisplayOnDevice = "CaNC_0101_Open";
             this.plcObject8._Reverse = false;
             this.plcObject8.Image = ((System.Drawing.Image)(resources.GetObject("plcObject8.Image")));
             this.plcObject8.Location = new System.Drawing.Point(61, 527);
@@ -4134,14 +4107,13 @@
             // inputTextBox4
             // 
             this.inputTextBox4._Division = 1;
-            this.inputTextBox4._DoubleWord = false;
             this.inputTextBox4._EqBase = null;
             this.inputTextBox4._FloatNumber = false;
             this.inputTextBox4._MaxLimit = 999D;
             this.inputTextBox4._MinLimit = 0D;
             this.inputTextBox4._Multiplication = 1;
             this.inputTextBox4._NumberOnly = true;
-            this.inputTextBox4._PlcDevice = "";
+            this.inputTextBox4._PlcDevice = "SET_MFC_0304_O2";
             this.inputTextBox4.BackColor = System.Drawing.Color.White;
             this.inputTextBox4.Location = new System.Drawing.Point(206, 759);
             this.inputTextBox4.Name = "inputTextBox4";
@@ -4152,14 +4124,13 @@
             // inputTextBox6
             // 
             this.inputTextBox6._Division = 1;
-            this.inputTextBox6._DoubleWord = false;
             this.inputTextBox6._EqBase = null;
             this.inputTextBox6._FloatNumber = false;
             this.inputTextBox6._MaxLimit = 999D;
             this.inputTextBox6._MinLimit = 0D;
             this.inputTextBox6._Multiplication = 1;
             this.inputTextBox6._NumberOnly = true;
-            this.inputTextBox6._PlcDevice = "";
+            this.inputTextBox6._PlcDevice = "SET_MFC_0308_O2";
             this.inputTextBox6.BackColor = System.Drawing.Color.White;
             this.inputTextBox6.Location = new System.Drawing.Point(827, 758);
             this.inputTextBox6.Name = "inputTextBox6";
@@ -4170,14 +4141,13 @@
             // inputTextBox2
             // 
             this.inputTextBox2._Division = 1;
-            this.inputTextBox2._DoubleWord = false;
             this.inputTextBox2._EqBase = null;
             this.inputTextBox2._FloatNumber = false;
             this.inputTextBox2._MaxLimit = 999D;
             this.inputTextBox2._MinLimit = 0D;
             this.inputTextBox2._Multiplication = 1;
             this.inputTextBox2._NumberOnly = true;
-            this.inputTextBox2._PlcDevice = "";
+            this.inputTextBox2._PlcDevice = "SET_MFC_0305_Ar";
             this.inputTextBox2.BackColor = System.Drawing.Color.White;
             this.inputTextBox2.Location = new System.Drawing.Point(520, 793);
             this.inputTextBox2.Name = "inputTextBox2";
@@ -4188,14 +4158,13 @@
             // inputTextBox1
             // 
             this.inputTextBox1._Division = 1;
-            this.inputTextBox1._DoubleWord = false;
             this.inputTextBox1._EqBase = null;
             this.inputTextBox1._FloatNumber = false;
             this.inputTextBox1._MaxLimit = 999D;
             this.inputTextBox1._MinLimit = 0D;
             this.inputTextBox1._Multiplication = 1;
             this.inputTextBox1._NumberOnly = true;
-            this.inputTextBox1._PlcDevice = "";
+            this.inputTextBox1._PlcDevice = "SET_MFC_0303_Ar";
             this.inputTextBox1.BackColor = System.Drawing.Color.White;
             this.inputTextBox1.Location = new System.Drawing.Point(206, 793);
             this.inputTextBox1.Name = "inputTextBox1";
@@ -4206,14 +4175,13 @@
             // inputTextBox7
             // 
             this.inputTextBox7._Division = 1;
-            this.inputTextBox7._DoubleWord = false;
             this.inputTextBox7._EqBase = null;
             this.inputTextBox7._FloatNumber = false;
             this.inputTextBox7._MaxLimit = 999D;
             this.inputTextBox7._MinLimit = 0D;
             this.inputTextBox7._Multiplication = 1;
             this.inputTextBox7._NumberOnly = true;
-            this.inputTextBox7._PlcDevice = "";
+            this.inputTextBox7._PlcDevice = "SET_MFC_0309_Ar";
             this.inputTextBox7.BackColor = System.Drawing.Color.White;
             this.inputTextBox7.Location = new System.Drawing.Point(1124, 792);
             this.inputTextBox7.Name = "inputTextBox7";
@@ -4224,14 +4192,13 @@
             // inputTextBox8
             // 
             this.inputTextBox8._Division = 1;
-            this.inputTextBox8._DoubleWord = false;
             this.inputTextBox8._EqBase = null;
             this.inputTextBox8._FloatNumber = false;
             this.inputTextBox8._MaxLimit = 999D;
             this.inputTextBox8._MinLimit = 0D;
             this.inputTextBox8._Multiplication = 1;
             this.inputTextBox8._NumberOnly = true;
-            this.inputTextBox8._PlcDevice = "";
+            this.inputTextBox8._PlcDevice = "SET_MFC_0310_O2";
             this.inputTextBox8.BackColor = System.Drawing.Color.White;
             this.inputTextBox8.Location = new System.Drawing.Point(1124, 758);
             this.inputTextBox8.Name = "inputTextBox8";
@@ -4242,14 +4209,13 @@
             // inputTextBox5
             // 
             this.inputTextBox5._Division = 1;
-            this.inputTextBox5._DoubleWord = false;
             this.inputTextBox5._EqBase = null;
             this.inputTextBox5._FloatNumber = false;
             this.inputTextBox5._MaxLimit = 999D;
             this.inputTextBox5._MinLimit = 0D;
             this.inputTextBox5._Multiplication = 1;
             this.inputTextBox5._NumberOnly = true;
-            this.inputTextBox5._PlcDevice = "";
+            this.inputTextBox5._PlcDevice = "SET_MFC_0307_Ar";
             this.inputTextBox5.BackColor = System.Drawing.Color.White;
             this.inputTextBox5.Location = new System.Drawing.Point(827, 792);
             this.inputTextBox5.Name = "inputTextBox5";
@@ -4261,9 +4227,9 @@
             // 
             this.controlBtn29._CurrentStatus = false;
             this.controlBtn29._EqBase = null;
-            this.controlBtn29._PlcDevice = "";
+            this.controlBtn29._PlcDevice = "Temp_Cool_ON";
             this.controlBtn29._PlcDisplayOffDevice = "";
-            this.controlBtn29._PlcDisplayOnDevice = "";
+            this.controlBtn29._PlcDisplayOnDevice = "Temp_Cool_ON";
             this.controlBtn29._ReadOnly = false;
             this.controlBtn29._Reverse = false;
             this.controlBtn29._Text = "小冰水機ON";
@@ -4280,14 +4246,13 @@
             // inputTextBox3
             // 
             this.inputTextBox3._Division = 1;
-            this.inputTextBox3._DoubleWord = false;
             this.inputTextBox3._EqBase = null;
             this.inputTextBox3._FloatNumber = false;
             this.inputTextBox3._MaxLimit = 999D;
             this.inputTextBox3._MinLimit = 0D;
             this.inputTextBox3._Multiplication = 1;
             this.inputTextBox3._NumberOnly = true;
-            this.inputTextBox3._PlcDevice = "";
+            this.inputTextBox3._PlcDevice = "SET_MFC_0306_O2";
             this.inputTextBox3.BackColor = System.Drawing.Color.White;
             this.inputTextBox3.Location = new System.Drawing.Point(520, 759);
             this.inputTextBox3.Name = "inputTextBox3";
@@ -4404,6 +4369,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.displayTextBox25);
+            this.tabPage2.Controls.Add(this.displayTextBox26);
+            this.tabPage2.Controls.Add(this.displayTextBox48);
+            this.tabPage2.Controls.Add(this.displayTextBox49);
+            this.tabPage2.Controls.Add(this.displayTextBox54);
+            this.tabPage2.Controls.Add(this.displayTextBox55);
             this.tabPage2.Controls.Add(this.label90);
             this.tabPage2.Controls.Add(this.label92);
             this.tabPage2.Controls.Add(this.label99);
@@ -4427,8 +4398,6 @@
             this.tabPage2.Controls.Add(this.tabControl2);
             this.tabPage2.Controls.Add(this.Label225);
             this.tabPage2.Controls.Add(this.Label228);
-            this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.label13);
             this.tabPage2.Controls.Add(this.label15);
             this.tabPage2.Controls.Add(this.label23);
@@ -4436,7 +4405,6 @@
             this.tabPage2.Controls.Add(this.label35);
             this.tabPage2.Controls.Add(this.label36);
             this.tabPage2.Controls.Add(this.label37);
-            this.tabPage2.Controls.Add(this.label38);
             this.tabPage2.Controls.Add(this.label54);
             this.tabPage2.Controls.Add(this.label55);
             this.tabPage2.Controls.Add(this.label39);
@@ -4463,9 +4431,7 @@
             this.tabPage2.Controls.Add(this.controlBtn14);
             this.tabPage2.Controls.Add(this.controlBtn13);
             this.tabPage2.Controls.Add(this.controlBtn12);
-            this.tabPage2.Controls.Add(this.controlBtn11);
             this.tabPage2.Controls.Add(this.controlBtn10);
-            this.tabPage2.Controls.Add(this.controlBtn9);
             this.tabPage2.Controls.Add(this.controlBtn8);
             this.tabPage2.Controls.Add(this.displayTextBox44);
             this.tabPage2.Controls.Add(this.displayTextBox45);
@@ -4483,54 +4449,26 @@
             this.tabPage2.Controls.Add(this.displayTextBox33);
             this.tabPage2.Controls.Add(this.displayTextBox34);
             this.tabPage2.Controls.Add(this.displayTextBox35);
-            this.tabPage2.Controls.Add(this.displayTextBox25);
-            this.tabPage2.Controls.Add(this.displayTextBox26);
-            this.tabPage2.Controls.Add(this.displayTextBox48);
-            this.tabPage2.Controls.Add(this.displayTextBox49);
             this.tabPage2.Controls.Add(this.displayTextBox50);
             this.tabPage2.Controls.Add(this.displayTextBox51);
             this.tabPage2.Controls.Add(this.displayTextBox52);
             this.tabPage2.Controls.Add(this.displayTextBox53);
-            this.tabPage2.Controls.Add(this.displayTextBox54);
-            this.tabPage2.Controls.Add(this.displayTextBox55);
-            this.tabPage2.Controls.Add(this.displayTextBox56);
-            this.tabPage2.Controls.Add(this.displayTextBox57);
             this.tabPage2.Controls.Add(this.displayTextBox58);
             this.tabPage2.Controls.Add(this.displayTextBox59);
             this.tabPage2.Controls.Add(this.displayTextBox60);
             this.tabPage2.Controls.Add(this.displayTextBox61);
             this.tabPage2.Controls.Add(this.inputTextBox70);
             this.tabPage2.Controls.Add(this.inputTextBox71);
-            this.tabPage2.Controls.Add(this.inputTextBox72);
-            this.tabPage2.Controls.Add(this.inputTextBox73);
             this.tabPage2.Controls.Add(this.inputTextBox66);
             this.tabPage2.Controls.Add(this.inputTextBox67);
-            this.tabPage2.Controls.Add(this.inputTextBox68);
-            this.tabPage2.Controls.Add(this.inputTextBox69);
             this.tabPage2.Controls.Add(this.inputTextBox62);
             this.tabPage2.Controls.Add(this.inputTextBox63);
-            this.tabPage2.Controls.Add(this.inputTextBox64);
-            this.tabPage2.Controls.Add(this.inputTextBox65);
             this.tabPage2.Controls.Add(this.inputTextBox58);
             this.tabPage2.Controls.Add(this.inputTextBox59);
-            this.tabPage2.Controls.Add(this.inputTextBox60);
-            this.tabPage2.Controls.Add(this.inputTextBox61);
-            this.tabPage2.Controls.Add(this.inputTextBox54);
-            this.tabPage2.Controls.Add(this.inputTextBox55);
-            this.tabPage2.Controls.Add(this.inputTextBox56);
-            this.tabPage2.Controls.Add(this.inputTextBox57);
             this.tabPage2.Controls.Add(this.inputTextBox50);
             this.tabPage2.Controls.Add(this.inputTextBox51);
-            this.tabPage2.Controls.Add(this.inputTextBox52);
-            this.tabPage2.Controls.Add(this.inputTextBox53);
-            this.tabPage2.Controls.Add(this.inputTextBox46);
-            this.tabPage2.Controls.Add(this.inputTextBox47);
-            this.tabPage2.Controls.Add(this.inputTextBox48);
-            this.tabPage2.Controls.Add(this.inputTextBox49);
             this.tabPage2.Controls.Add(this.inputTextBox45);
             this.tabPage2.Controls.Add(this.inputTextBox44);
-            this.tabPage2.Controls.Add(this.inputTextBox43);
-            this.tabPage2.Controls.Add(this.inputTextBox42);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -4538,6 +4476,108 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Other";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // displayTextBox25
+            // 
+            this.displayTextBox25._Division = ((short)(1));
+            this.displayTextBox25._DoubleWord = false;
+            this.displayTextBox25._EqBase = null;
+            this.displayTextBox25._MaxLimit = 999D;
+            this.displayTextBox25._MinLimit = 0D;
+            this.displayTextBox25._Multiplication = ((short)(1));
+            this.displayTextBox25._PlcDevice = "DC4_Power";
+            this.displayTextBox25.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox25.Location = new System.Drawing.Point(1130, 71);
+            this.displayTextBox25.Name = "displayTextBox25";
+            this.displayTextBox25.ReadOnly = true;
+            this.displayTextBox25.Size = new System.Drawing.Size(77, 25);
+            this.displayTextBox25.TabIndex = 2697;
+            this.displayTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox26
+            // 
+            this.displayTextBox26._Division = ((short)(1));
+            this.displayTextBox26._DoubleWord = false;
+            this.displayTextBox26._EqBase = null;
+            this.displayTextBox26._MaxLimit = 999D;
+            this.displayTextBox26._MinLimit = 0D;
+            this.displayTextBox26._Multiplication = ((short)(1));
+            this.displayTextBox26._PlcDevice = "DC3_Power";
+            this.displayTextBox26.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox26.Location = new System.Drawing.Point(1013, 71);
+            this.displayTextBox26.Name = "displayTextBox26";
+            this.displayTextBox26.ReadOnly = true;
+            this.displayTextBox26.Size = new System.Drawing.Size(77, 25);
+            this.displayTextBox26.TabIndex = 2696;
+            this.displayTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox48
+            // 
+            this.displayTextBox48._Division = ((short)(1));
+            this.displayTextBox48._DoubleWord = false;
+            this.displayTextBox48._EqBase = null;
+            this.displayTextBox48._MaxLimit = 999D;
+            this.displayTextBox48._MinLimit = 0D;
+            this.displayTextBox48._Multiplication = ((short)(1));
+            this.displayTextBox48._PlcDevice = "DC2_Power";
+            this.displayTextBox48.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox48.Location = new System.Drawing.Point(895, 71);
+            this.displayTextBox48.Name = "displayTextBox48";
+            this.displayTextBox48.ReadOnly = true;
+            this.displayTextBox48.Size = new System.Drawing.Size(77, 25);
+            this.displayTextBox48.TabIndex = 2695;
+            this.displayTextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox49
+            // 
+            this.displayTextBox49._Division = ((short)(1));
+            this.displayTextBox49._DoubleWord = false;
+            this.displayTextBox49._EqBase = null;
+            this.displayTextBox49._MaxLimit = 999D;
+            this.displayTextBox49._MinLimit = 0D;
+            this.displayTextBox49._Multiplication = ((short)(1));
+            this.displayTextBox49._PlcDevice = "DC1_Power";
+            this.displayTextBox49.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox49.Location = new System.Drawing.Point(774, 71);
+            this.displayTextBox49.Name = "displayTextBox49";
+            this.displayTextBox49.ReadOnly = true;
+            this.displayTextBox49.Size = new System.Drawing.Size(77, 25);
+            this.displayTextBox49.TabIndex = 2694;
+            this.displayTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox54
+            // 
+            this.displayTextBox54._Division = ((short)(1));
+            this.displayTextBox54._DoubleWord = false;
+            this.displayTextBox54._EqBase = null;
+            this.displayTextBox54._MaxLimit = 999D;
+            this.displayTextBox54._MinLimit = 0D;
+            this.displayTextBox54._Multiplication = ((short)(1));
+            this.displayTextBox54._PlcDevice = "MF2_Power";
+            this.displayTextBox54.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox54.Location = new System.Drawing.Point(643, 71);
+            this.displayTextBox54.Name = "displayTextBox54";
+            this.displayTextBox54.ReadOnly = true;
+            this.displayTextBox54.Size = new System.Drawing.Size(77, 25);
+            this.displayTextBox54.TabIndex = 2693;
+            this.displayTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox55
+            // 
+            this.displayTextBox55._Division = ((short)(1));
+            this.displayTextBox55._DoubleWord = false;
+            this.displayTextBox55._EqBase = null;
+            this.displayTextBox55._MaxLimit = 999D;
+            this.displayTextBox55._MinLimit = 0D;
+            this.displayTextBox55._Multiplication = ((short)(1));
+            this.displayTextBox55._PlcDevice = "MF1_Power";
+            this.displayTextBox55.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox55.Location = new System.Drawing.Point(525, 71);
+            this.displayTextBox55.Name = "displayTextBox55";
+            this.displayTextBox55.ReadOnly = true;
+            this.displayTextBox55.Size = new System.Drawing.Size(77, 25);
+            this.displayTextBox55.TabIndex = 2692;
+            this.displayTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label90
             // 
@@ -4826,9 +4866,9 @@
             // 
             this.controlBtn1._CurrentStatus = false;
             this.controlBtn1._EqBase = null;
-            this.controlBtn1._PlcDevice = "";
+            this.controlBtn1._PlcDevice = "Set_SpeedRun";
             this.controlBtn1._PlcDisplayOffDevice = "";
-            this.controlBtn1._PlcDisplayOnDevice = "";
+            this.controlBtn1._PlcDisplayOnDevice = "Set_SpeedRun";
             this.controlBtn1._ReadOnly = false;
             this.controlBtn1._Reverse = false;
             this.controlBtn1._Text = "Speed On";
@@ -4844,14 +4884,13 @@
             // inputTextBox11
             // 
             this.inputTextBox11._Division = 1;
-            this.inputTextBox11._DoubleWord = false;
             this.inputTextBox11._EqBase = null;
             this.inputTextBox11._FloatNumber = false;
             this.inputTextBox11._MaxLimit = 999D;
             this.inputTextBox11._MinLimit = 0D;
             this.inputTextBox11._Multiplication = 1;
             this.inputTextBox11._NumberOnly = true;
-            this.inputTextBox11._PlcDevice = "";
+            this.inputTextBox11._PlcDevice = "SETP_Convey_FallRate";
             this.inputTextBox11.BackColor = System.Drawing.Color.White;
             this.inputTextBox11.Location = new System.Drawing.Point(226, 592);
             this.inputTextBox11.Name = "inputTextBox11";
@@ -4862,14 +4901,13 @@
             // inputTextBox10
             // 
             this.inputTextBox10._Division = 1;
-            this.inputTextBox10._DoubleWord = false;
             this.inputTextBox10._EqBase = null;
             this.inputTextBox10._FloatNumber = false;
             this.inputTextBox10._MaxLimit = 999D;
             this.inputTextBox10._MinLimit = 0D;
             this.inputTextBox10._Multiplication = 1;
             this.inputTextBox10._NumberOnly = true;
-            this.inputTextBox10._PlcDevice = "";
+            this.inputTextBox10._PlcDevice = "SETP_Rewind_Caliber";
             this.inputTextBox10.BackColor = System.Drawing.Color.White;
             this.inputTextBox10.Location = new System.Drawing.Point(226, 564);
             this.inputTextBox10.Name = "inputTextBox10";
@@ -4880,14 +4918,13 @@
             // inputTextBox9
             // 
             this.inputTextBox9._Division = 1;
-            this.inputTextBox9._DoubleWord = false;
             this.inputTextBox9._EqBase = null;
             this.inputTextBox9._FloatNumber = false;
             this.inputTextBox9._MaxLimit = 999D;
             this.inputTextBox9._MinLimit = 0D;
             this.inputTextBox9._Multiplication = 1;
             this.inputTextBox9._NumberOnly = true;
-            this.inputTextBox9._PlcDevice = "";
+            this.inputTextBox9._PlcDevice = "SETP_Rewind_Tension";
             this.inputTextBox9.BackColor = System.Drawing.Color.White;
             this.inputTextBox9.Location = new System.Drawing.Point(226, 508);
             this.inputTextBox9.Name = "inputTextBox9";
@@ -4898,14 +4935,13 @@
             // inputTextBox12
             // 
             this.inputTextBox12._Division = 1;
-            this.inputTextBox12._DoubleWord = false;
             this.inputTextBox12._EqBase = null;
             this.inputTextBox12._FloatNumber = false;
             this.inputTextBox12._MaxLimit = 999D;
             this.inputTextBox12._MinLimit = 0D;
             this.inputTextBox12._Multiplication = 1;
             this.inputTextBox12._NumberOnly = true;
-            this.inputTextBox12._PlcDevice = "";
+            this.inputTextBox12._PlcDevice = "SETP_Discharge_Diameter";
             this.inputTextBox12.BackColor = System.Drawing.Color.White;
             this.inputTextBox12.Location = new System.Drawing.Point(226, 312);
             this.inputTextBox12.Name = "inputTextBox12";
@@ -4916,14 +4952,13 @@
             // inputTextBox13
             // 
             this.inputTextBox13._Division = 1;
-            this.inputTextBox13._DoubleWord = false;
             this.inputTextBox13._EqBase = null;
             this.inputTextBox13._FloatNumber = false;
             this.inputTextBox13._MaxLimit = 999D;
             this.inputTextBox13._MinLimit = 0D;
             this.inputTextBox13._Multiplication = 1;
             this.inputTextBox13._NumberOnly = true;
-            this.inputTextBox13._PlcDevice = "";
+            this.inputTextBox13._PlcDevice = "SETP_Discharge_Caliber";
             this.inputTextBox13.BackColor = System.Drawing.Color.White;
             this.inputTextBox13.Location = new System.Drawing.Point(226, 424);
             this.inputTextBox13.Name = "inputTextBox13";
@@ -4934,14 +4969,13 @@
             // inputTextBox14
             // 
             this.inputTextBox14._Division = 1;
-            this.inputTextBox14._DoubleWord = false;
             this.inputTextBox14._EqBase = null;
             this.inputTextBox14._FloatNumber = false;
             this.inputTextBox14._MaxLimit = 999D;
             this.inputTextBox14._MinLimit = 0D;
             this.inputTextBox14._Multiplication = 1;
             this.inputTextBox14._NumberOnly = true;
-            this.inputTextBox14._PlcDevice = "";
+            this.inputTextBox14._PlcDevice = "SETP_Discharge_Tension";
             this.inputTextBox14.BackColor = System.Drawing.Color.White;
             this.inputTextBox14.Location = new System.Drawing.Point(226, 368);
             this.inputTextBox14.Name = "inputTextBox14";
@@ -4952,14 +4986,13 @@
             // inputTextBox15
             // 
             this.inputTextBox15._Division = 1;
-            this.inputTextBox15._DoubleWord = false;
             this.inputTextBox15._EqBase = null;
             this.inputTextBox15._FloatNumber = false;
             this.inputTextBox15._MaxLimit = 999D;
             this.inputTextBox15._MinLimit = 0D;
             this.inputTextBox15._Multiplication = 1;
             this.inputTextBox15._NumberOnly = true;
-            this.inputTextBox15._PlcDevice = "";
+            this.inputTextBox15._PlcDevice = "SETP_Convey_ClipIN_Rate";
             this.inputTextBox15.BackColor = System.Drawing.Color.White;
             this.inputTextBox15.Location = new System.Drawing.Point(226, 284);
             this.inputTextBox15.Name = "inputTextBox15";
@@ -4970,14 +5003,13 @@
             // inputTextBox16
             // 
             this.inputTextBox16._Division = 1;
-            this.inputTextBox16._DoubleWord = false;
             this.inputTextBox16._EqBase = null;
             this.inputTextBox16._FloatNumber = false;
             this.inputTextBox16._MaxLimit = 999D;
             this.inputTextBox16._MinLimit = 0D;
             this.inputTextBox16._Multiplication = 1;
             this.inputTextBox16._NumberOnly = true;
-            this.inputTextBox16._PlcDevice = "";
+            this.inputTextBox16._PlcDevice = "SETP_Convey_ClipOUT_Rate";
             this.inputTextBox16.BackColor = System.Drawing.Color.White;
             this.inputTextBox16.Location = new System.Drawing.Point(226, 200);
             this.inputTextBox16.Name = "inputTextBox16";
@@ -4988,14 +5020,13 @@
             // inputTextBox17
             // 
             this.inputTextBox17._Division = 1;
-            this.inputTextBox17._DoubleWord = false;
             this.inputTextBox17._EqBase = null;
             this.inputTextBox17._FloatNumber = false;
             this.inputTextBox17._MaxLimit = 999D;
             this.inputTextBox17._MinLimit = 0D;
             this.inputTextBox17._Multiplication = 1;
             this.inputTextBox17._NumberOnly = true;
-            this.inputTextBox17._PlcDevice = "";
+            this.inputTextBox17._PlcDevice = "SETP_Convey_ProcessLength_Db";
             this.inputTextBox17.BackColor = System.Drawing.Color.White;
             this.inputTextBox17.Location = new System.Drawing.Point(226, 88);
             this.inputTextBox17.Name = "inputTextBox17";
@@ -5006,14 +5037,13 @@
             // inputTextBox18
             // 
             this.inputTextBox18._Division = 1;
-            this.inputTextBox18._DoubleWord = false;
             this.inputTextBox18._EqBase = null;
             this.inputTextBox18._FloatNumber = false;
             this.inputTextBox18._MaxLimit = 999D;
             this.inputTextBox18._MinLimit = 0D;
             this.inputTextBox18._Multiplication = 1;
             this.inputTextBox18._NumberOnly = true;
-            this.inputTextBox18._PlcDevice = "";
+            this.inputTextBox18._PlcDevice = "SETP_MaterialThickness";
             this.inputTextBox18.BackColor = System.Drawing.Color.White;
             this.inputTextBox18.Location = new System.Drawing.Point(226, 60);
             this.inputTextBox18.Name = "inputTextBox18";
@@ -5024,14 +5054,13 @@
             // inputTextBox19
             // 
             this.inputTextBox19._Division = 1;
-            this.inputTextBox19._DoubleWord = false;
             this.inputTextBox19._EqBase = null;
             this.inputTextBox19._FloatNumber = false;
             this.inputTextBox19._MaxLimit = 999D;
             this.inputTextBox19._MinLimit = 0D;
             this.inputTextBox19._Multiplication = 1;
             this.inputTextBox19._NumberOnly = true;
-            this.inputTextBox19._PlcDevice = "";
+            this.inputTextBox19._PlcDevice = "SETP_Convey_Speed";
             this.inputTextBox19.BackColor = System.Drawing.Color.White;
             this.inputTextBox19.Location = new System.Drawing.Point(226, 4);
             this.inputTextBox19.Name = "inputTextBox19";
@@ -5047,7 +5076,7 @@
             this.displayTextBox62._MaxLimit = 999D;
             this.displayTextBox62._MinLimit = 0D;
             this.displayTextBox62._Multiplication = ((short)(1));
-            this.displayTextBox62._PlcDevice = "";
+            this.displayTextBox62._PlcDevice = "Rewind_Torque";
             this.displayTextBox62.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox62.Location = new System.Drawing.Point(127, 536);
             this.displayTextBox62.Name = "displayTextBox62";
@@ -5064,7 +5093,7 @@
             this.displayTextBox63._MaxLimit = 999D;
             this.displayTextBox63._MinLimit = 0D;
             this.displayTextBox63._Multiplication = ((short)(1));
-            this.displayTextBox63._PlcDevice = "";
+            this.displayTextBox63._PlcDevice = "Rewind_Tension";
             this.displayTextBox63.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox63.Location = new System.Drawing.Point(127, 508);
             this.displayTextBox63.Name = "displayTextBox63";
@@ -5081,7 +5110,7 @@
             this.displayTextBox64._MaxLimit = 999D;
             this.displayTextBox64._MinLimit = 0D;
             this.displayTextBox64._Multiplication = ((short)(1));
-            this.displayTextBox64._PlcDevice = "";
+            this.displayTextBox64._PlcDevice = "Rewind_Length_Db";
             this.displayTextBox64.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox64.Location = new System.Drawing.Point(127, 480);
             this.displayTextBox64.Name = "displayTextBox64";
@@ -5098,7 +5127,7 @@
             this.displayTextBox65._MaxLimit = 999D;
             this.displayTextBox65._MinLimit = 0D;
             this.displayTextBox65._Multiplication = ((short)(1));
-            this.displayTextBox65._PlcDevice = "";
+            this.displayTextBox65._PlcDevice = "Rewind_Diameter";
             this.displayTextBox65.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox65.Location = new System.Drawing.Point(127, 452);
             this.displayTextBox65.Name = "displayTextBox65";
@@ -5115,7 +5144,7 @@
             this.displayTextBox66._MaxLimit = 999D;
             this.displayTextBox66._MinLimit = 0D;
             this.displayTextBox66._Multiplication = ((short)(1));
-            this.displayTextBox66._PlcDevice = "";
+            this.displayTextBox66._PlcDevice = "Discharge_Torque";
             this.displayTextBox66.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox66.Location = new System.Drawing.Point(127, 396);
             this.displayTextBox66.Name = "displayTextBox66";
@@ -5132,7 +5161,7 @@
             this.displayTextBox67._MaxLimit = 999D;
             this.displayTextBox67._MinLimit = 0D;
             this.displayTextBox67._Multiplication = ((short)(1));
-            this.displayTextBox67._PlcDevice = "";
+            this.displayTextBox67._PlcDevice = "Discharge_Tension";
             this.displayTextBox67.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox67.Location = new System.Drawing.Point(127, 368);
             this.displayTextBox67.Name = "displayTextBox67";
@@ -5149,7 +5178,7 @@
             this.displayTextBox68._MaxLimit = 999D;
             this.displayTextBox68._MinLimit = 0D;
             this.displayTextBox68._Multiplication = ((short)(1));
-            this.displayTextBox68._PlcDevice = "";
+            this.displayTextBox68._PlcDevice = "Discharge_Db";
             this.displayTextBox68.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox68.Location = new System.Drawing.Point(127, 340);
             this.displayTextBox68.Name = "displayTextBox68";
@@ -5166,7 +5195,7 @@
             this.displayTextBox69._MaxLimit = 999D;
             this.displayTextBox69._MinLimit = 0D;
             this.displayTextBox69._Multiplication = ((short)(1));
-            this.displayTextBox69._PlcDevice = "";
+            this.displayTextBox69._PlcDevice = "Discharge_Diameter";
             this.displayTextBox69.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox69.Location = new System.Drawing.Point(127, 312);
             this.displayTextBox69.Name = "displayTextBox69";
@@ -5183,7 +5212,7 @@
             this.displayTextBox70._MaxLimit = 999D;
             this.displayTextBox70._MinLimit = 0D;
             this.displayTextBox70._Multiplication = ((short)(1));
-            this.displayTextBox70._PlcDevice = "";
+            this.displayTextBox70._PlcDevice = "Convey_ClipOUT_Torque";
             this.displayTextBox70.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox70.Location = new System.Drawing.Point(127, 256);
             this.displayTextBox70.Name = "displayTextBox70";
@@ -5200,7 +5229,7 @@
             this.displayTextBox71._MaxLimit = 999D;
             this.displayTextBox71._MinLimit = 0D;
             this.displayTextBox71._Multiplication = ((short)(1));
-            this.displayTextBox71._PlcDevice = "";
+            this.displayTextBox71._PlcDevice = "Convey_ClipOUT_Speed";
             this.displayTextBox71.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox71.Location = new System.Drawing.Point(127, 228);
             this.displayTextBox71.Name = "displayTextBox71";
@@ -5217,7 +5246,7 @@
             this.displayTextBox72._MaxLimit = 999D;
             this.displayTextBox72._MinLimit = 0D;
             this.displayTextBox72._Multiplication = ((short)(1));
-            this.displayTextBox72._PlcDevice = "";
+            this.displayTextBox72._PlcDevice = "Convey_ClipIN_Torque";
             this.displayTextBox72.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox72.Location = new System.Drawing.Point(127, 172);
             this.displayTextBox72.Name = "displayTextBox72";
@@ -5234,7 +5263,7 @@
             this.displayTextBox73._MaxLimit = 999D;
             this.displayTextBox73._MinLimit = 0D;
             this.displayTextBox73._Multiplication = ((short)(1));
-            this.displayTextBox73._PlcDevice = "";
+            this.displayTextBox73._PlcDevice = "Convey_ClipIN_Speed";
             this.displayTextBox73.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox73.Location = new System.Drawing.Point(127, 144);
             this.displayTextBox73.Name = "displayTextBox73";
@@ -5251,7 +5280,7 @@
             this.displayTextBox74._MaxLimit = 999D;
             this.displayTextBox74._MinLimit = 0D;
             this.displayTextBox74._Multiplication = ((short)(1));
-            this.displayTextBox74._PlcDevice = "";
+            this.displayTextBox74._PlcDevice = "Convey_FallRate";
             this.displayTextBox74.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox74.Location = new System.Drawing.Point(127, 116);
             this.displayTextBox74.Name = "displayTextBox74";
@@ -5268,7 +5297,7 @@
             this.displayTextBox75._MaxLimit = 999D;
             this.displayTextBox75._MinLimit = 0D;
             this.displayTextBox75._Multiplication = ((short)(1));
-            this.displayTextBox75._PlcDevice = "";
+            this.displayTextBox75._PlcDevice = "Convey_ProcessLength_Db";
             this.displayTextBox75.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox75.Location = new System.Drawing.Point(127, 88);
             this.displayTextBox75.Name = "displayTextBox75";
@@ -5285,7 +5314,7 @@
             this.displayTextBox76._MaxLimit = 999D;
             this.displayTextBox76._MinLimit = 0D;
             this.displayTextBox76._Multiplication = ((short)(1));
-            this.displayTextBox76._PlcDevice = "";
+            this.displayTextBox76._PlcDevice = "Convey_MaterialLength_Db";
             this.displayTextBox76.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox76.Location = new System.Drawing.Point(127, 32);
             this.displayTextBox76.Name = "displayTextBox76";
@@ -5302,7 +5331,7 @@
             this.displayTextBox77._MaxLimit = 999D;
             this.displayTextBox77._MinLimit = 0D;
             this.displayTextBox77._Multiplication = ((short)(1));
-            this.displayTextBox77._PlcDevice = "";
+            this.displayTextBox77._PlcDevice = "Convey_Speed";
             this.displayTextBox77.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox77.Location = new System.Drawing.Point(127, 4);
             this.displayTextBox77.Name = "displayTextBox77";
@@ -5609,9 +5638,9 @@
             // 
             this.controlBtn70._CurrentStatus = false;
             this.controlBtn70._EqBase = null;
-            this.controlBtn70._PlcDevice = "";
+            this.controlBtn70._PlcDevice = "Set_Priority";
             this.controlBtn70._PlcDisplayOffDevice = "";
-            this.controlBtn70._PlcDisplayOnDevice = "";
+            this.controlBtn70._PlcDisplayOnDevice = "Set_Priority";
             this.controlBtn70._ReadOnly = false;
             this.controlBtn70._Reverse = false;
             this.controlBtn70._Text = "ON";
@@ -5628,9 +5657,9 @@
             // 
             this.controlBtn69._CurrentStatus = false;
             this.controlBtn69._EqBase = null;
-            this.controlBtn69._PlcDevice = "";
+            this.controlBtn69._PlcDevice = "Remove_length";
             this.controlBtn69._PlcDisplayOffDevice = "";
-            this.controlBtn69._PlcDisplayOnDevice = "";
+            this.controlBtn69._PlcDisplayOnDevice = "Remove_length";
             this.controlBtn69._ReadOnly = false;
             this.controlBtn69._Reverse = false;
             this.controlBtn69._Text = "ON";
@@ -5647,9 +5676,9 @@
             // 
             this.controlBtn68._CurrentStatus = false;
             this.controlBtn68._EqBase = null;
-            this.controlBtn68._PlcDevice = "";
+            this.controlBtn68._PlcDevice = "All_Remove_length";
             this.controlBtn68._PlcDisplayOffDevice = "";
-            this.controlBtn68._PlcDisplayOnDevice = "";
+            this.controlBtn68._PlcDisplayOnDevice = "All_Remove_length";
             this.controlBtn68._ReadOnly = false;
             this.controlBtn68._Reverse = false;
             this.controlBtn68._Text = "ON";
@@ -5666,9 +5695,9 @@
             // 
             this.controlBtn67._CurrentStatus = false;
             this.controlBtn67._EqBase = null;
-            this.controlBtn67._PlcDevice = "";
+            this.controlBtn67._PlcDevice = "Down_Rolor_Status";
             this.controlBtn67._PlcDisplayOffDevice = "";
-            this.controlBtn67._PlcDisplayOnDevice = "";
+            this.controlBtn67._PlcDisplayOnDevice = "Down_Rolor_Status";
             this.controlBtn67._ReadOnly = true;
             this.controlBtn67._Reverse = false;
             this.controlBtn67._Text = "下降";
@@ -5685,9 +5714,9 @@
             // 
             this.controlBtn66._CurrentStatus = false;
             this.controlBtn66._EqBase = null;
-            this.controlBtn66._PlcDevice = "";
+            this.controlBtn66._PlcDevice = "UP_Rolor_Status";
             this.controlBtn66._PlcDisplayOffDevice = "";
-            this.controlBtn66._PlcDisplayOnDevice = "";
+            this.controlBtn66._PlcDisplayOnDevice = "UP_Rolor_Status";
             this.controlBtn66._ReadOnly = true;
             this.controlBtn66._Reverse = false;
             this.controlBtn66._Text = "上升";
@@ -5704,28 +5733,28 @@
             // 
             this.controlBtn65._CurrentStatus = false;
             this.controlBtn65._EqBase = null;
-            this.controlBtn65._PlcDevice = "";
+            this.controlBtn65._PlcDevice = "Rolor_Control";
             this.controlBtn65._PlcDisplayOffDevice = "";
-            this.controlBtn65._PlcDisplayOnDevice = "";
+            this.controlBtn65._PlcDisplayOnDevice = "Rolor_Control";
             this.controlBtn65._ReadOnly = false;
             this.controlBtn65._Reverse = false;
-            this.controlBtn65._Text = "壓輪上升";
+            this.controlBtn65._Text = "壓輪升降";
             this.controlBtn65.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn65.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn65.Location = new System.Drawing.Point(276, 532);
             this.controlBtn65.Name = "controlBtn65";
             this.controlBtn65.Size = new System.Drawing.Size(71, 23);
             this.controlBtn65.TabIndex = 2148;
-            this.controlBtn65.Text = "壓輪上升";
+            this.controlBtn65.Text = "壓輪升降";
             this.controlBtn65.UseVisualStyleBackColor = false;
             // 
             // controlBtn64
             // 
             this.controlBtn64._CurrentStatus = false;
             this.controlBtn64._EqBase = null;
-            this.controlBtn64._PlcDevice = "";
+            this.controlBtn64._PlcDevice = "LineAll_Stop";
             this.controlBtn64._PlcDisplayOffDevice = "";
-            this.controlBtn64._PlcDisplayOnDevice = "";
+            this.controlBtn64._PlcDisplayOnDevice = "LineAll_Stop";
             this.controlBtn64._ReadOnly = false;
             this.controlBtn64._Reverse = false;
             this.controlBtn64._Text = "停止";
@@ -5742,9 +5771,9 @@
             // 
             this.controlBtn63._CurrentStatus = false;
             this.controlBtn63._EqBase = null;
-            this.controlBtn63._PlcDevice = "";
+            this.controlBtn63._PlcDevice = "Remove_RewindDiameter";
             this.controlBtn63._PlcDisplayOffDevice = "";
-            this.controlBtn63._PlcDisplayOnDevice = "";
+            this.controlBtn63._PlcDisplayOnDevice = "Remove_RewindDiameter";
             this.controlBtn63._ReadOnly = false;
             this.controlBtn63._Reverse = false;
             this.controlBtn63._Text = "重置";
@@ -5761,9 +5790,9 @@
             // 
             this.controlBtn62._CurrentStatus = false;
             this.controlBtn62._EqBase = null;
-            this.controlBtn62._PlcDevice = "";
+            this.controlBtn62._PlcDevice = "Remove_DischargeDiameter";
             this.controlBtn62._PlcDisplayOffDevice = "";
-            this.controlBtn62._PlcDisplayOnDevice = "";
+            this.controlBtn62._PlcDisplayOnDevice = "Remove_DischargeDiameter";
             this.controlBtn62._ReadOnly = false;
             this.controlBtn62._Reverse = false;
             this.controlBtn62._Text = "重置";
@@ -5780,9 +5809,9 @@
             // 
             this.controlBtn61._CurrentStatus = false;
             this.controlBtn61._EqBase = null;
-            this.controlBtn61._PlcDevice = "";
+            this.controlBtn61._PlcDevice = "LineAll_Start";
             this.controlBtn61._PlcDisplayOffDevice = "";
-            this.controlBtn61._PlcDisplayOnDevice = "";
+            this.controlBtn61._PlcDisplayOnDevice = "LineAll_Start";
             this.controlBtn61._ReadOnly = false;
             this.controlBtn61._Reverse = false;
             this.controlBtn61._Text = "啟動";
@@ -5799,9 +5828,9 @@
             // 
             this.controlBtn59._CurrentStatus = false;
             this.controlBtn59._EqBase = null;
-            this.controlBtn59._PlcDevice = "";
+            this.controlBtn59._PlcDevice = "Rewind_Reversal";
             this.controlBtn59._PlcDisplayOffDevice = "";
-            this.controlBtn59._PlcDisplayOnDevice = "";
+            this.controlBtn59._PlcDisplayOnDevice = "Rewind_Reversal";
             this.controlBtn59._ReadOnly = false;
             this.controlBtn59._Reverse = false;
             this.controlBtn59._Text = "順轉";
@@ -5818,9 +5847,9 @@
             // 
             this.controlBtn60._CurrentStatus = false;
             this.controlBtn60._EqBase = null;
-            this.controlBtn60._PlcDevice = "";
+            this.controlBtn60._PlcDevice = "Rewind_Forward";
             this.controlBtn60._PlcDisplayOffDevice = "";
-            this.controlBtn60._PlcDisplayOnDevice = "";
+            this.controlBtn60._PlcDisplayOnDevice = "Rewind_Forward";
             this.controlBtn60._ReadOnly = false;
             this.controlBtn60._Reverse = false;
             this.controlBtn60._Text = "逆轉";
@@ -5837,9 +5866,9 @@
             // 
             this.controlBtn57._CurrentStatus = false;
             this.controlBtn57._EqBase = null;
-            this.controlBtn57._PlcDevice = "";
+            this.controlBtn57._PlcDevice = "Discharge_Reversal";
             this.controlBtn57._PlcDisplayOffDevice = "";
-            this.controlBtn57._PlcDisplayOnDevice = "";
+            this.controlBtn57._PlcDisplayOnDevice = "Discharge_Reversal";
             this.controlBtn57._ReadOnly = false;
             this.controlBtn57._Reverse = false;
             this.controlBtn57._Text = "順轉";
@@ -5856,9 +5885,9 @@
             // 
             this.controlBtn58._CurrentStatus = false;
             this.controlBtn58._EqBase = null;
-            this.controlBtn58._PlcDevice = "";
+            this.controlBtn58._PlcDevice = "Discharge_Forward";
             this.controlBtn58._PlcDisplayOffDevice = "";
-            this.controlBtn58._PlcDisplayOnDevice = "";
+            this.controlBtn58._PlcDisplayOnDevice = "Discharge_Forward";
             this.controlBtn58._ReadOnly = false;
             this.controlBtn58._Reverse = false;
             this.controlBtn58._Text = "逆轉";
@@ -5875,9 +5904,9 @@
             // 
             this.controlBtn55._CurrentStatus = false;
             this.controlBtn55._EqBase = null;
-            this.controlBtn55._PlcDevice = "";
+            this.controlBtn55._PlcDevice = "Host_Reversal";
             this.controlBtn55._PlcDisplayOffDevice = "";
-            this.controlBtn55._PlcDisplayOnDevice = "";
+            this.controlBtn55._PlcDisplayOnDevice = "Host_Reversal";
             this.controlBtn55._ReadOnly = false;
             this.controlBtn55._Reverse = false;
             this.controlBtn55._Text = "順轉";
@@ -5894,9 +5923,9 @@
             // 
             this.controlBtn54._CurrentStatus = false;
             this.controlBtn54._EqBase = null;
-            this.controlBtn54._PlcDevice = "";
+            this.controlBtn54._PlcDevice = "Tension_Start";
             this.controlBtn54._PlcDisplayOffDevice = "";
-            this.controlBtn54._PlcDisplayOnDevice = "";
+            this.controlBtn54._PlcDisplayOnDevice = "Tension_Start";
             this.controlBtn54._ReadOnly = false;
             this.controlBtn54._Reverse = false;
             this.controlBtn54._Text = "啟動";
@@ -5913,9 +5942,9 @@
             // 
             this.controlBtn56._CurrentStatus = false;
             this.controlBtn56._EqBase = null;
-            this.controlBtn56._PlcDevice = "";
+            this.controlBtn56._PlcDevice = "Host_Forward";
             this.controlBtn56._PlcDisplayOffDevice = "";
-            this.controlBtn56._PlcDisplayOnDevice = "";
+            this.controlBtn56._PlcDisplayOnDevice = "Host_Forward";
             this.controlBtn56._ReadOnly = false;
             this.controlBtn56._Reverse = false;
             this.controlBtn56._Text = "逆轉";
@@ -5932,9 +5961,9 @@
             // 
             this.controlBtn53._CurrentStatus = false;
             this.controlBtn53._EqBase = null;
-            this.controlBtn53._PlcDevice = "";
+            this.controlBtn53._PlcDevice = "Manual_Acc";
             this.controlBtn53._PlcDisplayOffDevice = "";
-            this.controlBtn53._PlcDisplayOnDevice = "";
+            this.controlBtn53._PlcDisplayOnDevice = "Manual_Acc";
             this.controlBtn53._ReadOnly = false;
             this.controlBtn53._Reverse = false;
             this.controlBtn53._Text = "加速";
@@ -5951,9 +5980,9 @@
             // 
             this.controlBtn48._CurrentStatus = false;
             this.controlBtn48._EqBase = null;
-            this.controlBtn48._PlcDevice = "";
+            this.controlBtn48._PlcDevice = "Manual_Dec";
             this.controlBtn48._PlcDisplayOffDevice = "";
-            this.controlBtn48._PlcDisplayOnDevice = "";
+            this.controlBtn48._PlcDisplayOnDevice = "Manual_Dec";
             this.controlBtn48._ReadOnly = false;
             this.controlBtn48._Reverse = false;
             this.controlBtn48._Text = "減速";
@@ -5970,9 +5999,9 @@
             // 
             this.controlBtn49._CurrentStatus = false;
             this.controlBtn49._EqBase = null;
-            this.controlBtn49._PlcDevice = "";
+            this.controlBtn49._PlcDevice = "Rewind_DiameterReset";
             this.controlBtn49._PlcDisplayOffDevice = "";
-            this.controlBtn49._PlcDisplayOnDevice = "";
+            this.controlBtn49._PlcDisplayOnDevice = "Rewind_DiameterReset";
             this.controlBtn49._ReadOnly = true;
             this.controlBtn49._Reverse = false;
             this.controlBtn49._Text = "ON";
@@ -5989,9 +6018,9 @@
             // 
             this.controlBtn50._CurrentStatus = false;
             this.controlBtn50._EqBase = null;
-            this.controlBtn50._PlcDevice = "";
+            this.controlBtn50._PlcDevice = "Discharge_DiameterReset";
             this.controlBtn50._PlcDisplayOffDevice = "";
-            this.controlBtn50._PlcDisplayOnDevice = "";
+            this.controlBtn50._PlcDisplayOnDevice = "Discharge_DiameterReset";
             this.controlBtn50._ReadOnly = true;
             this.controlBtn50._Reverse = false;
             this.controlBtn50._Text = "ON";
@@ -6008,9 +6037,9 @@
             // 
             this.controlBtn51._CurrentStatus = false;
             this.controlBtn51._EqBase = null;
-            this.controlBtn51._PlcDevice = "";
+            this.controlBtn51._PlcDevice = "Speed_RatioAlarm";
             this.controlBtn51._PlcDisplayOffDevice = "";
-            this.controlBtn51._PlcDisplayOnDevice = "";
+            this.controlBtn51._PlcDisplayOnDevice = "Speed_RatioAlarm";
             this.controlBtn51._ReadOnly = true;
             this.controlBtn51._Reverse = false;
             this.controlBtn51._Text = "ON";
@@ -6027,9 +6056,9 @@
             // 
             this.controlBtn52._CurrentStatus = false;
             this.controlBtn52._EqBase = null;
-            this.controlBtn52._PlcDevice = "";
+            this.controlBtn52._PlcDevice = "Link_Avail";
             this.controlBtn52._PlcDisplayOffDevice = "";
-            this.controlBtn52._PlcDisplayOnDevice = "";
+            this.controlBtn52._PlcDisplayOnDevice = "Link_Avail";
             this.controlBtn52._ReadOnly = true;
             this.controlBtn52._Reverse = false;
             this.controlBtn52._Text = "ON";
@@ -6046,9 +6075,9 @@
             // 
             this.controlBtn40._CurrentStatus = false;
             this.controlBtn40._EqBase = null;
-            this.controlBtn40._PlcDevice = "";
+            this.controlBtn40._PlcDevice = "Rewind_TensionAlarm";
             this.controlBtn40._PlcDisplayOffDevice = "";
-            this.controlBtn40._PlcDisplayOnDevice = "";
+            this.controlBtn40._PlcDisplayOnDevice = "Rewind_TensionAlarm";
             this.controlBtn40._ReadOnly = true;
             this.controlBtn40._Reverse = false;
             this.controlBtn40._Text = "ON";
@@ -6065,9 +6094,9 @@
             // 
             this.controlBtn41._CurrentStatus = false;
             this.controlBtn41._EqBase = null;
-            this.controlBtn41._PlcDevice = "";
+            this.controlBtn41._PlcDevice = "Discharge_TensionAlarm";
             this.controlBtn41._PlcDisplayOffDevice = "";
-            this.controlBtn41._PlcDisplayOnDevice = "";
+            this.controlBtn41._PlcDisplayOnDevice = "Discharge_TensionAlarm";
             this.controlBtn41._ReadOnly = true;
             this.controlBtn41._Reverse = false;
             this.controlBtn41._Text = "ON";
@@ -6084,9 +6113,9 @@
             // 
             this.controlBtn42._CurrentStatus = false;
             this.controlBtn42._EqBase = null;
-            this.controlBtn42._PlcDevice = "";
+            this.controlBtn42._PlcDevice = "Uload_MotorAlarm";
             this.controlBtn42._PlcDisplayOffDevice = "";
-            this.controlBtn42._PlcDisplayOnDevice = "";
+            this.controlBtn42._PlcDisplayOnDevice = "Uload_MotorAlarm";
             this.controlBtn42._ReadOnly = true;
             this.controlBtn42._Reverse = false;
             this.controlBtn42._Text = "ON";
@@ -6103,9 +6132,9 @@
             // 
             this.controlBtn43._CurrentStatus = false;
             this.controlBtn43._EqBase = null;
-            this.controlBtn43._PlcDevice = "";
+            this.controlBtn43._PlcDevice = "Load_MotorAlarm";
             this.controlBtn43._PlcDisplayOffDevice = "";
-            this.controlBtn43._PlcDisplayOnDevice = "";
+            this.controlBtn43._PlcDisplayOnDevice = "Load_MotorAlarm";
             this.controlBtn43._ReadOnly = true;
             this.controlBtn43._Reverse = false;
             this.controlBtn43._Text = "ON";
@@ -6122,9 +6151,9 @@
             // 
             this.controlBtn44._CurrentStatus = false;
             this.controlBtn44._EqBase = null;
-            this.controlBtn44._PlcDevice = "";
+            this.controlBtn44._PlcDevice = "Host_MotorAlarm";
             this.controlBtn44._PlcDisplayOffDevice = "";
-            this.controlBtn44._PlcDisplayOnDevice = "";
+            this.controlBtn44._PlcDisplayOnDevice = "Host_MotorAlarm";
             this.controlBtn44._ReadOnly = true;
             this.controlBtn44._Reverse = false;
             this.controlBtn44._Text = "ON";
@@ -6141,9 +6170,9 @@
             // 
             this.controlBtn45._CurrentStatus = false;
             this.controlBtn45._EqBase = null;
-            this.controlBtn45._PlcDevice = "";
+            this.controlBtn45._PlcDevice = "Rewind_MotorAlarm";
             this.controlBtn45._PlcDisplayOffDevice = "";
-            this.controlBtn45._PlcDisplayOnDevice = "";
+            this.controlBtn45._PlcDisplayOnDevice = "Rewind_MotorAlarm";
             this.controlBtn45._ReadOnly = true;
             this.controlBtn45._Reverse = false;
             this.controlBtn45._Text = "ON";
@@ -6160,9 +6189,9 @@
             // 
             this.controlBtn46._CurrentStatus = false;
             this.controlBtn46._EqBase = null;
-            this.controlBtn46._PlcDevice = "";
+            this.controlBtn46._PlcDevice = "Discharge_MotorAlarm";
             this.controlBtn46._PlcDisplayOffDevice = "";
-            this.controlBtn46._PlcDisplayOnDevice = "";
+            this.controlBtn46._PlcDisplayOnDevice = "Discharge_MotorAlarm";
             this.controlBtn46._ReadOnly = true;
             this.controlBtn46._Reverse = false;
             this.controlBtn46._Text = "ON";
@@ -6179,9 +6208,9 @@
             // 
             this.controlBtn47._CurrentStatus = false;
             this.controlBtn47._EqBase = null;
-            this.controlBtn47._PlcDevice = "";
+            this.controlBtn47._PlcDevice = "Rewind_EPC_Start";
             this.controlBtn47._PlcDisplayOffDevice = "";
-            this.controlBtn47._PlcDisplayOnDevice = "";
+            this.controlBtn47._PlcDisplayOnDevice = "Rewind_EPC_Start";
             this.controlBtn47._ReadOnly = true;
             this.controlBtn47._Reverse = false;
             this.controlBtn47._Text = "ON";
@@ -6198,9 +6227,9 @@
             // 
             this.controlBtn36._CurrentStatus = false;
             this.controlBtn36._EqBase = null;
-            this.controlBtn36._PlcDevice = "";
+            this.controlBtn36._PlcDevice = "Discharge_EPC_Start";
             this.controlBtn36._PlcDisplayOffDevice = "";
-            this.controlBtn36._PlcDisplayOnDevice = "";
+            this.controlBtn36._PlcDisplayOnDevice = "Discharge_EPC_Start";
             this.controlBtn36._ReadOnly = true;
             this.controlBtn36._Reverse = false;
             this.controlBtn36._Text = "ON";
@@ -6217,9 +6246,9 @@
             // 
             this.controlBtn37._CurrentStatus = false;
             this.controlBtn37._EqBase = null;
-            this.controlBtn37._PlcDevice = "";
+            this.controlBtn37._PlcDevice = "Rewind_Steering";
             this.controlBtn37._PlcDisplayOffDevice = "";
-            this.controlBtn37._PlcDisplayOnDevice = "";
+            this.controlBtn37._PlcDisplayOnDevice = "Rewind_Steering";
             this.controlBtn37._ReadOnly = true;
             this.controlBtn37._Reverse = false;
             this.controlBtn37._Text = "ON";
@@ -6236,9 +6265,9 @@
             // 
             this.controlBtn38._CurrentStatus = false;
             this.controlBtn38._EqBase = null;
-            this.controlBtn38._PlcDevice = "";
+            this.controlBtn38._PlcDevice = "Discharge_Steering";
             this.controlBtn38._PlcDisplayOffDevice = "";
-            this.controlBtn38._PlcDisplayOnDevice = "";
+            this.controlBtn38._PlcDisplayOnDevice = "Discharge_Steering";
             this.controlBtn38._ReadOnly = true;
             this.controlBtn38._Reverse = false;
             this.controlBtn38._Text = "ON";
@@ -6255,9 +6284,9 @@
             // 
             this.controlBtn39._CurrentStatus = false;
             this.controlBtn39._EqBase = null;
-            this.controlBtn39._PlcDevice = "";
+            this.controlBtn39._PlcDevice = "Host_Steering";
             this.controlBtn39._PlcDisplayOffDevice = "";
-            this.controlBtn39._PlcDisplayOnDevice = "";
+            this.controlBtn39._PlcDisplayOnDevice = "Host_Steering";
             this.controlBtn39._ReadOnly = true;
             this.controlBtn39._Reverse = false;
             this.controlBtn39._Text = "ON";
@@ -6274,9 +6303,9 @@
             // 
             this.controlBtn34._CurrentStatus = false;
             this.controlBtn34._EqBase = null;
-            this.controlBtn34._PlcDevice = "";
+            this.controlBtn34._PlcDevice = "Meters_Ready";
             this.controlBtn34._PlcDisplayOffDevice = "";
-            this.controlBtn34._PlcDisplayOnDevice = "";
+            this.controlBtn34._PlcDisplayOnDevice = "Meters_Ready";
             this.controlBtn34._ReadOnly = true;
             this.controlBtn34._Reverse = false;
             this.controlBtn34._Text = "ON";
@@ -6293,9 +6322,9 @@
             // 
             this.controlBtn35._CurrentStatus = false;
             this.controlBtn35._EqBase = null;
-            this.controlBtn35._PlcDevice = "";
+            this.controlBtn35._PlcDevice = "AutoAcc_Ready";
             this.controlBtn35._PlcDisplayOffDevice = "";
-            this.controlBtn35._PlcDisplayOnDevice = "";
+            this.controlBtn35._PlcDisplayOnDevice = "AutoAcc_Ready";
             this.controlBtn35._ReadOnly = true;
             this.controlBtn35._Reverse = false;
             this.controlBtn35._Text = "ON";
@@ -6312,9 +6341,9 @@
             // 
             this.controlBtn33._CurrentStatus = false;
             this.controlBtn33._EqBase = null;
-            this.controlBtn33._PlcDevice = "";
+            this.controlBtn33._PlcDevice = "TensionStart";
             this.controlBtn33._PlcDisplayOffDevice = "";
-            this.controlBtn33._PlcDisplayOnDevice = "";
+            this.controlBtn33._PlcDisplayOnDevice = "TensionStart";
             this.controlBtn33._ReadOnly = true;
             this.controlBtn33._Reverse = false;
             this.controlBtn33._Text = "ON";
@@ -6331,9 +6360,9 @@
             // 
             this.controlBtn32._CurrentStatus = false;
             this.controlBtn32._EqBase = null;
-            this.controlBtn32._PlcDevice = "";
+            this.controlBtn32._PlcDevice = "ServoStart";
             this.controlBtn32._PlcDisplayOffDevice = "";
-            this.controlBtn32._PlcDisplayOnDevice = "";
+            this.controlBtn32._PlcDisplayOnDevice = "ServoStart";
             this.controlBtn32._ReadOnly = true;
             this.controlBtn32._Reverse = false;
             this.controlBtn32._Text = "ON";
@@ -6610,43 +6639,21 @@
             // Label228
             // 
             this.Label228.AutoSize = true;
-            this.Label228.Location = new System.Drawing.Point(401, 191);
+            this.Label228.Location = new System.Drawing.Point(400, 342);
             this.Label228.Name = "Label228";
             this.Label228.Size = new System.Drawing.Size(106, 17);
             this.Label228.TabIndex = 2563;
             this.Label228.Text = "Pre_Sputter(sec)";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(882, 47);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 17);
-            this.label11.TabIndex = 2562;
-            this.label11.Text = "MF2_2(10kw)";
-            this.label11.Visible = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(641, 46);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 17);
-            this.label12.TabIndex = 2561;
-            this.label12.Text = "MF2_1 (10kw)";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(762, 48);
+            this.label13.Location = new System.Drawing.Point(641, 48);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(94, 17);
             this.label13.TabIndex = 2560;
             this.label13.Text = "MF1_2 (10kw)";
-            this.label13.Visible = false;
             // 
             // label15
             // 
@@ -6661,7 +6668,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(400, 411);
+            this.label23.Location = new System.Drawing.Point(399, 387);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(71, 17);
             this.label23.TabIndex = 2558;
@@ -6670,7 +6677,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(401, 315);
+            this.label32.Location = new System.Drawing.Point(405, 114);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(78, 17);
             this.label32.TabIndex = 2557;
@@ -6679,7 +6686,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(401, 360);
+            this.label35.Location = new System.Drawing.Point(405, 159);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(80, 17);
             this.label35.TabIndex = 2556;
@@ -6688,7 +6695,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(401, 273);
+            this.label36.Location = new System.Drawing.Point(405, 72);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(88, 17);
             this.label36.TabIndex = 2555;
@@ -6697,34 +6704,25 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(400, 75);
+            this.label37.Location = new System.Drawing.Point(407, 201);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(88, 17);
+            this.label37.Size = new System.Drawing.Size(75, 17);
             this.label37.TabIndex = 2551;
-            this.label37.Text = "開始功率 (kw)";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(400, 112);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(88, 17);
-            this.label38.TabIndex = 2552;
-            this.label38.Text = "結束功率 (kw)";
+            this.label37.Text = "Power ARC";
             // 
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(401, 233);
+            this.label54.Location = new System.Drawing.Point(384, 243);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(88, 17);
+            this.label54.Size = new System.Drawing.Size(135, 17);
             this.label54.TabIndex = 2554;
-            this.label54.Text = "設定功率 (kw)";
+            this.label54.Text = "實際 Pre_Sputter(sec)";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(401, 155);
+            this.label55.Location = new System.Drawing.Point(397, 294);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(88, 17);
             this.label55.TabIndex = 2553;
@@ -6734,7 +6732,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.ForeColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(1197, 46);
+            this.label39.Location = new System.Drawing.Point(1127, 46);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(93, 17);
             this.label39.TabIndex = 2550;
@@ -6744,7 +6742,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.ForeColor = System.Drawing.Color.Black;
-            this.label40.Location = new System.Drawing.Point(1302, 46);
+            this.label40.Location = new System.Drawing.Point(1010, 46);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(93, 17);
             this.label40.TabIndex = 2549;
@@ -6754,7 +6752,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.ForeColor = System.Drawing.Color.Black;
-            this.label41.Location = new System.Drawing.Point(996, 46);
+            this.label41.Location = new System.Drawing.Point(892, 46);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(93, 17);
             this.label41.TabIndex = 2548;
@@ -6764,7 +6762,7 @@
             // 
             this.label42.AutoSize = true;
             this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(1095, 46);
+            this.label42.Location = new System.Drawing.Point(771, 46);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(93, 17);
             this.label42.TabIndex = 2547;
@@ -6778,7 +6776,7 @@
             this.displayTextBox82._MaxLimit = 999D;
             this.displayTextBox82._MinLimit = 0D;
             this.displayTextBox82._Multiplication = ((short)(1));
-            this.displayTextBox82._PlcDevice = "";
+            this.displayTextBox82._PlcDevice = "MI3_Temp_PV_M2_6";
             this.displayTextBox82.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox82.Location = new System.Drawing.Point(1341, 511);
             this.displayTextBox82.Name = "displayTextBox82";
@@ -6795,7 +6793,7 @@
             this.displayTextBox83._MaxLimit = 999D;
             this.displayTextBox83._MinLimit = 0D;
             this.displayTextBox83._Multiplication = ((short)(1));
-            this.displayTextBox83._PlcDevice = "";
+            this.displayTextBox83._PlcDevice = "MI3_Temp_PV_M2_5";
             this.displayTextBox83.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox83.Location = new System.Drawing.Point(1281, 511);
             this.displayTextBox83.Name = "displayTextBox83";
@@ -6812,7 +6810,7 @@
             this.displayTextBox84._MaxLimit = 999D;
             this.displayTextBox84._MinLimit = 0D;
             this.displayTextBox84._Multiplication = ((short)(1));
-            this.displayTextBox84._PlcDevice = "";
+            this.displayTextBox84._PlcDevice = "MI3_Temp_PV_M2_4";
             this.displayTextBox84.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox84.Location = new System.Drawing.Point(1221, 511);
             this.displayTextBox84.Name = "displayTextBox84";
@@ -6829,7 +6827,7 @@
             this.displayTextBox85._MaxLimit = 999D;
             this.displayTextBox85._MinLimit = 0D;
             this.displayTextBox85._Multiplication = ((short)(1));
-            this.displayTextBox85._PlcDevice = "";
+            this.displayTextBox85._PlcDevice = "MI3_Temp_PV_M2_3";
             this.displayTextBox85.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox85.Location = new System.Drawing.Point(1161, 511);
             this.displayTextBox85.Name = "displayTextBox85";
@@ -6846,7 +6844,7 @@
             this.displayTextBox86._MaxLimit = 999D;
             this.displayTextBox86._MinLimit = 0D;
             this.displayTextBox86._Multiplication = ((short)(1));
-            this.displayTextBox86._PlcDevice = "";
+            this.displayTextBox86._PlcDevice = "MI3_Temp_PV_M2_2";
             this.displayTextBox86.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox86.Location = new System.Drawing.Point(1101, 511);
             this.displayTextBox86.Name = "displayTextBox86";
@@ -6863,7 +6861,7 @@
             this.displayTextBox87._MaxLimit = 999D;
             this.displayTextBox87._MinLimit = 0D;
             this.displayTextBox87._Multiplication = ((short)(1));
-            this.displayTextBox87._PlcDevice = "";
+            this.displayTextBox87._PlcDevice = "MI3_Temp_PV_M2_1";
             this.displayTextBox87.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox87.Location = new System.Drawing.Point(1041, 511);
             this.displayTextBox87.Name = "displayTextBox87";
@@ -6876,9 +6874,9 @@
             // 
             this.controlBtn3._CurrentStatus = false;
             this.controlBtn3._EqBase = null;
-            this.controlBtn3._PlcDevice = "";
+            this.controlBtn3._PlcDevice = "Heater_Bypass";
             this.controlBtn3._PlcDisplayOffDevice = "";
-            this.controlBtn3._PlcDisplayOnDevice = "";
+            this.controlBtn3._PlcDisplayOnDevice = "Heater_Bypass";
             this.controlBtn3._ReadOnly = false;
             this.controlBtn3._Reverse = false;
             this.controlBtn3._Text = "ON";
@@ -6895,9 +6893,9 @@
             // 
             this.controlBtn2._CurrentStatus = false;
             this.controlBtn2._EqBase = null;
-            this.controlBtn2._PlcDevice = "";
+            this.controlBtn2._PlcDevice = "Heater_Service_On_YMC_M2";
             this.controlBtn2._PlcDisplayOffDevice = "";
-            this.controlBtn2._PlcDisplayOnDevice = "";
+            this.controlBtn2._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.controlBtn2._ReadOnly = false;
             this.controlBtn2._Reverse = false;
             this.controlBtn2._Text = "ON";
@@ -6913,14 +6911,13 @@
             // inputTextBox23
             // 
             this.inputTextBox23._Division = 1;
-            this.inputTextBox23._DoubleWord = false;
             this.inputTextBox23._EqBase = null;
             this.inputTextBox23._FloatNumber = false;
             this.inputTextBox23._MaxLimit = 999D;
             this.inputTextBox23._MinLimit = 0D;
             this.inputTextBox23._Multiplication = 1;
             this.inputTextBox23._NumberOnly = true;
-            this.inputTextBox23._PlcDevice = "";
+            this.inputTextBox23._PlcDevice = "Heater4_SV";
             this.inputTextBox23.BackColor = System.Drawing.Color.White;
             this.inputTextBox23.Location = new System.Drawing.Point(676, 528);
             this.inputTextBox23.Name = "inputTextBox23";
@@ -6931,14 +6928,13 @@
             // inputTextBox22
             // 
             this.inputTextBox22._Division = 1;
-            this.inputTextBox22._DoubleWord = false;
             this.inputTextBox22._EqBase = null;
             this.inputTextBox22._FloatNumber = false;
             this.inputTextBox22._MaxLimit = 999D;
             this.inputTextBox22._MinLimit = 0D;
             this.inputTextBox22._Multiplication = 1;
             this.inputTextBox22._NumberOnly = true;
-            this.inputTextBox22._PlcDevice = "";
+            this.inputTextBox22._PlcDevice = "Heater3_SV";
             this.inputTextBox22.BackColor = System.Drawing.Color.White;
             this.inputTextBox22.Location = new System.Drawing.Point(610, 528);
             this.inputTextBox22.Name = "inputTextBox22";
@@ -6949,14 +6945,13 @@
             // inputTextBox21
             // 
             this.inputTextBox21._Division = 1;
-            this.inputTextBox21._DoubleWord = false;
             this.inputTextBox21._EqBase = null;
             this.inputTextBox21._FloatNumber = false;
             this.inputTextBox21._MaxLimit = 999D;
             this.inputTextBox21._MinLimit = 0D;
             this.inputTextBox21._Multiplication = 1;
             this.inputTextBox21._NumberOnly = true;
-            this.inputTextBox21._PlcDevice = "";
+            this.inputTextBox21._PlcDevice = "Heater2_SV";
             this.inputTextBox21.BackColor = System.Drawing.Color.White;
             this.inputTextBox21.Location = new System.Drawing.Point(550, 528);
             this.inputTextBox21.Name = "inputTextBox21";
@@ -6967,14 +6962,13 @@
             // inputTextBox20
             // 
             this.inputTextBox20._Division = 1;
-            this.inputTextBox20._DoubleWord = false;
             this.inputTextBox20._EqBase = null;
             this.inputTextBox20._FloatNumber = false;
             this.inputTextBox20._MaxLimit = 999D;
             this.inputTextBox20._MinLimit = 0D;
             this.inputTextBox20._Multiplication = 1;
             this.inputTextBox20._NumberOnly = true;
-            this.inputTextBox20._PlcDevice = "";
+            this.inputTextBox20._PlcDevice = "Heater1_SV";
             this.inputTextBox20.BackColor = System.Drawing.Color.White;
             this.inputTextBox20.Location = new System.Drawing.Point(490, 528);
             this.inputTextBox20.Name = "inputTextBox20";
@@ -6990,7 +6984,7 @@
             this.displayTextBox78._MaxLimit = 999D;
             this.displayTextBox78._MinLimit = 0D;
             this.displayTextBox78._Multiplication = ((short)(1));
-            this.displayTextBox78._PlcDevice = "";
+            this.displayTextBox78._PlcDevice = "Heater4_PV";
             this.displayTextBox78.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox78.Location = new System.Drawing.Point(676, 493);
             this.displayTextBox78.Name = "displayTextBox78";
@@ -7007,7 +7001,7 @@
             this.displayTextBox79._MaxLimit = 999D;
             this.displayTextBox79._MinLimit = 0D;
             this.displayTextBox79._Multiplication = ((short)(1));
-            this.displayTextBox79._PlcDevice = "";
+            this.displayTextBox79._PlcDevice = "Heater3_PV";
             this.displayTextBox79.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox79.Location = new System.Drawing.Point(610, 493);
             this.displayTextBox79.Name = "displayTextBox79";
@@ -7024,7 +7018,7 @@
             this.displayTextBox80._MaxLimit = 999D;
             this.displayTextBox80._MinLimit = 0D;
             this.displayTextBox80._Multiplication = ((short)(1));
-            this.displayTextBox80._PlcDevice = "";
+            this.displayTextBox80._PlcDevice = "Heater2_PV";
             this.displayTextBox80.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox80.Location = new System.Drawing.Point(550, 493);
             this.displayTextBox80.Name = "displayTextBox80";
@@ -7041,7 +7035,7 @@
             this.displayTextBox81._MaxLimit = 999D;
             this.displayTextBox81._MinLimit = 0D;
             this.displayTextBox81._Multiplication = ((short)(1));
-            this.displayTextBox81._PlcDevice = "";
+            this.displayTextBox81._PlcDevice = "Heater1_PV";
             this.displayTextBox81.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox81.Location = new System.Drawing.Point(490, 492);
             this.displayTextBox81.Name = "displayTextBox81";
@@ -7054,15 +7048,15 @@
             // 
             this.controlBtn15._CurrentStatus = false;
             this.controlBtn15._EqBase = null;
-            this.controlBtn15._PlcDevice = "";
+            this.controlBtn15._PlcDevice = "DC4_ON_YMC";
             this.controlBtn15._PlcDisplayOffDevice = "";
-            this.controlBtn15._PlcDisplayOnDevice = "";
+            this.controlBtn15._PlcDisplayOnDevice = "DC4_ON_YMC";
             this.controlBtn15._ReadOnly = false;
             this.controlBtn15._Reverse = false;
             this.controlBtn15._Text = "啟動";
             this.controlBtn15.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn15.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn15.Location = new System.Drawing.Point(1304, 397);
+            this.controlBtn15.Location = new System.Drawing.Point(1129, 373);
             this.controlBtn15.Name = "controlBtn15";
             this.controlBtn15.Size = new System.Drawing.Size(76, 40);
             this.controlBtn15.TabIndex = 2635;
@@ -7073,15 +7067,15 @@
             // 
             this.controlBtn14._CurrentStatus = false;
             this.controlBtn14._EqBase = null;
-            this.controlBtn14._PlcDevice = "";
+            this.controlBtn14._PlcDevice = "DC3_ON_YMC";
             this.controlBtn14._PlcDisplayOffDevice = "";
-            this.controlBtn14._PlcDisplayOnDevice = "";
+            this.controlBtn14._PlcDisplayOnDevice = "DC3_ON_YMC";
             this.controlBtn14._ReadOnly = false;
             this.controlBtn14._Reverse = false;
             this.controlBtn14._Text = "啟動";
             this.controlBtn14.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn14.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn14.Location = new System.Drawing.Point(1201, 397);
+            this.controlBtn14.Location = new System.Drawing.Point(1013, 373);
             this.controlBtn14.Name = "controlBtn14";
             this.controlBtn14.Size = new System.Drawing.Size(76, 40);
             this.controlBtn14.TabIndex = 2634;
@@ -7092,15 +7086,15 @@
             // 
             this.controlBtn13._CurrentStatus = false;
             this.controlBtn13._EqBase = null;
-            this.controlBtn13._PlcDevice = "";
+            this.controlBtn13._PlcDevice = "DC2_ON_YMC";
             this.controlBtn13._PlcDisplayOffDevice = "";
-            this.controlBtn13._PlcDisplayOnDevice = "";
+            this.controlBtn13._PlcDisplayOnDevice = "DC2_ON_YMC";
             this.controlBtn13._ReadOnly = false;
             this.controlBtn13._Reverse = false;
             this.controlBtn13._Text = "啟動";
             this.controlBtn13.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn13.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn13.Location = new System.Drawing.Point(1099, 397);
+            this.controlBtn13.Location = new System.Drawing.Point(895, 373);
             this.controlBtn13.Name = "controlBtn13";
             this.controlBtn13.Size = new System.Drawing.Size(76, 40);
             this.controlBtn13.TabIndex = 2633;
@@ -7111,91 +7105,53 @@
             // 
             this.controlBtn12._CurrentStatus = false;
             this.controlBtn12._EqBase = null;
-            this.controlBtn12._PlcDevice = "";
+            this.controlBtn12._PlcDevice = "DC1_ON_YMC";
             this.controlBtn12._PlcDisplayOffDevice = "";
-            this.controlBtn12._PlcDisplayOnDevice = "";
+            this.controlBtn12._PlcDisplayOnDevice = "DC1_ON_YMC";
             this.controlBtn12._ReadOnly = false;
             this.controlBtn12._Reverse = false;
             this.controlBtn12._Text = "啟動";
             this.controlBtn12.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn12.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn12.Location = new System.Drawing.Point(999, 397);
+            this.controlBtn12.Location = new System.Drawing.Point(773, 373);
             this.controlBtn12.Name = "controlBtn12";
             this.controlBtn12.Size = new System.Drawing.Size(76, 40);
             this.controlBtn12.TabIndex = 2632;
             this.controlBtn12.Text = "啟動";
             this.controlBtn12.UseVisualStyleBackColor = false;
             // 
-            // controlBtn11
-            // 
-            this.controlBtn11._CurrentStatus = false;
-            this.controlBtn11._EqBase = null;
-            this.controlBtn11._PlcDevice = "";
-            this.controlBtn11._PlcDisplayOffDevice = "";
-            this.controlBtn11._PlcDisplayOnDevice = "";
-            this.controlBtn11._ReadOnly = false;
-            this.controlBtn11._Reverse = false;
-            this.controlBtn11._Text = "啟動";
-            this.controlBtn11.BackColor = System.Drawing.Color.Transparent;
-            this.controlBtn11.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn11.Location = new System.Drawing.Point(885, 397);
-            this.controlBtn11.Name = "controlBtn11";
-            this.controlBtn11.Size = new System.Drawing.Size(76, 40);
-            this.controlBtn11.TabIndex = 2631;
-            this.controlBtn11.Text = "啟動";
-            this.controlBtn11.UseVisualStyleBackColor = false;
-            // 
             // controlBtn10
             // 
             this.controlBtn10._CurrentStatus = false;
             this.controlBtn10._EqBase = null;
-            this.controlBtn10._PlcDevice = "";
+            this.controlBtn10._PlcDevice = "MF2_ON_YMC";
             this.controlBtn10._PlcDisplayOffDevice = "";
-            this.controlBtn10._PlcDisplayOnDevice = "";
+            this.controlBtn10._PlcDisplayOnDevice = "MF2_ON_YMC";
             this.controlBtn10._ReadOnly = false;
             this.controlBtn10._Reverse = false;
             this.controlBtn10._Text = "啟動";
             this.controlBtn10.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn10.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn10.Location = new System.Drawing.Point(765, 397);
+            this.controlBtn10.Location = new System.Drawing.Point(643, 373);
             this.controlBtn10.Name = "controlBtn10";
             this.controlBtn10.Size = new System.Drawing.Size(76, 40);
             this.controlBtn10.TabIndex = 2630;
             this.controlBtn10.Text = "啟動";
             this.controlBtn10.UseVisualStyleBackColor = false;
             // 
-            // controlBtn9
-            // 
-            this.controlBtn9._CurrentStatus = false;
-            this.controlBtn9._EqBase = null;
-            this.controlBtn9._PlcDevice = "";
-            this.controlBtn9._PlcDisplayOffDevice = "";
-            this.controlBtn9._PlcDisplayOnDevice = "";
-            this.controlBtn9._ReadOnly = false;
-            this.controlBtn9._Reverse = false;
-            this.controlBtn9._Text = "啟動";
-            this.controlBtn9.BackColor = System.Drawing.Color.Transparent;
-            this.controlBtn9.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn9.Location = new System.Drawing.Point(643, 397);
-            this.controlBtn9.Name = "controlBtn9";
-            this.controlBtn9.Size = new System.Drawing.Size(76, 40);
-            this.controlBtn9.TabIndex = 2629;
-            this.controlBtn9.Text = "啟動";
-            this.controlBtn9.UseVisualStyleBackColor = false;
-            // 
             // controlBtn8
             // 
             this.controlBtn8._CurrentStatus = false;
             this.controlBtn8._EqBase = null;
-            this.controlBtn8._PlcDevice = "";
+            this.controlBtn8._PlcDevice = "MF1_ON_YMC";
             this.controlBtn8._PlcDisplayOffDevice = "";
-            this.controlBtn8._PlcDisplayOnDevice = "";
+            this.controlBtn8._PlcDisplayOnDevice = "MF1_ON_YMC";
             this.controlBtn8._ReadOnly = false;
             this.controlBtn8._Reverse = false;
             this.controlBtn8._Text = "啟動";
             this.controlBtn8.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn8.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn8.Location = new System.Drawing.Point(525, 397);
+            this.controlBtn8.Location = new System.Drawing.Point(524, 373);
             this.controlBtn8.Name = "controlBtn8";
             this.controlBtn8.Size = new System.Drawing.Size(76, 40);
             this.controlBtn8.TabIndex = 2628;
@@ -7210,9 +7166,9 @@
             this.displayTextBox44._MaxLimit = 999D;
             this.displayTextBox44._MinLimit = 0D;
             this.displayTextBox44._Multiplication = ((short)(1));
-            this.displayTextBox44._PlcDevice = "";
+            this.displayTextBox44._PlcDevice = "PreStartTime_DC4_2";
             this.displayTextBox44.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox44.Location = new System.Drawing.Point(1304, 357);
+            this.displayTextBox44.Location = new System.Drawing.Point(1129, 243);
             this.displayTextBox44.Name = "displayTextBox44";
             this.displayTextBox44.ReadOnly = true;
             this.displayTextBox44.Size = new System.Drawing.Size(77, 25);
@@ -7227,9 +7183,9 @@
             this.displayTextBox45._MaxLimit = 999D;
             this.displayTextBox45._MinLimit = 0D;
             this.displayTextBox45._Multiplication = ((short)(1));
-            this.displayTextBox45._PlcDevice = "";
+            this.displayTextBox45._PlcDevice = "DC4_ARC_Total";
             this.displayTextBox45.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox45.Location = new System.Drawing.Point(1304, 312);
+            this.displayTextBox45.Location = new System.Drawing.Point(1129, 198);
             this.displayTextBox45.Name = "displayTextBox45";
             this.displayTextBox45.ReadOnly = true;
             this.displayTextBox45.Size = new System.Drawing.Size(77, 25);
@@ -7244,9 +7200,9 @@
             this.displayTextBox46._MaxLimit = 999D;
             this.displayTextBox46._MinLimit = 0D;
             this.displayTextBox46._Multiplication = ((short)(1));
-            this.displayTextBox46._PlcDevice = "";
+            this.displayTextBox46._PlcDevice = "DC4_Current";
             this.displayTextBox46.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox46.Location = new System.Drawing.Point(1304, 270);
+            this.displayTextBox46.Location = new System.Drawing.Point(1129, 156);
             this.displayTextBox46.Name = "displayTextBox46";
             this.displayTextBox46.ReadOnly = true;
             this.displayTextBox46.Size = new System.Drawing.Size(77, 25);
@@ -7261,9 +7217,9 @@
             this.displayTextBox47._MaxLimit = 999D;
             this.displayTextBox47._MinLimit = 0D;
             this.displayTextBox47._Multiplication = ((short)(1));
-            this.displayTextBox47._PlcDevice = "";
+            this.displayTextBox47._PlcDevice = "DC4_Voltage";
             this.displayTextBox47.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox47.Location = new System.Drawing.Point(1304, 230);
+            this.displayTextBox47.Location = new System.Drawing.Point(1129, 116);
             this.displayTextBox47.Name = "displayTextBox47";
             this.displayTextBox47.ReadOnly = true;
             this.displayTextBox47.Size = new System.Drawing.Size(77, 25);
@@ -7278,9 +7234,9 @@
             this.displayTextBox40._MaxLimit = 999D;
             this.displayTextBox40._MinLimit = 0D;
             this.displayTextBox40._Multiplication = ((short)(1));
-            this.displayTextBox40._PlcDevice = "";
+            this.displayTextBox40._PlcDevice = "PreStartTime_DC4_1";
             this.displayTextBox40.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox40.Location = new System.Drawing.Point(1200, 357);
+            this.displayTextBox40.Location = new System.Drawing.Point(1011, 240);
             this.displayTextBox40.Name = "displayTextBox40";
             this.displayTextBox40.ReadOnly = true;
             this.displayTextBox40.Size = new System.Drawing.Size(77, 25);
@@ -7295,9 +7251,9 @@
             this.displayTextBox41._MaxLimit = 999D;
             this.displayTextBox41._MinLimit = 0D;
             this.displayTextBox41._Multiplication = ((short)(1));
-            this.displayTextBox41._PlcDevice = "";
+            this.displayTextBox41._PlcDevice = "DC3_ARC_Total";
             this.displayTextBox41.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox41.Location = new System.Drawing.Point(1200, 312);
+            this.displayTextBox41.Location = new System.Drawing.Point(1011, 195);
             this.displayTextBox41.Name = "displayTextBox41";
             this.displayTextBox41.ReadOnly = true;
             this.displayTextBox41.Size = new System.Drawing.Size(77, 25);
@@ -7312,9 +7268,9 @@
             this.displayTextBox42._MaxLimit = 999D;
             this.displayTextBox42._MinLimit = 0D;
             this.displayTextBox42._Multiplication = ((short)(1));
-            this.displayTextBox42._PlcDevice = "";
+            this.displayTextBox42._PlcDevice = "DC3_Current";
             this.displayTextBox42.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox42.Location = new System.Drawing.Point(1200, 270);
+            this.displayTextBox42.Location = new System.Drawing.Point(1011, 153);
             this.displayTextBox42.Name = "displayTextBox42";
             this.displayTextBox42.ReadOnly = true;
             this.displayTextBox42.Size = new System.Drawing.Size(77, 25);
@@ -7329,9 +7285,9 @@
             this.displayTextBox43._MaxLimit = 999D;
             this.displayTextBox43._MinLimit = 0D;
             this.displayTextBox43._Multiplication = ((short)(1));
-            this.displayTextBox43._PlcDevice = "";
+            this.displayTextBox43._PlcDevice = "DC3_Voltage";
             this.displayTextBox43.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox43.Location = new System.Drawing.Point(1200, 230);
+            this.displayTextBox43.Location = new System.Drawing.Point(1011, 113);
             this.displayTextBox43.Name = "displayTextBox43";
             this.displayTextBox43.ReadOnly = true;
             this.displayTextBox43.Size = new System.Drawing.Size(77, 25);
@@ -7346,9 +7302,9 @@
             this.displayTextBox36._MaxLimit = 999D;
             this.displayTextBox36._MinLimit = 0D;
             this.displayTextBox36._Multiplication = ((short)(1));
-            this.displayTextBox36._PlcDevice = "";
+            this.displayTextBox36._PlcDevice = "PreStartTime_DC3_2";
             this.displayTextBox36.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox36.Location = new System.Drawing.Point(1098, 357);
+            this.displayTextBox36.Location = new System.Drawing.Point(896, 243);
             this.displayTextBox36.Name = "displayTextBox36";
             this.displayTextBox36.ReadOnly = true;
             this.displayTextBox36.Size = new System.Drawing.Size(77, 25);
@@ -7363,9 +7319,9 @@
             this.displayTextBox37._MaxLimit = 999D;
             this.displayTextBox37._MinLimit = 0D;
             this.displayTextBox37._Multiplication = ((short)(1));
-            this.displayTextBox37._PlcDevice = "";
+            this.displayTextBox37._PlcDevice = "DC2_ARC_Total";
             this.displayTextBox37.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox37.Location = new System.Drawing.Point(1098, 312);
+            this.displayTextBox37.Location = new System.Drawing.Point(896, 198);
             this.displayTextBox37.Name = "displayTextBox37";
             this.displayTextBox37.ReadOnly = true;
             this.displayTextBox37.Size = new System.Drawing.Size(77, 25);
@@ -7380,9 +7336,9 @@
             this.displayTextBox38._MaxLimit = 999D;
             this.displayTextBox38._MinLimit = 0D;
             this.displayTextBox38._Multiplication = ((short)(1));
-            this.displayTextBox38._PlcDevice = "";
+            this.displayTextBox38._PlcDevice = "DC2_Current";
             this.displayTextBox38.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox38.Location = new System.Drawing.Point(1098, 270);
+            this.displayTextBox38.Location = new System.Drawing.Point(896, 156);
             this.displayTextBox38.Name = "displayTextBox38";
             this.displayTextBox38.ReadOnly = true;
             this.displayTextBox38.Size = new System.Drawing.Size(77, 25);
@@ -7397,9 +7353,9 @@
             this.displayTextBox39._MaxLimit = 999D;
             this.displayTextBox39._MinLimit = 0D;
             this.displayTextBox39._Multiplication = ((short)(1));
-            this.displayTextBox39._PlcDevice = "";
+            this.displayTextBox39._PlcDevice = "DC2_Voltage";
             this.displayTextBox39.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox39.Location = new System.Drawing.Point(1098, 230);
+            this.displayTextBox39.Location = new System.Drawing.Point(896, 116);
             this.displayTextBox39.Name = "displayTextBox39";
             this.displayTextBox39.ReadOnly = true;
             this.displayTextBox39.Size = new System.Drawing.Size(77, 25);
@@ -7414,9 +7370,9 @@
             this.displayTextBox32._MaxLimit = 999D;
             this.displayTextBox32._MinLimit = 0D;
             this.displayTextBox32._Multiplication = ((short)(1));
-            this.displayTextBox32._PlcDevice = "";
+            this.displayTextBox32._PlcDevice = "PreStartTime_DC3_1";
             this.displayTextBox32.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox32.Location = new System.Drawing.Point(999, 357);
+            this.displayTextBox32.Location = new System.Drawing.Point(773, 243);
             this.displayTextBox32.Name = "displayTextBox32";
             this.displayTextBox32.ReadOnly = true;
             this.displayTextBox32.Size = new System.Drawing.Size(77, 25);
@@ -7431,9 +7387,9 @@
             this.displayTextBox33._MaxLimit = 999D;
             this.displayTextBox33._MinLimit = 0D;
             this.displayTextBox33._Multiplication = ((short)(1));
-            this.displayTextBox33._PlcDevice = "";
+            this.displayTextBox33._PlcDevice = "DC1_ARC_Total";
             this.displayTextBox33.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox33.Location = new System.Drawing.Point(999, 312);
+            this.displayTextBox33.Location = new System.Drawing.Point(773, 198);
             this.displayTextBox33.Name = "displayTextBox33";
             this.displayTextBox33.ReadOnly = true;
             this.displayTextBox33.Size = new System.Drawing.Size(77, 25);
@@ -7448,9 +7404,9 @@
             this.displayTextBox34._MaxLimit = 999D;
             this.displayTextBox34._MinLimit = 0D;
             this.displayTextBox34._Multiplication = ((short)(1));
-            this.displayTextBox34._PlcDevice = "";
+            this.displayTextBox34._PlcDevice = "DC1_Current";
             this.displayTextBox34.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox34.Location = new System.Drawing.Point(999, 270);
+            this.displayTextBox34.Location = new System.Drawing.Point(773, 156);
             this.displayTextBox34.Name = "displayTextBox34";
             this.displayTextBox34.ReadOnly = true;
             this.displayTextBox34.Size = new System.Drawing.Size(77, 25);
@@ -7465,82 +7421,14 @@
             this.displayTextBox35._MaxLimit = 999D;
             this.displayTextBox35._MinLimit = 0D;
             this.displayTextBox35._Multiplication = ((short)(1));
-            this.displayTextBox35._PlcDevice = "";
+            this.displayTextBox35._PlcDevice = "DC1_Voltage";
             this.displayTextBox35.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox35.Location = new System.Drawing.Point(999, 230);
+            this.displayTextBox35.Location = new System.Drawing.Point(773, 116);
             this.displayTextBox35.Name = "displayTextBox35";
             this.displayTextBox35.ReadOnly = true;
             this.displayTextBox35.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox35.TabIndex = 2612;
             this.displayTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox25
-            // 
-            this.displayTextBox25._Division = ((short)(1));
-            this.displayTextBox25._DoubleWord = false;
-            this.displayTextBox25._EqBase = null;
-            this.displayTextBox25._MaxLimit = 999D;
-            this.displayTextBox25._MinLimit = 0D;
-            this.displayTextBox25._Multiplication = ((short)(1));
-            this.displayTextBox25._PlcDevice = "";
-            this.displayTextBox25.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox25.Location = new System.Drawing.Point(884, 357);
-            this.displayTextBox25.Name = "displayTextBox25";
-            this.displayTextBox25.ReadOnly = true;
-            this.displayTextBox25.Size = new System.Drawing.Size(77, 25);
-            this.displayTextBox25.TabIndex = 2611;
-            this.displayTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox26
-            // 
-            this.displayTextBox26._Division = ((short)(1));
-            this.displayTextBox26._DoubleWord = false;
-            this.displayTextBox26._EqBase = null;
-            this.displayTextBox26._MaxLimit = 999D;
-            this.displayTextBox26._MinLimit = 0D;
-            this.displayTextBox26._Multiplication = ((short)(1));
-            this.displayTextBox26._PlcDevice = "";
-            this.displayTextBox26.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox26.Location = new System.Drawing.Point(884, 312);
-            this.displayTextBox26.Name = "displayTextBox26";
-            this.displayTextBox26.ReadOnly = true;
-            this.displayTextBox26.Size = new System.Drawing.Size(77, 25);
-            this.displayTextBox26.TabIndex = 2610;
-            this.displayTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox48
-            // 
-            this.displayTextBox48._Division = ((short)(1));
-            this.displayTextBox48._DoubleWord = false;
-            this.displayTextBox48._EqBase = null;
-            this.displayTextBox48._MaxLimit = 999D;
-            this.displayTextBox48._MinLimit = 0D;
-            this.displayTextBox48._Multiplication = ((short)(1));
-            this.displayTextBox48._PlcDevice = "";
-            this.displayTextBox48.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox48.Location = new System.Drawing.Point(884, 270);
-            this.displayTextBox48.Name = "displayTextBox48";
-            this.displayTextBox48.ReadOnly = true;
-            this.displayTextBox48.Size = new System.Drawing.Size(77, 25);
-            this.displayTextBox48.TabIndex = 2609;
-            this.displayTextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox49
-            // 
-            this.displayTextBox49._Division = ((short)(1));
-            this.displayTextBox49._DoubleWord = false;
-            this.displayTextBox49._EqBase = null;
-            this.displayTextBox49._MaxLimit = 999D;
-            this.displayTextBox49._MinLimit = 0D;
-            this.displayTextBox49._Multiplication = ((short)(1));
-            this.displayTextBox49._PlcDevice = "";
-            this.displayTextBox49.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox49.Location = new System.Drawing.Point(884, 230);
-            this.displayTextBox49.Name = "displayTextBox49";
-            this.displayTextBox49.ReadOnly = true;
-            this.displayTextBox49.Size = new System.Drawing.Size(77, 25);
-            this.displayTextBox49.TabIndex = 2608;
-            this.displayTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox50
             // 
@@ -7550,9 +7438,9 @@
             this.displayTextBox50._MaxLimit = 999D;
             this.displayTextBox50._MinLimit = 0D;
             this.displayTextBox50._Multiplication = ((short)(1));
-            this.displayTextBox50._PlcDevice = "";
+            this.displayTextBox50._PlcDevice = "PreStartTime_MF2_1";
             this.displayTextBox50.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox50.Location = new System.Drawing.Point(764, 357);
+            this.displayTextBox50.Location = new System.Drawing.Point(644, 240);
             this.displayTextBox50.Name = "displayTextBox50";
             this.displayTextBox50.ReadOnly = true;
             this.displayTextBox50.Size = new System.Drawing.Size(77, 25);
@@ -7567,9 +7455,9 @@
             this.displayTextBox51._MaxLimit = 999D;
             this.displayTextBox51._MinLimit = 0D;
             this.displayTextBox51._Multiplication = ((short)(1));
-            this.displayTextBox51._PlcDevice = "";
+            this.displayTextBox51._PlcDevice = "MF2_ARC_Total";
             this.displayTextBox51.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox51.Location = new System.Drawing.Point(764, 312);
+            this.displayTextBox51.Location = new System.Drawing.Point(644, 195);
             this.displayTextBox51.Name = "displayTextBox51";
             this.displayTextBox51.ReadOnly = true;
             this.displayTextBox51.Size = new System.Drawing.Size(77, 25);
@@ -7584,9 +7472,9 @@
             this.displayTextBox52._MaxLimit = 999D;
             this.displayTextBox52._MinLimit = 0D;
             this.displayTextBox52._Multiplication = ((short)(1));
-            this.displayTextBox52._PlcDevice = "";
+            this.displayTextBox52._PlcDevice = "MF2_Current";
             this.displayTextBox52.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox52.Location = new System.Drawing.Point(764, 270);
+            this.displayTextBox52.Location = new System.Drawing.Point(644, 153);
             this.displayTextBox52.Name = "displayTextBox52";
             this.displayTextBox52.ReadOnly = true;
             this.displayTextBox52.Size = new System.Drawing.Size(77, 25);
@@ -7601,82 +7489,14 @@
             this.displayTextBox53._MaxLimit = 999D;
             this.displayTextBox53._MinLimit = 0D;
             this.displayTextBox53._Multiplication = ((short)(1));
-            this.displayTextBox53._PlcDevice = "";
+            this.displayTextBox53._PlcDevice = "MF2_Voltage";
             this.displayTextBox53.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox53.Location = new System.Drawing.Point(764, 230);
+            this.displayTextBox53.Location = new System.Drawing.Point(644, 113);
             this.displayTextBox53.Name = "displayTextBox53";
             this.displayTextBox53.ReadOnly = true;
             this.displayTextBox53.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox53.TabIndex = 2604;
             this.displayTextBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox54
-            // 
-            this.displayTextBox54._Division = ((short)(1));
-            this.displayTextBox54._DoubleWord = false;
-            this.displayTextBox54._EqBase = null;
-            this.displayTextBox54._MaxLimit = 999D;
-            this.displayTextBox54._MinLimit = 0D;
-            this.displayTextBox54._Multiplication = ((short)(1));
-            this.displayTextBox54._PlcDevice = "";
-            this.displayTextBox54.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox54.Location = new System.Drawing.Point(643, 357);
-            this.displayTextBox54.Name = "displayTextBox54";
-            this.displayTextBox54.ReadOnly = true;
-            this.displayTextBox54.Size = new System.Drawing.Size(77, 25);
-            this.displayTextBox54.TabIndex = 2603;
-            this.displayTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox55
-            // 
-            this.displayTextBox55._Division = ((short)(1));
-            this.displayTextBox55._DoubleWord = false;
-            this.displayTextBox55._EqBase = null;
-            this.displayTextBox55._MaxLimit = 999D;
-            this.displayTextBox55._MinLimit = 0D;
-            this.displayTextBox55._Multiplication = ((short)(1));
-            this.displayTextBox55._PlcDevice = "";
-            this.displayTextBox55.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox55.Location = new System.Drawing.Point(643, 312);
-            this.displayTextBox55.Name = "displayTextBox55";
-            this.displayTextBox55.ReadOnly = true;
-            this.displayTextBox55.Size = new System.Drawing.Size(77, 25);
-            this.displayTextBox55.TabIndex = 2602;
-            this.displayTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox56
-            // 
-            this.displayTextBox56._Division = ((short)(1));
-            this.displayTextBox56._DoubleWord = false;
-            this.displayTextBox56._EqBase = null;
-            this.displayTextBox56._MaxLimit = 999D;
-            this.displayTextBox56._MinLimit = 0D;
-            this.displayTextBox56._Multiplication = ((short)(1));
-            this.displayTextBox56._PlcDevice = "";
-            this.displayTextBox56.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox56.Location = new System.Drawing.Point(643, 270);
-            this.displayTextBox56.Name = "displayTextBox56";
-            this.displayTextBox56.ReadOnly = true;
-            this.displayTextBox56.Size = new System.Drawing.Size(77, 25);
-            this.displayTextBox56.TabIndex = 2601;
-            this.displayTextBox56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox57
-            // 
-            this.displayTextBox57._Division = ((short)(1));
-            this.displayTextBox57._DoubleWord = false;
-            this.displayTextBox57._EqBase = null;
-            this.displayTextBox57._MaxLimit = 999D;
-            this.displayTextBox57._MinLimit = 0D;
-            this.displayTextBox57._Multiplication = ((short)(1));
-            this.displayTextBox57._PlcDevice = "";
-            this.displayTextBox57.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox57.Location = new System.Drawing.Point(643, 230);
-            this.displayTextBox57.Name = "displayTextBox57";
-            this.displayTextBox57.ReadOnly = true;
-            this.displayTextBox57.Size = new System.Drawing.Size(77, 25);
-            this.displayTextBox57.TabIndex = 2600;
-            this.displayTextBox57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox58
             // 
@@ -7686,9 +7506,9 @@
             this.displayTextBox58._MaxLimit = 999D;
             this.displayTextBox58._MinLimit = 0D;
             this.displayTextBox58._Multiplication = ((short)(1));
-            this.displayTextBox58._PlcDevice = "";
+            this.displayTextBox58._PlcDevice = "PreStartTime_MF1_1";
             this.displayTextBox58.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox58.Location = new System.Drawing.Point(525, 357);
+            this.displayTextBox58.Location = new System.Drawing.Point(525, 240);
             this.displayTextBox58.Name = "displayTextBox58";
             this.displayTextBox58.ReadOnly = true;
             this.displayTextBox58.Size = new System.Drawing.Size(77, 25);
@@ -7703,9 +7523,9 @@
             this.displayTextBox59._MaxLimit = 999D;
             this.displayTextBox59._MinLimit = 0D;
             this.displayTextBox59._Multiplication = ((short)(1));
-            this.displayTextBox59._PlcDevice = "";
+            this.displayTextBox59._PlcDevice = "MF1_ARC_Total";
             this.displayTextBox59.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox59.Location = new System.Drawing.Point(525, 312);
+            this.displayTextBox59.Location = new System.Drawing.Point(525, 195);
             this.displayTextBox59.Name = "displayTextBox59";
             this.displayTextBox59.ReadOnly = true;
             this.displayTextBox59.Size = new System.Drawing.Size(77, 25);
@@ -7720,9 +7540,9 @@
             this.displayTextBox60._MaxLimit = 999D;
             this.displayTextBox60._MinLimit = 0D;
             this.displayTextBox60._Multiplication = ((short)(1));
-            this.displayTextBox60._PlcDevice = "";
+            this.displayTextBox60._PlcDevice = "MF1_Current";
             this.displayTextBox60.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox60.Location = new System.Drawing.Point(525, 270);
+            this.displayTextBox60.Location = new System.Drawing.Point(525, 153);
             this.displayTextBox60.Name = "displayTextBox60";
             this.displayTextBox60.ReadOnly = true;
             this.displayTextBox60.Size = new System.Drawing.Size(77, 25);
@@ -7737,9 +7557,9 @@
             this.displayTextBox61._MaxLimit = 999D;
             this.displayTextBox61._MinLimit = 0D;
             this.displayTextBox61._Multiplication = ((short)(1));
-            this.displayTextBox61._PlcDevice = "";
+            this.displayTextBox61._PlcDevice = "MF1_Voltage";
             this.displayTextBox61.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox61.Location = new System.Drawing.Point(525, 230);
+            this.displayTextBox61.Location = new System.Drawing.Point(525, 113);
             this.displayTextBox61.Name = "displayTextBox61";
             this.displayTextBox61.ReadOnly = true;
             this.displayTextBox61.Size = new System.Drawing.Size(77, 25);
@@ -7749,16 +7569,15 @@
             // inputTextBox70
             // 
             this.inputTextBox70._Division = 1;
-            this.inputTextBox70._DoubleWord = false;
             this.inputTextBox70._EqBase = null;
             this.inputTextBox70._FloatNumber = false;
             this.inputTextBox70._MaxLimit = 999D;
             this.inputTextBox70._MinLimit = 0D;
             this.inputTextBox70._Multiplication = 1;
             this.inputTextBox70._NumberOnly = true;
-            this.inputTextBox70._PlcDevice = "";
+            this.inputTextBox70._PlcDevice = "DC4_Pre_Sputter_Time";
             this.inputTextBox70.BackColor = System.Drawing.Color.White;
-            this.inputTextBox70.Location = new System.Drawing.Point(1305, 188);
+            this.inputTextBox70.Location = new System.Drawing.Point(1129, 329);
             this.inputTextBox70.Name = "inputTextBox70";
             this.inputTextBox70.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox70.TabIndex = 2595;
@@ -7767,70 +7586,32 @@
             // inputTextBox71
             // 
             this.inputTextBox71._Division = 1;
-            this.inputTextBox71._DoubleWord = false;
             this.inputTextBox71._EqBase = null;
             this.inputTextBox71._FloatNumber = false;
             this.inputTextBox71._MaxLimit = 999D;
             this.inputTextBox71._MinLimit = 0D;
             this.inputTextBox71._Multiplication = 1;
             this.inputTextBox71._NumberOnly = true;
-            this.inputTextBox71._PlcDevice = "";
+            this.inputTextBox71._PlcDevice = "DC4_Proc_STEP";
             this.inputTextBox71.BackColor = System.Drawing.Color.White;
-            this.inputTextBox71.Location = new System.Drawing.Point(1305, 147);
+            this.inputTextBox71.Location = new System.Drawing.Point(1129, 288);
             this.inputTextBox71.Name = "inputTextBox71";
             this.inputTextBox71.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox71.TabIndex = 2594;
             this.inputTextBox71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox72
-            // 
-            this.inputTextBox72._Division = 1;
-            this.inputTextBox72._DoubleWord = false;
-            this.inputTextBox72._EqBase = null;
-            this.inputTextBox72._FloatNumber = false;
-            this.inputTextBox72._MaxLimit = 999D;
-            this.inputTextBox72._MinLimit = 0D;
-            this.inputTextBox72._Multiplication = 1;
-            this.inputTextBox72._NumberOnly = true;
-            this.inputTextBox72._PlcDevice = "";
-            this.inputTextBox72.BackColor = System.Drawing.Color.White;
-            this.inputTextBox72.Location = new System.Drawing.Point(1305, 112);
-            this.inputTextBox72.Name = "inputTextBox72";
-            this.inputTextBox72.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox72.TabIndex = 2593;
-            this.inputTextBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox73
-            // 
-            this.inputTextBox73._Division = 1;
-            this.inputTextBox73._DoubleWord = false;
-            this.inputTextBox73._EqBase = null;
-            this.inputTextBox73._FloatNumber = false;
-            this.inputTextBox73._MaxLimit = 999D;
-            this.inputTextBox73._MinLimit = 0D;
-            this.inputTextBox73._Multiplication = 1;
-            this.inputTextBox73._NumberOnly = true;
-            this.inputTextBox73._PlcDevice = "";
-            this.inputTextBox73.BackColor = System.Drawing.Color.White;
-            this.inputTextBox73.Location = new System.Drawing.Point(1305, 75);
-            this.inputTextBox73.Name = "inputTextBox73";
-            this.inputTextBox73.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox73.TabIndex = 2592;
-            this.inputTextBox73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // inputTextBox66
             // 
             this.inputTextBox66._Division = 1;
-            this.inputTextBox66._DoubleWord = false;
             this.inputTextBox66._EqBase = null;
             this.inputTextBox66._FloatNumber = false;
             this.inputTextBox66._MaxLimit = 999D;
             this.inputTextBox66._MinLimit = 0D;
             this.inputTextBox66._Multiplication = 1;
             this.inputTextBox66._NumberOnly = true;
-            this.inputTextBox66._PlcDevice = "";
+            this.inputTextBox66._PlcDevice = "DC3_Pre_Sputter_Time";
             this.inputTextBox66.BackColor = System.Drawing.Color.White;
-            this.inputTextBox66.Location = new System.Drawing.Point(1200, 188);
+            this.inputTextBox66.Location = new System.Drawing.Point(1011, 329);
             this.inputTextBox66.Name = "inputTextBox66";
             this.inputTextBox66.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox66.TabIndex = 2591;
@@ -7839,70 +7620,32 @@
             // inputTextBox67
             // 
             this.inputTextBox67._Division = 1;
-            this.inputTextBox67._DoubleWord = false;
             this.inputTextBox67._EqBase = null;
             this.inputTextBox67._FloatNumber = false;
             this.inputTextBox67._MaxLimit = 999D;
             this.inputTextBox67._MinLimit = 0D;
             this.inputTextBox67._Multiplication = 1;
             this.inputTextBox67._NumberOnly = true;
-            this.inputTextBox67._PlcDevice = "";
+            this.inputTextBox67._PlcDevice = "DC3_Proc_STEP";
             this.inputTextBox67.BackColor = System.Drawing.Color.White;
-            this.inputTextBox67.Location = new System.Drawing.Point(1200, 147);
+            this.inputTextBox67.Location = new System.Drawing.Point(1011, 288);
             this.inputTextBox67.Name = "inputTextBox67";
             this.inputTextBox67.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox67.TabIndex = 2590;
             this.inputTextBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox68
-            // 
-            this.inputTextBox68._Division = 1;
-            this.inputTextBox68._DoubleWord = false;
-            this.inputTextBox68._EqBase = null;
-            this.inputTextBox68._FloatNumber = false;
-            this.inputTextBox68._MaxLimit = 999D;
-            this.inputTextBox68._MinLimit = 0D;
-            this.inputTextBox68._Multiplication = 1;
-            this.inputTextBox68._NumberOnly = true;
-            this.inputTextBox68._PlcDevice = "";
-            this.inputTextBox68.BackColor = System.Drawing.Color.White;
-            this.inputTextBox68.Location = new System.Drawing.Point(1200, 112);
-            this.inputTextBox68.Name = "inputTextBox68";
-            this.inputTextBox68.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox68.TabIndex = 2589;
-            this.inputTextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox69
-            // 
-            this.inputTextBox69._Division = 1;
-            this.inputTextBox69._DoubleWord = false;
-            this.inputTextBox69._EqBase = null;
-            this.inputTextBox69._FloatNumber = false;
-            this.inputTextBox69._MaxLimit = 999D;
-            this.inputTextBox69._MinLimit = 0D;
-            this.inputTextBox69._Multiplication = 1;
-            this.inputTextBox69._NumberOnly = true;
-            this.inputTextBox69._PlcDevice = "";
-            this.inputTextBox69.BackColor = System.Drawing.Color.White;
-            this.inputTextBox69.Location = new System.Drawing.Point(1200, 75);
-            this.inputTextBox69.Name = "inputTextBox69";
-            this.inputTextBox69.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox69.TabIndex = 2588;
-            this.inputTextBox69.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // inputTextBox62
             // 
             this.inputTextBox62._Division = 1;
-            this.inputTextBox62._DoubleWord = false;
             this.inputTextBox62._EqBase = null;
             this.inputTextBox62._FloatNumber = false;
             this.inputTextBox62._MaxLimit = 999D;
             this.inputTextBox62._MinLimit = 0D;
             this.inputTextBox62._Multiplication = 1;
             this.inputTextBox62._NumberOnly = true;
-            this.inputTextBox62._PlcDevice = "";
+            this.inputTextBox62._PlcDevice = "DC2_Pre_Sputter_Time";
             this.inputTextBox62.BackColor = System.Drawing.Color.White;
-            this.inputTextBox62.Location = new System.Drawing.Point(1098, 188);
+            this.inputTextBox62.Location = new System.Drawing.Point(895, 329);
             this.inputTextBox62.Name = "inputTextBox62";
             this.inputTextBox62.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox62.TabIndex = 2587;
@@ -7911,70 +7654,32 @@
             // inputTextBox63
             // 
             this.inputTextBox63._Division = 1;
-            this.inputTextBox63._DoubleWord = false;
             this.inputTextBox63._EqBase = null;
             this.inputTextBox63._FloatNumber = false;
             this.inputTextBox63._MaxLimit = 999D;
             this.inputTextBox63._MinLimit = 0D;
             this.inputTextBox63._Multiplication = 1;
             this.inputTextBox63._NumberOnly = true;
-            this.inputTextBox63._PlcDevice = "";
+            this.inputTextBox63._PlcDevice = "DC2_Proc_STEP";
             this.inputTextBox63.BackColor = System.Drawing.Color.White;
-            this.inputTextBox63.Location = new System.Drawing.Point(1098, 147);
+            this.inputTextBox63.Location = new System.Drawing.Point(895, 288);
             this.inputTextBox63.Name = "inputTextBox63";
             this.inputTextBox63.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox63.TabIndex = 2586;
             this.inputTextBox63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox64
-            // 
-            this.inputTextBox64._Division = 1;
-            this.inputTextBox64._DoubleWord = false;
-            this.inputTextBox64._EqBase = null;
-            this.inputTextBox64._FloatNumber = false;
-            this.inputTextBox64._MaxLimit = 999D;
-            this.inputTextBox64._MinLimit = 0D;
-            this.inputTextBox64._Multiplication = 1;
-            this.inputTextBox64._NumberOnly = true;
-            this.inputTextBox64._PlcDevice = "";
-            this.inputTextBox64.BackColor = System.Drawing.Color.White;
-            this.inputTextBox64.Location = new System.Drawing.Point(1098, 112);
-            this.inputTextBox64.Name = "inputTextBox64";
-            this.inputTextBox64.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox64.TabIndex = 2585;
-            this.inputTextBox64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox65
-            // 
-            this.inputTextBox65._Division = 1;
-            this.inputTextBox65._DoubleWord = false;
-            this.inputTextBox65._EqBase = null;
-            this.inputTextBox65._FloatNumber = false;
-            this.inputTextBox65._MaxLimit = 999D;
-            this.inputTextBox65._MinLimit = 0D;
-            this.inputTextBox65._Multiplication = 1;
-            this.inputTextBox65._NumberOnly = true;
-            this.inputTextBox65._PlcDevice = "";
-            this.inputTextBox65.BackColor = System.Drawing.Color.White;
-            this.inputTextBox65.Location = new System.Drawing.Point(1098, 75);
-            this.inputTextBox65.Name = "inputTextBox65";
-            this.inputTextBox65.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox65.TabIndex = 2584;
-            this.inputTextBox65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // inputTextBox58
             // 
             this.inputTextBox58._Division = 1;
-            this.inputTextBox58._DoubleWord = false;
             this.inputTextBox58._EqBase = null;
             this.inputTextBox58._FloatNumber = false;
             this.inputTextBox58._MaxLimit = 999D;
             this.inputTextBox58._MinLimit = 0D;
             this.inputTextBox58._Multiplication = 1;
             this.inputTextBox58._NumberOnly = true;
-            this.inputTextBox58._PlcDevice = "";
+            this.inputTextBox58._PlcDevice = "DC1_Pre_Sputter_Time";
             this.inputTextBox58.BackColor = System.Drawing.Color.White;
-            this.inputTextBox58.Location = new System.Drawing.Point(999, 188);
+            this.inputTextBox58.Location = new System.Drawing.Point(773, 329);
             this.inputTextBox58.Name = "inputTextBox58";
             this.inputTextBox58.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox58.TabIndex = 2583;
@@ -7983,142 +7688,32 @@
             // inputTextBox59
             // 
             this.inputTextBox59._Division = 1;
-            this.inputTextBox59._DoubleWord = false;
             this.inputTextBox59._EqBase = null;
             this.inputTextBox59._FloatNumber = false;
             this.inputTextBox59._MaxLimit = 999D;
             this.inputTextBox59._MinLimit = 0D;
             this.inputTextBox59._Multiplication = 1;
             this.inputTextBox59._NumberOnly = true;
-            this.inputTextBox59._PlcDevice = "";
+            this.inputTextBox59._PlcDevice = "DC1_Proc_STEP";
             this.inputTextBox59.BackColor = System.Drawing.Color.White;
-            this.inputTextBox59.Location = new System.Drawing.Point(999, 147);
+            this.inputTextBox59.Location = new System.Drawing.Point(773, 288);
             this.inputTextBox59.Name = "inputTextBox59";
             this.inputTextBox59.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox59.TabIndex = 2582;
             this.inputTextBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox60
-            // 
-            this.inputTextBox60._Division = 1;
-            this.inputTextBox60._DoubleWord = false;
-            this.inputTextBox60._EqBase = null;
-            this.inputTextBox60._FloatNumber = false;
-            this.inputTextBox60._MaxLimit = 999D;
-            this.inputTextBox60._MinLimit = 0D;
-            this.inputTextBox60._Multiplication = 1;
-            this.inputTextBox60._NumberOnly = true;
-            this.inputTextBox60._PlcDevice = "";
-            this.inputTextBox60.BackColor = System.Drawing.Color.White;
-            this.inputTextBox60.Location = new System.Drawing.Point(999, 112);
-            this.inputTextBox60.Name = "inputTextBox60";
-            this.inputTextBox60.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox60.TabIndex = 2581;
-            this.inputTextBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox61
-            // 
-            this.inputTextBox61._Division = 1;
-            this.inputTextBox61._DoubleWord = false;
-            this.inputTextBox61._EqBase = null;
-            this.inputTextBox61._FloatNumber = false;
-            this.inputTextBox61._MaxLimit = 999D;
-            this.inputTextBox61._MinLimit = 0D;
-            this.inputTextBox61._Multiplication = 1;
-            this.inputTextBox61._NumberOnly = true;
-            this.inputTextBox61._PlcDevice = "";
-            this.inputTextBox61.BackColor = System.Drawing.Color.White;
-            this.inputTextBox61.Location = new System.Drawing.Point(999, 75);
-            this.inputTextBox61.Name = "inputTextBox61";
-            this.inputTextBox61.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox61.TabIndex = 2580;
-            this.inputTextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox54
-            // 
-            this.inputTextBox54._Division = 1;
-            this.inputTextBox54._DoubleWord = false;
-            this.inputTextBox54._EqBase = null;
-            this.inputTextBox54._FloatNumber = false;
-            this.inputTextBox54._MaxLimit = 999D;
-            this.inputTextBox54._MinLimit = 0D;
-            this.inputTextBox54._Multiplication = 1;
-            this.inputTextBox54._NumberOnly = true;
-            this.inputTextBox54._PlcDevice = "";
-            this.inputTextBox54.BackColor = System.Drawing.Color.White;
-            this.inputTextBox54.Location = new System.Drawing.Point(885, 188);
-            this.inputTextBox54.Name = "inputTextBox54";
-            this.inputTextBox54.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox54.TabIndex = 2579;
-            this.inputTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox55
-            // 
-            this.inputTextBox55._Division = 1;
-            this.inputTextBox55._DoubleWord = false;
-            this.inputTextBox55._EqBase = null;
-            this.inputTextBox55._FloatNumber = false;
-            this.inputTextBox55._MaxLimit = 999D;
-            this.inputTextBox55._MinLimit = 0D;
-            this.inputTextBox55._Multiplication = 1;
-            this.inputTextBox55._NumberOnly = true;
-            this.inputTextBox55._PlcDevice = "";
-            this.inputTextBox55.BackColor = System.Drawing.Color.White;
-            this.inputTextBox55.Location = new System.Drawing.Point(885, 147);
-            this.inputTextBox55.Name = "inputTextBox55";
-            this.inputTextBox55.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox55.TabIndex = 2578;
-            this.inputTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox56
-            // 
-            this.inputTextBox56._Division = 1;
-            this.inputTextBox56._DoubleWord = false;
-            this.inputTextBox56._EqBase = null;
-            this.inputTextBox56._FloatNumber = false;
-            this.inputTextBox56._MaxLimit = 999D;
-            this.inputTextBox56._MinLimit = 0D;
-            this.inputTextBox56._Multiplication = 1;
-            this.inputTextBox56._NumberOnly = true;
-            this.inputTextBox56._PlcDevice = "";
-            this.inputTextBox56.BackColor = System.Drawing.Color.White;
-            this.inputTextBox56.Location = new System.Drawing.Point(885, 112);
-            this.inputTextBox56.Name = "inputTextBox56";
-            this.inputTextBox56.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox56.TabIndex = 2577;
-            this.inputTextBox56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox57
-            // 
-            this.inputTextBox57._Division = 1;
-            this.inputTextBox57._DoubleWord = false;
-            this.inputTextBox57._EqBase = null;
-            this.inputTextBox57._FloatNumber = false;
-            this.inputTextBox57._MaxLimit = 999D;
-            this.inputTextBox57._MinLimit = 0D;
-            this.inputTextBox57._Multiplication = 1;
-            this.inputTextBox57._NumberOnly = true;
-            this.inputTextBox57._PlcDevice = "";
-            this.inputTextBox57.BackColor = System.Drawing.Color.White;
-            this.inputTextBox57.Location = new System.Drawing.Point(885, 75);
-            this.inputTextBox57.Name = "inputTextBox57";
-            this.inputTextBox57.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox57.TabIndex = 2576;
-            this.inputTextBox57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // inputTextBox50
             // 
             this.inputTextBox50._Division = 1;
-            this.inputTextBox50._DoubleWord = false;
             this.inputTextBox50._EqBase = null;
             this.inputTextBox50._FloatNumber = false;
             this.inputTextBox50._MaxLimit = 999D;
             this.inputTextBox50._MinLimit = 0D;
             this.inputTextBox50._Multiplication = 1;
             this.inputTextBox50._NumberOnly = true;
-            this.inputTextBox50._PlcDevice = "";
+            this.inputTextBox50._PlcDevice = "MF2_Pre_Sputter_Time";
             this.inputTextBox50.BackColor = System.Drawing.Color.White;
-            this.inputTextBox50.Location = new System.Drawing.Point(765, 188);
+            this.inputTextBox50.Location = new System.Drawing.Point(644, 329);
             this.inputTextBox50.Name = "inputTextBox50";
             this.inputTextBox50.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox50.TabIndex = 2575;
@@ -8127,142 +7722,32 @@
             // inputTextBox51
             // 
             this.inputTextBox51._Division = 1;
-            this.inputTextBox51._DoubleWord = false;
             this.inputTextBox51._EqBase = null;
             this.inputTextBox51._FloatNumber = false;
             this.inputTextBox51._MaxLimit = 999D;
             this.inputTextBox51._MinLimit = 0D;
             this.inputTextBox51._Multiplication = 1;
             this.inputTextBox51._NumberOnly = true;
-            this.inputTextBox51._PlcDevice = "";
+            this.inputTextBox51._PlcDevice = "MF2_Proc_STEP";
             this.inputTextBox51.BackColor = System.Drawing.Color.White;
-            this.inputTextBox51.Location = new System.Drawing.Point(765, 147);
+            this.inputTextBox51.Location = new System.Drawing.Point(644, 288);
             this.inputTextBox51.Name = "inputTextBox51";
             this.inputTextBox51.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox51.TabIndex = 2574;
             this.inputTextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inputTextBox52
-            // 
-            this.inputTextBox52._Division = 1;
-            this.inputTextBox52._DoubleWord = false;
-            this.inputTextBox52._EqBase = null;
-            this.inputTextBox52._FloatNumber = false;
-            this.inputTextBox52._MaxLimit = 999D;
-            this.inputTextBox52._MinLimit = 0D;
-            this.inputTextBox52._Multiplication = 1;
-            this.inputTextBox52._NumberOnly = true;
-            this.inputTextBox52._PlcDevice = "";
-            this.inputTextBox52.BackColor = System.Drawing.Color.White;
-            this.inputTextBox52.Location = new System.Drawing.Point(765, 112);
-            this.inputTextBox52.Name = "inputTextBox52";
-            this.inputTextBox52.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox52.TabIndex = 2573;
-            this.inputTextBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox53
-            // 
-            this.inputTextBox53._Division = 1;
-            this.inputTextBox53._DoubleWord = false;
-            this.inputTextBox53._EqBase = null;
-            this.inputTextBox53._FloatNumber = false;
-            this.inputTextBox53._MaxLimit = 999D;
-            this.inputTextBox53._MinLimit = 0D;
-            this.inputTextBox53._Multiplication = 1;
-            this.inputTextBox53._NumberOnly = true;
-            this.inputTextBox53._PlcDevice = "";
-            this.inputTextBox53.BackColor = System.Drawing.Color.White;
-            this.inputTextBox53.Location = new System.Drawing.Point(765, 75);
-            this.inputTextBox53.Name = "inputTextBox53";
-            this.inputTextBox53.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox53.TabIndex = 2572;
-            this.inputTextBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox46
-            // 
-            this.inputTextBox46._Division = 1;
-            this.inputTextBox46._DoubleWord = false;
-            this.inputTextBox46._EqBase = null;
-            this.inputTextBox46._FloatNumber = false;
-            this.inputTextBox46._MaxLimit = 999D;
-            this.inputTextBox46._MinLimit = 0D;
-            this.inputTextBox46._Multiplication = 1;
-            this.inputTextBox46._NumberOnly = true;
-            this.inputTextBox46._PlcDevice = "";
-            this.inputTextBox46.BackColor = System.Drawing.Color.White;
-            this.inputTextBox46.Location = new System.Drawing.Point(644, 188);
-            this.inputTextBox46.Name = "inputTextBox46";
-            this.inputTextBox46.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox46.TabIndex = 2571;
-            this.inputTextBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox47
-            // 
-            this.inputTextBox47._Division = 1;
-            this.inputTextBox47._DoubleWord = false;
-            this.inputTextBox47._EqBase = null;
-            this.inputTextBox47._FloatNumber = false;
-            this.inputTextBox47._MaxLimit = 999D;
-            this.inputTextBox47._MinLimit = 0D;
-            this.inputTextBox47._Multiplication = 1;
-            this.inputTextBox47._NumberOnly = true;
-            this.inputTextBox47._PlcDevice = "";
-            this.inputTextBox47.BackColor = System.Drawing.Color.White;
-            this.inputTextBox47.Location = new System.Drawing.Point(644, 147);
-            this.inputTextBox47.Name = "inputTextBox47";
-            this.inputTextBox47.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox47.TabIndex = 2570;
-            this.inputTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox48
-            // 
-            this.inputTextBox48._Division = 1;
-            this.inputTextBox48._DoubleWord = false;
-            this.inputTextBox48._EqBase = null;
-            this.inputTextBox48._FloatNumber = false;
-            this.inputTextBox48._MaxLimit = 999D;
-            this.inputTextBox48._MinLimit = 0D;
-            this.inputTextBox48._Multiplication = 1;
-            this.inputTextBox48._NumberOnly = true;
-            this.inputTextBox48._PlcDevice = "";
-            this.inputTextBox48.BackColor = System.Drawing.Color.White;
-            this.inputTextBox48.Location = new System.Drawing.Point(644, 112);
-            this.inputTextBox48.Name = "inputTextBox48";
-            this.inputTextBox48.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox48.TabIndex = 2569;
-            this.inputTextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox49
-            // 
-            this.inputTextBox49._Division = 1;
-            this.inputTextBox49._DoubleWord = false;
-            this.inputTextBox49._EqBase = null;
-            this.inputTextBox49._FloatNumber = false;
-            this.inputTextBox49._MaxLimit = 999D;
-            this.inputTextBox49._MinLimit = 0D;
-            this.inputTextBox49._Multiplication = 1;
-            this.inputTextBox49._NumberOnly = true;
-            this.inputTextBox49._PlcDevice = "";
-            this.inputTextBox49.BackColor = System.Drawing.Color.White;
-            this.inputTextBox49.Location = new System.Drawing.Point(644, 75);
-            this.inputTextBox49.Name = "inputTextBox49";
-            this.inputTextBox49.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox49.TabIndex = 2568;
-            this.inputTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // inputTextBox45
             // 
             this.inputTextBox45._Division = 1;
-            this.inputTextBox45._DoubleWord = false;
             this.inputTextBox45._EqBase = null;
             this.inputTextBox45._FloatNumber = false;
             this.inputTextBox45._MaxLimit = 999D;
             this.inputTextBox45._MinLimit = 0D;
             this.inputTextBox45._Multiplication = 1;
             this.inputTextBox45._NumberOnly = true;
-            this.inputTextBox45._PlcDevice = "";
+            this.inputTextBox45._PlcDevice = "MF1_Pre_Sputter_Time";
             this.inputTextBox45.BackColor = System.Drawing.Color.White;
-            this.inputTextBox45.Location = new System.Drawing.Point(525, 188);
+            this.inputTextBox45.Location = new System.Drawing.Point(525, 334);
             this.inputTextBox45.Name = "inputTextBox45";
             this.inputTextBox45.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox45.TabIndex = 2567;
@@ -8271,56 +7756,19 @@
             // inputTextBox44
             // 
             this.inputTextBox44._Division = 1;
-            this.inputTextBox44._DoubleWord = false;
             this.inputTextBox44._EqBase = null;
             this.inputTextBox44._FloatNumber = false;
             this.inputTextBox44._MaxLimit = 999D;
             this.inputTextBox44._MinLimit = 0D;
             this.inputTextBox44._Multiplication = 1;
             this.inputTextBox44._NumberOnly = true;
-            this.inputTextBox44._PlcDevice = "";
-            this.inputTextBox44.BackColor = System.Drawing.Color.White;
-            this.inputTextBox44.Location = new System.Drawing.Point(525, 147);
+            this.inputTextBox44._PlcDevice = "MF1_Proc_STEP";
+            this.inputTextBox44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.inputTextBox44.Location = new System.Drawing.Point(525, 288);
             this.inputTextBox44.Name = "inputTextBox44";
             this.inputTextBox44.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox44.TabIndex = 2566;
             this.inputTextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox43
-            // 
-            this.inputTextBox43._Division = 1;
-            this.inputTextBox43._DoubleWord = false;
-            this.inputTextBox43._EqBase = null;
-            this.inputTextBox43._FloatNumber = false;
-            this.inputTextBox43._MaxLimit = 999D;
-            this.inputTextBox43._MinLimit = 0D;
-            this.inputTextBox43._Multiplication = 1;
-            this.inputTextBox43._NumberOnly = true;
-            this.inputTextBox43._PlcDevice = "";
-            this.inputTextBox43.BackColor = System.Drawing.Color.White;
-            this.inputTextBox43.Location = new System.Drawing.Point(525, 112);
-            this.inputTextBox43.Name = "inputTextBox43";
-            this.inputTextBox43.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox43.TabIndex = 2565;
-            this.inputTextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox42
-            // 
-            this.inputTextBox42._Division = 1;
-            this.inputTextBox42._DoubleWord = false;
-            this.inputTextBox42._EqBase = null;
-            this.inputTextBox42._FloatNumber = false;
-            this.inputTextBox42._MaxLimit = 999D;
-            this.inputTextBox42._MinLimit = 0D;
-            this.inputTextBox42._Multiplication = 1;
-            this.inputTextBox42._NumberOnly = true;
-            this.inputTextBox42._PlcDevice = "";
-            this.inputTextBox42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.inputTextBox42.Location = new System.Drawing.Point(525, 75);
-            this.inputTextBox42.Name = "inputTextBox42";
-            this.inputTextBox42.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox42.TabIndex = 2564;
-            this.inputTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmProcess
             // 
@@ -8332,7 +7780,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProcess";
             this.Text = "Process";
-            this.Shown += new System.EventHandler(this.frmOverview_Shown);
+            this.Shown += new System.EventHandler(this.frmProcess_Shown);
             this.GroupBox3.ResumeLayout(false);
             this.GroupBox3.PerformLayout();
             this.ADD_Panel_1.ResumeLayout(false);
@@ -8406,7 +7854,6 @@
 
         #endregion
         private System.Windows.Forms.Timer timerStatus;
-        private components.Motor motor1;
         internal System.Windows.Forms.GroupBox GroupBox3;
         internal System.Windows.Forms.Label Label165;
         internal System.Windows.Forms.Label Label166;
@@ -8711,9 +8158,7 @@
         private components.ControlBtn controlBtn14;
         private components.ControlBtn controlBtn13;
         private components.ControlBtn controlBtn12;
-        private components.ControlBtn controlBtn11;
         private components.ControlBtn controlBtn10;
-        private components.ControlBtn controlBtn9;
         private components.ControlBtn controlBtn8;
         private components.DisplayTextBox displayTextBox44;
         private components.DisplayTextBox displayTextBox45;
@@ -8731,57 +8176,27 @@
         private components.DisplayTextBox displayTextBox33;
         private components.DisplayTextBox displayTextBox34;
         private components.DisplayTextBox displayTextBox35;
-        private components.DisplayTextBox displayTextBox25;
-        private components.DisplayTextBox displayTextBox26;
-        private components.DisplayTextBox displayTextBox48;
-        private components.DisplayTextBox displayTextBox49;
         private components.DisplayTextBox displayTextBox50;
         private components.DisplayTextBox displayTextBox51;
         private components.DisplayTextBox displayTextBox52;
         private components.DisplayTextBox displayTextBox53;
-        private components.DisplayTextBox displayTextBox54;
-        private components.DisplayTextBox displayTextBox55;
-        private components.DisplayTextBox displayTextBox56;
-        private components.DisplayTextBox displayTextBox57;
         private components.DisplayTextBox displayTextBox58;
         private components.DisplayTextBox displayTextBox59;
         private components.DisplayTextBox displayTextBox60;
         private components.DisplayTextBox displayTextBox61;
         private components.InputTextBox inputTextBox70;
         private components.InputTextBox inputTextBox71;
-        private components.InputTextBox inputTextBox72;
-        private components.InputTextBox inputTextBox73;
         private components.InputTextBox inputTextBox66;
         private components.InputTextBox inputTextBox67;
-        private components.InputTextBox inputTextBox68;
-        private components.InputTextBox inputTextBox69;
         private components.InputTextBox inputTextBox62;
         private components.InputTextBox inputTextBox63;
-        private components.InputTextBox inputTextBox64;
-        private components.InputTextBox inputTextBox65;
         private components.InputTextBox inputTextBox58;
         private components.InputTextBox inputTextBox59;
-        private components.InputTextBox inputTextBox60;
-        private components.InputTextBox inputTextBox61;
-        private components.InputTextBox inputTextBox54;
-        private components.InputTextBox inputTextBox55;
-        private components.InputTextBox inputTextBox56;
-        private components.InputTextBox inputTextBox57;
         private components.InputTextBox inputTextBox50;
         private components.InputTextBox inputTextBox51;
-        private components.InputTextBox inputTextBox52;
-        private components.InputTextBox inputTextBox53;
-        private components.InputTextBox inputTextBox46;
-        private components.InputTextBox inputTextBox47;
-        private components.InputTextBox inputTextBox48;
-        private components.InputTextBox inputTextBox49;
         private components.InputTextBox inputTextBox45;
         private components.InputTextBox inputTextBox44;
-        private components.InputTextBox inputTextBox43;
-        private components.InputTextBox inputTextBox42;
         internal System.Windows.Forms.Label Label228;
-        internal System.Windows.Forms.Label label11;
-        internal System.Windows.Forms.Label label12;
         internal System.Windows.Forms.Label label13;
         internal System.Windows.Forms.Label label15;
         internal System.Windows.Forms.Label label23;
@@ -8789,7 +8204,6 @@
         internal System.Windows.Forms.Label label35;
         internal System.Windows.Forms.Label label36;
         internal System.Windows.Forms.Label label37;
-        internal System.Windows.Forms.Label label38;
         internal System.Windows.Forms.Label label54;
         internal System.Windows.Forms.Label label55;
         internal System.Windows.Forms.Label label39;
@@ -8950,5 +8364,11 @@
         internal System.Windows.Forms.Label label111;
         internal System.Windows.Forms.Label Label142;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape23;
+        private components.DisplayTextBox displayTextBox25;
+        private components.DisplayTextBox displayTextBox26;
+        private components.DisplayTextBox displayTextBox48;
+        private components.DisplayTextBox displayTextBox49;
+        private components.DisplayTextBox displayTextBox54;
+        private components.DisplayTextBox displayTextBox55;
     }
 }

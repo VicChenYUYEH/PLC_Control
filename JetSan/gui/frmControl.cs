@@ -5,11 +5,11 @@ using HyTemplate.components;
 
 namespace HyTemplate.gui
 {
-    public partial class frmProcess : Form
+    public partial class frmControl : Form
     {
         private EqBase ebKernel;
 
-        public frmProcess(EqBase m_EqBase)
+        public frmControl(EqBase m_EqBase)
         {
             InitializeComponent();
 
@@ -18,7 +18,7 @@ namespace HyTemplate.gui
             if (ebKernel != null)
             {
                 #region Initial Component
-                initialComponents(this);                
+                initialComponents(this);
                 #endregion
             }
 
@@ -36,10 +36,10 @@ namespace HyTemplate.gui
                 timerStatus.Enabled = false;
             }
 
-            refreshStatus(this);                   
+            refreshStatus(this);
         }
 
-        private void frmProcess_Shown(object sender, EventArgs e)
+        private void frmControl_Shown(object sender, EventArgs e)
         {
             timerStatus.Enabled = true;
         }
@@ -110,6 +110,5 @@ namespace HyTemplate.gui
                 }
             }
         }
-
     }
 }

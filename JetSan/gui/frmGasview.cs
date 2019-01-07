@@ -8,8 +8,6 @@ namespace HyTemplate.gui
     public partial class frmGasview : Form
     {
         private EqBase ebKernel;
-        //bool bDisplayStatus = false;
-        bool bIsInitial = false;
 
         public frmGasview(EqBase m_EqBase)
         {
@@ -39,17 +37,6 @@ namespace HyTemplate.gui
             }
 
             refreshStatus(this);
-
-            //if (!bDisplayStatus)
-            {
-                //bDisplayStatus = true;
-                getPowerAeStep();
-            }
-
-            if (!bIsInitial)
-            {
-                InitialSetpoint();
-            }
         }
 
         private void frmOverview_Shown(object sender, EventArgs e)
@@ -61,80 +48,7 @@ namespace HyTemplate.gui
         {
             timerStatus.Enabled = true;
         }
-
-        #region AE Power Control
-        private void button1_Click(object sender, EventArgs e)
-        {
-            setPowerAeStep(int.Parse(((Button)sender).Text));
-        }
-
-        private void getPowerAeStep()
-         {
-            string[] step_device = new string[] { ConstPlcDefine.PLC_DO_POWER_1_TAP_1, ConstPlcDefine.PLC_DO_POWER_1_TAP_2, ConstPlcDefine.PLC_DO_POWER_1_TAP_3 };
-            double step = 0;
-
-            for (int index = 0; index < 3; index++)
-            {
-                short value = ebKernel.PlcKernel[step_device[index]];
-                step += ebKernel.PlcKernel[step_device[index]]*(Math.Pow(2, index));
-            }
-
-            //Button[] step_btn = new Button[] { button1, button2, button3, button4, button5, button6, button7 };
-            //for (int index = 0; index < 7; index++)
-            //{
-            //    if (step_btn[index].BackColor == (index == step ? Color.Lime : SystemColors.Control)) continue;
-
-            //    step_btn[index].BackColor = (index == step ? Color.Lime : SystemColors.Control);
-            //}
-            
-        }
-
-        private void setPowerAeStep(int m_Step)
-        {
-            string binary = Convert.ToString(m_Step-1, 2).PadLeft(3, '0');
-            char[] arr_binary = binary.ToCharArray();
-            Array.Reverse(arr_binary);
-
-            string[] step_device = new string[] { ConstPlcDefine.PLC_DO_POWER_1_TAP_1, ConstPlcDefine.PLC_DO_POWER_1_TAP_2, ConstPlcDefine.PLC_DO_POWER_1_TAP_3 };
-            for ( int index = 0; index < 3; index++)
-            {
-                ebKernel.PlcKernel[step_device[index]] = short.Parse(arr_binary[index].ToString());
-            }            
-        }
-
-        private void plcObject18_DoubleClick(object sender, EventArgs e)
-        {
-            //bool status = ebKernel.PlcKernel[statusPictureBox1._PlcDevice] == 1 ? true : false;
-            //dlgSwitch dlg = new dlgSwitch(status);
-            //dlg.PlcDevice = statusPictureBox1._PlcDevice;
-
-            //DialogResult result = dlg.ShowDialog();
-            //if (result == DialogResult.Yes)
-            //{
-            //    //Power01_PULSE OFF <== ON
-            //    ebKernel.PlcKernel[ConstPlcDefine.PLC_DO_POWER_1_PLUSE_OFF] = 1;
-            //    //Power01_INTERLOCK <== ON
-            //    ebKernel.PlcKernel[ConstPlcDefine.PLC_DO_POWER_1_INTERLOCK] = 1;
-
-            //    System.Threading.Thread.Sleep(1000);
-            //    //Power01_OUTPUT ON <== ON
-            //    ebKernel.PlcKernel[ConstPlcDefine.PLC_DO_POWER_1_OUTPUT] = 1;
-            //}
-            //else if (result == DialogResult.No)
-            //{
-            //    //Power01_OUTPUT ON <== OFF
-            //    ebKernel.PlcKernel[ConstPlcDefine.PLC_DO_POWER_1_OUTPUT] = 0;
-
-            //    System.Threading.Thread.Sleep(1000);
-
-            //    //Power01_PULSE OFF <== OFF
-            //    ebKernel.PlcKernel[ConstPlcDefine.PLC_DO_POWER_1_PLUSE_OFF] = 0;
-            //    //Power01_INTERLOCK <== OFF
-            //    ebKernel.PlcKernel[ConstPlcDefine.PLC_DO_POWER_1_INTERLOCK] = 0;
-            //}
-        }
-        #endregion
-
+        
         private void plcObject19_DoubleClick(object sender, EventArgs e)
         {
             //bool status = ebKernel.PlcKernel[statusPictureBox2._PlcDevice] == 1 ? true : false;
@@ -309,38 +223,7 @@ namespace HyTemplate.gui
             }
 
             return true;
-        }
-
-        private void InitialSetpoint()
-        {
-            foreach (Control obj in this.Controls)
-            {
-                if (obj.GetType().Equals(typeof(DisplayTextBox)))
-                {
-                    ((DisplayTextBox)obj).refreshData();
-                }
-                else if (obj.GetType().Equals(typeof(InputTextBox)))
-                {
-                    ((InputTextBox)obj).refreshData();
-                }
-                else if (obj.GetType().Equals(typeof(GroupBox)))
-                {
-                    foreach (Control sub_obj in obj.Controls)
-                    {
-                        if (sub_obj.GetType().Equals(typeof(InputTextBox)))
-                        {
-                            ((InputTextBox)sub_obj).refreshData();
-                        }
-                        else if (sub_obj.GetType().Equals(typeof(DisplayTextBox)))
-                        {
-                            ((DisplayTextBox)sub_obj).refreshData();
-                        }
-                    }
-                }
-            }
-
-            bIsInitial = true;
-        }
+        }      
 
         private void plcObject22_DoubleClick(object sender, EventArgs e)
         {
@@ -401,15 +284,15 @@ namespace HyTemplate.gui
                 {
                     ((StatusPictureBox)obj).refreshStatus();
                 }
-                else if (obj.GetType().Equals(typeof(TurboPump)))
+                else if (obj.GetType().Equals(typeof(InputTextBox)))
                 {
-                    ((TurboPump)obj).refreshStatus();
+                    ((InputTextBox)obj).refreshData();
                 }
-                else if (obj.GetType().Equals(typeof(Motor)))
+                else if (obj.GetType().Equals(typeof(ControlBtn)))
                 {
-                    ((Motor)obj).refreshStatus();
+                    ((ControlBtn)obj).refreshStatus();
                 }
-                else if (obj.GetType().Equals(typeof(GroupBox)))
+                else if (obj.GetType().Equals(typeof(TabControl)) || obj.GetType().Equals(typeof(TabPage)) || obj.GetType().Equals(typeof(GroupBox)))
                 {
                     refreshStatus(obj);
                 }
@@ -432,19 +315,15 @@ namespace HyTemplate.gui
                 {
                     ((InputTextBox)obj)._EqBase = ebKernel;
                 }
-                else if (obj.GetType().Equals(typeof(TurboPump)))
-                {
-                    ((TurboPump)obj)._EqBase = ebKernel;
-                }
                 else if (obj.GetType().Equals(typeof(StatusPictureBox)))
                 {
                     ((StatusPictureBox)obj)._EqBase = ebKernel;
                 }
-                else if (obj.GetType().Equals(typeof(Motor)))
+                else if (obj.GetType().Equals(typeof(ControlBtn)))
                 {
-                    ((Motor)obj)._EqBase = ebKernel;
+                    ((ControlBtn)obj)._EqBase = ebKernel;
                 }
-                else if (obj.GetType().Equals(typeof(GroupBox)))
+                else if (obj.GetType().Equals(typeof(TabControl)) || obj.GetType().Equals(typeof(TabPage)) || obj.GetType().Equals(typeof(GroupBox)))
                 {
                     initialComponents(obj);                    
                 }

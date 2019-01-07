@@ -32,7 +32,6 @@ namespace HyTemplate.components
 
         #region Properties
         public string _PlcRunDevice { get; set; }
-        public string _PlcOffDevice { get; set; }
         public string _PlcAlarmDevice { get; set; }
         public string _PlcCoolingDevice { get; set; }
         public string _PlcDefrostingDevice { get; set; }
@@ -54,7 +53,6 @@ namespace HyTemplate.components
             InitializeComponent();
 
             _PlcRunDevice = "";
-            _PlcOffDevice = "";
             _PlcAlarmDevice = "";
             _PlcCoolingDevice = "";
             _PlcDefrostingDevice = "";
@@ -149,10 +147,9 @@ namespace HyTemplate.components
 
         public void refreshStatus()
         {
-            if (_PlcOffDevice.Trim() == "" || _EqBase == null) return;
-
-            
-            PolycoldStatus status = PolycoldStatus.tsOff;// _EqBase.PlcKernel[_PlcReadyDevice] == 1 ? true : false;
+            if (_EqBase == null) return;
+           
+            PolycoldStatus status = PolycoldStatus.tsOff;
 
             if (_PlcAlarmDevice.Trim() != "" && _EqBase.PlcKernel[_PlcAlarmDevice] == 1)
             {

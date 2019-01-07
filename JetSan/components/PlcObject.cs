@@ -163,7 +163,8 @@ namespace HyTemplate.components
             if (_PlcDevice.Trim() == "" || _EqBase == null) return;
 
             dlgSwitch dlg = new dlgSwitch(_CurrentStatus);
-            dlg.PlcDevice = _PlcDevice;
+            dlg.PlcDevice = _EqBase.PlcKernel.getPlcMap(_PlcDevice);
+            dlg.PlcDevice = (_EqBase.PlcKernel[_PlcDevice] == 1) ? dlg.PlcDevice + " Opening" : dlg.PlcDevice;
             DialogResult result = dlg.ShowDialog();
             if (result == DialogResult.Yes)
             {

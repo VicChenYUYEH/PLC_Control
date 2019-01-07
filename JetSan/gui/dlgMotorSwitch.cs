@@ -75,8 +75,7 @@ namespace HyTemplate.gui
                 inputTextBox_MotoSpeed._EqBase = ebKernel;
                 inputTextBox_MotoSpeed._MaxLimit = maxMotorRpm;
                 //inputTextBox_MotoSpeed._Multiplication = maxMotorPlcValue;
-
-                inputTextBox_MotoSpeed._DoubleWord = true;
+                
                 inputTextBox_MotoSpeed._Division = _Division;
                 inputTextBox_MotoSpeed._Multiplication = _Multiplication;
                 

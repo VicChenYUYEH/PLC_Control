@@ -102,7 +102,6 @@
             // inputTextBox_MotoSpeed
             // 
             this.inputTextBox_MotoSpeed._Division = 1;
-            this.inputTextBox_MotoSpeed._DoubleWord = false;
             this.inputTextBox_MotoSpeed._EqBase = null;
             this.inputTextBox_MotoSpeed._FloatNumber = false;
             this.inputTextBox_MotoSpeed._MaxLimit = 3000D;

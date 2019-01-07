@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>發行\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -195,11 +195,11 @@
     <Compile Include="gui\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frmOverveiw_2nd.cs">
+    <Compile Include="gui\frmControl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frmOverveiw_2nd.Designer.cs">
-      <DependentUpon>frmOverveiw_2nd.cs</DependentUpon>
+    <Compile Include="gui\frmControl.Designer.cs">
+      <DependentUpon>frmControl.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frmGasview.cs">
       <SubType>Form</SubType>
@@ -213,11 +213,11 @@
     <Compile Include="gui\frmProcess.Designer.cs">
       <DependentUpon>frmProcess.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frmOverview_1st.cs">
+    <Compile Include="gui\frmOverview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frmOverview_1st.Designer.cs">
-      <DependentUpon>frmOverview_1st.cs</DependentUpon>
+    <Compile Include="gui\frmOverview.Designer.cs">
+      <DependentUpon>frmOverview.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frmRecipe.cs">
       <SubType>Form</SubType>
@@ -288,8 +288,8 @@
     <EmbeddedResource Include="gui\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frmOverveiw_2nd.resx">
-      <DependentUpon>frmOverveiw_2nd.cs</DependentUpon>
+    <EmbeddedResource Include="gui\frmControl.resx">
+      <DependentUpon>frmControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmGasview.resx">
       <DependentUpon>frmGasview.cs</DependentUpon>
@@ -297,8 +297,8 @@
     <EmbeddedResource Include="gui\frmProcess.resx">
       <DependentUpon>frmProcess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frmOverview_1st.resx">
-      <DependentUpon>frmOverview_1st.cs</DependentUpon>
+    <EmbeddedResource Include="gui\frmOverview.resx">
+      <DependentUpon>frmOverview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmRecipe.resx">
       <DependentUpon>frmRecipe.cs</DependentUpon>

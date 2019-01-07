@@ -35,11 +35,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnIoView = new System.Windows.Forms.Button();
             this.btnSysPara = new System.Windows.Forms.Button();
-            this.btnOverview1st = new System.Windows.Forms.Button();
+            this.btnOverview1 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.btnVacuum = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblaccount = new System.Windows.Forms.Label();
@@ -47,10 +45,8 @@
             this.lblPLC_Connect = new System.Windows.Forms.Label();
             this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
             this.displayTextBox_Alarm = new HyTemplate.components.DisplayTextBox();
-            this.switchButton2 = new HyTemplate.components.SwitchButton();
-            this.switchButton1 = new HyTemplate.components.SwitchButton();
             this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
-            this.Overview2nd = new System.Windows.Forms.Button();
+            this.btnControl = new System.Windows.Forms.Button();
             this.btnGasView = new System.Windows.Forms.Button();
             this.Power_RunStop = new System.Windows.Forms.Button();
             this.Power_RunStart = new System.Windows.Forms.Button();
@@ -114,16 +110,16 @@
             this.btnSysPara.UseVisualStyleBackColor = true;
             this.btnSysPara.Click += new System.EventHandler(this.btnSysPara_Click);
             // 
-            // btnOverview1st
+            // btnOverview1
             // 
-            this.btnOverview1st.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnOverview1st.Location = new System.Drawing.Point(12, 8);
-            this.btnOverview1st.Name = "btnOverview1st";
-            this.btnOverview1st.Size = new System.Drawing.Size(130, 60);
-            this.btnOverview1st.TabIndex = 6;
-            this.btnOverview1st.Text = "Overview_Page_1";
-            this.btnOverview1st.UseVisualStyleBackColor = true;
-            this.btnOverview1st.Click += new System.EventHandler(this.btnOverview_Click);
+            this.btnOverview1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnOverview1.Location = new System.Drawing.Point(12, 8);
+            this.btnOverview1.Name = "btnOverview1";
+            this.btnOverview1.Size = new System.Drawing.Size(130, 60);
+            this.btnOverview1.TabIndex = 6;
+            this.btnOverview1.Text = "Overview";
+            this.btnOverview1.UseVisualStyleBackColor = true;
+            this.btnOverview1.Click += new System.EventHandler(this.btnOverview_Click);
             // 
             // btnLogin
             // 
@@ -146,27 +142,6 @@
             this.button8.Text = "Alarm Reset";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // btnVacuum
-            // 
-            this.btnVacuum.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnVacuum.Location = new System.Drawing.Point(1520, 297);
-            this.btnVacuum.Name = "btnVacuum";
-            this.btnVacuum.Size = new System.Drawing.Size(85, 60);
-            this.btnVacuum.TabIndex = 13;
-            this.btnVacuum.Text = "Vacuum";
-            this.btnVacuum.UseVisualStyleBackColor = true;
-            this.btnVacuum.Click += new System.EventHandler(this.btnVacuum_Click);
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button10.Location = new System.Drawing.Point(1611, 297);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(85, 60);
-            this.button10.TabIndex = 14;
-            this.button10.Text = "Vent";
-            this.button10.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -253,38 +228,6 @@
             this.displayTextBox_Alarm.TabIndex = 11;
             this.displayTextBox_Alarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // switchButton2
-            // 
-            this.switchButton2._CurrentStatus = false;
-            this.switchButton2._EqBase = null;
-            this.switchButton2._PlcDevice = "";
-            this.switchButton2._PlcDisplayDevice = "";
-            this.switchButton2._Reverse = false;
-            this.switchButton2.BackColor = System.Drawing.Color.Red;
-            this.switchButton2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.switchButton2.Location = new System.Drawing.Point(1608, 231);
-            this.switchButton2.Name = "switchButton2";
-            this.switchButton2.Size = new System.Drawing.Size(85, 60);
-            this.switchButton2.TabIndex = 10;
-            this.switchButton2.Text = "Auto\r\nStop";
-            this.switchButton2.UseVisualStyleBackColor = false;
-            // 
-            // switchButton1
-            // 
-            this.switchButton1._CurrentStatus = false;
-            this.switchButton1._EqBase = null;
-            this.switchButton1._PlcDevice = "";
-            this.switchButton1._PlcDisplayDevice = "";
-            this.switchButton1._Reverse = false;
-            this.switchButton1.BackColor = System.Drawing.Color.Red;
-            this.switchButton1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.switchButton1.Location = new System.Drawing.Point(1520, 231);
-            this.switchButton1.Name = "switchButton1";
-            this.switchButton1.Size = new System.Drawing.Size(85, 60);
-            this.switchButton1.TabIndex = 9;
-            this.switchButton1.Text = "Auto\r\nStart";
-            this.switchButton1.UseVisualStyleBackColor = false;
-            // 
             // currentDateTime1
             // 
             this.currentDateTime1.AutoSize = true;
@@ -296,16 +239,16 @@
             this.currentDateTime1.Size = new System.Drawing.Size(173, 63);
             this.currentDateTime1.TabIndex = 0;
             // 
-            // Overview2nd
+            // btnControl
             // 
-            this.Overview2nd.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Overview2nd.Location = new System.Drawing.Point(164, 8);
-            this.Overview2nd.Name = "Overview2nd";
-            this.Overview2nd.Size = new System.Drawing.Size(130, 60);
-            this.Overview2nd.TabIndex = 26;
-            this.Overview2nd.Text = "Overview_Page_2";
-            this.Overview2nd.UseVisualStyleBackColor = true;
-            this.Overview2nd.Click += new System.EventHandler(this.Overview2nd_Click);
+            this.btnControl.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnControl.Location = new System.Drawing.Point(164, 8);
+            this.btnControl.Name = "btnControl";
+            this.btnControl.Size = new System.Drawing.Size(130, 60);
+            this.btnControl.TabIndex = 26;
+            this.btnControl.Text = "Control";
+            this.btnControl.UseVisualStyleBackColor = true;
+            this.btnControl.Click += new System.EventHandler(this.Control_Click);
             // 
             // btnGasView
             // 
@@ -321,7 +264,7 @@
             // Power_RunStop
             // 
             this.Power_RunStop.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Power_RunStop.Location = new System.Drawing.Point(1608, 374);
+            this.Power_RunStop.Location = new System.Drawing.Point(1608, 232);
             this.Power_RunStop.Name = "Power_RunStop";
             this.Power_RunStop.Size = new System.Drawing.Size(88, 59);
             this.Power_RunStop.TabIndex = 2705;
@@ -331,7 +274,7 @@
             // Power_RunStart
             // 
             this.Power_RunStart.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Power_RunStart.Location = new System.Drawing.Point(1520, 374);
+            this.Power_RunStart.Location = new System.Drawing.Point(1520, 232);
             this.Power_RunStart.Name = "Power_RunStart";
             this.Power_RunStart.Size = new System.Drawing.Size(85, 59);
             this.Power_RunStart.TabIndex = 2704;
@@ -358,21 +301,17 @@
             this.Controls.Add(this.Power_RunStop);
             this.Controls.Add(this.Power_RunStart);
             this.Controls.Add(this.btnGasView);
-            this.Controls.Add(this.Overview2nd);
+            this.Controls.Add(this.btnControl);
             this.Controls.Add(this.lblPLC_Connect);
             this.Controls.Add(this.statusPictureBox1);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.lblaccount);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.btnVacuum);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.displayTextBox_Alarm);
-            this.Controls.Add(this.switchButton2);
-            this.Controls.Add(this.switchButton1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnOverview1st);
+            this.Controls.Add(this.btnOverview1);
             this.Controls.Add(this.btnSysPara);
             this.Controls.Add(this.btnIoView);
             this.Controls.Add(this.button3);
@@ -401,21 +340,17 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnIoView;
         private System.Windows.Forms.Button btnSysPara;
-        private System.Windows.Forms.Button btnOverview1st;
+        private System.Windows.Forms.Button btnOverview1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private components.SwitchButton switchButton1;
-        private components.SwitchButton switchButton2;
         private components.DisplayTextBox displayTextBox_Alarm;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button btnVacuum;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblaccount;
         private System.Windows.Forms.Label lblID;
         private components.StatusPictureBox statusPictureBox1;
         private System.Windows.Forms.Label lblPLC_Connect;
-        private System.Windows.Forms.Button Overview2nd;
+        private System.Windows.Forms.Button btnControl;
         private System.Windows.Forms.Button btnGasView;
         internal System.Windows.Forms.Button Power_RunStop;
         internal System.Windows.Forms.Button Power_RunStart;

@@ -57,11 +57,12 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.textBox1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox1.ForeColor = System.Drawing.Color.Lime;
-            this.textBox1.Location = new System.Drawing.Point(87, 12);
+            this.textBox1.Location = new System.Drawing.Point(74, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(122, 25);
+            this.textBox1.Size = new System.Drawing.Size(146, 25);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "X10";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -69,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 20);
+            this.label1.Location = new System.Drawing.Point(11, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 3;
