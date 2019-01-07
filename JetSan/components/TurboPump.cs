@@ -45,7 +45,8 @@ namespace HyTemplate.components
         #endregion
 
         ToolTip trackTip;
-        bool bTipDisplay = false;
+        private int lastX;
+        private int lastY;
         TurboStatus tsCurrentStatus;
 
         Dictionary<ImageSize, Dictionary<TurboStatus, Bitmap>> OBJECT_IMAGE = new Dictionary<ImageSize, Dictionary<TurboStatus, Bitmap>>();
@@ -97,65 +98,41 @@ namespace HyTemplate.components
             this.HandleCreated += TurboPump_HandleCreated;
             this.MouseDoubleClick += TurboPump_MouseDoubleClick;
             this.MouseMove += TurboPump_MouseMove;
-            this.MouseLeave += TurboPump_MouseLeave;
         }
-
-        private void TurboPump_MouseLeave(object sender, EventArgs e)
-        {
-            //throw new NotImplementedException();
-            trackTip.Hide(this);
-            bTipDisplay = false;
-        }
+        
 
         private void TurboPump_MouseMove(object sender, MouseEventArgs e)
         {
-            //throw new NotImplementedException();
-            if (bTipDisplay) return;
-            trackTip.Show("Device: " + _PlcStartDevice, this, e.Location);
-            bTipDisplay = true;
+            if (e.X != this.lastX || e.Y != this.lastY)
+            {
+                trackTip.SetToolTip(this, "Device: " + _EqBase.PlcKernel.getPlcMap(_PlcStartDevice));
+                this.lastX = e.X;
+                this.lastY = e.Y;
+            }
         }
 
         private void TurboPump_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            //throw new NotImplementedException();
             if (_PlcStartDevice.Trim() == "" || _EqBase == null || !ReadyToStart) return;
 
-            //dlgSwitch dlg = new dlgSwitch((_EqBase.PlcKernel[_PlcStartDevice] ==1?true:false));
-            //dlg.PlcDevice = _PlcStartDevice;
-            //DialogResult result = dlg.ShowDialog();
-            //if (result == DialogResult.Yes)
-            //{
-            //    _EqBase.PlcKernel[_PlcStopDevice] = 0;
-            //    _EqBase.PlcKernel[_PlcStartDevice] = 1;
-            //}
-            //else if (result == DialogResult.No)
-            //{
-            //    if (_PlcStopDevice.Trim() == "")
-            //    {
-            //        _EqBase.PlcKernel[_PlcStartDevice] = 0;
-            //    }
-            //    else
-            //    {
-            //        _EqBase.PlcKernel[_PlcStartDevice] = 0;
-            //        _EqBase.PlcKernel[_PlcStopDevice] = 1;
-            //    }
-                
-            //}
-            //dlg.Dispose();
+            dlgSwitch dlg = new dlgSwitch((_EqBase.PlcKernel[_PlcStartDevice] == 1 ? true : false));
+            dlg.PlcDevice = _EqBase.PlcKernel.getPlcMap(_PlcStartDevice);
+            dlg.PlcDevice = (_EqBase.PlcKernel[_PlcStartDevice] == 1) ? dlg.PlcDevice + " Opening" : dlg.PlcDevice;
+            DialogResult result = dlg.ShowDialog();
+            _EqBase.PlcKernel[_PlcStartDevice] = (result == DialogResult.Yes) ? 1 : 0;
+            dlg.Dispose();
         }
 
         private void TurboPump_HandleCreated(object sender, EventArgs e)
         {
-            //throw new NotImplementedException();
             this.Image = OBJECT_IMAGE[_ImageSize][TurboStatus.tsStop];
         }
 
         public void refreshStatus()
         {
             if (_PlcReadyDevice.Trim() == "" || _EqBase == null) return;
-
-            
-            TurboStatus status = TurboStatus.tsStop;// _EqBase.PlcKernel[_PlcReadyDevice] == 1 ? true : false;
+           
+            TurboStatus status = TurboStatus.tsStop;
 
             if (_PlcAlarmDevice.Trim() != "" && _EqBase.PlcKernel[_PlcAlarmDevice] == 1)
             {
@@ -165,7 +142,7 @@ namespace HyTemplate.components
             {
                 status = TurboStatus.tsDec;
             }
-            else if (_PlcAccDevice.Trim() != "" && _EqBase.PlcKernel[_PlcReadyDevice] == 1)
+            else if (_PlcReadyDevice.Trim() != "" && _EqBase.PlcKernel[_PlcReadyDevice] == 1)
             {
                 status = TurboStatus.tsReady;
             }
@@ -173,9 +150,7 @@ namespace HyTemplate.components
             {
                 status = TurboStatus.tsAcc;
             }
-            
-            
-
+                     
             if (status == tsCurrentStatus) return;
 
             tsCurrentStatus = status;

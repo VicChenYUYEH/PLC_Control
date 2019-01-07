@@ -171,6 +171,18 @@
     <Compile Include="gui\dlgSwitch.Designer.cs">
       <DependentUpon>dlgSwitch.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frmMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmMaintenance.Designer.cs">
+      <DependentUpon>frmMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmDeviceConstant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmDeviceConstant.Designer.cs">
+      <DependentUpon>frmDeviceConstant.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\frmHistoryAlarm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,12 +194,6 @@
     </Compile>
     <Compile Include="gui\frmHistoryLog.Designer.cs">
       <DependentUpon>frmHistoryLog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="gui\frmIoView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="gui\frmIoView.Designer.cs">
-      <DependentUpon>frmIoView.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frmLogin.cs">
       <SubType>Form</SubType>
@@ -276,14 +282,17 @@
     <EmbeddedResource Include="gui\dlgSwitch.resx">
       <DependentUpon>dlgSwitch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmMaintenance.resx">
+      <DependentUpon>frmMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmDeviceConstant.resx">
+      <DependentUpon>frmDeviceConstant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gui\frmHistoryAlarm.resx">
       <DependentUpon>frmHistoryAlarm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmHistoryLog.resx">
       <DependentUpon>frmHistoryLog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="gui\frmIoView.resx">
-      <DependentUpon>frmIoView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

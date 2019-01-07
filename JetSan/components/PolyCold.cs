@@ -43,7 +43,8 @@ namespace HyTemplate.components
         public bool ReadyToStart { get; set; }
         #endregion
         ToolTip trackTip;
-        bool bTipDisplay = false;
+        private int lastX;
+        private int lastY;
         PolycoldStatus tsCurrentStatus;
 
         Dictionary<ImageSize, Dictionary<PolycoldStatus, Bitmap>> OBJECT_IMAGE = new Dictionary<ImageSize, Dictionary<PolycoldStatus, Bitmap>>();
@@ -93,55 +94,33 @@ namespace HyTemplate.components
             this.HandleCreated += PolyCold_HandleCreated;
             this.MouseDoubleClick += PolyCold_MouseDoubleClick;
             this.MouseMove += PolyCold_MouseMove;
-            this.MouseLeave += PolyCold_MouseLeave;
         }
-
-        private void PolyCold_MouseLeave(object sender, EventArgs e)
-        {
-            trackTip.Hide(this);
-            bTipDisplay = false;
-        }
+        
 
         private void PolyCold_MouseMove(object sender, MouseEventArgs e)
         {
-            //throw new NotImplementedException();
-            if (bTipDisplay) return;
-            trackTip.Show("Device: " + _PlcRunDevice, this, e.Location);
-            bTipDisplay = true;
+            if (e.X != this.lastX || e.Y != this.lastY)
+            {
+                trackTip.SetToolTip(this, "Device: " + _EqBase.PlcKernel.getPlcMap(_PlcRunDevice));
+                this.lastX = e.X;
+                this.lastY = e.Y;
+            }
         }
 
         private void PolyCold_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            //throw new NotImplementedException();
             if (_PlcRunDevice.Trim() == "" || _EqBase == null || !ReadyToStart) return;
 
-            //dlgSwitch dlg = new dlgSwitch((_EqBase.PlcKernel[_PlcStartDevice] ==1?true:false));
-            //dlg.PlcDevice = _PlcStartDevice;
-            //DialogResult result = dlg.ShowDialog();
-            //if (result == DialogResult.Yes)
-            //{
-            //    _EqBase.PlcKernel[_PlcStopDevice] = 0;
-            //    _EqBase.PlcKernel[_PlcStartDevice] = 1;
-            //}
-            //else if (result == DialogResult.No)
-            //{
-            //    if (_PlcStopDevice.Trim() == "")
-            //    {
-            //        _EqBase.PlcKernel[_PlcStartDevice] = 0;
-            //    }
-            //    else
-            //    {
-            //        _EqBase.PlcKernel[_PlcStartDevice] = 0;
-            //        _EqBase.PlcKernel[_PlcStopDevice] = 1;
-            //    }
-                
-            //}
-            //dlg.Dispose();
+            dlgSwitch dlg = new dlgSwitch((_EqBase.PlcKernel[_PlcRunDevice] == 1 ? true : false));
+            dlg.PlcDevice = _EqBase.PlcKernel.getPlcMap(_PlcRunDevice);
+            dlg.PlcDevice = (_EqBase.PlcKernel[_PlcRunDevice] == 1) ? dlg.PlcDevice + " Opening" : dlg.PlcDevice;
+            DialogResult result = dlg.ShowDialog();
+            _EqBase.PlcKernel[_PlcRunDevice] = (result == DialogResult.Yes) ? 1 : 0;
+            dlg.Dispose();
         }
 
         private void PolyCold_HandleCreated(object sender, EventArgs e)
         {
-            //throw new NotImplementedException();
             this.Image = OBJECT_IMAGE[_ImageSize][PolycoldStatus.tsOff];
         }
 

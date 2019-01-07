@@ -33,7 +33,6 @@
             this.btnHistoryLog = new System.Windows.Forms.Button();
             this.btnRecipe = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.btnIoView = new System.Windows.Forms.Button();
             this.btnSysPara = new System.Windows.Forms.Button();
             this.btnOverview1 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -51,6 +50,8 @@
             this.Power_RunStop = new System.Windows.Forms.Button();
             this.Power_RunStart = new System.Windows.Forms.Button();
             this.btnProcView = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,18 +59,18 @@
             // btnHistoryLog
             // 
             this.btnHistoryLog.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnHistoryLog.Location = new System.Drawing.Point(620, 8);
+            this.btnHistoryLog.Location = new System.Drawing.Point(828, 8);
             this.btnHistoryLog.Name = "btnHistoryLog";
             this.btnHistoryLog.Size = new System.Drawing.Size(130, 60);
             this.btnHistoryLog.TabIndex = 1;
-            this.btnHistoryLog.Text = "History \r\nLog";
+            this.btnHistoryLog.Text = "歷史資料";
             this.btnHistoryLog.UseVisualStyleBackColor = true;
             this.btnHistoryLog.Click += new System.EventHandler(this.btnHistoryLog_Click);
             // 
             // btnRecipe
             // 
             this.btnRecipe.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRecipe.Location = new System.Drawing.Point(924, 8);
+            this.btnRecipe.Location = new System.Drawing.Point(1100, 8);
             this.btnRecipe.Name = "btnRecipe";
             this.btnRecipe.Size = new System.Drawing.Size(130, 60);
             this.btnRecipe.TabIndex = 2;
@@ -80,33 +81,22 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(772, 8);
+            this.button3.Location = new System.Drawing.Point(964, 8);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(130, 60);
             this.button3.TabIndex = 3;
-            this.button3.Text = "History \r\nAlarm";
+            this.button3.Text = "歷史異常";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnIoView
-            // 
-            this.btnIoView.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnIoView.Location = new System.Drawing.Point(1228, 8);
-            this.btnIoView.Name = "btnIoView";
-            this.btnIoView.Size = new System.Drawing.Size(130, 60);
-            this.btnIoView.TabIndex = 4;
-            this.btnIoView.Text = "I/O\r\nView";
-            this.btnIoView.UseVisualStyleBackColor = true;
-            this.btnIoView.Click += new System.EventHandler(this.btnIoView_Click);
             // 
             // btnSysPara
             // 
             this.btnSysPara.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSysPara.Location = new System.Drawing.Point(1076, 8);
+            this.btnSysPara.Location = new System.Drawing.Point(1236, 8);
             this.btnSysPara.Name = "btnSysPara";
             this.btnSysPara.Size = new System.Drawing.Size(130, 60);
             this.btnSysPara.TabIndex = 5;
-            this.btnSysPara.Text = "System\r\nParameter";
+            this.btnSysPara.Text = "系統參數";
             this.btnSysPara.UseVisualStyleBackColor = true;
             this.btnSysPara.Click += new System.EventHandler(this.btnSysPara_Click);
             // 
@@ -117,7 +107,7 @@
             this.btnOverview1.Name = "btnOverview1";
             this.btnOverview1.Size = new System.Drawing.Size(130, 60);
             this.btnOverview1.TabIndex = 6;
-            this.btnOverview1.Text = "Overview";
+            this.btnOverview1.Text = "製程系統圖";
             this.btnOverview1.UseVisualStyleBackColor = true;
             this.btnOverview1.Click += new System.EventHandler(this.btnOverview_Click);
             // 
@@ -128,7 +118,7 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(130, 60);
             this.btnLogin.TabIndex = 7;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "登入";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -242,22 +232,22 @@
             // btnControl
             // 
             this.btnControl.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnControl.Location = new System.Drawing.Point(164, 8);
+            this.btnControl.Location = new System.Drawing.Point(148, 8);
             this.btnControl.Name = "btnControl";
             this.btnControl.Size = new System.Drawing.Size(130, 60);
             this.btnControl.TabIndex = 26;
-            this.btnControl.Text = "Control";
+            this.btnControl.Text = "製程系統控制";
             this.btnControl.UseVisualStyleBackColor = true;
             this.btnControl.Click += new System.EventHandler(this.Control_Click);
             // 
             // btnGasView
             // 
             this.btnGasView.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnGasView.Location = new System.Drawing.Point(316, 8);
+            this.btnGasView.Location = new System.Drawing.Point(420, 8);
             this.btnGasView.Name = "btnGasView";
             this.btnGasView.Size = new System.Drawing.Size(130, 60);
             this.btnGasView.TabIndex = 27;
-            this.btnGasView.Text = "Gas View";
+            this.btnGasView.Text = "氣流系統圖";
             this.btnGasView.UseVisualStyleBackColor = true;
             this.btnGasView.Click += new System.EventHandler(this.btnGasView_Click);
             // 
@@ -284,23 +274,45 @@
             // btnProcView
             // 
             this.btnProcView.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnProcView.Location = new System.Drawing.Point(468, 8);
+            this.btnProcView.Location = new System.Drawing.Point(284, 8);
             this.btnProcView.Name = "btnProcView";
             this.btnProcView.Size = new System.Drawing.Size(130, 60);
             this.btnProcView.TabIndex = 28;
-            this.btnProcView.Text = "Process View";
+            this.btnProcView.Text = "製程流程參數";
             this.btnProcView.UseVisualStyleBackColor = true;
             this.btnProcView.Click += new System.EventHandler(this.btnProcView_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button1.Location = new System.Drawing.Point(556, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 60);
+            this.button1.TabIndex = 2706;
+            this.button1.Text = "機台參數";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button2.Location = new System.Drawing.Point(692, 8);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 60);
+            this.button2.TabIndex = 2707;
+            this.button2.Text = "維護參數";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1696, 1059);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGasView);
             this.Controls.Add(this.btnProcView);
             this.Controls.Add(this.Power_RunStop);
             this.Controls.Add(this.Power_RunStart);
-            this.Controls.Add(this.btnGasView);
             this.Controls.Add(this.btnControl);
             this.Controls.Add(this.lblPLC_Connect);
             this.Controls.Add(this.statusPictureBox1);
@@ -313,7 +325,6 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnOverview1);
             this.Controls.Add(this.btnSysPara);
-            this.Controls.Add(this.btnIoView);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnRecipe);
             this.Controls.Add(this.btnHistoryLog);
@@ -338,7 +349,6 @@
         private System.Windows.Forms.Button btnHistoryLog;
         private System.Windows.Forms.Button btnRecipe;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btnIoView;
         private System.Windows.Forms.Button btnSysPara;
         private System.Windows.Forms.Button btnOverview1;
         private System.Windows.Forms.Button btnLogin;
@@ -355,6 +365,8 @@
         internal System.Windows.Forms.Button Power_RunStop;
         internal System.Windows.Forms.Button Power_RunStart;
         private System.Windows.Forms.Button btnProcView;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

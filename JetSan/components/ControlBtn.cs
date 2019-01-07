@@ -19,6 +19,7 @@ namespace HyTemplate.components
         public bool _Reverse { get; set; }
         public bool _ReadOnly { get; set; }
         public string _Text { get; set; }
+        public bool _ShowMsg { get; set; }
         public EqBase _EqBase { get; set; }
         public bool _CurrentStatus { get; set; }
         #endregion
@@ -29,6 +30,7 @@ namespace HyTemplate.components
 
             _PlcDevice = "";
             _Text = "";
+            _ShowMsg = false;
             _PlcDisplayOnDevice = "";
             _PlcDisplayOffDevice = "";
             _ReadOnly = false;
@@ -49,7 +51,13 @@ namespace HyTemplate.components
         private void Btn_Click(object sender, EventArgs e)
         {
             if (_PlcDevice.Trim() == "" || _EqBase == null) return;
-            if(_CurrentStatus)
+
+            if (_ShowMsg)
+            {
+                DialogResult result = MessageBox.Show("    是    否    繼    續   ?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result != DialogResult.Yes) return;
+            }
+            if (_CurrentStatus)
             {
                 _EqBase.PlcKernel[_PlcDevice] = 0;
             }

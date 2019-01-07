@@ -32,11 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOverview));
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
-            this.displayTextBox31 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox30 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox29 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox28 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox27 = new HyTemplate.components.DisplayTextBox();
             this.Label165 = new System.Windows.Forms.Label();
             this.Label166 = new System.Windows.Forms.Label();
             this.Label168 = new System.Windows.Forms.Label();
@@ -295,10 +290,6 @@
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
-            this.displayTextBox4 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox3 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox2 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox1 = new HyTemplate.components.DisplayTextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.Label77 = new System.Windows.Forms.Label();
             this.Label107 = new System.Windows.Forms.Label();
@@ -439,6 +430,10 @@
             this.turboPump14 = new HyTemplate.components.TurboPump();
             this.plcObject41 = new HyTemplate.components.PlcObject();
             this.turboPump15 = new HyTemplate.components.TurboPump();
+            this.displayTextBox4 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox3 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox2 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox1 = new HyTemplate.components.DisplayTextBox();
             this.plcObject37 = new HyTemplate.components.PlcObject();
             this.plcObject36 = new HyTemplate.components.PlcObject();
             this.turboPump12 = new HyTemplate.components.TurboPump();
@@ -488,6 +483,11 @@
             this.plcObject2 = new HyTemplate.components.PlcObject();
             this.plcObject7 = new HyTemplate.components.PlcObject();
             this.plcObject5 = new HyTemplate.components.PlcObject();
+            this.displayTextBox31 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox30 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox29 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox28 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox27 = new HyTemplate.components.DisplayTextBox();
             this.GroupBox3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.polyCold5)).BeginInit();
@@ -632,91 +632,6 @@
             this.GroupBox3.TabIndex = 1953;
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Text = "廠務 - 出入水溫度 / 壓力";
-            // 
-            // displayTextBox31
-            // 
-            this.displayTextBox31._Division = ((short)(1));
-            this.displayTextBox31._DoubleWord = false;
-            this.displayTextBox31._EqBase = null;
-            this.displayTextBox31._MaxLimit = 999D;
-            this.displayTextBox31._MinLimit = 0D;
-            this.displayTextBox31._Multiplication = ((short)(1));
-            this.displayTextBox31._PlcDevice = "Compressed_Air";
-            this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox31.Location = new System.Drawing.Point(327, 51);
-            this.displayTextBox31.Name = "displayTextBox31";
-            this.displayTextBox31.ReadOnly = true;
-            this.displayTextBox31.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox31.TabIndex = 2365;
-            this.displayTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox30
-            // 
-            this.displayTextBox30._Division = ((short)(1));
-            this.displayTextBox30._DoubleWord = false;
-            this.displayTextBox30._EqBase = null;
-            this.displayTextBox30._MaxLimit = 999D;
-            this.displayTextBox30._MinLimit = 0D;
-            this.displayTextBox30._Multiplication = ((short)(1));
-            this.displayTextBox30._PlcDevice = "Water_Pressureof_Outlet";
-            this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox30.Location = new System.Drawing.Point(327, 24);
-            this.displayTextBox30.Name = "displayTextBox30";
-            this.displayTextBox30.ReadOnly = true;
-            this.displayTextBox30.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox30.TabIndex = 2364;
-            this.displayTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox29
-            // 
-            this.displayTextBox29._Division = ((short)(1));
-            this.displayTextBox29._DoubleWord = false;
-            this.displayTextBox29._EqBase = null;
-            this.displayTextBox29._MaxLimit = 999D;
-            this.displayTextBox29._MinLimit = 0D;
-            this.displayTextBox29._Multiplication = ((short)(1));
-            this.displayTextBox29._PlcDevice = "Water_Teof_Inlet";
-            this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox29.Location = new System.Drawing.Point(127, 25);
-            this.displayTextBox29.Name = "displayTextBox29";
-            this.displayTextBox29.ReadOnly = true;
-            this.displayTextBox29.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox29.TabIndex = 2363;
-            this.displayTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox28
-            // 
-            this.displayTextBox28._Division = ((short)(1));
-            this.displayTextBox28._DoubleWord = false;
-            this.displayTextBox28._EqBase = null;
-            this.displayTextBox28._MaxLimit = 999D;
-            this.displayTextBox28._MinLimit = 0D;
-            this.displayTextBox28._Multiplication = ((short)(1));
-            this.displayTextBox28._PlcDevice = "Water_Teof_Outlet";
-            this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox28.Location = new System.Drawing.Point(127, 51);
-            this.displayTextBox28.Name = "displayTextBox28";
-            this.displayTextBox28.ReadOnly = true;
-            this.displayTextBox28.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox28.TabIndex = 2362;
-            this.displayTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox27
-            // 
-            this.displayTextBox27._Division = ((short)(1));
-            this.displayTextBox27._DoubleWord = false;
-            this.displayTextBox27._EqBase = null;
-            this.displayTextBox27._MaxLimit = 999D;
-            this.displayTextBox27._MinLimit = 0D;
-            this.displayTextBox27._Multiplication = ((short)(1));
-            this.displayTextBox27._PlcDevice = "Water_Pressureof_Inlet";
-            this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox27.Location = new System.Drawing.Point(127, 77);
-            this.displayTextBox27.Name = "displayTextBox27";
-            this.displayTextBox27.ReadOnly = true;
-            this.displayTextBox27.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox27.TabIndex = 2361;
-            this.displayTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label165
             // 
@@ -3226,74 +3141,6 @@
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = " Cathode MKS  (Torr)";
             // 
-            // displayTextBox4
-            // 
-            this.displayTextBox4._Division = ((short)(1));
-            this.displayTextBox4._DoubleWord = false;
-            this.displayTextBox4._EqBase = null;
-            this.displayTextBox4._MaxLimit = 999D;
-            this.displayTextBox4._MinLimit = 0D;
-            this.displayTextBox4._Multiplication = ((short)(1));
-            this.displayTextBox4._PlcDevice = "MKS_BTG2_M3_2";
-            this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox4.Location = new System.Drawing.Point(94, 93);
-            this.displayTextBox4.Name = "displayTextBox4";
-            this.displayTextBox4.ReadOnly = true;
-            this.displayTextBox4.Size = new System.Drawing.Size(51, 22);
-            this.displayTextBox4.TabIndex = 2352;
-            this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox3
-            // 
-            this.displayTextBox3._Division = ((short)(1));
-            this.displayTextBox3._DoubleWord = false;
-            this.displayTextBox3._EqBase = null;
-            this.displayTextBox3._MaxLimit = 999D;
-            this.displayTextBox3._MinLimit = 0D;
-            this.displayTextBox3._Multiplication = ((short)(1));
-            this.displayTextBox3._PlcDevice = "MKS_BTG3_M3_2";
-            this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox3.Location = new System.Drawing.Point(18, 93);
-            this.displayTextBox3.Name = "displayTextBox3";
-            this.displayTextBox3.ReadOnly = true;
-            this.displayTextBox3.Size = new System.Drawing.Size(51, 22);
-            this.displayTextBox3.TabIndex = 1952;
-            this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox2
-            // 
-            this.displayTextBox2._Division = ((short)(1));
-            this.displayTextBox2._DoubleWord = false;
-            this.displayTextBox2._EqBase = null;
-            this.displayTextBox2._MaxLimit = 999D;
-            this.displayTextBox2._MinLimit = 0D;
-            this.displayTextBox2._Multiplication = ((short)(1));
-            this.displayTextBox2._PlcDevice = "MKS_BTG1_M3_2";
-            this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox2.Location = new System.Drawing.Point(94, 43);
-            this.displayTextBox2.Name = "displayTextBox2";
-            this.displayTextBox2.ReadOnly = true;
-            this.displayTextBox2.Size = new System.Drawing.Size(51, 22);
-            this.displayTextBox2.TabIndex = 1951;
-            this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox1
-            // 
-            this.displayTextBox1._Division = ((short)(1));
-            this.displayTextBox1._DoubleWord = false;
-            this.displayTextBox1._EqBase = null;
-            this.displayTextBox1._MaxLimit = 999D;
-            this.displayTextBox1._MinLimit = 0D;
-            this.displayTextBox1._Multiplication = ((short)(1));
-            this.displayTextBox1._PlcDevice = "MKS_BTG4_M3_2";
-            this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox1.Location = new System.Drawing.Point(18, 43);
-            this.displayTextBox1.Name = "displayTextBox1";
-            this.displayTextBox1.ReadOnly = true;
-            this.displayTextBox1.Size = new System.Drawing.Size(51, 22);
-            this.displayTextBox1.TabIndex = 1950;
-            this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label59
             // 
             this.label59.AutoSize = true;
@@ -4261,6 +4108,8 @@
             this.plcObject85._CurrentStatus = false;
             this.plcObject85._EqBase = null;
             this.plcObject85._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject85._Limit = "";
+            this.plcObject85._LimitSignal = 0;
             this.plcObject85._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject85._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject85._PlcDisplayOffDevice = null;
@@ -4279,6 +4128,8 @@
             this.plcObject84._CurrentStatus = false;
             this.plcObject84._EqBase = null;
             this.plcObject84._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject84._Limit = "";
+            this.plcObject84._LimitSignal = 0;
             this.plcObject84._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject84._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject84._PlcDisplayOffDevice = null;
@@ -4297,6 +4148,8 @@
             this.plcObject83._CurrentStatus = false;
             this.plcObject83._EqBase = null;
             this.plcObject83._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject83._Limit = "";
+            this.plcObject83._LimitSignal = 0;
             this.plcObject83._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject83._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject83._PlcDisplayOffDevice = null;
@@ -4315,6 +4168,8 @@
             this.plcObject82._CurrentStatus = false;
             this.plcObject82._EqBase = null;
             this.plcObject82._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject82._Limit = "";
+            this.plcObject82._LimitSignal = 0;
             this.plcObject82._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject82._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject82._PlcDisplayOffDevice = null;
@@ -4333,6 +4188,8 @@
             this.plcObject81._CurrentStatus = false;
             this.plcObject81._EqBase = null;
             this.plcObject81._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject81._Limit = "";
+            this.plcObject81._LimitSignal = 0;
             this.plcObject81._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject81._PlcDevice = "Heater1_On_YMC_M2";
             this.plcObject81._PlcDisplayOffDevice = null;
@@ -4351,6 +4208,8 @@
             this.plcObject80._CurrentStatus = false;
             this.plcObject80._EqBase = null;
             this.plcObject80._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject80._Limit = "";
+            this.plcObject80._LimitSignal = 0;
             this.plcObject80._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
             this.plcObject80._PlcDevice = "";
             this.plcObject80._PlcDisplayOffDevice = null;
@@ -4369,6 +4228,8 @@
             this.plcObject79._CurrentStatus = false;
             this.plcObject79._EqBase = null;
             this.plcObject79._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject79._Limit = "";
+            this.plcObject79._LimitSignal = 0;
             this.plcObject79._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject79._PlcDevice = "MF1_ON_YMC";
             this.plcObject79._PlcDisplayOffDevice = null;
@@ -4387,6 +4248,8 @@
             this.plcObject78._CurrentStatus = false;
             this.plcObject78._EqBase = null;
             this.plcObject78._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject78._Limit = "";
+            this.plcObject78._LimitSignal = 0;
             this.plcObject78._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject78._PlcDevice = "DC4_ON_YMC";
             this.plcObject78._PlcDisplayOffDevice = null;
@@ -4405,6 +4268,8 @@
             this.plcObject77._CurrentStatus = false;
             this.plcObject77._EqBase = null;
             this.plcObject77._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject77._Limit = "";
+            this.plcObject77._LimitSignal = 0;
             this.plcObject77._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject77._PlcDevice = "DC3_ON_YMC";
             this.plcObject77._PlcDisplayOffDevice = null;
@@ -4423,6 +4288,8 @@
             this.plcObject76._CurrentStatus = false;
             this.plcObject76._EqBase = null;
             this.plcObject76._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject76._Limit = "";
+            this.plcObject76._LimitSignal = 0;
             this.plcObject76._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject76._PlcDevice = "MF2_ON_YMC";
             this.plcObject76._PlcDisplayOffDevice = null;
@@ -4441,6 +4308,8 @@
             this.plcObject75._CurrentStatus = false;
             this.plcObject75._EqBase = null;
             this.plcObject75._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject75._Limit = "";
+            this.plcObject75._LimitSignal = 0;
             this.plcObject75._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject75._PlcDevice = "DC2_ON_YMC";
             this.plcObject75._PlcDisplayOffDevice = null;
@@ -4459,6 +4328,8 @@
             this.plcObject74._CurrentStatus = false;
             this.plcObject74._EqBase = null;
             this.plcObject74._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject74._Limit = "";
+            this.plcObject74._LimitSignal = 0;
             this.plcObject74._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject74._PlcDevice = "DC1_ON_YMC";
             this.plcObject74._PlcDisplayOffDevice = null;
@@ -4477,6 +4348,8 @@
             this.plcObject73._CurrentStatus = false;
             this.plcObject73._EqBase = null;
             this.plcObject73._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject73._Limit = "";
+            this.plcObject73._LimitSignal = 0;
             this.plcObject73._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
             this.plcObject73._PlcDevice = "";
             this.plcObject73._PlcDisplayOffDevice = null;
@@ -4495,6 +4368,8 @@
             this.plcObject72._CurrentStatus = false;
             this.plcObject72._EqBase = null;
             this.plcObject72._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject72._Limit = "";
+            this.plcObject72._LimitSignal = 0;
             this.plcObject72._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
             this.plcObject72._PlcDevice = "";
             this.plcObject72._PlcDisplayOffDevice = null;
@@ -4513,6 +4388,8 @@
             this.plcObject70._CurrentStatus = false;
             this.plcObject70._EqBase = null;
             this.plcObject70._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject70._Limit = "BP2_OpenYMC";
+            this.plcObject70._LimitSignal = 0;
             this.plcObject70._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject70._PlcDevice = "RP2_OpenYMC";
             this.plcObject70._PlcDisplayOffDevice = null;
@@ -4531,6 +4408,8 @@
             this.plcObject71._CurrentStatus = false;
             this.plcObject71._EqBase = null;
             this.plcObject71._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject71._Limit = "RP2_OpenYMC";
+            this.plcObject71._LimitSignal = 1;
             this.plcObject71._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject71._PlcDevice = "BP2_OpenYMC";
             this.plcObject71._PlcDisplayOffDevice = null;
@@ -4549,6 +4428,8 @@
             this.plcObject68._CurrentStatus = false;
             this.plcObject68._EqBase = null;
             this.plcObject68._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject68._Limit = "BP1_OpenYMC";
+            this.plcObject68._LimitSignal = 0;
             this.plcObject68._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject68._PlcDevice = "RP1_OpenYMC";
             this.plcObject68._PlcDisplayOffDevice = null;
@@ -4567,6 +4448,8 @@
             this.plcObject69._CurrentStatus = false;
             this.plcObject69._EqBase = null;
             this.plcObject69._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject69._Limit = "RP1_OpenYMC";
+            this.plcObject69._LimitSignal = 1;
             this.plcObject69._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject69._PlcDevice = "BP1_OpenYMC";
             this.plcObject69._PlcDisplayOffDevice = null;
@@ -4585,6 +4468,8 @@
             this.plcObject67._CurrentStatus = false;
             this.plcObject67._EqBase = null;
             this.plcObject67._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject67._Limit = "";
+            this.plcObject67._LimitSignal = 0;
             this.plcObject67._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject67._PlcDevice = "PV1_Open_YMC";
             this.plcObject67._PlcDisplayOffDevice = null;
@@ -4603,6 +4488,8 @@
             this.plcObject66._CurrentStatus = false;
             this.plcObject66._EqBase = null;
             this.plcObject66._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject66._Limit = "";
+            this.plcObject66._LimitSignal = 0;
             this.plcObject66._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject66._PlcDevice = "RV1_Open_YMC";
             this.plcObject66._PlcDisplayOffDevice = null;
@@ -4621,6 +4508,8 @@
             this.plcObject65._CurrentStatus = false;
             this.plcObject65._EqBase = null;
             this.plcObject65._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject65._Limit = "";
+            this.plcObject65._LimitSignal = 0;
             this.plcObject65._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject65._PlcDevice = "FV1_Open_YMC";
             this.plcObject65._PlcDisplayOffDevice = null;
@@ -4659,6 +4548,8 @@
             this.plcObject64._CurrentStatus = false;
             this.plcObject64._EqBase = null;
             this.plcObject64._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject64._Limit = "";
+            this.plcObject64._LimitSignal = 0;
             this.plcObject64._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject64._PlcDevice = "FV2_Open_YMC";
             this.plcObject64._PlcDisplayOffDevice = null;
@@ -4697,6 +4588,8 @@
             this.plcObject63._CurrentStatus = false;
             this.plcObject63._EqBase = null;
             this.plcObject63._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject63._Limit = "";
+            this.plcObject63._LimitSignal = 0;
             this.plcObject63._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject63._PlcDevice = "RV2_Open_YMC";
             this.plcObject63._PlcDisplayOffDevice = null;
@@ -4715,6 +4608,8 @@
             this.plcObject62._CurrentStatus = false;
             this.plcObject62._EqBase = null;
             this.plcObject62._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject62._Limit = "";
+            this.plcObject62._LimitSignal = 0;
             this.plcObject62._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject62._PlcDevice = "RV3_Open_YMC";
             this.plcObject62._PlcDisplayOffDevice = null;
@@ -4733,6 +4628,8 @@
             this.plcObject59._CurrentStatus = false;
             this.plcObject59._EqBase = null;
             this.plcObject59._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject59._Limit = "BP3_OpenYMC";
+            this.plcObject59._LimitSignal = 0;
             this.plcObject59._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject59._PlcDevice = "RP3_OpenYMC";
             this.plcObject59._PlcDisplayOffDevice = null;
@@ -4751,6 +4648,8 @@
             this.plcObject60._CurrentStatus = false;
             this.plcObject60._EqBase = null;
             this.plcObject60._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject60._Limit = "RP3_OpenYMC";
+            this.plcObject60._LimitSignal = 1;
             this.plcObject60._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject60._PlcDevice = "BP3_OpenYMC";
             this.plcObject60._PlcDisplayOffDevice = null;
@@ -4769,6 +4668,8 @@
             this.plcObject61._CurrentStatus = false;
             this.plcObject61._EqBase = null;
             this.plcObject61._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject61._Limit = "";
+            this.plcObject61._LimitSignal = 0;
             this.plcObject61._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject61._PlcDevice = "PV2_Open_YMC";
             this.plcObject61._PlcDisplayOffDevice = null;
@@ -4787,6 +4688,8 @@
             this.plcObject56._CurrentStatus = false;
             this.plcObject56._EqBase = null;
             this.plcObject56._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject56._Limit = "BP4_OpenYMC";
+            this.plcObject56._LimitSignal = 0;
             this.plcObject56._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject56._PlcDevice = "RP4_OpenYMC";
             this.plcObject56._PlcDisplayOffDevice = null;
@@ -4805,6 +4708,8 @@
             this.plcObject57._CurrentStatus = false;
             this.plcObject57._EqBase = null;
             this.plcObject57._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject57._Limit = "RP4_OpenYMC";
+            this.plcObject57._LimitSignal = 1;
             this.plcObject57._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject57._PlcDevice = "BP4_OpenYMC";
             this.plcObject57._PlcDisplayOffDevice = null;
@@ -4823,6 +4728,8 @@
             this.plcObject58._CurrentStatus = false;
             this.plcObject58._EqBase = null;
             this.plcObject58._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject58._Limit = "";
+            this.plcObject58._LimitSignal = 0;
             this.plcObject58._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject58._PlcDevice = "PV3_Open_YMC";
             this.plcObject58._PlcDisplayOffDevice = null;
@@ -4841,6 +4748,8 @@
             this.plcObject53._CurrentStatus = false;
             this.plcObject53._EqBase = null;
             this.plcObject53._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject53._Limit = "";
+            this.plcObject53._LimitSignal = 0;
             this.plcObject53._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject53._PlcDevice = "FV5_Open_YMC";
             this.plcObject53._PlcDisplayOffDevice = null;
@@ -4879,6 +4788,8 @@
             this.plcObject54._CurrentStatus = false;
             this.plcObject54._EqBase = null;
             this.plcObject54._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject54._Limit = "";
+            this.plcObject54._LimitSignal = 0;
             this.plcObject54._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject54._PlcDevice = "FV4_Open_YMC";
             this.plcObject54._PlcDisplayOffDevice = null;
@@ -4917,6 +4828,8 @@
             this.plcObject55._CurrentStatus = false;
             this.plcObject55._EqBase = null;
             this.plcObject55._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject55._Limit = "";
+            this.plcObject55._LimitSignal = 0;
             this.plcObject55._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject55._PlcDevice = "FV3_Open_YMC";
             this.plcObject55._PlcDisplayOffDevice = null;
@@ -4955,6 +4868,8 @@
             this.plcObject50._CurrentStatus = false;
             this.plcObject50._EqBase = null;
             this.plcObject50._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject50._Limit = "";
+            this.plcObject50._LimitSignal = 0;
             this.plcObject50._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject50._PlcDevice = "FV8_Open_YMC";
             this.plcObject50._PlcDisplayOffDevice = null;
@@ -4993,6 +4908,8 @@
             this.plcObject51._CurrentStatus = false;
             this.plcObject51._EqBase = null;
             this.plcObject51._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject51._Limit = "";
+            this.plcObject51._LimitSignal = 0;
             this.plcObject51._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject51._PlcDevice = "FV7_Open_YMC";
             this.plcObject51._PlcDisplayOffDevice = null;
@@ -5031,6 +4948,8 @@
             this.plcObject52._CurrentStatus = false;
             this.plcObject52._EqBase = null;
             this.plcObject52._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject52._Limit = "";
+            this.plcObject52._LimitSignal = 0;
             this.plcObject52._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject52._PlcDevice = "FV6_Open_YMC";
             this.plcObject52._PlcDisplayOffDevice = null;
@@ -5069,6 +4988,8 @@
             this.plcObject47._CurrentStatus = false;
             this.plcObject47._EqBase = null;
             this.plcObject47._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject47._Limit = "BP5_OpenYMC";
+            this.plcObject47._LimitSignal = 0;
             this.plcObject47._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject47._PlcDevice = "RP5_OpenYMC";
             this.plcObject47._PlcDisplayOffDevice = null;
@@ -5087,6 +5008,8 @@
             this.plcObject48._CurrentStatus = false;
             this.plcObject48._EqBase = null;
             this.plcObject48._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject48._Limit = "RP5_OpenYMC";
+            this.plcObject48._LimitSignal = 1;
             this.plcObject48._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject48._PlcDevice = "BP5_OpenYMC";
             this.plcObject48._PlcDisplayOffDevice = null;
@@ -5105,6 +5028,8 @@
             this.plcObject49._CurrentStatus = false;
             this.plcObject49._EqBase = null;
             this.plcObject49._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject49._Limit = "";
+            this.plcObject49._LimitSignal = 0;
             this.plcObject49._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject49._PlcDevice = "PV4_Open_YMC";
             this.plcObject49._PlcDisplayOffDevice = null;
@@ -5123,6 +5048,8 @@
             this.plcObject44._CurrentStatus = false;
             this.plcObject44._EqBase = null;
             this.plcObject44._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject44._Limit = "";
+            this.plcObject44._LimitSignal = 0;
             this.plcObject44._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject44._PlcDevice = "FV11_Open_YMC";
             this.plcObject44._PlcDisplayOffDevice = null;
@@ -5140,12 +5067,12 @@
             // 
             this.turboPump16._EqBase = null;
             this.turboPump16._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump16._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump16._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump16._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump16._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump16._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump16._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump16._PlcAccDevice = "TP11_Acc_XC";
+            this.turboPump16._PlcAlarmDevice = "TP11_Alarm_XC";
+            this.turboPump16._PlcDecDevice = "TP11_Dec_XC";
+            this.turboPump16._PlcReadyDevice = "TP11_Ready_XC";
+            this.turboPump16._PlcStartDevice = "TP11_Run_YMC_303";
+            this.turboPump16._PlcStopDevice = "";
             this.turboPump16._Reverse = false;
             this.turboPump16.Image = ((System.Drawing.Image)(resources.GetObject("turboPump16.Image")));
             this.turboPump16.Location = new System.Drawing.Point(713, 718);
@@ -5161,6 +5088,8 @@
             this.plcObject45._CurrentStatus = false;
             this.plcObject45._EqBase = null;
             this.plcObject45._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject45._Limit = "";
+            this.plcObject45._LimitSignal = 0;
             this.plcObject45._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject45._PlcDevice = "FV10_Open_YMC";
             this.plcObject45._PlcDisplayOffDevice = null;
@@ -5178,12 +5107,12 @@
             // 
             this.turboPump17._EqBase = null;
             this.turboPump17._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump17._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump17._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump17._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump17._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump17._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump17._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump17._PlcAccDevice = "TP10_Acc_XC";
+            this.turboPump17._PlcAlarmDevice = "TP10_Alarm_XC";
+            this.turboPump17._PlcDecDevice = "TP10_Dec_XC";
+            this.turboPump17._PlcReadyDevice = "TP10_Ready_XC";
+            this.turboPump17._PlcStartDevice = "TP10_Run_YMC_302";
+            this.turboPump17._PlcStopDevice = "";
             this.turboPump17._Reverse = false;
             this.turboPump17.Image = ((System.Drawing.Image)(resources.GetObject("turboPump17.Image")));
             this.turboPump17.Location = new System.Drawing.Point(713, 654);
@@ -5199,6 +5128,8 @@
             this.plcObject46._CurrentStatus = false;
             this.plcObject46._EqBase = null;
             this.plcObject46._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject46._Limit = "";
+            this.plcObject46._LimitSignal = 0;
             this.plcObject46._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject46._PlcDevice = "FV9_Open_YMC";
             this.plcObject46._PlcDisplayOffDevice = null;
@@ -5216,12 +5147,12 @@
             // 
             this.turboPump18._EqBase = null;
             this.turboPump18._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump18._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump18._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump18._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump18._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump18._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump18._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump18._PlcAccDevice = "TP9_Acc_XC";
+            this.turboPump18._PlcAlarmDevice = "TP9_Alarm_XC";
+            this.turboPump18._PlcDecDevice = "TP9_Dec_XC";
+            this.turboPump18._PlcReadyDevice = "TP9_Ready_XC";
+            this.turboPump18._PlcStartDevice = "TP9_Run_YMC_301";
+            this.turboPump18._PlcStopDevice = "";
             this.turboPump18._Reverse = false;
             this.turboPump18.Image = ((System.Drawing.Image)(resources.GetObject("turboPump18.Image")));
             this.turboPump18.Location = new System.Drawing.Point(713, 595);
@@ -5237,6 +5168,8 @@
             this.plcObject42._CurrentStatus = false;
             this.plcObject42._EqBase = null;
             this.plcObject42._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject42._Limit = "BP6_OpenYMC";
+            this.plcObject42._LimitSignal = 0;
             this.plcObject42._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject42._PlcDevice = "RP6_OpenYMC";
             this.plcObject42._PlcDisplayOffDevice = null;
@@ -5255,6 +5188,8 @@
             this.plcObject43._CurrentStatus = false;
             this.plcObject43._EqBase = null;
             this.plcObject43._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject43._Limit = "RP6_OpenYMC";
+            this.plcObject43._LimitSignal = 1;
             this.plcObject43._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject43._PlcDevice = "BP6_OpenYMC";
             this.plcObject43._PlcDisplayOffDevice = null;
@@ -5273,6 +5208,8 @@
             this.plcObject38._CurrentStatus = false;
             this.plcObject38._EqBase = null;
             this.plcObject38._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject38._Limit = "";
+            this.plcObject38._LimitSignal = 0;
             this.plcObject38._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject38._PlcDevice = "PV5_Open_YMC";
             this.plcObject38._PlcDisplayOffDevice = null;
@@ -5291,6 +5228,8 @@
             this.plcObject39._CurrentStatus = false;
             this.plcObject39._EqBase = null;
             this.plcObject39._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject39._Limit = "";
+            this.plcObject39._LimitSignal = 0;
             this.plcObject39._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject39._PlcDevice = "FV14_Open_YMC";
             this.plcObject39._PlcDisplayOffDevice = null;
@@ -5308,12 +5247,12 @@
             // 
             this.turboPump13._EqBase = null;
             this.turboPump13._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump13._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump13._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump13._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump13._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump13._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump13._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump13._PlcAccDevice = "TP14_Acc_XC";
+            this.turboPump13._PlcAlarmDevice = "TP14_Alarm_XC";
+            this.turboPump13._PlcDecDevice = "TP14_Dec_XC";
+            this.turboPump13._PlcReadyDevice = "TP14_Ready_XC";
+            this.turboPump13._PlcStartDevice = "TP14_Run_YMC_313";
+            this.turboPump13._PlcStopDevice = "";
             this.turboPump13._Reverse = false;
             this.turboPump13.Image = ((System.Drawing.Image)(resources.GetObject("turboPump13.Image")));
             this.turboPump13.Location = new System.Drawing.Point(589, 718);
@@ -5329,6 +5268,8 @@
             this.plcObject40._CurrentStatus = false;
             this.plcObject40._EqBase = null;
             this.plcObject40._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject40._Limit = "";
+            this.plcObject40._LimitSignal = 0;
             this.plcObject40._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject40._PlcDevice = "FV13_Open_YMC";
             this.plcObject40._PlcDisplayOffDevice = null;
@@ -5346,12 +5287,12 @@
             // 
             this.turboPump14._EqBase = null;
             this.turboPump14._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump14._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump14._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump14._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump14._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump14._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump14._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump14._PlcAccDevice = "TP13_Acc_XC";
+            this.turboPump14._PlcAlarmDevice = "TP13_Alarm_XC";
+            this.turboPump14._PlcDecDevice = "TP13_Dec_XC";
+            this.turboPump14._PlcReadyDevice = "TP13_Ready_XC";
+            this.turboPump14._PlcStartDevice = "TP13_Run_YMC_312";
+            this.turboPump14._PlcStopDevice = "";
             this.turboPump14._Reverse = false;
             this.turboPump14.Image = ((System.Drawing.Image)(resources.GetObject("turboPump14.Image")));
             this.turboPump14.Location = new System.Drawing.Point(589, 654);
@@ -5367,6 +5308,8 @@
             this.plcObject41._CurrentStatus = false;
             this.plcObject41._EqBase = null;
             this.plcObject41._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject41._Limit = "";
+            this.plcObject41._LimitSignal = 0;
             this.plcObject41._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject41._PlcDevice = "FV12_Open_YMC";
             this.plcObject41._PlcDisplayOffDevice = null;
@@ -5384,12 +5327,12 @@
             // 
             this.turboPump15._EqBase = null;
             this.turboPump15._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump15._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump15._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump15._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump15._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump15._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump15._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump15._PlcAccDevice = "TP12_Acc_XC";
+            this.turboPump15._PlcAlarmDevice = "TP12_Alarm_XC";
+            this.turboPump15._PlcDecDevice = "TP12_Dec_XC";
+            this.turboPump15._PlcReadyDevice = "TP12_Ready_XC";
+            this.turboPump15._PlcStartDevice = "TP12_Run_YMC_311";
+            this.turboPump15._PlcStopDevice = "";
             this.turboPump15._Reverse = false;
             this.turboPump15.Image = ((System.Drawing.Image)(resources.GetObject("turboPump15.Image")));
             this.turboPump15.Location = new System.Drawing.Point(589, 595);
@@ -5400,11 +5343,81 @@
             this.turboPump15.TabIndex = 2235;
             this.turboPump15.TabStop = false;
             // 
+            // displayTextBox4
+            // 
+            this.displayTextBox4._Division = ((short)(1));
+            this.displayTextBox4._DoubleWord = false;
+            this.displayTextBox4._EqBase = null;
+            this.displayTextBox4._MaxLimit = 999D;
+            this.displayTextBox4._MinLimit = 0D;
+            this.displayTextBox4._Multiplication = ((short)(1));
+            this.displayTextBox4._PlcDevice = "MKS_BTG2_M3_2";
+            this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox4.Location = new System.Drawing.Point(94, 93);
+            this.displayTextBox4.Name = "displayTextBox4";
+            this.displayTextBox4.ReadOnly = true;
+            this.displayTextBox4.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox4.TabIndex = 2352;
+            this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox3
+            // 
+            this.displayTextBox3._Division = ((short)(1));
+            this.displayTextBox3._DoubleWord = false;
+            this.displayTextBox3._EqBase = null;
+            this.displayTextBox3._MaxLimit = 999D;
+            this.displayTextBox3._MinLimit = 0D;
+            this.displayTextBox3._Multiplication = ((short)(1));
+            this.displayTextBox3._PlcDevice = "MKS_BTG3_M3_2";
+            this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox3.Location = new System.Drawing.Point(18, 93);
+            this.displayTextBox3.Name = "displayTextBox3";
+            this.displayTextBox3.ReadOnly = true;
+            this.displayTextBox3.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox3.TabIndex = 1952;
+            this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox2
+            // 
+            this.displayTextBox2._Division = ((short)(1));
+            this.displayTextBox2._DoubleWord = false;
+            this.displayTextBox2._EqBase = null;
+            this.displayTextBox2._MaxLimit = 999D;
+            this.displayTextBox2._MinLimit = 0D;
+            this.displayTextBox2._Multiplication = ((short)(1));
+            this.displayTextBox2._PlcDevice = "MKS_BTG1_M3_2";
+            this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox2.Location = new System.Drawing.Point(94, 43);
+            this.displayTextBox2.Name = "displayTextBox2";
+            this.displayTextBox2.ReadOnly = true;
+            this.displayTextBox2.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox2.TabIndex = 1951;
+            this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox1
+            // 
+            this.displayTextBox1._Division = ((short)(1));
+            this.displayTextBox1._DoubleWord = false;
+            this.displayTextBox1._EqBase = null;
+            this.displayTextBox1._MaxLimit = 999D;
+            this.displayTextBox1._MinLimit = 0D;
+            this.displayTextBox1._Multiplication = ((short)(1));
+            this.displayTextBox1._PlcDevice = "MKS_BTG4_M3_2";
+            this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox1.Location = new System.Drawing.Point(18, 43);
+            this.displayTextBox1.Name = "displayTextBox1";
+            this.displayTextBox1.ReadOnly = true;
+            this.displayTextBox1.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox1.TabIndex = 1950;
+            this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // plcObject37
             // 
             this.plcObject37._CurrentStatus = false;
             this.plcObject37._EqBase = null;
             this.plcObject37._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject37._Limit = "";
+            this.plcObject37._LimitSignal = 0;
             this.plcObject37._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject37._PlcDevice = "PV8_Open_YMC";
             this.plcObject37._PlcDisplayOffDevice = null;
@@ -5423,6 +5436,8 @@
             this.plcObject36._CurrentStatus = false;
             this.plcObject36._EqBase = null;
             this.plcObject36._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject36._Limit = "";
+            this.plcObject36._LimitSignal = 0;
             this.plcObject36._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject36._PlcDevice = "FV21_Open_YMC";
             this.plcObject36._PlcDisplayOffDevice = null;
@@ -5440,12 +5455,12 @@
             // 
             this.turboPump12._EqBase = null;
             this.turboPump12._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump12._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump12._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump12._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump12._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump12._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump12._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump12._PlcAccDevice = "TP21_Acc_XC";
+            this.turboPump12._PlcAlarmDevice = "TP21_Alarm_XC";
+            this.turboPump12._PlcDecDevice = "TP21_Dec_XC";
+            this.turboPump12._PlcReadyDevice = "TP21_Ready_XC";
+            this.turboPump12._PlcStartDevice = "TP21_Run_YMC_343";
+            this.turboPump12._PlcStopDevice = "";
             this.turboPump12._Reverse = false;
             this.turboPump12.Image = ((System.Drawing.Image)(resources.GetObject("turboPump12.Image")));
             this.turboPump12.Location = new System.Drawing.Point(302, 705);
@@ -5461,6 +5476,8 @@
             this.plcObject35._CurrentStatus = false;
             this.plcObject35._EqBase = null;
             this.plcObject35._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject35._Limit = "";
+            this.plcObject35._LimitSignal = 0;
             this.plcObject35._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject35._PlcDevice = "FV20_Open_YMC";
             this.plcObject35._PlcDisplayOffDevice = null;
@@ -5478,12 +5495,12 @@
             // 
             this.turboPump11._EqBase = null;
             this.turboPump11._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump11._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump11._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump11._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump11._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump11._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump11._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump11._PlcAccDevice = "TP20_Acc_XC";
+            this.turboPump11._PlcAlarmDevice = "TP20_Alarm_XC";
+            this.turboPump11._PlcDecDevice = "TP20_Dec_XC";
+            this.turboPump11._PlcReadyDevice = "TP20_Ready_XC";
+            this.turboPump11._PlcStartDevice = "TP20_Run_YMC_342";
+            this.turboPump11._PlcStopDevice = "";
             this.turboPump11._Reverse = false;
             this.turboPump11.Image = ((System.Drawing.Image)(resources.GetObject("turboPump11.Image")));
             this.turboPump11.Location = new System.Drawing.Point(302, 642);
@@ -5499,6 +5516,8 @@
             this.plcObject34._CurrentStatus = false;
             this.plcObject34._EqBase = null;
             this.plcObject34._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject34._Limit = "";
+            this.plcObject34._LimitSignal = 0;
             this.plcObject34._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject34._PlcDevice = "FV19_Open_YMC";
             this.plcObject34._PlcDisplayOffDevice = null;
@@ -5516,12 +5535,12 @@
             // 
             this.turboPump10._EqBase = null;
             this.turboPump10._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump10._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump10._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump10._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump10._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump10._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump10._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump10._PlcAccDevice = "TP19_Acc_XC";
+            this.turboPump10._PlcAlarmDevice = "TP19_Alarm_XC";
+            this.turboPump10._PlcDecDevice = "TP19_Dec_XC";
+            this.turboPump10._PlcReadyDevice = "TP19_Ready_XC";
+            this.turboPump10._PlcStartDevice = "TP19_Run_YMC_341";
+            this.turboPump10._PlcStopDevice = "";
             this.turboPump10._Reverse = false;
             this.turboPump10.Image = ((System.Drawing.Image)(resources.GetObject("turboPump10.Image")));
             this.turboPump10.Location = new System.Drawing.Point(302, 578);
@@ -5537,6 +5556,8 @@
             this.plcObject32._CurrentStatus = false;
             this.plcObject32._EqBase = null;
             this.plcObject32._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject32._Limit = "BP9_OpenYMC";
+            this.plcObject32._LimitSignal = 0;
             this.plcObject32._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject32._PlcDevice = "RP9_OpenYMC";
             this.plcObject32._PlcDisplayOffDevice = null;
@@ -5555,6 +5576,8 @@
             this.plcObject33._CurrentStatus = false;
             this.plcObject33._EqBase = null;
             this.plcObject33._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject33._Limit = "RP9_OpenYMC";
+            this.plcObject33._LimitSignal = 1;
             this.plcObject33._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject33._PlcDevice = "BP9_OpenYMC";
             this.plcObject33._PlcDisplayOffDevice = null;
@@ -5573,6 +5596,8 @@
             this.plcObject30._CurrentStatus = false;
             this.plcObject30._EqBase = null;
             this.plcObject30._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject30._Limit = "BP10_OpenYMC";
+            this.plcObject30._LimitSignal = 0;
             this.plcObject30._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject30._PlcDevice = "RP10_OpenYMC";
             this.plcObject30._PlcDisplayOffDevice = null;
@@ -5591,6 +5616,8 @@
             this.plcObject31._CurrentStatus = false;
             this.plcObject31._EqBase = null;
             this.plcObject31._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject31._Limit = "RP10_OpenYMC";
+            this.plcObject31._LimitSignal = 1;
             this.plcObject31._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject31._PlcDevice = "BP10_OpenYMC";
             this.plcObject31._PlcDisplayOffDevice = null;
@@ -5609,6 +5636,8 @@
             this.plcObject29._CurrentStatus = false;
             this.plcObject29._EqBase = null;
             this.plcObject29._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject29._Limit = "";
+            this.plcObject29._LimitSignal = 0;
             this.plcObject29._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject29._PlcDevice = "PV9_Open_YMC";
             this.plcObject29._PlcDisplayOffDevice = null;
@@ -5627,6 +5656,8 @@
             this.plcObject27._CurrentStatus = false;
             this.plcObject27._EqBase = null;
             this.plcObject27._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject27._Limit = "BP12_OpenYMC";
+            this.plcObject27._LimitSignal = 0;
             this.plcObject27._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject27._PlcDevice = "RP12_OpenYMC";
             this.plcObject27._PlcDisplayOffDevice = null;
@@ -5645,6 +5676,8 @@
             this.plcObject28._CurrentStatus = false;
             this.plcObject28._EqBase = null;
             this.plcObject28._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject28._Limit = "RP12_OpenYMC";
+            this.plcObject28._LimitSignal = 1;
             this.plcObject28._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject28._PlcDevice = "BP12_OpenYMC";
             this.plcObject28._PlcDisplayOffDevice = null;
@@ -5663,6 +5696,8 @@
             this.plcObject25._CurrentStatus = false;
             this.plcObject25._EqBase = null;
             this.plcObject25._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject25._Limit = "BP11_OpenYMC";
+            this.plcObject25._LimitSignal = 0;
             this.plcObject25._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject25._PlcDevice = "RP11_OpenYMC";
             this.plcObject25._PlcDisplayOffDevice = null;
@@ -5681,6 +5716,8 @@
             this.plcObject26._CurrentStatus = false;
             this.plcObject26._EqBase = null;
             this.plcObject26._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject26._Limit = "RP11_OpenYMC";
+            this.plcObject26._LimitSignal = 1;
             this.plcObject26._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject26._PlcDevice = "BP11_OpenYMC";
             this.plcObject26._PlcDisplayOffDevice = null;
@@ -5699,6 +5736,8 @@
             this.plcObject24._CurrentStatus = false;
             this.plcObject24._EqBase = null;
             this.plcObject24._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject24._Limit = "";
+            this.plcObject24._LimitSignal = 0;
             this.plcObject24._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject24._PlcDevice = "PV10_Open_YMC";
             this.plcObject24._PlcDisplayOffDevice = null;
@@ -5717,6 +5756,8 @@
             this.plcObject23._CurrentStatus = false;
             this.plcObject23._EqBase = null;
             this.plcObject23._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject23._Limit = "";
+            this.plcObject23._LimitSignal = 0;
             this.plcObject23._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject23._PlcDevice = "RV6_Open_YMC";
             this.plcObject23._PlcDisplayOffDevice = null;
@@ -5735,6 +5776,8 @@
             this.plcObject21._CurrentStatus = false;
             this.plcObject21._EqBase = null;
             this.plcObject21._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject21._Limit = "";
+            this.plcObject21._LimitSignal = 0;
             this.plcObject21._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject21._PlcDevice = "FV26_Open_YMC";
             this.plcObject21._PlcDisplayOffDevice = null;
@@ -5752,12 +5795,12 @@
             // 
             this.turboPump8._EqBase = null;
             this.turboPump8._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump8._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump8._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump8._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump8._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump8._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump8._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump8._PlcAccDevice = "TP26_Acc_XC";
+            this.turboPump8._PlcAlarmDevice = "TP26_Alarm_XC";
+            this.turboPump8._PlcDecDevice = "TP26_Dec_XC";
+            this.turboPump8._PlcReadyDevice = "TP26_Ready_XC";
+            this.turboPump8._PlcStartDevice = "TP26_Run_YMC_411";
+            this.turboPump8._PlcStopDevice = "";
             this.turboPump8._Reverse = false;
             this.turboPump8.Image = ((System.Drawing.Image)(resources.GetObject("turboPump8.Image")));
             this.turboPump8.Location = new System.Drawing.Point(13, 655);
@@ -5773,6 +5816,8 @@
             this.plcObject22._CurrentStatus = false;
             this.plcObject22._EqBase = null;
             this.plcObject22._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject22._Limit = "";
+            this.plcObject22._LimitSignal = 0;
             this.plcObject22._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject22._PlcDevice = "FV25_Open_YMC";
             this.plcObject22._PlcDisplayOffDevice = null;
@@ -5790,12 +5835,12 @@
             // 
             this.turboPump9._EqBase = null;
             this.turboPump9._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump9._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump9._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump9._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump9._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump9._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump9._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump9._PlcAccDevice = "TP25_Acc_XC";
+            this.turboPump9._PlcAlarmDevice = "TP25_Alarm_XC";
+            this.turboPump9._PlcDecDevice = "TP25_Dec_XC";
+            this.turboPump9._PlcReadyDevice = "TP25_Ready_XC";
+            this.turboPump9._PlcStartDevice = "TP25_Run_YMC_401";
+            this.turboPump9._PlcStopDevice = "";
             this.turboPump9._Reverse = false;
             this.turboPump9.Image = ((System.Drawing.Image)(resources.GetObject("turboPump9.Image")));
             this.turboPump9.Location = new System.Drawing.Point(13, 596);
@@ -5811,6 +5856,8 @@
             this.plcObject20._CurrentStatus = false;
             this.plcObject20._EqBase = null;
             this.plcObject20._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject20._Limit = "";
+            this.plcObject20._LimitSignal = 0;
             this.plcObject20._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject20._PlcDevice = "FV24_Open_YMC";
             this.plcObject20._PlcDisplayOffDevice = null;
@@ -5828,12 +5875,12 @@
             // 
             this.turboPump7._EqBase = null;
             this.turboPump7._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump7._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump7._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump7._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump7._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump7._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump7._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump7._PlcAccDevice = "TP24_Acc_XC";
+            this.turboPump7._PlcAlarmDevice = "TP24_Alarm_XC";
+            this.turboPump7._PlcDecDevice = "TP24_Dec_XC";
+            this.turboPump7._PlcReadyDevice = "TP24_Ready_XC";
+            this.turboPump7._PlcStartDevice = "TP24_Run_YMC_353";
+            this.turboPump7._PlcStopDevice = "";
             this.turboPump7._Reverse = false;
             this.turboPump7.Image = ((System.Drawing.Image)(resources.GetObject("turboPump7.Image")));
             this.turboPump7.Location = new System.Drawing.Point(186, 684);
@@ -5849,6 +5896,8 @@
             this.plcObject19._CurrentStatus = false;
             this.plcObject19._EqBase = null;
             this.plcObject19._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject19._Limit = "";
+            this.plcObject19._LimitSignal = 0;
             this.plcObject19._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject19._PlcDevice = "FV23_Open_YMC";
             this.plcObject19._PlcDisplayOffDevice = null;
@@ -5866,12 +5915,12 @@
             // 
             this.turboPump6._EqBase = null;
             this.turboPump6._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump6._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump6._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump6._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump6._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump6._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump6._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump6._PlcAccDevice = "TP23_Acc_XC";
+            this.turboPump6._PlcAlarmDevice = "TP23_Alarm_XC";
+            this.turboPump6._PlcDecDevice = "TP23_Dec_XC";
+            this.turboPump6._PlcReadyDevice = "TP23_Ready_XC";
+            this.turboPump6._PlcStartDevice = "TP23_Run_YMC_352";
+            this.turboPump6._PlcStopDevice = "";
             this.turboPump6._Reverse = false;
             this.turboPump6.Image = ((System.Drawing.Image)(resources.GetObject("turboPump6.Image")));
             this.turboPump6.Location = new System.Drawing.Point(186, 620);
@@ -5887,6 +5936,8 @@
             this.plcObject18._CurrentStatus = false;
             this.plcObject18._EqBase = null;
             this.plcObject18._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject18._Limit = "";
+            this.plcObject18._LimitSignal = 0;
             this.plcObject18._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject18._PlcDevice = "FV22_Open_YMC";
             this.plcObject18._PlcDisplayOffDevice = null;
@@ -5904,12 +5955,12 @@
             // 
             this.turboPump5._EqBase = null;
             this.turboPump5._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump5._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump5._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump5._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump5._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump5._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump5._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump5._PlcAccDevice = "TP22_Acc_XC";
+            this.turboPump5._PlcAlarmDevice = "TP22_Alarm_XC";
+            this.turboPump5._PlcDecDevice = "TP22_Dec_XC";
+            this.turboPump5._PlcReadyDevice = "TP22_Ready_XC";
+            this.turboPump5._PlcStartDevice = "TP22_Run_YMC_351";
+            this.turboPump5._PlcStopDevice = "";
             this.turboPump5._Reverse = false;
             this.turboPump5.Image = ((System.Drawing.Image)(resources.GetObject("turboPump5.Image")));
             this.turboPump5.Location = new System.Drawing.Point(186, 561);
@@ -5925,6 +5976,8 @@
             this.plcObject17._CurrentStatus = false;
             this.plcObject17._EqBase = null;
             this.plcObject17._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject17._Limit = "";
+            this.plcObject17._LimitSignal = 0;
             this.plcObject17._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject17._PlcDevice = "VENT2_Open_YMC_M2";
             this.plcObject17._PlcDisplayOffDevice = null;
@@ -5943,6 +5996,8 @@
             this.plcObject16._CurrentStatus = false;
             this.plcObject16._EqBase = null;
             this.plcObject16._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject16._Limit = "";
+            this.plcObject16._LimitSignal = 0;
             this.plcObject16._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject16._PlcDevice = "CVS1_Open_YMC";
             this.plcObject16._PlcDisplayOffDevice = null;
@@ -5961,6 +6016,8 @@
             this.plcObject15._CurrentStatus = false;
             this.plcObject15._EqBase = null;
             this.plcObject15._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject15._Limit = "";
+            this.plcObject15._LimitSignal = 0;
             this.plcObject15._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject15._PlcDevice = "VENT1_Open_YMC_M1";
             this.plcObject15._PlcDisplayOffDevice = null;
@@ -5978,12 +6035,12 @@
             // 
             this.turboPump4._EqBase = null;
             this.turboPump4._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump4._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump4._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump4._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump4._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump4._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump4._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump4._PlcAccDevice = "TP15_Acc_XC";
+            this.turboPump4._PlcAlarmDevice = "TP15_Alarm_XC";
+            this.turboPump4._PlcDecDevice = "TP15_Dec_XC";
+            this.turboPump4._PlcReadyDevice = "TP15_Ready_XC";
+            this.turboPump4._PlcStartDevice = "TP15_Run_YMC_321";
+            this.turboPump4._PlcStopDevice = "";
             this.turboPump4._Reverse = false;
             this.turboPump4.Image = ((System.Drawing.Image)(resources.GetObject("turboPump4.Image")));
             this.turboPump4.Location = new System.Drawing.Point(725, 162);
@@ -5999,6 +6056,8 @@
             this.plcObject14._CurrentStatus = false;
             this.plcObject14._EqBase = null;
             this.plcObject14._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject14._Limit = "";
+            this.plcObject14._LimitSignal = 0;
             this.plcObject14._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject14._PlcDevice = "FV15_Open_YMC";
             this.plcObject14._PlcDisplayOffDevice = null;
@@ -6017,6 +6076,8 @@
             this.plcObject13._CurrentStatus = false;
             this.plcObject13._EqBase = null;
             this.plcObject13._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject13._Limit = "";
+            this.plcObject13._LimitSignal = 0;
             this.plcObject13._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject13._PlcDevice = "RV4_Open_YMC";
             this.plcObject13._PlcDisplayOffDevice = null;
@@ -6035,6 +6096,8 @@
             this.plcObject12._CurrentStatus = false;
             this.plcObject12._EqBase = null;
             this.plcObject12._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject12._Limit = "BP7_OpenYMC";
+            this.plcObject12._LimitSignal = 0;
             this.plcObject12._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject12._PlcDevice = "RP7_OpenYMC";
             this.plcObject12._PlcDisplayOffDevice = null;
@@ -6053,6 +6116,8 @@
             this.plcObject11._CurrentStatus = false;
             this.plcObject11._EqBase = null;
             this.plcObject11._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject11._Limit = "RP7_OpenYMC";
+            this.plcObject11._LimitSignal = 1;
             this.plcObject11._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject11._PlcDevice = "BP7_OpenYMC";
             this.plcObject11._PlcDisplayOffDevice = null;
@@ -6071,6 +6136,8 @@
             this.plcObject10._CurrentStatus = false;
             this.plcObject10._EqBase = null;
             this.plcObject10._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject10._Limit = "";
+            this.plcObject10._LimitSignal = 0;
             this.plcObject10._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject10._PlcDevice = "PV6_Open_YMC";
             this.plcObject10._PlcDisplayOffDevice = null;
@@ -6088,12 +6155,12 @@
             // 
             this.turboPump3._EqBase = null;
             this.turboPump3._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump3._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump3._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump3._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump3._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump3._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump3._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump3._PlcAccDevice = "TP16_Acc_XC";
+            this.turboPump3._PlcAlarmDevice = "TP16_Alarm_XC";
+            this.turboPump3._PlcDecDevice = "TP16_Dec_XC";
+            this.turboPump3._PlcReadyDevice = "TP16_Ready_XC";
+            this.turboPump3._PlcStartDevice = "TP16_Run_YMC_322";
+            this.turboPump3._PlcStopDevice = "";
             this.turboPump3._Reverse = false;
             this.turboPump3.Image = ((System.Drawing.Image)(resources.GetObject("turboPump3.Image")));
             this.turboPump3.Location = new System.Drawing.Point(563, 139);
@@ -6109,6 +6176,8 @@
             this.plcObject9._CurrentStatus = false;
             this.plcObject9._EqBase = null;
             this.plcObject9._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject9._Limit = "";
+            this.plcObject9._LimitSignal = 0;
             this.plcObject9._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject9._PlcDevice = "FV16_Open_YMC";
             this.plcObject9._PlcDisplayOffDevice = null;
@@ -6126,12 +6195,12 @@
             // 
             this.turboPump2._EqBase = null;
             this.turboPump2._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump2._PlcAccDevice = "PLC_DI_TP_2_ACC";
-            this.turboPump2._PlcAlarmDevice = "PLC_DI_TP_2_ALARM";
-            this.turboPump2._PlcDecDevice = "PLC_DI_TP_2_BRAKE";
-            this.turboPump2._PlcReadyDevice = "PLC_DI_TP_2_NORMAL";
-            this.turboPump2._PlcStartDevice = "PLC_DO_TP_2_START";
-            this.turboPump2._PlcStopDevice = "PLC_DO_TP_2_STOP";
+            this.turboPump2._PlcAccDevice = "TP18_Acc_XC";
+            this.turboPump2._PlcAlarmDevice = "TP18_Alarm_XC";
+            this.turboPump2._PlcDecDevice = "TP18_Dec_XC";
+            this.turboPump2._PlcReadyDevice = "TP18_Ready_XC";
+            this.turboPump2._PlcStartDevice = "TP18_Run_YMC_332";
+            this.turboPump2._PlcStopDevice = "";
             this.turboPump2._Reverse = false;
             this.turboPump2.Image = ((System.Drawing.Image)(resources.GetObject("turboPump2.Image")));
             this.turboPump2.Location = new System.Drawing.Point(504, 139);
@@ -6147,6 +6216,8 @@
             this.plcObject8._CurrentStatus = false;
             this.plcObject8._EqBase = null;
             this.plcObject8._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject8._Limit = "";
+            this.plcObject8._LimitSignal = 0;
             this.plcObject8._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject8._PlcDevice = "FV18_Open_YMC";
             this.plcObject8._PlcDisplayOffDevice = null;
@@ -6165,6 +6236,8 @@
             this.plcObject4._CurrentStatus = false;
             this.plcObject4._EqBase = null;
             this.plcObject4._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject4._Limit = "";
+            this.plcObject4._LimitSignal = 0;
             this.plcObject4._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject4._PlcDevice = "CVS2_Open_YMC";
             this.plcObject4._PlcDisplayOffDevice = null;
@@ -6183,6 +6256,8 @@
             this.plcObject3._CurrentStatus = false;
             this.plcObject3._EqBase = null;
             this.plcObject3._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject3._Limit = "";
+            this.plcObject3._LimitSignal = 0;
             this.plcObject3._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject3._PlcDevice = "VENT3_Open_YMC_M4";
             this.plcObject3._PlcDisplayOffDevice = null;
@@ -6201,6 +6276,8 @@
             this.plcObject6._CurrentStatus = false;
             this.plcObject6._EqBase = null;
             this.plcObject6._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject6._Limit = "";
+            this.plcObject6._LimitSignal = 0;
             this.plcObject6._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject6._PlcDevice = "FV17_Open_YMC";
             this.plcObject6._PlcDisplayOffDevice = null;
@@ -6218,11 +6295,11 @@
             // 
             this.turboPump1._EqBase = null;
             this.turboPump1._ImageSize = HyTemplate.components.TurboPump.ImageSize.isLarge;
-            this.turboPump1._PlcAccDevice = "TP1_Acc_XC";
-            this.turboPump1._PlcAlarmDevice = "TP1_Alarm_XC";
-            this.turboPump1._PlcDecDevice = "TP1_Dec_XC";
-            this.turboPump1._PlcReadyDevice = "TP1_Alarm_XC";
-            this.turboPump1._PlcStartDevice = "TP1_Run_YMC_101";
+            this.turboPump1._PlcAccDevice = "TP17_Acc_XC";
+            this.turboPump1._PlcAlarmDevice = "TP17_Alarm_XC";
+            this.turboPump1._PlcDecDevice = "TP17_Dec_XC";
+            this.turboPump1._PlcReadyDevice = "TP17_Ready_XC";
+            this.turboPump1._PlcStartDevice = "TP17_Run_YMC_331";
             this.turboPump1._PlcStopDevice = "";
             this.turboPump1._Reverse = false;
             this.turboPump1.Image = ((System.Drawing.Image)(resources.GetObject("turboPump1.Image")));
@@ -6239,6 +6316,8 @@
             this.plcObject1._CurrentStatus = false;
             this.plcObject1._EqBase = null;
             this.plcObject1._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject1._Limit = "";
+            this.plcObject1._LimitSignal = 0;
             this.plcObject1._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject1._PlcDevice = "RV5_Open_YMC";
             this.plcObject1._PlcDisplayOffDevice = null;
@@ -6257,6 +6336,8 @@
             this.plcObject2._CurrentStatus = false;
             this.plcObject2._EqBase = null;
             this.plcObject2._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject2._Limit = "RP8_OpenYMC";
+            this.plcObject2._LimitSignal = 1;
             this.plcObject2._ObjectType = HyTemplate.components.PlcObject.ObjectType.otBP;
             this.plcObject2._PlcDevice = "BP8_OpenYMC";
             this.plcObject2._PlcDisplayOffDevice = null;
@@ -6275,6 +6356,8 @@
             this.plcObject7._CurrentStatus = false;
             this.plcObject7._EqBase = null;
             this.plcObject7._ImageSize = HyTemplate.components.PlcObject.ImageSize.isLarge;
+            this.plcObject7._Limit = "BP8_OpenYMC";
+            this.plcObject7._LimitSignal = 0;
             this.plcObject7._ObjectType = HyTemplate.components.PlcObject.ObjectType.otRP;
             this.plcObject7._PlcDevice = "RP8_OpenYMC";
             this.plcObject7._PlcDisplayOffDevice = null;
@@ -6293,6 +6376,8 @@
             this.plcObject5._CurrentStatus = false;
             this.plcObject5._EqBase = null;
             this.plcObject5._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject5._Limit = "";
+            this.plcObject5._LimitSignal = 0;
             this.plcObject5._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject5._PlcDevice = "PV7_Open_YMC";
             this.plcObject5._PlcDisplayOffDevice = null;
@@ -6305,6 +6390,91 @@
             this.plcObject5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.plcObject5.TabIndex = 2055;
             this.plcObject5.TabStop = false;
+            // 
+            // displayTextBox31
+            // 
+            this.displayTextBox31._Division = ((short)(1));
+            this.displayTextBox31._DoubleWord = false;
+            this.displayTextBox31._EqBase = null;
+            this.displayTextBox31._MaxLimit = 999D;
+            this.displayTextBox31._MinLimit = 0D;
+            this.displayTextBox31._Multiplication = ((short)(1));
+            this.displayTextBox31._PlcDevice = "Compressed_Air";
+            this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox31.Location = new System.Drawing.Point(327, 51);
+            this.displayTextBox31.Name = "displayTextBox31";
+            this.displayTextBox31.ReadOnly = true;
+            this.displayTextBox31.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox31.TabIndex = 2365;
+            this.displayTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox30
+            // 
+            this.displayTextBox30._Division = ((short)(1));
+            this.displayTextBox30._DoubleWord = false;
+            this.displayTextBox30._EqBase = null;
+            this.displayTextBox30._MaxLimit = 999D;
+            this.displayTextBox30._MinLimit = 0D;
+            this.displayTextBox30._Multiplication = ((short)(1));
+            this.displayTextBox30._PlcDevice = "Water_Pressureof_Outlet";
+            this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox30.Location = new System.Drawing.Point(327, 24);
+            this.displayTextBox30.Name = "displayTextBox30";
+            this.displayTextBox30.ReadOnly = true;
+            this.displayTextBox30.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox30.TabIndex = 2364;
+            this.displayTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox29
+            // 
+            this.displayTextBox29._Division = ((short)(1));
+            this.displayTextBox29._DoubleWord = false;
+            this.displayTextBox29._EqBase = null;
+            this.displayTextBox29._MaxLimit = 999D;
+            this.displayTextBox29._MinLimit = 0D;
+            this.displayTextBox29._Multiplication = ((short)(1));
+            this.displayTextBox29._PlcDevice = "Water_Teof_Inlet";
+            this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox29.Location = new System.Drawing.Point(127, 25);
+            this.displayTextBox29.Name = "displayTextBox29";
+            this.displayTextBox29.ReadOnly = true;
+            this.displayTextBox29.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox29.TabIndex = 2363;
+            this.displayTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox28
+            // 
+            this.displayTextBox28._Division = ((short)(1));
+            this.displayTextBox28._DoubleWord = false;
+            this.displayTextBox28._EqBase = null;
+            this.displayTextBox28._MaxLimit = 999D;
+            this.displayTextBox28._MinLimit = 0D;
+            this.displayTextBox28._Multiplication = ((short)(1));
+            this.displayTextBox28._PlcDevice = "Water_Teof_Outlet";
+            this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox28.Location = new System.Drawing.Point(127, 51);
+            this.displayTextBox28.Name = "displayTextBox28";
+            this.displayTextBox28.ReadOnly = true;
+            this.displayTextBox28.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox28.TabIndex = 2362;
+            this.displayTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox27
+            // 
+            this.displayTextBox27._Division = ((short)(1));
+            this.displayTextBox27._DoubleWord = false;
+            this.displayTextBox27._EqBase = null;
+            this.displayTextBox27._MaxLimit = 999D;
+            this.displayTextBox27._MinLimit = 0D;
+            this.displayTextBox27._Multiplication = ((short)(1));
+            this.displayTextBox27._PlcDevice = "Water_Pressureof_Inlet";
+            this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox27.Location = new System.Drawing.Point(127, 77);
+            this.displayTextBox27.Name = "displayTextBox27";
+            this.displayTextBox27.ReadOnly = true;
+            this.displayTextBox27.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox27.TabIndex = 2361;
+            this.displayTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmOverview
             // 

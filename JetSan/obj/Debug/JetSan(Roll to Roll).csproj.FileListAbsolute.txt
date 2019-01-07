@@ -14,7 +14,6 @@ D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.dlgMotorSwitch.re
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.dlgSwitch.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmHistoryAlarm.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmHistoryLog.resources
-D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmIoView.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmLogin.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmControl.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmGasview.resources
@@ -28,3 +27,8 @@ D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.Properties.Resources.
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.GenerateResource.Cache
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.exe
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.pdb
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojAssemblyReference.cache
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmMaintenance.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmDeviceConstant.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.CoreCompileInputs.cache
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.CopyComplete

@@ -26,7 +26,6 @@ namespace HyTemplate
         frmHistoryAlarm frmAlarm;
         frmRecipe frmRecipe;
         frmSystemParameter frmSysPara;
-        frmIoView frmIoView;
         frmLogin frmLogin;
         frmOverview frmOverview;
         frmControl frmControl;
@@ -51,7 +50,6 @@ namespace HyTemplate
             frmAlarm = new frmHistoryAlarm();
             frmRecipe = new frmRecipe(rRecipe);
             frmSysPara = new frmSystemParameter(rRecipe);
-            frmIoView = new frmIoView(rdKernel);
             frmLogin = new frmLogin();
             frmOverview = new frmOverview(rdKernel);
             frmControl = new frmControl(rdKernel);
@@ -154,12 +152,6 @@ namespace HyTemplate
         {
             ReloadGui(frmSysPara);
             frmSysPara.Show();
-        }
-
-        private void btnIoView_Click(object sender, EventArgs e)
-        {//frmIoView
-            ReloadGui(frmIoView);
-            frmIoView.Show();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

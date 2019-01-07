@@ -36,6 +36,8 @@ namespace HyTemplate.components
         public string _PlcDevice { get; set; }
         public string _PlcDisplayOnDevice { get; set; }
         public string _PlcDisplayOffDevice { get; set; }
+        public string _Limit { get; set; }
+        public int _LimitSignal { get; set; }
         public bool _Reverse { get; set; }
         public bool _CurrentStatus { get; set; }
         public ImageSize _ImageSize { get; set; }
@@ -47,7 +49,8 @@ namespace HyTemplate.components
         Dictionary<ImageSize, Dictionary<ObjectType, Bitmap>> OBJECT_OFF_IMAGE = new Dictionary<ImageSize, Dictionary<ObjectType, Bitmap>>();
 
         ToolTip trackTip;
-        bool bTipDisplay = false;
+        private int lastX;
+        private int lastY;
 
         public PlcObject()
         {
@@ -56,7 +59,9 @@ namespace HyTemplate.components
             _PlcDevice = "";
             _PlcDisplayOnDevice = "";
             _PlcDisplayOffDevice = "";
-            _Reverse = false;
+            _Limit = "";
+            _LimitSignal = 0;
+             _Reverse = false;
             _CurrentStatus = false;
             _ImageSize = ImageSize.isSmall;
             _ObjectType = ObjectType.otBP;
@@ -141,27 +146,40 @@ namespace HyTemplate.components
             this.HandleCreated += PlcObject_HandleCreated;
             this.MouseDoubleClick += PlcObject_MouseDoubleClick;
             this.MouseMove += PlcObject_MouseMove;
-            this.MouseLeave += PlcObject_MouseLeave;
+            //this.MouseLeave += PlcObject_MouseLeave;
         }
 
         private void PlcObject_MouseLeave(object sender, EventArgs e)
         {
-            trackTip.Hide(this);
-            bTipDisplay = false;
+            //trackTip.Hide(this);
+            //bTipDisplay = false;
         }
 
         private void PlcObject_MouseMove(object sender, MouseEventArgs e)
         {
-            //String tipText = String.Format("({0}, {1})", e.X, e.Y);
-            if (bTipDisplay) return;
-            trackTip.Show("Device: " + _PlcDevice, this, e.Location);
-            bTipDisplay = true;
+            if (e.X != this.lastX || e.Y != this.lastY)
+            {
+                //if (bTipDisplay) return;
+                trackTip.SetToolTip(this, "Device: " + _EqBase.PlcKernel.getPlcMap(_PlcDevice));
+                //bTipDisplay = true;
+                this.lastX = e.X;
+                this.lastY = e.Y;
+            }
         }
 
         private void PlcObject_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (_PlcDevice.Trim() == "" || _EqBase == null) return;
 
+            if(_Limit != "")
+            {
+                if(_EqBase.PlcKernel[_Limit] != _LimitSignal)
+                {
+                    string LimitMap =_EqBase.PlcKernel.getPlcMap(_Limit);
+                    MessageBox.Show(LimitMap + " 狀態錯誤，無法切換 ", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             dlgSwitch dlg = new dlgSwitch(_CurrentStatus);
             dlg.PlcDevice = _EqBase.PlcKernel.getPlcMap(_PlcDevice);
             dlg.PlcDevice = (_EqBase.PlcKernel[_PlcDevice] == 1) ? dlg.PlcDevice + " Opening" : dlg.PlcDevice;
@@ -195,8 +213,7 @@ namespace HyTemplate.components
         public void refreshStatus()
         {
             if (_PlcDisplayOnDevice.Trim() == "" || /*_CurrentStatus == m_Status || */_EqBase == null) return;
-
-            //_CurrentStatus = m_Status;
+            
             bool status = _EqBase.PlcKernel[_PlcDisplayOnDevice] == 1 ? true : false;
 
             if (_PlcDisplayOffDevice != null && _PlcDisplayOffDevice.Trim() != "")
@@ -208,10 +225,7 @@ namespace HyTemplate.components
                     
                     return;
                 }
-            }
-
-            //if (status == _CurrentStatus) return;
-
+            }           
             _CurrentStatus = status;
 
             if ((_CurrentStatus && !_Reverse) || (!_CurrentStatus && _Reverse))
@@ -222,11 +236,6 @@ namespace HyTemplate.components
             {
                 this.Image = OBJECT_OFF_IMAGE[_ImageSize][_ObjectType];
             }
-
-            //if (this.BackColor == Color.Red)
-            //{
-            //    this.BackColor = SystemColors.Control;
-            //}
         }
         
     }

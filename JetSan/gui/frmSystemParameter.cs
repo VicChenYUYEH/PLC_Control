@@ -35,8 +35,7 @@ namespace HyTemplate.gui
             foreach (XmlItem item in rRecipe[m_RcpId].Nodes)
             {
                 rows.Add(new Object[] { item.Key, item.Value, rRecipe.RecipeDetail[item.Key].Unit, rRecipe.RecipeDetail[item.Key].Description });
-                //rows.Add(new Object[] { "Parameter2", "Value2" });
-                //rows.Add(new Object[] { "Parameter3", "Value3" });
+
             }
         }
 

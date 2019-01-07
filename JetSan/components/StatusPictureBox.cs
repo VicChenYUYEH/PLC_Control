@@ -34,7 +34,6 @@ namespace HyTemplate.components
 
             this.SizeMode = PictureBoxSizeMode.AutoSize;
             this.Image = STATUS_IMAGE[false];
-            //this.InitialImage = ComponentResourceManager.
 
             this.HandleCreated += StatusPictureBox_HandleCreated;
         }
