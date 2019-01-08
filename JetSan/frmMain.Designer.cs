@@ -42,16 +42,16 @@
             this.lblaccount = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.lblPLC_Connect = new System.Windows.Forms.Label();
-            this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
-            this.displayTextBox_Alarm = new HyTemplate.components.DisplayTextBox();
-            this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
             this.btnControl = new System.Windows.Forms.Button();
             this.btnGasView = new System.Windows.Forms.Button();
             this.Power_RunStop = new System.Windows.Forms.Button();
             this.Power_RunStart = new System.Windows.Forms.Button();
             this.btnProcView = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDeviceconstant = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
+            this.displayTextBox_Alarm = new HyTemplate.components.DisplayTextBox();
+            this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -185,50 +185,6 @@
             this.lblPLC_Connect.Text = "PLC Connect";
             this.lblPLC_Connect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // statusPictureBox1
-            // 
-            this.statusPictureBox1._CurrentStatus = false;
-            this.statusPictureBox1._EqBase = null;
-            this.statusPictureBox1._PlcDevice = "IsConnect";
-            this.statusPictureBox1._Reverse = false;
-            this.statusPictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.statusPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("statusPictureBox1.Image")));
-            this.statusPictureBox1.Location = new System.Drawing.Point(1648, 185);
-            this.statusPictureBox1.Name = "statusPictureBox1";
-            this.statusPictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.statusPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.statusPictureBox1.TabIndex = 24;
-            this.statusPictureBox1.TabStop = false;
-            // 
-            // displayTextBox_Alarm
-            // 
-            this.displayTextBox_Alarm._Division = ((short)(1));
-            this.displayTextBox_Alarm._DoubleWord = false;
-            this.displayTextBox_Alarm._EqBase = null;
-            this.displayTextBox_Alarm._MaxLimit = 999D;
-            this.displayTextBox_Alarm._MinLimit = 0D;
-            this.displayTextBox_Alarm._Multiplication = ((short)(1));
-            this.displayTextBox_Alarm._PlcDevice = "";
-            this.displayTextBox_Alarm.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox_Alarm.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.displayTextBox_Alarm.Location = new System.Drawing.Point(12, 1020);
-            this.displayTextBox_Alarm.Name = "displayTextBox_Alarm";
-            this.displayTextBox_Alarm.ReadOnly = true;
-            this.displayTextBox_Alarm.Size = new System.Drawing.Size(1502, 27);
-            this.displayTextBox_Alarm.TabIndex = 11;
-            this.displayTextBox_Alarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // currentDateTime1
-            // 
-            this.currentDateTime1.AutoSize = true;
-            this.currentDateTime1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.currentDateTime1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.currentDateTime1.Location = new System.Drawing.Point(1520, 75);
-            this.currentDateTime1.Margin = new System.Windows.Forms.Padding(4);
-            this.currentDateTime1.Name = "currentDateTime1";
-            this.currentDateTime1.Size = new System.Drawing.Size(173, 63);
-            this.currentDateTime1.TabIndex = 0;
-            // 
             // btnControl
             // 
             this.btnControl.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -282,15 +238,16 @@
             this.btnProcView.UseVisualStyleBackColor = true;
             this.btnProcView.Click += new System.EventHandler(this.btnProcView_Click);
             // 
-            // button1
+            // btnDeviceconstant
             // 
-            this.button1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(556, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 60);
-            this.button1.TabIndex = 2706;
-            this.button1.Text = "機台參數";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDeviceconstant.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnDeviceconstant.Location = new System.Drawing.Point(556, 8);
+            this.btnDeviceconstant.Name = "btnDeviceconstant";
+            this.btnDeviceconstant.Size = new System.Drawing.Size(130, 60);
+            this.btnDeviceconstant.TabIndex = 2706;
+            this.btnDeviceconstant.Text = "機台參數";
+            this.btnDeviceconstant.UseVisualStyleBackColor = true;
+            this.btnDeviceconstant.Click += new System.EventHandler(this.btnDeviceConstant_Click);
             // 
             // button2
             // 
@@ -302,13 +259,57 @@
             this.button2.Text = "維護參數";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // statusPictureBox1
+            // 
+            this.statusPictureBox1._CurrentStatus = false;
+            this.statusPictureBox1._EqBase = null;
+            this.statusPictureBox1._PlcDevice = "IsConnect";
+            this.statusPictureBox1._Reverse = false;
+            this.statusPictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.statusPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("statusPictureBox1.Image")));
+            this.statusPictureBox1.Location = new System.Drawing.Point(1648, 185);
+            this.statusPictureBox1.Name = "statusPictureBox1";
+            this.statusPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.statusPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.statusPictureBox1.TabIndex = 24;
+            this.statusPictureBox1.TabStop = false;
+            // 
+            // displayTextBox_Alarm
+            // 
+            this.displayTextBox_Alarm._Division = ((short)(1));
+            this.displayTextBox_Alarm._DoubleWord = false;
+            this.displayTextBox_Alarm._EqBase = null;
+            this.displayTextBox_Alarm._MaxLimit = 999D;
+            this.displayTextBox_Alarm._MinLimit = 0D;
+            this.displayTextBox_Alarm._Multiplication = ((short)(1));
+            this.displayTextBox_Alarm._PlcDevice = "";
+            this.displayTextBox_Alarm.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox_Alarm.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.displayTextBox_Alarm.Location = new System.Drawing.Point(12, 1020);
+            this.displayTextBox_Alarm.Name = "displayTextBox_Alarm";
+            this.displayTextBox_Alarm.ReadOnly = true;
+            this.displayTextBox_Alarm.Size = new System.Drawing.Size(1502, 27);
+            this.displayTextBox_Alarm.TabIndex = 11;
+            this.displayTextBox_Alarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // currentDateTime1
+            // 
+            this.currentDateTime1.AutoSize = true;
+            this.currentDateTime1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.currentDateTime1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.currentDateTime1.Location = new System.Drawing.Point(1520, 75);
+            this.currentDateTime1.Margin = new System.Windows.Forms.Padding(4);
+            this.currentDateTime1.Name = "currentDateTime1";
+            this.currentDateTime1.Size = new System.Drawing.Size(173, 63);
+            this.currentDateTime1.TabIndex = 0;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1696, 1059);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDeviceconstant);
             this.Controls.Add(this.btnGasView);
             this.Controls.Add(this.btnProcView);
             this.Controls.Add(this.Power_RunStop);
@@ -365,7 +366,7 @@
         internal System.Windows.Forms.Button Power_RunStop;
         internal System.Windows.Forms.Button Power_RunStart;
         private System.Windows.Forms.Button btnProcView;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDeviceconstant;
         private System.Windows.Forms.Button button2;
     }
 }

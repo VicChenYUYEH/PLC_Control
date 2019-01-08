@@ -22,15 +22,16 @@ namespace HyTemplate
         Recipe rRecipe;
         Dictionary<String, KeyValuePair<String, String>> dicUsers = new Dictionary<string, KeyValuePair<string, string>>();
 
-        frmHistoryLog frmLog;
-        frmHistoryAlarm frmAlarm;
-        frmRecipe frmRecipe;
-        frmSystemParameter frmSysPara;
-        frmLogin frmLogin;
-        frmOverview frmOverview;
-        frmControl frmControl;
-        frmGasview frmGasview;
-        frmProcess frmProcess;
+        frmHistoryLog log;
+        frmHistoryAlarm alarm;
+        frmRecipe recipe;
+        frmSystemParameter sysPara;
+        frmLogin login;
+        frmOverview overview;
+        frmControl control;
+        frmGasview gasView;
+        frmProcess process;
+        frmDeviceConstant deviceConstant;
 
         RdEqKernel rdKernel;
 
@@ -46,23 +47,22 @@ namespace HyTemplate
             rdKernel = new RdEqKernel();
 
             rRecipe = new Recipe();
-            frmLog = new frmHistoryLog();
-            frmAlarm = new frmHistoryAlarm();
-            frmRecipe = new frmRecipe(rRecipe);
-            frmSysPara = new frmSystemParameter(rRecipe);
-            frmLogin = new frmLogin();
-            frmOverview = new frmOverview(rdKernel);
-            frmControl = new frmControl(rdKernel);
-            frmGasview = new frmGasview(rdKernel);
-            frmProcess = new frmProcess(rdKernel);
-
-           
+            log = new frmHistoryLog();
+            alarm = new frmHistoryAlarm();
+            recipe = new frmRecipe(rRecipe);
+            sysPara = new frmSystemParameter(rRecipe);
+            login = new frmLogin();
+            overview = new frmOverview(rdKernel);
+            control = new frmControl(rdKernel);
+            gasView = new frmGasview(rdKernel);
+            process = new frmProcess(rdKernel);
+            deviceConstant = new frmDeviceConstant(rdKernel);
 
             this.LoadUserRegister();
 
             System.Threading.Thread.Sleep(2000);
 
-            ReloadGui(frmOverview);
+            ReloadGui(overview);
 
             checkInitialStatus();
 
@@ -109,12 +109,12 @@ namespace HyTemplate
 
         private void btnHistoryLog_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmLog);
+            ReloadGui(log);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmAlarm);
+            ReloadGui(alarm);
         }
 
         private void ReloadGui(Form m_Form)
@@ -138,27 +138,27 @@ namespace HyTemplate
 
         private void btnRecipe_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmRecipe);
-            frmRecipe.Show();
+            ReloadGui(recipe);
+            recipe.Show();
         }
 
         private void btnOverview_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmOverview);
-            frmOverview.Show();
+            ReloadGui(overview);
+            overview.Show();
         }
 
         private void btnSysPara_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmSysPara);
-            frmSysPara.Show();
+            ReloadGui(sysPara);
+            sysPara.Show();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmLogin.LoginId = "";
-            frmLogin.LoginPwd = "";
-            DialogResult result = frmLogin.ShowDialog();
+            login.LoginId = "";
+            login.LoginPwd = "";
+            DialogResult result = login.ShowDialog();
 
             if (result == DialogResult.Abort)
             {
@@ -169,8 +169,8 @@ namespace HyTemplate
             }
             else if (result == DialogResult.OK)
             {
-                string id = frmLogin.LoginId;
-                string pwd = frmLogin.LoginPwd;
+                string id = login.LoginId;
+                string pwd = login.LoginPwd;
                 if (!dicUsers.ContainsKey(id)) //有無該User
                 {
                     MessageBox.Show("User no found", "Warning", MessageBoxButtons.OK);
@@ -273,20 +273,26 @@ namespace HyTemplate
 
         private void Control_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmControl);
-            frmControl.Show();
+            ReloadGui(control);
+            control.Show();
         }
 
         private void btnGasView_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmGasview);
-            frmGasview.Show();
+            ReloadGui(gasView);
+            gasView.Show();
         }
 
         private void btnProcView_Click(object sender, EventArgs e)
         {
-            ReloadGui(frmProcess);
-            frmProcess.Show();
+            ReloadGui(process);
+            process.Show();
+        }
+
+        private void btnDeviceConstant_Click(object sender, EventArgs e)
+        {
+            ReloadGui(deviceConstant);
+            deviceConstant.Show();
         }
     }
 }

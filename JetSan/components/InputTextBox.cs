@@ -81,7 +81,8 @@ namespace HyTemplate.components
 
                 if (_EqBase == null || !check_text) return;
 
-                if (result > _MaxLimit) this.Text = _MaxLimit.ToString();
+                if (result > _MaxLimit) result = _MaxLimit;
+                if (result < _MinLimit) result = _MinLimit;
 
                 if (_Multiplication <= 0) _Multiplication = 1;
                 if (_Division <= 0) _Division = 1;

@@ -27,8 +27,8 @@ D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.Properties.Resources.
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.GenerateResource.Cache
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.exe
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.pdb
-D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojAssemblyReference.cache
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmMaintenance.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmDeviceConstant.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.CoreCompileInputs.cache
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.CopyComplete
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.FrmPIDExplain.resources
