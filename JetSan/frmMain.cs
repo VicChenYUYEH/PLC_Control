@@ -32,6 +32,7 @@ namespace HyTemplate
         frmGasview gasView;
         frmProcess process;
         frmDeviceConstant deviceConstant;
+        frmMaintenance maintenance;
 
         RdEqKernel rdKernel;
 
@@ -57,6 +58,7 @@ namespace HyTemplate
             gasView = new frmGasview(rdKernel);
             process = new frmProcess(rdKernel);
             deviceConstant = new frmDeviceConstant(rdKernel);
+            maintenance = new frmMaintenance(rdKernel);
 
             this.LoadUserRegister();
 
@@ -293,6 +295,12 @@ namespace HyTemplate
         {
             ReloadGui(deviceConstant);
             deviceConstant.Show();
+        }
+
+        private void btnMaintenance_Click(object sender, EventArgs e)
+        {
+            ReloadGui(maintenance);
+            maintenance.Show();
         }
     }
 }

@@ -2790,6 +2790,7 @@
             // 
             // controlBtn30
             // 
+            this.controlBtn30._AutoOff = false;
             this.controlBtn30._CurrentStatus = false;
             this.controlBtn30._EqBase = null;
             this.controlBtn30._PlcDevice = "Temp_Hot_ON";
@@ -2797,6 +2798,7 @@
             this.controlBtn30._PlcDisplayOnDevice = "Temp_Hot_ON";
             this.controlBtn30._ReadOnly = false;
             this.controlBtn30._Reverse = false;
+            this.controlBtn30._ShowMsg = false;
             this.controlBtn30._Text = "熱水輸出";
             this.controlBtn30.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn30.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -2810,6 +2812,7 @@
             // 
             // controlBtn31
             // 
+            this.controlBtn31._AutoOff = false;
             this.controlBtn31._CurrentStatus = false;
             this.controlBtn31._EqBase = null;
             this.controlBtn31._PlcDevice = "Temp_Standby";
@@ -2817,6 +2820,7 @@
             this.controlBtn31._PlcDisplayOnDevice = "Temp_Standby";
             this.controlBtn31._ReadOnly = false;
             this.controlBtn31._Reverse = false;
+            this.controlBtn31._ShowMsg = false;
             this.controlBtn31._Text = "待機";
             this.controlBtn31.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn31.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -2830,6 +2834,7 @@
             // 
             // controlBtn28
             // 
+            this.controlBtn28._AutoOff = false;
             this.controlBtn28._CurrentStatus = false;
             this.controlBtn28._EqBase = null;
             this.controlBtn28._PlcDevice = "Temp_Lce_ON";
@@ -2837,6 +2842,7 @@
             this.controlBtn28._PlcDisplayOnDevice = "Temp_Lce_ON";
             this.controlBtn28._ReadOnly = false;
             this.controlBtn28._Reverse = false;
+            this.controlBtn28._ShowMsg = false;
             this.controlBtn28._Text = "冷水輸出";
             this.controlBtn28.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn28.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -2850,6 +2856,7 @@
             // 
             // controlBtn27
             // 
+            this.controlBtn27._AutoOff = false;
             this.controlBtn27._CurrentStatus = false;
             this.controlBtn27._EqBase = null;
             this.controlBtn27._PlcDevice = "Temp_Machine_ON";
@@ -2857,6 +2864,7 @@
             this.controlBtn27._PlcDisplayOnDevice = "Temp_Machine_ON";
             this.controlBtn27._ReadOnly = false;
             this.controlBtn27._Reverse = false;
+            this.controlBtn27._ShowMsg = false;
             this.controlBtn27._Text = "ON";
             this.controlBtn27.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn27.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -2873,6 +2881,8 @@
             this.plcObject23._CurrentStatus = false;
             this.plcObject23._EqBase = null;
             this.plcObject23._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject23._Limit = "";
+            this.plcObject23._LimitSignal = 0;
             this.plcObject23._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject23._PlcDevice = "CaNC_0403_Open";
             this.plcObject23._PlcDisplayOffDevice = null;
@@ -2891,6 +2901,8 @@
             this.plcObject22._CurrentStatus = false;
             this.plcObject22._EqBase = null;
             this.plcObject22._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject22._Limit = "";
+            this.plcObject22._LimitSignal = 0;
             this.plcObject22._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject22._PlcDevice = "CaNC_0402_Open";
             this.plcObject22._PlcDisplayOffDevice = null;
@@ -2909,6 +2921,8 @@
             this.plcObject75._CurrentStatus = false;
             this.plcObject75._EqBase = null;
             this.plcObject75._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject75._Limit = "";
+            this.plcObject75._LimitSignal = 0;
             this.plcObject75._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject75._PlcDevice = "DC2_ON_YMC";
             this.plcObject75._PlcDisplayOffDevice = null;
@@ -3199,6 +3213,8 @@
             this.plcObject85._CurrentStatus = false;
             this.plcObject85._EqBase = null;
             this.plcObject85._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject85._Limit = "";
+            this.plcObject85._LimitSignal = 0;
             this.plcObject85._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject85._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject85._PlcDisplayOffDevice = null;
@@ -3217,6 +3233,8 @@
             this.plcObject84._CurrentStatus = false;
             this.plcObject84._EqBase = null;
             this.plcObject84._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject84._Limit = "";
+            this.plcObject84._LimitSignal = 0;
             this.plcObject84._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject84._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject84._PlcDisplayOffDevice = null;
@@ -3235,6 +3253,8 @@
             this.plcObject83._CurrentStatus = false;
             this.plcObject83._EqBase = null;
             this.plcObject83._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject83._Limit = "";
+            this.plcObject83._LimitSignal = 0;
             this.plcObject83._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject83._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject83._PlcDisplayOffDevice = null;
@@ -3253,6 +3273,8 @@
             this.plcObject82._CurrentStatus = false;
             this.plcObject82._EqBase = null;
             this.plcObject82._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject82._Limit = "";
+            this.plcObject82._LimitSignal = 0;
             this.plcObject82._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject82._PlcDevice = "Heater_Service_On_YMC_M2";
             this.plcObject82._PlcDisplayOffDevice = null;
@@ -3271,6 +3293,8 @@
             this.plcObject81._CurrentStatus = false;
             this.plcObject81._EqBase = null;
             this.plcObject81._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject81._Limit = "";
+            this.plcObject81._LimitSignal = 0;
             this.plcObject81._ObjectType = HyTemplate.components.PlcObject.ObjectType.otHeater;
             this.plcObject81._PlcDevice = "Heater1_On_YMC_M2";
             this.plcObject81._PlcDisplayOffDevice = null;
@@ -3289,6 +3313,8 @@
             this.plcObject80._CurrentStatus = false;
             this.plcObject80._EqBase = null;
             this.plcObject80._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject80._Limit = "";
+            this.plcObject80._LimitSignal = 0;
             this.plcObject80._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
             this.plcObject80._PlcDevice = "ATM2_XC_M3_1";
             this.plcObject80._PlcDisplayOffDevice = null;
@@ -3307,6 +3333,8 @@
             this.plcObject79._CurrentStatus = false;
             this.plcObject79._EqBase = null;
             this.plcObject79._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject79._Limit = "";
+            this.plcObject79._LimitSignal = 0;
             this.plcObject79._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject79._PlcDevice = "MF1_ON_YMC";
             this.plcObject79._PlcDisplayOffDevice = null;
@@ -3325,6 +3353,8 @@
             this.plcObject78._CurrentStatus = false;
             this.plcObject78._EqBase = null;
             this.plcObject78._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject78._Limit = "";
+            this.plcObject78._LimitSignal = 0;
             this.plcObject78._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject78._PlcDevice = "DC4_ON_YMC";
             this.plcObject78._PlcDisplayOffDevice = null;
@@ -3343,6 +3373,8 @@
             this.plcObject72._CurrentStatus = false;
             this.plcObject72._EqBase = null;
             this.plcObject72._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject72._Limit = "";
+            this.plcObject72._LimitSignal = 0;
             this.plcObject72._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
             this.plcObject72._PlcDevice = "ATM3_XC_M4";
             this.plcObject72._PlcDisplayOffDevice = null;
@@ -3361,6 +3393,8 @@
             this.plcObject77._CurrentStatus = false;
             this.plcObject77._EqBase = null;
             this.plcObject77._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject77._Limit = "";
+            this.plcObject77._LimitSignal = 0;
             this.plcObject77._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject77._PlcDevice = "DC3_ON_YMC";
             this.plcObject77._PlcDisplayOffDevice = null;
@@ -3379,6 +3413,8 @@
             this.plcObject73._CurrentStatus = false;
             this.plcObject73._EqBase = null;
             this.plcObject73._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject73._Limit = "";
+            this.plcObject73._LimitSignal = 0;
             this.plcObject73._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
             this.plcObject73._PlcDevice = "ATM1_XC_M1";
             this.plcObject73._PlcDisplayOffDevice = null;
@@ -3397,6 +3433,8 @@
             this.plcObject76._CurrentStatus = false;
             this.plcObject76._EqBase = null;
             this.plcObject76._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject76._Limit = "";
+            this.plcObject76._LimitSignal = 0;
             this.plcObject76._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject76._PlcDevice = "MF2_ON_YMC";
             this.plcObject76._PlcDisplayOffDevice = null;
@@ -3415,6 +3453,8 @@
             this.plcObject74._CurrentStatus = false;
             this.plcObject74._EqBase = null;
             this.plcObject74._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject74._Limit = "";
+            this.plcObject74._LimitSignal = 0;
             this.plcObject74._ObjectType = HyTemplate.components.PlcObject.ObjectType.otCathode;
             this.plcObject74._PlcDevice = "DC1_ON_YMC";
             this.plcObject74._PlcDisplayOffDevice = null;
@@ -3433,6 +3473,8 @@
             this.plcObject34._CurrentStatus = false;
             this.plcObject34._EqBase = null;
             this.plcObject34._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject34._Limit = "";
+            this.plcObject34._LimitSignal = 0;
             this.plcObject34._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject34._PlcDevice = "CaNC_0405_Open";
             this.plcObject34._PlcDisplayOffDevice = null;
@@ -3451,6 +3493,8 @@
             this.plcObject35._CurrentStatus = false;
             this.plcObject35._EqBase = null;
             this.plcObject35._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject35._Limit = "";
+            this.plcObject35._LimitSignal = 0;
             this.plcObject35._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject35._PlcDevice = "CaNC_0406_Open";
             this.plcObject35._PlcDisplayOffDevice = null;
@@ -3469,6 +3513,8 @@
             this.plcObject14._CurrentStatus = false;
             this.plcObject14._EqBase = null;
             this.plcObject14._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject14._Limit = "";
+            this.plcObject14._LimitSignal = 0;
             this.plcObject14._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject14._PlcDevice = "MFC_0304_Open_MC_O2";
             this.plcObject14._PlcDisplayOffDevice = null;
@@ -3623,6 +3669,8 @@
             this.plcObject1._CurrentStatus = false;
             this.plcObject1._EqBase = null;
             this.plcObject1._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject1._Limit = "";
+            this.plcObject1._LimitSignal = 0;
             this.plcObject1._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject1._PlcDevice = "MFC_0303_Open_MC_Ar";
             this.plcObject1._PlcDisplayOffDevice = null;
@@ -3641,6 +3689,8 @@
             this.plcObject2._CurrentStatus = false;
             this.plcObject2._EqBase = null;
             this.plcObject2._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject2._Limit = "";
+            this.plcObject2._LimitSignal = 0;
             this.plcObject2._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject2._PlcDevice = "MFC_0306_Open_MC_O2";
             this.plcObject2._PlcDisplayOffDevice = null;
@@ -3659,6 +3709,8 @@
             this.plcObject3._CurrentStatus = false;
             this.plcObject3._EqBase = null;
             this.plcObject3._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject3._Limit = "";
+            this.plcObject3._LimitSignal = 0;
             this.plcObject3._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject3._PlcDevice = "MFC_0305_Open_MC_Ar";
             this.plcObject3._PlcDisplayOffDevice = null;
@@ -3677,6 +3729,8 @@
             this.plcObject4._CurrentStatus = false;
             this.plcObject4._EqBase = null;
             this.plcObject4._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject4._Limit = "";
+            this.plcObject4._LimitSignal = 0;
             this.plcObject4._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject4._PlcDevice = "MFC_0308_Open_MC_O2";
             this.plcObject4._PlcDisplayOffDevice = null;
@@ -3695,6 +3749,8 @@
             this.plcObject5._CurrentStatus = false;
             this.plcObject5._EqBase = null;
             this.plcObject5._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject5._Limit = "";
+            this.plcObject5._LimitSignal = 0;
             this.plcObject5._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject5._PlcDevice = "MFC_0307_Open_MC_Ar";
             this.plcObject5._PlcDisplayOffDevice = null;
@@ -3713,6 +3769,8 @@
             this.plcObject6._CurrentStatus = false;
             this.plcObject6._EqBase = null;
             this.plcObject6._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject6._Limit = "";
+            this.plcObject6._LimitSignal = 0;
             this.plcObject6._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject6._PlcDevice = "MFC_0310_Open_MC_O2";
             this.plcObject6._PlcDisplayOffDevice = null;
@@ -3731,6 +3789,8 @@
             this.plcObject33._CurrentStatus = false;
             this.plcObject33._EqBase = null;
             this.plcObject33._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject33._Limit = "";
+            this.plcObject33._LimitSignal = 0;
             this.plcObject33._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject33._PlcDevice = "CaNC_0306_Open";
             this.plcObject33._PlcDisplayOffDevice = null;
@@ -3749,6 +3809,8 @@
             this.plcObject7._CurrentStatus = false;
             this.plcObject7._EqBase = null;
             this.plcObject7._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject7._Limit = "";
+            this.plcObject7._LimitSignal = 0;
             this.plcObject7._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject7._PlcDevice = "MFC_0309_Open_MC_Ar";
             this.plcObject7._PlcDisplayOffDevice = null;
@@ -3767,6 +3829,8 @@
             this.plcObject32._CurrentStatus = false;
             this.plcObject32._EqBase = null;
             this.plcObject32._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject32._Limit = "";
+            this.plcObject32._LimitSignal = 0;
             this.plcObject32._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject32._PlcDevice = "CaNC_0305_Open";
             this.plcObject32._PlcDisplayOffDevice = null;
@@ -3785,6 +3849,8 @@
             this.plcObject30._CurrentStatus = false;
             this.plcObject30._EqBase = null;
             this.plcObject30._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject30._Limit = "";
+            this.plcObject30._LimitSignal = 0;
             this.plcObject30._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject30._PlcDevice = "CaNC_0206_Open";
             this.plcObject30._PlcDisplayOffDevice = null;
@@ -3803,6 +3869,8 @@
             this.plcObject29._CurrentStatus = false;
             this.plcObject29._EqBase = null;
             this.plcObject29._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject29._Limit = "";
+            this.plcObject29._LimitSignal = 0;
             this.plcObject29._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject29._PlcDevice = "CaNC_0205_Open";
             this.plcObject29._PlcDisplayOffDevice = null;
@@ -3821,6 +3889,8 @@
             this.plcObject21._CurrentStatus = false;
             this.plcObject21._EqBase = null;
             this.plcObject21._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject21._Limit = "";
+            this.plcObject21._LimitSignal = 0;
             this.plcObject21._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject21._PlcDevice = "CaNC_0401_Open";
             this.plcObject21._PlcDisplayOffDevice = null;
@@ -3839,6 +3909,8 @@
             this.plcObject27._CurrentStatus = false;
             this.plcObject27._EqBase = null;
             this.plcObject27._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject27._Limit = "";
+            this.plcObject27._LimitSignal = 0;
             this.plcObject27._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject27._PlcDevice = "CaNC_0106_Open";
             this.plcObject27._PlcDisplayOffDevice = null;
@@ -3857,6 +3929,8 @@
             this.plcObject26._CurrentStatus = false;
             this.plcObject26._EqBase = null;
             this.plcObject26._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject26._Limit = "";
+            this.plcObject26._LimitSignal = 0;
             this.plcObject26._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject26._PlcDevice = "CaNC_0105_Open";
             this.plcObject26._PlcDisplayOffDevice = null;
@@ -3875,6 +3949,8 @@
             this.plcObject24._CurrentStatus = false;
             this.plcObject24._EqBase = null;
             this.plcObject24._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject24._Limit = "";
+            this.plcObject24._LimitSignal = 0;
             this.plcObject24._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject24._PlcDevice = "CaNC_0404_Open";
             this.plcObject24._PlcDisplayOffDevice = null;
@@ -3893,6 +3969,8 @@
             this.plcObject20._CurrentStatus = false;
             this.plcObject20._EqBase = null;
             this.plcObject20._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject20._Limit = "";
+            this.plcObject20._LimitSignal = 0;
             this.plcObject20._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject20._PlcDevice = "CaNC_0304_Open";
             this.plcObject20._PlcDisplayOffDevice = null;
@@ -3911,6 +3989,8 @@
             this.plcObject19._CurrentStatus = false;
             this.plcObject19._EqBase = null;
             this.plcObject19._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject19._Limit = "";
+            this.plcObject19._LimitSignal = 0;
             this.plcObject19._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject19._PlcDevice = "CaNC_0303_Open";
             this.plcObject19._PlcDisplayOffDevice = null;
@@ -3929,6 +4009,8 @@
             this.plcObject18._CurrentStatus = false;
             this.plcObject18._EqBase = null;
             this.plcObject18._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject18._Limit = "";
+            this.plcObject18._LimitSignal = 0;
             this.plcObject18._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject18._PlcDevice = "CaNC_0302_Open";
             this.plcObject18._PlcDisplayOffDevice = null;
@@ -3947,6 +4029,8 @@
             this.plcObject17._CurrentStatus = false;
             this.plcObject17._EqBase = null;
             this.plcObject17._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject17._Limit = "";
+            this.plcObject17._LimitSignal = 0;
             this.plcObject17._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject17._PlcDevice = "CaNC_0301_Open";
             this.plcObject17._PlcDisplayOffDevice = null;
@@ -3965,6 +4049,8 @@
             this.plcObject16._CurrentStatus = false;
             this.plcObject16._EqBase = null;
             this.plcObject16._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject16._Limit = "";
+            this.plcObject16._LimitSignal = 0;
             this.plcObject16._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject16._PlcDevice = "CaNC_0204_Open";
             this.plcObject16._PlcDisplayOffDevice = null;
@@ -3983,6 +4069,8 @@
             this.plcObject15._CurrentStatus = false;
             this.plcObject15._EqBase = null;
             this.plcObject15._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject15._Limit = "";
+            this.plcObject15._LimitSignal = 0;
             this.plcObject15._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject15._PlcDevice = "CaNC_0203_Open";
             this.plcObject15._PlcDisplayOffDevice = null;
@@ -4001,6 +4089,8 @@
             this.plcObject13._CurrentStatus = false;
             this.plcObject13._EqBase = null;
             this.plcObject13._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject13._Limit = "";
+            this.plcObject13._LimitSignal = 0;
             this.plcObject13._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject13._PlcDevice = "CaNC_0202_Open";
             this.plcObject13._PlcDisplayOffDevice = null;
@@ -4019,6 +4109,8 @@
             this.plcObject12._CurrentStatus = false;
             this.plcObject12._EqBase = null;
             this.plcObject12._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject12._Limit = "";
+            this.plcObject12._LimitSignal = 0;
             this.plcObject12._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject12._PlcDevice = "CaNC_0201_Open";
             this.plcObject12._PlcDisplayOffDevice = null;
@@ -4037,6 +4129,8 @@
             this.plcObject11._CurrentStatus = false;
             this.plcObject11._EqBase = null;
             this.plcObject11._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject11._Limit = "";
+            this.plcObject11._LimitSignal = 0;
             this.plcObject11._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject11._PlcDevice = "CaNC_0104_Open";
             this.plcObject11._PlcDisplayOffDevice = null;
@@ -4055,6 +4149,8 @@
             this.plcObject10._CurrentStatus = false;
             this.plcObject10._EqBase = null;
             this.plcObject10._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject10._Limit = "";
+            this.plcObject10._LimitSignal = 0;
             this.plcObject10._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject10._PlcDevice = "CaNC_0103_Open";
             this.plcObject10._PlcDisplayOffDevice = null;
@@ -4073,6 +4169,8 @@
             this.plcObject9._CurrentStatus = false;
             this.plcObject9._EqBase = null;
             this.plcObject9._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject9._Limit = "";
+            this.plcObject9._LimitSignal = 0;
             this.plcObject9._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject9._PlcDevice = "CaNC_0102_Open";
             this.plcObject9._PlcDisplayOffDevice = null;
@@ -4091,6 +4189,8 @@
             this.plcObject8._CurrentStatus = false;
             this.plcObject8._EqBase = null;
             this.plcObject8._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject8._Limit = "";
+            this.plcObject8._LimitSignal = 0;
             this.plcObject8._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject8._PlcDevice = "CaNC_0101_Open";
             this.plcObject8._PlcDisplayOffDevice = null;
@@ -4225,6 +4325,7 @@
             // 
             // controlBtn29
             // 
+            this.controlBtn29._AutoOff = false;
             this.controlBtn29._CurrentStatus = false;
             this.controlBtn29._EqBase = null;
             this.controlBtn29._PlcDevice = "Temp_Cool_ON";
@@ -4232,6 +4333,7 @@
             this.controlBtn29._PlcDisplayOnDevice = "Temp_Cool_ON";
             this.controlBtn29._ReadOnly = false;
             this.controlBtn29._Reverse = false;
+            this.controlBtn29._ShowMsg = false;
             this.controlBtn29._Text = "小冰水機ON";
             this.controlBtn29.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn29.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -4796,7 +4898,7 @@
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(22, 18);
+            this.tabControl2.Location = new System.Drawing.Point(20, 18);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(358, 660);
@@ -4864,6 +4966,7 @@
             // 
             // controlBtn1
             // 
+            this.controlBtn1._AutoOff = false;
             this.controlBtn1._CurrentStatus = false;
             this.controlBtn1._EqBase = null;
             this.controlBtn1._PlcDevice = "Set_SpeedRun";
@@ -4871,6 +4974,7 @@
             this.controlBtn1._PlcDisplayOnDevice = "Set_SpeedRun";
             this.controlBtn1._ReadOnly = false;
             this.controlBtn1._Reverse = false;
+            this.controlBtn1._ShowMsg = false;
             this.controlBtn1._Text = "Speed On";
             this.controlBtn1.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn1.Font = new System.Drawing.Font("微軟正黑體", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5636,6 +5740,7 @@
             // 
             // controlBtn70
             // 
+            this.controlBtn70._AutoOff = false;
             this.controlBtn70._CurrentStatus = false;
             this.controlBtn70._EqBase = null;
             this.controlBtn70._PlcDevice = "Set_Priority";
@@ -5643,6 +5748,7 @@
             this.controlBtn70._PlcDisplayOnDevice = "Set_Priority";
             this.controlBtn70._ReadOnly = false;
             this.controlBtn70._Reverse = false;
+            this.controlBtn70._ShowMsg = false;
             this.controlBtn70._Text = "ON";
             this.controlBtn70.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn70.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5655,6 +5761,7 @@
             // 
             // controlBtn69
             // 
+            this.controlBtn69._AutoOff = false;
             this.controlBtn69._CurrentStatus = false;
             this.controlBtn69._EqBase = null;
             this.controlBtn69._PlcDevice = "Remove_length";
@@ -5662,6 +5769,7 @@
             this.controlBtn69._PlcDisplayOnDevice = "Remove_length";
             this.controlBtn69._ReadOnly = false;
             this.controlBtn69._Reverse = false;
+            this.controlBtn69._ShowMsg = false;
             this.controlBtn69._Text = "ON";
             this.controlBtn69.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn69.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5674,6 +5782,7 @@
             // 
             // controlBtn68
             // 
+            this.controlBtn68._AutoOff = false;
             this.controlBtn68._CurrentStatus = false;
             this.controlBtn68._EqBase = null;
             this.controlBtn68._PlcDevice = "All_Remove_length";
@@ -5681,6 +5790,7 @@
             this.controlBtn68._PlcDisplayOnDevice = "All_Remove_length";
             this.controlBtn68._ReadOnly = false;
             this.controlBtn68._Reverse = false;
+            this.controlBtn68._ShowMsg = false;
             this.controlBtn68._Text = "ON";
             this.controlBtn68.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn68.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5693,6 +5803,7 @@
             // 
             // controlBtn67
             // 
+            this.controlBtn67._AutoOff = false;
             this.controlBtn67._CurrentStatus = false;
             this.controlBtn67._EqBase = null;
             this.controlBtn67._PlcDevice = "Down_Rolor_Status";
@@ -5700,6 +5811,7 @@
             this.controlBtn67._PlcDisplayOnDevice = "Down_Rolor_Status";
             this.controlBtn67._ReadOnly = true;
             this.controlBtn67._Reverse = false;
+            this.controlBtn67._ShowMsg = false;
             this.controlBtn67._Text = "下降";
             this.controlBtn67.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn67.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5712,6 +5824,7 @@
             // 
             // controlBtn66
             // 
+            this.controlBtn66._AutoOff = false;
             this.controlBtn66._CurrentStatus = false;
             this.controlBtn66._EqBase = null;
             this.controlBtn66._PlcDevice = "UP_Rolor_Status";
@@ -5719,6 +5832,7 @@
             this.controlBtn66._PlcDisplayOnDevice = "UP_Rolor_Status";
             this.controlBtn66._ReadOnly = true;
             this.controlBtn66._Reverse = false;
+            this.controlBtn66._ShowMsg = false;
             this.controlBtn66._Text = "上升";
             this.controlBtn66.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn66.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5731,6 +5845,7 @@
             // 
             // controlBtn65
             // 
+            this.controlBtn65._AutoOff = false;
             this.controlBtn65._CurrentStatus = false;
             this.controlBtn65._EqBase = null;
             this.controlBtn65._PlcDevice = "Rolor_Control";
@@ -5738,6 +5853,7 @@
             this.controlBtn65._PlcDisplayOnDevice = "Rolor_Control";
             this.controlBtn65._ReadOnly = false;
             this.controlBtn65._Reverse = false;
+            this.controlBtn65._ShowMsg = false;
             this.controlBtn65._Text = "壓輪升降";
             this.controlBtn65.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn65.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5750,6 +5866,7 @@
             // 
             // controlBtn64
             // 
+            this.controlBtn64._AutoOff = false;
             this.controlBtn64._CurrentStatus = false;
             this.controlBtn64._EqBase = null;
             this.controlBtn64._PlcDevice = "LineAll_Stop";
@@ -5757,6 +5874,7 @@
             this.controlBtn64._PlcDisplayOnDevice = "LineAll_Stop";
             this.controlBtn64._ReadOnly = false;
             this.controlBtn64._Reverse = false;
+            this.controlBtn64._ShowMsg = false;
             this.controlBtn64._Text = "停止";
             this.controlBtn64.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn64.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5769,6 +5887,7 @@
             // 
             // controlBtn63
             // 
+            this.controlBtn63._AutoOff = false;
             this.controlBtn63._CurrentStatus = false;
             this.controlBtn63._EqBase = null;
             this.controlBtn63._PlcDevice = "Remove_RewindDiameter";
@@ -5776,6 +5895,7 @@
             this.controlBtn63._PlcDisplayOnDevice = "Remove_RewindDiameter";
             this.controlBtn63._ReadOnly = false;
             this.controlBtn63._Reverse = false;
+            this.controlBtn63._ShowMsg = false;
             this.controlBtn63._Text = "重置";
             this.controlBtn63.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn63.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5788,6 +5908,7 @@
             // 
             // controlBtn62
             // 
+            this.controlBtn62._AutoOff = false;
             this.controlBtn62._CurrentStatus = false;
             this.controlBtn62._EqBase = null;
             this.controlBtn62._PlcDevice = "Remove_DischargeDiameter";
@@ -5795,6 +5916,7 @@
             this.controlBtn62._PlcDisplayOnDevice = "Remove_DischargeDiameter";
             this.controlBtn62._ReadOnly = false;
             this.controlBtn62._Reverse = false;
+            this.controlBtn62._ShowMsg = false;
             this.controlBtn62._Text = "重置";
             this.controlBtn62.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn62.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5807,6 +5929,7 @@
             // 
             // controlBtn61
             // 
+            this.controlBtn61._AutoOff = false;
             this.controlBtn61._CurrentStatus = false;
             this.controlBtn61._EqBase = null;
             this.controlBtn61._PlcDevice = "LineAll_Start";
@@ -5814,6 +5937,7 @@
             this.controlBtn61._PlcDisplayOnDevice = "LineAll_Start";
             this.controlBtn61._ReadOnly = false;
             this.controlBtn61._Reverse = false;
+            this.controlBtn61._ShowMsg = false;
             this.controlBtn61._Text = "啟動";
             this.controlBtn61.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn61.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5826,6 +5950,7 @@
             // 
             // controlBtn59
             // 
+            this.controlBtn59._AutoOff = false;
             this.controlBtn59._CurrentStatus = false;
             this.controlBtn59._EqBase = null;
             this.controlBtn59._PlcDevice = "Rewind_Reversal";
@@ -5833,6 +5958,7 @@
             this.controlBtn59._PlcDisplayOnDevice = "Rewind_Reversal";
             this.controlBtn59._ReadOnly = false;
             this.controlBtn59._Reverse = false;
+            this.controlBtn59._ShowMsg = false;
             this.controlBtn59._Text = "順轉";
             this.controlBtn59.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn59.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5845,6 +5971,7 @@
             // 
             // controlBtn60
             // 
+            this.controlBtn60._AutoOff = false;
             this.controlBtn60._CurrentStatus = false;
             this.controlBtn60._EqBase = null;
             this.controlBtn60._PlcDevice = "Rewind_Forward";
@@ -5852,6 +5979,7 @@
             this.controlBtn60._PlcDisplayOnDevice = "Rewind_Forward";
             this.controlBtn60._ReadOnly = false;
             this.controlBtn60._Reverse = false;
+            this.controlBtn60._ShowMsg = false;
             this.controlBtn60._Text = "逆轉";
             this.controlBtn60.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn60.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5864,6 +5992,7 @@
             // 
             // controlBtn57
             // 
+            this.controlBtn57._AutoOff = false;
             this.controlBtn57._CurrentStatus = false;
             this.controlBtn57._EqBase = null;
             this.controlBtn57._PlcDevice = "Discharge_Reversal";
@@ -5871,6 +6000,7 @@
             this.controlBtn57._PlcDisplayOnDevice = "Discharge_Reversal";
             this.controlBtn57._ReadOnly = false;
             this.controlBtn57._Reverse = false;
+            this.controlBtn57._ShowMsg = false;
             this.controlBtn57._Text = "順轉";
             this.controlBtn57.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn57.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5883,6 +6013,7 @@
             // 
             // controlBtn58
             // 
+            this.controlBtn58._AutoOff = false;
             this.controlBtn58._CurrentStatus = false;
             this.controlBtn58._EqBase = null;
             this.controlBtn58._PlcDevice = "Discharge_Forward";
@@ -5890,6 +6021,7 @@
             this.controlBtn58._PlcDisplayOnDevice = "Discharge_Forward";
             this.controlBtn58._ReadOnly = false;
             this.controlBtn58._Reverse = false;
+            this.controlBtn58._ShowMsg = false;
             this.controlBtn58._Text = "逆轉";
             this.controlBtn58.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn58.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5902,6 +6034,7 @@
             // 
             // controlBtn55
             // 
+            this.controlBtn55._AutoOff = false;
             this.controlBtn55._CurrentStatus = false;
             this.controlBtn55._EqBase = null;
             this.controlBtn55._PlcDevice = "Host_Reversal";
@@ -5909,6 +6042,7 @@
             this.controlBtn55._PlcDisplayOnDevice = "Host_Reversal";
             this.controlBtn55._ReadOnly = false;
             this.controlBtn55._Reverse = false;
+            this.controlBtn55._ShowMsg = false;
             this.controlBtn55._Text = "順轉";
             this.controlBtn55.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn55.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5921,6 +6055,7 @@
             // 
             // controlBtn54
             // 
+            this.controlBtn54._AutoOff = false;
             this.controlBtn54._CurrentStatus = false;
             this.controlBtn54._EqBase = null;
             this.controlBtn54._PlcDevice = "Tension_Start";
@@ -5928,6 +6063,7 @@
             this.controlBtn54._PlcDisplayOnDevice = "Tension_Start";
             this.controlBtn54._ReadOnly = false;
             this.controlBtn54._Reverse = false;
+            this.controlBtn54._ShowMsg = false;
             this.controlBtn54._Text = "啟動";
             this.controlBtn54.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn54.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5940,6 +6076,7 @@
             // 
             // controlBtn56
             // 
+            this.controlBtn56._AutoOff = false;
             this.controlBtn56._CurrentStatus = false;
             this.controlBtn56._EqBase = null;
             this.controlBtn56._PlcDevice = "Host_Forward";
@@ -5947,6 +6084,7 @@
             this.controlBtn56._PlcDisplayOnDevice = "Host_Forward";
             this.controlBtn56._ReadOnly = false;
             this.controlBtn56._Reverse = false;
+            this.controlBtn56._ShowMsg = false;
             this.controlBtn56._Text = "逆轉";
             this.controlBtn56.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn56.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5959,6 +6097,7 @@
             // 
             // controlBtn53
             // 
+            this.controlBtn53._AutoOff = false;
             this.controlBtn53._CurrentStatus = false;
             this.controlBtn53._EqBase = null;
             this.controlBtn53._PlcDevice = "Manual_Acc";
@@ -5966,6 +6105,7 @@
             this.controlBtn53._PlcDisplayOnDevice = "Manual_Acc";
             this.controlBtn53._ReadOnly = false;
             this.controlBtn53._Reverse = false;
+            this.controlBtn53._ShowMsg = false;
             this.controlBtn53._Text = "加速";
             this.controlBtn53.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn53.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5978,6 +6118,7 @@
             // 
             // controlBtn48
             // 
+            this.controlBtn48._AutoOff = false;
             this.controlBtn48._CurrentStatus = false;
             this.controlBtn48._EqBase = null;
             this.controlBtn48._PlcDevice = "Manual_Dec";
@@ -5985,6 +6126,7 @@
             this.controlBtn48._PlcDisplayOnDevice = "Manual_Dec";
             this.controlBtn48._ReadOnly = false;
             this.controlBtn48._Reverse = false;
+            this.controlBtn48._ShowMsg = false;
             this.controlBtn48._Text = "減速";
             this.controlBtn48.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn48.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5997,6 +6139,7 @@
             // 
             // controlBtn49
             // 
+            this.controlBtn49._AutoOff = false;
             this.controlBtn49._CurrentStatus = false;
             this.controlBtn49._EqBase = null;
             this.controlBtn49._PlcDevice = "Rewind_DiameterReset";
@@ -6004,6 +6147,7 @@
             this.controlBtn49._PlcDisplayOnDevice = "Rewind_DiameterReset";
             this.controlBtn49._ReadOnly = true;
             this.controlBtn49._Reverse = false;
+            this.controlBtn49._ShowMsg = false;
             this.controlBtn49._Text = "ON";
             this.controlBtn49.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn49.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6016,6 +6160,7 @@
             // 
             // controlBtn50
             // 
+            this.controlBtn50._AutoOff = false;
             this.controlBtn50._CurrentStatus = false;
             this.controlBtn50._EqBase = null;
             this.controlBtn50._PlcDevice = "Discharge_DiameterReset";
@@ -6023,6 +6168,7 @@
             this.controlBtn50._PlcDisplayOnDevice = "Discharge_DiameterReset";
             this.controlBtn50._ReadOnly = true;
             this.controlBtn50._Reverse = false;
+            this.controlBtn50._ShowMsg = false;
             this.controlBtn50._Text = "ON";
             this.controlBtn50.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn50.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6035,6 +6181,7 @@
             // 
             // controlBtn51
             // 
+            this.controlBtn51._AutoOff = false;
             this.controlBtn51._CurrentStatus = false;
             this.controlBtn51._EqBase = null;
             this.controlBtn51._PlcDevice = "Speed_RatioAlarm";
@@ -6042,6 +6189,7 @@
             this.controlBtn51._PlcDisplayOnDevice = "Speed_RatioAlarm";
             this.controlBtn51._ReadOnly = true;
             this.controlBtn51._Reverse = false;
+            this.controlBtn51._ShowMsg = false;
             this.controlBtn51._Text = "ON";
             this.controlBtn51.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn51.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6054,6 +6202,7 @@
             // 
             // controlBtn52
             // 
+            this.controlBtn52._AutoOff = false;
             this.controlBtn52._CurrentStatus = false;
             this.controlBtn52._EqBase = null;
             this.controlBtn52._PlcDevice = "Link_Avail";
@@ -6061,6 +6210,7 @@
             this.controlBtn52._PlcDisplayOnDevice = "Link_Avail";
             this.controlBtn52._ReadOnly = true;
             this.controlBtn52._Reverse = false;
+            this.controlBtn52._ShowMsg = false;
             this.controlBtn52._Text = "ON";
             this.controlBtn52.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn52.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6073,6 +6223,7 @@
             // 
             // controlBtn40
             // 
+            this.controlBtn40._AutoOff = false;
             this.controlBtn40._CurrentStatus = false;
             this.controlBtn40._EqBase = null;
             this.controlBtn40._PlcDevice = "Rewind_TensionAlarm";
@@ -6080,6 +6231,7 @@
             this.controlBtn40._PlcDisplayOnDevice = "Rewind_TensionAlarm";
             this.controlBtn40._ReadOnly = true;
             this.controlBtn40._Reverse = false;
+            this.controlBtn40._ShowMsg = false;
             this.controlBtn40._Text = "ON";
             this.controlBtn40.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn40.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6092,6 +6244,7 @@
             // 
             // controlBtn41
             // 
+            this.controlBtn41._AutoOff = false;
             this.controlBtn41._CurrentStatus = false;
             this.controlBtn41._EqBase = null;
             this.controlBtn41._PlcDevice = "Discharge_TensionAlarm";
@@ -6099,6 +6252,7 @@
             this.controlBtn41._PlcDisplayOnDevice = "Discharge_TensionAlarm";
             this.controlBtn41._ReadOnly = true;
             this.controlBtn41._Reverse = false;
+            this.controlBtn41._ShowMsg = false;
             this.controlBtn41._Text = "ON";
             this.controlBtn41.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn41.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6111,6 +6265,7 @@
             // 
             // controlBtn42
             // 
+            this.controlBtn42._AutoOff = false;
             this.controlBtn42._CurrentStatus = false;
             this.controlBtn42._EqBase = null;
             this.controlBtn42._PlcDevice = "Uload_MotorAlarm";
@@ -6118,6 +6273,7 @@
             this.controlBtn42._PlcDisplayOnDevice = "Uload_MotorAlarm";
             this.controlBtn42._ReadOnly = true;
             this.controlBtn42._Reverse = false;
+            this.controlBtn42._ShowMsg = false;
             this.controlBtn42._Text = "ON";
             this.controlBtn42.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn42.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6130,6 +6286,7 @@
             // 
             // controlBtn43
             // 
+            this.controlBtn43._AutoOff = false;
             this.controlBtn43._CurrentStatus = false;
             this.controlBtn43._EqBase = null;
             this.controlBtn43._PlcDevice = "Load_MotorAlarm";
@@ -6137,6 +6294,7 @@
             this.controlBtn43._PlcDisplayOnDevice = "Load_MotorAlarm";
             this.controlBtn43._ReadOnly = true;
             this.controlBtn43._Reverse = false;
+            this.controlBtn43._ShowMsg = false;
             this.controlBtn43._Text = "ON";
             this.controlBtn43.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn43.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6149,6 +6307,7 @@
             // 
             // controlBtn44
             // 
+            this.controlBtn44._AutoOff = false;
             this.controlBtn44._CurrentStatus = false;
             this.controlBtn44._EqBase = null;
             this.controlBtn44._PlcDevice = "Host_MotorAlarm";
@@ -6156,6 +6315,7 @@
             this.controlBtn44._PlcDisplayOnDevice = "Host_MotorAlarm";
             this.controlBtn44._ReadOnly = true;
             this.controlBtn44._Reverse = false;
+            this.controlBtn44._ShowMsg = false;
             this.controlBtn44._Text = "ON";
             this.controlBtn44.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn44.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6168,6 +6328,7 @@
             // 
             // controlBtn45
             // 
+            this.controlBtn45._AutoOff = false;
             this.controlBtn45._CurrentStatus = false;
             this.controlBtn45._EqBase = null;
             this.controlBtn45._PlcDevice = "Rewind_MotorAlarm";
@@ -6175,6 +6336,7 @@
             this.controlBtn45._PlcDisplayOnDevice = "Rewind_MotorAlarm";
             this.controlBtn45._ReadOnly = true;
             this.controlBtn45._Reverse = false;
+            this.controlBtn45._ShowMsg = false;
             this.controlBtn45._Text = "ON";
             this.controlBtn45.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn45.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6187,6 +6349,7 @@
             // 
             // controlBtn46
             // 
+            this.controlBtn46._AutoOff = false;
             this.controlBtn46._CurrentStatus = false;
             this.controlBtn46._EqBase = null;
             this.controlBtn46._PlcDevice = "Discharge_MotorAlarm";
@@ -6194,6 +6357,7 @@
             this.controlBtn46._PlcDisplayOnDevice = "Discharge_MotorAlarm";
             this.controlBtn46._ReadOnly = true;
             this.controlBtn46._Reverse = false;
+            this.controlBtn46._ShowMsg = false;
             this.controlBtn46._Text = "ON";
             this.controlBtn46.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn46.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6206,6 +6370,7 @@
             // 
             // controlBtn47
             // 
+            this.controlBtn47._AutoOff = false;
             this.controlBtn47._CurrentStatus = false;
             this.controlBtn47._EqBase = null;
             this.controlBtn47._PlcDevice = "Rewind_EPC_Start";
@@ -6213,6 +6378,7 @@
             this.controlBtn47._PlcDisplayOnDevice = "Rewind_EPC_Start";
             this.controlBtn47._ReadOnly = true;
             this.controlBtn47._Reverse = false;
+            this.controlBtn47._ShowMsg = false;
             this.controlBtn47._Text = "ON";
             this.controlBtn47.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn47.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6225,6 +6391,7 @@
             // 
             // controlBtn36
             // 
+            this.controlBtn36._AutoOff = false;
             this.controlBtn36._CurrentStatus = false;
             this.controlBtn36._EqBase = null;
             this.controlBtn36._PlcDevice = "Discharge_EPC_Start";
@@ -6232,6 +6399,7 @@
             this.controlBtn36._PlcDisplayOnDevice = "Discharge_EPC_Start";
             this.controlBtn36._ReadOnly = true;
             this.controlBtn36._Reverse = false;
+            this.controlBtn36._ShowMsg = false;
             this.controlBtn36._Text = "ON";
             this.controlBtn36.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn36.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6244,6 +6412,7 @@
             // 
             // controlBtn37
             // 
+            this.controlBtn37._AutoOff = false;
             this.controlBtn37._CurrentStatus = false;
             this.controlBtn37._EqBase = null;
             this.controlBtn37._PlcDevice = "Rewind_Steering";
@@ -6251,6 +6420,7 @@
             this.controlBtn37._PlcDisplayOnDevice = "Rewind_Steering";
             this.controlBtn37._ReadOnly = true;
             this.controlBtn37._Reverse = false;
+            this.controlBtn37._ShowMsg = false;
             this.controlBtn37._Text = "ON";
             this.controlBtn37.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn37.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6263,6 +6433,7 @@
             // 
             // controlBtn38
             // 
+            this.controlBtn38._AutoOff = false;
             this.controlBtn38._CurrentStatus = false;
             this.controlBtn38._EqBase = null;
             this.controlBtn38._PlcDevice = "Discharge_Steering";
@@ -6270,6 +6441,7 @@
             this.controlBtn38._PlcDisplayOnDevice = "Discharge_Steering";
             this.controlBtn38._ReadOnly = true;
             this.controlBtn38._Reverse = false;
+            this.controlBtn38._ShowMsg = false;
             this.controlBtn38._Text = "ON";
             this.controlBtn38.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn38.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6282,6 +6454,7 @@
             // 
             // controlBtn39
             // 
+            this.controlBtn39._AutoOff = false;
             this.controlBtn39._CurrentStatus = false;
             this.controlBtn39._EqBase = null;
             this.controlBtn39._PlcDevice = "Host_Steering";
@@ -6289,6 +6462,7 @@
             this.controlBtn39._PlcDisplayOnDevice = "Host_Steering";
             this.controlBtn39._ReadOnly = true;
             this.controlBtn39._Reverse = false;
+            this.controlBtn39._ShowMsg = false;
             this.controlBtn39._Text = "ON";
             this.controlBtn39.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn39.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6301,6 +6475,7 @@
             // 
             // controlBtn34
             // 
+            this.controlBtn34._AutoOff = false;
             this.controlBtn34._CurrentStatus = false;
             this.controlBtn34._EqBase = null;
             this.controlBtn34._PlcDevice = "Meters_Ready";
@@ -6308,6 +6483,7 @@
             this.controlBtn34._PlcDisplayOnDevice = "Meters_Ready";
             this.controlBtn34._ReadOnly = true;
             this.controlBtn34._Reverse = false;
+            this.controlBtn34._ShowMsg = false;
             this.controlBtn34._Text = "ON";
             this.controlBtn34.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn34.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6320,6 +6496,7 @@
             // 
             // controlBtn35
             // 
+            this.controlBtn35._AutoOff = false;
             this.controlBtn35._CurrentStatus = false;
             this.controlBtn35._EqBase = null;
             this.controlBtn35._PlcDevice = "AutoAcc_Ready";
@@ -6327,6 +6504,7 @@
             this.controlBtn35._PlcDisplayOnDevice = "AutoAcc_Ready";
             this.controlBtn35._ReadOnly = true;
             this.controlBtn35._Reverse = false;
+            this.controlBtn35._ShowMsg = false;
             this.controlBtn35._Text = "ON";
             this.controlBtn35.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn35.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6339,6 +6517,7 @@
             // 
             // controlBtn33
             // 
+            this.controlBtn33._AutoOff = false;
             this.controlBtn33._CurrentStatus = false;
             this.controlBtn33._EqBase = null;
             this.controlBtn33._PlcDevice = "TensionStart";
@@ -6346,6 +6525,7 @@
             this.controlBtn33._PlcDisplayOnDevice = "TensionStart";
             this.controlBtn33._ReadOnly = true;
             this.controlBtn33._Reverse = false;
+            this.controlBtn33._ShowMsg = false;
             this.controlBtn33._Text = "ON";
             this.controlBtn33.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn33.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6358,6 +6538,7 @@
             // 
             // controlBtn32
             // 
+            this.controlBtn32._AutoOff = false;
             this.controlBtn32._CurrentStatus = false;
             this.controlBtn32._EqBase = null;
             this.controlBtn32._PlcDevice = "ServoStart";
@@ -6365,6 +6546,7 @@
             this.controlBtn32._PlcDisplayOnDevice = "ServoStart";
             this.controlBtn32._ReadOnly = true;
             this.controlBtn32._Reverse = false;
+            this.controlBtn32._ShowMsg = false;
             this.controlBtn32._Text = "ON";
             this.controlBtn32.BackColor = System.Drawing.Color.WhiteSmoke;
             this.controlBtn32.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6872,6 +7054,7 @@
             // 
             // controlBtn3
             // 
+            this.controlBtn3._AutoOff = false;
             this.controlBtn3._CurrentStatus = false;
             this.controlBtn3._EqBase = null;
             this.controlBtn3._PlcDevice = "Heater_Bypass";
@@ -6879,6 +7062,7 @@
             this.controlBtn3._PlcDisplayOnDevice = "Heater_Bypass";
             this.controlBtn3._ReadOnly = false;
             this.controlBtn3._Reverse = false;
+            this.controlBtn3._ShowMsg = false;
             this.controlBtn3._Text = "ON";
             this.controlBtn3.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn3.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6891,6 +7075,7 @@
             // 
             // controlBtn2
             // 
+            this.controlBtn2._AutoOff = false;
             this.controlBtn2._CurrentStatus = false;
             this.controlBtn2._EqBase = null;
             this.controlBtn2._PlcDevice = "Heater_Service_On_YMC_M2";
@@ -6898,6 +7083,7 @@
             this.controlBtn2._PlcDisplayOnDevice = "Heater_Service_On_YMC_M2";
             this.controlBtn2._ReadOnly = false;
             this.controlBtn2._Reverse = false;
+            this.controlBtn2._ShowMsg = false;
             this.controlBtn2._Text = "ON";
             this.controlBtn2.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn2.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -7046,6 +7232,7 @@
             // 
             // controlBtn15
             // 
+            this.controlBtn15._AutoOff = false;
             this.controlBtn15._CurrentStatus = false;
             this.controlBtn15._EqBase = null;
             this.controlBtn15._PlcDevice = "DC4_ON_YMC";
@@ -7053,6 +7240,7 @@
             this.controlBtn15._PlcDisplayOnDevice = "DC4_ON_YMC";
             this.controlBtn15._ReadOnly = false;
             this.controlBtn15._Reverse = false;
+            this.controlBtn15._ShowMsg = false;
             this.controlBtn15._Text = "啟動";
             this.controlBtn15.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn15.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -7065,6 +7253,7 @@
             // 
             // controlBtn14
             // 
+            this.controlBtn14._AutoOff = false;
             this.controlBtn14._CurrentStatus = false;
             this.controlBtn14._EqBase = null;
             this.controlBtn14._PlcDevice = "DC3_ON_YMC";
@@ -7072,6 +7261,7 @@
             this.controlBtn14._PlcDisplayOnDevice = "DC3_ON_YMC";
             this.controlBtn14._ReadOnly = false;
             this.controlBtn14._Reverse = false;
+            this.controlBtn14._ShowMsg = false;
             this.controlBtn14._Text = "啟動";
             this.controlBtn14.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn14.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -7084,6 +7274,7 @@
             // 
             // controlBtn13
             // 
+            this.controlBtn13._AutoOff = false;
             this.controlBtn13._CurrentStatus = false;
             this.controlBtn13._EqBase = null;
             this.controlBtn13._PlcDevice = "DC2_ON_YMC";
@@ -7091,6 +7282,7 @@
             this.controlBtn13._PlcDisplayOnDevice = "DC2_ON_YMC";
             this.controlBtn13._ReadOnly = false;
             this.controlBtn13._Reverse = false;
+            this.controlBtn13._ShowMsg = false;
             this.controlBtn13._Text = "啟動";
             this.controlBtn13.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn13.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -7103,6 +7295,7 @@
             // 
             // controlBtn12
             // 
+            this.controlBtn12._AutoOff = false;
             this.controlBtn12._CurrentStatus = false;
             this.controlBtn12._EqBase = null;
             this.controlBtn12._PlcDevice = "DC1_ON_YMC";
@@ -7110,6 +7303,7 @@
             this.controlBtn12._PlcDisplayOnDevice = "DC1_ON_YMC";
             this.controlBtn12._ReadOnly = false;
             this.controlBtn12._Reverse = false;
+            this.controlBtn12._ShowMsg = false;
             this.controlBtn12._Text = "啟動";
             this.controlBtn12.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn12.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -7122,6 +7316,7 @@
             // 
             // controlBtn10
             // 
+            this.controlBtn10._AutoOff = false;
             this.controlBtn10._CurrentStatus = false;
             this.controlBtn10._EqBase = null;
             this.controlBtn10._PlcDevice = "MF2_ON_YMC";
@@ -7129,6 +7324,7 @@
             this.controlBtn10._PlcDisplayOnDevice = "MF2_ON_YMC";
             this.controlBtn10._ReadOnly = false;
             this.controlBtn10._Reverse = false;
+            this.controlBtn10._ShowMsg = false;
             this.controlBtn10._Text = "啟動";
             this.controlBtn10.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn10.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -7141,6 +7337,7 @@
             // 
             // controlBtn8
             // 
+            this.controlBtn8._AutoOff = false;
             this.controlBtn8._CurrentStatus = false;
             this.controlBtn8._EqBase = null;
             this.controlBtn8._PlcDevice = "MF1_ON_YMC";
@@ -7148,6 +7345,7 @@
             this.controlBtn8._PlcDisplayOnDevice = "MF1_ON_YMC";
             this.controlBtn8._ReadOnly = false;
             this.controlBtn8._Reverse = false;
+            this.controlBtn8._ShowMsg = false;
             this.controlBtn8._Text = "啟動";
             this.controlBtn8.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn8.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));

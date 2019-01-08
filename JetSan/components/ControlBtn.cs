@@ -20,6 +20,7 @@ namespace HyTemplate.components
         public bool _ReadOnly { get; set; }
         public string _Text { get; set; }
         public bool _ShowMsg { get; set; }
+        public bool _AutoOff { get; set; }
         public EqBase _EqBase { get; set; }
         public bool _CurrentStatus { get; set; }
         #endregion
@@ -31,14 +32,15 @@ namespace HyTemplate.components
             _PlcDevice = "";
             _Text = "";
             _ShowMsg = false;
-            _PlcDisplayOnDevice = "";
+            _AutoOff = false;
+             _PlcDisplayOnDevice = "";
             _PlcDisplayOffDevice = "";
             _ReadOnly = false;
             _Reverse = false;
             _CurrentStatus = false;
 
             this.HandleCreated += ControlBtn_HandleCreated;
-            this.Click += Btn_Click;
+            this.Click += Btn_ClickAsync;
 
         }
         private void ControlBtn_HandleCreated(object sender, EventArgs e)
@@ -48,7 +50,7 @@ namespace HyTemplate.components
             this.Enabled = (_ReadOnly) ? false : true;
         }        
 
-        private void Btn_Click(object sender, EventArgs e)
+        private async void Btn_ClickAsync(object sender, EventArgs e)
         {
             if (_PlcDevice.Trim() == "" || _EqBase == null) return;
 
@@ -57,14 +59,15 @@ namespace HyTemplate.components
                 DialogResult result = MessageBox.Show("    是    否    繼    續   ?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result != DialogResult.Yes) return;
             }
-            if (_CurrentStatus)
-            {
-                _EqBase.PlcKernel[_PlcDevice] = 0;
-            }
-            else
+
+            if (_AutoOff)
             {
                 _EqBase.PlcKernel[_PlcDevice] = 1;
+                await PutTaskDelay();
+                _EqBase.PlcKernel[_PlcDevice] = 0;
+                return;
             }
+            _EqBase.PlcKernel[_PlcDevice] = (_CurrentStatus) ? 0 : 1;
         }
 
         public void refreshStatus()
@@ -94,6 +97,10 @@ namespace HyTemplate.components
             {
                 this.BackColor = (_ReadOnly) ? Color.WhiteSmoke : Color.Transparent;
             }
+        }
+        async Task PutTaskDelay()
+        {
+            await Task.Delay(1000);
         }
     }
             

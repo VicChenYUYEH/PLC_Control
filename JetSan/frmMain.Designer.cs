@@ -47,8 +47,8 @@
             this.Power_RunStop = new System.Windows.Forms.Button();
             this.Power_RunStart = new System.Windows.Forms.Button();
             this.btnProcView = new System.Windows.Forms.Button();
-            this.btnDeviceconstant = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDeviceConstant = new System.Windows.Forms.Button();
+            this.btnMaintenance = new System.Windows.Forms.Button();
             this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
             this.displayTextBox_Alarm = new HyTemplate.components.DisplayTextBox();
             this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
@@ -238,26 +238,27 @@
             this.btnProcView.UseVisualStyleBackColor = true;
             this.btnProcView.Click += new System.EventHandler(this.btnProcView_Click);
             // 
-            // btnDeviceconstant
+            // btnDeviceConstant
             // 
-            this.btnDeviceconstant.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnDeviceconstant.Location = new System.Drawing.Point(556, 8);
-            this.btnDeviceconstant.Name = "btnDeviceconstant";
-            this.btnDeviceconstant.Size = new System.Drawing.Size(130, 60);
-            this.btnDeviceconstant.TabIndex = 2706;
-            this.btnDeviceconstant.Text = "機台參數";
-            this.btnDeviceconstant.UseVisualStyleBackColor = true;
-            this.btnDeviceconstant.Click += new System.EventHandler(this.btnDeviceConstant_Click);
+            this.btnDeviceConstant.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnDeviceConstant.Location = new System.Drawing.Point(556, 8);
+            this.btnDeviceConstant.Name = "btnDeviceConstant";
+            this.btnDeviceConstant.Size = new System.Drawing.Size(130, 60);
+            this.btnDeviceConstant.TabIndex = 2706;
+            this.btnDeviceConstant.Text = "機台參數";
+            this.btnDeviceConstant.UseVisualStyleBackColor = true;
+            this.btnDeviceConstant.Click += new System.EventHandler(this.btnDeviceConstant_Click);
             // 
-            // button2
+            // btnMaintenance
             // 
-            this.button2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(692, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 60);
-            this.button2.TabIndex = 2707;
-            this.button2.Text = "維護參數";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMaintenance.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnMaintenance.Location = new System.Drawing.Point(692, 8);
+            this.btnMaintenance.Name = "btnMaintenance";
+            this.btnMaintenance.Size = new System.Drawing.Size(130, 60);
+            this.btnMaintenance.TabIndex = 2707;
+            this.btnMaintenance.Text = "維護參數";
+            this.btnMaintenance.UseVisualStyleBackColor = true;
+            this.btnMaintenance.Click += new System.EventHandler(this.btnMaintenance_Click);
             // 
             // statusPictureBox1
             // 
@@ -308,8 +309,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1696, 1059);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnDeviceconstant);
+            this.Controls.Add(this.btnMaintenance);
+            this.Controls.Add(this.btnDeviceConstant);
             this.Controls.Add(this.btnGasView);
             this.Controls.Add(this.btnProcView);
             this.Controls.Add(this.Power_RunStop);
@@ -366,8 +367,8 @@
         internal System.Windows.Forms.Button Power_RunStop;
         internal System.Windows.Forms.Button Power_RunStart;
         private System.Windows.Forms.Button btnProcView;
-        private System.Windows.Forms.Button btnDeviceconstant;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDeviceConstant;
+        private System.Windows.Forms.Button btnMaintenance;
     }
 }
 
