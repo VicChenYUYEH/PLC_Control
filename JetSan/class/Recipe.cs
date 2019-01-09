@@ -11,6 +11,7 @@ namespace HyTemplate
         public double SetPoint { get; set; }
         public string Unit { get; set; }
         public string Description { get; set; }
+        public string Address { get; set; }
         public bool Parameter { get; set; }
     }
 
@@ -51,6 +52,7 @@ namespace HyTemplate
                             info.Unit = node.Attributes["Unit"].Value;
                             info.SetPoint = 0;
                             info.Description = node.Attributes["Description"].Value;
+                            info.Address = node.Attributes["DeviceName"].Value;
                             dicRecipe.Add(para_id, info);
                         }
                     }
@@ -91,6 +93,7 @@ namespace HyTemplate
                             info.DeviceName = para_id;
                             info.Unit = node.Attributes["Unit"].Value;
                             info.SetPoint = Convert.ToDouble(para_value);
+                            info.Address = node.Attributes["DeviceName"].Value;
                             info.Description = node.Attributes["Description"].Value;
                             info.Parameter = (recipe == "System") ? true : false;
                             dicRecipe.Add(para_id, info);

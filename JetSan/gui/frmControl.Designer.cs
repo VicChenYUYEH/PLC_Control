@@ -259,7 +259,7 @@
             this.GroupBox4.Controls.Add(this.Label143);
             this.GroupBox4.Controls.Add(this.Label142);
             this.GroupBox4.Font = new System.Drawing.Font("Arial", 10F);
-            this.GroupBox4.Location = new System.Drawing.Point(390, 34);
+            this.GroupBox4.Location = new System.Drawing.Point(422, 38);
             this.GroupBox4.Name = "GroupBox4";
             this.GroupBox4.Size = new System.Drawing.Size(973, 166);
             this.GroupBox4.TabIndex = 1593;
@@ -711,7 +711,7 @@
             this.TabControl1.Controls.Add(this.TabPage1);
             this.TabControl1.Controls.Add(this.TabPage2);
             this.TabControl1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.TabControl1.Location = new System.Drawing.Point(12, 12);
+            this.TabControl1.Location = new System.Drawing.Point(38, 25);
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.SelectedIndex = 0;
             this.TabControl1.Size = new System.Drawing.Size(359, 701);
@@ -2657,7 +2657,7 @@
             this.GroupBox1.Controls.Add(this.controlBtn27);
             this.GroupBox1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.GroupBox1.Location = new System.Drawing.Point(885, 436);
+            this.GroupBox1.Location = new System.Drawing.Point(1134, 448);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(168, 175);
             this.GroupBox1.TabIndex = 2063;
@@ -2772,7 +2772,7 @@
             this.controlBtn29.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn29.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn29.ForeColor = System.Drawing.Color.SteelBlue;
-            this.controlBtn29.Location = new System.Drawing.Point(891, 620);
+            this.controlBtn29.Location = new System.Drawing.Point(1140, 649);
             this.controlBtn29.Name = "controlBtn29";
             this.controlBtn29.Size = new System.Drawing.Size(155, 44);
             this.controlBtn29.TabIndex = 2066;
@@ -2794,7 +2794,7 @@
             this.controlBtn21.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn21.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn21.ForeColor = System.Drawing.Color.DarkGreen;
-            this.controlBtn21.Location = new System.Drawing.Point(746, 619);
+            this.controlBtn21.Location = new System.Drawing.Point(955, 649);
             this.controlBtn21.Name = "controlBtn21";
             this.controlBtn21.Size = new System.Drawing.Size(122, 44);
             this.controlBtn21.TabIndex = 2062;
@@ -2816,7 +2816,7 @@
             this.controlBtn22.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn22.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn22.ForeColor = System.Drawing.Color.DarkGreen;
-            this.controlBtn22.Location = new System.Drawing.Point(616, 619);
+            this.controlBtn22.Location = new System.Drawing.Point(808, 648);
             this.controlBtn22.Name = "controlBtn22";
             this.controlBtn22.Size = new System.Drawing.Size(124, 44);
             this.controlBtn22.TabIndex = 2061;
@@ -2838,7 +2838,7 @@
             this.controlBtn23.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn23.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn23.ForeColor = System.Drawing.Color.DarkGreen;
-            this.controlBtn23.Location = new System.Drawing.Point(486, 618);
+            this.controlBtn23.Location = new System.Drawing.Point(662, 648);
             this.controlBtn23.Name = "controlBtn23";
             this.controlBtn23.Size = new System.Drawing.Size(124, 44);
             this.controlBtn23.TabIndex = 2060;
@@ -2860,7 +2860,7 @@
             this.controlBtn24.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn24.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn24.ForeColor = System.Drawing.Color.DarkRed;
-            this.controlBtn24.Location = new System.Drawing.Point(746, 564);
+            this.controlBtn24.Location = new System.Drawing.Point(955, 587);
             this.controlBtn24.Name = "controlBtn24";
             this.controlBtn24.Size = new System.Drawing.Size(122, 42);
             this.controlBtn24.TabIndex = 2059;
@@ -2882,7 +2882,7 @@
             this.controlBtn25.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn25.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn25.ForeColor = System.Drawing.Color.DarkRed;
-            this.controlBtn25.Location = new System.Drawing.Point(616, 562);
+            this.controlBtn25.Location = new System.Drawing.Point(808, 586);
             this.controlBtn25.Name = "controlBtn25";
             this.controlBtn25.Size = new System.Drawing.Size(124, 44);
             this.controlBtn25.TabIndex = 2058;
@@ -2904,7 +2904,7 @@
             this.controlBtn26.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn26.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn26.ForeColor = System.Drawing.Color.DarkRed;
-            this.controlBtn26.Location = new System.Drawing.Point(485, 561);
+            this.controlBtn26.Location = new System.Drawing.Point(662, 586);
             this.controlBtn26.Name = "controlBtn26";
             this.controlBtn26.Size = new System.Drawing.Size(125, 44);
             this.controlBtn26.TabIndex = 2057;
@@ -2926,7 +2926,7 @@
             this.controlBtn15.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn15.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn15.ForeColor = System.Drawing.Color.DarkGreen;
-            this.controlBtn15.Location = new System.Drawing.Point(746, 507);
+            this.controlBtn15.Location = new System.Drawing.Point(955, 522);
             this.controlBtn15.Name = "controlBtn15";
             this.controlBtn15.Size = new System.Drawing.Size(122, 44);
             this.controlBtn15.TabIndex = 2056;
@@ -2948,7 +2948,7 @@
             this.controlBtn16.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn16.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn16.ForeColor = System.Drawing.Color.DarkGreen;
-            this.controlBtn16.Location = new System.Drawing.Point(616, 507);
+            this.controlBtn16.Location = new System.Drawing.Point(808, 519);
             this.controlBtn16.Name = "controlBtn16";
             this.controlBtn16.Size = new System.Drawing.Size(124, 44);
             this.controlBtn16.TabIndex = 2055;
@@ -2970,7 +2970,7 @@
             this.controlBtn17.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn17.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn17.ForeColor = System.Drawing.Color.DarkGreen;
-            this.controlBtn17.Location = new System.Drawing.Point(486, 506);
+            this.controlBtn17.Location = new System.Drawing.Point(663, 519);
             this.controlBtn17.Name = "controlBtn17";
             this.controlBtn17.Size = new System.Drawing.Size(124, 44);
             this.controlBtn17.TabIndex = 2054;
@@ -2992,7 +2992,7 @@
             this.controlBtn18.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn18.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn18.ForeColor = System.Drawing.Color.DarkRed;
-            this.controlBtn18.Location = new System.Drawing.Point(746, 450);
+            this.controlBtn18.Location = new System.Drawing.Point(955, 455);
             this.controlBtn18.Name = "controlBtn18";
             this.controlBtn18.Size = new System.Drawing.Size(122, 42);
             this.controlBtn18.TabIndex = 2053;
@@ -3014,7 +3014,7 @@
             this.controlBtn19.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn19.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn19.ForeColor = System.Drawing.Color.DarkRed;
-            this.controlBtn19.Location = new System.Drawing.Point(616, 448);
+            this.controlBtn19.Location = new System.Drawing.Point(808, 454);
             this.controlBtn19.Name = "controlBtn19";
             this.controlBtn19.Size = new System.Drawing.Size(124, 44);
             this.controlBtn19.TabIndex = 2052;
@@ -3036,7 +3036,7 @@
             this.controlBtn20.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn20.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn20.ForeColor = System.Drawing.Color.DarkRed;
-            this.controlBtn20.Location = new System.Drawing.Point(485, 447);
+            this.controlBtn20.Location = new System.Drawing.Point(663, 454);
             this.controlBtn20.Name = "controlBtn20";
             this.controlBtn20.Size = new System.Drawing.Size(125, 44);
             this.controlBtn20.TabIndex = 2051;
@@ -3058,9 +3058,9 @@
             this.controlBtn14.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn14.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn14.ForeColor = System.Drawing.Color.DarkRed;
-            this.controlBtn14.Location = new System.Drawing.Point(390, 446);
+            this.controlBtn14.Location = new System.Drawing.Point(548, 455);
             this.controlBtn14.Name = "controlBtn14";
-            this.controlBtn14.Size = new System.Drawing.Size(86, 215);
+            this.controlBtn14.Size = new System.Drawing.Size(86, 237);
             this.controlBtn14.TabIndex = 2050;
             this.controlBtn14.Text = "TP  NC ALL OFF";
             this.controlBtn14.UseVisualStyleBackColor = false;
@@ -3079,7 +3079,7 @@
             this.controlBtn12._Text = "Alarm Reset";
             this.controlBtn12.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn12.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn12.Location = new System.Drawing.Point(1191, 315);
+            this.controlBtn12.Location = new System.Drawing.Point(1223, 319);
             this.controlBtn12.Name = "controlBtn12";
             this.controlBtn12.Size = new System.Drawing.Size(158, 74);
             this.controlBtn12.TabIndex = 2049;
@@ -3100,7 +3100,7 @@
             this.controlBtn11._Text = "啟動MF Power";
             this.controlBtn11.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn11.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn11.Location = new System.Drawing.Point(1006, 315);
+            this.controlBtn11.Location = new System.Drawing.Point(1038, 319);
             this.controlBtn11.Name = "controlBtn11";
             this.controlBtn11.Size = new System.Drawing.Size(154, 74);
             this.controlBtn11.TabIndex = 2048;
@@ -3121,7 +3121,7 @@
             this.controlBtn10._Text = "啟動加熱器";
             this.controlBtn10.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn10.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn10.Location = new System.Drawing.Point(842, 315);
+            this.controlBtn10.Location = new System.Drawing.Point(874, 319);
             this.controlBtn10.Name = "controlBtn10";
             this.controlBtn10.Size = new System.Drawing.Size(125, 74);
             this.controlBtn10.TabIndex = 2047;
@@ -3142,7 +3142,7 @@
             this.controlBtn9._Text = "關閉抽真空";
             this.controlBtn9.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn9.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn9.Location = new System.Drawing.Point(681, 315);
+            this.controlBtn9.Location = new System.Drawing.Point(713, 319);
             this.controlBtn9.Name = "controlBtn9";
             this.controlBtn9.Size = new System.Drawing.Size(125, 74);
             this.controlBtn9.TabIndex = 2046;
@@ -3163,7 +3163,7 @@
             this.controlBtn8._Text = "製程結束";
             this.controlBtn8.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn8.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn8.Location = new System.Drawing.Point(527, 315);
+            this.controlBtn8.Location = new System.Drawing.Point(559, 319);
             this.controlBtn8.Name = "controlBtn8";
             this.controlBtn8.Size = new System.Drawing.Size(125, 74);
             this.controlBtn8.TabIndex = 2045;
@@ -3184,7 +3184,7 @@
             this.controlBtn7._Text = "自動模式";
             this.controlBtn7.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn7.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn7.Location = new System.Drawing.Point(390, 315);
+            this.controlBtn7.Location = new System.Drawing.Point(422, 319);
             this.controlBtn7.Name = "controlBtn7";
             this.controlBtn7.Size = new System.Drawing.Size(125, 74);
             this.controlBtn7.TabIndex = 2044;
@@ -3205,7 +3205,7 @@
             this.controlBtn6._Text = "啟動DC Power";
             this.controlBtn6.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn6.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn6.Location = new System.Drawing.Point(1191, 222);
+            this.controlBtn6.Location = new System.Drawing.Point(1223, 226);
             this.controlBtn6.Name = "controlBtn6";
             this.controlBtn6.Size = new System.Drawing.Size(158, 74);
             this.controlBtn6.TabIndex = 2043;
@@ -3226,7 +3226,7 @@
             this.controlBtn5._Text = "啟動Power";
             this.controlBtn5.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn5.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn5.Location = new System.Drawing.Point(1006, 222);
+            this.controlBtn5.Location = new System.Drawing.Point(1038, 226);
             this.controlBtn5.Name = "controlBtn5";
             this.controlBtn5.Size = new System.Drawing.Size(154, 74);
             this.controlBtn5.TabIndex = 2042;
@@ -3247,7 +3247,7 @@
             this.controlBtn4._Text = "破真空";
             this.controlBtn4.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn4.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn4.Location = new System.Drawing.Point(842, 222);
+            this.controlBtn4.Location = new System.Drawing.Point(874, 226);
             this.controlBtn4.Name = "controlBtn4";
             this.controlBtn4.Size = new System.Drawing.Size(125, 74);
             this.controlBtn4.TabIndex = 2041;
@@ -3268,7 +3268,7 @@
             this.controlBtn3._Text = "全抽真空";
             this.controlBtn3.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn3.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn3.Location = new System.Drawing.Point(681, 222);
+            this.controlBtn3.Location = new System.Drawing.Point(713, 226);
             this.controlBtn3.Name = "controlBtn3";
             this.controlBtn3.Size = new System.Drawing.Size(125, 74);
             this.controlBtn3.TabIndex = 2040;
@@ -3289,7 +3289,7 @@
             this.controlBtn2._Text = "製程開始";
             this.controlBtn2.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn2.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn2.Location = new System.Drawing.Point(528, 222);
+            this.controlBtn2.Location = new System.Drawing.Point(560, 226);
             this.controlBtn2.Name = "controlBtn2";
             this.controlBtn2.Size = new System.Drawing.Size(125, 74);
             this.controlBtn2.TabIndex = 2039;
@@ -3310,7 +3310,7 @@
             this.controlBtn1._Text = "手動模式";
             this.controlBtn1.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn1.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.controlBtn1.Location = new System.Drawing.Point(390, 222);
+            this.controlBtn1.Location = new System.Drawing.Point(422, 226);
             this.controlBtn1.Name = "controlBtn1";
             this.controlBtn1.Size = new System.Drawing.Size(125, 74);
             this.controlBtn1.TabIndex = 2038;
@@ -3321,7 +3321,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1419, 700);
+            this.ClientSize = new System.Drawing.Size(1419, 735);
             this.Controls.Add(this.controlBtn29);
             this.Controls.Add(this.GroupBox1);
             this.Controls.Add(this.controlBtn21);

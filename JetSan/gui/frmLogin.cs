@@ -52,8 +52,7 @@ namespace HyTemplate.gui
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            frmRegister.Show();
-            
+            frmRegister.Show();      
         }
 
         private void OnReceiveMessage(string m_MessageName, TEvent m_Event)

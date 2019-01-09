@@ -382,7 +382,7 @@
             this.TabControl_Main.Controls.Add(this.TabPage2);
             this.TabControl_Main.Controls.Add(this.tabPage4);
             this.TabControl_Main.Controls.Add(this.tabPage5);
-            this.TabControl_Main.Location = new System.Drawing.Point(12, 12);
+            this.TabControl_Main.Location = new System.Drawing.Point(33, 43);
             this.TabControl_Main.Name = "TabControl_Main";
             this.TabControl_Main.SelectedIndex = 0;
             this.TabControl_Main.Size = new System.Drawing.Size(1287, 693);
@@ -5765,7 +5765,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1320, 725);
+            this.ClientSize = new System.Drawing.Size(1320, 742);
             this.Controls.Add(this.TabControl_Main);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);

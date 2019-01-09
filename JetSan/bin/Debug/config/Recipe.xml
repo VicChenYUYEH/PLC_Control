@@ -1,23 +1,72 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Recipe>
   <Group ID="RCP1" Name="RCP11">
-    <Link Name="PLC_AO_MFC_AR_1" Value="10" DeviceName="W00110" Unit="s" Description="Ar_1設定值" />
-    <Link Name="PLC_AO_MFC_AR_2" Value="20" DeviceName="W00111" Unit="s" Description="Ar_2設定值" />
-    <Link Name="PLC_AO_MFC_O2_1" Value="20" DeviceName="W00112" Unit="s" Description="O2_1設定值" />
-    <Link Name="PLC_AO_MFC_O2_2" Value="20" DeviceName="W00113" Unit="s" Description="O2_2設定值" />
-    <Link Name="PLC_AO_POWER_1_SV" Value="20" DeviceName="W00114" Unit="s" Description="POWER1 Set P" />
-    <Link Name="PLC_AO_POWER_2_SV" Value="20" DeviceName="W00115" Unit="s" Description="POWER2 Set P" />
+    <Link Name="SET_MFC_Pre01_N2" Value="10" DeviceName="R1000" Unit="s" Description="MFC_Pre01_N2設定值" />
+    <Link Name="SET_MFC_Pre02_O2" Value="20" DeviceName="R1001" Unit="s" Description="MFC_Pre02_O2設定值" />
+    <Link Name="SET_MFC_Pre03_Ar" Value="20" DeviceName="R1002" Unit="s" Description="MFC_Pre03_Ar設定值" />
+    <Link Name="SET_MFC_0301_O2" Value="20" DeviceName="R1003" Unit="s" Description="MFC_0301_O2設定值" />
+    <Link Name="SET_MFC_0302_Ar" Value="20" DeviceName="R1004" Unit="s" Description="MFC_0302_Ar設定值" />
+    <Link Name="SET_MFC_0303_Ar" Value="20" DeviceName="R1005" Unit="s" Description="MFC_0303_Ar設定值" />
+    <Link Name="SET_MFC_0304_O2" Value="20" DeviceName="R1006" Unit="s" Description="MFC_0304_O2設定值" />
+    <Link Name="SET_MFC_0305_Ar" Value="20" DeviceName="R1007" Unit="s" Description="MFC_0305_Ar設定值" />
+    <Link Name="SET_MFC_0306_O2" Value="20" DeviceName="R1008" Unit="s" Description="MFC_0306_O2設定值" />
+    <Link Name="SET_MFC_0307_Ar" Value="20" DeviceName="R1009" Unit="s" Description="MFC_0307_Ar設定值" />
+    <Link Name="SET_MFC_0308_O2" Value="20" DeviceName="R1010" Unit="s" Description="MFC_0308_O2設定值" />
+    <Link Name="SET_MFC_0309_Ar" Value="20" DeviceName="R1011" Unit="s" Description="MFC_0309_Ar設定值" />
+    <Link Name="SET_MFC_0310_O2" Value="20" DeviceName="R1012" Unit="s" Description="MFC_0310_O2設定值" />
+    <Link Name="SET_MFC_0311_O2" Value="20" DeviceName="R1013" Unit="s" Description="MFC_0311_O2設定值" />
+    <Link Name="SET_MFC_0312_Ar" Value="20" DeviceName="R1014" Unit="s" Description="MFC_0312_Ar設定值" />
+    <Link Name="MF1_Proc_STEP" Value="20" DeviceName="R1052" Unit="kw" Description="MF1_功率設定值" />
+    <Link Name="MF2_Proc_STEP" Value="20" DeviceName="R1055" Unit="kw" Description="MF2_功率設定值" />
+    <Link Name="DC1_Proc_STEP" Value="20" DeviceName="R1058" Unit="kw" Description="DC1_功率設定值" />
+    <Link Name="DC2_Proc_STEP" Value="20" DeviceName="R1061" Unit="kw" Description="DC2_功率設定值" />
+    <Link Name="DC3_Proc_STEP" Value="20" DeviceName="R1064" Unit="kw" Description="DC3_功率設定值" />
+    <Link Name="DC4_Proc_STEP" Value="20" DeviceName="R1067" Unit="kw" Description="DC4_功率設定值" />
+    <Link Name="MF1_Pre_Sputter_Time" Value="20" DeviceName="R1130" Unit="s" Description="MF1_預先濺射時間" />
+    <Link Name="MF2_Pre_Sputter_Time" Value="20" DeviceName="R1131" Unit="s" Description="MF2_預先濺射時間" />
+    <Link Name="DC1_Pre_Sputter_Time" Value="20" DeviceName="R1132" Unit="s" Description="DC1_預先濺射時間" />
+    <Link Name="DC2_Pre_Sputter_Time" Value="20" DeviceName="R1133" Unit="s" Description="DC2_預先濺射時間" />
+    <Link Name="DC3_Pre_Sputter_Time" Value="20" DeviceName="R1134" Unit="s" Description="DC3_預先濺射時間" />
+    <Link Name="DC4_Pre_Sputter_Time" Value="20" DeviceName="R1135" Unit="s" Description="DC4_預先濺射時間" />
+    <Link Name="Heater1_SV" Value="80" DeviceName="D3504" Unit="度" Description="Heater1_加熱溫度" />
+    <Link Name="Heater2_SV" Value="20" DeviceName="D3505" Unit="度" Description="Heater2_加熱溫度" />
+    <Link Name="Heater3_SV" Value="45" DeviceName="D3506" Unit="度" Description="Heater3_加熱溫度" />
+    <Link Name="Heater4_SV" Value="20" DeviceName="D3507" Unit="度" Description="Heater4_加熱溫度" />
   </Group>
   <Group ID="System" Name="System">
-    <Link Name="PLC_IN_L1030" Value="12" DeviceName="W01001" Unit="s" Description="EMO" />
-    <Link Name="PLC_IN_L1031" Value="24" DeviceName="W01002" Unit="s" Description="大氣檢測" />
+    <Link Name="VacStarttime" Value="12" DeviceName="R1456" Unit="s" Description="主腔 RV開啟時間" />
   </Group>
-  <Group ID="RCP3" Name="RCP3">
-    <Link Name="PLC_AO_MFC_AR_1" Value="5" Unit="s" DeviceName="W00110" Description="Ar_1設定值" />
-    <Link Name="PLC_AO_MFC_AR_2" Value="5" Unit="s" DeviceName="W00111" Description="Ar_2設定值" />
-    <Link Name="PLC_AO_MFC_O2_1" Value="70" Unit="s" DeviceName="W00112" Description="O2_1設定值" />
-    <Link Name="PLC_AO_MFC_O2_2" Value="20" Unit="s" DeviceName="W00113" Description="O2_2設定值" />
-    <Link Name="PLC_AO_POWER_1_SV" Value="3" Unit="s" DeviceName="W00114" Description="POWER1 Set P" />
-    <Link Name="PLC_AO_POWER_2_SV" Value="50" Unit="s" DeviceName="W00115" Description="POWER2 Set P" />
+  <Group ID="1" Name="1">
+    <Link Name="SET_MFC_Pre01_N2" Value="1" Unit="s" DeviceName="SET_MFC_Pre01_N2" Description="MFC_Pre01_N2設定值" />
+    <Link Name="SET_MFC_Pre02_O2" Value="2" Unit="s" DeviceName="SET_MFC_Pre02_O2" Description="MFC_Pre02_O2設定值" />
+    <Link Name="SET_MFC_Pre03_Ar" Value="3" Unit="s" DeviceName="SET_MFC_Pre03_Ar" Description="MFC_Pre03_Ar設定值" />
+    <Link Name="SET_MFC_0301_O2" Value="4" Unit="s" DeviceName="SET_MFC_0301_O2" Description="MFC_0301_O2設定值" />
+    <Link Name="SET_MFC_0302_Ar" Value="5" Unit="s" DeviceName="SET_MFC_0302_Ar" Description="MFC_0302_Ar設定值" />
+    <Link Name="SET_MFC_0303_Ar" Value="6" Unit="s" DeviceName="SET_MFC_0303_Ar" Description="MFC_0303_Ar設定值" />
+    <Link Name="SET_MFC_0304_O2" Value="7" Unit="s" DeviceName="SET_MFC_0304_O2" Description="MFC_0304_O2設定值" />
+    <Link Name="SET_MFC_0305_Ar" Value="0" Unit="s" DeviceName="SET_MFC_0305_Ar" Description="MFC_0305_Ar設定值" />
+    <Link Name="SET_MFC_0306_O2" Value="0" Unit="s" DeviceName="SET_MFC_0306_O2" Description="MFC_0306_O2設定值" />
+    <Link Name="SET_MFC_0307_Ar" Value="0" Unit="s" DeviceName="SET_MFC_0307_Ar" Description="MFC_0307_Ar設定值" />
+    <Link Name="SET_MFC_0308_O2" Value="0" Unit="s" DeviceName="SET_MFC_0308_O2" Description="MFC_0308_O2設定值" />
+    <Link Name="SET_MFC_0309_Ar" Value="0" Unit="s" DeviceName="SET_MFC_0309_Ar" Description="MFC_0309_Ar設定值" />
+    <Link Name="SET_MFC_0310_O2" Value="0" Unit="s" DeviceName="SET_MFC_0310_O2" Description="MFC_0310_O2設定值" />
+    <Link Name="SET_MFC_0311_O2" Value="0" Unit="s" DeviceName="SET_MFC_0311_O2" Description="MFC_0311_O2設定值" />
+    <Link Name="SET_MFC_0312_Ar" Value="0" Unit="s" DeviceName="SET_MFC_0312_Ar" Description="MFC_0312_Ar設定值" />
+    <Link Name="MF1_Proc_STEP" Value="0" Unit="kw" DeviceName="MF1_Proc_STEP" Description="MF1_功率設定值" />
+    <Link Name="MF2_Proc_STEP" Value="0" Unit="kw" DeviceName="MF2_Proc_STEP" Description="MF2_功率設定值" />
+    <Link Name="DC1_Proc_STEP" Value="1" Unit="kw" DeviceName="DC1_Proc_STEP" Description="DC1_功率設定值" />
+    <Link Name="DC2_Proc_STEP" Value="8" Unit="kw" DeviceName="DC2_Proc_STEP" Description="DC2_功率設定值" />
+    <Link Name="DC3_Proc_STEP" Value="4" Unit="kw" DeviceName="DC3_Proc_STEP" Description="DC3_功率設定值" />
+    <Link Name="DC4_Proc_STEP" Value="0" Unit="kw" DeviceName="DC4_Proc_STEP" Description="DC4_功率設定值" />
+    <Link Name="MF1_Pre_Sputter_Time" Value="0" Unit="s" DeviceName="MF1_Pre_Sputter_Time" Description="MF1_預先濺射時間" />
+    <Link Name="MF2_Pre_Sputter_Time" Value="0" Unit="s" DeviceName="MF2_Pre_Sputter_Time" Description="MF2_預先濺射時間" />
+    <Link Name="DC1_Pre_Sputter_Time" Value="4" Unit="s" DeviceName="DC1_Pre_Sputter_Time" Description="DC1_預先濺射時間" />
+    <Link Name="DC2_Pre_Sputter_Time" Value="0" Unit="s" DeviceName="DC2_Pre_Sputter_Time" Description="DC2_預先濺射時間" />
+    <Link Name="DC3_Pre_Sputter_Time" Value="0" Unit="s" DeviceName="DC3_Pre_Sputter_Time" Description="DC3_預先濺射時間" />
+    <Link Name="DC4_Pre_Sputter_Time" Value="0" Unit="s" DeviceName="DC4_Pre_Sputter_Time" Description="DC4_預先濺射時間" />
+    <Link Name="Heater1_SV" Value="0" Unit="度" DeviceName="Heater1_SV" Description="Heater1_加熱溫度" />
+    <Link Name="Heater2_SV" Value="2" Unit="度" DeviceName="Heater2_SV" Description="Heater2_加熱溫度" />
+    <Link Name="Heater3_SV" Value="0" Unit="度" DeviceName="Heater3_SV" Description="Heater3_加熱溫度" />
+    <Link Name="Heater4_SV" Value="0" Unit="度" DeviceName="Heater4_SV" Description="Heater4_加熱溫度" />
   </Group>
 </Recipe>

@@ -49,6 +49,17 @@
             this.btnProcView = new System.Windows.Forms.Button();
             this.btnDeviceConstant = new System.Windows.Forms.Button();
             this.btnMaintenance = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
             this.displayTextBox_Alarm = new HyTemplate.components.DisplayTextBox();
             this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
@@ -58,76 +69,86 @@
             // 
             // btnHistoryLog
             // 
+            this.btnHistoryLog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHistoryLog.BackgroundImage")));
+            this.btnHistoryLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnHistoryLog.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnHistoryLog.Location = new System.Drawing.Point(828, 8);
+            this.btnHistoryLog.Location = new System.Drawing.Point(1609, 688);
             this.btnHistoryLog.Name = "btnHistoryLog";
-            this.btnHistoryLog.Size = new System.Drawing.Size(130, 60);
+            this.btnHistoryLog.Size = new System.Drawing.Size(80, 60);
             this.btnHistoryLog.TabIndex = 1;
-            this.btnHistoryLog.Text = "歷史資料";
             this.btnHistoryLog.UseVisualStyleBackColor = true;
             this.btnHistoryLog.Click += new System.EventHandler(this.btnHistoryLog_Click);
             // 
             // btnRecipe
             // 
+            this.btnRecipe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRecipe.BackgroundImage")));
+            this.btnRecipe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRecipe.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRecipe.Location = new System.Drawing.Point(1100, 8);
+            this.btnRecipe.Location = new System.Drawing.Point(1609, 820);
             this.btnRecipe.Name = "btnRecipe";
-            this.btnRecipe.Size = new System.Drawing.Size(130, 60);
+            this.btnRecipe.Size = new System.Drawing.Size(80, 60);
             this.btnRecipe.TabIndex = 2;
-            this.btnRecipe.Text = "Recipe";
             this.btnRecipe.UseVisualStyleBackColor = true;
             this.btnRecipe.Click += new System.EventHandler(this.btnRecipe_Click);
             // 
             // button3
             // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(964, 8);
+            this.button3.Location = new System.Drawing.Point(1609, 754);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(130, 60);
+            this.button3.Size = new System.Drawing.Size(80, 60);
             this.button3.TabIndex = 3;
-            this.button3.Text = "歷史異常";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.BtnAlarm_Click);
             // 
             // btnSysPara
             // 
+            this.btnSysPara.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSysPara.BackgroundImage")));
+            this.btnSysPara.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSysPara.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSysPara.Location = new System.Drawing.Point(1236, 8);
+            this.btnSysPara.Location = new System.Drawing.Point(1609, 886);
             this.btnSysPara.Name = "btnSysPara";
-            this.btnSysPara.Size = new System.Drawing.Size(130, 60);
+            this.btnSysPara.Size = new System.Drawing.Size(80, 60);
             this.btnSysPara.TabIndex = 5;
-            this.btnSysPara.Text = "系統參數";
             this.btnSysPara.UseVisualStyleBackColor = true;
             this.btnSysPara.Click += new System.EventHandler(this.btnSysPara_Click);
             // 
             // btnOverview1
             // 
+            this.btnOverview1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOverview1.BackgroundImage")));
+            this.btnOverview1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnOverview1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnOverview1.Location = new System.Drawing.Point(12, 8);
+            this.btnOverview1.Location = new System.Drawing.Point(1609, 292);
             this.btnOverview1.Name = "btnOverview1";
-            this.btnOverview1.Size = new System.Drawing.Size(130, 60);
+            this.btnOverview1.Size = new System.Drawing.Size(80, 60);
             this.btnOverview1.TabIndex = 6;
-            this.btnOverview1.Text = "製程系統圖";
             this.btnOverview1.UseVisualStyleBackColor = true;
             this.btnOverview1.Click += new System.EventHandler(this.btnOverview_Click);
             // 
             // btnLogin
             // 
+            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.No;
             this.btnLogin.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnLogin.Location = new System.Drawing.Point(1380, 8);
+            this.btnLogin.Location = new System.Drawing.Point(1609, 952);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(130, 60);
+            this.btnLogin.Size = new System.Drawing.Size(80, 60);
             this.btnLogin.TabIndex = 7;
-            this.btnLogin.Text = "登入";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button8.Location = new System.Drawing.Point(1520, 1018);
+            this.button8.Location = new System.Drawing.Point(1376, 985);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(169, 27);
+            this.button8.Size = new System.Drawing.Size(138, 27);
             this.button8.TabIndex = 12;
             this.button8.Text = "Alarm Reset";
             this.button8.UseVisualStyleBackColor = true;
@@ -137,9 +158,9 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(12, 74);
+            this.panel1.Location = new System.Drawing.Point(12, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1502, 940);
+            this.panel1.Size = new System.Drawing.Size(1501, 971);
             this.panel1.TabIndex = 15;
             // 
             // pictureBox1
@@ -187,32 +208,34 @@
             // 
             // btnControl
             // 
+            this.btnControl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnControl.BackgroundImage")));
+            this.btnControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnControl.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnControl.Location = new System.Drawing.Point(148, 8);
+            this.btnControl.Location = new System.Drawing.Point(1609, 358);
             this.btnControl.Name = "btnControl";
-            this.btnControl.Size = new System.Drawing.Size(130, 60);
+            this.btnControl.Size = new System.Drawing.Size(80, 60);
             this.btnControl.TabIndex = 26;
-            this.btnControl.Text = "製程系統控制";
             this.btnControl.UseVisualStyleBackColor = true;
             this.btnControl.Click += new System.EventHandler(this.Control_Click);
             // 
             // btnGasView
             // 
+            this.btnGasView.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGasView.BackgroundImage")));
+            this.btnGasView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGasView.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnGasView.Location = new System.Drawing.Point(420, 8);
+            this.btnGasView.Location = new System.Drawing.Point(1609, 490);
             this.btnGasView.Name = "btnGasView";
-            this.btnGasView.Size = new System.Drawing.Size(130, 60);
+            this.btnGasView.Size = new System.Drawing.Size(80, 60);
             this.btnGasView.TabIndex = 27;
-            this.btnGasView.Text = "氣流系統圖";
             this.btnGasView.UseVisualStyleBackColor = true;
             this.btnGasView.Click += new System.EventHandler(this.btnGasView_Click);
             // 
             // Power_RunStop
             // 
             this.Power_RunStop.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Power_RunStop.Location = new System.Drawing.Point(1608, 232);
+            this.Power_RunStop.Location = new System.Drawing.Point(1611, 232);
             this.Power_RunStop.Name = "Power_RunStop";
-            this.Power_RunStop.Size = new System.Drawing.Size(88, 59);
+            this.Power_RunStop.Size = new System.Drawing.Size(78, 48);
             this.Power_RunStop.TabIndex = 2705;
             this.Power_RunStop.Text = "Run Stop";
             this.Power_RunStop.UseVisualStyleBackColor = true;
@@ -222,43 +245,156 @@
             this.Power_RunStart.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Power_RunStart.Location = new System.Drawing.Point(1520, 232);
             this.Power_RunStart.Name = "Power_RunStart";
-            this.Power_RunStart.Size = new System.Drawing.Size(85, 59);
+            this.Power_RunStart.Size = new System.Drawing.Size(83, 48);
             this.Power_RunStart.TabIndex = 2704;
             this.Power_RunStart.Text = "Run Start";
             this.Power_RunStart.UseVisualStyleBackColor = true;
             // 
             // btnProcView
             // 
+            this.btnProcView.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProcView.BackgroundImage")));
+            this.btnProcView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnProcView.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnProcView.Location = new System.Drawing.Point(284, 8);
+            this.btnProcView.Location = new System.Drawing.Point(1609, 424);
             this.btnProcView.Name = "btnProcView";
-            this.btnProcView.Size = new System.Drawing.Size(130, 60);
+            this.btnProcView.Size = new System.Drawing.Size(80, 60);
             this.btnProcView.TabIndex = 28;
-            this.btnProcView.Text = "製程流程參數";
             this.btnProcView.UseVisualStyleBackColor = true;
             this.btnProcView.Click += new System.EventHandler(this.btnProcView_Click);
             // 
             // btnDeviceConstant
             // 
+            this.btnDeviceConstant.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeviceConstant.BackgroundImage")));
+            this.btnDeviceConstant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDeviceConstant.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnDeviceConstant.Location = new System.Drawing.Point(556, 8);
+            this.btnDeviceConstant.Location = new System.Drawing.Point(1609, 556);
             this.btnDeviceConstant.Name = "btnDeviceConstant";
-            this.btnDeviceConstant.Size = new System.Drawing.Size(130, 60);
+            this.btnDeviceConstant.Size = new System.Drawing.Size(80, 60);
             this.btnDeviceConstant.TabIndex = 2706;
-            this.btnDeviceConstant.Text = "機台參數";
             this.btnDeviceConstant.UseVisualStyleBackColor = true;
             this.btnDeviceConstant.Click += new System.EventHandler(this.btnDeviceConstant_Click);
             // 
             // btnMaintenance
             // 
+            this.btnMaintenance.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMaintenance.BackgroundImage")));
+            this.btnMaintenance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMaintenance.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnMaintenance.Location = new System.Drawing.Point(692, 8);
+            this.btnMaintenance.Location = new System.Drawing.Point(1609, 622);
             this.btnMaintenance.Name = "btnMaintenance";
-            this.btnMaintenance.Size = new System.Drawing.Size(130, 60);
+            this.btnMaintenance.Size = new System.Drawing.Size(80, 60);
             this.btnMaintenance.TabIndex = 2707;
-            this.btnMaintenance.Text = "維護參數";
             this.btnMaintenance.UseVisualStyleBackColor = true;
             this.btnMaintenance.Click += new System.EventHandler(this.btnMaintenance_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(1520, 967);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 29);
+            this.label1.TabIndex = 2708;
+            this.label1.Text = "使用者";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Location = new System.Drawing.Point(1520, 893);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 45);
+            this.label2.TabIndex = 2709;
+            this.label2.Text = "系統參數";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.Location = new System.Drawing.Point(1516, 825);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 48);
+            this.label3.TabIndex = 2710;
+            this.label3.Text = "製程配方";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.Location = new System.Drawing.Point(1520, 766);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 35);
+            this.label4.TabIndex = 2711;
+            this.label4.Text = "歷史異常";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label5.Location = new System.Drawing.Point(1520, 702);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 31);
+            this.label5.TabIndex = 2712;
+            this.label5.Text = "歷史資料";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label6.Location = new System.Drawing.Point(1520, 636);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 31);
+            this.label6.TabIndex = 2713;
+            this.label6.Text = "維護參數";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label7.Location = new System.Drawing.Point(1520, 570);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 31);
+            this.label7.TabIndex = 2714;
+            this.label7.Text = "機台參數";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label8.Location = new System.Drawing.Point(1520, 504);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(85, 31);
+            this.label8.TabIndex = 2715;
+            this.label8.Text = "氣流系統圖";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label9.Location = new System.Drawing.Point(1521, 439);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 31);
+            this.label9.TabIndex = 2716;
+            this.label9.Text = "製程流程參數";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label10.Location = new System.Drawing.Point(1521, 373);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 31);
+            this.label10.TabIndex = 2717;
+            this.label10.Text = "製程系統控制";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label11.Location = new System.Drawing.Point(1515, 307);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(88, 31);
+            this.label11.TabIndex = 2718;
+            this.label11.Text = "製程系統圖";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // statusPictureBox1
             // 
@@ -286,10 +422,10 @@
             this.displayTextBox_Alarm._PlcDevice = "";
             this.displayTextBox_Alarm.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox_Alarm.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.displayTextBox_Alarm.Location = new System.Drawing.Point(12, 1020);
+            this.displayTextBox_Alarm.Location = new System.Drawing.Point(12, 985);
             this.displayTextBox_Alarm.Name = "displayTextBox_Alarm";
             this.displayTextBox_Alarm.ReadOnly = true;
-            this.displayTextBox_Alarm.Size = new System.Drawing.Size(1502, 27);
+            this.displayTextBox_Alarm.Size = new System.Drawing.Size(1358, 27);
             this.displayTextBox_Alarm.TabIndex = 11;
             this.displayTextBox_Alarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -308,7 +444,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1696, 1059);
+            this.ClientSize = new System.Drawing.Size(1703, 1019);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMaintenance);
             this.Controls.Add(this.btnDeviceConstant);
             this.Controls.Add(this.btnGasView);
@@ -369,6 +516,17 @@
         private System.Windows.Forms.Button btnProcView;
         private System.Windows.Forms.Button btnDeviceConstant;
         private System.Windows.Forms.Button btnMaintenance;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 

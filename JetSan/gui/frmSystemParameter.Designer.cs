@@ -31,34 +31,24 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button6 = new System.Windows.Forms.Button();
-            this.btnSaveChange = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Parameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(849, 451);
+            this.button6.Location = new System.Drawing.Point(1356, 825);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(67, 58);
             this.button6.TabIndex = 10;
             this.button6.Text = "Set";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
-            // 
-            // btnSaveChange
-            // 
-            this.btnSaveChange.Location = new System.Drawing.Point(7, 451);
-            this.btnSaveChange.Name = "btnSaveChange";
-            this.btnSaveChange.Size = new System.Drawing.Size(67, 58);
-            this.btnSaveChange.TabIndex = 9;
-            this.btnSaveChange.Text = "Save\r\nChange";
-            this.btnSaveChange.UseVisualStyleBackColor = true;
-            this.btnSaveChange.Click += new System.EventHandler(this.btnSaveChange_Click);
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // dataGridView1
             // 
@@ -69,11 +59,12 @@
             this.Parameter,
             this.Value,
             this.Unit,
+            this.Address,
             this.Description});
-            this.dataGridView1.Location = new System.Drawing.Point(7, 7);
+            this.dataGridView1.Location = new System.Drawing.Point(171, 110);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(909, 438);
+            this.dataGridView1.Size = new System.Drawing.Size(1160, 773);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView1_CellBeginEdit);
             // 
@@ -81,7 +72,7 @@
             // 
             this.Parameter.HeaderText = "Parameter";
             this.Parameter.Name = "Parameter";
-            this.Parameter.Width = 150;
+            this.Parameter.Width = 200;
             // 
             // Value
             // 
@@ -99,19 +90,23 @@
             this.Unit.Name = "Unit";
             this.Unit.Width = 50;
             // 
+            // Address
+            // 
+            this.Address.HeaderText = "Address";
+            this.Address.Name = "Address";
+            // 
             // Description
             // 
             this.Description.HeaderText = "Description";
             this.Description.Name = "Description";
-            this.Description.Width = 400;
+            this.Description.Width = 580;
             // 
             // frmSystemParameter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 514);
+            this.ClientSize = new System.Drawing.Size(1471, 895);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.btnSaveChange);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -127,11 +122,11 @@
         #endregion
 
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button btnSaveChange;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Parameter;
         private System.Windows.Forms.DataGridViewTextBoxColumn Value;
         private System.Windows.Forms.DataGridViewTextBoxColumn Unit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
     }
 }

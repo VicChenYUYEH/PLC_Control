@@ -2567,7 +2567,7 @@
             // 
             this.tabControl_Main.Controls.Add(this.tabPage1);
             this.tabControl_Main.Controls.Add(this.tabPage2);
-            this.tabControl_Main.Location = new System.Drawing.Point(12, 3);
+            this.tabControl_Main.Location = new System.Drawing.Point(25, 30);
             this.tabControl_Main.Name = "tabControl_Main";
             this.tabControl_Main.SelectedIndex = 0;
             this.tabControl_Main.Size = new System.Drawing.Size(1451, 889);
@@ -2754,15 +2754,15 @@
             this.tabPage1.Controls.Add(this.Label108);
             this.tabPage1.Controls.Add(this.Label63);
             this.tabPage1.Controls.Add(this.Label109);
-            this.tabPage1.Controls.Add(this.inputTextBox4);
-            this.tabPage1.Controls.Add(this.inputTextBox6);
-            this.tabPage1.Controls.Add(this.inputTextBox2);
-            this.tabPage1.Controls.Add(this.inputTextBox1);
-            this.tabPage1.Controls.Add(this.inputTextBox7);
-            this.tabPage1.Controls.Add(this.inputTextBox8);
-            this.tabPage1.Controls.Add(this.inputTextBox5);
-            this.tabPage1.Controls.Add(this.controlBtn29);
             this.tabPage1.Controls.Add(this.inputTextBox3);
+            this.tabPage1.Controls.Add(this.inputTextBox1);
+            this.tabPage1.Controls.Add(this.inputTextBox6);
+            this.tabPage1.Controls.Add(this.inputTextBox7);
+            this.tabPage1.Controls.Add(this.inputTextBox2);
+            this.tabPage1.Controls.Add(this.inputTextBox8);
+            this.tabPage1.Controls.Add(this.controlBtn29);
+            this.tabPage1.Controls.Add(this.inputTextBox4);
+            this.tabPage1.Controls.Add(this.inputTextBox5);
             this.tabPage1.Controls.Add(this.Label112);
             this.tabPage1.Controls.Add(this.shapeContainer2);
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
@@ -2781,7 +2781,7 @@
             this.GroupBox1.Controls.Add(this.controlBtn27);
             this.GroupBox1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.GroupBox1.Location = new System.Drawing.Point(1252, 402);
+            this.GroupBox1.Location = new System.Drawing.Point(1240, 462);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(168, 175);
             this.GroupBox1.TabIndex = 2675;
@@ -4338,7 +4338,7 @@
             this.controlBtn29.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn29.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.controlBtn29.ForeColor = System.Drawing.Color.SteelBlue;
-            this.controlBtn29.Location = new System.Drawing.Point(1258, 586);
+            this.controlBtn29.Location = new System.Drawing.Point(1246, 666);
             this.controlBtn29.Name = "controlBtn29";
             this.controlBtn29.Size = new System.Drawing.Size(155, 44);
             this.controlBtn29.TabIndex = 2676;
@@ -7972,7 +7972,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1475, 906);
+            this.ClientSize = new System.Drawing.Size(1483, 943);
             this.Controls.Add(this.tabControl_Main);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);

@@ -182,14 +182,15 @@ namespace HyTemplate
 
         private void button8_Click(object sender, EventArgs e)
         {
-            rdKernel.PlcKernel[ConstPlcDefine.PLC_BUF_ALM_RST] = 1;
-            System.Threading.Thread.Sleep(100);
+            
+            rdKernel.PlcKernel["HMI_Alarm_Reset"] = 1;
+            System.Threading.Thread.Sleep(1000);
 
             TEvent data = new TEvent();
             data.MessageName = ProxyMessage.MSG_ALARM_RESET;
 
             ecClient.SendMessage(data);
-            rdKernel.PlcKernel[ConstPlcDefine.PLC_BUF_ALM_RST] = 0;
+            rdKernel.PlcKernel["HMI_Alarm_Reset"] = 0;
         }
 
         #region Form Buttom Click Event
@@ -201,10 +202,7 @@ namespace HyTemplate
 
             if (result == DialogResult.Abort)
             {
-                if (MessageBox.Show("Really want to quit ?!", "Warning", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    Close();
-                }
+                Login_out(false);
             }
             else if (result == DialogResult.OK)
             {

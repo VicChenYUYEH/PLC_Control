@@ -367,7 +367,7 @@
             this.TabControl_Main.Controls.Add(this.TabPage1);
             this.TabControl_Main.Controls.Add(this.TabPage2);
             this.TabControl_Main.Controls.Add(this.tabPage3);
-            this.TabControl_Main.Location = new System.Drawing.Point(12, 12);
+            this.TabControl_Main.Location = new System.Drawing.Point(36, 34);
             this.TabControl_Main.Name = "TabControl_Main";
             this.TabControl_Main.SelectedIndex = 0;
             this.TabControl_Main.Size = new System.Drawing.Size(1464, 693);
@@ -2661,7 +2661,7 @@
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.48837F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
-            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
+            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
             this.TableLayoutPanel1.Controls.Add(this.Label86, 4, 7);
             this.TableLayoutPanel1.Controls.Add(this.Label87, 3, 7);
@@ -2721,7 +2721,7 @@
             // 
             this.Label86.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label86.AutoSize = true;
-            this.Label86.Location = new System.Drawing.Point(462, 229);
+            this.Label86.Location = new System.Drawing.Point(460, 229);
             this.Label86.Name = "Label86";
             this.Label86.Size = new System.Drawing.Size(115, 17);
             this.Label86.TabIndex = 401;
@@ -2731,7 +2731,7 @@
             // 
             this.Label87.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label87.AutoSize = true;
-            this.Label87.Location = new System.Drawing.Point(308, 229);
+            this.Label87.Location = new System.Drawing.Point(305, 229);
             this.Label87.Name = "Label87";
             this.Label87.Size = new System.Drawing.Size(115, 17);
             this.Label87.TabIndex = 402;
@@ -2741,7 +2741,7 @@
             // 
             this.Label88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label88.AutoSize = true;
-            this.Label88.Location = new System.Drawing.Point(172, 229);
+            this.Label88.Location = new System.Drawing.Point(169, 229);
             this.Label88.Name = "Label88";
             this.Label88.Size = new System.Drawing.Size(115, 17);
             this.Label88.TabIndex = 403;
@@ -2751,7 +2751,7 @@
             // 
             this.Label85.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label85.AutoSize = true;
-            this.Label85.Location = new System.Drawing.Point(105, 229);
+            this.Label85.Location = new System.Drawing.Point(103, 229);
             this.Label85.Name = "Label85";
             this.Label85.Size = new System.Drawing.Size(35, 17);
             this.Label85.TabIndex = 393;
@@ -2771,7 +2771,7 @@
             // 
             this.Label78.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label78.AutoSize = true;
-            this.Label78.Location = new System.Drawing.Point(462, 200);
+            this.Label78.Location = new System.Drawing.Point(460, 200);
             this.Label78.Name = "Label78";
             this.Label78.Size = new System.Drawing.Size(115, 17);
             this.Label78.TabIndex = 400;
@@ -2781,7 +2781,7 @@
             // 
             this.Label79.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label79.AutoSize = true;
-            this.Label79.Location = new System.Drawing.Point(462, 168);
+            this.Label79.Location = new System.Drawing.Point(460, 168);
             this.Label79.Name = "Label79";
             this.Label79.Size = new System.Drawing.Size(115, 17);
             this.Label79.TabIndex = 401;
@@ -2791,7 +2791,7 @@
             // 
             this.Label60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label60.AutoSize = true;
-            this.Label60.Location = new System.Drawing.Point(308, 200);
+            this.Label60.Location = new System.Drawing.Point(305, 200);
             this.Label60.Name = "Label60";
             this.Label60.Size = new System.Drawing.Size(115, 17);
             this.Label60.TabIndex = 383;
@@ -2801,7 +2801,7 @@
             // 
             this.Label80.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label80.AutoSize = true;
-            this.Label80.Location = new System.Drawing.Point(462, 136);
+            this.Label80.Location = new System.Drawing.Point(460, 136);
             this.Label80.Name = "Label80";
             this.Label80.Size = new System.Drawing.Size(115, 17);
             this.Label80.TabIndex = 402;
@@ -2811,7 +2811,7 @@
             // 
             this.Label61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label61.AutoSize = true;
-            this.Label61.Location = new System.Drawing.Point(308, 168);
+            this.Label61.Location = new System.Drawing.Point(305, 168);
             this.Label61.Name = "Label61";
             this.Label61.Size = new System.Drawing.Size(115, 17);
             this.Label61.TabIndex = 384;
@@ -2821,7 +2821,7 @@
             // 
             this.Label81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label81.AutoSize = true;
-            this.Label81.Location = new System.Drawing.Point(462, 104);
+            this.Label81.Location = new System.Drawing.Point(460, 104);
             this.Label81.Name = "Label81";
             this.Label81.Size = new System.Drawing.Size(115, 17);
             this.Label81.TabIndex = 403;
@@ -2831,7 +2831,7 @@
             // 
             this.Label62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label62.AutoSize = true;
-            this.Label62.Location = new System.Drawing.Point(308, 136);
+            this.Label62.Location = new System.Drawing.Point(305, 136);
             this.Label62.Name = "Label62";
             this.Label62.Size = new System.Drawing.Size(115, 17);
             this.Label62.TabIndex = 385;
@@ -2841,7 +2841,7 @@
             // 
             this.Label82.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label82.AutoSize = true;
-            this.Label82.Location = new System.Drawing.Point(462, 72);
+            this.Label82.Location = new System.Drawing.Point(460, 72);
             this.Label82.Name = "Label82";
             this.Label82.Size = new System.Drawing.Size(115, 17);
             this.Label82.TabIndex = 404;
@@ -2851,7 +2851,7 @@
             // 
             this.Label63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label63.AutoSize = true;
-            this.Label63.Location = new System.Drawing.Point(308, 104);
+            this.Label63.Location = new System.Drawing.Point(305, 104);
             this.Label63.Name = "Label63";
             this.Label63.Size = new System.Drawing.Size(115, 17);
             this.Label63.TabIndex = 386;
@@ -2861,7 +2861,7 @@
             // 
             this.Label83.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label83.AutoSize = true;
-            this.Label83.Location = new System.Drawing.Point(462, 40);
+            this.Label83.Location = new System.Drawing.Point(460, 40);
             this.Label83.Name = "Label83";
             this.Label83.Size = new System.Drawing.Size(115, 17);
             this.Label83.TabIndex = 405;
@@ -2871,7 +2871,7 @@
             // 
             this.Label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label64.AutoSize = true;
-            this.Label64.Location = new System.Drawing.Point(308, 72);
+            this.Label64.Location = new System.Drawing.Point(305, 72);
             this.Label64.Name = "Label64";
             this.Label64.Size = new System.Drawing.Size(115, 17);
             this.Label64.TabIndex = 387;
@@ -2881,7 +2881,7 @@
             // 
             this.Label65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label65.AutoSize = true;
-            this.Label65.Location = new System.Drawing.Point(172, 200);
+            this.Label65.Location = new System.Drawing.Point(169, 200);
             this.Label65.Name = "Label65";
             this.Label65.Size = new System.Drawing.Size(115, 17);
             this.Label65.TabIndex = 388;
@@ -2891,7 +2891,7 @@
             // 
             this.Label66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label66.AutoSize = true;
-            this.Label66.Location = new System.Drawing.Point(172, 168);
+            this.Label66.Location = new System.Drawing.Point(169, 168);
             this.Label66.Name = "Label66";
             this.Label66.Size = new System.Drawing.Size(115, 17);
             this.Label66.TabIndex = 389;
@@ -2901,7 +2901,7 @@
             // 
             this.Label67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label67.AutoSize = true;
-            this.Label67.Location = new System.Drawing.Point(172, 136);
+            this.Label67.Location = new System.Drawing.Point(169, 136);
             this.Label67.Name = "Label67";
             this.Label67.Size = new System.Drawing.Size(115, 17);
             this.Label67.TabIndex = 390;
@@ -2911,7 +2911,7 @@
             // 
             this.Label68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label68.AutoSize = true;
-            this.Label68.Location = new System.Drawing.Point(172, 104);
+            this.Label68.Location = new System.Drawing.Point(169, 104);
             this.Label68.Name = "Label68";
             this.Label68.Size = new System.Drawing.Size(115, 17);
             this.Label68.TabIndex = 391;
@@ -2921,7 +2921,7 @@
             // 
             this.Label69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label69.AutoSize = true;
-            this.Label69.Location = new System.Drawing.Point(105, 200);
+            this.Label69.Location = new System.Drawing.Point(103, 200);
             this.Label69.Name = "Label69";
             this.Label69.Size = new System.Drawing.Size(35, 17);
             this.Label69.TabIndex = 392;
@@ -2931,7 +2931,7 @@
             // 
             this.Label70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label70.AutoSize = true;
-            this.Label70.Location = new System.Drawing.Point(172, 72);
+            this.Label70.Location = new System.Drawing.Point(169, 72);
             this.Label70.Name = "Label70";
             this.Label70.Size = new System.Drawing.Size(115, 17);
             this.Label70.TabIndex = 393;
@@ -2941,7 +2941,7 @@
             // 
             this.Label71.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label71.AutoSize = true;
-            this.Label71.Location = new System.Drawing.Point(105, 168);
+            this.Label71.Location = new System.Drawing.Point(103, 168);
             this.Label71.Name = "Label71";
             this.Label71.Size = new System.Drawing.Size(35, 17);
             this.Label71.TabIndex = 394;
@@ -2951,7 +2951,7 @@
             // 
             this.Label72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label72.AutoSize = true;
-            this.Label72.Location = new System.Drawing.Point(105, 136);
+            this.Label72.Location = new System.Drawing.Point(103, 136);
             this.Label72.Name = "Label72";
             this.Label72.Size = new System.Drawing.Size(35, 17);
             this.Label72.TabIndex = 395;
@@ -2961,7 +2961,7 @@
             // 
             this.Label73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label73.AutoSize = true;
-            this.Label73.Location = new System.Drawing.Point(105, 104);
+            this.Label73.Location = new System.Drawing.Point(103, 104);
             this.Label73.Name = "Label73";
             this.Label73.Size = new System.Drawing.Size(35, 17);
             this.Label73.TabIndex = 396;
@@ -2971,7 +2971,7 @@
             // 
             this.Label74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label74.AutoSize = true;
-            this.Label74.Location = new System.Drawing.Point(105, 72);
+            this.Label74.Location = new System.Drawing.Point(103, 72);
             this.Label74.Name = "Label74";
             this.Label74.Size = new System.Drawing.Size(35, 17);
             this.Label74.TabIndex = 397;
@@ -2981,7 +2981,7 @@
             // 
             this.Label75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label75.AutoSize = true;
-            this.Label75.Location = new System.Drawing.Point(105, 40);
+            this.Label75.Location = new System.Drawing.Point(103, 40);
             this.Label75.Name = "Label75";
             this.Label75.Size = new System.Drawing.Size(35, 17);
             this.Label75.TabIndex = 398;
@@ -2991,7 +2991,7 @@
             // 
             this.Label76.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label76.AutoSize = true;
-            this.Label76.Location = new System.Drawing.Point(308, 40);
+            this.Label76.Location = new System.Drawing.Point(305, 40);
             this.Label76.Name = "Label76";
             this.Label76.Size = new System.Drawing.Size(115, 17);
             this.Label76.TabIndex = 399;
@@ -3001,7 +3001,7 @@
             // 
             this.Label77.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label77.AutoSize = true;
-            this.Label77.Location = new System.Drawing.Point(176, 40);
+            this.Label77.Location = new System.Drawing.Point(173, 40);
             this.Label77.Name = "Label77";
             this.Label77.Size = new System.Drawing.Size(107, 17);
             this.Label77.TabIndex = 400;
@@ -3072,7 +3072,7 @@
             this.Label53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label53.AutoSize = true;
             this.Label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label53.Location = new System.Drawing.Point(469, 8);
+            this.Label53.Location = new System.Drawing.Point(467, 8);
             this.Label53.Name = "Label53";
             this.Label53.Size = new System.Drawing.Size(101, 17);
             this.Label53.TabIndex = 385;
@@ -3083,7 +3083,7 @@
             this.Label52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label52.AutoSize = true;
             this.Label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label52.Location = new System.Drawing.Point(305, 8);
+            this.Label52.Location = new System.Drawing.Point(302, 8);
             this.Label52.Name = "Label52";
             this.Label52.Size = new System.Drawing.Size(122, 17);
             this.Label52.TabIndex = 385;
@@ -3094,7 +3094,7 @@
             this.Label51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label51.AutoSize = true;
             this.Label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label51.Location = new System.Drawing.Point(179, 8);
+            this.Label51.Location = new System.Drawing.Point(176, 8);
             this.Label51.Name = "Label51";
             this.Label51.Size = new System.Drawing.Size(101, 17);
             this.Label51.TabIndex = 384;
@@ -3105,7 +3105,7 @@
             this.Label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label50.AutoSize = true;
             this.Label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label50.Location = new System.Drawing.Point(103, 8);
+            this.Label50.Location = new System.Drawing.Point(101, 8);
             this.Label50.Name = "Label50";
             this.Label50.Size = new System.Drawing.Size(39, 17);
             this.Label50.TabIndex = 383;

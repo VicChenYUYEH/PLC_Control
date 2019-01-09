@@ -16,6 +16,7 @@ namespace HyTemplate.gui
     {
         Recipe rRecipe;
         EventClient ecClient;
+        int authority = 1;
         public frmRecipe(Recipe m_Recipe)
         {
             InitializeComponent();
@@ -27,7 +28,6 @@ namespace HyTemplate.gui
             rRecipe.loadFile();
 
             InitialRecipeTable();
-            //InitialRecipeBody("!");
         }
 
         private void InitialRecipeTable()
@@ -43,6 +43,16 @@ namespace HyTemplate.gui
                 listView1.Items.Add(item);
             }
             dataGridView1.Rows.Clear();
+            if(listView1.Items.Count <= 1)//少於1個不可刪除
+            {
+                btnDelete.Enabled = false;
+            }
+            else
+            {   //有權限才解鎖
+                if(authority == 4) btnDelete.Enabled = true;
+            }
+            listView1.Focus();
+            listView1.Items[0].Selected = true;
         }
 
         private void InitialRecipeBody(string m_RcpId)
@@ -52,9 +62,7 @@ namespace HyTemplate.gui
 
             foreach (XmlItem item in rRecipe[m_RcpId].Nodes)
             {                
-                rows.Add(new Object[] { item.Key, item.Value, rRecipe.RecipeDetail[item.Key].Unit, rRecipe.RecipeDetail[item.Key].Description });
-                //rows.Add(new Object[] { "Parameter2", "Value2" });
-                //rows.Add(new Object[] { "Parameter3", "Value3" });
+                rows.Add(new Object[] { item.Key, item.Value, rRecipe.RecipeDetail[item.Key].Unit, rRecipe.RecipeDetail[item.Key].Address, rRecipe.RecipeDetail[item.Key].Description });
             }
         }
 
@@ -89,8 +97,6 @@ namespace HyTemplate.gui
                 InitialRecipeTable();
             }
             dlg.Dispose();
-
-
         }
 
         private void btnModify_Click(object sender, EventArgs e)
@@ -138,6 +144,8 @@ namespace HyTemplate.gui
 
         private void btnSaveChange_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(" 是 否 儲 存 該 Recipe 參 數 ?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result != DialogResult.Yes) return;
             ListView.SelectedListViewItemCollection selected = listView1.SelectedItems;
 
             if (selected.Count > 0)
@@ -151,16 +159,15 @@ namespace HyTemplate.gui
                 }
                 rRecipe.saveFile();
                 rRecipe.loadFile();
-                InitialRecipeTable();
+                listView1.Refresh();
             }
         }
 
         private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
         {
-            // System.Threading.Thread.Sleep(100);
             if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
             {
-                int authority = int.Parse(m_Event.EventData["Authority"]);
+                authority = int.Parse(m_Event.EventData["Authority"]);
                 switch(authority)
                 {
                     case 1: //OP
@@ -178,13 +185,18 @@ namespace HyTemplate.gui
         {
             btnCreate.Enabled = enable;
             btnModify.Enabled = enable;
-            btnDelete.Enabled = enable;
-            btnSaveAs.Enabled = enable;
+            if (listView1.Items.Count <= 1)//少於1個不可刪除
+            {
+                btnDelete.Enabled = false;
+            }
+            else btnDelete.Enabled = enable;
             btnSaveChange.Enabled = enable;
         }
 
         private void btnSet_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(" 是 否 寫 入 Recipe 參 數 ?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result != DialogResult.Yes) return;
             ListView.SelectedListViewItemCollection selected = listView1.SelectedItems;
 
             if (selected.Count > 0)
@@ -194,6 +206,12 @@ namespace HyTemplate.gui
                 data.EventData["RecipeId"] = selected[0].Text;
                 ecClient.SendMessage(data);
             }
+        }
+
+        private void frmRecipe_Load(object sender, EventArgs e)
+        {
+            listView1.Focus();
+            listView1.Items[0].Selected = true;
         }
     }
 }

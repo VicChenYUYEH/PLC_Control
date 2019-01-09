@@ -34,24 +34,8 @@ namespace HyTemplate.gui
 
             foreach (XmlItem item in rRecipe[m_RcpId].Nodes)
             {
-                rows.Add(new Object[] { item.Key, item.Value, rRecipe.RecipeDetail[item.Key].Unit, rRecipe.RecipeDetail[item.Key].Description });
-
+                rows.Add(new Object[] { item.Key, item.Value, rRecipe.RecipeDetail[item.Key].Unit, rRecipe.RecipeDetail[item.Key].Address, rRecipe.RecipeDetail[item.Key].Description });
             }
-        }
-
-        private void btnSaveChange_Click(object sender, EventArgs e)
-        {
-            DataGridViewRowCollection rows = dataGridView1.Rows;
-            foreach (DataGridViewRow row in rows)
-            {
-                string key = row.Cells[0].Value.ToString();
-                string value = row.Cells[1].Value.ToString();
-                rRecipe["System"][key].Value = value;
-            }
-            rRecipe.saveFile();
-            TEvent data = new TEvent();
-            data.MessageName = ProxyMessage.MSG_PARAMETER_SET;
-            ecClient.SendMessage(data);
         }
 
         private void dataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
@@ -90,7 +74,24 @@ namespace HyTemplate.gui
         }
         private void btn_Control(bool enable)
         {
-            btnSaveChange.Enabled = enable;
+            button6.Enabled = enable;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(" 是 否 寫 入 系 統 參 數 ?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result != DialogResult.Yes) return;
+            DataGridViewRowCollection rows = dataGridView1.Rows;
+            foreach (DataGridViewRow row in rows)
+            {
+                string key = row.Cells[0].Value.ToString();
+                string value = row.Cells[1].Value.ToString();
+                rRecipe["System"][key].Value = value;
+            }
+            rRecipe.saveFile();
+            TEvent data = new TEvent();
+            data.MessageName = ProxyMessage.MSG_PARAMETER_SET;
+            ecClient.SendMessage(data);
         }
     }
 }
