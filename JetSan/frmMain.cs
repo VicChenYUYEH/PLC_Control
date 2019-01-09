@@ -24,9 +24,9 @@ namespace HyTemplate
 
         frmHistoryLog log;
         frmHistoryAlarm alarm;
-        frmRecipe recipe;
-        frmSystemParameter sysPara;
         frmLogin login;
+        frmSystemParameter sysPara;
+        frmRecipe recipe;
         frmOverview overview;
         frmControl control;
         frmGasview gasView;
@@ -35,7 +35,6 @@ namespace HyTemplate
         frmMaintenance maintenance;
 
         RdEqKernel rdKernel;
-
         Form currentForm = null;
 
         public frmMain()
@@ -46,8 +45,8 @@ namespace HyTemplate
             ecClient.OnEventHandler += OnReceiveMessage;
 
             rdKernel = new RdEqKernel();
-
             rRecipe = new Recipe();
+
             log = new frmHistoryLog();
             alarm = new frmHistoryAlarm();
             recipe = new frmRecipe(rRecipe);
@@ -62,7 +61,7 @@ namespace HyTemplate
 
             this.LoadUserRegister();
 
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(1000);
 
             ReloadGui(overview);
 
@@ -109,16 +108,6 @@ namespace HyTemplate
             }
         }
 
-        private void btnHistoryLog_Click(object sender, EventArgs e)
-        {
-            ReloadGui(log);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            ReloadGui(alarm);
-        }
-
         private void ReloadGui(Form m_Form)
         {
             if (currentForm == m_Form) return;
@@ -135,76 +124,6 @@ namespace HyTemplate
                 m_Form.Show();
 
                 currentForm = m_Form;
-            }
-        }
-
-        private void btnRecipe_Click(object sender, EventArgs e)
-        {
-            ReloadGui(recipe);
-            recipe.Show();
-        }
-
-        private void btnOverview_Click(object sender, EventArgs e)
-        {
-            ReloadGui(overview);
-            overview.Show();
-        }
-
-        private void btnSysPara_Click(object sender, EventArgs e)
-        {
-            ReloadGui(sysPara);
-            sysPara.Show();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            login.LoginId = "";
-            login.LoginPwd = "";
-            DialogResult result = login.ShowDialog();
-
-            if (result == DialogResult.Abort)
-            {
-                if (MessageBox.Show("Really want to quit ?!", "Warning", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    Close();
-                }                
-            }
-            else if (result == DialogResult.OK)
-            {
-                string id = login.LoginId;
-                string pwd = login.LoginPwd;
-                if (!dicUsers.ContainsKey(id)) //有無該User
-                {
-                    MessageBox.Show("User no found", "Warning", MessageBoxButtons.OK);
-                    return;
-                }
-                int authority = 1;
-                Dictionary<String, KeyValuePair<String, String>> dicLogin = new Dictionary<string, KeyValuePair<string, string>>();
-                dicLogin.Add(id, new KeyValuePair<string, string>(pwd, dicUsers[id].Value));
-
-                if (!dicUsers.ContainsValue(dicLogin[id])) //查詢User對應密碼是否正確，錯誤則登出
-                {
-                    MessageBox.Show("User & Password mismatch", "Warning", MessageBoxButtons.OK);
-                    Login_out(false, id, authority);
-                    return;
-                }
-
-                //判斷使用者權限
-                if (dicUsers[id].Value == string.Format("{0:X8}", ((string)("Administrator")).GetHashCode()))
-                {
-                    authority = 4;
-                }
-                else if (dicUsers[id].Value == string.Format("{0:X8}", ((string)("Supervisor")).GetHashCode()))
-                {
-                    authority = 3;
-                }
-                else if (dicUsers[id].Value == string.Format("{0:X8}", ((string)("Engineer")).GetHashCode()))
-                {
-                    authority = 2;
-                }
-
-                //傳送登入訊息給各頁面
-                Login_out(true, id, authority);
             }
         }
 
@@ -273,6 +192,85 @@ namespace HyTemplate
             rdKernel.PlcKernel[ConstPlcDefine.PLC_BUF_ALM_RST] = 0;
         }
 
+        #region Form Buttom Click Event
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            login.LoginId = "";
+            login.LoginPwd = "";
+            DialogResult result = login.ShowDialog();
+
+            if (result == DialogResult.Abort)
+            {
+                if (MessageBox.Show("Really want to quit ?!", "Warning", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Close();
+                }
+            }
+            else if (result == DialogResult.OK)
+            {
+                string id = login.LoginId;
+                string pwd = login.LoginPwd;
+                if (!dicUsers.ContainsKey(id)) //有無該User
+                {
+                    MessageBox.Show("User no found", "Warning", MessageBoxButtons.OK);
+                    return;
+                }
+                int authority = 1;
+                Dictionary<String, KeyValuePair<String, String>> dicLogin = new Dictionary<string, KeyValuePair<string, string>>();
+                dicLogin.Add(id, new KeyValuePair<string, string>(pwd, dicUsers[id].Value));
+
+                if (!dicUsers.ContainsValue(dicLogin[id])) //查詢User對應密碼是否正確，錯誤則登出
+                {
+                    MessageBox.Show("User & Password mismatch", "Warning", MessageBoxButtons.OK);
+                    Login_out(false, id, authority);
+                    return;
+                }
+
+                //判斷使用者權限
+                if (dicUsers[id].Value == string.Format("{0:X8}", ((string)("Administrator")).GetHashCode()))
+                {
+                    authority = 4;
+                }
+                else if (dicUsers[id].Value == string.Format("{0:X8}", ((string)("Supervisor")).GetHashCode()))
+                {
+                    authority = 3;
+                }
+                else if (dicUsers[id].Value == string.Format("{0:X8}", ((string)("Engineer")).GetHashCode()))
+                {
+                    authority = 2;
+                }
+
+                //傳送登入訊息給各頁面
+                Login_out(true, id, authority);
+            }
+        }
+
+        private void btnHistoryLog_Click(object sender, EventArgs e)
+        {
+            ReloadGui(log);
+        }
+
+        private void BtnAlarm_Click(object sender, EventArgs e)
+        {
+            ReloadGui(alarm);
+        }
+
+        private void btnRecipe_Click(object sender, EventArgs e)
+        {
+            ReloadGui(recipe);
+        }
+
+        private void btnSysPara_Click(object sender, EventArgs e)
+        {
+            ReloadGui(sysPara);
+        }
+
+        private void btnOverview_Click(object sender, EventArgs e)
+        {
+            ReloadGui(overview);
+            overview.Show();
+        }
+
         private void Control_Click(object sender, EventArgs e)
         {
             ReloadGui(control);
@@ -302,5 +300,6 @@ namespace HyTemplate
             ReloadGui(maintenance);
             maintenance.Show();
         }
+        #endregion
     }
 }

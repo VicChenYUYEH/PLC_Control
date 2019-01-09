@@ -35,20 +35,9 @@ namespace HyTemplate.gui
             {
                 timerStatus.Enabled = false;
             }
-
             refreshStatus(this);
         }
-
-        private void frmOverview_Shown(object sender, EventArgs e)
-        {
-            timerStatus.Enabled = true;
-        }
-
-        public new void Show()
-        {
-            timerStatus.Enabled = true;
-        }
-
+             
         private void plcObject19_DoubleClick(object sender, EventArgs e)
         {
             //bool status = ebKernel.PlcKernel[statusPictureBox2._PlcDevice] == 1 ? true : false;
@@ -334,6 +323,14 @@ namespace HyTemplate.gui
                 }
             }
         }
-        
+
+        private void frmOverview_Shown(object sender, EventArgs e)
+        {
+            timerStatus.Enabled = true;
+        }
+        public new void Show()
+        {
+            timerStatus.Enabled = true;
+        }
     }
 }

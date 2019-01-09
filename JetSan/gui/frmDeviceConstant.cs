@@ -19,7 +19,7 @@ namespace HyTemplate.gui
             if (ebKernel != null)
             {
                 #region Initial Component
-                initialComponents(this);                
+                initialComponents(TabControl_Main);                
                 #endregion
             }
 
@@ -36,19 +36,8 @@ namespace HyTemplate.gui
             {
                 timerStatus.Enabled = false;
             }
-
-            refreshStatus(this);
-        }
-
-        private void frmOverview_Shown(object sender, EventArgs e)
-        {
-            timerStatus.Enabled = true;
-        }
-
-        public new void Show()
-        {
-            timerStatus.Enabled = true;
-        }       
+            refreshStatus(TabControl_Main.SelectedTab);
+        }   
         
 
         private void refreshStatus(Control m_Object)
@@ -75,7 +64,7 @@ namespace HyTemplate.gui
                 {
                     ((ControlBtn)obj).refreshStatus();
                 }
-                else if (obj.GetType().Equals(typeof(TabControl)) || obj.GetType().Equals(typeof(TabPage)) || obj.GetType().Equals(typeof(GroupBox)))
+                else if (obj.GetType().Equals(typeof(GroupBox)))
                 {
                     refreshStatus(obj);
                 }
@@ -106,7 +95,7 @@ namespace HyTemplate.gui
                 {
                     ((ControlBtn)obj)._EqBase = ebKernel;
                 }
-                else if (obj.GetType().Equals(typeof(TabControl)) || obj.GetType().Equals(typeof(TabPage)) || obj.GetType().Equals(typeof(GroupBox)))
+                else if (obj.GetType().Equals(typeof(TabPage)) || obj.GetType().Equals(typeof(GroupBox)))
                 {
                     initialComponents(obj);                    
                 }
@@ -122,6 +111,15 @@ namespace HyTemplate.gui
         {
             if (pIDExplain.Visible)
                 pIDExplain.Close();
+        }
+
+        private void frmDeviceConstant_Shown(object sender, EventArgs e)
+        {
+            timerStatus.Enabled = true;
+        }
+        public new void Show()
+        {
+            timerStatus.Enabled = true;
         }
     }
 }

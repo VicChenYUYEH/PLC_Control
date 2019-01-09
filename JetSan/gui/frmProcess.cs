@@ -18,7 +18,7 @@ namespace HyTemplate.gui
             if (ebKernel != null)
             {
                 #region Initial Component
-                initialComponents(this);                
+                initialComponents(tabControl_Main);                
                 #endregion
             }
 
@@ -35,18 +35,7 @@ namespace HyTemplate.gui
             {
                 timerStatus.Enabled = false;
             }
-
-            refreshStatus(this);                   
-        }
-
-        private void frmProcess_Shown(object sender, EventArgs e)
-        {
-            timerStatus.Enabled = true;
-        }
-
-        public new void Show()
-        {
-            timerStatus.Enabled = true;
+            refreshStatus(tabControl_Main.SelectedTab);                   
         }
 
         private void refreshStatus(Control m_Object)
@@ -111,5 +100,13 @@ namespace HyTemplate.gui
             }
         }
 
+        private void frmProcess_Shown(object sender, EventArgs e)
+        {
+            timerStatus.Enabled = true;
+        }
+        public new void Show()
+        {
+            timerStatus.Enabled = true;
+        }
     }
 }

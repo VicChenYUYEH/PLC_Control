@@ -32,6 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOverview));
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
+            this.displayTextBox31 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox30 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox29 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox28 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox27 = new HyTemplate.components.DisplayTextBox();
             this.Label165 = new System.Windows.Forms.Label();
             this.Label166 = new System.Windows.Forms.Label();
             this.Label168 = new System.Windows.Forms.Label();
@@ -290,6 +295,10 @@
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
+            this.displayTextBox4 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox3 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox2 = new HyTemplate.components.DisplayTextBox();
+            this.displayTextBox1 = new HyTemplate.components.DisplayTextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.Label77 = new System.Windows.Forms.Label();
             this.Label107 = new System.Windows.Forms.Label();
@@ -430,10 +439,6 @@
             this.turboPump14 = new HyTemplate.components.TurboPump();
             this.plcObject41 = new HyTemplate.components.PlcObject();
             this.turboPump15 = new HyTemplate.components.TurboPump();
-            this.displayTextBox4 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox3 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox2 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox1 = new HyTemplate.components.DisplayTextBox();
             this.plcObject37 = new HyTemplate.components.PlcObject();
             this.plcObject36 = new HyTemplate.components.PlcObject();
             this.turboPump12 = new HyTemplate.components.TurboPump();
@@ -483,11 +488,6 @@
             this.plcObject2 = new HyTemplate.components.PlcObject();
             this.plcObject7 = new HyTemplate.components.PlcObject();
             this.plcObject5 = new HyTemplate.components.PlcObject();
-            this.displayTextBox31 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox30 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox29 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox28 = new HyTemplate.components.DisplayTextBox();
-            this.displayTextBox27 = new HyTemplate.components.DisplayTextBox();
             this.GroupBox3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.polyCold5)).BeginInit();
@@ -632,6 +632,91 @@
             this.GroupBox3.TabIndex = 1953;
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Text = "廠務 - 出入水溫度 / 壓力";
+            // 
+            // displayTextBox31
+            // 
+            this.displayTextBox31._Division = ((short)(1));
+            this.displayTextBox31._DoubleWord = false;
+            this.displayTextBox31._EqBase = null;
+            this.displayTextBox31._MaxLimit = 999D;
+            this.displayTextBox31._MinLimit = 0D;
+            this.displayTextBox31._Multiplication = ((short)(1));
+            this.displayTextBox31._PlcDevice = "Compressed_Air";
+            this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox31.Location = new System.Drawing.Point(327, 51);
+            this.displayTextBox31.Name = "displayTextBox31";
+            this.displayTextBox31.ReadOnly = true;
+            this.displayTextBox31.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox31.TabIndex = 2365;
+            this.displayTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox30
+            // 
+            this.displayTextBox30._Division = ((short)(1));
+            this.displayTextBox30._DoubleWord = false;
+            this.displayTextBox30._EqBase = null;
+            this.displayTextBox30._MaxLimit = 999D;
+            this.displayTextBox30._MinLimit = 0D;
+            this.displayTextBox30._Multiplication = ((short)(1));
+            this.displayTextBox30._PlcDevice = "Water_Pressureof_Outlet";
+            this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox30.Location = new System.Drawing.Point(327, 24);
+            this.displayTextBox30.Name = "displayTextBox30";
+            this.displayTextBox30.ReadOnly = true;
+            this.displayTextBox30.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox30.TabIndex = 2364;
+            this.displayTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox29
+            // 
+            this.displayTextBox29._Division = ((short)(1));
+            this.displayTextBox29._DoubleWord = false;
+            this.displayTextBox29._EqBase = null;
+            this.displayTextBox29._MaxLimit = 999D;
+            this.displayTextBox29._MinLimit = 0D;
+            this.displayTextBox29._Multiplication = ((short)(1));
+            this.displayTextBox29._PlcDevice = "Water_Teof_Inlet";
+            this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox29.Location = new System.Drawing.Point(127, 25);
+            this.displayTextBox29.Name = "displayTextBox29";
+            this.displayTextBox29.ReadOnly = true;
+            this.displayTextBox29.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox29.TabIndex = 2363;
+            this.displayTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox28
+            // 
+            this.displayTextBox28._Division = ((short)(1));
+            this.displayTextBox28._DoubleWord = false;
+            this.displayTextBox28._EqBase = null;
+            this.displayTextBox28._MaxLimit = 999D;
+            this.displayTextBox28._MinLimit = 0D;
+            this.displayTextBox28._Multiplication = ((short)(1));
+            this.displayTextBox28._PlcDevice = "Water_Teof_Outlet";
+            this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox28.Location = new System.Drawing.Point(127, 51);
+            this.displayTextBox28.Name = "displayTextBox28";
+            this.displayTextBox28.ReadOnly = true;
+            this.displayTextBox28.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox28.TabIndex = 2362;
+            this.displayTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox27
+            // 
+            this.displayTextBox27._Division = ((short)(1));
+            this.displayTextBox27._DoubleWord = false;
+            this.displayTextBox27._EqBase = null;
+            this.displayTextBox27._MaxLimit = 999D;
+            this.displayTextBox27._MinLimit = 0D;
+            this.displayTextBox27._Multiplication = ((short)(1));
+            this.displayTextBox27._PlcDevice = "Water_Pressureof_Inlet";
+            this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox27.Location = new System.Drawing.Point(127, 77);
+            this.displayTextBox27.Name = "displayTextBox27";
+            this.displayTextBox27.ReadOnly = true;
+            this.displayTextBox27.Size = new System.Drawing.Size(60, 23);
+            this.displayTextBox27.TabIndex = 2361;
+            this.displayTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label165
             // 
@@ -3141,6 +3226,74 @@
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = " Cathode MKS  (Torr)";
             // 
+            // displayTextBox4
+            // 
+            this.displayTextBox4._Division = ((short)(1));
+            this.displayTextBox4._DoubleWord = false;
+            this.displayTextBox4._EqBase = null;
+            this.displayTextBox4._MaxLimit = 999D;
+            this.displayTextBox4._MinLimit = 0D;
+            this.displayTextBox4._Multiplication = ((short)(1));
+            this.displayTextBox4._PlcDevice = "MKS_BTG2_M3_2";
+            this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox4.Location = new System.Drawing.Point(94, 93);
+            this.displayTextBox4.Name = "displayTextBox4";
+            this.displayTextBox4.ReadOnly = true;
+            this.displayTextBox4.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox4.TabIndex = 2352;
+            this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox3
+            // 
+            this.displayTextBox3._Division = ((short)(1));
+            this.displayTextBox3._DoubleWord = false;
+            this.displayTextBox3._EqBase = null;
+            this.displayTextBox3._MaxLimit = 999D;
+            this.displayTextBox3._MinLimit = 0D;
+            this.displayTextBox3._Multiplication = ((short)(1));
+            this.displayTextBox3._PlcDevice = "MKS_BTG3_M3_2";
+            this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox3.Location = new System.Drawing.Point(18, 93);
+            this.displayTextBox3.Name = "displayTextBox3";
+            this.displayTextBox3.ReadOnly = true;
+            this.displayTextBox3.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox3.TabIndex = 1952;
+            this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox2
+            // 
+            this.displayTextBox2._Division = ((short)(1));
+            this.displayTextBox2._DoubleWord = false;
+            this.displayTextBox2._EqBase = null;
+            this.displayTextBox2._MaxLimit = 999D;
+            this.displayTextBox2._MinLimit = 0D;
+            this.displayTextBox2._Multiplication = ((short)(1));
+            this.displayTextBox2._PlcDevice = "MKS_BTG1_M3_2";
+            this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox2.Location = new System.Drawing.Point(94, 43);
+            this.displayTextBox2.Name = "displayTextBox2";
+            this.displayTextBox2.ReadOnly = true;
+            this.displayTextBox2.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox2.TabIndex = 1951;
+            this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // displayTextBox1
+            // 
+            this.displayTextBox1._Division = ((short)(1));
+            this.displayTextBox1._DoubleWord = false;
+            this.displayTextBox1._EqBase = null;
+            this.displayTextBox1._MaxLimit = 999D;
+            this.displayTextBox1._MinLimit = 0D;
+            this.displayTextBox1._Multiplication = ((short)(1));
+            this.displayTextBox1._PlcDevice = "MKS_BTG4_M3_2";
+            this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
+            this.displayTextBox1.Location = new System.Drawing.Point(18, 43);
+            this.displayTextBox1.Name = "displayTextBox1";
+            this.displayTextBox1.ReadOnly = true;
+            this.displayTextBox1.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox1.TabIndex = 1950;
+            this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label59
             // 
             this.label59.AutoSize = true;
@@ -5343,74 +5496,6 @@
             this.turboPump15.TabIndex = 2235;
             this.turboPump15.TabStop = false;
             // 
-            // displayTextBox4
-            // 
-            this.displayTextBox4._Division = ((short)(1));
-            this.displayTextBox4._DoubleWord = false;
-            this.displayTextBox4._EqBase = null;
-            this.displayTextBox4._MaxLimit = 999D;
-            this.displayTextBox4._MinLimit = 0D;
-            this.displayTextBox4._Multiplication = ((short)(1));
-            this.displayTextBox4._PlcDevice = "MKS_BTG2_M3_2";
-            this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox4.Location = new System.Drawing.Point(94, 93);
-            this.displayTextBox4.Name = "displayTextBox4";
-            this.displayTextBox4.ReadOnly = true;
-            this.displayTextBox4.Size = new System.Drawing.Size(51, 22);
-            this.displayTextBox4.TabIndex = 2352;
-            this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox3
-            // 
-            this.displayTextBox3._Division = ((short)(1));
-            this.displayTextBox3._DoubleWord = false;
-            this.displayTextBox3._EqBase = null;
-            this.displayTextBox3._MaxLimit = 999D;
-            this.displayTextBox3._MinLimit = 0D;
-            this.displayTextBox3._Multiplication = ((short)(1));
-            this.displayTextBox3._PlcDevice = "MKS_BTG3_M3_2";
-            this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox3.Location = new System.Drawing.Point(18, 93);
-            this.displayTextBox3.Name = "displayTextBox3";
-            this.displayTextBox3.ReadOnly = true;
-            this.displayTextBox3.Size = new System.Drawing.Size(51, 22);
-            this.displayTextBox3.TabIndex = 1952;
-            this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox2
-            // 
-            this.displayTextBox2._Division = ((short)(1));
-            this.displayTextBox2._DoubleWord = false;
-            this.displayTextBox2._EqBase = null;
-            this.displayTextBox2._MaxLimit = 999D;
-            this.displayTextBox2._MinLimit = 0D;
-            this.displayTextBox2._Multiplication = ((short)(1));
-            this.displayTextBox2._PlcDevice = "MKS_BTG1_M3_2";
-            this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox2.Location = new System.Drawing.Point(94, 43);
-            this.displayTextBox2.Name = "displayTextBox2";
-            this.displayTextBox2.ReadOnly = true;
-            this.displayTextBox2.Size = new System.Drawing.Size(51, 22);
-            this.displayTextBox2.TabIndex = 1951;
-            this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox1
-            // 
-            this.displayTextBox1._Division = ((short)(1));
-            this.displayTextBox1._DoubleWord = false;
-            this.displayTextBox1._EqBase = null;
-            this.displayTextBox1._MaxLimit = 999D;
-            this.displayTextBox1._MinLimit = 0D;
-            this.displayTextBox1._Multiplication = ((short)(1));
-            this.displayTextBox1._PlcDevice = "MKS_BTG4_M3_2";
-            this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox1.Location = new System.Drawing.Point(18, 43);
-            this.displayTextBox1.Name = "displayTextBox1";
-            this.displayTextBox1.ReadOnly = true;
-            this.displayTextBox1.Size = new System.Drawing.Size(51, 22);
-            this.displayTextBox1.TabIndex = 1950;
-            this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // plcObject37
             // 
             this.plcObject37._CurrentStatus = false;
@@ -6390,91 +6475,6 @@
             this.plcObject5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.plcObject5.TabIndex = 2055;
             this.plcObject5.TabStop = false;
-            // 
-            // displayTextBox31
-            // 
-            this.displayTextBox31._Division = ((short)(1));
-            this.displayTextBox31._DoubleWord = false;
-            this.displayTextBox31._EqBase = null;
-            this.displayTextBox31._MaxLimit = 999D;
-            this.displayTextBox31._MinLimit = 0D;
-            this.displayTextBox31._Multiplication = ((short)(1));
-            this.displayTextBox31._PlcDevice = "Compressed_Air";
-            this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox31.Location = new System.Drawing.Point(327, 51);
-            this.displayTextBox31.Name = "displayTextBox31";
-            this.displayTextBox31.ReadOnly = true;
-            this.displayTextBox31.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox31.TabIndex = 2365;
-            this.displayTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox30
-            // 
-            this.displayTextBox30._Division = ((short)(1));
-            this.displayTextBox30._DoubleWord = false;
-            this.displayTextBox30._EqBase = null;
-            this.displayTextBox30._MaxLimit = 999D;
-            this.displayTextBox30._MinLimit = 0D;
-            this.displayTextBox30._Multiplication = ((short)(1));
-            this.displayTextBox30._PlcDevice = "Water_Pressureof_Outlet";
-            this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox30.Location = new System.Drawing.Point(327, 24);
-            this.displayTextBox30.Name = "displayTextBox30";
-            this.displayTextBox30.ReadOnly = true;
-            this.displayTextBox30.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox30.TabIndex = 2364;
-            this.displayTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox29
-            // 
-            this.displayTextBox29._Division = ((short)(1));
-            this.displayTextBox29._DoubleWord = false;
-            this.displayTextBox29._EqBase = null;
-            this.displayTextBox29._MaxLimit = 999D;
-            this.displayTextBox29._MinLimit = 0D;
-            this.displayTextBox29._Multiplication = ((short)(1));
-            this.displayTextBox29._PlcDevice = "Water_Teof_Inlet";
-            this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox29.Location = new System.Drawing.Point(127, 25);
-            this.displayTextBox29.Name = "displayTextBox29";
-            this.displayTextBox29.ReadOnly = true;
-            this.displayTextBox29.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox29.TabIndex = 2363;
-            this.displayTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox28
-            // 
-            this.displayTextBox28._Division = ((short)(1));
-            this.displayTextBox28._DoubleWord = false;
-            this.displayTextBox28._EqBase = null;
-            this.displayTextBox28._MaxLimit = 999D;
-            this.displayTextBox28._MinLimit = 0D;
-            this.displayTextBox28._Multiplication = ((short)(1));
-            this.displayTextBox28._PlcDevice = "Water_Teof_Outlet";
-            this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox28.Location = new System.Drawing.Point(127, 51);
-            this.displayTextBox28.Name = "displayTextBox28";
-            this.displayTextBox28.ReadOnly = true;
-            this.displayTextBox28.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox28.TabIndex = 2362;
-            this.displayTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // displayTextBox27
-            // 
-            this.displayTextBox27._Division = ((short)(1));
-            this.displayTextBox27._DoubleWord = false;
-            this.displayTextBox27._EqBase = null;
-            this.displayTextBox27._MaxLimit = 999D;
-            this.displayTextBox27._MinLimit = 0D;
-            this.displayTextBox27._Multiplication = ((short)(1));
-            this.displayTextBox27._PlcDevice = "Water_Pressureof_Inlet";
-            this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox27.Location = new System.Drawing.Point(127, 77);
-            this.displayTextBox27.Name = "displayTextBox27";
-            this.displayTextBox27.ReadOnly = true;
-            this.displayTextBox27.Size = new System.Drawing.Size(60, 23);
-            this.displayTextBox27.TabIndex = 2361;
-            this.displayTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmOverview
             // 

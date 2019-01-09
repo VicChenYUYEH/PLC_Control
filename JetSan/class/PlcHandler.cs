@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading;
 using System.Xml;
 using HyTemplate.gui;
+using System.Threading.Tasks;
 
 namespace HyTemplate
 {
@@ -488,22 +489,18 @@ namespace HyTemplate
 
             string plc_device = dicPlcBuffer[m_DeviceName].Key;
             string high_device = plc_device.Substring(0, 1) + ((Convert.ToInt16(plc_device.Substring(1)) + 1).ToString()).PadLeft(5, '0'); //找LowDevice下一個Word並補滿5個數字
-            System.Threading.Thread.Sleep(100);
-            //用寫入位址從Dictionary 找到 High Deveice的Device Name(XML需設定High Deveice資料)
-            KeyValuePair<String, KeyValuePair<string, int>> tmp = dicPlcBuffer.FirstOrDefault(t => t.Value.Key == high_device);
-            if (tmp.Key == null) return 0;
-
-            high_device = tmp.Key;
             string low_device = m_DeviceName;
-
-            string high_value = getPlcValue(high_device).ToString("X").PadLeft(4, '0');
+            short[] values;
+            melPlcAccessor.readDeviceBlock(high_device, 1, out values); //直接從PLC讀取，不從Dictionary獲得
+            
+            string high_value = values[0].ToString("X").PadLeft(4, '0');
             string low_value = getPlcValue(low_device).ToString("X").PadLeft(4, '0');
 
             string value = "0x" + high_value + low_value;
             
             return Convert.ToInt32(value, 16);
         }
-
+        
         public void setPlcDbValue(string m_DeviceName, int m_Value)
         {
             if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return;

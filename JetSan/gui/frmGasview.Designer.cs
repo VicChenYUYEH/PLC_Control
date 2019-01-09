@@ -282,8 +282,42 @@
             this.Label198 = new System.Windows.Forms.Label();
             this.Label196 = new System.Windows.Forms.Label();
             this.Label197 = new System.Windows.Forms.Label();
-            this.TabControl1 = new System.Windows.Forms.TabControl();
+            this.TabControl_Main = new System.Windows.Forms.TabControl();
             this.TabPage1 = new System.Windows.Forms.TabPage();
+            this.TabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Label141 = new System.Windows.Forms.Label();
+            this.Label224 = new System.Windows.Forms.Label();
+            this.Label60 = new System.Windows.Forms.Label();
+            this.Label87 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.Label246 = new System.Windows.Forms.Label();
+            this.Label245 = new System.Windows.Forms.Label();
+            this.Label244 = new System.Windows.Forms.Label();
+            this.Label243 = new System.Windows.Forms.Label();
+            this.Label242 = new System.Windows.Forms.Label();
+            this.Label241 = new System.Windows.Forms.Label();
+            this.Label229 = new System.Windows.Forms.Label();
+            this.TxtRecipeName = new System.Windows.Forms.TextBox();
+            this.Label228 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Label83 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.Label5 = new System.Windows.Forms.Label();
             this.plcObject33 = new HyTemplate.components.PlcObject();
             this.plcObject32 = new HyTemplate.components.PlcObject();
             this.plcObject30 = new HyTemplate.components.PlcObject();
@@ -336,7 +370,6 @@
             this.plcObject3 = new HyTemplate.components.PlcObject();
             this.plcObject2 = new HyTemplate.components.PlcObject();
             this.plcObject1 = new HyTemplate.components.PlcObject();
-            this.TabPage2 = new System.Windows.Forms.TabPage();
             this.inputTextBox9 = new HyTemplate.components.InputTextBox();
             this.inputTextBox24 = new HyTemplate.components.InputTextBox();
             this.inputTextBox25 = new HyTemplate.components.InputTextBox();
@@ -357,9 +390,6 @@
             this.inputTextBox13 = new HyTemplate.components.InputTextBox();
             this.inputTextBox17 = new HyTemplate.components.InputTextBox();
             this.inputTextBox18 = new HyTemplate.components.InputTextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.Label141 = new System.Windows.Forms.Label();
-            this.Label224 = new System.Windows.Forms.Label();
             this.controlBtn7 = new HyTemplate.components.ControlBtn();
             this.controlBtn3 = new HyTemplate.components.ControlBtn();
             this.controlBtn4 = new HyTemplate.components.ControlBtn();
@@ -381,12 +411,6 @@
             this.inputTextBox31 = new HyTemplate.components.InputTextBox();
             this.inputTextBox30 = new HyTemplate.components.InputTextBox();
             this.inputTextBox29 = new HyTemplate.components.InputTextBox();
-            this.Label60 = new System.Windows.Forms.Label();
-            this.Label87 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.controlBtn15 = new HyTemplate.components.ControlBtn();
             this.controlBtn14 = new HyTemplate.components.ControlBtn();
             this.controlBtn13 = new HyTemplate.components.ControlBtn();
@@ -441,36 +465,12 @@
             this.inputTextBox44 = new HyTemplate.components.InputTextBox();
             this.inputTextBox43 = new HyTemplate.components.InputTextBox();
             this.inputTextBox42 = new HyTemplate.components.InputTextBox();
-            this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.inputTextBox41 = new HyTemplate.components.InputTextBox();
             this.inputTextBox40 = new HyTemplate.components.InputTextBox();
             this.inputTextBox39 = new HyTemplate.components.InputTextBox();
             this.inputTextBox38 = new HyTemplate.components.InputTextBox();
             this.inputTextBox37 = new HyTemplate.components.InputTextBox();
             this.inputTextBox36 = new HyTemplate.components.InputTextBox();
-            this.Label246 = new System.Windows.Forms.Label();
-            this.Label245 = new System.Windows.Forms.Label();
-            this.Label244 = new System.Windows.Forms.Label();
-            this.Label243 = new System.Windows.Forms.Label();
-            this.Label242 = new System.Windows.Forms.Label();
-            this.Label241 = new System.Windows.Forms.Label();
-            this.Label229 = new System.Windows.Forms.Label();
-            this.TxtRecipeName = new System.Windows.Forms.TextBox();
-            this.Label228 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Label83 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
-            this.Label7 = new System.Windows.Forms.Label();
-            this.Label6 = new System.Windows.Forms.Label();
-            this.Label5 = new System.Windows.Forms.Label();
             this.Panel10.SuspendLayout();
             this.Panel11.SuspendLayout();
             this.ADD_Panel_4.SuspendLayout();
@@ -523,8 +523,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
-            this.TabControl1.SuspendLayout();
+            this.TabControl_Main.SuspendLayout();
             this.TabPage1.SuspendLayout();
+            this.TabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject30)).BeginInit();
@@ -561,10 +565,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.plcObject3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject1)).BeginInit();
-            this.TabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timerStatus
@@ -3079,17 +3079,17 @@
             this.Label197.TabIndex = 2389;
             this.Label197.Text = "CN107 (%)";
             // 
-            // TabControl1
+            // TabControl_Main
             // 
-            this.TabControl1.Controls.Add(this.TabPage1);
-            this.TabControl1.Controls.Add(this.TabPage2);
-            this.TabControl1.Controls.Add(this.tabPage3);
-            this.TabControl1.Controls.Add(this.tabPage4);
-            this.TabControl1.Location = new System.Drawing.Point(12, 12);
-            this.TabControl1.Name = "TabControl1";
-            this.TabControl1.SelectedIndex = 0;
-            this.TabControl1.Size = new System.Drawing.Size(1287, 693);
-            this.TabControl1.TabIndex = 2447;
+            this.TabControl_Main.Controls.Add(this.TabPage1);
+            this.TabControl_Main.Controls.Add(this.TabPage2);
+            this.TabControl_Main.Controls.Add(this.tabPage3);
+            this.TabControl_Main.Controls.Add(this.tabPage4);
+            this.TabControl_Main.Location = new System.Drawing.Point(12, 12);
+            this.TabControl_Main.Name = "TabControl_Main";
+            this.TabControl_Main.SelectedIndex = 0;
+            this.TabControl_Main.Size = new System.Drawing.Size(1287, 693);
+            this.TabControl_Main.TabIndex = 2447;
             // 
             // TabPage1
             // 
@@ -3369,11 +3369,502 @@
             this.TabPage1.Text = "Gas flow chart - 流量設定 / 控制";
             this.TabPage1.UseVisualStyleBackColor = true;
             // 
+            // TabPage2
+            // 
+            this.TabPage2.Controls.Add(this.inputTextBox9);
+            this.TabPage2.Controls.Add(this.Label197);
+            this.TabPage2.Controls.Add(this.Label196);
+            this.TabPage2.Controls.Add(this.Label198);
+            this.TabPage2.Controls.Add(this.Label199);
+            this.TabPage2.Controls.Add(this.Label200);
+            this.TabPage2.Controls.Add(this.Label205);
+            this.TabPage2.Controls.Add(this.Label204);
+            this.TabPage2.Controls.Add(this.Label203);
+            this.TabPage2.Controls.Add(this.Label202);
+            this.TabPage2.Controls.Add(this.Label201);
+            this.TabPage2.Controls.Add(this.Label212);
+            this.TabPage2.Controls.Add(this.Label211);
+            this.TabPage2.Controls.Add(this.Label210);
+            this.TabPage2.Controls.Add(this.Label209);
+            this.TabPage2.Controls.Add(this.Label208);
+            this.TabPage2.Controls.Add(this.Label219);
+            this.TabPage2.Controls.Add(this.Label218);
+            this.TabPage2.Controls.Add(this.Label217);
+            this.TabPage2.Controls.Add(this.Label216);
+            this.TabPage2.Controls.Add(this.Label215);
+            this.TabPage2.Controls.Add(this.Label238);
+            this.TabPage2.Controls.Add(this.Label239);
+            this.TabPage2.Controls.Add(this.Label240);
+            this.TabPage2.Controls.Add(this.inputTextBox24);
+            this.TabPage2.Controls.Add(this.inputTextBox25);
+            this.TabPage2.Controls.Add(this.inputTextBox26);
+            this.TabPage2.Controls.Add(this.inputTextBox27);
+            this.TabPage2.Controls.Add(this.inputTextBox28);
+            this.TabPage2.Controls.Add(this.inputTextBox19);
+            this.TabPage2.Controls.Add(this.inputTextBox20);
+            this.TabPage2.Controls.Add(this.inputTextBox21);
+            this.TabPage2.Controls.Add(this.inputTextBox22);
+            this.TabPage2.Controls.Add(this.inputTextBox23);
+            this.TabPage2.Controls.Add(this.inputTextBox10);
+            this.TabPage2.Controls.Add(this.inputTextBox14);
+            this.TabPage2.Controls.Add(this.inputTextBox11);
+            this.TabPage2.Controls.Add(this.inputTextBox15);
+            this.TabPage2.Controls.Add(this.inputTextBox12);
+            this.TabPage2.Controls.Add(this.inputTextBox16);
+            this.TabPage2.Controls.Add(this.inputTextBox13);
+            this.TabPage2.Controls.Add(this.inputTextBox17);
+            this.TabPage2.Controls.Add(this.inputTextBox18);
+            this.TabPage2.Location = new System.Drawing.Point(4, 26);
+            this.TabPage2.Name = "TabPage2";
+            this.TabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage2.Size = new System.Drawing.Size(1279, 663);
+            this.TabPage2.TabIndex = 1;
+            this.TabPage2.Text = "比例式電磁閥 - 輸出百分比設定";
+            this.TabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.Label141);
+            this.tabPage3.Controls.Add(this.Label224);
+            this.tabPage3.Controls.Add(this.Label60);
+            this.tabPage3.Controls.Add(this.Label87);
+            this.tabPage3.Controls.Add(this.label56);
+            this.tabPage3.Controls.Add(this.label59);
+            this.tabPage3.Controls.Add(this.label99);
+            this.tabPage3.Controls.Add(this.controlBtn7);
+            this.tabPage3.Controls.Add(this.controlBtn3);
+            this.tabPage3.Controls.Add(this.controlBtn4);
+            this.tabPage3.Controls.Add(this.controlBtn6);
+            this.tabPage3.Controls.Add(this.controlBtn2);
+            this.tabPage3.Controls.Add(this.controlBtn1);
+            this.tabPage3.Controls.Add(this.controlBtn5);
+            this.tabPage3.Controls.Add(this.displayTextBox14);
+            this.tabPage3.Controls.Add(this.displayTextBox13);
+            this.tabPage3.Controls.Add(this.displayTextBox12);
+            this.tabPage3.Controls.Add(this.displayTextBox11);
+            this.tabPage3.Controls.Add(this.displayTextBox10);
+            this.tabPage3.Controls.Add(this.displayTextBox9);
+            this.tabPage3.Controls.Add(this.displayTextBox8);
+            this.tabPage3.Controls.Add(this.inputTextBox35);
+            this.tabPage3.Controls.Add(this.inputTextBox34);
+            this.tabPage3.Controls.Add(this.inputTextBox33);
+            this.tabPage3.Controls.Add(this.inputTextBox32);
+            this.tabPage3.Controls.Add(this.inputTextBox31);
+            this.tabPage3.Controls.Add(this.inputTextBox30);
+            this.tabPage3.Controls.Add(this.inputTextBox29);
+            this.tabPage3.Location = new System.Drawing.Point(4, 26);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1279, 663);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Chamber Gas  - 流量設定 / 控制";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // Label141
+            // 
+            this.Label141.AutoSize = true;
+            this.Label141.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label141.Location = new System.Drawing.Point(392, 139);
+            this.Label141.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label141.Name = "Label141";
+            this.Label141.Size = new System.Drawing.Size(67, 18);
+            this.Label141.TabIndex = 2049;
+            this.Label141.Text = "M3_2 Ar";
+            // 
+            // Label224
+            // 
+            this.Label224.AutoSize = true;
+            this.Label224.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label224.Location = new System.Drawing.Point(392, 74);
+            this.Label224.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label224.Name = "Label224";
+            this.Label224.Size = new System.Drawing.Size(73, 18);
+            this.Label224.TabIndex = 2048;
+            this.Label224.Text = "M3_1 O2";
+            // 
+            // Label60
+            // 
+            this.Label60.AutoSize = true;
+            this.Label60.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label60.Location = new System.Drawing.Point(392, 273);
+            this.Label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label60.Name = "Label60";
+            this.Label60.Size = new System.Drawing.Size(67, 18);
+            this.Label60.TabIndex = 2051;
+            this.Label60.Text = "M3_4 Ar";
+            // 
+            // Label87
+            // 
+            this.Label87.AutoSize = true;
+            this.Label87.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label87.Location = new System.Drawing.Point(392, 214);
+            this.Label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label87.Name = "Label87";
+            this.Label87.Size = new System.Drawing.Size(73, 18);
+            this.Label87.TabIndex = 2050;
+            this.Label87.Text = "M3_3 O2";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Arial", 12F);
+            this.label56.Location = new System.Drawing.Point(28, 202);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(52, 18);
+            this.label56.TabIndex = 2047;
+            this.label56.Text = "H2 N2";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial", 12F);
+            this.label59.Location = new System.Drawing.Point(28, 141);
+            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(53, 18);
+            this.label59.TabIndex = 2046;
+            this.label59.Text = "H2 O2";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Arial", 12F);
+            this.label99.Location = new System.Drawing.Point(33, 75);
+            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(47, 18);
+            this.label99.TabIndex = 2045;
+            this.label99.Text = "H2 Ar";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.controlBtn15);
+            this.tabPage4.Controls.Add(this.controlBtn14);
+            this.tabPage4.Controls.Add(this.controlBtn13);
+            this.tabPage4.Controls.Add(this.controlBtn12);
+            this.tabPage4.Controls.Add(this.controlBtn9);
+            this.tabPage4.Controls.Add(this.controlBtn8);
+            this.tabPage4.Controls.Add(this.displayTextBox44);
+            this.tabPage4.Controls.Add(this.displayTextBox45);
+            this.tabPage4.Controls.Add(this.displayTextBox46);
+            this.tabPage4.Controls.Add(this.displayTextBox47);
+            this.tabPage4.Controls.Add(this.displayTextBox40);
+            this.tabPage4.Controls.Add(this.displayTextBox41);
+            this.tabPage4.Controls.Add(this.displayTextBox42);
+            this.tabPage4.Controls.Add(this.displayTextBox43);
+            this.tabPage4.Controls.Add(this.displayTextBox36);
+            this.tabPage4.Controls.Add(this.displayTextBox37);
+            this.tabPage4.Controls.Add(this.displayTextBox38);
+            this.tabPage4.Controls.Add(this.displayTextBox39);
+            this.tabPage4.Controls.Add(this.displayTextBox32);
+            this.tabPage4.Controls.Add(this.displayTextBox33);
+            this.tabPage4.Controls.Add(this.displayTextBox34);
+            this.tabPage4.Controls.Add(this.displayTextBox35);
+            this.tabPage4.Controls.Add(this.displayTextBox19);
+            this.tabPage4.Controls.Add(this.displayTextBox20);
+            this.tabPage4.Controls.Add(this.displayTextBox21);
+            this.tabPage4.Controls.Add(this.displayTextBox22);
+            this.tabPage4.Controls.Add(this.displayTextBox18);
+            this.tabPage4.Controls.Add(this.displayTextBox17);
+            this.tabPage4.Controls.Add(this.displayTextBox16);
+            this.tabPage4.Controls.Add(this.displayTextBox15);
+            this.tabPage4.Controls.Add(this.inputTextBox70);
+            this.tabPage4.Controls.Add(this.inputTextBox71);
+            this.tabPage4.Controls.Add(this.inputTextBox72);
+            this.tabPage4.Controls.Add(this.inputTextBox73);
+            this.tabPage4.Controls.Add(this.inputTextBox66);
+            this.tabPage4.Controls.Add(this.inputTextBox67);
+            this.tabPage4.Controls.Add(this.inputTextBox68);
+            this.tabPage4.Controls.Add(this.inputTextBox69);
+            this.tabPage4.Controls.Add(this.inputTextBox62);
+            this.tabPage4.Controls.Add(this.inputTextBox63);
+            this.tabPage4.Controls.Add(this.inputTextBox64);
+            this.tabPage4.Controls.Add(this.inputTextBox65);
+            this.tabPage4.Controls.Add(this.inputTextBox58);
+            this.tabPage4.Controls.Add(this.inputTextBox59);
+            this.tabPage4.Controls.Add(this.inputTextBox60);
+            this.tabPage4.Controls.Add(this.inputTextBox61);
+            this.tabPage4.Controls.Add(this.inputTextBox46);
+            this.tabPage4.Controls.Add(this.inputTextBox47);
+            this.tabPage4.Controls.Add(this.inputTextBox48);
+            this.tabPage4.Controls.Add(this.inputTextBox49);
+            this.tabPage4.Controls.Add(this.inputTextBox45);
+            this.tabPage4.Controls.Add(this.inputTextBox44);
+            this.tabPage4.Controls.Add(this.inputTextBox43);
+            this.tabPage4.Controls.Add(this.inputTextBox42);
+            this.tabPage4.Controls.Add(this.GroupBox1);
+            this.tabPage4.Controls.Add(this.Label229);
+            this.tabPage4.Controls.Add(this.TxtRecipeName);
+            this.tabPage4.Controls.Add(this.Label228);
+            this.tabPage4.Controls.Add(this.label9);
+            this.tabPage4.Controls.Add(this.Label83);
+            this.tabPage4.Controls.Add(this.label11);
+            this.tabPage4.Controls.Add(this.label12);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Controls.Add(this.label54);
+            this.tabPage4.Controls.Add(this.label55);
+            this.tabPage4.Controls.Add(this.Label8);
+            this.tabPage4.Controls.Add(this.Label7);
+            this.tabPage4.Controls.Add(this.Label6);
+            this.tabPage4.Controls.Add(this.Label5);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1279, 663);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Power Supply";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // GroupBox1
+            // 
+            this.GroupBox1.Controls.Add(this.inputTextBox41);
+            this.GroupBox1.Controls.Add(this.inputTextBox40);
+            this.GroupBox1.Controls.Add(this.inputTextBox39);
+            this.GroupBox1.Controls.Add(this.inputTextBox38);
+            this.GroupBox1.Controls.Add(this.inputTextBox37);
+            this.GroupBox1.Controls.Add(this.inputTextBox36);
+            this.GroupBox1.Controls.Add(this.Label246);
+            this.GroupBox1.Controls.Add(this.Label245);
+            this.GroupBox1.Controls.Add(this.Label244);
+            this.GroupBox1.Controls.Add(this.Label243);
+            this.GroupBox1.Controls.Add(this.Label242);
+            this.GroupBox1.Controls.Add(this.Label241);
+            this.GroupBox1.Location = new System.Drawing.Point(848, 66);
+            this.GroupBox1.Name = "GroupBox1";
+            this.GroupBox1.Size = new System.Drawing.Size(222, 331);
+            this.GroupBox1.TabIndex = 2474;
+            this.GroupBox1.TabStop = false;
+            this.GroupBox1.Text = "Pre Sputter time (Sec)";
+            // 
+            // Label246
+            // 
+            this.Label246.AutoSize = true;
+            this.Label246.Location = new System.Drawing.Point(25, 272);
+            this.Label246.Name = "Label246";
+            this.Label246.Size = new System.Drawing.Size(49, 17);
+            this.Label246.TabIndex = 2085;
+            this.Label246.Text = "DC4_2";
+            // 
+            // Label245
+            // 
+            this.Label245.AutoSize = true;
+            this.Label245.Location = new System.Drawing.Point(25, 227);
+            this.Label245.Name = "Label245";
+            this.Label245.Size = new System.Drawing.Size(49, 17);
+            this.Label245.TabIndex = 2083;
+            this.Label245.Text = "DC4_1";
+            // 
+            // Label244
+            // 
+            this.Label244.AutoSize = true;
+            this.Label244.Location = new System.Drawing.Point(25, 182);
+            this.Label244.Name = "Label244";
+            this.Label244.Size = new System.Drawing.Size(49, 17);
+            this.Label244.TabIndex = 2081;
+            this.Label244.Text = "DC3_2";
+            // 
+            // Label243
+            // 
+            this.Label243.AutoSize = true;
+            this.Label243.Location = new System.Drawing.Point(25, 137);
+            this.Label243.Name = "Label243";
+            this.Label243.Size = new System.Drawing.Size(49, 17);
+            this.Label243.TabIndex = 2079;
+            this.Label243.Text = "DC3_1";
+            // 
+            // Label242
+            // 
+            this.Label242.AutoSize = true;
+            this.Label242.Location = new System.Drawing.Point(25, 92);
+            this.Label242.Name = "Label242";
+            this.Label242.Size = new System.Drawing.Size(50, 17);
+            this.Label242.TabIndex = 2077;
+            this.Label242.Text = "MF2_1";
+            // 
+            // Label241
+            // 
+            this.Label241.AutoSize = true;
+            this.Label241.Location = new System.Drawing.Point(25, 47);
+            this.Label241.Name = "Label241";
+            this.Label241.Size = new System.Drawing.Size(50, 17);
+            this.Label241.TabIndex = 2075;
+            this.Label241.Text = "MF1_1";
+            // 
+            // Label229
+            // 
+            this.Label229.AutoSize = true;
+            this.Label229.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label229.Location = new System.Drawing.Point(28, 24);
+            this.Label229.Name = "Label229";
+            this.Label229.Size = new System.Drawing.Size(135, 18);
+            this.Label229.TabIndex = 2473;
+            this.Label229.Text = "製程 匯入 配方：";
+            // 
+            // TxtRecipeName
+            // 
+            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
+            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
+            this.TxtRecipeName.Location = new System.Drawing.Point(179, 20);
+            this.TxtRecipeName.Name = "TxtRecipeName";
+            this.TxtRecipeName.ReadOnly = true;
+            this.TxtRecipeName.Size = new System.Drawing.Size(430, 25);
+            this.TxtRecipeName.TabIndex = 2472;
+            this.TxtRecipeName.Text = "N/A";
+            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Label228
+            // 
+            this.Label228.AutoSize = true;
+            this.Label228.Location = new System.Drawing.Point(30, 206);
+            this.Label228.Name = "Label228";
+            this.Label228.Size = new System.Drawing.Size(106, 17);
+            this.Label228.TabIndex = 2471;
+            this.Label228.Text = "Pre_Sputter(sec)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(270, 61);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 17);
+            this.label9.TabIndex = 2469;
+            this.label9.Text = "MF2 (10kw)";
+            // 
+            // Label83
+            // 
+            this.Label83.AutoSize = true;
+            this.Label83.ForeColor = System.Drawing.Color.Black;
+            this.Label83.Location = new System.Drawing.Point(151, 61);
+            this.Label83.Name = "Label83";
+            this.Label83.Size = new System.Drawing.Size(80, 17);
+            this.Label83.TabIndex = 2467;
+            this.Label83.Text = "MF1 (10kw)";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(29, 426);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 17);
+            this.label11.TabIndex = 2466;
+            this.label11.Text = "啟動 / 關閉";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(30, 330);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(78, 17);
+            this.label12.TabIndex = 2465;
+            this.label12.Text = "實際電壓 (v)";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(30, 375);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(80, 17);
+            this.label13.TabIndex = 2464;
+            this.label13.Text = "實際電流 (A)";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(30, 288);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(88, 17);
+            this.label14.TabIndex = 2463;
+            this.label14.Text = "實際功率 (kw)";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(29, 90);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(88, 17);
+            this.label15.TabIndex = 2459;
+            this.label15.Text = "開始功率 (kw)";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(29, 127);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(88, 17);
+            this.label16.TabIndex = 2460;
+            this.label16.Text = "結束功率 (kw)";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(30, 248);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(88, 17);
+            this.label54.TabIndex = 2462;
+            this.label54.Text = "設定功率 (kw)";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(30, 170);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(88, 17);
+            this.label55.TabIndex = 2461;
+            this.label55.Text = "製程功率 (kw)";
+            // 
+            // Label8
+            // 
+            this.Label8.AutoSize = true;
+            this.Label8.ForeColor = System.Drawing.Color.Black;
+            this.Label8.Location = new System.Drawing.Point(617, 61);
+            this.Label8.Name = "Label8";
+            this.Label8.Size = new System.Drawing.Size(90, 17);
+            this.Label8.TabIndex = 2449;
+            this.Label8.Text = "DC4_1(20kw)";
+            // 
+            // Label7
+            // 
+            this.Label7.AutoSize = true;
+            this.Label7.ForeColor = System.Drawing.Color.Black;
+            this.Label7.Location = new System.Drawing.Point(734, 61);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(90, 17);
+            this.Label7.TabIndex = 2448;
+            this.Label7.Text = "DC4_2(20kw)";
+            // 
+            // Label6
+            // 
+            this.Label6.AutoSize = true;
+            this.Label6.ForeColor = System.Drawing.Color.Black;
+            this.Label6.Location = new System.Drawing.Point(390, 61);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(90, 17);
+            this.Label6.TabIndex = 2447;
+            this.Label6.Text = "DC3_1(20kw)";
+            // 
+            // Label5
+            // 
+            this.Label5.AutoSize = true;
+            this.Label5.ForeColor = System.Drawing.Color.Black;
+            this.Label5.Location = new System.Drawing.Point(503, 61);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(90, 17);
+            this.Label5.TabIndex = 2446;
+            this.Label5.Text = "DC3_2(20kw)";
+            // 
             // plcObject33
             // 
             this.plcObject33._CurrentStatus = false;
             this.plcObject33._EqBase = null;
             this.plcObject33._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject33._Limit = "";
+            this.plcObject33._LimitSignal = 0;
             this.plcObject33._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject33._PlcDevice = "CaNC_0306_Open";
             this.plcObject33._PlcDisplayOffDevice = null;
@@ -3392,6 +3883,8 @@
             this.plcObject32._CurrentStatus = false;
             this.plcObject32._EqBase = null;
             this.plcObject32._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject32._Limit = "";
+            this.plcObject32._LimitSignal = 0;
             this.plcObject32._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject32._PlcDevice = "CaNC_0305_Open";
             this.plcObject32._PlcDisplayOffDevice = null;
@@ -3410,6 +3903,8 @@
             this.plcObject30._CurrentStatus = false;
             this.plcObject30._EqBase = null;
             this.plcObject30._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject30._Limit = "";
+            this.plcObject30._LimitSignal = 0;
             this.plcObject30._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject30._PlcDevice = "CaNC_0206_Open";
             this.plcObject30._PlcDisplayOffDevice = null;
@@ -3428,6 +3923,8 @@
             this.plcObject29._CurrentStatus = false;
             this.plcObject29._EqBase = null;
             this.plcObject29._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject29._Limit = "";
+            this.plcObject29._LimitSignal = 0;
             this.plcObject29._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject29._PlcDevice = "CaNC_0205_Open";
             this.plcObject29._PlcDisplayOffDevice = null;
@@ -3446,6 +3943,8 @@
             this.plcObject27._CurrentStatus = false;
             this.plcObject27._EqBase = null;
             this.plcObject27._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject27._Limit = "";
+            this.plcObject27._LimitSignal = 0;
             this.plcObject27._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject27._PlcDevice = "CaNC_0106_Open";
             this.plcObject27._PlcDisplayOffDevice = null;
@@ -3464,6 +3963,8 @@
             this.plcObject26._CurrentStatus = false;
             this.plcObject26._EqBase = null;
             this.plcObject26._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject26._Limit = "";
+            this.plcObject26._LimitSignal = 0;
             this.plcObject26._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject26._PlcDevice = "CaNC_0105_Open";
             this.plcObject26._PlcDisplayOffDevice = null;
@@ -3482,6 +3983,8 @@
             this.plcObject20._CurrentStatus = false;
             this.plcObject20._EqBase = null;
             this.plcObject20._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject20._Limit = "";
+            this.plcObject20._LimitSignal = 0;
             this.plcObject20._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject20._PlcDevice = "CaNC_0304_Open";
             this.plcObject20._PlcDisplayOffDevice = null;
@@ -3500,6 +4003,8 @@
             this.plcObject19._CurrentStatus = false;
             this.plcObject19._EqBase = null;
             this.plcObject19._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject19._Limit = "";
+            this.plcObject19._LimitSignal = 0;
             this.plcObject19._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject19._PlcDevice = "CaNC_0303_Open";
             this.plcObject19._PlcDisplayOffDevice = null;
@@ -3518,6 +4023,8 @@
             this.plcObject18._CurrentStatus = false;
             this.plcObject18._EqBase = null;
             this.plcObject18._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject18._Limit = "";
+            this.plcObject18._LimitSignal = 0;
             this.plcObject18._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject18._PlcDevice = "CaNC_0302_Open";
             this.plcObject18._PlcDisplayOffDevice = null;
@@ -3536,6 +4043,8 @@
             this.plcObject17._CurrentStatus = false;
             this.plcObject17._EqBase = null;
             this.plcObject17._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject17._Limit = "";
+            this.plcObject17._LimitSignal = 0;
             this.plcObject17._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject17._PlcDevice = "CaNC_0301_Open";
             this.plcObject17._PlcDisplayOffDevice = null;
@@ -3554,6 +4063,8 @@
             this.plcObject16._CurrentStatus = false;
             this.plcObject16._EqBase = null;
             this.plcObject16._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject16._Limit = "";
+            this.plcObject16._LimitSignal = 0;
             this.plcObject16._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject16._PlcDevice = "CaNC_0204_Open";
             this.plcObject16._PlcDisplayOffDevice = null;
@@ -3572,6 +4083,8 @@
             this.plcObject15._CurrentStatus = false;
             this.plcObject15._EqBase = null;
             this.plcObject15._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject15._Limit = "";
+            this.plcObject15._LimitSignal = 0;
             this.plcObject15._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject15._PlcDevice = "CaNC_0203_Open";
             this.plcObject15._PlcDisplayOffDevice = null;
@@ -3590,6 +4103,8 @@
             this.plcObject13._CurrentStatus = false;
             this.plcObject13._EqBase = null;
             this.plcObject13._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject13._Limit = "";
+            this.plcObject13._LimitSignal = 0;
             this.plcObject13._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject13._PlcDevice = "CaNC_0202_Open";
             this.plcObject13._PlcDisplayOffDevice = null;
@@ -3608,6 +4123,8 @@
             this.plcObject12._CurrentStatus = false;
             this.plcObject12._EqBase = null;
             this.plcObject12._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject12._Limit = "";
+            this.plcObject12._LimitSignal = 0;
             this.plcObject12._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject12._PlcDevice = "CaNC_0201_Open";
             this.plcObject12._PlcDisplayOffDevice = null;
@@ -3626,6 +4143,8 @@
             this.plcObject11._CurrentStatus = false;
             this.plcObject11._EqBase = null;
             this.plcObject11._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject11._Limit = "";
+            this.plcObject11._LimitSignal = 0;
             this.plcObject11._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject11._PlcDevice = "CaNC_0104_Open";
             this.plcObject11._PlcDisplayOffDevice = null;
@@ -3644,6 +4163,8 @@
             this.plcObject10._CurrentStatus = false;
             this.plcObject10._EqBase = null;
             this.plcObject10._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject10._Limit = "";
+            this.plcObject10._LimitSignal = 0;
             this.plcObject10._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject10._PlcDevice = "CaNC_0103_Open";
             this.plcObject10._PlcDisplayOffDevice = null;
@@ -3662,6 +4183,8 @@
             this.plcObject9._CurrentStatus = false;
             this.plcObject9._EqBase = null;
             this.plcObject9._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject9._Limit = "";
+            this.plcObject9._LimitSignal = 0;
             this.plcObject9._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject9._PlcDevice = "CaNC_0102_Open";
             this.plcObject9._PlcDisplayOffDevice = null;
@@ -3680,6 +4203,8 @@
             this.plcObject8._CurrentStatus = false;
             this.plcObject8._EqBase = null;
             this.plcObject8._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject8._Limit = "";
+            this.plcObject8._LimitSignal = 0;
             this.plcObject8._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject8._PlcDevice = "CaNC_0101_Open";
             this.plcObject8._PlcDisplayOffDevice = null;
@@ -3698,6 +4223,8 @@
             this.plcObject14._CurrentStatus = false;
             this.plcObject14._EqBase = null;
             this.plcObject14._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject14._Limit = "";
+            this.plcObject14._LimitSignal = 0;
             this.plcObject14._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject14._PlcDevice = "MFC_0304_Open_MC_O2";
             this.plcObject14._PlcDisplayOffDevice = null;
@@ -3988,6 +4515,8 @@
             this.plcObject36._CurrentStatus = false;
             this.plcObject36._EqBase = null;
             this.plcObject36._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject36._Limit = "";
+            this.plcObject36._LimitSignal = 0;
             this.plcObject36._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject36._PlcDevice = "PrNC_0412_Open";
             this.plcObject36._PlcDisplayOffDevice = null;
@@ -4006,6 +4535,8 @@
             this.plcObject28._CurrentStatus = false;
             this.plcObject28._EqBase = null;
             this.plcObject28._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject28._Limit = "";
+            this.plcObject28._LimitSignal = 0;
             this.plcObject28._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject28._PlcDevice = "PrNC_0212_Open";
             this.plcObject28._PlcDisplayOffDevice = null;
@@ -4024,6 +4555,8 @@
             this.plcObject31._CurrentStatus = false;
             this.plcObject31._EqBase = null;
             this.plcObject31._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject31._Limit = "";
+            this.plcObject31._LimitSignal = 0;
             this.plcObject31._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject31._PlcDevice = "PrNC_0312_Open";
             this.plcObject31._PlcDisplayOffDevice = null;
@@ -4042,6 +4575,8 @@
             this.plcObject25._CurrentStatus = false;
             this.plcObject25._EqBase = null;
             this.plcObject25._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject25._Limit = "";
+            this.plcObject25._LimitSignal = 0;
             this.plcObject25._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject25._PlcDevice = "PrNC_0112_Open";
             this.plcObject25._PlcDisplayOffDevice = null;
@@ -4060,6 +4595,8 @@
             this.plcObject35._CurrentStatus = false;
             this.plcObject35._EqBase = null;
             this.plcObject35._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject35._Limit = "";
+            this.plcObject35._LimitSignal = 0;
             this.plcObject35._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject35._PlcDevice = "CaNC_0406_Open";
             this.plcObject35._PlcDisplayOffDevice = null;
@@ -4078,6 +4615,8 @@
             this.plcObject34._CurrentStatus = false;
             this.plcObject34._EqBase = null;
             this.plcObject34._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject34._Limit = "";
+            this.plcObject34._LimitSignal = 0;
             this.plcObject34._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject34._PlcDevice = "CaNC_0405_Open";
             this.plcObject34._PlcDisplayOffDevice = null;
@@ -4096,6 +4635,8 @@
             this.plcObject24._CurrentStatus = false;
             this.plcObject24._EqBase = null;
             this.plcObject24._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject24._Limit = "";
+            this.plcObject24._LimitSignal = 0;
             this.plcObject24._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject24._PlcDevice = "CaNC_0404_Open";
             this.plcObject24._PlcDisplayOffDevice = null;
@@ -4114,6 +4655,8 @@
             this.plcObject23._CurrentStatus = false;
             this.plcObject23._EqBase = null;
             this.plcObject23._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject23._Limit = "";
+            this.plcObject23._LimitSignal = 0;
             this.plcObject23._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject23._PlcDevice = "CaNC_0403_Open";
             this.plcObject23._PlcDisplayOffDevice = null;
@@ -4132,6 +4675,8 @@
             this.plcObject22._CurrentStatus = false;
             this.plcObject22._EqBase = null;
             this.plcObject22._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject22._Limit = "";
+            this.plcObject22._LimitSignal = 0;
             this.plcObject22._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject22._PlcDevice = "CaNC_0402_Open";
             this.plcObject22._PlcDisplayOffDevice = null;
@@ -4150,6 +4695,8 @@
             this.plcObject21._CurrentStatus = false;
             this.plcObject21._EqBase = null;
             this.plcObject21._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject21._Limit = "";
+            this.plcObject21._LimitSignal = 0;
             this.plcObject21._ObjectType = HyTemplate.components.PlcObject.ObjectType.otValve;
             this.plcObject21._PlcDevice = "CaNC_0401_Open";
             this.plcObject21._PlcDisplayOffDevice = null;
@@ -4168,6 +4715,8 @@
             this.plcObject7._CurrentStatus = false;
             this.plcObject7._EqBase = null;
             this.plcObject7._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject7._Limit = "";
+            this.plcObject7._LimitSignal = 0;
             this.plcObject7._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject7._PlcDevice = "MFC_0309_Open_MC_Ar";
             this.plcObject7._PlcDisplayOffDevice = null;
@@ -4186,6 +4735,8 @@
             this.plcObject6._CurrentStatus = false;
             this.plcObject6._EqBase = null;
             this.plcObject6._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject6._Limit = "";
+            this.plcObject6._LimitSignal = 0;
             this.plcObject6._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject6._PlcDevice = "MFC_0310_Open_MC_O2";
             this.plcObject6._PlcDisplayOffDevice = null;
@@ -4204,6 +4755,8 @@
             this.plcObject5._CurrentStatus = false;
             this.plcObject5._EqBase = null;
             this.plcObject5._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject5._Limit = "";
+            this.plcObject5._LimitSignal = 0;
             this.plcObject5._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject5._PlcDevice = "MFC_0307_Open_MC_Ar";
             this.plcObject5._PlcDisplayOffDevice = null;
@@ -4222,6 +4775,8 @@
             this.plcObject4._CurrentStatus = false;
             this.plcObject4._EqBase = null;
             this.plcObject4._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject4._Limit = "";
+            this.plcObject4._LimitSignal = 0;
             this.plcObject4._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject4._PlcDevice = "MFC_0308_Open_MC_O2";
             this.plcObject4._PlcDisplayOffDevice = null;
@@ -4240,6 +4795,8 @@
             this.plcObject3._CurrentStatus = false;
             this.plcObject3._EqBase = null;
             this.plcObject3._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject3._Limit = "";
+            this.plcObject3._LimitSignal = 0;
             this.plcObject3._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject3._PlcDevice = "MFC_0305_Open_MC_Ar";
             this.plcObject3._PlcDisplayOffDevice = null;
@@ -4258,6 +4815,8 @@
             this.plcObject2._CurrentStatus = false;
             this.plcObject2._EqBase = null;
             this.plcObject2._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject2._Limit = "";
+            this.plcObject2._LimitSignal = 0;
             this.plcObject2._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject2._PlcDevice = "MFC_0306_Open_MC_O2";
             this.plcObject2._PlcDisplayOffDevice = null;
@@ -4276,6 +4835,8 @@
             this.plcObject1._CurrentStatus = false;
             this.plcObject1._EqBase = null;
             this.plcObject1._ImageSize = HyTemplate.components.PlcObject.ImageSize.isSmall;
+            this.plcObject1._Limit = "";
+            this.plcObject1._LimitSignal = 0;
             this.plcObject1._ObjectType = HyTemplate.components.PlcObject.ObjectType.otMFC;
             this.plcObject1._PlcDevice = "MFC_0303_Open_MC_Ar";
             this.plcObject1._PlcDisplayOffDevice = null;
@@ -4288,59 +4849,6 @@
             this.plcObject1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.plcObject1.TabIndex = 2316;
             this.plcObject1.TabStop = false;
-            // 
-            // TabPage2
-            // 
-            this.TabPage2.Controls.Add(this.inputTextBox9);
-            this.TabPage2.Controls.Add(this.Label197);
-            this.TabPage2.Controls.Add(this.Label196);
-            this.TabPage2.Controls.Add(this.Label198);
-            this.TabPage2.Controls.Add(this.Label199);
-            this.TabPage2.Controls.Add(this.Label200);
-            this.TabPage2.Controls.Add(this.Label205);
-            this.TabPage2.Controls.Add(this.Label204);
-            this.TabPage2.Controls.Add(this.Label203);
-            this.TabPage2.Controls.Add(this.Label202);
-            this.TabPage2.Controls.Add(this.Label201);
-            this.TabPage2.Controls.Add(this.Label212);
-            this.TabPage2.Controls.Add(this.Label211);
-            this.TabPage2.Controls.Add(this.Label210);
-            this.TabPage2.Controls.Add(this.Label209);
-            this.TabPage2.Controls.Add(this.Label208);
-            this.TabPage2.Controls.Add(this.Label219);
-            this.TabPage2.Controls.Add(this.Label218);
-            this.TabPage2.Controls.Add(this.Label217);
-            this.TabPage2.Controls.Add(this.Label216);
-            this.TabPage2.Controls.Add(this.Label215);
-            this.TabPage2.Controls.Add(this.Label238);
-            this.TabPage2.Controls.Add(this.Label239);
-            this.TabPage2.Controls.Add(this.Label240);
-            this.TabPage2.Controls.Add(this.inputTextBox24);
-            this.TabPage2.Controls.Add(this.inputTextBox25);
-            this.TabPage2.Controls.Add(this.inputTextBox26);
-            this.TabPage2.Controls.Add(this.inputTextBox27);
-            this.TabPage2.Controls.Add(this.inputTextBox28);
-            this.TabPage2.Controls.Add(this.inputTextBox19);
-            this.TabPage2.Controls.Add(this.inputTextBox20);
-            this.TabPage2.Controls.Add(this.inputTextBox21);
-            this.TabPage2.Controls.Add(this.inputTextBox22);
-            this.TabPage2.Controls.Add(this.inputTextBox23);
-            this.TabPage2.Controls.Add(this.inputTextBox10);
-            this.TabPage2.Controls.Add(this.inputTextBox14);
-            this.TabPage2.Controls.Add(this.inputTextBox11);
-            this.TabPage2.Controls.Add(this.inputTextBox15);
-            this.TabPage2.Controls.Add(this.inputTextBox12);
-            this.TabPage2.Controls.Add(this.inputTextBox16);
-            this.TabPage2.Controls.Add(this.inputTextBox13);
-            this.TabPage2.Controls.Add(this.inputTextBox17);
-            this.TabPage2.Controls.Add(this.inputTextBox18);
-            this.TabPage2.Location = new System.Drawing.Point(4, 26);
-            this.TabPage2.Name = "TabPage2";
-            this.TabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage2.Size = new System.Drawing.Size(1279, 663);
-            this.TabPage2.TabIndex = 1;
-            this.TabPage2.Text = "比例式電磁閥 - 輸出百分比設定";
-            this.TabPage2.UseVisualStyleBackColor = true;
             // 
             // inputTextBox9
             // 
@@ -4682,68 +5190,9 @@
             this.inputTextBox18.TabIndex = 2418;
             this.inputTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.Label141);
-            this.tabPage3.Controls.Add(this.Label224);
-            this.tabPage3.Controls.Add(this.controlBtn7);
-            this.tabPage3.Controls.Add(this.controlBtn3);
-            this.tabPage3.Controls.Add(this.controlBtn4);
-            this.tabPage3.Controls.Add(this.controlBtn6);
-            this.tabPage3.Controls.Add(this.controlBtn2);
-            this.tabPage3.Controls.Add(this.controlBtn1);
-            this.tabPage3.Controls.Add(this.controlBtn5);
-            this.tabPage3.Controls.Add(this.displayTextBox14);
-            this.tabPage3.Controls.Add(this.displayTextBox13);
-            this.tabPage3.Controls.Add(this.displayTextBox12);
-            this.tabPage3.Controls.Add(this.displayTextBox11);
-            this.tabPage3.Controls.Add(this.displayTextBox10);
-            this.tabPage3.Controls.Add(this.displayTextBox9);
-            this.tabPage3.Controls.Add(this.displayTextBox8);
-            this.tabPage3.Controls.Add(this.inputTextBox35);
-            this.tabPage3.Controls.Add(this.inputTextBox34);
-            this.tabPage3.Controls.Add(this.inputTextBox33);
-            this.tabPage3.Controls.Add(this.inputTextBox32);
-            this.tabPage3.Controls.Add(this.inputTextBox31);
-            this.tabPage3.Controls.Add(this.inputTextBox30);
-            this.tabPage3.Controls.Add(this.inputTextBox29);
-            this.tabPage3.Controls.Add(this.Label60);
-            this.tabPage3.Controls.Add(this.Label87);
-            this.tabPage3.Controls.Add(this.label56);
-            this.tabPage3.Controls.Add(this.label59);
-            this.tabPage3.Controls.Add(this.label99);
-            this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1279, 663);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Chamber Gas  - 流量設定 / 控制";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // Label141
-            // 
-            this.Label141.AutoSize = true;
-            this.Label141.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label141.Location = new System.Drawing.Point(392, 139);
-            this.Label141.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label141.Name = "Label141";
-            this.Label141.Size = new System.Drawing.Size(67, 18);
-            this.Label141.TabIndex = 2049;
-            this.Label141.Text = "M3_2 Ar";
-            // 
-            // Label224
-            // 
-            this.Label224.AutoSize = true;
-            this.Label224.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label224.Location = new System.Drawing.Point(392, 74);
-            this.Label224.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label224.Name = "Label224";
-            this.Label224.Size = new System.Drawing.Size(73, 18);
-            this.Label224.TabIndex = 2048;
-            this.Label224.Text = "M3_1 O2";
-            // 
             // controlBtn7
             // 
+            this.controlBtn7._AutoOff = false;
             this.controlBtn7._CurrentStatus = false;
             this.controlBtn7._EqBase = null;
             this.controlBtn7._PlcDevice = "MFC_0302_Open_MC_Ar";
@@ -4751,6 +5200,7 @@
             this.controlBtn7._PlcDisplayOnDevice = "MFC_0302_Open_MC_Ar";
             this.controlBtn7._ReadOnly = false;
             this.controlBtn7._Reverse = false;
+            this.controlBtn7._ShowMsg = false;
             this.controlBtn7._Text = "ON";
             this.controlBtn7.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn7.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -4763,6 +5213,7 @@
             // 
             // controlBtn3
             // 
+            this.controlBtn3._AutoOff = false;
             this.controlBtn3._CurrentStatus = false;
             this.controlBtn3._EqBase = null;
             this.controlBtn3._PlcDevice = "MFC_0301_Open_MC_O2";
@@ -4770,6 +5221,7 @@
             this.controlBtn3._PlcDisplayOnDevice = "MFC_0301_Open_MC_O2";
             this.controlBtn3._ReadOnly = false;
             this.controlBtn3._Reverse = false;
+            this.controlBtn3._ShowMsg = false;
             this.controlBtn3._Text = "ON";
             this.controlBtn3.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn3.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -4782,6 +5234,7 @@
             // 
             // controlBtn4
             // 
+            this.controlBtn4._AutoOff = false;
             this.controlBtn4._CurrentStatus = false;
             this.controlBtn4._EqBase = null;
             this.controlBtn4._PlcDevice = "MFC_0312_Open_MC_Ar";
@@ -4789,6 +5242,7 @@
             this.controlBtn4._PlcDisplayOnDevice = "MFC_0312_Open_MC_Ar";
             this.controlBtn4._ReadOnly = false;
             this.controlBtn4._Reverse = false;
+            this.controlBtn4._ShowMsg = false;
             this.controlBtn4._Text = "ON";
             this.controlBtn4.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn4.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -4801,6 +5255,7 @@
             // 
             // controlBtn6
             // 
+            this.controlBtn6._AutoOff = false;
             this.controlBtn6._CurrentStatus = false;
             this.controlBtn6._EqBase = null;
             this.controlBtn6._PlcDevice = "MFC_0311_Open_MC_O2";
@@ -4808,6 +5263,7 @@
             this.controlBtn6._PlcDisplayOnDevice = "MFC_0311_Open_MC_O2";
             this.controlBtn6._ReadOnly = false;
             this.controlBtn6._Reverse = false;
+            this.controlBtn6._ShowMsg = false;
             this.controlBtn6._Text = "ON";
             this.controlBtn6.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn6.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -4820,6 +5276,7 @@
             // 
             // controlBtn2
             // 
+            this.controlBtn2._AutoOff = false;
             this.controlBtn2._CurrentStatus = false;
             this.controlBtn2._EqBase = null;
             this.controlBtn2._PlcDevice = "MFC_Pre01_Open_MC_N2";
@@ -4827,6 +5284,7 @@
             this.controlBtn2._PlcDisplayOnDevice = "MFC_Pre01_Open_MC_N2";
             this.controlBtn2._ReadOnly = false;
             this.controlBtn2._Reverse = false;
+            this.controlBtn2._ShowMsg = false;
             this.controlBtn2._Text = "ON";
             this.controlBtn2.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn2.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -4839,6 +5297,7 @@
             // 
             // controlBtn1
             // 
+            this.controlBtn1._AutoOff = false;
             this.controlBtn1._CurrentStatus = false;
             this.controlBtn1._EqBase = null;
             this.controlBtn1._PlcDevice = "MFC_Pre02_Open_MC_O2";
@@ -4846,6 +5305,7 @@
             this.controlBtn1._PlcDisplayOnDevice = "MFC_Pre02_Open_MC_O2";
             this.controlBtn1._ReadOnly = false;
             this.controlBtn1._Reverse = false;
+            this.controlBtn1._ShowMsg = false;
             this.controlBtn1._Text = "ON";
             this.controlBtn1.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn1.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -4858,6 +5318,7 @@
             // 
             // controlBtn5
             // 
+            this.controlBtn5._AutoOff = false;
             this.controlBtn5._CurrentStatus = false;
             this.controlBtn5._EqBase = null;
             this.controlBtn5._PlcDevice = "MFC_Pre03_Open_MC_Ar";
@@ -4865,6 +5326,7 @@
             this.controlBtn5._PlcDisplayOnDevice = "MFC_Pre03_Open_MC_Ar";
             this.controlBtn5._ReadOnly = false;
             this.controlBtn5._Reverse = false;
+            this.controlBtn5._ShowMsg = false;
             this.controlBtn5._Text = "ON";
             this.controlBtn5.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn5.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5113,145 +5575,9 @@
             this.inputTextBox29.TabIndex = 2415;
             this.inputTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Label60
-            // 
-            this.Label60.AutoSize = true;
-            this.Label60.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label60.Location = new System.Drawing.Point(392, 273);
-            this.Label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label60.Name = "Label60";
-            this.Label60.Size = new System.Drawing.Size(67, 18);
-            this.Label60.TabIndex = 2051;
-            this.Label60.Text = "M3_4 Ar";
-            // 
-            // Label87
-            // 
-            this.Label87.AutoSize = true;
-            this.Label87.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label87.Location = new System.Drawing.Point(392, 214);
-            this.Label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label87.Name = "Label87";
-            this.Label87.Size = new System.Drawing.Size(73, 18);
-            this.Label87.TabIndex = 2050;
-            this.Label87.Text = "M3_3 O2";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Arial", 12F);
-            this.label56.Location = new System.Drawing.Point(28, 202);
-            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(52, 18);
-            this.label56.TabIndex = 2047;
-            this.label56.Text = "H2 N2";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Arial", 12F);
-            this.label59.Location = new System.Drawing.Point(28, 141);
-            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(53, 18);
-            this.label59.TabIndex = 2046;
-            this.label59.Text = "H2 O2";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Arial", 12F);
-            this.label99.Location = new System.Drawing.Point(33, 75);
-            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(47, 18);
-            this.label99.TabIndex = 2045;
-            this.label99.Text = "H2 Ar";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.controlBtn15);
-            this.tabPage4.Controls.Add(this.controlBtn14);
-            this.tabPage4.Controls.Add(this.controlBtn13);
-            this.tabPage4.Controls.Add(this.controlBtn12);
-            this.tabPage4.Controls.Add(this.controlBtn9);
-            this.tabPage4.Controls.Add(this.controlBtn8);
-            this.tabPage4.Controls.Add(this.displayTextBox44);
-            this.tabPage4.Controls.Add(this.displayTextBox45);
-            this.tabPage4.Controls.Add(this.displayTextBox46);
-            this.tabPage4.Controls.Add(this.displayTextBox47);
-            this.tabPage4.Controls.Add(this.displayTextBox40);
-            this.tabPage4.Controls.Add(this.displayTextBox41);
-            this.tabPage4.Controls.Add(this.displayTextBox42);
-            this.tabPage4.Controls.Add(this.displayTextBox43);
-            this.tabPage4.Controls.Add(this.displayTextBox36);
-            this.tabPage4.Controls.Add(this.displayTextBox37);
-            this.tabPage4.Controls.Add(this.displayTextBox38);
-            this.tabPage4.Controls.Add(this.displayTextBox39);
-            this.tabPage4.Controls.Add(this.displayTextBox32);
-            this.tabPage4.Controls.Add(this.displayTextBox33);
-            this.tabPage4.Controls.Add(this.displayTextBox34);
-            this.tabPage4.Controls.Add(this.displayTextBox35);
-            this.tabPage4.Controls.Add(this.displayTextBox19);
-            this.tabPage4.Controls.Add(this.displayTextBox20);
-            this.tabPage4.Controls.Add(this.displayTextBox21);
-            this.tabPage4.Controls.Add(this.displayTextBox22);
-            this.tabPage4.Controls.Add(this.displayTextBox18);
-            this.tabPage4.Controls.Add(this.displayTextBox17);
-            this.tabPage4.Controls.Add(this.displayTextBox16);
-            this.tabPage4.Controls.Add(this.displayTextBox15);
-            this.tabPage4.Controls.Add(this.inputTextBox70);
-            this.tabPage4.Controls.Add(this.inputTextBox71);
-            this.tabPage4.Controls.Add(this.inputTextBox72);
-            this.tabPage4.Controls.Add(this.inputTextBox73);
-            this.tabPage4.Controls.Add(this.inputTextBox66);
-            this.tabPage4.Controls.Add(this.inputTextBox67);
-            this.tabPage4.Controls.Add(this.inputTextBox68);
-            this.tabPage4.Controls.Add(this.inputTextBox69);
-            this.tabPage4.Controls.Add(this.inputTextBox62);
-            this.tabPage4.Controls.Add(this.inputTextBox63);
-            this.tabPage4.Controls.Add(this.inputTextBox64);
-            this.tabPage4.Controls.Add(this.inputTextBox65);
-            this.tabPage4.Controls.Add(this.inputTextBox58);
-            this.tabPage4.Controls.Add(this.inputTextBox59);
-            this.tabPage4.Controls.Add(this.inputTextBox60);
-            this.tabPage4.Controls.Add(this.inputTextBox61);
-            this.tabPage4.Controls.Add(this.inputTextBox46);
-            this.tabPage4.Controls.Add(this.inputTextBox47);
-            this.tabPage4.Controls.Add(this.inputTextBox48);
-            this.tabPage4.Controls.Add(this.inputTextBox49);
-            this.tabPage4.Controls.Add(this.inputTextBox45);
-            this.tabPage4.Controls.Add(this.inputTextBox44);
-            this.tabPage4.Controls.Add(this.inputTextBox43);
-            this.tabPage4.Controls.Add(this.inputTextBox42);
-            this.tabPage4.Controls.Add(this.GroupBox1);
-            this.tabPage4.Controls.Add(this.Label229);
-            this.tabPage4.Controls.Add(this.TxtRecipeName);
-            this.tabPage4.Controls.Add(this.Label228);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.Label83);
-            this.tabPage4.Controls.Add(this.label11);
-            this.tabPage4.Controls.Add(this.label12);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.label54);
-            this.tabPage4.Controls.Add(this.label55);
-            this.tabPage4.Controls.Add(this.Label8);
-            this.tabPage4.Controls.Add(this.Label7);
-            this.tabPage4.Controls.Add(this.Label6);
-            this.tabPage4.Controls.Add(this.Label5);
-            this.tabPage4.Location = new System.Drawing.Point(4, 26);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1279, 663);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Power Supply";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // controlBtn15
             // 
+            this.controlBtn15._AutoOff = false;
             this.controlBtn15._CurrentStatus = false;
             this.controlBtn15._EqBase = null;
             this.controlBtn15._PlcDevice = "DC4_ON_YMC";
@@ -5259,6 +5585,7 @@
             this.controlBtn15._PlcDisplayOnDevice = "DC4_ON_YMC";
             this.controlBtn15._ReadOnly = false;
             this.controlBtn15._Reverse = false;
+            this.controlBtn15._ShowMsg = false;
             this.controlBtn15._Text = "啟動";
             this.controlBtn15.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn15.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5271,6 +5598,7 @@
             // 
             // controlBtn14
             // 
+            this.controlBtn14._AutoOff = false;
             this.controlBtn14._CurrentStatus = false;
             this.controlBtn14._EqBase = null;
             this.controlBtn14._PlcDevice = "DC3_ON_YMC";
@@ -5278,6 +5606,7 @@
             this.controlBtn14._PlcDisplayOnDevice = "DC3_ON_YMC";
             this.controlBtn14._ReadOnly = false;
             this.controlBtn14._Reverse = false;
+            this.controlBtn14._ShowMsg = false;
             this.controlBtn14._Text = "啟動";
             this.controlBtn14.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn14.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5290,6 +5619,7 @@
             // 
             // controlBtn13
             // 
+            this.controlBtn13._AutoOff = false;
             this.controlBtn13._CurrentStatus = false;
             this.controlBtn13._EqBase = null;
             this.controlBtn13._PlcDevice = "DC2_ON_YMC";
@@ -5297,6 +5627,7 @@
             this.controlBtn13._PlcDisplayOnDevice = "DC2_ON_YMC";
             this.controlBtn13._ReadOnly = false;
             this.controlBtn13._Reverse = false;
+            this.controlBtn13._ShowMsg = false;
             this.controlBtn13._Text = "啟動";
             this.controlBtn13.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn13.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5309,6 +5640,7 @@
             // 
             // controlBtn12
             // 
+            this.controlBtn12._AutoOff = false;
             this.controlBtn12._CurrentStatus = false;
             this.controlBtn12._EqBase = null;
             this.controlBtn12._PlcDevice = "DC1_ON_YMC";
@@ -5316,6 +5648,7 @@
             this.controlBtn12._PlcDisplayOnDevice = "DC1_ON_YMC";
             this.controlBtn12._ReadOnly = false;
             this.controlBtn12._Reverse = false;
+            this.controlBtn12._ShowMsg = false;
             this.controlBtn12._Text = "啟動";
             this.controlBtn12.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn12.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5328,6 +5661,7 @@
             // 
             // controlBtn9
             // 
+            this.controlBtn9._AutoOff = false;
             this.controlBtn9._CurrentStatus = false;
             this.controlBtn9._EqBase = null;
             this.controlBtn9._PlcDevice = "MF2_ON_YMC";
@@ -5335,6 +5669,7 @@
             this.controlBtn9._PlcDisplayOnDevice = "MF2_ON_YMC";
             this.controlBtn9._ReadOnly = false;
             this.controlBtn9._Reverse = false;
+            this.controlBtn9._ShowMsg = false;
             this.controlBtn9._Text = "啟動";
             this.controlBtn9.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn9.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -5347,6 +5682,7 @@
             // 
             // controlBtn8
             // 
+            this.controlBtn8._AutoOff = false;
             this.controlBtn8._CurrentStatus = false;
             this.controlBtn8._EqBase = null;
             this.controlBtn8._PlcDevice = "MF1_ON_YMC";
@@ -5354,6 +5690,7 @@
             this.controlBtn8._PlcDisplayOnDevice = "MF1_ON_YMC";
             this.controlBtn8._ReadOnly = false;
             this.controlBtn8._Reverse = false;
+            this.controlBtn8._ShowMsg = false;
             this.controlBtn8._Text = "啟動";
             this.controlBtn8.BackColor = System.Drawing.Color.Transparent;
             this.controlBtn8.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -6180,27 +6517,6 @@
             this.inputTextBox42.TabIndex = 2475;
             this.inputTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // GroupBox1
-            // 
-            this.GroupBox1.Controls.Add(this.inputTextBox41);
-            this.GroupBox1.Controls.Add(this.inputTextBox40);
-            this.GroupBox1.Controls.Add(this.inputTextBox39);
-            this.GroupBox1.Controls.Add(this.inputTextBox38);
-            this.GroupBox1.Controls.Add(this.inputTextBox37);
-            this.GroupBox1.Controls.Add(this.inputTextBox36);
-            this.GroupBox1.Controls.Add(this.Label246);
-            this.GroupBox1.Controls.Add(this.Label245);
-            this.GroupBox1.Controls.Add(this.Label244);
-            this.GroupBox1.Controls.Add(this.Label243);
-            this.GroupBox1.Controls.Add(this.Label242);
-            this.GroupBox1.Controls.Add(this.Label241);
-            this.GroupBox1.Location = new System.Drawing.Point(848, 66);
-            this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(222, 331);
-            this.GroupBox1.TabIndex = 2474;
-            this.GroupBox1.TabStop = false;
-            this.GroupBox1.Text = "Pre Sputter time (Sec)";
-            // 
             // inputTextBox41
             // 
             this.inputTextBox41._Division = 1;
@@ -6303,235 +6619,17 @@
             this.inputTextBox36.TabIndex = 2475;
             this.inputTextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Label246
-            // 
-            this.Label246.AutoSize = true;
-            this.Label246.Location = new System.Drawing.Point(25, 272);
-            this.Label246.Name = "Label246";
-            this.Label246.Size = new System.Drawing.Size(49, 17);
-            this.Label246.TabIndex = 2085;
-            this.Label246.Text = "DC4_2";
-            // 
-            // Label245
-            // 
-            this.Label245.AutoSize = true;
-            this.Label245.Location = new System.Drawing.Point(25, 227);
-            this.Label245.Name = "Label245";
-            this.Label245.Size = new System.Drawing.Size(49, 17);
-            this.Label245.TabIndex = 2083;
-            this.Label245.Text = "DC4_1";
-            // 
-            // Label244
-            // 
-            this.Label244.AutoSize = true;
-            this.Label244.Location = new System.Drawing.Point(25, 182);
-            this.Label244.Name = "Label244";
-            this.Label244.Size = new System.Drawing.Size(49, 17);
-            this.Label244.TabIndex = 2081;
-            this.Label244.Text = "DC3_2";
-            // 
-            // Label243
-            // 
-            this.Label243.AutoSize = true;
-            this.Label243.Location = new System.Drawing.Point(25, 137);
-            this.Label243.Name = "Label243";
-            this.Label243.Size = new System.Drawing.Size(49, 17);
-            this.Label243.TabIndex = 2079;
-            this.Label243.Text = "DC3_1";
-            // 
-            // Label242
-            // 
-            this.Label242.AutoSize = true;
-            this.Label242.Location = new System.Drawing.Point(25, 92);
-            this.Label242.Name = "Label242";
-            this.Label242.Size = new System.Drawing.Size(50, 17);
-            this.Label242.TabIndex = 2077;
-            this.Label242.Text = "MF2_1";
-            // 
-            // Label241
-            // 
-            this.Label241.AutoSize = true;
-            this.Label241.Location = new System.Drawing.Point(25, 47);
-            this.Label241.Name = "Label241";
-            this.Label241.Size = new System.Drawing.Size(50, 17);
-            this.Label241.TabIndex = 2075;
-            this.Label241.Text = "MF1_1";
-            // 
-            // Label229
-            // 
-            this.Label229.AutoSize = true;
-            this.Label229.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label229.Location = new System.Drawing.Point(28, 24);
-            this.Label229.Name = "Label229";
-            this.Label229.Size = new System.Drawing.Size(135, 18);
-            this.Label229.TabIndex = 2473;
-            this.Label229.Text = "製程 匯入 配方：";
-            // 
-            // TxtRecipeName
-            // 
-            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
-            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TxtRecipeName.Location = new System.Drawing.Point(179, 20);
-            this.TxtRecipeName.Name = "TxtRecipeName";
-            this.TxtRecipeName.ReadOnly = true;
-            this.TxtRecipeName.Size = new System.Drawing.Size(430, 25);
-            this.TxtRecipeName.TabIndex = 2472;
-            this.TxtRecipeName.Text = "N/A";
-            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Label228
-            // 
-            this.Label228.AutoSize = true;
-            this.Label228.Location = new System.Drawing.Point(30, 206);
-            this.Label228.Name = "Label228";
-            this.Label228.Size = new System.Drawing.Size(106, 17);
-            this.Label228.TabIndex = 2471;
-            this.Label228.Text = "Pre_Sputter(sec)";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(270, 61);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 17);
-            this.label9.TabIndex = 2469;
-            this.label9.Text = "MF2 (10kw)";
-            // 
-            // Label83
-            // 
-            this.Label83.AutoSize = true;
-            this.Label83.ForeColor = System.Drawing.Color.Black;
-            this.Label83.Location = new System.Drawing.Point(151, 61);
-            this.Label83.Name = "Label83";
-            this.Label83.Size = new System.Drawing.Size(80, 17);
-            this.Label83.TabIndex = 2467;
-            this.Label83.Text = "MF1 (10kw)";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(29, 426);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 17);
-            this.label11.TabIndex = 2466;
-            this.label11.Text = "啟動 / 關閉";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(30, 330);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 17);
-            this.label12.TabIndex = 2465;
-            this.label12.Text = "實際電壓 (v)";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(30, 375);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 17);
-            this.label13.TabIndex = 2464;
-            this.label13.Text = "實際電流 (A)";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(30, 288);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 17);
-            this.label14.TabIndex = 2463;
-            this.label14.Text = "實際功率 (kw)";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(29, 90);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(88, 17);
-            this.label15.TabIndex = 2459;
-            this.label15.Text = "開始功率 (kw)";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(29, 127);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 17);
-            this.label16.TabIndex = 2460;
-            this.label16.Text = "結束功率 (kw)";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(30, 248);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(88, 17);
-            this.label54.TabIndex = 2462;
-            this.label54.Text = "設定功率 (kw)";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(30, 170);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(88, 17);
-            this.label55.TabIndex = 2461;
-            this.label55.Text = "製程功率 (kw)";
-            // 
-            // Label8
-            // 
-            this.Label8.AutoSize = true;
-            this.Label8.ForeColor = System.Drawing.Color.Black;
-            this.Label8.Location = new System.Drawing.Point(617, 61);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(90, 17);
-            this.Label8.TabIndex = 2449;
-            this.Label8.Text = "DC4_1(20kw)";
-            // 
-            // Label7
-            // 
-            this.Label7.AutoSize = true;
-            this.Label7.ForeColor = System.Drawing.Color.Black;
-            this.Label7.Location = new System.Drawing.Point(734, 61);
-            this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(90, 17);
-            this.Label7.TabIndex = 2448;
-            this.Label7.Text = "DC4_2(20kw)";
-            // 
-            // Label6
-            // 
-            this.Label6.AutoSize = true;
-            this.Label6.ForeColor = System.Drawing.Color.Black;
-            this.Label6.Location = new System.Drawing.Point(390, 61);
-            this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(90, 17);
-            this.Label6.TabIndex = 2447;
-            this.Label6.Text = "DC3_1(20kw)";
-            // 
-            // Label5
-            // 
-            this.Label5.AutoSize = true;
-            this.Label5.ForeColor = System.Drawing.Color.Black;
-            this.Label5.Location = new System.Drawing.Point(503, 61);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(90, 17);
-            this.Label5.TabIndex = 2446;
-            this.Label5.Text = "DC3_2(20kw)";
-            // 
             // frmGasview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1320, 725);
-            this.Controls.Add(this.TabControl1);
+            this.Controls.Add(this.TabControl_Main);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmGasview";
             this.Text = "Gasview";
-            this.Shown += new System.EventHandler(this.frmOverview_Shown);
+            this.Shown += new System.EventHandler(this.frmGasview_Shown);
             this.Panel10.ResumeLayout(false);
             this.Panel10.PerformLayout();
             this.Panel11.ResumeLayout(false);
@@ -6596,9 +6694,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
-            this.TabControl1.ResumeLayout(false);
+            this.TabControl_Main.ResumeLayout(false);
             this.TabPage1.ResumeLayout(false);
             this.TabPage1.PerformLayout();
+            this.TabPage2.ResumeLayout(false);
+            this.TabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.GroupBox1.ResumeLayout(false);
+            this.GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject30)).EndInit();
@@ -6635,14 +6741,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.plcObject3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject1)).EndInit();
-            this.TabPage2.ResumeLayout(false);
-            this.TabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.GroupBox1.ResumeLayout(false);
-            this.GroupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -6971,7 +7069,7 @@
         private components.InputTextBox inputTextBox26;
         private components.InputTextBox inputTextBox27;
         private components.InputTextBox inputTextBox28;
-        internal System.Windows.Forms.TabControl TabControl1;
+        internal System.Windows.Forms.TabControl TabControl_Main;
         internal System.Windows.Forms.TabPage TabPage1;
         internal System.Windows.Forms.TabPage TabPage2;
         private System.Windows.Forms.TabPage tabPage3;

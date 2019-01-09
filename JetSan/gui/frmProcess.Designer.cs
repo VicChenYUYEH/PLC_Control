@@ -242,7 +242,7 @@
             this.Label207 = new System.Windows.Forms.Label();
             this.Label195 = new System.Windows.Forms.Label();
             this.Label194 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControl_Main = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.controlBtn30 = new HyTemplate.components.ControlBtn();
@@ -552,7 +552,7 @@
             this.ADD_Panel_2.SuspendLayout();
             this.ADD_Panel_4.SuspendLayout();
             this.ADD_Panel_3.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabControl_Main.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.plcObject23)).BeginInit();
@@ -2563,15 +2563,15 @@
             this.Label194.TabIndex = 2651;
             this.Label194.Text = "Ar (500sccm)";
             // 
-            // tabControl1
+            // tabControl_Main
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1451, 889);
-            this.tabControl1.TabIndex = 2675;
+            this.tabControl_Main.Controls.Add(this.tabPage1);
+            this.tabControl_Main.Controls.Add(this.tabPage2);
+            this.tabControl_Main.Location = new System.Drawing.Point(12, 3);
+            this.tabControl_Main.Name = "tabControl_Main";
+            this.tabControl_Main.SelectedIndex = 0;
+            this.tabControl_Main.Size = new System.Drawing.Size(1451, 889);
+            this.tabControl_Main.TabIndex = 2675;
             // 
             // tabPage1
             // 
@@ -7961,7 +7961,7 @@
             this.inputTextBox44._Multiplication = 1;
             this.inputTextBox44._NumberOnly = true;
             this.inputTextBox44._PlcDevice = "MF1_Proc_STEP";
-            this.inputTextBox44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.inputTextBox44.BackColor = System.Drawing.Color.White;
             this.inputTextBox44.Location = new System.Drawing.Point(525, 288);
             this.inputTextBox44.Name = "inputTextBox44";
             this.inputTextBox44.Size = new System.Drawing.Size(76, 25);
@@ -7973,7 +7973,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1475, 906);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl_Main);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProcess";
@@ -7989,7 +7989,7 @@
             this.ADD_Panel_4.PerformLayout();
             this.ADD_Panel_3.ResumeLayout(false);
             this.ADD_Panel_3.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControl_Main.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
@@ -8341,7 +8341,7 @@
         internal System.Windows.Forms.Label Label207;
         internal System.Windows.Forms.Label Label195;
         internal System.Windows.Forms.Label Label194;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControl_Main;
         private System.Windows.Forms.TabPage tabPage1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
         private System.Windows.Forms.TabPage tabPage2;

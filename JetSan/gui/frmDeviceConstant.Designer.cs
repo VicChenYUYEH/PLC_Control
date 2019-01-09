@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
-            this.TabControl1 = new System.Windows.Forms.TabControl();
+            this.TabControl_Main = new System.Windows.Forms.TabControl();
             this.TabPage1 = new System.Windows.Forms.TabPage();
             this.inputTextBox16 = new HyTemplate.components.InputTextBox();
             this.inputTextBox15 = new HyTemplate.components.InputTextBox();
@@ -154,6 +154,8 @@
             this.Label20 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.TabPage2 = new System.Windows.Forms.TabPage();
+            this.inputTextBox61 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox60 = new HyTemplate.components.InputTextBox();
             this.TableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Label86 = new System.Windows.Forms.Label();
             this.Label87 = new System.Windows.Forms.Label();
@@ -195,11 +197,9 @@
             this.Label51 = new System.Windows.Forms.Label();
             this.Label50 = new System.Windows.Forms.Label();
             this.Label49 = new System.Windows.Forms.Label();
-            this.inputTextBox60 = new HyTemplate.components.InputTextBox();
             this.Label112 = new System.Windows.Forms.Label();
-            this.Label89 = new System.Windows.Forms.Label();
             this.Label110 = new System.Windows.Forms.Label();
-            this.inputTextBox61 = new HyTemplate.components.InputTextBox();
+            this.Label89 = new System.Windows.Forms.Label();
             this.GroupBox5 = new System.Windows.Forms.GroupBox();
             this.inputTextBox65 = new HyTemplate.components.InputTextBox();
             this.inputTextBox64 = new HyTemplate.components.InputTextBox();
@@ -341,7 +341,7 @@
             this.Label13 = new System.Windows.Forms.Label();
             this.Label14 = new System.Windows.Forms.Label();
             this.Label15 = new System.Windows.Forms.Label();
-            this.TabControl1.SuspendLayout();
+            this.TabControl_Main.SuspendLayout();
             this.TabPage1.SuspendLayout();
             this.GroupBox4.SuspendLayout();
             this.TabPage2.SuspendLayout();
@@ -362,16 +362,16 @@
             this.timerStatus.Interval = 200;
             this.timerStatus.Tick += new System.EventHandler(this.timerStatus_Tick);
             // 
-            // TabControl1
+            // TabControl_Main
             // 
-            this.TabControl1.Controls.Add(this.TabPage1);
-            this.TabControl1.Controls.Add(this.TabPage2);
-            this.TabControl1.Controls.Add(this.tabPage3);
-            this.TabControl1.Location = new System.Drawing.Point(12, 12);
-            this.TabControl1.Name = "TabControl1";
-            this.TabControl1.SelectedIndex = 0;
-            this.TabControl1.Size = new System.Drawing.Size(1464, 693);
-            this.TabControl1.TabIndex = 2447;
+            this.TabControl_Main.Controls.Add(this.TabPage1);
+            this.TabControl_Main.Controls.Add(this.TabPage2);
+            this.TabControl_Main.Controls.Add(this.tabPage3);
+            this.TabControl_Main.Location = new System.Drawing.Point(12, 12);
+            this.TabControl_Main.Name = "TabControl_Main";
+            this.TabControl_Main.SelectedIndex = 0;
+            this.TabControl_Main.Size = new System.Drawing.Size(1464, 693);
+            this.TabControl_Main.TabIndex = 2447;
             // 
             // TabPage1
             // 
@@ -1309,6 +1309,7 @@
             // 
             // controlBtn1
             // 
+            this.controlBtn1._AutoOff = false;
             this.controlBtn1._CurrentStatus = false;
             this.controlBtn1._EqBase = null;
             this.controlBtn1._PlcDevice = "TP14_Bypass";
@@ -1330,6 +1331,7 @@
             // 
             // controlBtn6
             // 
+            this.controlBtn6._AutoOff = false;
             this.controlBtn6._CurrentStatus = false;
             this.controlBtn6._EqBase = null;
             this.controlBtn6._PlcDevice = "TP17_Bypass";
@@ -1405,6 +1407,7 @@
             // 
             // controlBtn18
             // 
+            this.controlBtn18._AutoOff = false;
             this.controlBtn18._CurrentStatus = false;
             this.controlBtn18._EqBase = null;
             this.controlBtn18._PlcDevice = "TP24_Bypass";
@@ -1516,6 +1519,7 @@
             // 
             // controlBtn23
             // 
+            this.controlBtn23._AutoOff = false;
             this.controlBtn23._CurrentStatus = false;
             this.controlBtn23._EqBase = null;
             this.controlBtn23._PlcDevice = "TP5_Bypass";
@@ -1537,6 +1541,7 @@
             // 
             // controlBtn13
             // 
+            this.controlBtn13._AutoOff = false;
             this.controlBtn13._CurrentStatus = false;
             this.controlBtn13._EqBase = null;
             this.controlBtn13._PlcDevice = "TP21_Bypass";
@@ -1648,6 +1653,7 @@
             // 
             // controlBtn12
             // 
+            this.controlBtn12._AutoOff = false;
             this.controlBtn12._CurrentStatus = false;
             this.controlBtn12._EqBase = null;
             this.controlBtn12._PlcDevice = "TP25_Bypass";
@@ -1669,6 +1675,7 @@
             // 
             // controlBtn14
             // 
+            this.controlBtn14._AutoOff = false;
             this.controlBtn14._CurrentStatus = false;
             this.controlBtn14._EqBase = null;
             this.controlBtn14._PlcDevice = "TP22_Bypass";
@@ -1690,6 +1697,7 @@
             // 
             // controlBtn9
             // 
+            this.controlBtn9._AutoOff = false;
             this.controlBtn9._CurrentStatus = false;
             this.controlBtn9._EqBase = null;
             this.controlBtn9._PlcDevice = "TP15_Bypass";
@@ -1711,6 +1719,7 @@
             // 
             // controlBtn22
             // 
+            this.controlBtn22._AutoOff = false;
             this.controlBtn22._CurrentStatus = false;
             this.controlBtn22._EqBase = null;
             this.controlBtn22._PlcDevice = "TP2_Bypass";
@@ -1768,6 +1777,7 @@
             // 
             // controlBtn15
             // 
+            this.controlBtn15._AutoOff = false;
             this.controlBtn15._CurrentStatus = false;
             this.controlBtn15._EqBase = null;
             this.controlBtn15._PlcDevice = "TP26_Bypass";
@@ -1807,6 +1817,7 @@
             // 
             // controlBtn24
             // 
+            this.controlBtn24._AutoOff = false;
             this.controlBtn24._CurrentStatus = false;
             this.controlBtn24._EqBase = null;
             this.controlBtn24._PlcDevice = "TP8_Bypass";
@@ -1828,6 +1839,7 @@
             // 
             // controlBtn19
             // 
+            this.controlBtn19._AutoOff = false;
             this.controlBtn19._CurrentStatus = false;
             this.controlBtn19._EqBase = null;
             this.controlBtn19._PlcDevice = "TP3_Bypass";
@@ -1849,6 +1861,7 @@
             // 
             // controlBtn3
             // 
+            this.controlBtn3._AutoOff = false;
             this.controlBtn3._CurrentStatus = false;
             this.controlBtn3._EqBase = null;
             this.controlBtn3._PlcDevice = "TP16_Bypass";
@@ -1870,6 +1883,7 @@
             // 
             // controlBtn20
             // 
+            this.controlBtn20._AutoOff = false;
             this.controlBtn20._CurrentStatus = false;
             this.controlBtn20._EqBase = null;
             this.controlBtn20._PlcDevice = "TP6_Bypass";
@@ -1909,6 +1923,7 @@
             // 
             // controlBtn5
             // 
+            this.controlBtn5._AutoOff = false;
             this.controlBtn5._CurrentStatus = false;
             this.controlBtn5._EqBase = null;
             this.controlBtn5._PlcDevice = "TP13_Bypass";
@@ -1948,6 +1963,7 @@
             // 
             // controlBtn7
             // 
+            this.controlBtn7._AutoOff = false;
             this.controlBtn7._CurrentStatus = false;
             this.controlBtn7._EqBase = null;
             this.controlBtn7._PlcDevice = "TP10_Bypass";
@@ -1969,6 +1985,7 @@
             // 
             // controlBtn2
             // 
+            this.controlBtn2._AutoOff = false;
             this.controlBtn2._CurrentStatus = false;
             this.controlBtn2._EqBase = null;
             this.controlBtn2._PlcDevice = "TP18_Bypass";
@@ -2078,6 +2095,7 @@
             // 
             // controlBtn26
             // 
+            this.controlBtn26._AutoOff = false;
             this.controlBtn26._CurrentStatus = false;
             this.controlBtn26._EqBase = null;
             this.controlBtn26._PlcDevice = "TP4_Bypass";
@@ -2117,6 +2135,7 @@
             // 
             // controlBtn16
             // 
+            this.controlBtn16._AutoOff = false;
             this.controlBtn16._CurrentStatus = false;
             this.controlBtn16._EqBase = null;
             this.controlBtn16._PlcDevice = "TP19_Bypass";
@@ -2156,6 +2175,7 @@
             // 
             // controlBtn27
             // 
+            this.controlBtn27._AutoOff = false;
             this.controlBtn27._CurrentStatus = false;
             this.controlBtn27._EqBase = null;
             this.controlBtn27._PlcDevice = "TP1_Bypass";
@@ -2177,6 +2197,7 @@
             // 
             // controlBtn25
             // 
+            this.controlBtn25._AutoOff = false;
             this.controlBtn25._CurrentStatus = false;
             this.controlBtn25._EqBase = null;
             this.controlBtn25._PlcDevice = "TP9_Bypass";
@@ -2216,6 +2237,7 @@
             // 
             // controlBtn4
             // 
+            this.controlBtn4._AutoOff = false;
             this.controlBtn4._CurrentStatus = false;
             this.controlBtn4._EqBase = null;
             this.controlBtn4._PlcDevice = "TP12_Bypass";
@@ -2255,6 +2277,7 @@
             // 
             // controlBtn8
             // 
+            this.controlBtn8._AutoOff = false;
             this.controlBtn8._CurrentStatus = false;
             this.controlBtn8._EqBase = null;
             this.controlBtn8._PlcDevice = "TP11_Bypass";
@@ -2276,6 +2299,7 @@
             // 
             // controlBtn21
             // 
+            this.controlBtn21._AutoOff = false;
             this.controlBtn21._CurrentStatus = false;
             this.controlBtn21._EqBase = null;
             this.controlBtn21._PlcDevice = "TP7_Bypass";
@@ -2315,6 +2339,7 @@
             // 
             // controlBtn10
             // 
+            this.controlBtn10._AutoOff = false;
             this.controlBtn10._CurrentStatus = false;
             this.controlBtn10._EqBase = null;
             this.controlBtn10._PlcDevice = "TP23_Bypass";
@@ -2336,6 +2361,7 @@
             // 
             // controlBtn17
             // 
+            this.controlBtn17._AutoOff = false;
             this.controlBtn17._CurrentStatus = false;
             this.controlBtn17._EqBase = null;
             this.controlBtn17._PlcDevice = "TP20_Bypass";
@@ -2589,6 +2615,44 @@
             this.TabPage2.Text = "參數設定(2)";
             this.TabPage2.UseVisualStyleBackColor = true;
             // 
+            // inputTextBox61
+            // 
+            this.inputTextBox61._Division = 1;
+            this.inputTextBox61._EqBase = null;
+            this.inputTextBox61._FloatNumber = false;
+            this.inputTextBox61._MaxLimit = 7D;
+            this.inputTextBox61._MinLimit = 1D;
+            this.inputTextBox61._Multiplication = 1;
+            this.inputTextBox61._NumberOnly = true;
+            this.inputTextBox61._PlcDevice = "MF1_Power_TAP_Select";
+            this.inputTextBox61.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputTextBox61.BackColor = System.Drawing.Color.White;
+            this.inputTextBox61.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox61.Location = new System.Drawing.Point(837, 103);
+            this.inputTextBox61.Name = "inputTextBox61";
+            this.inputTextBox61.Size = new System.Drawing.Size(84, 25);
+            this.inputTextBox61.TabIndex = 2173;
+            this.inputTextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox60
+            // 
+            this.inputTextBox60._Division = 1;
+            this.inputTextBox60._EqBase = null;
+            this.inputTextBox60._FloatNumber = false;
+            this.inputTextBox60._MaxLimit = 7D;
+            this.inputTextBox60._MinLimit = 1D;
+            this.inputTextBox60._Multiplication = 1;
+            this.inputTextBox60._NumberOnly = true;
+            this.inputTextBox60._PlcDevice = "MF2_Power_TAP_Select";
+            this.inputTextBox60.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputTextBox60.BackColor = System.Drawing.Color.White;
+            this.inputTextBox60.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.inputTextBox60.Location = new System.Drawing.Point(837, 140);
+            this.inputTextBox60.Name = "inputTextBox60";
+            this.inputTextBox60.Size = new System.Drawing.Size(84, 25);
+            this.inputTextBox60.TabIndex = 2172;
+            this.inputTextBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // TableLayoutPanel1
             // 
             this.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
@@ -2597,7 +2661,7 @@
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.48837F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
-            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
+            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
             this.TableLayoutPanel1.Controls.Add(this.Label86, 4, 7);
             this.TableLayoutPanel1.Controls.Add(this.Label87, 3, 7);
@@ -2657,7 +2721,7 @@
             // 
             this.Label86.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label86.AutoSize = true;
-            this.Label86.Location = new System.Drawing.Point(465, 229);
+            this.Label86.Location = new System.Drawing.Point(462, 229);
             this.Label86.Name = "Label86";
             this.Label86.Size = new System.Drawing.Size(115, 17);
             this.Label86.TabIndex = 401;
@@ -2667,7 +2731,7 @@
             // 
             this.Label87.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label87.AutoSize = true;
-            this.Label87.Location = new System.Drawing.Point(314, 229);
+            this.Label87.Location = new System.Drawing.Point(308, 229);
             this.Label87.Name = "Label87";
             this.Label87.Size = new System.Drawing.Size(115, 17);
             this.Label87.TabIndex = 402;
@@ -2677,7 +2741,7 @@
             // 
             this.Label88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label88.AutoSize = true;
-            this.Label88.Location = new System.Drawing.Point(178, 229);
+            this.Label88.Location = new System.Drawing.Point(172, 229);
             this.Label88.Name = "Label88";
             this.Label88.Size = new System.Drawing.Size(115, 17);
             this.Label88.TabIndex = 403;
@@ -2687,7 +2751,7 @@
             // 
             this.Label85.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label85.AutoSize = true;
-            this.Label85.Location = new System.Drawing.Point(109, 229);
+            this.Label85.Location = new System.Drawing.Point(105, 229);
             this.Label85.Name = "Label85";
             this.Label85.Size = new System.Drawing.Size(35, 17);
             this.Label85.TabIndex = 393;
@@ -2697,7 +2761,7 @@
             // 
             this.Label84.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label84.AutoSize = true;
-            this.Label84.Location = new System.Drawing.Point(33, 229);
+            this.Label84.Location = new System.Drawing.Point(31, 229);
             this.Label84.Name = "Label84";
             this.Label84.Size = new System.Drawing.Size(16, 17);
             this.Label84.TabIndex = 384;
@@ -2707,7 +2771,7 @@
             // 
             this.Label78.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label78.AutoSize = true;
-            this.Label78.Location = new System.Drawing.Point(465, 200);
+            this.Label78.Location = new System.Drawing.Point(462, 200);
             this.Label78.Name = "Label78";
             this.Label78.Size = new System.Drawing.Size(115, 17);
             this.Label78.TabIndex = 400;
@@ -2717,7 +2781,7 @@
             // 
             this.Label79.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label79.AutoSize = true;
-            this.Label79.Location = new System.Drawing.Point(465, 168);
+            this.Label79.Location = new System.Drawing.Point(462, 168);
             this.Label79.Name = "Label79";
             this.Label79.Size = new System.Drawing.Size(115, 17);
             this.Label79.TabIndex = 401;
@@ -2727,7 +2791,7 @@
             // 
             this.Label60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label60.AutoSize = true;
-            this.Label60.Location = new System.Drawing.Point(314, 200);
+            this.Label60.Location = new System.Drawing.Point(308, 200);
             this.Label60.Name = "Label60";
             this.Label60.Size = new System.Drawing.Size(115, 17);
             this.Label60.TabIndex = 383;
@@ -2737,7 +2801,7 @@
             // 
             this.Label80.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label80.AutoSize = true;
-            this.Label80.Location = new System.Drawing.Point(465, 136);
+            this.Label80.Location = new System.Drawing.Point(462, 136);
             this.Label80.Name = "Label80";
             this.Label80.Size = new System.Drawing.Size(115, 17);
             this.Label80.TabIndex = 402;
@@ -2747,7 +2811,7 @@
             // 
             this.Label61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label61.AutoSize = true;
-            this.Label61.Location = new System.Drawing.Point(314, 168);
+            this.Label61.Location = new System.Drawing.Point(308, 168);
             this.Label61.Name = "Label61";
             this.Label61.Size = new System.Drawing.Size(115, 17);
             this.Label61.TabIndex = 384;
@@ -2757,7 +2821,7 @@
             // 
             this.Label81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label81.AutoSize = true;
-            this.Label81.Location = new System.Drawing.Point(465, 104);
+            this.Label81.Location = new System.Drawing.Point(462, 104);
             this.Label81.Name = "Label81";
             this.Label81.Size = new System.Drawing.Size(115, 17);
             this.Label81.TabIndex = 403;
@@ -2767,7 +2831,7 @@
             // 
             this.Label62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label62.AutoSize = true;
-            this.Label62.Location = new System.Drawing.Point(314, 136);
+            this.Label62.Location = new System.Drawing.Point(308, 136);
             this.Label62.Name = "Label62";
             this.Label62.Size = new System.Drawing.Size(115, 17);
             this.Label62.TabIndex = 385;
@@ -2777,7 +2841,7 @@
             // 
             this.Label82.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label82.AutoSize = true;
-            this.Label82.Location = new System.Drawing.Point(465, 72);
+            this.Label82.Location = new System.Drawing.Point(462, 72);
             this.Label82.Name = "Label82";
             this.Label82.Size = new System.Drawing.Size(115, 17);
             this.Label82.TabIndex = 404;
@@ -2787,7 +2851,7 @@
             // 
             this.Label63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label63.AutoSize = true;
-            this.Label63.Location = new System.Drawing.Point(314, 104);
+            this.Label63.Location = new System.Drawing.Point(308, 104);
             this.Label63.Name = "Label63";
             this.Label63.Size = new System.Drawing.Size(115, 17);
             this.Label63.TabIndex = 386;
@@ -2797,7 +2861,7 @@
             // 
             this.Label83.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label83.AutoSize = true;
-            this.Label83.Location = new System.Drawing.Point(465, 40);
+            this.Label83.Location = new System.Drawing.Point(462, 40);
             this.Label83.Name = "Label83";
             this.Label83.Size = new System.Drawing.Size(115, 17);
             this.Label83.TabIndex = 405;
@@ -2807,7 +2871,7 @@
             // 
             this.Label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label64.AutoSize = true;
-            this.Label64.Location = new System.Drawing.Point(314, 72);
+            this.Label64.Location = new System.Drawing.Point(308, 72);
             this.Label64.Name = "Label64";
             this.Label64.Size = new System.Drawing.Size(115, 17);
             this.Label64.TabIndex = 387;
@@ -2817,7 +2881,7 @@
             // 
             this.Label65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label65.AutoSize = true;
-            this.Label65.Location = new System.Drawing.Point(178, 200);
+            this.Label65.Location = new System.Drawing.Point(172, 200);
             this.Label65.Name = "Label65";
             this.Label65.Size = new System.Drawing.Size(115, 17);
             this.Label65.TabIndex = 388;
@@ -2827,7 +2891,7 @@
             // 
             this.Label66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label66.AutoSize = true;
-            this.Label66.Location = new System.Drawing.Point(178, 168);
+            this.Label66.Location = new System.Drawing.Point(172, 168);
             this.Label66.Name = "Label66";
             this.Label66.Size = new System.Drawing.Size(115, 17);
             this.Label66.TabIndex = 389;
@@ -2837,7 +2901,7 @@
             // 
             this.Label67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label67.AutoSize = true;
-            this.Label67.Location = new System.Drawing.Point(178, 136);
+            this.Label67.Location = new System.Drawing.Point(172, 136);
             this.Label67.Name = "Label67";
             this.Label67.Size = new System.Drawing.Size(115, 17);
             this.Label67.TabIndex = 390;
@@ -2847,7 +2911,7 @@
             // 
             this.Label68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label68.AutoSize = true;
-            this.Label68.Location = new System.Drawing.Point(178, 104);
+            this.Label68.Location = new System.Drawing.Point(172, 104);
             this.Label68.Name = "Label68";
             this.Label68.Size = new System.Drawing.Size(115, 17);
             this.Label68.TabIndex = 391;
@@ -2857,7 +2921,7 @@
             // 
             this.Label69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label69.AutoSize = true;
-            this.Label69.Location = new System.Drawing.Point(109, 200);
+            this.Label69.Location = new System.Drawing.Point(105, 200);
             this.Label69.Name = "Label69";
             this.Label69.Size = new System.Drawing.Size(35, 17);
             this.Label69.TabIndex = 392;
@@ -2867,7 +2931,7 @@
             // 
             this.Label70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label70.AutoSize = true;
-            this.Label70.Location = new System.Drawing.Point(178, 72);
+            this.Label70.Location = new System.Drawing.Point(172, 72);
             this.Label70.Name = "Label70";
             this.Label70.Size = new System.Drawing.Size(115, 17);
             this.Label70.TabIndex = 393;
@@ -2877,7 +2941,7 @@
             // 
             this.Label71.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label71.AutoSize = true;
-            this.Label71.Location = new System.Drawing.Point(109, 168);
+            this.Label71.Location = new System.Drawing.Point(105, 168);
             this.Label71.Name = "Label71";
             this.Label71.Size = new System.Drawing.Size(35, 17);
             this.Label71.TabIndex = 394;
@@ -2887,7 +2951,7 @@
             // 
             this.Label72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label72.AutoSize = true;
-            this.Label72.Location = new System.Drawing.Point(109, 136);
+            this.Label72.Location = new System.Drawing.Point(105, 136);
             this.Label72.Name = "Label72";
             this.Label72.Size = new System.Drawing.Size(35, 17);
             this.Label72.TabIndex = 395;
@@ -2897,7 +2961,7 @@
             // 
             this.Label73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label73.AutoSize = true;
-            this.Label73.Location = new System.Drawing.Point(109, 104);
+            this.Label73.Location = new System.Drawing.Point(105, 104);
             this.Label73.Name = "Label73";
             this.Label73.Size = new System.Drawing.Size(35, 17);
             this.Label73.TabIndex = 396;
@@ -2907,7 +2971,7 @@
             // 
             this.Label74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label74.AutoSize = true;
-            this.Label74.Location = new System.Drawing.Point(109, 72);
+            this.Label74.Location = new System.Drawing.Point(105, 72);
             this.Label74.Name = "Label74";
             this.Label74.Size = new System.Drawing.Size(35, 17);
             this.Label74.TabIndex = 397;
@@ -2917,7 +2981,7 @@
             // 
             this.Label75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label75.AutoSize = true;
-            this.Label75.Location = new System.Drawing.Point(109, 40);
+            this.Label75.Location = new System.Drawing.Point(105, 40);
             this.Label75.Name = "Label75";
             this.Label75.Size = new System.Drawing.Size(35, 17);
             this.Label75.TabIndex = 398;
@@ -2927,7 +2991,7 @@
             // 
             this.Label76.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label76.AutoSize = true;
-            this.Label76.Location = new System.Drawing.Point(314, 40);
+            this.Label76.Location = new System.Drawing.Point(308, 40);
             this.Label76.Name = "Label76";
             this.Label76.Size = new System.Drawing.Size(115, 17);
             this.Label76.TabIndex = 399;
@@ -2937,7 +3001,7 @@
             // 
             this.Label77.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label77.AutoSize = true;
-            this.Label77.Location = new System.Drawing.Point(182, 40);
+            this.Label77.Location = new System.Drawing.Point(176, 40);
             this.Label77.Name = "Label77";
             this.Label77.Size = new System.Drawing.Size(107, 17);
             this.Label77.TabIndex = 400;
@@ -2947,7 +3011,7 @@
             // 
             this.Label59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label59.AutoSize = true;
-            this.Label59.Location = new System.Drawing.Point(33, 200);
+            this.Label59.Location = new System.Drawing.Point(31, 200);
             this.Label59.Name = "Label59";
             this.Label59.Size = new System.Drawing.Size(16, 17);
             this.Label59.TabIndex = 383;
@@ -2957,7 +3021,7 @@
             // 
             this.Label58.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label58.AutoSize = true;
-            this.Label58.Location = new System.Drawing.Point(33, 168);
+            this.Label58.Location = new System.Drawing.Point(31, 168);
             this.Label58.Name = "Label58";
             this.Label58.Size = new System.Drawing.Size(16, 17);
             this.Label58.TabIndex = 383;
@@ -2967,7 +3031,7 @@
             // 
             this.Label57.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label57.AutoSize = true;
-            this.Label57.Location = new System.Drawing.Point(33, 136);
+            this.Label57.Location = new System.Drawing.Point(31, 136);
             this.Label57.Name = "Label57";
             this.Label57.Size = new System.Drawing.Size(16, 17);
             this.Label57.TabIndex = 383;
@@ -2977,7 +3041,7 @@
             // 
             this.Label56.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label56.AutoSize = true;
-            this.Label56.Location = new System.Drawing.Point(33, 104);
+            this.Label56.Location = new System.Drawing.Point(31, 104);
             this.Label56.Name = "Label56";
             this.Label56.Size = new System.Drawing.Size(16, 17);
             this.Label56.TabIndex = 383;
@@ -2987,7 +3051,7 @@
             // 
             this.Label55.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label55.AutoSize = true;
-            this.Label55.Location = new System.Drawing.Point(33, 72);
+            this.Label55.Location = new System.Drawing.Point(31, 72);
             this.Label55.Name = "Label55";
             this.Label55.Size = new System.Drawing.Size(16, 17);
             this.Label55.TabIndex = 383;
@@ -2997,7 +3061,7 @@
             // 
             this.Label54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label54.AutoSize = true;
-            this.Label54.Location = new System.Drawing.Point(33, 40);
+            this.Label54.Location = new System.Drawing.Point(31, 40);
             this.Label54.Name = "Label54";
             this.Label54.Size = new System.Drawing.Size(16, 17);
             this.Label54.TabIndex = 383;
@@ -3008,7 +3072,7 @@
             this.Label53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label53.AutoSize = true;
             this.Label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label53.Location = new System.Drawing.Point(472, 8);
+            this.Label53.Location = new System.Drawing.Point(469, 8);
             this.Label53.Name = "Label53";
             this.Label53.Size = new System.Drawing.Size(101, 17);
             this.Label53.TabIndex = 385;
@@ -3019,7 +3083,7 @@
             this.Label52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label52.AutoSize = true;
             this.Label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label52.Location = new System.Drawing.Point(311, 8);
+            this.Label52.Location = new System.Drawing.Point(305, 8);
             this.Label52.Name = "Label52";
             this.Label52.Size = new System.Drawing.Size(122, 17);
             this.Label52.TabIndex = 385;
@@ -3030,7 +3094,7 @@
             this.Label51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label51.AutoSize = true;
             this.Label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label51.Location = new System.Drawing.Point(185, 8);
+            this.Label51.Location = new System.Drawing.Point(179, 8);
             this.Label51.Name = "Label51";
             this.Label51.Size = new System.Drawing.Size(101, 17);
             this.Label51.TabIndex = 384;
@@ -3041,7 +3105,7 @@
             this.Label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label50.AutoSize = true;
             this.Label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label50.Location = new System.Drawing.Point(107, 8);
+            this.Label50.Location = new System.Drawing.Point(103, 8);
             this.Label50.Name = "Label50";
             this.Label50.Size = new System.Drawing.Size(39, 17);
             this.Label50.TabIndex = 383;
@@ -3052,30 +3116,11 @@
             this.Label49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label49.AutoSize = true;
             this.Label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label49.Location = new System.Drawing.Point(23, 8);
+            this.Label49.Location = new System.Drawing.Point(21, 8);
             this.Label49.Name = "Label49";
             this.Label49.Size = new System.Drawing.Size(36, 17);
             this.Label49.TabIndex = 0;
             this.Label49.Text = "Taps";
-            // 
-            // inputTextBox60
-            // 
-            this.inputTextBox60._Division = 1;
-            this.inputTextBox60._EqBase = null;
-            this.inputTextBox60._FloatNumber = false;
-            this.inputTextBox60._MaxLimit = 7D;
-            this.inputTextBox60._MinLimit = 1D;
-            this.inputTextBox60._Multiplication = 1;
-            this.inputTextBox60._NumberOnly = true;
-            this.inputTextBox60._PlcDevice = "MF2_Power_TAP_Select";
-            this.inputTextBox60.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputTextBox60.BackColor = System.Drawing.Color.White;
-            this.inputTextBox60.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.inputTextBox60.Location = new System.Drawing.Point(837, 140);
-            this.inputTextBox60.Name = "inputTextBox60";
-            this.inputTextBox60.Size = new System.Drawing.Size(84, 25);
-            this.inputTextBox60.TabIndex = 2172;
-            this.inputTextBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label112
             // 
@@ -3090,19 +3135,6 @@
             this.Label112.TabIndex = 1622;
             this.Label112.Text = "MF 1";
             // 
-            // Label89
-            // 
-            this.Label89.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Label89.AutoSize = true;
-            this.Label89.Font = new System.Drawing.Font("Arial", 12F);
-            this.Label89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label89.Location = new System.Drawing.Point(772, 65);
-            this.Label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label89.Name = "Label89";
-            this.Label89.Size = new System.Drawing.Size(146, 18);
-            this.Label89.TabIndex = 1491;
-            this.Label89.Text = "MF Power TAP設定";
-            // 
             // Label110
             // 
             this.Label110.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -3116,24 +3148,18 @@
             this.Label110.TabIndex = 1623;
             this.Label110.Text = "MF 2";
             // 
-            // inputTextBox61
+            // Label89
             // 
-            this.inputTextBox61._Division = 1;
-            this.inputTextBox61._EqBase = null;
-            this.inputTextBox61._FloatNumber = false;
-            this.inputTextBox61._MaxLimit = 7D;
-            this.inputTextBox61._MinLimit = 1D;
-            this.inputTextBox61._Multiplication = 1;
-            this.inputTextBox61._NumberOnly = true;
-            this.inputTextBox61._PlcDevice = "MF1_Power_TAP_Select";
-            this.inputTextBox61.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputTextBox61.BackColor = System.Drawing.Color.White;
-            this.inputTextBox61.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.inputTextBox61.Location = new System.Drawing.Point(837, 103);
-            this.inputTextBox61.Name = "inputTextBox61";
-            this.inputTextBox61.Size = new System.Drawing.Size(84, 25);
-            this.inputTextBox61.TabIndex = 2173;
-            this.inputTextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Label89.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label89.AutoSize = true;
+            this.Label89.Font = new System.Drawing.Font("Arial", 12F);
+            this.Label89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Label89.Location = new System.Drawing.Point(772, 65);
+            this.Label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label89.Name = "Label89";
+            this.Label89.Size = new System.Drawing.Size(146, 18);
+            this.Label89.TabIndex = 1491;
+            this.Label89.Text = "MF Power TAP設定";
             // 
             // GroupBox5
             // 
@@ -3375,6 +3401,7 @@
             // 
             // controlBtn39
             // 
+            this.controlBtn39._AutoOff = false;
             this.controlBtn39._CurrentStatus = false;
             this.controlBtn39._EqBase = null;
             this.controlBtn39._PlcDevice = "PolyCold6_Deforst_YMC";
@@ -3396,6 +3423,7 @@
             // 
             // controlBtn40
             // 
+            this.controlBtn40._AutoOff = false;
             this.controlBtn40._CurrentStatus = false;
             this.controlBtn40._EqBase = null;
             this.controlBtn40._PlcDevice = "PolyCold6_Cool_YMC";
@@ -3417,6 +3445,7 @@
             // 
             // controlBtn37
             // 
+            this.controlBtn37._AutoOff = false;
             this.controlBtn37._CurrentStatus = false;
             this.controlBtn37._EqBase = null;
             this.controlBtn37._PlcDevice = "PolyCold5_Deforst_YMC";
@@ -3438,6 +3467,7 @@
             // 
             // controlBtn38
             // 
+            this.controlBtn38._AutoOff = false;
             this.controlBtn38._CurrentStatus = false;
             this.controlBtn38._EqBase = null;
             this.controlBtn38._PlcDevice = "PolyCold5_Cool_YMC";
@@ -3459,6 +3489,7 @@
             // 
             // controlBtn35
             // 
+            this.controlBtn35._AutoOff = false;
             this.controlBtn35._CurrentStatus = false;
             this.controlBtn35._EqBase = null;
             this.controlBtn35._PlcDevice = "PolyCold3_Deforst_YMC";
@@ -3480,6 +3511,7 @@
             // 
             // controlBtn36
             // 
+            this.controlBtn36._AutoOff = false;
             this.controlBtn36._CurrentStatus = false;
             this.controlBtn36._EqBase = null;
             this.controlBtn36._PlcDevice = "PolyCold3_Cool_YMC";
@@ -3501,6 +3533,7 @@
             // 
             // controlBtn33
             // 
+            this.controlBtn33._AutoOff = false;
             this.controlBtn33._CurrentStatus = false;
             this.controlBtn33._EqBase = null;
             this.controlBtn33._PlcDevice = "PolyCold2_Deforst_YMC";
@@ -3522,6 +3555,7 @@
             // 
             // controlBtn34
             // 
+            this.controlBtn34._AutoOff = false;
             this.controlBtn34._CurrentStatus = false;
             this.controlBtn34._EqBase = null;
             this.controlBtn34._PlcDevice = "PolyCold2_Cool_YMC";
@@ -3543,6 +3577,7 @@
             // 
             // controlBtn32
             // 
+            this.controlBtn32._AutoOff = false;
             this.controlBtn32._CurrentStatus = false;
             this.controlBtn32._EqBase = null;
             this.controlBtn32._PlcDevice = "PolyCold1_Deforst_YMC";
@@ -3564,6 +3599,7 @@
             // 
             // controlBtn31
             // 
+            this.controlBtn31._AutoOff = false;
             this.controlBtn31._CurrentStatus = false;
             this.controlBtn31._EqBase = null;
             this.controlBtn31._PlcDevice = "PolyCold1_Cool_YMC";
@@ -3585,6 +3621,7 @@
             // 
             // controlBtn30
             // 
+            this.controlBtn30._AutoOff = false;
             this.controlBtn30._CurrentStatus = false;
             this.controlBtn30._EqBase = null;
             this.controlBtn30._PlcDevice = "PolyCold3_Bypass";
@@ -3601,7 +3638,7 @@
             this.controlBtn30.Name = "controlBtn30";
             this.controlBtn30.Size = new System.Drawing.Size(96, 25);
             this.controlBtn30.TabIndex = 2157;
-            this.controlBtn30.Text = "Pass";
+            this.controlBtn30.Text = "By Pass";
             this.controlBtn30.UseVisualStyleBackColor = false;
             // 
             // displayTextBox49
@@ -3624,6 +3661,7 @@
             // 
             // controlBtn29
             // 
+            this.controlBtn29._AutoOff = false;
             this.controlBtn29._CurrentStatus = false;
             this.controlBtn29._EqBase = null;
             this.controlBtn29._PlcDevice = "PolyCold2_Bypass";
@@ -3640,7 +3678,7 @@
             this.controlBtn29.Name = "controlBtn29";
             this.controlBtn29.Size = new System.Drawing.Size(94, 25);
             this.controlBtn29.TabIndex = 2155;
-            this.controlBtn29.Text = "Pass";
+            this.controlBtn29.Text = "By Pass";
             this.controlBtn29.UseVisualStyleBackColor = false;
             // 
             // displayTextBox48
@@ -3663,6 +3701,7 @@
             // 
             // controlBtn28
             // 
+            this.controlBtn28._AutoOff = false;
             this.controlBtn28._CurrentStatus = false;
             this.controlBtn28._EqBase = null;
             this.controlBtn28._PlcDevice = "PolyCold1_Bypass";
@@ -3679,7 +3718,7 @@
             this.controlBtn28.Name = "controlBtn28";
             this.controlBtn28.Size = new System.Drawing.Size(92, 25);
             this.controlBtn28.TabIndex = 2153;
-            this.controlBtn28.Text = "Pass";
+            this.controlBtn28.Text = "By Pass";
             this.controlBtn28.UseVisualStyleBackColor = false;
             // 
             // displayTextBox47
@@ -4016,6 +4055,7 @@
             // 
             // controlBtn11
             // 
+            this.controlBtn11._AutoOff = false;
             this.controlBtn11._CurrentStatus = false;
             this.controlBtn11._EqBase = null;
             this.controlBtn11._PlcDevice = "Heater_Service_On_YMC_M2";
@@ -5470,14 +5510,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1512, 760);
-            this.Controls.Add(this.TabControl1);
+            this.Controls.Add(this.TabControl_Main);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDeviceConstant";
             this.Text = "機械常數";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDeviceConstant_FormClosing);
-            this.Shown += new System.EventHandler(this.frmOverview_Shown);
-            this.TabControl1.ResumeLayout(false);
+            this.Shown += new System.EventHandler(this.frmDeviceConstant_Shown);
+            this.TabControl_Main.ResumeLayout(false);
             this.TabPage1.ResumeLayout(false);
             this.TabPage1.PerformLayout();
             this.GroupBox4.ResumeLayout(false);
@@ -5509,7 +5549,7 @@
 
         #endregion
         private System.Windows.Forms.Timer timerStatus;
-        internal System.Windows.Forms.TabControl TabControl1;
+        internal System.Windows.Forms.TabControl TabControl_Main;
         internal System.Windows.Forms.TabPage TabPage1;
         internal System.Windows.Forms.TabPage TabPage2;
         private System.Windows.Forms.TabPage tabPage3;

@@ -770,10 +770,10 @@
             this.TabPage1.Controls.Add(this.Label12);
             this.TabPage1.Controls.Add(this.Label13);
             this.TabPage1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.TabPage1.Location = new System.Drawing.Point(4, 22);
+            this.TabPage1.Location = new System.Drawing.Point(4, 26);
             this.TabPage1.Name = "TabPage1";
             this.TabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage1.Size = new System.Drawing.Size(351, 675);
+            this.TabPage1.Size = new System.Drawing.Size(351, 671);
             this.TabPage1.TabIndex = 0;
             this.TabPage1.Text = "Roller Data";
             this.TabPage1.UseVisualStyleBackColor = true;
@@ -3353,6 +3353,7 @@
             this.Controls.Add(this.GroupBox4);
             this.Name = "frmControl";
             this.Text = "Control";
+            this.Shown += new System.EventHandler(this.frmControl_Shown);
             this.GroupBox4.ResumeLayout(false);
             this.GroupBox4.PerformLayout();
             this.TabControl1.ResumeLayout(false);

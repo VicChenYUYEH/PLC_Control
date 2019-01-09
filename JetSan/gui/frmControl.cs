@@ -35,18 +35,7 @@ namespace HyTemplate.gui
             {
                 timerStatus.Enabled = false;
             }
-
             refreshStatus(this);
-        }
-
-        private void frmControl_Shown(object sender, EventArgs e)
-        {
-            timerStatus.Enabled = true;
-        }
-
-        public new void Show()
-        {
-            timerStatus.Enabled = true;
         }
 
         private void refreshStatus(Control m_Object)
@@ -109,6 +98,15 @@ namespace HyTemplate.gui
                     initialComponents(obj);
                 }
             }
+        }
+
+        private void frmControl_Shown(object sender, EventArgs e)
+        {
+            timerStatus.Enabled = true;
+        }
+        public new void Show()
+        {
+            timerStatus.Enabled = true;
         }
     }
 }

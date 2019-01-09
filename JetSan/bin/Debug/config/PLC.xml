@@ -692,18 +692,18 @@
 	<Link Name="DC4_Current"		Device="R0251" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC4_Current" />
 	<Link Name="DC4_Voltage"		Device="R0252" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC4_Voltage" />
 	<Link Name="DC4_STEP"			Device="R0253" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC4_STEP" />
-	<Link Name="MF1_Target_Life_L"		Device="R0310" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF1_Target_Life_L" />
-	<Link Name="MF1_Target_Life_H"		Device="R0311" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF1_Target_Life_H" />
-	<Link Name="MF2_Target_Life_L"		Device="R0312" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF2_Target_Life_L" />
-	<Link Name="MF2_Target_Life_H"		Device="R0313" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF2_Target_Life_H" />
-	<Link Name="DC1_Target_Life_L"		Device="R0314" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC1_Target_Life_L" />
-	<Link Name="DC1_Target_Life_H"		Device="R0315" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC1_Target_Life_H" />
-	<Link Name="DC2_Target_Life_L"		Device="R0316" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC2_Target_Life_L" />
-	<Link Name="DC2_Target_Life_H"		Device="R0317" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC2_Target_Life_H" />
-	<Link Name="DC3_Target_Life_L"		Device="R0318" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC3_Target_Life_L" />
-	<Link Name="DC3_Target_Life_H"		Device="R0319" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC3_Target_Life_H" />
-	<Link Name="DC4_Target_Life_L"		Device="R0320" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC4_Target_Life_L" />
-	<Link Name="DC4_Target_Life_H"		Device="R0321" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC4_Target_Life_H" />
+	<Link Name="MF1_Target_Life_Db"		Device="R0310" LogToDb="0" ValueType="2" ReadOnly="0" Description="MF1_Target_Life_Db" />
+	<Link Name="MF1_Target_Life"		Device="R0311" LogToDb="0" ValueType="2" ReadOnly="0" Description="MF1_Target_Life" />
+	<Link Name="MF2_Target_Life_Db"		Device="R0312" LogToDb="0" ValueType="2" ReadOnly="0" Description="MF2_Target_Life_Db" />
+	<Link Name="MF2_Target_Life"		Device="R0313" LogToDb="0" ValueType="2" ReadOnly="0" Description="MF2_Target_Life" />
+	<Link Name="DC1_Target_Life_Db"		Device="R0314" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC1_Target_Life_Db" />
+	<Link Name="DC1_Target_Life"		Device="R0315" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC1_Target_Life" />
+	<Link Name="DC2_Target_Life_Db"		Device="R0316" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC2_Target_Life_Db" />
+	<Link Name="DC2_Target_Life"		Device="R0317" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC2_Target_Life" />
+	<Link Name="DC3_Target_Life_Db"		Device="R0318" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC3_Target_Life_Db" />
+	<Link Name="DC3_Target_Life"		Device="R0319" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC3_Target_Life" />
+	<Link Name="DC4_Target_Life_Db"		Device="R0320" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC4_Target_Life_Db" />
+	<Link Name="DC4_Target_Life"		Device="R0321" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC4_Target_Life" />
 	<Link Name="MF1_ARC_Total"		Device="R0350" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF1_ARC_Total" />
 	<Link Name="MF2_ARC_Total"		Device="R0351" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF2_ARC_Total" />
 	<Link Name="DC1_ARC_Total"		Device="R0352" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC1_ARC_Total" />
@@ -835,18 +835,18 @@
 	<Link Name="DC2_Pre_Sputter_Time"	 Device="R1133" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC2_Pre_Sputter_Time" />
 	<Link Name="DC3_Pre_Sputter_Time"	 Device="R1134" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC3_Pre_Sputter_Time" />
 	<Link Name="DC4_Pre_Sputter_Time"	 Device="R1135" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC4_Pre_Sputter_Time" />
-	<Link Name="MF1_Target_Life_SETP_L"	 Device="R1150" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF1_Target_Life_SETP_L" />
-	<Link Name="MF1_Target_Life_SETP_H"	 Device="R1151" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF1_Target_Life_SETP_H" />
-	<Link Name="MF2_Target_Life_SETP_L"	 Device="R1152" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF2_Target_Life_SETP_L" />
-	<Link Name="MF2_Target_Life_SETP_H"	 Device="R1153" LogToDb="0" ValueType="0" ReadOnly="0" Description="MF2_Target_Life_SETP_H" />
-	<Link Name="DC1_Target_Life_SETP_L"	 Device="R1154" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC1_Target_Life_SETP_L" />
-	<Link Name="DC1_Target_Life_SETP_H"	 Device="R1155" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC1_Target_Life_SETP_H" />
-	<Link Name="DC2_Target_Life_SETP_L"	 Device="R1156" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC2_Target_Life_SETP_L" />
-	<Link Name="DC2_Target_Life_SETP_H"	 Device="R1157" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC2_Target_Life_SETP_H" />
-	<Link Name="DC3_Target_Life_SETP_L"	 Device="R1158" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC3_Target_Life_SETP_L" />
-	<Link Name="DC3_Target_Life_SETP_H"	 Device="R1159" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC3_Target_Life_SETP_H" />
-	<Link Name="DC4_Target_Life_SETP_L"	 Device="R1160" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC4_Target_Life_SETP_L" />
-	<Link Name="DC4_Target_Life_SETP_H"	 Device="R1161" LogToDb="0" ValueType="0" ReadOnly="0" Description="DC4_Target_Life_SETP_H" />
+	<Link Name="MF1_Target_Life_SETP_Db"	 Device="R1150" LogToDb="0" ValueType="2" ReadOnly="0" Description="MF1_Target_Life_SETP_Db" />
+	<Link Name="MF1_Target_Life_SETP"	 Device="R1151" LogToDb="0" ValueType="2" ReadOnly="0" Description="MF1_Target_Life_SETP" />
+	<Link Name="MF2_Target_Life_SETP_Db"	 Device="R1152" LogToDb="0" ValueType="2" ReadOnly="0" Description="MF2_Target_Life_SETP_Db" />
+	<Link Name="MF2_Target_Life_SETP"	 Device="R1153" LogToDb="0" ValueType="2" ReadOnly="0" Description="MF2_Target_Life_SETP" />
+	<Link Name="DC1_Target_Life_SETP_Db"	 Device="R1154" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC1_Target_Life_SETP_Db" />
+	<Link Name="DC1_Target_Life_SETP"	 Device="R1155" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC1_Target_Life_SETP" />
+	<Link Name="DC2_Target_Life_SETP_Db"	 Device="R1156" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC2_Target_Life_SETP_Db" />
+	<Link Name="DC2_Target_Life_SETP"	 Device="R1157" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC2_Target_Life_SETP" />
+	<Link Name="DC3_Target_Life_SETP_Db"	 Device="R1158" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC3_Target_Life_SETP_Db" />
+	<Link Name="DC3_Target_Life_SETP"	 Device="R1159" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC3_Target_Life_SETP" />
+	<Link Name="DC4_Target_Life_SETP_Db"	 Device="R1160" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC4_Target_Life_SETP_Db" />
+	<Link Name="DC4_Target_Life_SETP"	 Device="R1161" LogToDb="0" ValueType="2" ReadOnly="0" Description="DC4_Target_Life_SETP" />
 		<Link Name="SETP_RP1_MaintTime"	 	Device="R1190" LogToDb="0" ValueType="0" ReadOnly="0" Description="SETP_RP1_MaintTime" />
 		<Link Name="SETP_RP2_MaintTime"		Device="R1191" LogToDb="0" ValueType="0" ReadOnly="0" Description="SETP_RP2_MaintTime" />
 		<Link Name="SETP_RP3_MaintTime"	 	Device="R1192" LogToDb="0" ValueType="0" ReadOnly="0" Description="SETP_RP3_MaintTime" />

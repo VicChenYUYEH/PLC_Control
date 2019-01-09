@@ -87,7 +87,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "歷史異常";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.BtnAlarm_Click);
             // 
             // btnSysPara
             // 
