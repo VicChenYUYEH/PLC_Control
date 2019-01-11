@@ -41,7 +41,6 @@ namespace HyTemplate
 
         private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
         {
-            //System.Threading.Thread.Sleep(100);
             writeLog("EqBase Receive Message [" + m_MessageName + "]");
 
             if (m_MessageName == ProxyMessage.MSG_WRITE_LOG)
@@ -63,10 +62,7 @@ namespace HyTemplate
                     rcpKernel.loadFile(rcp_id);
                     foreach (KeyValuePair<string, RecipeInfo> info in rcpKernel.RecipeDetail)
                     {
-                        if (!info.Value.Parameter)
-                        {
-                            phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.RecipeDetail[info.Value.DeviceName].SetPoint;
-                        }
+                        phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.RecipeDetail[info.Value.DeviceName].SetPoint;
                     }
                 }
                 catch (Exception ex)
@@ -77,12 +73,9 @@ namespace HyTemplate
             else if (m_MessageName == ProxyMessage.MSG_PARAMETER_SET)
             {
                 rcpKernel.loadFile("System");
-                foreach (KeyValuePair<string, RecipeInfo> info in rcpKernel.RecipeDetail)
+                foreach (KeyValuePair<string, RecipeInfo> info in rcpKernel.SystemDetail)
                 {
-                    if(info.Value.Parameter)
-                    {
-                        phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.RecipeDetail[info.Value.DeviceName].SetPoint;
-                    }
+                    phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.SystemDetail[info.Value.DeviceName].SetPoint;
                 }
             }
         }

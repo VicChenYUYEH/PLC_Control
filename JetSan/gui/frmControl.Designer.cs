@@ -41,21 +41,14 @@
             this.displayTextBox1 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox4 = new HyTemplate.components.DisplayTextBox();
             this.POWER_Time_Txt = new System.Windows.Forms.TextBox();
-            this.Label18 = new System.Windows.Forms.Label();
             this.VENT_Time_Txt = new System.Windows.Forms.TextBox();
             this.Label65 = new System.Windows.Forms.Label();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.Label15 = new System.Windows.Forms.Label();
             this.Label64 = new System.Windows.Forms.Label();
-            this.Label100 = new System.Windows.Forms.Label();
             this.PUMP_Time_Txt = new System.Windows.Forms.TextBox();
-            this.Label110 = new System.Windows.Forms.Label();
             this.Label63 = new System.Windows.Forms.Label();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
             this.Label93 = new System.Windows.Forms.Label();
             this.Label120 = new System.Windows.Forms.Label();
             this.Label94 = new System.Windows.Forms.Label();
-            this.TxtRecipeName = new System.Windows.Forms.TextBox();
             this.Label95 = new System.Windows.Forms.Label();
             this.Label96 = new System.Windows.Forms.Label();
             this.Label102 = new System.Windows.Forms.Label();
@@ -234,21 +227,14 @@
             this.GroupBox4.Controls.Add(this.displayTextBox1);
             this.GroupBox4.Controls.Add(this.displayTextBox4);
             this.GroupBox4.Controls.Add(this.POWER_Time_Txt);
-            this.GroupBox4.Controls.Add(this.Label18);
             this.GroupBox4.Controls.Add(this.VENT_Time_Txt);
             this.GroupBox4.Controls.Add(this.Label65);
-            this.GroupBox4.Controls.Add(this.TextBox2);
-            this.GroupBox4.Controls.Add(this.Label15);
             this.GroupBox4.Controls.Add(this.Label64);
-            this.GroupBox4.Controls.Add(this.Label100);
             this.GroupBox4.Controls.Add(this.PUMP_Time_Txt);
-            this.GroupBox4.Controls.Add(this.Label110);
             this.GroupBox4.Controls.Add(this.Label63);
-            this.GroupBox4.Controls.Add(this.TextBox1);
             this.GroupBox4.Controls.Add(this.Label93);
             this.GroupBox4.Controls.Add(this.Label120);
             this.GroupBox4.Controls.Add(this.Label94);
-            this.GroupBox4.Controls.Add(this.TxtRecipeName);
             this.GroupBox4.Controls.Add(this.Label95);
             this.GroupBox4.Controls.Add(this.Label96);
             this.GroupBox4.Controls.Add(this.Label102);
@@ -377,7 +363,7 @@
             this.displayTextBox3._Multiplication = ((short)(1));
             this.displayTextBox3._PlcDevice = "Heater4_PV";
             this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox3.Location = new System.Drawing.Point(277, 55);
+            this.displayTextBox3.Location = new System.Drawing.Point(331, 79);
             this.displayTextBox3.Name = "displayTextBox3";
             this.displayTextBox3.ReadOnly = true;
             this.displayTextBox3.Size = new System.Drawing.Size(54, 23);
@@ -394,7 +380,7 @@
             this.displayTextBox2._Multiplication = ((short)(1));
             this.displayTextBox2._PlcDevice = "Heater3_PV";
             this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox2.Location = new System.Drawing.Point(211, 55);
+            this.displayTextBox2.Location = new System.Drawing.Point(265, 79);
             this.displayTextBox2.Name = "displayTextBox2";
             this.displayTextBox2.ReadOnly = true;
             this.displayTextBox2.Size = new System.Drawing.Size(54, 23);
@@ -411,7 +397,7 @@
             this.displayTextBox1._Multiplication = ((short)(1));
             this.displayTextBox1._PlcDevice = "Heater2_PV";
             this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox1.Location = new System.Drawing.Point(151, 55);
+            this.displayTextBox1.Location = new System.Drawing.Point(205, 79);
             this.displayTextBox1.Name = "displayTextBox1";
             this.displayTextBox1.ReadOnly = true;
             this.displayTextBox1.Size = new System.Drawing.Size(54, 23);
@@ -428,7 +414,7 @@
             this.displayTextBox4._Multiplication = ((short)(1));
             this.displayTextBox4._PlcDevice = "Heater1_PV";
             this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox4.Location = new System.Drawing.Point(91, 54);
+            this.displayTextBox4.Location = new System.Drawing.Point(145, 78);
             this.displayTextBox4.Name = "displayTextBox4";
             this.displayTextBox4.ReadOnly = true;
             this.displayTextBox4.Size = new System.Drawing.Size(54, 23);
@@ -448,16 +434,6 @@
             this.POWER_Time_Txt.TabIndex = 2047;
             this.POWER_Time_Txt.Text = "0";
             this.POWER_Time_Txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Label18
-            // 
-            this.Label18.AutoSize = true;
-            this.Label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label18.Location = new System.Drawing.Point(348, 109);
-            this.Label18.Name = "Label18";
-            this.Label18.Size = new System.Drawing.Size(40, 16);
-            this.Label18.TabIndex = 1537;
-            this.Label18.Text = "層數";
             // 
             // VENT_Time_Txt
             // 
@@ -483,29 +459,6 @@
             this.Label65.TabIndex = 2046;
             this.Label65.Text = "Power啟動時間";
             // 
-            // TextBox2
-            // 
-            this.TextBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TextBox2.Location = new System.Drawing.Point(341, 128);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.ReadOnly = true;
-            this.TextBox2.Size = new System.Drawing.Size(55, 23);
-            this.TextBox2.TabIndex = 1538;
-            this.TextBox2.Text = "0";
-            this.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Label15
-            // 
-            this.Label15.AutoSize = true;
-            this.Label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label15.Location = new System.Drawing.Point(289, 109);
-            this.Label15.Name = "Label15";
-            this.Label15.Size = new System.Drawing.Size(40, 16);
-            this.Label15.TabIndex = 1535;
-            this.Label15.Text = "種類";
-            // 
             // Label64
             // 
             this.Label64.AutoSize = true;
@@ -515,16 +468,6 @@
             this.Label64.Size = new System.Drawing.Size(88, 16);
             this.Label64.TabIndex = 2044;
             this.Label64.Text = "破真空時間";
-            // 
-            // Label100
-            // 
-            this.Label100.AutoSize = true;
-            this.Label100.Font = new System.Drawing.Font("Arial", 10F);
-            this.Label100.Location = new System.Drawing.Point(11, 131);
-            this.Label100.Name = "Label100";
-            this.Label100.Size = new System.Drawing.Size(114, 16);
-            this.Label100.TabIndex = 1609;
-            this.Label100.Text = "製程 匯入 配方：";
             // 
             // PUMP_Time_Txt
             // 
@@ -540,16 +483,6 @@
             this.PUMP_Time_Txt.Text = "0";
             this.PUMP_Time_Txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Label110
-            // 
-            this.Label110.AutoSize = true;
-            this.Label110.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label110.Location = new System.Drawing.Point(162, 110);
-            this.Label110.Name = "Label110";
-            this.Label110.Size = new System.Drawing.Size(40, 16);
-            this.Label110.TabIndex = 1527;
-            this.Label110.Text = "名稱";
-            // 
             // Label63
             // 
             this.Label63.AutoSize = true;
@@ -560,24 +493,11 @@
             this.Label63.TabIndex = 2042;
             this.Label63.Text = "抽真空時間";
             // 
-            // TextBox1
-            // 
-            this.TextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TextBox1.Location = new System.Drawing.Point(277, 128);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.ReadOnly = true;
-            this.TextBox1.Size = new System.Drawing.Size(64, 23);
-            this.TextBox1.TabIndex = 1536;
-            this.TextBox1.Text = "一般";
-            this.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Label93
             // 
             this.Label93.AutoSize = true;
             this.Label93.Font = new System.Drawing.Font("Arial", 10F);
-            this.Label93.Location = new System.Drawing.Point(106, 33);
+            this.Label93.Location = new System.Drawing.Point(160, 57);
             this.Label93.Name = "Label93";
             this.Label93.Size = new System.Drawing.Size(25, 16);
             this.Label93.TabIndex = 1605;
@@ -597,30 +517,17 @@
             // 
             this.Label94.AutoSize = true;
             this.Label94.Font = new System.Drawing.Font("Arial", 10F);
-            this.Label94.Location = new System.Drawing.Point(166, 33);
+            this.Label94.Location = new System.Drawing.Point(220, 57);
             this.Label94.Name = "Label94";
             this.Label94.Size = new System.Drawing.Size(25, 16);
             this.Label94.TabIndex = 1604;
             this.Label94.Text = "H2";
             // 
-            // TxtRecipeName
-            // 
-            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
-            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TxtRecipeName.Location = new System.Drawing.Point(126, 128);
-            this.TxtRecipeName.Name = "TxtRecipeName";
-            this.TxtRecipeName.ReadOnly = true;
-            this.TxtRecipeName.Size = new System.Drawing.Size(151, 23);
-            this.TxtRecipeName.TabIndex = 1534;
-            this.TxtRecipeName.Text = "N/A";
-            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Label95
             // 
             this.Label95.AutoSize = true;
             this.Label95.Font = new System.Drawing.Font("Arial", 10F);
-            this.Label95.Location = new System.Drawing.Point(226, 33);
+            this.Label95.Location = new System.Drawing.Point(280, 57);
             this.Label95.Name = "Label95";
             this.Label95.Size = new System.Drawing.Size(25, 16);
             this.Label95.TabIndex = 1607;
@@ -630,7 +537,7 @@
             // 
             this.Label96.AutoSize = true;
             this.Label96.Font = new System.Drawing.Font("Arial", 10F);
-            this.Label96.Location = new System.Drawing.Point(289, 33);
+            this.Label96.Location = new System.Drawing.Point(343, 57);
             this.Label96.Name = "Label96";
             this.Label96.Size = new System.Drawing.Size(25, 16);
             this.Label96.TabIndex = 1606;
@@ -650,7 +557,7 @@
             // 
             this.Label148.AutoSize = true;
             this.Label148.Font = new System.Drawing.Font("Arial", 10F);
-            this.Label148.Location = new System.Drawing.Point(11, 54);
+            this.Label148.Location = new System.Drawing.Point(65, 78);
             this.Label148.Name = "Label148";
             this.Label148.Size = new System.Drawing.Size(75, 16);
             this.Label148.TabIndex = 1282;
@@ -3370,21 +3277,14 @@
 
         internal System.Windows.Forms.GroupBox GroupBox4;
         internal System.Windows.Forms.TextBox POWER_Time_Txt;
-        internal System.Windows.Forms.Label Label18;
         internal System.Windows.Forms.TextBox VENT_Time_Txt;
         internal System.Windows.Forms.Label Label65;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.Label Label15;
         internal System.Windows.Forms.Label Label64;
-        internal System.Windows.Forms.Label Label100;
         internal System.Windows.Forms.TextBox PUMP_Time_Txt;
-        internal System.Windows.Forms.Label Label110;
         internal System.Windows.Forms.Label Label63;
-        internal System.Windows.Forms.TextBox TextBox1;
         internal System.Windows.Forms.Label Label93;
         internal System.Windows.Forms.Label Label120;
         internal System.Windows.Forms.Label Label94;
-        internal System.Windows.Forms.TextBox TxtRecipeName;
         internal System.Windows.Forms.Label Label95;
         internal System.Windows.Forms.Label Label96;
         internal System.Windows.Forms.Label Label102;

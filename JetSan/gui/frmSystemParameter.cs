@@ -34,7 +34,7 @@ namespace HyTemplate.gui
 
             foreach (XmlItem item in rRecipe[m_RcpId].Nodes)
             {
-                rows.Add(new Object[] { item.Key, item.Value, rRecipe.RecipeDetail[item.Key].Unit, rRecipe.RecipeDetail[item.Key].Address, rRecipe.RecipeDetail[item.Key].Description });
+                rows.Add(new Object[] { item.Key, item.Value, rRecipe.SystemDetail[item.Key].Unit, rRecipe.SystemDetail[item.Key].Address, rRecipe.SystemDetail[item.Key].Description });
             }
         }
 

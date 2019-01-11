@@ -106,6 +106,11 @@ namespace HyTemplate
             {
                 statusPictureBox1.refreshStatus(rdKernel);
             }
+            else if (m_MessageName == ProxyMessage.MSG_RECIPE_SET)
+            {
+                string Current_rcp = m_Event.EventData["CurrentRCP"];
+                TxtRecipeName.Text = Current_rcp;
+            }
         }
 
         private void ReloadGui(Form m_Form)

@@ -39,7 +39,8 @@ namespace HyTemplate.gui
                 if (rcp_item.Key == "System") continue;
 
                 ListViewItem item = new ListViewItem(rcp_item.Key); //ID   
-                item.SubItems.Add(rcp_item.Value);                          //Name
+                string in_use = (rcp_item.Value == "true") ? "使用中" : "關閉";
+                item.SubItems.Add(in_use);                          //Default
                 listView1.Items.Add(item);
             }
             dataGridView1.Rows.Clear();
@@ -61,7 +62,7 @@ namespace HyTemplate.gui
             DataGridViewRowCollection rows = dataGridView1.Rows;
 
             foreach (XmlItem item in rRecipe[m_RcpId].Nodes)
-            {                
+            {
                 rows.Add(new Object[] { item.Key, item.Value, rRecipe.RecipeDetail[item.Key].Unit, rRecipe.RecipeDetail[item.Key].Address, rRecipe.RecipeDetail[item.Key].Description });
             }
         }
@@ -83,38 +84,19 @@ namespace HyTemplate.gui
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            dlgConfirm dlg = new dlgConfirm(1);
+            dlgConfirm dlg = new dlgConfirm();
             dlg.ConfirmId = "";
-            dlg.ConfirmName = "";
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 if (dlg.ConfirmId.Trim() == "") return;
-
-                rRecipe.appendRecipe(dlg.ConfirmId, dlg.ConfirmName);
+                
+                rRecipe.appendRecipe(dlg.ConfirmId, "false");
                 rRecipe.saveFile();
                 rRecipe.loadFile();
                 InitialRecipeTable();
             }
             dlg.Dispose();
-        }
-
-        private void btnModify_Click(object sender, EventArgs e)
-        {
-            ListView.SelectedListViewItemCollection selected = listView1.SelectedItems;
-
-            if (selected.Count > 0)
-            {
-                dlgConfirm dlg = new dlgConfirm(2);
-                dlg.ConfirmId = selected[0].Text;
-                dlg.ConfirmName = selected[0].SubItems[1].Text;
-
-                if (dlg.ShowDialog() == DialogResult.OK)
-                {
-
-                }
-                dlg.Dispose();
-            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -181,10 +163,10 @@ namespace HyTemplate.gui
                 }
             }
         }
+
         private void btn_Control(bool enable)
         {
             btnCreate.Enabled = enable;
-            btnModify.Enabled = enable;
             if (listView1.Items.Count <= 1)//少於1個不可刪除
             {
                 btnDelete.Enabled = false;
@@ -201,9 +183,23 @@ namespace HyTemplate.gui
 
             if (selected.Count > 0)
             {
+                string current_rcp;
                 TEvent data = new TEvent();
                 data.MessageName = ProxyMessage.MSG_RECIPE_SET;
                 data.EventData["RecipeId"] = selected[0].Text;
+                //寫入使用中參數
+                foreach (XmlItem rcp_item in rRecipe.getNodes())
+                {
+                    if (rcp_item.Key == "System") continue;
+
+                    rRecipe[rcp_item.Key].Value = "false"; //皆改為關閉
+                }
+                rRecipe[selected[0].Text].Value = "true";
+                rRecipe.saveFile();
+                rRecipe.loadFile();
+                InitialRecipeTable();
+                getCurrentRecipeName(out current_rcp);
+                data.EventData["CurrentRCP"] = current_rcp;
                 ecClient.SendMessage(data);
             }
         }
@@ -212,6 +208,20 @@ namespace HyTemplate.gui
         {
             listView1.Focus();
             listView1.Items[0].Selected = true;
+        }
+
+        public void getCurrentRecipeName(out string rcp)
+        {
+            rcp = "";
+            foreach (XmlItem rcp_item in rRecipe.getNodes())
+            {
+                if (rcp_item.Key == "System") continue;
+
+                if(rRecipe[rcp_item.Key].Value == "true")
+                {
+                    rcp = rRecipe[rcp_item.Key].Key;
+                }
+            }
         }
     }
 }

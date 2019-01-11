@@ -4364,7 +4364,7 @@
             this.plcObject80._Limit = "";
             this.plcObject80._LimitSignal = 0;
             this.plcObject80._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject80._PlcDevice = "";
+            this.plcObject80._PlcDevice = "ATM2_XC_M3_1";
             this.plcObject80._PlcDisplayOffDevice = null;
             this.plcObject80._PlcDisplayOnDevice = "ATM2_XC_M3_1";
             this.plcObject80._Reverse = false;
@@ -4504,7 +4504,7 @@
             this.plcObject73._Limit = "";
             this.plcObject73._LimitSignal = 0;
             this.plcObject73._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject73._PlcDevice = "";
+            this.plcObject73._PlcDevice = "ATM1_XC_M1";
             this.plcObject73._PlcDisplayOffDevice = null;
             this.plcObject73._PlcDisplayOnDevice = "ATM1_XC_M1";
             this.plcObject73._Reverse = false;
@@ -4524,7 +4524,7 @@
             this.plcObject72._Limit = "";
             this.plcObject72._LimitSignal = 0;
             this.plcObject72._ObjectType = HyTemplate.components.PlcObject.ObjectType.otATM;
-            this.plcObject72._PlcDevice = "";
+            this.plcObject72._PlcDevice = "ATM3_XC_M4";
             this.plcObject72._PlcDisplayOffDevice = null;
             this.plcObject72._PlcDisplayOnDevice = "ATM3_XC_M4";
             this.plcObject72._Reverse = false;

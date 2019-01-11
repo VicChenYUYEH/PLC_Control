@@ -63,6 +63,8 @@
             this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
             this.displayTextBox_Alarm = new HyTemplate.components.DisplayTextBox();
             this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
+            this.label90 = new System.Windows.Forms.Label();
+            this.TxtRecipeName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -177,7 +179,7 @@
             // 
             this.lblaccount.AutoSize = true;
             this.lblaccount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblaccount.Location = new System.Drawing.Point(1527, 149);
+            this.lblaccount.Location = new System.Drawing.Point(1527, 142);
             this.lblaccount.Name = "lblaccount";
             this.lblaccount.Size = new System.Drawing.Size(90, 21);
             this.lblaccount.TabIndex = 16;
@@ -188,7 +190,7 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblID.Location = new System.Drawing.Point(1628, 149);
+            this.lblID.Location = new System.Drawing.Point(1628, 142);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(52, 21);
             this.lblID.TabIndex = 17;
@@ -199,7 +201,7 @@
             // 
             this.lblPLC_Connect.AutoSize = true;
             this.lblPLC_Connect.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblPLC_Connect.Location = new System.Drawing.Point(1527, 185);
+            this.lblPLC_Connect.Location = new System.Drawing.Point(1527, 163);
             this.lblPLC_Connect.Name = "lblPLC_Connect";
             this.lblPLC_Connect.Size = new System.Drawing.Size(107, 21);
             this.lblPLC_Connect.TabIndex = 25;
@@ -233,7 +235,7 @@
             // Power_RunStop
             // 
             this.Power_RunStop.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Power_RunStop.Location = new System.Drawing.Point(1611, 232);
+            this.Power_RunStop.Location = new System.Drawing.Point(1611, 239);
             this.Power_RunStop.Name = "Power_RunStop";
             this.Power_RunStop.Size = new System.Drawing.Size(78, 48);
             this.Power_RunStop.TabIndex = 2705;
@@ -243,7 +245,7 @@
             // Power_RunStart
             // 
             this.Power_RunStart.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Power_RunStart.Location = new System.Drawing.Point(1520, 232);
+            this.Power_RunStart.Location = new System.Drawing.Point(1519, 239);
             this.Power_RunStart.Name = "Power_RunStart";
             this.Power_RunStart.Size = new System.Drawing.Size(83, 48);
             this.Power_RunStart.TabIndex = 2704;
@@ -404,7 +406,7 @@
             this.statusPictureBox1._Reverse = false;
             this.statusPictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.statusPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("statusPictureBox1.Image")));
-            this.statusPictureBox1.Location = new System.Drawing.Point(1648, 185);
+            this.statusPictureBox1.Location = new System.Drawing.Point(1648, 163);
             this.statusPictureBox1.Name = "statusPictureBox1";
             this.statusPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.statusPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -440,11 +442,38 @@
             this.currentDateTime1.Size = new System.Drawing.Size(173, 63);
             this.currentDateTime1.TabIndex = 0;
             // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.ForeColor = System.Drawing.Color.Maroon;
+            this.label90.Location = new System.Drawing.Point(1528, 185);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(98, 16);
+            this.label90.TabIndex = 2725;
+            this.label90.Text = "製程 匯入 配方：";
+            // 
+            // TxtRecipeName
+            // 
+            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
+            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtRecipeName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
+            this.TxtRecipeName.Location = new System.Drawing.Point(1531, 204);
+            this.TxtRecipeName.Name = "TxtRecipeName";
+            this.TxtRecipeName.ReadOnly = true;
+            this.TxtRecipeName.Size = new System.Drawing.Size(151, 29);
+            this.TxtRecipeName.TabIndex = 2720;
+            this.TxtRecipeName.Text = "N/A";
+            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1703, 1019);
+            this.Controls.Add(this.TxtRecipeName);
+            this.Controls.Add(this.label90);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -527,6 +556,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        internal System.Windows.Forms.Label label90;
+        internal System.Windows.Forms.TextBox TxtRecipeName;
     }
 }
 

@@ -319,15 +319,15 @@
             this.plcObject10 = new HyTemplate.components.PlcObject();
             this.plcObject9 = new HyTemplate.components.PlcObject();
             this.plcObject8 = new HyTemplate.components.PlcObject();
-            this.inputTextBox4 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox6 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox2 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox1 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox7 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox8 = new HyTemplate.components.InputTextBox();
-            this.inputTextBox5 = new HyTemplate.components.InputTextBox();
-            this.controlBtn29 = new HyTemplate.components.ControlBtn();
             this.inputTextBox3 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox1 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox6 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox7 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox2 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox8 = new HyTemplate.components.InputTextBox();
+            this.controlBtn29 = new HyTemplate.components.ControlBtn();
+            this.inputTextBox4 = new HyTemplate.components.InputTextBox();
+            this.inputTextBox5 = new HyTemplate.components.InputTextBox();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape23 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -337,7 +337,6 @@
             this.displayTextBox49 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox54 = new HyTemplate.components.DisplayTextBox();
             this.displayTextBox55 = new HyTemplate.components.DisplayTextBox();
-            this.label90 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
             this.Label136 = new System.Windows.Forms.Label();
@@ -347,14 +346,8 @@
             this.label88 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.label86 = new System.Windows.Forms.Label();
-            this.Label110 = new System.Windows.Forms.Label();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
             this.Label93 = new System.Windows.Forms.Label();
             this.Label94 = new System.Windows.Forms.Label();
-            this.TxtRecipeName = new System.Windows.Forms.TextBox();
             this.Label95 = new System.Windows.Forms.Label();
             this.Label96 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -4204,56 +4197,22 @@
             this.plcObject8.TabIndex = 2460;
             this.plcObject8.TabStop = false;
             // 
-            // inputTextBox4
+            // inputTextBox3
             // 
-            this.inputTextBox4._Division = 1;
-            this.inputTextBox4._EqBase = null;
-            this.inputTextBox4._FloatNumber = false;
-            this.inputTextBox4._MaxLimit = 999D;
-            this.inputTextBox4._MinLimit = 0D;
-            this.inputTextBox4._Multiplication = 1;
-            this.inputTextBox4._NumberOnly = true;
-            this.inputTextBox4._PlcDevice = "SET_MFC_0304_O2";
-            this.inputTextBox4.BackColor = System.Drawing.Color.White;
-            this.inputTextBox4.Location = new System.Drawing.Point(206, 759);
-            this.inputTextBox4.Name = "inputTextBox4";
-            this.inputTextBox4.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox4.TabIndex = 2660;
-            this.inputTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox6
-            // 
-            this.inputTextBox6._Division = 1;
-            this.inputTextBox6._EqBase = null;
-            this.inputTextBox6._FloatNumber = false;
-            this.inputTextBox6._MaxLimit = 999D;
-            this.inputTextBox6._MinLimit = 0D;
-            this.inputTextBox6._Multiplication = 1;
-            this.inputTextBox6._NumberOnly = true;
-            this.inputTextBox6._PlcDevice = "SET_MFC_0308_O2";
-            this.inputTextBox6.BackColor = System.Drawing.Color.White;
-            this.inputTextBox6.Location = new System.Drawing.Point(827, 758);
-            this.inputTextBox6.Name = "inputTextBox6";
-            this.inputTextBox6.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox6.TabIndex = 2668;
-            this.inputTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox2
-            // 
-            this.inputTextBox2._Division = 1;
-            this.inputTextBox2._EqBase = null;
-            this.inputTextBox2._FloatNumber = false;
-            this.inputTextBox2._MaxLimit = 999D;
-            this.inputTextBox2._MinLimit = 0D;
-            this.inputTextBox2._Multiplication = 1;
-            this.inputTextBox2._NumberOnly = true;
-            this.inputTextBox2._PlcDevice = "SET_MFC_0305_Ar";
-            this.inputTextBox2.BackColor = System.Drawing.Color.White;
-            this.inputTextBox2.Location = new System.Drawing.Point(520, 793);
-            this.inputTextBox2.Name = "inputTextBox2";
-            this.inputTextBox2.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox2.TabIndex = 2666;
-            this.inputTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inputTextBox3._Division = 1;
+            this.inputTextBox3._EqBase = null;
+            this.inputTextBox3._FloatNumber = false;
+            this.inputTextBox3._MaxLimit = 999D;
+            this.inputTextBox3._MinLimit = 0D;
+            this.inputTextBox3._Multiplication = 1;
+            this.inputTextBox3._NumberOnly = true;
+            this.inputTextBox3._PlcDevice = "SET_MFC_0306_O2";
+            this.inputTextBox3.BackColor = System.Drawing.Color.White;
+            this.inputTextBox3.Location = new System.Drawing.Point(520, 759);
+            this.inputTextBox3.Name = "inputTextBox3";
+            this.inputTextBox3.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox3.TabIndex = 2664;
+            this.inputTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox1
             // 
@@ -4272,6 +4231,23 @@
             this.inputTextBox1.TabIndex = 2662;
             this.inputTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // inputTextBox6
+            // 
+            this.inputTextBox6._Division = 1;
+            this.inputTextBox6._EqBase = null;
+            this.inputTextBox6._FloatNumber = false;
+            this.inputTextBox6._MaxLimit = 999D;
+            this.inputTextBox6._MinLimit = 0D;
+            this.inputTextBox6._Multiplication = 1;
+            this.inputTextBox6._NumberOnly = true;
+            this.inputTextBox6._PlcDevice = "SET_MFC_0308_O2";
+            this.inputTextBox6.BackColor = System.Drawing.Color.White;
+            this.inputTextBox6.Location = new System.Drawing.Point(827, 758);
+            this.inputTextBox6.Name = "inputTextBox6";
+            this.inputTextBox6.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox6.TabIndex = 2668;
+            this.inputTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // inputTextBox7
             // 
             this.inputTextBox7._Division = 1;
@@ -4289,6 +4265,23 @@
             this.inputTextBox7.TabIndex = 2674;
             this.inputTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // inputTextBox2
+            // 
+            this.inputTextBox2._Division = 1;
+            this.inputTextBox2._EqBase = null;
+            this.inputTextBox2._FloatNumber = false;
+            this.inputTextBox2._MaxLimit = 999D;
+            this.inputTextBox2._MinLimit = 0D;
+            this.inputTextBox2._Multiplication = 1;
+            this.inputTextBox2._NumberOnly = true;
+            this.inputTextBox2._PlcDevice = "SET_MFC_0305_Ar";
+            this.inputTextBox2.BackColor = System.Drawing.Color.White;
+            this.inputTextBox2.Location = new System.Drawing.Point(520, 793);
+            this.inputTextBox2.Name = "inputTextBox2";
+            this.inputTextBox2.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox2.TabIndex = 2666;
+            this.inputTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // inputTextBox8
             // 
             this.inputTextBox8._Division = 1;
@@ -4305,23 +4298,6 @@
             this.inputTextBox8.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox8.TabIndex = 2672;
             this.inputTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // inputTextBox5
-            // 
-            this.inputTextBox5._Division = 1;
-            this.inputTextBox5._EqBase = null;
-            this.inputTextBox5._FloatNumber = false;
-            this.inputTextBox5._MaxLimit = 999D;
-            this.inputTextBox5._MinLimit = 0D;
-            this.inputTextBox5._Multiplication = 1;
-            this.inputTextBox5._NumberOnly = true;
-            this.inputTextBox5._PlcDevice = "SET_MFC_0307_Ar";
-            this.inputTextBox5.BackColor = System.Drawing.Color.White;
-            this.inputTextBox5.Location = new System.Drawing.Point(827, 792);
-            this.inputTextBox5.Name = "inputTextBox5";
-            this.inputTextBox5.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox5.TabIndex = 2670;
-            this.inputTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // controlBtn29
             // 
@@ -4345,22 +4321,39 @@
             this.controlBtn29.Text = "小冰水機ON";
             this.controlBtn29.UseVisualStyleBackColor = false;
             // 
-            // inputTextBox3
+            // inputTextBox4
             // 
-            this.inputTextBox3._Division = 1;
-            this.inputTextBox3._EqBase = null;
-            this.inputTextBox3._FloatNumber = false;
-            this.inputTextBox3._MaxLimit = 999D;
-            this.inputTextBox3._MinLimit = 0D;
-            this.inputTextBox3._Multiplication = 1;
-            this.inputTextBox3._NumberOnly = true;
-            this.inputTextBox3._PlcDevice = "SET_MFC_0306_O2";
-            this.inputTextBox3.BackColor = System.Drawing.Color.White;
-            this.inputTextBox3.Location = new System.Drawing.Point(520, 759);
-            this.inputTextBox3.Name = "inputTextBox3";
-            this.inputTextBox3.Size = new System.Drawing.Size(76, 25);
-            this.inputTextBox3.TabIndex = 2664;
-            this.inputTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inputTextBox4._Division = 1;
+            this.inputTextBox4._EqBase = null;
+            this.inputTextBox4._FloatNumber = false;
+            this.inputTextBox4._MaxLimit = 999D;
+            this.inputTextBox4._MinLimit = 0D;
+            this.inputTextBox4._Multiplication = 1;
+            this.inputTextBox4._NumberOnly = true;
+            this.inputTextBox4._PlcDevice = "SET_MFC_0304_O2";
+            this.inputTextBox4.BackColor = System.Drawing.Color.White;
+            this.inputTextBox4.Location = new System.Drawing.Point(206, 759);
+            this.inputTextBox4.Name = "inputTextBox4";
+            this.inputTextBox4.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox4.TabIndex = 2660;
+            this.inputTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputTextBox5
+            // 
+            this.inputTextBox5._Division = 1;
+            this.inputTextBox5._EqBase = null;
+            this.inputTextBox5._FloatNumber = false;
+            this.inputTextBox5._MaxLimit = 999D;
+            this.inputTextBox5._MinLimit = 0D;
+            this.inputTextBox5._Multiplication = 1;
+            this.inputTextBox5._NumberOnly = true;
+            this.inputTextBox5._PlcDevice = "SET_MFC_0307_Ar";
+            this.inputTextBox5.BackColor = System.Drawing.Color.White;
+            this.inputTextBox5.Location = new System.Drawing.Point(827, 792);
+            this.inputTextBox5.Name = "inputTextBox5";
+            this.inputTextBox5.Size = new System.Drawing.Size(76, 25);
+            this.inputTextBox5.TabIndex = 2670;
+            this.inputTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // shapeContainer2
             // 
@@ -4477,7 +4470,6 @@
             this.tabPage2.Controls.Add(this.displayTextBox49);
             this.tabPage2.Controls.Add(this.displayTextBox54);
             this.tabPage2.Controls.Add(this.displayTextBox55);
-            this.tabPage2.Controls.Add(this.label90);
             this.tabPage2.Controls.Add(this.label92);
             this.tabPage2.Controls.Add(this.label99);
             this.tabPage2.Controls.Add(this.Label136);
@@ -4487,14 +4479,8 @@
             this.tabPage2.Controls.Add(this.label88);
             this.tabPage2.Controls.Add(this.label87);
             this.tabPage2.Controls.Add(this.label89);
-            this.tabPage2.Controls.Add(this.label85);
-            this.tabPage2.Controls.Add(this.TextBox2);
-            this.tabPage2.Controls.Add(this.label86);
-            this.tabPage2.Controls.Add(this.Label110);
-            this.tabPage2.Controls.Add(this.TextBox1);
             this.tabPage2.Controls.Add(this.Label93);
             this.tabPage2.Controls.Add(this.Label94);
-            this.tabPage2.Controls.Add(this.TxtRecipeName);
             this.tabPage2.Controls.Add(this.Label95);
             this.tabPage2.Controls.Add(this.Label96);
             this.tabPage2.Controls.Add(this.tabControl2);
@@ -4681,17 +4667,6 @@
             this.displayTextBox55.TabIndex = 2692;
             this.displayTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.label90.ForeColor = System.Drawing.Color.Maroon;
-            this.label90.Location = new System.Drawing.Point(401, 596);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(121, 16);
-            this.label90.TabIndex = 2691;
-            this.label90.Text = "製程 匯入 配方：";
-            // 
             // label92
             // 
             this.label92.AutoSize = true;
@@ -4785,62 +4760,6 @@
             this.label89.TabIndex = 2674;
             this.label89.Text = "Heater Bypass";
             // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(715, 618);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(40, 16);
-            this.label85.TabIndex = 2658;
-            this.label85.Text = "層數";
-            // 
-            // TextBox2
-            // 
-            this.TextBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TextBox2.Location = new System.Drawing.Point(708, 637);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.ReadOnly = true;
-            this.TextBox2.Size = new System.Drawing.Size(55, 25);
-            this.TextBox2.TabIndex = 2659;
-            this.TextBox2.Text = "0";
-            this.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(656, 618);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(40, 16);
-            this.label86.TabIndex = 2656;
-            this.label86.Text = "種類";
-            // 
-            // Label110
-            // 
-            this.Label110.AutoSize = true;
-            this.Label110.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label110.Location = new System.Drawing.Point(529, 619);
-            this.Label110.Name = "Label110";
-            this.Label110.Size = new System.Drawing.Size(40, 16);
-            this.Label110.TabIndex = 2654;
-            this.Label110.Text = "名稱";
-            // 
-            // TextBox1
-            // 
-            this.TextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TextBox1.Location = new System.Drawing.Point(644, 637);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.ReadOnly = true;
-            this.TextBox1.Size = new System.Drawing.Size(64, 25);
-            this.TextBox1.TabIndex = 2657;
-            this.TextBox1.Text = "一般";
-            this.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Label93
             // 
             this.Label93.AutoSize = true;
@@ -4860,19 +4779,6 @@
             this.Label94.Size = new System.Drawing.Size(25, 16);
             this.Label94.TabIndex = 2660;
             this.Label94.Text = "H2";
-            // 
-            // TxtRecipeName
-            // 
-            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
-            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TxtRecipeName.Location = new System.Drawing.Point(493, 637);
-            this.TxtRecipeName.Name = "TxtRecipeName";
-            this.TxtRecipeName.ReadOnly = true;
-            this.TxtRecipeName.Size = new System.Drawing.Size(151, 25);
-            this.TxtRecipeName.TabIndex = 2655;
-            this.TxtRecipeName.Text = "N/A";
-            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label95
             // 
@@ -7961,7 +7867,7 @@
             this.inputTextBox44._Multiplication = 1;
             this.inputTextBox44._NumberOnly = true;
             this.inputTextBox44._PlcDevice = "MF1_Proc_STEP";
-            this.inputTextBox44.BackColor = System.Drawing.Color.White;
+            this.inputTextBox44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.inputTextBox44.Location = new System.Drawing.Point(525, 288);
             this.inputTextBox44.Name = "inputTextBox44";
             this.inputTextBox44.Size = new System.Drawing.Size(76, 25);
@@ -8529,14 +8435,8 @@
         private components.DisplayTextBox displayTextBox79;
         private components.DisplayTextBox displayTextBox80;
         private components.DisplayTextBox displayTextBox81;
-        internal System.Windows.Forms.Label label85;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.Label label86;
-        internal System.Windows.Forms.Label Label110;
-        internal System.Windows.Forms.TextBox TextBox1;
         internal System.Windows.Forms.Label Label93;
         internal System.Windows.Forms.Label Label94;
-        internal System.Windows.Forms.TextBox TxtRecipeName;
         internal System.Windows.Forms.Label Label95;
         internal System.Windows.Forms.Label Label96;
         internal System.Windows.Forms.Label label88;
@@ -8548,7 +8448,6 @@
         private components.InputTextBox inputTextBox22;
         private components.InputTextBox inputTextBox21;
         private components.InputTextBox inputTextBox20;
-        internal System.Windows.Forms.Label label90;
         private components.DisplayTextBox displayTextBox82;
         private components.DisplayTextBox displayTextBox83;
         private components.DisplayTextBox displayTextBox84;

@@ -12,13 +12,14 @@ namespace HyTemplate
         public string Unit { get; set; }
         public string Description { get; set; }
         public string Address { get; set; }
-        public bool Parameter { get; set; }
     }
 
     public class Recipe : XmlList
     {
         Dictionary<String, RecipeInfo> dicRecipe = new Dictionary<string, RecipeInfo>();
+        Dictionary<String, RecipeInfo> dicSystem = new Dictionary<string, RecipeInfo>();
         public Dictionary<String, RecipeInfo> RecipeDetail { get { return dicRecipe; } }
+        public Dictionary<String, RecipeInfo> SystemDetail { get { return dicSystem; } }
         public string FileName { get; set; }
         public string CurrentRecipeId { get; set; }
 
@@ -39,21 +40,44 @@ namespace HyTemplate
             XmlNodeList nodes = XmlDoc.SelectNodes("Recipe/Group");
             foreach (XmlNode chile_node in nodes)
             {
-                if (chile_node.HasChildNodes)
+                string ID = chile_node.Attributes["ID"].Value;
+                if (ID == "System")
                 {
-                    foreach (XmlNode node in chile_node)
+                    if (chile_node.HasChildNodes)
                     {
-                        String para_id = node.Attributes["Name"].Value;
-
-                        if (!dicRecipe.ContainsKey(para_id))
+                        foreach (XmlNode node in chile_node)
                         {
+                            String para_id = node.Attributes["Name"].Value;
                             RecipeInfo info = new RecipeInfo();
-                            info.DeviceName = para_id;
-                            info.Unit = node.Attributes["Unit"].Value;
-                            info.SetPoint = 0;
-                            info.Description = node.Attributes["Description"].Value;
-                            info.Address = node.Attributes["DeviceName"].Value;
-                            dicRecipe.Add(para_id, info);
+                            if (!dicSystem.ContainsKey(para_id))
+                            {
+                                info.DeviceName = para_id;
+                                info.Unit = node.Attributes["Unit"].Value;
+                                info.SetPoint = 0;
+                                info.Description = node.Attributes["Description"].Value;
+                                info.Address = node.Attributes["DeviceName"].Value;
+                                dicSystem.Add(para_id, info);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    if (chile_node.HasChildNodes)
+                    {
+                        foreach (XmlNode node in chile_node)
+                        {
+                            String para_id = node.Attributes["Name"].Value;
+                            RecipeInfo info = new RecipeInfo();
+                            if (!dicRecipe.ContainsKey(para_id))
+                            {
+                                info.DeviceName = para_id;
+                                info.Unit = node.Attributes["Unit"].Value;
+                                info.SetPoint = 0;
+                                info.Description = node.Attributes["Description"].Value;
+                                info.Address = node.Attributes["DeviceName"].Value;
+                                dicRecipe.Add(para_id, info);
+                            }
                         }
                     }
                 }
@@ -73,9 +97,9 @@ namespace HyTemplate
             foreach (XmlNode chile_node in nodes)
             {
                 String rcp_id = chile_node.Attributes["ID"].Value;
-                String rcp_name = chile_node.Attributes["Name"].Value;
+                String rcp_in_use = chile_node.Attributes["In_Use"].Value;
 
-                this.addNode(rcp_id, rcp_name);
+                this.addNode(rcp_id, rcp_in_use);
 
                 if (chile_node.HasChildNodes)
                 {
@@ -86,7 +110,18 @@ namespace HyTemplate
 
                         this[rcp_id].addChildNode(para_id, para_value);
 
-                        if(recipe == rcp_id)//寫入Dictionary
+                        if(rcp_id == "System")
+                        {
+                            dicSystem.Remove(para_id);
+                            RecipeInfo info = new RecipeInfo();
+                            info.DeviceName = para_id;
+                            info.Unit = node.Attributes["Unit"].Value;
+                            info.SetPoint = Convert.ToDouble(para_value);
+                            info.Address = node.Attributes["DeviceName"].Value;
+                            info.Description = node.Attributes["Description"].Value;
+                            dicSystem.Add(para_id, info);
+                        }
+                        else if(recipe == rcp_id)//寫入Dictionary
                         {
                             dicRecipe.Remove(para_id);
                             RecipeInfo info = new RecipeInfo();
@@ -95,7 +130,6 @@ namespace HyTemplate
                             info.SetPoint = Convert.ToDouble(para_value);
                             info.Address = node.Attributes["DeviceName"].Value;
                             info.Description = node.Attributes["Description"].Value;
-                            info.Parameter = (recipe == "System") ? true : false;
                             dicRecipe.Add(para_id, info);
                         }
                     }
@@ -124,7 +158,7 @@ namespace HyTemplate
                     if (item.Key != rcp_id) continue;
 
                     find = true;
-                    String rcp_name = chile_node.Attributes["Name"].Value;
+                    chile_node.Attributes["In_Use"].Value = this[rcp_id].Value;
 
                     //this.addNode(rcp_id, rcp_name);
 
@@ -142,26 +176,11 @@ namespace HyTemplate
 
                 if (!find)
                 {
-                    XmlNode node = XmlDoc.SelectSingleNode("Recipe");//選擇節點
-
-                    //建立子節點
-                    XmlElement group = XmlDoc.CreateElement("Group");
-                    group.SetAttribute("ID", item.Key);//設定屬性
-                    group.SetAttribute("Name", item.Value);//設定屬性
-
-                    foreach (XmlItem new_item in item.Nodes)
-                    {
-                        XmlElement para = XmlDoc.CreateElement("Link"); //添加Link節點
-                        para.SetAttribute("Name", new_item.Key);
-                        para.SetAttribute("Value", new_item.Value);
-                        para.SetAttribute("Unit", dicRecipe[new_item.Key].Unit);
-                        para.SetAttribute("DeviceName", dicRecipe[new_item.Key].DeviceName);
-                        para.SetAttribute("Description", dicRecipe[new_item.Key].Description);
-
-                        group.AppendChild(para);
-                    }
-
-                    node.AppendChild(group);
+                    XmlNode group = nodes.Item(1).CloneNode(true); //建立第2個一模一樣的RCP
+                    group.Attributes["ID"].Value = item.Key;
+                    group.Attributes["In_Use"].Value = item.Value;
+                    XmlNodeList rcp_node = XmlDoc.SelectNodes("Recipe");
+                    rcp_node.Item(0).AppendChild(group);
                 }
             }
 
@@ -169,9 +188,9 @@ namespace HyTemplate
             return true;
         }
 
-        public void appendRecipe(string m_RcpId, string m_RcpName)
+        public void appendRecipe(string m_RcpId, string m_RcpInUse)
         {
-            this.addNode(m_RcpId, m_RcpName);
+            this.addNode(m_RcpId, m_RcpInUse);
 
             //Create new recipe Body
             List<XmlItem> nodes = this.getNodes();
@@ -198,17 +217,6 @@ namespace HyTemplate
                     break;
                 }
             }
-
-            //XmlNodeList nodes = XmlDoc.SelectNodes("Recipe/Group");
-            //foreach (XmlNode node in nodes)
-            //{
-            //    if (node.Attributes["ID"].Value == m_RecipeId)
-            //    {
-            //        xmlno
-            //        XmlDoc.RemoveChild(node);
-            //        break;
-            //    }
-            //}
             XmlDoc.Save(FileName);
         }
     }
