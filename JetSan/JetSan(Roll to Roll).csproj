@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="class\ConstDefine.cs" />
     <Compile Include="class\ConstPlcDefine.cs" />
+    <Compile Include="class\DBControl.cs" />
     <Compile Include="class\EqBase.cs" />
     <Compile Include="class\FileLog.cs" />
     <Compile Include="class\IniFile.cs" />

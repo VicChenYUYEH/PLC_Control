@@ -1,5 +1,4 @@
-﻿using DB;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading;
@@ -22,7 +21,7 @@ namespace HyTemplate
         private PlcHandler phPlcKernel;
         private EventClient ecClient;
         private FileLog flLog;
-        private Db db;
+        private DBControl db;
 
         bool bDisponse = false;
         //bool bAlarmReset = false;
@@ -46,7 +45,7 @@ namespace HyTemplate
 
             ecClient = new EventClient(this);
             ecClient.OnEventHandler += OnReceiveMessage;
-            db = new Db("JetSan");
+            db = new DBControl();
         }
 
         ~MonitorAlarmThread()

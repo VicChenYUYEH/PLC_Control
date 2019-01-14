@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using DB;
 using HyTemplate.gui;
 using System.IO;
 using System.Xml;
@@ -35,7 +34,7 @@ namespace HyTemplate
         frmDeviceConstant deviceConstant;
         frmMaintenance maintenance;
 
-        Db db; 
+        DBControl db; 
         RdEqKernel rdKernel;
         Form currentForm = null;
 
@@ -60,6 +59,7 @@ namespace HyTemplate
             process = new frmProcess(rdKernel);
             deviceConstant = new frmDeviceConstant(rdKernel);
             maintenance = new frmMaintenance(rdKernel);
+            db = new DBControl();
 
             this.LoadUserRegister();
 
@@ -170,6 +170,7 @@ namespace HyTemplate
             data.MessageName = ProxyMessage.MSG_USER_LOGIN;
             data.EventData["Authority"] = authority.ToString();           
             lblID.Text = (success)? id : "None";
+            data.EventData["UserName"] = lblID.Text;
             ecClient.SendMessage(data);
         }
 
@@ -240,6 +241,7 @@ namespace HyTemplate
             if (result == DialogResult.Abort)
             {
                 Login_out(false);
+                db.InsertHistoryLog("N/A", "User Logout"); 
             }
             else if (result == DialogResult.OK)
             {
@@ -277,6 +279,7 @@ namespace HyTemplate
 
                 //傳送登入訊息給各頁面
                 Login_out(true, id, authority);
+                db.InsertHistoryLog(id, "User Login");
             }
         }
 

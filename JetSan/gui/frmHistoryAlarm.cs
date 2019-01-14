@@ -1,5 +1,4 @@
-﻿using DB;
-using System;
+﻿using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -7,12 +6,12 @@ namespace HyTemplate.gui
 {
     public partial class frmHistoryAlarm : Form
     {
-        Db db;
+        DBControl db;
 
         public frmHistoryAlarm()
         {
             InitializeComponent();
-            db = new Db("JetSan");
+            db = new DBControl();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

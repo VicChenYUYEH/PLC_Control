@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HyTemplate.gui
@@ -14,6 +7,8 @@ namespace HyTemplate.gui
     {
         Recipe rRecipe;
         EventClient ecClient;
+        DBControl db;
+        string currentUser = "";
 
         public frmSystemParameter(Recipe m_Recipe)
         {
@@ -25,6 +20,7 @@ namespace HyTemplate.gui
             rRecipe.loadFile();
 
             InitialRecipeBody("System");
+            db = new DBControl();
         }
         
         private void InitialRecipeBody(string m_RcpId)
@@ -59,6 +55,7 @@ namespace HyTemplate.gui
             if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
             {
                 int authority = int.Parse(m_Event.EventData["Authority"]);
+                string currentUser = m_Event.EventData["UserName"];
                 switch (authority)
                 {
                     case 1: //OP
@@ -92,6 +89,7 @@ namespace HyTemplate.gui
             TEvent data = new TEvent();
             data.MessageName = ProxyMessage.MSG_PARAMETER_SET;
             ecClient.SendMessage(data);
+            db.InsertHistoryLog(currentUser, "System Parameter Set");
         }
     }
 }

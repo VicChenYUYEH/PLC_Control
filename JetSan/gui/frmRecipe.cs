@@ -5,8 +5,10 @@ namespace HyTemplate.gui
 {
     public partial class frmRecipe : Form
     {
+        DBControl db;
         Recipe rRecipe;
         EventClient ecClient;
+        string currentUser ="";
         int authority = 1;
         public frmRecipe(Recipe m_Recipe)
         {
@@ -19,6 +21,7 @@ namespace HyTemplate.gui
             rRecipe.loadFile();
 
             InitialRecipeTable();
+            db = new DBControl();
         }
 
         private void InitialRecipeTable()
@@ -86,6 +89,7 @@ namespace HyTemplate.gui
                 rRecipe.saveFile();
                 rRecipe.loadFile();
                 InitialRecipeTable();
+                string err = db.InsertHistoryLog(currentUser, "Creat New Recipe", Recipe: dlg.ConfirmId);
             }
             dlg.Dispose();
         }
@@ -101,6 +105,7 @@ namespace HyTemplate.gui
                     rRecipe.eraseRecipe(selected[0].Text);
                     rRecipe.loadFile();
                     InitialRecipeTable();
+                    string err = db.InsertHistoryLog(currentUser, "Delete Recipe", Recipe: selected[0].Text);
                 }
             }
         }
@@ -133,6 +138,7 @@ namespace HyTemplate.gui
                 rRecipe.saveFile();
                 rRecipe.loadFile();
                 listView1.Refresh();
+                string err = db.InsertHistoryLog(currentUser, "Recipe Data Change", Recipe: selected[0].Text);
             }
         }
 
@@ -141,7 +147,8 @@ namespace HyTemplate.gui
             if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
             {
                 authority = int.Parse(m_Event.EventData["Authority"]);
-                switch(authority)
+                currentUser = m_Event.EventData["UserName"];
+                switch (authority)
                 {
                     case 1: //OP
                         btn_Control(false);
@@ -192,6 +199,7 @@ namespace HyTemplate.gui
                 getCurrentRecipeName(out current_rcp);
                 data.EventData["CurrentRCP"] = current_rcp;
                 ecClient.SendMessage(data);
+                string err = db.InsertHistoryLog(currentUser,"Recipe Set",Recipe: current_rcp);
             }
         }
 
