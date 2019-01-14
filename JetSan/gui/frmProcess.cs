@@ -1,7 +1,6 @@
-﻿using System;
-using System.Drawing;
+﻿using HyTemplate.components;
+using System;
 using System.Windows.Forms;
-using HyTemplate.components;
 
 namespace HyTemplate.gui
 {
