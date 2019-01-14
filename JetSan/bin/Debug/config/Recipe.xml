@@ -3,7 +3,7 @@
   <Group ID="System" In_Use="true">
     <Link Name="VacStarttime" Value="4321" DeviceName="R1456" Unit="s" Description="主腔 RV開啟時間" />
   </Group>
-  <Group ID="RCP_Ｃ8763" In_Use="false">
+  <Group ID="RCP_Ｃ8763" In_Use="true">
     <Link Name="SET_MFC_Pre01_N2" Value="10" Unit="s" DeviceName="R1000" Description="MFC_Pre01_N2設定值" />
     <Link Name="SET_MFC_Pre02_O2" Value="20" Unit="s" DeviceName="R1001" Description="MFC_Pre02_O2設定值" />
     <Link Name="SET_MFC_Pre03_Ar" Value="1" Unit="s" DeviceName="R1002" Description="MFC_Pre03_Ar設定值" />
@@ -36,7 +36,7 @@
     <Link Name="Heater3_SV" Value="45" Unit="度" DeviceName="D3506" Description="Heater3_加熱溫度" />
     <Link Name="Heater4_SV" Value="20" Unit="度" DeviceName="D3507" Description="Heater4_加熱溫度" />
   </Group>
-  <Group ID="RCP_123" In_Use="true">
+  <Group ID="RCP_123" In_Use="false">
     <Link Name="SET_MFC_Pre01_N2" Value="10" Unit="s" DeviceName="R1000" Description="MFC_Pre01_N2設定值" />
     <Link Name="SET_MFC_Pre02_O2" Value="20" Unit="s" DeviceName="R1001" Description="MFC_Pre02_O2設定值" />
     <Link Name="SET_MFC_Pre03_Ar" Value="20" Unit="s" DeviceName="R1002" Description="MFC_Pre03_Ar設定值" />

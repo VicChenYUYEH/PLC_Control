@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Xml;
+using System.Data;
+using DB;
 
 namespace HyTemplate
 {
     struct AlarmInfo
     {
         public string Code;
-        public string Device;
+        public string Address;
         public string Description;
-        public bool isHeavyAlarm;        
+        public string Level;
+        public string Solution;
     }
 
     class MonitorAlarmThread : IDisposable
@@ -20,12 +23,14 @@ namespace HyTemplate
         private PlcHandler phPlcKernel;
         private EventClient ecClient;
         private FileLog flLog;
+        private Db db;
 
         bool bDisponse = false;
-        bool bAlarmReset = false;
+        //bool bAlarmReset = false;
 
         Dictionary<string, AlarmInfo> dicAlarmInfo = new Dictionary<string, AlarmInfo>();
         Dictionary<string, bool> dicAlarmStatus = new Dictionary<string, bool>();
+        Dictionary<AlarmInfo, DateTime> currentAlarm = new Dictionary<AlarmInfo, DateTime>();
 
         public MonitorAlarmThread(PlcHandler m_PlcHandler, FileLog m_Log = null)
         {
@@ -42,6 +47,7 @@ namespace HyTemplate
 
             ecClient = new EventClient(this);
             ecClient.OnEventHandler += OnReceiveMessage;
+            db = new Db("JetSan");
         }
 
         ~MonitorAlarmThread()
@@ -53,10 +59,9 @@ namespace HyTemplate
 
         private void OnReceiveMessage(string m_MessageName, TEvent args)
         {
-            //System.Threading.Thread.Sleep(100);
             if (m_MessageName == ProxyMessage.MSG_ALARM_RESET)
             {
-                bAlarmReset = true;
+                //bAlarmReset = true;
             }
         }
 
@@ -66,7 +71,7 @@ namespace HyTemplate
             {
                 try
                 {
-                    //ReadPlcData();
+                    doMonitorAlarm();
                 }
                 catch (Exception ex)
                 {
@@ -89,13 +94,11 @@ namespace HyTemplate
 
             XmlDocument XmlDoc = new XmlDocument();
             XmlDoc.Load(m_Xml);
-
-            XmlNode rootNode = XmlDoc.SelectSingleNode("Alarms");
-
-            XmlNodeList nodes = rootNode.ChildNodes;
+            
+            XmlNodeList nodes = XmlDoc.SelectNodes("Alarms/Link");
             foreach (XmlNode node in nodes)
             {
-                String code = node.Attributes["Id"].Value;
+                String code = node.Attributes["Address"].Value;
 
                 if (dicAlarmInfo.ContainsKey(code))
                 {
@@ -105,9 +108,10 @@ namespace HyTemplate
 
                 AlarmInfo alarm;
                 alarm.Code = code;
-                alarm.Device = node.Attributes["Device"].Value; //node.InnerText;
-                alarm.isHeavyAlarm = node.Attributes["HeavyAlarm"].Value.ToString() == "1" ? true : false; //node.InnerText;
-                alarm.Description = node.Attributes["Description"].Value; //node.InnerText;
+                alarm.Address = node.Attributes["Address"].Value; //node.InnerText;
+                alarm.Solution = node.Attributes["HowTo"].Value; //node.InnerText;
+                alarm.Description = node.Attributes["Message"].Value; //node.InnerText;
+                alarm.Level = node.Attributes["Type"].Value; //node.InnerText;
 
                 dicAlarmInfo.Add(code, alarm);
                 dicAlarmStatus.Add(code, false);
@@ -118,55 +122,74 @@ namespace HyTemplate
 
         private void doMonitorAlarm()
         {
-            if (bAlarmReset)
-            {
-                bAlarmReset = false;
-                foreach (KeyValuePair<string, AlarmInfo> alarm in dicAlarmInfo)
-                {
-                    dicAlarmStatus[alarm.Key] = false;
-                }
-                Thread.Sleep(100);
-            }
-
-            //Dictionary<string, AlarmInfo> dicAlarmInfo
-            List<AlarmInfo> currentAlarm = new List<AlarmInfo>();
+            //if (bAlarmReset)
+            //{
+            //    bAlarmReset = false;
+            //    foreach (KeyValuePair<string, AlarmInfo> alarm in dicAlarmInfo)
+            //    {
+            //        dicAlarmStatus[alarm.Key] = false;
+            //    }
+            //    Thread.Sleep(100);
+            //}
+            
             try
             {
+                bool new_error = false;
+                DataTable DT;
+                string strSQL = "";
                 foreach (KeyValuePair<string, AlarmInfo> alarm in dicAlarmInfo)
                 {
-                    if (phPlcKernel[alarm.Key] == 1)
-                    {//Alarm Occure
+                    if (phPlcKernel.DicAlarmStatus[alarm.Key])
+                    {//Alarm Occur
                         if (!dicAlarmStatus[alarm.Key])
                         {
                             dicAlarmStatus[alarm.Key] = true;
-                            currentAlarm.Add(alarm.Value);
+                            currentAlarm.Add(alarm.Value, DateTime.Now);
+                            strSQL = "SELECT * FROM HistoryAlarm WHERE PLC_Adress = " + "'" + alarm.Value.Address +"' AND End_Time is NULL"; 
+                            string err = db.funSQL(strSQL, out DT);
+                            if(DT.Rows.Count == 0)// 找尋DB是否有當下正發生的Alarm，若有則不新增
+                            {
+                                strSQL = "INSERT INTO HistoryAlarm (Start_Time, PLC_Adress, [Level], Description, Solution)VALUES(" + "'" + currentAlarm[alarm.Value].ToString("yyyy/MM/dd HH:mm:ss") + "', '" + alarm.Value.Address
+                                       + "', '" + alarm.Value.Level + "', '" + alarm.Value.Description + "', '" + alarm.Value.Solution + "')";
+                                err = db.funSQL(strSQL);
+                            }
+                            new_error = true;
                         }
                     }
                     else
-                    {//Alarm reset
-                        if (!dicAlarmStatus[alarm.Key])
+                    {   //Alarm clear  When error off
+                        if (currentAlarm.ContainsKey(alarm.Value))
                         {
                             dicAlarmStatus[alarm.Key] = false;
+                            currentAlarm.Remove(alarm.Value);
+                            new_error = true;
+                            //Alarm清除時，更新DB內資料(End_Time為NULL即當前異常)
+                            strSQL = "UPDATE HistoryAlarm SET End_Time = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'" + "WHERE PLC_Adress =" + "'" + alarm.Value.Address +"' AND End_Time is NULL";
+
+                            string err = db.funSQL(strSQL) ;
                         }
                     }
                 }
 
-                if (currentAlarm.Count() > 0)
+                if (new_error) //refresh Current alarm from DB
                 {
+                    strSQL = "SELECT * FROM HistoryAlarm WHERE End_Time is NULL";
+                    string err = db.funSQL(strSQL, out DT);
                     TEvent data = new TEvent();
                     data.MessageName = ProxyMessage.MSG_ALARM_OCCURE;
-                    data.EventData["Count"] = currentAlarm.Count.ToString();
+                    data.EventData["Count"] = DT.Rows.Count.ToString();
                     int alarm_index = 1;
-                    foreach (AlarmInfo alarm in currentAlarm)
+                    for (int index = 0; index < DT.Rows.Count; index++)
                     {
-                        data.EventData["Code" + alarm_index.ToString()] = alarm.Code;
-                        data.EventData["HeavyAlarm" + alarm_index.ToString()] = alarm.isHeavyAlarm ? "1" : "0";
-                        data.EventData["Description" + alarm_index.ToString()] = alarm.Description;
+                        data.EventData["OccurTime" + alarm_index.ToString()] = DT.Rows[index]["Start_Time"].ToString();
+                        data.EventData["Level" + alarm_index.ToString()] = DT.Rows[index]["Level"].ToString();
+                        data.EventData["Description" + alarm_index.ToString()] = DT.Rows[index]["Description"].ToString();
+                        data.EventData["Solution" + alarm_index.ToString()] = DT.Rows[index]["Solution"].ToString();
                         alarm_index++;
                     }
                     ecClient.SendMessage(data);
+                    
                 }
-                
             }
             catch(Exception ex)
             {

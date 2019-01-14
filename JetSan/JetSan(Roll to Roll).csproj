@@ -48,7 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DB">
+    <Reference Include="DB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>dll\DB.dll</HintPath>
     </Reference>
     <Reference Include="Interop.ActProgTypeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

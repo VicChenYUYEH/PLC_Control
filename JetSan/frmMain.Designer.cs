@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnHistoryLog = new System.Windows.Forms.Button();
             this.btnRecipe = new System.Windows.Forms.Button();
@@ -60,13 +63,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
-            this.displayTextBox_Alarm = new HyTemplate.components.DisplayTextBox();
-            this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
             this.label90 = new System.Windows.Forms.Label();
             this.TxtRecipeName = new System.Windows.Forms.TextBox();
+            this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
+            this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
+            this.dataGrdAlarm = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrdAlarm)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHistoryLog
@@ -148,9 +152,9 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button8.Location = new System.Drawing.Point(1376, 985);
+            this.button8.Location = new System.Drawing.Point(1256, 934);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(138, 27);
+            this.button8.Size = new System.Drawing.Size(114, 73);
             this.button8.TabIndex = 12;
             this.button8.Text = "Alarm Reset";
             this.button8.UseVisualStyleBackColor = true;
@@ -162,7 +166,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(12, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1501, 971);
+            this.panel1.Size = new System.Drawing.Size(1501, 906);
             this.panel1.TabIndex = 15;
             // 
             // pictureBox1
@@ -179,7 +183,7 @@
             // 
             this.lblaccount.AutoSize = true;
             this.lblaccount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblaccount.Location = new System.Drawing.Point(1527, 142);
+            this.lblaccount.Location = new System.Drawing.Point(1520, 151);
             this.lblaccount.Name = "lblaccount";
             this.lblaccount.Size = new System.Drawing.Size(90, 21);
             this.lblaccount.TabIndex = 16;
@@ -190,7 +194,7 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblID.Location = new System.Drawing.Point(1628, 142);
+            this.lblID.Location = new System.Drawing.Point(1628, 151);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(52, 21);
             this.lblID.TabIndex = 17;
@@ -201,7 +205,7 @@
             // 
             this.lblPLC_Connect.AutoSize = true;
             this.lblPLC_Connect.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblPLC_Connect.Location = new System.Drawing.Point(1527, 163);
+            this.lblPLC_Connect.Location = new System.Drawing.Point(1520, 185);
             this.lblPLC_Connect.Name = "lblPLC_Connect";
             this.lblPLC_Connect.Size = new System.Drawing.Size(107, 21);
             this.lblPLC_Connect.TabIndex = 25;
@@ -235,7 +239,7 @@
             // Power_RunStop
             // 
             this.Power_RunStop.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Power_RunStop.Location = new System.Drawing.Point(1611, 239);
+            this.Power_RunStop.Location = new System.Drawing.Point(1611, 221);
             this.Power_RunStop.Name = "Power_RunStop";
             this.Power_RunStop.Size = new System.Drawing.Size(78, 48);
             this.Power_RunStop.TabIndex = 2705;
@@ -245,7 +249,7 @@
             // Power_RunStart
             // 
             this.Power_RunStart.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Power_RunStart.Location = new System.Drawing.Point(1519, 239);
+            this.Power_RunStart.Location = new System.Drawing.Point(1520, 221);
             this.Power_RunStart.Name = "Power_RunStart";
             this.Power_RunStart.Size = new System.Drawing.Size(83, 48);
             this.Power_RunStart.TabIndex = 2704;
@@ -398,6 +402,32 @@
             this.label11.Text = "製程系統圖";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label90.ForeColor = System.Drawing.Color.Maroon;
+            this.label90.Location = new System.Drawing.Point(1389, 934);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(114, 21);
+            this.label90.TabIndex = 2725;
+            this.label90.Text = "製程 匯入 配方";
+            this.label90.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // TxtRecipeName
+            // 
+            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
+            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtRecipeName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
+            this.TxtRecipeName.Location = new System.Drawing.Point(1377, 967);
+            this.TxtRecipeName.Name = "TxtRecipeName";
+            this.TxtRecipeName.ReadOnly = true;
+            this.TxtRecipeName.Size = new System.Drawing.Size(137, 29);
+            this.TxtRecipeName.TabIndex = 2720;
+            this.TxtRecipeName.Text = "N/A";
+            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // statusPictureBox1
             // 
             this.statusPictureBox1._CurrentStatus = false;
@@ -406,30 +436,12 @@
             this.statusPictureBox1._Reverse = false;
             this.statusPictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.statusPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("statusPictureBox1.Image")));
-            this.statusPictureBox1.Location = new System.Drawing.Point(1648, 163);
+            this.statusPictureBox1.Location = new System.Drawing.Point(1648, 183);
             this.statusPictureBox1.Name = "statusPictureBox1";
             this.statusPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.statusPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.statusPictureBox1.TabIndex = 24;
             this.statusPictureBox1.TabStop = false;
-            // 
-            // displayTextBox_Alarm
-            // 
-            this.displayTextBox_Alarm._Division = ((short)(1));
-            this.displayTextBox_Alarm._DoubleWord = false;
-            this.displayTextBox_Alarm._EqBase = null;
-            this.displayTextBox_Alarm._MaxLimit = 999D;
-            this.displayTextBox_Alarm._MinLimit = 0D;
-            this.displayTextBox_Alarm._Multiplication = ((short)(1));
-            this.displayTextBox_Alarm._PlcDevice = "";
-            this.displayTextBox_Alarm.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox_Alarm.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.displayTextBox_Alarm.Location = new System.Drawing.Point(12, 985);
-            this.displayTextBox_Alarm.Name = "displayTextBox_Alarm";
-            this.displayTextBox_Alarm.ReadOnly = true;
-            this.displayTextBox_Alarm.Size = new System.Drawing.Size(1358, 27);
-            this.displayTextBox_Alarm.TabIndex = 11;
-            this.displayTextBox_Alarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // currentDateTime1
             // 
@@ -442,38 +454,50 @@
             this.currentDateTime1.Size = new System.Drawing.Size(173, 63);
             this.currentDateTime1.TabIndex = 0;
             // 
-            // label90
+            // dataGrdAlarm
             // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.ForeColor = System.Drawing.Color.Maroon;
-            this.label90.Location = new System.Drawing.Point(1528, 185);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(98, 16);
-            this.label90.TabIndex = 2725;
-            this.label90.Text = "製程 匯入 配方：";
-            // 
-            // TxtRecipeName
-            // 
-            this.TxtRecipeName.BackColor = System.Drawing.SystemColors.Control;
-            this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtRecipeName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TxtRecipeName.Location = new System.Drawing.Point(1531, 204);
-            this.TxtRecipeName.Name = "TxtRecipeName";
-            this.TxtRecipeName.ReadOnly = true;
-            this.TxtRecipeName.Size = new System.Drawing.Size(151, 29);
-            this.TxtRecipeName.TabIndex = 2720;
-            this.TxtRecipeName.Text = "N/A";
-            this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dataGrdAlarm.AllowUserToAddRows = false;
+            this.dataGrdAlarm.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGrdAlarm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("新細明體-ExtB", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrdAlarm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGrdAlarm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrdAlarm.Location = new System.Drawing.Point(12, 920);
+            this.dataGrdAlarm.Name = "dataGrdAlarm";
+            this.dataGrdAlarm.ReadOnly = true;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrdAlarm.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGrdAlarm.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
+            this.dataGrdAlarm.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.dataGrdAlarm.RowTemplate.Height = 24;
+            this.dataGrdAlarm.RowTemplate.ReadOnly = true;
+            this.dataGrdAlarm.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGrdAlarm.Size = new System.Drawing.Size(1238, 92);
+            this.dataGrdAlarm.TabIndex = 2726;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1703, 1019);
-            this.Controls.Add(this.TxtRecipeName);
             this.Controls.Add(this.label90);
+            this.Controls.Add(this.dataGrdAlarm);
+            this.Controls.Add(this.TxtRecipeName);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -498,7 +522,6 @@
             this.Controls.Add(this.lblaccount);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.displayTextBox_Alarm);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnOverview1);
@@ -514,6 +537,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrdAlarm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,7 +555,6 @@
         private System.Windows.Forms.Button btnOverview1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private components.DisplayTextBox displayTextBox_Alarm;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblaccount;
@@ -558,6 +581,7 @@
         private System.Windows.Forms.Label label11;
         internal System.Windows.Forms.Label label90;
         internal System.Windows.Forms.TextBox TxtRecipeName;
+        private System.Windows.Forms.DataGridView dataGrdAlarm;
     }
 }
 

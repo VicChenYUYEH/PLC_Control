@@ -25,7 +25,7 @@ namespace HyTemplate
 
             writeLog("EqBase Initial Start");
             phPlcKernel = new PlcHandler(flDebug);
-            matAlarm = new MonitorAlarmThread(phPlcKernel);
+            matAlarm = new MonitorAlarmThread(PlcKernel);
             rcpKernel = new Recipe();
 
             ecClient = new EventClient(this);

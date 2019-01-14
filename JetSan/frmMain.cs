@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using DB;
 using HyTemplate.gui;
 using System.IO;
 using System.Xml;
@@ -34,6 +35,7 @@ namespace HyTemplate
         frmDeviceConstant deviceConstant;
         frmMaintenance maintenance;
 
+        Db db; 
         RdEqKernel rdKernel;
         Form currentForm = null;
 
@@ -90,17 +92,27 @@ namespace HyTemplate
             }
             else if (m_MessageName == ProxyMessage.MSG_ALARM_OCCURE)
             {
+                DataTable dt = CreatAlarmTable();
                 int alarm_count = Convert.ToInt16(m_Event.EventData["Count"]);
-                for (int index = 1; index <= alarm_count; index++)
+                for (int index = 1; index <=alarm_count; index++)
                 {
-                    string alarm_id = m_Event.EventData["Code" + index.ToString()];
-                    bool is_heavy_alarm = m_Event.EventData["HeavyAlarm" + index.ToString()] == "1" ? true : false;
+                    DateTime alarm_time = Convert.ToDateTime(m_Event.EventData["OccurTime" + index.ToString()]);
+                    string alarm_level = m_Event.EventData["Level" + index.ToString()];
                     string alarm_text = m_Event.EventData["Description" + index.ToString()];
+                    string alarm_solution = m_Event.EventData["Solution" + index.ToString()];
 
-                    string alarm_msg = (is_heavy_alarm ? "Alarm" : "Warning") + " - " + alarm_id + " - " + alarm_text;
-                    displayTextBox_Alarm.Text = alarm_msg;
-                    System.Threading.Thread.Sleep(100);
+                    string alarm_msg = alarm_level + " - " + alarm_time + " - " + alarm_text + "";
+                    dt.Rows.Add(new Object[] { alarm_time, alarm_level, alarm_text, alarm_solution });
                 }
+                dataGrdAlarm.Invoke(new Action(()=>
+                {
+                    SetAlarmGridFormat(dt);
+                }));
+
+            }
+            else if (m_MessageName == ProxyMessage.MSG_ALARM_RESET)
+            {
+                ;
             }
             else if (m_MessageName == ProxyMessage.MSG_PLC_CONNECT)
             {
@@ -111,6 +123,26 @@ namespace HyTemplate
                 string Current_rcp = m_Event.EventData["CurrentRCP"];
                 TxtRecipeName.Text = Current_rcp;
             }
+        }
+
+        private DataTable CreatAlarmTable()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("發生時間");
+            dt.Columns.Add("異常等級");
+            dt.Columns.Add("異常描述");
+            dt.Columns.Add("解決辦法");
+            return dt;
+        }
+
+        private void SetAlarmGridFormat(DataTable DT)
+        {
+            dataGrdAlarm.DataSource = DT;
+            dataGrdAlarm.Columns[0].Width = 200;
+            dataGrdAlarm.Columns[1].Width = 80;
+            dataGrdAlarm.Columns[2].Width = 200;
+            dataGrdAlarm.Columns[3].Width = 710;
+            dataGrdAlarm.Refresh();
         }
 
         private void ReloadGui(Form m_Form)

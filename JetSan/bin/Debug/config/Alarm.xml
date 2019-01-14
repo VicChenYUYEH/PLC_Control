@@ -12,20 +12,329 @@
     <PLC CPUType="1025" ActLogicalStationNumber="1" ActControls="Ethernet" PortNo="1" NetworkNo="0" StationNo="255">
 -->
 <Alarms>
-    <Alarm Id="X00000" Device="X00000" HeavyAlarm="0" Description="Water1水流量檢知" />
-    <Alarm Id="X00001" Device="X00001" HeavyAlarm="0" Description="Water2水流量檢知" />
-    <Alarm Id="X00002" Device="X00002" HeavyAlarm="0" Description="Power01_I-ARC" />
-    <Alarm Id="X00003" Device="X00003" HeavyAlarm="0" Description="Power01_OUTPUT" />
-    <Alarm Id="X00004" Device="X00004" HeavyAlarm="0" Description="Power01_OVERTEMP" />
-    <Alarm Id="X00005" Device="X00005" HeavyAlarm="0" Description="Power02_R-Lock" />
-    <Alarm Id="X00006" Device="X00006" HeavyAlarm="0" Description="Power02_Ready" />
-    <Alarm Id="X00007" Device="X00007" HeavyAlarm="0" Description="Power02_Plasma" />
-	<Alarm Id="X00008" Device="X00008" HeavyAlarm="0" Description="Power02_Overload" />
-	<Alarm Id="X00009" Device="X00009" HeavyAlarm="0" Description="Power02_Arc" />
-	<Alarm Id="X0000A" Device="X0000A" HeavyAlarm="1" Description="EMO" />
-	<Alarm Id="X0000B" Device="X0000B" HeavyAlarm="0" Description="Home Sensor" />
-	<Alarm Id="X0000C" Device="X0000C" HeavyAlarm="0" Description="TP2_ROTATION" />
-	<Alarm Id="X0000D" Device="X0000D" HeavyAlarm="0" Description="TP2_NORMAL" />
-	<Alarm Id="X0000E" Device="X0000E" HeavyAlarm="0" Description="TP2_ACCELERATION" />
-	<Alarm Id="X0000F" Device="X0000F" HeavyAlarm="0" Description="TP2_BRAKE" />
+	<Link Address="M11000" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP1 過載跳脫" Type="Alarm"/>
+	<Link Address="M11001" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP2 過載跳脫" Type="Alarm"/>
+	<Link Address="M11002" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP3 過載跳脫" Type="Alarm"/>
+	<Link Address="M11003" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP4 過載跳脫" Type="Alarm"/>
+	<Link Address="M11004" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP5 過載跳脫" Type="Alarm"/>
+	<Link Address="M11005" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP6 過載跳脫" Type="Alarm"/>
+	<Link Address="M11006" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP7 過載跳脫" Type="Alarm"/>
+	<Link Address="M11007" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP8 過載跳脫" Type="Alarm"/>
+	<Link Address="M11008" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP9 過載跳脫" Type="Alarm"/>
+	<Link Address="M11009" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP10 過載跳脫" Type="Alarm"/>
+	<Link Address="M11010" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP11 過載跳脫" Type="Alarm"/>
+	<Link Address="M11011" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP12 過載跳脫" Type="Alarm"/>
+	<Link Address="M11030" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP1 過載跳脫" Type="Alarm"/>
+	<Link Address="M11031" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP2 過載跳脫" Type="Alarm"/>
+	<Link Address="M11032" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP3 過載跳脫" Type="Alarm"/>
+	<Link Address="M11033" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP4 過載跳脫" Type="Alarm"/>
+	<Link Address="M11034" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP5 過載跳脫" Type="Alarm"/>
+	<Link Address="M11035" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP6 過載跳脫" Type="Alarm"/>
+	<Link Address="M11036" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP7 過載跳脫" Type="Alarm"/>
+	<Link Address="M11037" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP8 過載跳脫" Type="Alarm"/>
+	<Link Address="M11038" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP9 過載跳脫" Type="Alarm"/>
+	<Link Address="M11039" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP10 過載跳脫" Type="Alarm"/>
+	<Link Address="M11040" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP11 過載跳脫" Type="Alarm"/>
+	<Link Address="M11041" HowTo="1.請檢查BP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="BP12 過載跳脫" Type="Alarm"/>
+	<Link Address="M11060" HowTo="請參閱TURBO PUMP手冊" Message="TP1 ALARM" Type="Alarm"/>
+	<Link Address="M11061" HowTo="請參閱TURBO PUMP手冊" Message="TP2 ALARM" Type="Alarm"/>
+	<Link Address="M11062" HowTo="請參閱TURBO PUMP手冊" Message="TP3 ALARM" Type="Alarm"/>
+	<Link Address="M11063" HowTo="請參閱TURBO PUMP手冊" Message="TP4 ALARM" Type="Alarm"/>
+	<Link Address="M11064" HowTo="請參閱TURBO PUMP手冊" Message="TP5 ALARM" Type="Alarm"/>
+	<Link Address="M11065" HowTo="請參閱TURBO PUMP手冊" Message="TP6 ALARM" Type="Alarm"/>
+	<Link Address="M11066" HowTo="請參閱TURBO PUMP手冊" Message="TP7 ALARM" Type="Alarm"/>
+	<Link Address="M11067" HowTo="請參閱TURBO PUMP手冊" Message="TP8 ALARM" Type="Alarm"/>
+	<Link Address="M11068" HowTo="請參閱TURBO PUMP手冊" Message="TP9 ALARM" Type="Alarm"/>
+	<Link Address="M11069" HowTo="請參閱TURBO PUMP手冊" Message="TP10 ALARM" Type="Alarm"/>
+	<Link Address="M11070" HowTo="請參閱TURBO PUMP手冊" Message="TP11 ALARM" Type="Alarm"/>
+	<Link Address="M11071" HowTo="請參閱TURBO PUMP手冊" Message="TP12 ALARM" Type="Alarm"/>
+	<Link Address="M11072" HowTo="請參閱TURBO PUMP手冊" Message="TP13 ALARM" Type="Alarm"/>
+	<Link Address="M11073" HowTo="請參閱TURBO PUMP手冊" Message="TP14 ALARM" Type="Alarm"/>
+	<Link Address="M11074" HowTo="請參閱TURBO PUMP手冊" Message="TP15 ALARM" Type="Alarm"/>
+	<Link Address="M11075" HowTo="請參閱TURBO PUMP手冊" Message="TP16 ALARM" Type="Alarm"/>
+	<Link Address="M11076" HowTo="請參閱TURBO PUMP手冊" Message="TP17 ALARM" Type="Alarm"/>
+	<Link Address="M11077" HowTo="請參閱TURBO PUMP手冊" Message="TP18 ALARM" Type="Alarm"/>
+	<Link Address="M11078" HowTo="請參閱TURBO PUMP手冊" Message="TP19 ALARM" Type="Alarm"/>
+	<Link Address="M11079" HowTo="請參閱TURBO PUMP手冊" Message="TP20 ALARM" Type="Alarm"/>
+	<Link Address="M11080" HowTo="請參閱TURBO PUMP手冊" Message="TP21 ALARM" Type="Alarm"/>
+	<Link Address="M11081" HowTo="請參閱TURBO PUMP手冊" Message="TP22 ALARM" Type="Alarm"/>
+	<Link Address="M11082" HowTo="請參閱TURBO PUMP手冊" Message="TP23 ALARM" Type="Alarm"/>
+	<Link Address="M11083" HowTo="請參閱TURBO PUMP手冊" Message="TP24 ALARM" Type="Alarm"/>
+	<Link Address="M11084" HowTo="請參閱TURBO PUMP手冊" Message="TP25 ALARM" Type="Alarm"/>
+	<Link Address="M11085" HowTo="請參閱TURBO PUMP手冊" Message="TP26 ALARM" Type="Alarm"/>
+	<Link Address="M11120" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M1 TP 水流計異常" Type="Alarm"/>
+	<Link Address="M11121" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M2 TP 水流計異常" Type="Alarm"/>
+	<Link Address="M11122" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M3.1 TP 水流計異常" Type="Alarm"/>
+	<Link Address="M11123" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M3.2 TP 水流計異常" Type="Alarm"/>
+	<Link Address="M11124" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M4 TP 水流計異常" Type="Alarm"/>
+	<Link Address="M11200" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="MF1 Cathode 水流計異常" Type="Alarm"/>
+	<Link Address="M11201" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="MF2 Cathode 水流計異常" Type="Alarm"/>
+	<Link Address="M11202" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="DC1 Cathode 水流計異常" Type="Alarm"/>
+	<Link Address="M11203" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="DC2 Cathode 水流計異常" Type="Alarm"/>
+	<Link Address="M11204" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="DC3 Cathode 水流計異常" Type="Alarm"/>
+	<Link Address="M11205" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="DC4 Cathode 水流計異常" Type="Alarm"/>
+	<Link Address="M11206" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="MF1 Cathode 水流計1異常" Type="Alarm"/>
+	<Link Address="M11207" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="MF2 Cathode 水流計1異常" Type="Alarm"/>
+	<Link Address="M11208" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="DC1、2 Cathode 水流計1異常" Type="Alarm"/>
+	<Link Address="M11209" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="DC3、4 Cathode 水流計1異常" Type="Alarm"/>
+	<Link Address="M11220" HowTo="1.檢查遮罩蓋板 2.檢查遮罩Sensor" Message="MF1 Cathode 遮罩異常" Type="Alarm"/>
+	<Link Address="M11221" HowTo="1.檢查遮罩蓋板 2.檢查遮罩Sensor" Message="MF2 Cathode 遮罩異常" Type="Alarm"/>
+	<Link Address="M11222" HowTo="1.檢查遮罩蓋板 2.檢查遮罩Sensor" Message="DC1 Cathode 遮罩異常" Type="Alarm"/>
+	<Link Address="M11223" HowTo="1.檢查遮罩蓋板 2.檢查遮罩Sensor" Message="DC2 Cathode 遮罩異常" Type="Alarm"/>
+	<Link Address="M11224" HowTo="1.檢查遮罩蓋板 2.檢查遮罩Sensor" Message="DC3 Cathode 遮罩異常" Type="Alarm"/>
+	<Link Address="M11225" HowTo="1.檢查遮罩蓋板 2.檢查遮罩Sensor" Message="DC4 Cathode 遮罩異常" Type="Alarm"/>
+	<Link Address="M11240" HowTo="請更換靶材. 更換完畢. 請至【統計】畫面. 將實際壽命歸零" Message="MF1 Cathode 靶材壽命已到.不得執行【製程】動作" Type="Alarm"/>
+	<Link Address="M11241" HowTo="請更換靶材. 更換完畢. 請至【統計】畫面. 將實際壽命歸零" Message="MF2 Cathode 靶材壽命已到.不得執行【製程】動作" Type="Alarm"/>
+	<Link Address="M11242" HowTo="請更換靶材. 更換完畢. 請至【統計】畫面. 將實際壽命歸零" Message="DC1 Cathode 靶材壽命已到.不得執行【製程】動作" Type="Alarm"/>
+	<Link Address="M11243" HowTo="請更換靶材. 更換完畢. 請至【統計】畫面. 將實際壽命歸零" Message="DC2 Cathode 靶材壽命已到.不得執行【製程】動作" Type="Alarm"/>
+	<Link Address="M11244" HowTo="請更換靶材. 更換完畢. 請至【統計】畫面. 將實際壽命歸零" Message="DC3 Cathode 靶材壽命已到.不得執行【製程】動作" Type="Alarm"/>
+	<Link Address="M11245" HowTo="請更換靶材. 更換完畢. 請至【統計】畫面. 將實際壽命歸零" Message="DC4 Cathode 靶材壽命已到.不得執行【製程】動作" Type="Alarm"/>
+	<Link Address="M11260" HowTo="1.檢查DC電源是否開啟 2.Call Service" Message="MF POWER 1 NOT READY" Type="Alarm"/>
+	<Link Address="M11261" HowTo="1.檢查DC電源是否開啟 2.Call Service" Message="MF POWER 2 NOT READY" Type="Alarm"/>
+	<Link Address="M11262" HowTo="1.檢查DC電源是否開啟 2.Call Service" Message="DC POWER 1 NOT READY" Type="Alarm"/>
+	<Link Address="M11263" HowTo="1.檢查DC電源是否開啟 2.Call Service" Message="DC POWER 2 NOT READY" Type="Alarm"/>
+	<Link Address="M11264" HowTo="1.檢查DC電源是否開啟 2.Call Service" Message="DC POWER 3 NOT READY" Type="Alarm"/>
+	<Link Address="M11265" HowTo="1.檢查DC電源是否開啟 2.Call Service" Message="DC POWER 4 NOT READY" Type="Alarm"/>
+	<Link Address="M11280" HowTo="1.請將EMO按鈕復歸後，重新啟動系統" Message="EMO啟動中" Type="Alarm"/>
+	<Link Address="M11281" HowTo="請檢查冷卻水溫度" Message="廠務水溫異常" Type="Alarm"/>
+	<Link Address="M11282" HowTo="請檢查冷卻水出水壓力" Message="廠務冷?水源壓力不足" Type="Alarm"/>
+	<Link Address="M11283" HowTo="檢查氣壓源壓力是否正常 (4~6KG)" Message="氣壓源壓力不足" Type="Alarm"/>
+	<Link Address="M11284" HowTo="檢查氣壓源壓力是否正常 (4~6KG)" Message="氣壓源壓力嚴重不足" Type="Alarm"/>
+	<Link Address="M11285" HowTo="1.請查檢馬達是否正常 2.請檢查驅動器是否正常 3.請通訊是否正常" Message="放料馬達異常" Type="Alarm"/>
+	<Link Address="M11286" HowTo="1.請查檢馬達是否正常 2.請檢查驅動器是否正常 3.請通訊是否正常" Message="收料馬達異常" Type="Alarm"/>
+	<Link Address="M11287" HowTo="1.請查檢馬達是否正常 2.請檢查驅動器是否正常 3.請通訊是否正常" Message="主機馬達異常" Type="Alarm"/>
+	<Link Address="M11288" HowTo="1.請查檢馬達是否正常 2.請檢查驅動器是否正常 3.請通訊是否正常" Message="夾出馬達異常" Type="Alarm"/>
+	<Link Address="M11289" HowTo="1.請查檢馬達是否正常 2.請檢查驅動器是否正常 3.請通訊是否正常" Message="夾入馬達異常" Type="Alarm"/>
+	<Link Address="M11290" HowTo="1.請查檢張力計是否正常 2.請通訊是否正常" Message="放料張力異常" Type="Alarm"/>
+	<Link Address="M11291" HowTo="1.請查檢張力計是否正常 2.請通訊是否正常" Message="收料張力異常" Type="Alarm"/>
+	<Link Address="M11292" HowTo="1.請查檢馬達是否正常 2.請檢查驅動器是否正常 3.請通訊是否正常" Message="速比設定異常" Type="Alarm"/>
+	<Link Address="M11293" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M1 RP 水流量計異常" Type="Alarm"/>
+	<Link Address="M11294" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M2 RP 水流量計異常" Type="Alarm"/>
+	<Link Address="M11295" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M3 RP 水流量計異常" Type="Alarm"/>
+	<Link Address="M11296" HowTo="1.檢查水閥有無開啟 2.檢查冷卻水壓力 3.檢查水流計" Message="M4 RP 水流量計異常" Type="Alarm"/>
+	<Link Address="M11297" HowTo="請確認所需動作後，關閉門板" Message="M1腔體門板未關閉" Type="Alarm"/>
+	<Link Address="M11298" HowTo="請確認所需動作後，關閉門板" Message="M2腔體門板未關閉" Type="Alarm"/>
+	<Link Address="M11299" HowTo="請確認所需動作後，關閉門板" Message="M3腔體門板未關閉" Type="Alarm"/>
+	<Link Address="M11300" HowTo="請確認所需動作後，關閉門板" Message="M4腔體門板未關閉" Type="Alarm"/>
+	<Link Address="M11500" HowTo="請檢查Vent閥是否關閉" Message="RV1無法開啟" Type="Warning"/>
+	<Link Address="M11501" HowTo="請檢查Vent閥是否關閉" Message="RV2無法開啟" Type="Warning"/>
+	<Link Address="M11502" HowTo="請檢查Vent閥是否關閉" Message="RV3無法開啟" Type="Warning"/>
+	<Link Address="M11503" HowTo="請檢查Vent閥是否關閉" Message="RV4無法開啟" Type="Warning"/>
+	<Link Address="M11504" HowTo="請檢查Vent閥是否關閉" Message="RV5無法開啟" Type="Warning"/>
+	<Link Address="M11505" HowTo="請檢查Vent閥是否關閉" Message="RV6無法開啟" Type="Warning"/>
+	<Link Address="M11506" HowTo="請檢查Vent閥是否關閉" Message="RV7無法開啟" Type="Warning"/>
+	<Link Address="M11507" HowTo="請檢查Vent閥是否關閉" Message="RV8無法開啟" Type="Warning"/>
+	<Link Address="M11508" HowTo="請檢查Vent閥是否關閉" Message="RV9無法開啟" Type="Warning"/>
+	<Link Address="M11509" HowTo="請檢查Vent閥是否關閉" Message="RV10無法開啟" Type="Warning"/>
+	<Link Address="M11510" HowTo="請檢查Vent閥是否關閉" Message="RV11無法開啟" Type="Warning"/>
+	<Link Address="M11511" HowTo="請檢查Vent閥是否關閉" Message="RV12無法開啟" Type="Warning"/>
+	<Link Address="M11530" HowTo="1.請檢查RV閥是否關閉 2.Heater溫度是否過高 3.TP是否完全停止 4.FV閥是否關閉 5.MFC是否關閉" Message="Vent1無法開啟" Type="Warning"/>
+	<Link Address="M11531" HowTo="1.請檢查RV閥是否關閉 2.Heater溫度是否過高 3.TP是否完全停止 4.FV閥是否關閉 5.MFC是否關閉" Message="Vent2無法開啟" Type="Warning"/>
+	<Link Address="M11532" HowTo="1.請檢查RV閥是否關閉 2.Heater溫度是否過高 3.TP是否完全停止 4.FV閥是否關閉 5.MFC是否關閉" Message="Vent3無法開啟" Type="Warning"/>
+	<Link Address="M11533" HowTo="1.請檢查RV閥是否關閉 2.Heater溫度是否過高 3.TP是否完全停止 4.FV閥是否關閉 5.MFC是否關閉" Message="Soft Vent1無法開啟" Type="Warning"/>
+	<Link Address="M11534" HowTo="1.請檢查RV閥是否關閉 2.Heater溫度是否過高 3.TP是否完全停止 4.FV閥是否關閉 5.MFC是否關閉" Message="Soft Vent2無法開啟" Type="Warning"/>
+	<Link Address="M11560" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP1 保養時數已到" Type="Warning"/>
+	<Link Address="M11561" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP2 保養時數已到" Type="Warning"/>
+	<Link Address="M11562" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP3 保養時數已到" Type="Warning"/>
+	<Link Address="M11563" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP4 保養時數已到" Type="Warning"/>
+	<Link Address="M11564" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP5 保養時數已到" Type="Warning"/>
+	<Link Address="M11565" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP6 保養時數已到" Type="Warning"/>
+	<Link Address="M11566" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP7 保養時數已到" Type="Warning"/>
+	<Link Address="M11567" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP8 保養時數已到" Type="Warning"/>
+	<Link Address="M11568" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP9 保養時數已到" Type="Warning"/>
+	<Link Address="M11569" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP10 保養時數已到" Type="Warning"/>
+	<Link Address="M11570" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP11 保養時數已到" Type="Warning"/>
+	<Link Address="M11571" HowTo="請作RP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="RP12 保養時數已到" Type="Warning"/>
+	<Link Address="M11590" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP1 保養時數已到" Type="Warning"/>
+	<Link Address="M11591" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP2 保養時數已到" Type="Warning"/>
+	<Link Address="M11592" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP3 保養時數已到" Type="Warning"/>
+	<Link Address="M11593" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP4 保養時數已到" Type="Warning"/>
+	<Link Address="M11594" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP5 保養時數已到" Type="Warning"/>
+	<Link Address="M11595" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP6 保養時數已到" Type="Warning"/>
+	<Link Address="M11596" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP7 保養時數已到" Type="Warning"/>
+	<Link Address="M11597" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP8 保養時數已到" Type="Warning"/>
+	<Link Address="M11598" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP9 保養時數已到" Type="Warning"/>
+	<Link Address="M11599" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP10 保養時數已到" Type="Warning"/>
+	<Link Address="M11600" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP11 保養時數已到" Type="Warning"/>
+	<Link Address="M11601" HowTo="請作BP保養. 再至【統計】畫面. 將實際保養時數歸零" Message="BP12 保養時數已到" Type="Warning"/>
+	<Link Address="M11620" HowTo="請參閱TURBO PUMP手冊" Message="TP1 保養時數已到" Type="Warning"/>
+	<Link Address="M11621" HowTo="請參閱TURBO PUMP手冊" Message="TP2 保養時數已到" Type="Warning"/>
+	<Link Address="M11622" HowTo="請參閱TURBO PUMP手冊" Message="TP3 保養時數已到" Type="Warning"/>
+	<Link Address="M11623" HowTo="請參閱TURBO PUMP手冊" Message="TP4 保養時數已到" Type="Warning"/>
+	<Link Address="M11624" HowTo="請參閱TURBO PUMP手冊" Message="TP5 保養時數已到" Type="Warning"/>
+	<Link Address="M11625" HowTo="請參閱TURBO PUMP手冊" Message="TP6 保養時數已到" Type="Warning"/>
+	<Link Address="M11626" HowTo="請參閱TURBO PUMP手冊" Message="TP7 保養時數已到" Type="Warning"/>
+	<Link Address="M11627" HowTo="請參閱TURBO PUMP手冊" Message="TP8 保養時數已到" Type="Warning"/>
+	<Link Address="M11628" HowTo="請參閱TURBO PUMP手冊" Message="TP9 保養時數已到" Type="Warning"/>
+	<Link Address="M11629" HowTo="請參閱TURBO PUMP手冊" Message="TP10 保養時數已到" Type="Warning"/>
+	<Link Address="M11630" HowTo="請參閱TURBO PUMP手冊" Message="TP11 保養時數已到" Type="Warning"/>
+	<Link Address="M11631" HowTo="請參閱TURBO PUMP手冊" Message="TP12 保養時數已到" Type="Warning"/>
+	<Link Address="M11632" HowTo="請參閱TURBO PUMP手冊" Message="TP13 保養時數已到" Type="Warning"/>
+	<Link Address="M11633" HowTo="請參閱TURBO PUMP手冊" Message="TP14 保養時數已到" Type="Warning"/>
+	<Link Address="M11634" HowTo="請參閱TURBO PUMP手冊" Message="TP15 保養時數已到" Type="Warning"/>
+	<Link Address="M11635" HowTo="請參閱TURBO PUMP手冊" Message="TP16 保養時數已到" Type="Warning"/>
+	<Link Address="M11636" HowTo="請參閱TURBO PUMP手冊" Message="TP17 保養時數已到" Type="Warning"/>
+	<Link Address="M11637" HowTo="請參閱TURBO PUMP手冊" Message="TP18 保養時數已到" Type="Warning"/>
+	<Link Address="M11638" HowTo="請參閱TURBO PUMP手冊" Message="TP19 保養時數已到" Type="Warning"/>
+	<Link Address="M11639" HowTo="請參閱TURBO PUMP手冊" Message="TP20 保養時數已到" Type="Warning"/>
+	<Link Address="M11640" HowTo="請參閱TURBO PUMP手冊" Message="TP21 保養時數已到" Type="Warning"/>
+	<Link Address="M11641" HowTo="請參閱TURBO PUMP手冊" Message="TP22 保養時數已到" Type="Warning"/>
+	<Link Address="M11642" HowTo="請參閱TURBO PUMP手冊" Message="TP23 保養時數已到" Type="Warning"/>
+	<Link Address="M11643" HowTo="請參閱TURBO PUMP手冊" Message="TP24 保養時數已到" Type="Warning"/>
+	<Link Address="M11644" HowTo="請參閱TURBO PUMP手冊" Message="TP25 保養時數已到" Type="Warning"/>
+	<Link Address="M11645" HowTo="請參閱TURBO PUMP手冊" Message="TP26 保養時數已到" Type="Warning"/>
+	<Link Address="M11680" HowTo="請先關BP1" Message="BP1未關機. RP1無法關機" Type="Warning"/>
+	<Link Address="M11681" HowTo="請先關BP1" Message="BP2未關機. RP2無法關機" Type="Warning"/>
+	<Link Address="M11682" HowTo="請先關BP2" Message="BP3未關機. RP3無法關機" Type="Warning"/>
+	<Link Address="M11683" HowTo="請先關BP3" Message="BP4未關機. RP4無法關機" Type="Warning"/>
+	<Link Address="M11684" HowTo="請先關BP4" Message="BP5未關機. RP5無法關機" Type="Warning"/>
+	<Link Address="M11685" HowTo="請先關BP5" Message="BP6未關機. RP6無法關機" Type="Warning"/>
+	<Link Address="M11686" HowTo="請先關BP7" Message="BP7未關機. RP7無法關機" Type="Warning"/>
+	<Link Address="M11687" HowTo="請先關BP8" Message="BP8未關機. RP8無法關機" Type="Warning"/>
+	<Link Address="M11688" HowTo="請先關BP9" Message="BP9未關機. RP9無法關機" Type="Warning"/>
+	<Link Address="M11689" HowTo="請先關BP10" Message="BP10未關機. RP10無法關機" Type="Warning"/>
+	<Link Address="M11690" HowTo="請先關BP11" Message="BP11未關機. RP11無法關機" Type="Warning"/>
+	<Link Address="M11691" HowTo="請先關BP12" Message="BP12未關機. RP12無法關機" Type="Warning"/>
+	<Link Address="M11710" HowTo="請先開RP1" Message="RP1未開機. BP1無法開機" Type="Warning"/>
+	<Link Address="M11711" HowTo="請先開RP2" Message="RP2未開機. BP2無法開機" Type="Warning"/>
+	<Link Address="M11712" HowTo="請先開RP3" Message="RP3未開機. BP3無法開機" Type="Warning"/>
+	<Link Address="M11713" HowTo="請先開RP4" Message="RP4未開機. BP4無法開機" Type="Warning"/>
+	<Link Address="M11714" HowTo="請先開RP5" Message="RP5未開機. BP5無法開機" Type="Warning"/>
+	<Link Address="M11715" HowTo="請先開RP6" Message="RP6未開機. BP6無法開機" Type="Warning"/>
+	<Link Address="M11716" HowTo="請先開RP7" Message="RP7未開機. BP7無法開機" Type="Warning"/>
+	<Link Address="M11717" HowTo="請先開RP8" Message="RP8未開機. BP8無法開機" Type="Warning"/>
+	<Link Address="M11718" HowTo="請先開RP9" Message="RP9未開機. BP9無法開機" Type="Warning"/>
+	<Link Address="M11719" HowTo="請先開RP10" Message="RP10未開機. BP10無法開機" Type="Warning"/>
+	<Link Address="M11720" HowTo="請先開RP11" Message="RP11未開機. BP11無法開機" Type="Warning"/>
+	<Link Address="M11721" HowTo="請先開RP12" Message="RP12未開機. BP12無法開機" Type="Warning"/>
+	<Link Address="M11740" HowTo="請檢查靶材, 腔體是否有沾汙" Message="MF1 Cathode ARC" Type="Warning"/>
+	<Link Address="M11741" HowTo="請檢查靶材, 腔體是否有沾汙" Message="MF2 Cathode ARC" Type="Warning"/>
+	<Link Address="M11742" HowTo="請檢查靶材, 腔體是否有沾汙" Message="DC1 Cathode ARC" Type="Warning"/>
+	<Link Address="M11743" HowTo="請檢查靶材, 腔體是否有沾汙" Message="DC2 Cathode ARC" Type="Warning"/>
+	<Link Address="M11744" HowTo="請檢查靶材, 腔體是否有沾汙" Message="DC3 Cathode ARC" Type="Warning"/>
+	<Link Address="M11745" HowTo="請檢查靶材, 腔體是否有沾汙" Message="DC4 Cathode ARC" Type="Warning"/>
+	<Link Address="M11760" HowTo="請檢查是否ARC或短路現象" Message="MF1 偏差過大" Type="Warning"/>
+	<Link Address="M11761" HowTo="請檢查是否ARC或短路現象" Message="MF2 偏差過大" Type="Warning"/>
+	<Link Address="M11762" HowTo="請檢查是否ARC或短路現象" Message="DC1 偏差過大" Type="Warning"/>
+	<Link Address="M11763" HowTo="請檢查是否ARC或短路現象" Message="DC2 偏差過大" Type="Warning"/>
+	<Link Address="M11764" HowTo="請檢查是否ARC或短路現象" Message="DC3 偏差過大" Type="Warning"/>
+	<Link Address="M11765" HowTo="請檢查是否ARC或短路現象" Message="DC4 偏差過大" Type="Warning"/>
+	<Link Address="M11780" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 1 偏差過大" Type="Warning"/>
+	<Link Address="M11781" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 2 偏差過大" Type="Warning"/>
+	<Link Address="M11782" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 3 偏差過大" Type="Warning"/>
+	<Link Address="M11783" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 4 偏差過大" Type="Warning"/>
+	<Link Address="M11784" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 5 偏差過大" Type="Warning"/>
+	<Link Address="M11785" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 6 偏差過大" Type="Warning"/>
+	<Link Address="M11786" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 7 偏差過大" Type="Warning"/>
+	<Link Address="M11787" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 8 偏差過大" Type="Warning"/>
+	<Link Address="M11788" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 9 偏差過大" Type="Warning"/>
+	<Link Address="M11789" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 10 偏差過大" Type="Warning"/>
+	<Link Address="M11790" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 11 偏差過大" Type="Warning"/>
+	<Link Address="M11791" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 12 偏差過大" Type="Warning"/>
+	<Link Address="M11792" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 13 偏差過大" Type="Warning"/>
+	<Link Address="M11793" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 14 偏差過大" Type="Warning"/>
+	<Link Address="M11794" HowTo="1.請檢查手動閥, 氣動閥有無開啟. 氣體壓力是否OK(1~2Kg). 2.檢查管路是否有漏" Message="MFC 15 偏差過大" Type="Warning"/>
+	<Link Address="M11830" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP1 通訊異常" Type="Warning"/>
+	<Link Address="M11831" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP2 通訊異常" Type="Warning"/>
+	<Link Address="M11832" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP3 通訊異常" Type="Warning"/>
+	<Link Address="M11833" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP4 通訊異常" Type="Warning"/>
+	<Link Address="M11834" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP5 通訊異常" Type="Warning"/>
+	<Link Address="M11835" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP6 通訊異常" Type="Warning"/>
+	<Link Address="M11836" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP7 通訊異常" Type="Warning"/>
+	<Link Address="M11837" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP8 通訊異常" Type="Warning"/>
+	<Link Address="M11838" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP9 通訊異常" Type="Warning"/>
+	<Link Address="M11839" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP10 通訊異常" Type="Warning"/>
+	<Link Address="M11840" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP11 通訊異常" Type="Warning"/>
+	<Link Address="M11841" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP12 通訊異常" Type="Warning"/>
+	<Link Address="M11842" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP13 通訊異常" Type="Warning"/>
+	<Link Address="M11843" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP14 通訊異常" Type="Warning"/>
+	<Link Address="M11844" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP15 通訊異常" Type="Warning"/>
+	<Link Address="M11845" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP16 通訊異常" Type="Warning"/>
+	<Link Address="M11846" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP17 通訊異常" Type="Warning"/>
+	<Link Address="M11847" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP18 通訊異常" Type="Warning"/>
+	<Link Address="M11848" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP19 通訊異常" Type="Warning"/>
+	<Link Address="M11849" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP20 通訊異常" Type="Warning"/>
+	<Link Address="M11850" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP21 通訊異常" Type="Warning"/>
+	<Link Address="M11851" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP22 通訊異常" Type="Warning"/>
+	<Link Address="M11852" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP23 通訊異常" Type="Warning"/>
+	<Link Address="M11853" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP24 通訊異常" Type="Warning"/>
+	<Link Address="M11854" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP25 通訊異常" Type="Warning"/>
+	<Link Address="M11855" HowTo="1.請檢查通訊接頭是否脫落 2.請檢查模組是否異常 3.請檢查TP是否異常" Message="TP26 通訊異常" Type="Warning"/>
+	<Link Address="M11890" HowTo="1.檢查偏差量設定是否適當 2.檢查Heater保險絲 3.檢查Heater是否燒毀" Message="Heater 1 溫度偏差過大" Type="Warning"/>
+	<Link Address="M11891" HowTo="1.檢查偏差量設定是否適當 2.檢查Heater保險絲 3.檢查Heater是否燒毀" Message="Heater 2 溫度偏差過大" Type="Warning"/>
+	<Link Address="M11892" HowTo="1.檢查偏差量設定是否適當 2.檢查Heater保險絲 3.檢查Heater是否燒毀" Message="Heater 3 溫度偏差過大" Type="Warning"/>
+	<Link Address="M11893" HowTo="1.檢查偏差量設定是否適當 2.檢查Heater保險絲 3.檢查Heater是否燒毀" Message="Heater 4 溫度偏差過大" Type="Warning"/>
+	<Link Address="M11990" HowTo="PLC Restart" Message="PLC Restart" Type="Warning"/>
+	<Link Address="M11991" HowTo="立即換新PLC電池" Message="PLC電池電力不足" Type="Warning"/>
+	<Link Address="M11992" HowTo="PLC AC Down" Message="PLC AC Down" Type="Warning"/>
+	<Link Address="M11993" HowTo="1.請檢查閥門動作是否正常 2.請檢查Pump是否正常 3.重新執行" Message="放料腔粗抽流程逾時" Type="Warning"/>
+	<Link Address="M11994" HowTo="1.請檢查閥門動作是否正常 2.請檢查Pump是否正常 3.重新執行" Message="Vacuum ON 製程壓力逾時" Type="Warning"/>
+	<Link Address="M11995" HowTo="1.請檢查閥門動作是否正常 2.請檢查Pump是否正常 3.重新執行" Message="製程腔壓力未到達" Type="Warning"/>
+	<Link Address="M11996" HowTo="檢查網路線是否有脫落" Message="傳動機購 連線異常" Type="Warning"/>
+	<Link Address="M11997" HowTo="1.請檢查閥門動作是否正常 2.請檢查Pump是否正常 3.重新執行" Message="加熱腔粗抽流程逾時" Type="Warning"/>
+	<Link Address="M11998" HowTo="1.請檢查閥門動作是否正常 2.請檢查Pump是否正常 3.重新執行" Message="製程腔粗抽流程逾時" Type="Warning"/>
+	<Link Address="M11999" HowTo="1.請檢查閥門動作是否正常 2.請檢查Pump是否正常 3.重新執行" Message="收料腔粗抽流程逾時" Type="Warning"/>
+	<Link Address="M12000" HowTo="請參閱 PolyCold手冊" Message="PolyCold 1 異常" Type="Warning"/>
+	<Link Address="M12001" HowTo="請參閱 PolyCold手冊" Message="PolyCold 2 異常" Type="Warning"/>
+	<Link Address="M12002" HowTo="請參閱 PolyCold手冊" Message="PolyCold 3 異常" Type="Warning"/>
+	<Link Address="M12003" HowTo="請參閱 PolyCold手冊" Message="PolyCold 1_1 除霜延時" Type="Warning"/>
+	<Link Address="M12004" HowTo="請參閱 PolyCold手冊" Message="PolyCold 1_2 除霜延時" Type="Warning"/>
+	<Link Address="M12005" HowTo="請參閱 PolyCold手冊" Message="PolyCold 2_1 除霜延時" Type="Warning"/>
+	<Link Address="M12006" HowTo="請參閱 PolyCold手冊" Message="PolyCold 2_2 除霜延時" Type="Warning"/>
+	<Link Address="M12007" HowTo="請參閱 PolyCold手冊" Message="PolyCold 3_1 除霜延時" Type="Warning"/>
+	<Link Address="M12008" HowTo="請參閱 PolyCold手冊" Message="PolyCold 3_2 除霜延時" Type="Warning"/>
+	<Link Address="M12009" HowTo="1.請檢查線路是否異常 2.請檢查模組電源是否開啟" Message="溫控器通訊異常" Type="Warning"/>
+	<Link Address="M12010" HowTo="請參閱SCR手冊" Message="SCR1 Alarm" Type="Warning"/>
+	<Link Address="M12011" HowTo="請參閱SCR手冊" Message="SCR2 Alarm" Type="Warning"/>
+	<Link Address="M12012" HowTo="請參閱SCR手冊" Message="SCR3 Alarm" Type="Warning"/>
+	<Link Address="M12013" HowTo="請參閱SCR手冊" Message="SCR4 Alarm" Type="Warning"/>
+	<Link Address="M12014" HowTo="請參閱恆溫機手冊" Message="恆溫機逆相警報" Type="Warning"/>
+	<Link Address="M12015" HowTo="請參閱恆溫機手冊" Message="恆溫機缺水警報" Type="Warning"/>
+	<Link Address="M12016" HowTo="請參閱恆溫機手冊" Message="恆溫機循環泵異常" Type="Warning"/>
+	<Link Address="M12017" HowTo="請參閱恆溫機手冊" Message="恆溫機壓縮機過載" Type="Warning"/>
+	<Link Address="M12018" HowTo="請參閱恆溫機手冊" Message="恆溫機輸出泵異常" Type="Warning"/>
+	<Link Address="M12019" HowTo="請參閱恆溫機手冊" Message="恆溫機低壓警報" Type="Warning"/>
+	<Link Address="M12020" HowTo="請參閱恆溫機手冊" Message="恆溫機高壓警報" Type="Warning"/>
+	<Link Address="M12021" HowTo="請參閱冰水機手冊" Message="小冰水機異常" Type="Warning"/>
+	<Link Address="M12022" HowTo="TP開啟中無法關閉RV" Message="RV1無法關閉" Type="Warning"/>
+	<Link Address="M12023" HowTo="TP開啟中無法關閉RV" Message="RV2無法關閉" Type="Warning"/>
+	<Link Address="M12024" HowTo="TP開啟中無法關閉RV" Message="RV3無法關閉" Type="Warning"/>
+	<Link Address="M12025" HowTo="TP開啟中無法關閉RV" Message="RV4無法關閉" Type="Warning"/>
+	<Link Address="M12026" HowTo="TP開啟中無法關閉RV" Message="RV5無法關閉" Type="Warning"/>
+	<Link Address="M12027" HowTo="TP開啟中無法關閉RV" Message="RV6無法關閉" Type="Warning"/>
+	<Link Address="M12052" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP9 閥板動作異常" Type="Warning"/>
+	<Link Address="M12053" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP10 閥板動作異常" Type="Warning"/>
+	<Link Address="M12054" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP11 閥板動作異常" Type="Warning"/>
+	<Link Address="M12055" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP12 閥板動作異常" Type="Warning"/>
+	<Link Address="M12056" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP13 閥板動作異常" Type="Warning"/>
+	<Link Address="M12057" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP14 閥板動作異常" Type="Warning"/>
+	<Link Address="M12058" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP19 閥板動作異常" Type="Warning"/>
+	<Link Address="M12059" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP20 閥板動作異常" Type="Warning"/>
+	<Link Address="M12060" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP21 閥板動作異常" Type="Warning"/>
+	<Link Address="M12061" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP22 閥板動作異常" Type="Warning"/>
+	<Link Address="M12062" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP23 閥板動作異常" Type="Warning"/>
+	<Link Address="M12063" HowTo="1.請檢查氣缸是否正常 2.請檢查磁簧開關是否正常" Message="TP24 閥板動作異常" Type="Warning"/>
+	<Link Address="M12064" HowTo="1.請檢查TP閥板是否關閉 2.請檢查是否已破真空" Message="製程腔門板無法開啟" Type="Warning"/>
+	<Link Address="M12065" HowTo="1.請先待TP停止後再關閉FV閥" Message="TP未停止FV 無法關閉" Type="Warning"/>
+	<Link Address="M12066" HowTo="請使用測漏儀進行檢測" Message="PLVG1於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12067" HowTo="請使用測漏儀進行檢測" Message="PLVG2於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12068" HowTo="請使用測漏儀進行檢測" Message="PLVG3於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12069" HowTo="請使用測漏儀進行檢測" Message="PLVG4於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12070" HowTo="請使用測漏儀進行檢測" Message="PLVG5於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12071" HowTo="請使用測漏儀進行檢測" Message="PLVG6於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12072" HowTo="請使用測漏儀進行檢測" Message="PLVG7於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12073" HowTo="請使用測漏儀進行檢測" Message="PLVG8於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12074" HowTo="請使用測漏儀進行檢測" Message="PLVG9於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12075" HowTo="請使用測漏儀進行檢測" Message="PLVG10於TP啟動中異常回壓大於0.65 Torr" Type="Warning"/>
+	<Link Address="M12076" HowTo="請使用測漏儀進行檢測" Message="LVG1於TP啟動中異常回壓 大於 TP觸發壓力" Type="Warning"/>
+	<Link Address="M12077" HowTo="請使用測漏儀進行檢測" Message="LVG2於TP啟動中異常回壓 大於 TP觸發壓力" Type="Warning"/>
+	<Link Address="M12078" HowTo="請使用測漏儀進行檢測" Message="LVG3於TP啟動中異常回壓 大於 TP觸發壓力" Type="Warning"/>
+	<Link Address="M12079" HowTo="請使用測漏儀進行檢測" Message="LVG4於TP啟動中異常回壓 大於 TP觸發壓力" Type="Warning"/>
+	<Link Address="M12080" HowTo="請依使用需求切換 Remote/Local" Message="PolyCold 1_1 為Local Mode" Type="Warning"/>
+	<Link Address="M12081" HowTo="請依使用需求切換 Remote/Local" Message="PolyCold 1_2 為Local Mode" Type="Warning"/>
+	<Link Address="M12082" HowTo="請依使用需求切換 Remote/Local" Message="PolyCold 2_1 為Local Mode" Type="Warning"/>
+	<Link Address="M12083" HowTo="請依使用需求切換 Remote/Local" Message="PolyCold 2_2 為Local Mode" Type="Warning"/>
+	<Link Address="M12084" HowTo="請依使用需求切換 Remote/Local" Message="PolyCold 3_1 為Local Mode" Type="Warning"/>
+	<Link Address="M12085" HowTo="請依使用需求切換 Remote/Local" Message="PolyCold 3_2 為Local Mode" Type="Warning"/>
+	<Link Address="M12086" HowTo="請參閱冰水機手冊"		Message="大冰水機異常"	 Type="Warning"/>
 </Alarms>
