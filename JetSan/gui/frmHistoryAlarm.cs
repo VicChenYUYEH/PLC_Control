@@ -34,7 +34,7 @@ namespace HyTemplate.gui
             DateTime dtStart = DateTime.Parse(s_datetime);
             DateTime dtEnd = DateTime.Parse(e_datetime);
             DataTable DT;
-            string strSQL = "SELECT * FROM HistoryAlarm WHERE Start_Time >= '" + dtStart.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'" + "AND End_Time <='" + dtEnd.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'";
+            string strSQL = "SELECT * FROM HistoryAlarm WHERE Start_Time BETWEEN '" + dtStart.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'" + "AND '" + dtEnd.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'";
             string err = db.funSQL(strSQL, out DT); //從DB 取得該區段時間的 Data Table
             dataGridView1.DataSource = DT;
             DT = null;
