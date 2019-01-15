@@ -61,6 +61,7 @@ namespace HyTemplate
         Dictionary<PlcDeviceType, PlcDataInfo> dicPlcInfo = new Dictionary<PlcDeviceType, PlcDataInfo>();
         Dictionary<string, KeyValuePair<string, int>> dicPlcBuffer = new Dictionary<string, KeyValuePair<string, int>>();
         Dictionary<string, PlcValueType> dicPlcValueType = new Dictionary<string, PlcValueType>();
+        Dictionary<PlcDeviceType, PlcDataInfo> dicAlarmInfo = new Dictionary<PlcDeviceType, PlcDataInfo>();
         public Dictionary<string, bool> DicAlarmStatus { get; } = new Dictionary<string, bool>();
 
         public PlcHandler(FileLog m_Log=null)
@@ -68,7 +69,8 @@ namespace HyTemplate
             flLog = m_Log;
 
             string xml_file = System.IO.Directory.GetCurrentDirectory() + "\\config\\Plc.xml";
-            if (parserPlcXml(xml_file))
+            string Alarm_xml = System.IO.Directory.GetCurrentDirectory() + "\\config\\Alarm.xml";
+            if (parserPlcXml(xml_file) && parserAlarmXml(Alarm_xml))
             {
 #if _SIMULATOR
 
@@ -109,8 +111,8 @@ namespace HyTemplate
                 try
                 {
                     CheckPLCConnect();
-                    ReadPlcData();
-                    ReadAlarmData();
+                    ReadPlcData(dicPlcInfo);
+                    ReadPlcData(dicAlarmInfo, true);
                 }
                 catch (Exception ex)
                 {
@@ -176,51 +178,28 @@ namespace HyTemplate
             XmlNodeList nodes = XmlDoc.SelectNodes("PLC/Group");
             foreach (XmlNode chile_node in nodes)
             {
-                if (chile_node.Attributes["ID"].Value == "Alarm")
+                foreach (XmlNode node in chile_node)
                 {
-                    foreach (XmlNode node in chile_node)
+                    string device_name = node.Attributes["Name"].Value;
+
+                    if (dicPlcBuffer.ContainsKey(device_name))
                     {
-                        string address = node.Attributes["Address"].Value;
-
-                        if (DicAlarmStatus.ContainsKey(address))
-                        {
-                            //Device Exist
-                            continue;
-                        }
-                        DicAlarmStatus.Add(address, false);
+                        //Device Exist
+                        continue;
                     }
-                }
-                else
-                {
-                    foreach (XmlNode node in chile_node)
-                    {
-                        string device_name = node.Attributes["Name"].Value;
 
-                        if (dicPlcBuffer.ContainsKey(device_name))
-                        {
-                            //Device Exist
-                            continue;
-                        }
+                    string device = node.Attributes["Device"].Value; //node.InnerText;
 
-                        string device = node.Attributes["Device"].Value; //node.InnerText;
+                    PlcDeviceType device_type = getDeviceType(device);
 
-                        PlcDeviceType device_type = getDeviceType(device);
-                        if (device_type == PlcDeviceType.pdtZR)
-                        {
-                            device = device.Substring(0, 2) + device.Substring(2).PadLeft(5, '0');
-                        }
-                        else
-                        {
-                            device = device.Substring(0, 1) + device.Substring(1).PadLeft(5, '0');
-                        }
+                    device = (device_type == PlcDeviceType.pdtZR)? device.Substring(0, 2) + device.Substring(2).PadLeft(5, '0') : device = device.Substring(0, 1) + device.Substring(1).PadLeft(5, '0');
 
-                        int value_type = Convert.ToInt16(node.Attributes["ValueType"].Value);
-                        dicPlcValueType.Add(device_name, (PlcValueType)value_type);
+                    int value_type = Convert.ToInt16(node.Attributes["ValueType"].Value);
+                    dicPlcValueType.Add(device_name, (PlcValueType)value_type);
 
-                        dicPlcBuffer.Add(device_name, new KeyValuePair<string, int>(device, 0));
+                    dicPlcBuffer.Add(device_name, new KeyValuePair<string, int>(device, 0));
 
-                        StorePlcInfo(device_type, device);
-                    }
+                    StorePlcInfo(device_type, device, dicPlcInfo);
                 }
             }
 
@@ -260,64 +239,72 @@ namespace HyTemplate
 
             return true;
         }
-
-        private void ReadAlarmData()
+        
+        private bool parserAlarmXml(string m_Xml)
         {
-            const uint BATCH_READ_LENGTH = 320;
-            int length = Convert.ToInt32(DicAlarmStatus.Keys.Last<string>().Substring(1)) - Convert.ToInt32(DicAlarmStatus.Keys.First<string>().Substring(1)) + 1;
-            length = (length / 16) + 2;
-            try
+            if (!System.IO.File.Exists(m_Xml)) return false;
+
+            XmlDocument XmlDoc = new XmlDocument();
+            XmlDoc.Load(m_Xml);
+            
+            XmlNodeList nodes = XmlDoc.SelectNodes("Alarms/Link");
+            foreach (XmlNode chile_node in nodes)
             {
-                int loop_count = (int)((length / BATCH_READ_LENGTH) + 1);
-                int XmlStart = Convert.ToInt32(DicAlarmStatus.Keys.First<string>().Substring(1));
-                int modnum = XmlStart % 16;
-                int div = XmlStart / 16;
-                int start = div * 16;
+                string address = chile_node.Attributes["Address"].Value;
 
-                for (int loop = 0; loop < loop_count; loop++)
+                PlcDeviceType device_type = getDeviceType(address);
+                if (DicAlarmStatus.ContainsKey(address))
                 {
-                    string start_adr = DicAlarmStatus.Keys.First<string>().Substring(0,1) + start.ToString().PadLeft(5, '0');
-                    int lng = (int)(length - ((loop + 1) * BATCH_READ_LENGTH) > 0 ? (int)BATCH_READ_LENGTH : length);
-                    short[] values;
+                    //Device Exist
+                    continue;
+                }
+                DicAlarmStatus.Add(address, false);
+                StorePlcInfo(device_type, address, dicAlarmInfo);
+            }
 
-                    if (melPlcAccessor.readDeviceBlock(start_adr, length, out values) == 0)
+            #region 找出所有類型的起始點及長度
+            for (int count = 0; count < dicAlarmInfo.Count; count++)
+            {
+                KeyValuePair<PlcDeviceType, PlcDataInfo> info = dicAlarmInfo.ElementAt(count);
+                PlcDataInfo data = info.Value;
+
+                int length = (convertDecimal((info.Value.DeviceType == NumberStyles.HexNumber ? "0x" : "") + info.Value.LastDevice.Substring(info.Key == PlcDeviceType.pdtZR ? 2 : 1)) - data.Id);
+
+                if (info.Key == PlcDeviceType.pdtX
+                    || info.Key == PlcDeviceType.pdtY
+                    || info.Key == PlcDeviceType.pdtB
+                    || info.Key == PlcDeviceType.pdtL
+                    || info.Key == PlcDeviceType.pdtM)
+                {
+                    string first_device = info.Value.FirstDevice;
+                    int index = info.Value.Id % 16;
+                    if (index > 0)
                     {
-                        //M type回傳資料型態為一個陣列內有16Bit的Bool值  ex:[0] = 2 M0與M1皆為為ON，其他M2~M15為OFF
-                        for (int index = 0; index < length; index++)
-                        {
-                            string binary = Convert.ToString(values[index], 2).PadLeft(16, '0');
-                            char[] arr_binary = binary.ToCharArray();
-                            Array.Reverse(arr_binary);
-                            
-                            for (int binary_index = 0; binary_index < 16; binary_index++)
-                            {
-                                string buf_adr = start_adr.Substring(0,1) + ((Convert.ToInt32(start_adr.Substring(1)) + (loop * BATCH_READ_LENGTH) + (16 * index) + binary_index).ToString().PadLeft(5, '0'));
-                                if (!DicAlarmStatus.ContainsKey(buf_adr))
-                                {
-                                    continue;
-                                }
-                                DicAlarmStatus[buf_adr] = (arr_binary[binary_index] == '1')? true : false;
-                            }
-                        }
+                        data.Id = info.Value.Id - index;
+                        data.FirstDevice = data.FirstDevice.Substring(0, 1) + data.Id.ToString((info.Value.DeviceType == NumberStyles.HexNumber ? "X" : "")).PadLeft(5, '0');
+                    }
+
+                    length = convertDecimal((info.Value.DeviceType == NumberStyles.HexNumber ? "0x" : "") + info.Value.LastDevice.Substring(1)) - data.Id;
+                    if (info.Value.DeviceType == NumberStyles.HexNumber)
+                    {
+                        length = length / 16 + 1;
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                TEvent data = new TEvent();
-                data.MessageName = ProxyMessage.MSG_WRITE_LOG;
-                data.EventData["PlcHandler"] = ex.ToString();
 
-                ecClient.SendMessage(data);
+                data.Length = length;
+                dicAlarmInfo[info.Key] = data;
             }
+            #endregion
+
+            return true;
         }
-
-        private void ReadPlcData()
+        
+        private void ReadPlcData(Dictionary<PlcDeviceType, PlcDataInfo> DicSearchPlc, bool bAlarm =false)
         {
             const uint BATCH_READ_LENGTH = 320;
             try
             {
-                foreach (KeyValuePair<PlcDeviceType, PlcDataInfo> info in dicPlcInfo)
+                foreach (KeyValuePair<PlcDeviceType, PlcDataInfo> info in DicSearchPlc)
                 {
                     int TypeLength = (info.Key == PlcDeviceType.pdtM) ? (info.Value.Length / 16) + 1 : info.Value.Length;
 
@@ -349,15 +336,23 @@ namespace HyTemplate
                                     for (int binary_index = 0; binary_index < 16; binary_index++)
                                     {                                        
                                         string buf_adr = start_adr.Substring(0, device_type_count) + (info.Value.Id + (loop * BATCH_READ_LENGTH) + (16 * index) + binary_index).ToString(device_type).PadLeft(5, '0');
-                                        KeyValuePair<string, KeyValuePair<string, int>> data = dicPlcBuffer.FirstOrDefault(address => address.Value.Key == buf_adr);
-                                        if (data.Value.Key == null)
-                                        {
-                                            continue;
-                                        }
-                                        KeyValuePair<string, int> new_data = new KeyValuePair<string, int>(data.Value.Key, int.Parse(arr_binary[binary_index].ToString()));
-                                        dicPlcBuffer[data.Key] = new_data;
-                                    }
 
+                                        if(bAlarm) //暫時只處理為bool型態的Alarm，下方else就不處理
+                                        {
+                                            if (DicAlarmStatus.ContainsKey(buf_adr))
+                                            { DicAlarmStatus[buf_adr] = (arr_binary[binary_index] == '1') ? true : false; }
+                                        }
+                                        else
+                                        {
+                                            KeyValuePair<string, KeyValuePair<string, int>> data = dicPlcBuffer.FirstOrDefault(address => address.Value.Key == buf_adr);
+                                            if (data.Value.Key == null)
+                                            {
+                                                continue;
+                                            }
+                                            KeyValuePair<string, int> new_data = new KeyValuePair<string, int>(data.Value.Key, int.Parse(arr_binary[binary_index].ToString()));
+                                            dicPlcBuffer[data.Key] = new_data;
+                                        }
+                                    }
                                     if (!(info.Value.DeviceType == NumberStyles.HexNumber || info.Key == PlcDeviceType.pdtM)) 
                                         index += 16;
                                     else//M type回傳資料型態為一個陣列內有16Bit的Bool值  ex:[0] = 2 M0與M1皆為為ON，其他M2~M15為OFF
@@ -492,8 +487,8 @@ namespace HyTemplate
 
             return type;
         }
-
-        private void StorePlcInfo(PlcDeviceType m_DeviceType, string m_Device)
+        
+        private void StorePlcInfo(PlcDeviceType m_DeviceType, string m_Device, Dictionary<PlcDeviceType, PlcDataInfo> m_Container)
         {
             int index = 1;
             int device_id = 0;
@@ -502,9 +497,9 @@ namespace HyTemplate
                 index = 2;
             }
 
-            if (dicPlcInfo.ContainsKey(m_DeviceType))
+            if (m_Container.ContainsKey(m_DeviceType))
             {
-                PlcDataInfo info = dicPlcInfo[m_DeviceType];
+                PlcDataInfo info = m_Container[m_DeviceType];
                 device_id = convertDecimal((info.DeviceType == NumberStyles.HexNumber ? "0x" : "") + m_Device.Substring(index));
 
                 if (info.Id > device_id)
@@ -516,7 +511,7 @@ namespace HyTemplate
                 {
                     info.LastDevice = m_Device;
                 }
-                dicPlcInfo[m_DeviceType] = info;
+                m_Container[m_DeviceType] = info;
             }
             else
             {
@@ -535,7 +530,7 @@ namespace HyTemplate
                 }
                 info.Id = convertDecimal((info.DeviceType == NumberStyles.HexNumber ? "0x" : "") + m_Device.Substring(index));
 
-                dicPlcInfo.Add(m_DeviceType, info);
+                m_Container.Add(m_DeviceType, info);
             }
         }
 
