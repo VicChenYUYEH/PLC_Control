@@ -251,6 +251,7 @@ namespace HyTemplate
             foreach (XmlNode chile_node in nodes)
             {
                 string address = chile_node.Attributes["Address"].Value;
+                bool entity = (chile_node.Attributes["Entity"].Value == "true")? true: false;
 
                 PlcDeviceType device_type = getDeviceType(address);
                 if (DicAlarmStatus.ContainsKey(address))
@@ -259,7 +260,10 @@ namespace HyTemplate
                     continue;
                 }
                 DicAlarmStatus.Add(address, false);
-                StorePlcInfo(device_type, address, dicAlarmInfo);
+                if (!entity)//有實體PLC點位 因PLC XML已有該資料就不重複建立
+                {
+                    StorePlcInfo(device_type, address, dicAlarmInfo);
+                }
             }
 
             #region 找出所有類型的起始點及長度
@@ -337,12 +341,11 @@ namespace HyTemplate
                                     {                                        
                                         string buf_adr = start_adr.Substring(0, device_type_count) + (info.Value.Id + (loop * BATCH_READ_LENGTH) + (16 * index) + binary_index).ToString(device_type).PadLeft(5, '0');
 
-                                        if(bAlarm) //暫時只處理為bool型態的Alarm，下方else就不處理
-                                        {
-                                            if (DicAlarmStatus.ContainsKey(buf_adr))
-                                            { DicAlarmStatus[buf_adr] = (arr_binary[binary_index] == '1') ? true : false; }
-                                        }
-                                        else
+                                        /////////dicPlcInfo || dicAlarmInfo 皆會更新 (PLC實體 與 PLC軟體的異常) /////////
+                                        if (DicAlarmStatus.ContainsKey(buf_adr)) 
+                                        { DicAlarmStatus[buf_adr] = (arr_binary[binary_index] == '1') ? true : false; }
+                                        /////////////////////////////////////////////////////////////////////////////////
+                                        if (!bAlarm) //更新PLC XML對應的Infomation
                                         {
                                             KeyValuePair<string, KeyValuePair<string, int>> data = dicPlcBuffer.FirstOrDefault(address => address.Value.Key == buf_adr);
                                             if (data.Value.Key == null)
