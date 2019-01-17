@@ -90,7 +90,7 @@ namespace HyTemplate
             {
                 this.LoadUserRegister();
             }
-            else if (m_MessageName == ProxyMessage.MSG_ALARM_OCCURE)
+            else if (m_MessageName == ProxyMessage.MSG_ALARM_OCCURE || m_MessageName == ProxyMessage.MSG_ALARM_CLEAR)
             {
                 DataTable dt = CreatAlarmTable();
                 int alarm_count = Convert.ToInt16(m_Event.EventData["Count"]);
@@ -114,9 +114,12 @@ namespace HyTemplate
             {
                 ;
             }
-            else if (m_MessageName == ProxyMessage.MSG_PLC_CONNECT)
+            else if (m_MessageName == ProxyMessage.MSG_PLC_CONNECT || m_MessageName == ProxyMessage.MSG_PLC_DISCONNECT)
             {
-                statusPictureBox1.refreshStatus(rdKernel);
+                statusPictureBox1.Invoke(new Action(() =>
+                {
+                    statusPictureBox1.refreshStatus(rdKernel);
+                }));
             }
             else if (m_MessageName == ProxyMessage.MSG_RECIPE_SET)
             {
@@ -167,9 +170,9 @@ namespace HyTemplate
         private void Login_out(bool success, string id = "", int authority = 1)
         {
             TEvent data = new TEvent();
-            data.MessageName = ProxyMessage.MSG_USER_LOGIN;
+            data.MessageName = (success) ? ProxyMessage.MSG_USER_LOGIN : ProxyMessage.MSG_USER_LOGOUT;
             data.EventData["Authority"] = authority.ToString();           
-            lblID.Text = (success)? id : "None";
+            lblID.Text = (success)? id : "N/A";
             data.EventData["UserName"] = lblID.Text;
             ecClient.SendMessage(data);
         }

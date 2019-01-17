@@ -12,14 +12,14 @@
     <PLC CPUType="1025" ActLogicalStationNumber="1" ActControls="Ethernet" PortNo="1" NetworkNo="0" StationNo="255">
 -->
 <Alarms>
-	<Link Address="M00616" HowTo="請參閱馬達手冊" Message="卸料馬達異常"  Type="Alarm" Entity="true"/>
-	<Link Address="M00617" HowTo="請參閱馬達手冊" Message="倒帶馬達異常"  Type="Alarm" Entity="true"/>
-        <Link Address="M00618" HowTo="請參閱馬達手冊" Message="主馬達異常"    Type="Alarm" Entity="true"/>
-        <Link Address="M00619" HowTo="請參閱馬達手冊" Message="上料馬達異常"  Type="Alarm" Entity="true"/>
-	<Link Address="M00620" HowTo="請參閱馬達手冊" Message="下料馬達異常"  Type="Alarm" Entity="true"/>
-	<Link Address="M00621" HowTo="請檢查卸料張力" Message="卸料張力異常"  Type="Alarm" Entity="true"/>
-        <Link Address="M00622" HowTo="請檢查倒帶張力" Message="倒帶張力異常"  Type="Alarm" Entity="true"/>
-        <Link Address="M00623" HowTo="請檢查轉速速率" Message="轉速比異常"    Type="Alarm" Entity="true"/>
+	<Link Address="M00616" HowTo="請參閱馬達手冊" Message="放料馬達異常"  Type="Alarm" Entity="true"/>
+	<Link Address="M00617" HowTo="請參閱馬達手冊" Message="收料馬達異常"  Type="Alarm" Entity="true"/>
+        <Link Address="M00618" HowTo="請參閱馬達手冊" Message="主機馬達異常"  Type="Alarm" Entity="true"/>
+        <Link Address="M00619" HowTo="請參閱馬達手冊" Message="夾出馬達異常"  Type="Alarm" Entity="true"/>
+	<Link Address="M00620" HowTo="請參閱馬達手冊" Message="夾入馬達異常"  Type="Alarm" Entity="true"/>
+	<Link Address="M00621" HowTo="請檢查放料張力" Message="放料張力異常(斷料)"  Type="Alarm" Entity="true"/>
+        <Link Address="M00622" HowTo="請檢查收料張力" Message="收料張力異常(斷料)"  Type="Alarm" Entity="true"/>
+        <Link Address="M00623" HowTo="請檢查速比設定" Message="速比設定異常"    Type="Alarm" Entity="true"/>
 	<Link Address="M11000" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP1 過載跳脫" Type="Alarm" Entity="false"/>
 	<Link Address="M11001" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP2 過載跳脫" Type="Alarm" Entity="false"/>
 	<Link Address="M11002" HowTo="1.請檢查RP及過載保護器 2.Reset 過載保護器後再啟動 3.以勾表檢查運作電流" Message="RP3 過載跳脫" Type="Alarm" Entity="false"/>

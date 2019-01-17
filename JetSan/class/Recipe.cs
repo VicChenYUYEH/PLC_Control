@@ -159,17 +159,13 @@ namespace HyTemplate
 
                     find = true;
                     chile_node.Attributes["In_Use"].Value = this[rcp_id].Value;
-
-                    //this.addNode(rcp_id, rcp_name);
-
+                    
                     if (chile_node.HasChildNodes)
                     {
                         foreach (XmlNode node in chile_node)
                         {
                             String para_id = node.Attributes["Name"].Value;
                             node.Attributes["Value"].Value = this[rcp_id][para_id].Value;
-
-                            //this[rcp_id].addChildNode(para_id, para_value);
                         }
                     }
                 }

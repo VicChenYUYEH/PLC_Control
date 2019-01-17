@@ -41,22 +41,22 @@ namespace HyTemplate
 
         private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
         {
-            writeLog("EqBase Receive Message [" + m_MessageName + "]");
+            try
+            {
+                writeLog("EqBase Receive Message [" + m_MessageName + "]");
 
-            if (m_MessageName == ProxyMessage.MSG_WRITE_LOG)
-            {
-                foreach (KeyValuePair<String, String> data in m_Event.EventData)
+                if (m_MessageName == ProxyMessage.MSG_WRITE_LOG)
                 {
-                    writeLog(data.Key + ", " + data.Value);
+                    foreach (KeyValuePair<String, String> data in m_Event.EventData)
+                    {
+                        writeLog(data.Key + ", " + data.Value);
+                    }
                 }
-            }
-            else if (m_MessageName == ProxyMessage.MSG_RECIPE_SAVE)
-            {
-                rcpKernel.saveFile();
-            }
-            else if (m_MessageName == ProxyMessage.MSG_RECIPE_SET)
-            {
-                try
+                else if (m_MessageName == ProxyMessage.MSG_RECIPE_SAVE)
+                {
+                    rcpKernel.saveFile();
+                }
+                else if (m_MessageName == ProxyMessage.MSG_RECIPE_SET)
                 {
                     string rcp_id = m_Event.EventData["RecipeId"];
                     rcpKernel.loadFile(rcp_id);
@@ -65,18 +65,18 @@ namespace HyTemplate
                         phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.RecipeDetail[info.Value.DeviceName].SetPoint;
                     }
                 }
-                catch (Exception ex)
+                else if (m_MessageName == ProxyMessage.MSG_PARAMETER_SET)
                 {
-
+                    rcpKernel.loadFile("System");
+                    foreach (KeyValuePair<string, RecipeInfo> info in rcpKernel.SystemDetail)
+                    {
+                        phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.SystemDetail[info.Value.DeviceName].SetPoint;
+                    }
                 }
             }
-            else if (m_MessageName == ProxyMessage.MSG_PARAMETER_SET)
+            catch (Exception ex)
             {
-                rcpKernel.loadFile("System");
-                foreach (KeyValuePair<string, RecipeInfo> info in rcpKernel.SystemDetail)
-                {
-                    phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.SystemDetail[info.Value.DeviceName].SetPoint;
-                }
+                writeLog("EqBase Receive Message failed :" + ex);
             }
         }
 

@@ -7,11 +7,13 @@ namespace HyTemplate.gui
     public partial class frmHistoryAlarm : Form
     {
         DBControl db;
+        private EventClient ecClient;
 
         public frmHistoryAlarm()
         {
             InitializeComponent();
             db = new DBControl();
+            ecClient = new EventClient(this);
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -38,6 +40,15 @@ namespace HyTemplate.gui
             string err = db.funSQL(strSQL, out DT); //從DB 取得該區段時間的 Data Table
             dataGridView1.DataSource = DT;
             DT = null;
+
+            if (err != "")
+            {
+                TEvent data = new TEvent();
+                data.MessageName = ProxyMessage.MSG_WRITE_LOG;
+                data.EventData["DB_Fail : HistoryAlarm_Query "] = err;
+
+                ecClient.SendMessage(data);
+            }
         }
     }
 }

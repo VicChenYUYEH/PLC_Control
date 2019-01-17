@@ -20,7 +20,6 @@ namespace HyTemplate
         private Thread thExecute;
         private PlcHandler phPlcKernel;
         private EventClient ecClient;
-        private FileLog flLog;
         private DBControl db;
 
         bool bDisponse = false;
@@ -30,9 +29,8 @@ namespace HyTemplate
         Dictionary<string, bool> dicAlarmStatus = new Dictionary<string, bool>();
         Dictionary<AlarmInfo, DateTime> currentAlarm = new Dictionary<AlarmInfo, DateTime>();
 
-        public MonitorAlarmThread(PlcHandler m_PlcHandler, FileLog m_Log = null)
+        public MonitorAlarmThread(PlcHandler m_PlcHandler)
         {
-            flLog = m_Log;
             phPlcKernel = m_PlcHandler;
 
             string xml_file = System.IO.Directory.GetCurrentDirectory() + "\\config\\Alarm.xml";
@@ -50,7 +48,6 @@ namespace HyTemplate
 
         ~MonitorAlarmThread()
         {           
-
             if (thExecute != null && thExecute.IsAlive)
                 thExecute.Abort();
         }
@@ -70,14 +67,6 @@ namespace HyTemplate
                 try
                 {
                     doMonitorAlarm();
-                }
-                catch (Exception ex)
-                {
-                    TEvent data = new TEvent();
-                    data.MessageName = "WriteLog";
-                    data.EventData["PlcHandler"] = ex.ToString();
-
-                    ecClient.SendMessage(data);
                 }
                 finally
                 {
@@ -120,21 +109,13 @@ namespace HyTemplate
 
         private void doMonitorAlarm()
         {
-            //if (bAlarmReset)
-            //{
-            //    bAlarmReset = false;
-            //    foreach (KeyValuePair<string, AlarmInfo> alarm in dicAlarmInfo)
-            //    {
-            //        dicAlarmStatus[alarm.Key] = false;
-            //    }
-            //    Thread.Sleep(100);
-            //}
-            
             try
             {
-                bool new_error = false;
+                bool new_err = false;
+                bool err_clear = false;
                 DataTable DT;
                 string strSQL = "";
+                string err = "";
                 foreach (KeyValuePair<string, AlarmInfo> alarm in dicAlarmInfo)
                 {
                     if (phPlcKernel.DicAlarmStatus[alarm.Key])
@@ -144,14 +125,14 @@ namespace HyTemplate
                             dicAlarmStatus[alarm.Key] = true;
                             currentAlarm.Add(alarm.Value, DateTime.Now);
                             strSQL = "SELECT * FROM HistoryAlarm WHERE PLC_Adress = " + "'" + alarm.Value.Address +"' AND End_Time is NULL"; 
-                            string err = db.funSQL(strSQL, out DT);
+                            err = db.funSQL(strSQL, out DT);
                             if(DT.Rows.Count == 0)// 找尋DB是否有當下正發生的Alarm，若有則不新增
                             {
                                 strSQL = "INSERT INTO HistoryAlarm (Start_Time, PLC_Adress, [Level], Description, Solution)VALUES(" + "'" + currentAlarm[alarm.Value].ToString("yyyy/MM/dd HH:mm:ss.fff") + "', '" + alarm.Value.Address
                                        + "', '" + alarm.Value.Level + "', '" + alarm.Value.Description + "', '" + alarm.Value.Solution + "')";
                                 err = db.funSQL(strSQL);
                             }
-                            new_error = true;
+                            new_err = true;
                             DT = null;
                         }
                     }
@@ -161,21 +142,28 @@ namespace HyTemplate
                         {
                             dicAlarmStatus[alarm.Key] = false;
                             currentAlarm.Remove(alarm.Value);
-                            new_error = true;
+                            err_clear = true;
                             //Alarm清除時，更新DB內資料(End_Time為NULL即當前異常)
                             strSQL = "UPDATE HistoryAlarm SET End_Time = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'" + "WHERE PLC_Adress =" + "'" + alarm.Value.Address +"' AND End_Time is NULL";
 
-                            string err = db.funSQL(strSQL) ;
+                            err = db.funSQL(strSQL) ;
                         }
                     }
                 }
 
-                if (new_error) //refresh Current alarm from DB
+                if (new_err || err_clear) //refresh Current alarm from DB
                 {
                     strSQL = "SELECT * FROM HistoryAlarm WHERE End_Time is NULL";
-                    string err = db.funSQL(strSQL, out DT);
+                    err = db.funSQL(strSQL, out DT);
                     TEvent data = new TEvent();
-                    data.MessageName = ProxyMessage.MSG_ALARM_OCCURE;
+                    if (new_err)
+                    {
+                        data.MessageName = ProxyMessage.MSG_ALARM_OCCURE;
+                    }
+                    else if (err_clear)
+                    {
+                        data.MessageName = ProxyMessage.MSG_ALARM_CLEAR;
+                    }
                     data.EventData["Count"] = DT.Rows.Count.ToString();
                     int alarm_index = 1;
                     for (int index = 0; index < DT.Rows.Count; index++)
@@ -189,10 +177,22 @@ namespace HyTemplate
                     ecClient.SendMessage(data);
                     DT = null;
                 }
+                if (err != "")
+                {
+                    TEvent data = new TEvent();
+                    data.MessageName = ProxyMessage.MSG_WRITE_LOG;
+                    data.EventData["DB_Fail : doMonitorAlarm "] = err;
+
+                    ecClient.SendMessage(data);
+                }
             }
             catch(Exception ex)
             {
+                TEvent data = new TEvent();
+                data.MessageName = ProxyMessage.MSG_WRITE_LOG;
+                data.EventData["MonitorAlarmThread"] = ex.ToString();
 
+                ecClient.SendMessage(data);
             }
         }
 

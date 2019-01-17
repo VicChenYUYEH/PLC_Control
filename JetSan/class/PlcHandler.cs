@@ -117,7 +117,7 @@ namespace HyTemplate
                 catch (Exception ex)
                 {
                     TEvent data = new TEvent();
-                    data.MessageName = "WriteLog";
+                    data.MessageName = ProxyMessage.MSG_WRITE_LOG;
                     data.EventData["PlcHandler"] = ex.ToString();
 
                     ecClient.SendMessage(data);
@@ -144,7 +144,7 @@ namespace HyTemplate
                 }
                 isChange = false;
                 TEvent data = new TEvent();
-                data.MessageName = ProxyMessage.MSG_PLC_CONNECT;
+                data.MessageName = (isConnect)? ProxyMessage.MSG_PLC_CONNECT : ProxyMessage.MSG_PLC_DISCONNECT;
                 ecClient.SendMessage(data);
             }
             if (!isConnect && needRetry)
@@ -325,6 +325,7 @@ namespace HyTemplate
                         int length = (int)(TypeLength - ((loop + 1) * BATCH_READ_LENGTH) > 0 ? (int)BATCH_READ_LENGTH : TypeLength);
                         short[] values;
 
+                        if (melPlcAccessor == null) return;
                         if (melPlcAccessor.readDeviceBlock(start_adr, length, out values) == 0)
                         {
                             if (   info.Key == PlcDeviceType.pdtX

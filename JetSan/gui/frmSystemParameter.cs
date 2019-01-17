@@ -51,7 +51,6 @@ namespace HyTemplate.gui
 
         private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
         {
-            // System.Threading.Thread.Sleep(100);
             if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
             {
                 int authority = int.Parse(m_Event.EventData["Authority"]);
@@ -67,6 +66,10 @@ namespace HyTemplate.gui
                         btn_Control(true);
                         break;
                 }
+            }
+            else if(m_MessageName == ProxyMessage.MSG_USER_LOGOUT)
+            {
+                btn_Control(false);
             }
         }
         private void btn_Control(bool enable)

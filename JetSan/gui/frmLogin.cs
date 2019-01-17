@@ -72,6 +72,10 @@ namespace HyTemplate.gui
                         break;
                 }
             }
+            else if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
+            {
+                btn_Control(false);
+            }
         }
         private void btn_Control(bool enable)
         {
