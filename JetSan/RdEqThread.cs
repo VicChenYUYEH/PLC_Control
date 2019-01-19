@@ -38,6 +38,7 @@ namespace HyTemplate
 
         ProcessVacuumSequence pvsVacuumSequence;
         ProcessVentSequence pvsVentSequence;
+        private Timer tmPLCRecord = null;
 
         public RdEqThread(RdEqKernel m_Kernel)
         {
@@ -51,6 +52,7 @@ namespace HyTemplate
 
             thExecute = new Thread(doExecute);
             thExecute.Start();
+            tmPLCRecord = new Timer(new TimerCallback(doDataRecord), null, 500, 150);
             Thread.Sleep(100);
 
         }
@@ -90,7 +92,7 @@ namespace HyTemplate
                 }
                 catch (Exception ex)
                 {
-                    
+                    eqKernel.flDebug.WriteLog("doExecute", ex.ToString());
                 }
                 finally
                 {
@@ -295,6 +297,75 @@ namespace HyTemplate
                     eqKernel.pPlcKernel[ConstPlcDefine.PLC_DO_VENT] = 0;
                     pvsVentSequence = ProcessVentSequence.pvsNone;
                 }
+            }
+        }
+
+        private void doDataRecord(object m_ObjKey)
+        {
+            try
+            {
+                tmPLCRecord.Change(-1, -1);
+                string[] listheater = { "Heater1_PV", "Heater2_PV", "Heater3_PV", "Heater4_PV" };
+                insertPLCDataToDB("HeaterData", listheater);
+
+                string[] listpressure = { "HVG1_M1", "HVG2_M2", "HVG3_M3_1", "HVG4_M4", "LVG1_M1", "LVG2_M2", "LVG3_M3", "LVG4_M4"};
+                insertPLCDataToDB("PressureData", listpressure);
+
+                string[] listMfc = { "MFC_0303_Ar" ,"MFC_0304_O2", "MFC_0305_Ar", "MFC_0306_O2", "MFC_0307_Ar", "MFC_0308_O2","MFC_0309_Ar", "MFC_0310_O2"};
+                insertPLCDataToDB("MfcFlowData", listMfc);
+
+                string[] listpower = { "MF1_Power", "MF2_Power", "DC1_Power", "DC2_Power", "DC3_Power" , "DC4_Power" };
+                insertPLCDataToDB("PowerData", listpower);
+            }
+            catch (Exception ex)
+            {
+                eqKernel.flDebug.WriteLog("doDataRecord", ex.ToString());
+            }
+            finally
+            {
+                tmPLCRecord.Change(60000, 1000);
+            }
+        }
+
+        /// <summary>
+        /// 將PLC Raw Data紀錄於Data Base
+        /// </summary>
+        /// <param name="m_TableName">DB 目標Table</param>
+        /// <param name="m_Value">DB 欄位名稱(同PLC Device)</param>
+        private void insertPLCDataToDB(string m_TableName, string[] m_Value)
+        {
+            string rowsName = "(";
+            for(int i = 0; i< m_Value.Length; i++)
+            {
+                if(i == m_Value.Length - 1)
+                {
+                    rowsName = rowsName + m_Value[i];
+                }
+                else
+                {
+                    rowsName = rowsName + m_Value[i] + ", ";
+                }
+            }
+            rowsName = rowsName + ", " + "Insert_Time" + ")";
+
+            string values = "('";
+            for (int i = 0; i < m_Value.Length; i++)
+            {
+                if (i == m_Value.Length - 1)
+                {
+                    values = values + eqKernel.pPlcKernel[m_Value[i]];
+                }
+                else
+                {
+                    values = values + eqKernel.pPlcKernel[m_Value[i]] + "', '";
+                }
+            }
+            values = values +"', '" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff") + "')";
+            string strSQL = "INSERT INTO " + m_TableName + rowsName + "VALUES" + values;
+            string err = eqKernel.dDb.funSQL(strSQL);
+            if(err !="")
+            {
+                eqKernel.flDebug.WriteLog("DBfail", err);
             }
         }
 
