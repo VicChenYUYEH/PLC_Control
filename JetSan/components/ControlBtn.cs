@@ -52,23 +52,30 @@ namespace HyTemplate.components
 
         private async void btn_ClickAsync(object sender, EventArgs e)
         {
-            if (_PlcDevice.Trim() == "" || _EqBase == null) return;
-
-            if (_ShowMsg)
+            try
             {
-                DialogResult result = MessageBox.Show("    是    否    繼    續   ?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (result != DialogResult.Yes) return;
-            }
+                if (_PlcDevice.Trim() == "" || _EqBase == null) return;
 
-            _EqBase.flOperator.WriteLog(_PlcDevice + " : ControlButton_Click");
-            if (_AutoOff)
-            {
-                _EqBase.pPlcKernel[_PlcDevice] = 1;
-                await putTaskDelay();
-                _EqBase.pPlcKernel[_PlcDevice] = 0;
-                return;
+                if (_ShowMsg)
+                {
+                    DialogResult result = MessageBox.Show("    是    否    繼    續   ?", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (result != DialogResult.Yes) return;
+                }
+
+                _EqBase.flOperator.WriteLog(_PlcDevice, "ControlButton_Click");
+                if (_AutoOff)
+                {
+                    _EqBase.pPlcKernel[_PlcDevice] = 1;
+                    await putTaskDelay();
+                    _EqBase.pPlcKernel[_PlcDevice] = 0;
+                    return;
+                }
+                _EqBase.pPlcKernel[_PlcDevice] = (_CurrentStatus) ? 0 : 1;
             }
-            _EqBase.pPlcKernel[_PlcDevice] = (_CurrentStatus) ? 0 : 1;
+            catch (Exception ex)
+            {
+                _EqBase.flDebug.WriteLog(_PlcDevice, ex.ToString());
+            }
         }
 
         public void RefreshStatus()

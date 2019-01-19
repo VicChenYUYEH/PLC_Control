@@ -91,7 +91,7 @@ namespace HyTemplate.gui
             data.MessageName = ProxyMessage.MSG_PARAMETER_SET;
             ecClient.SendMessage(data);
             rdKernel.InsertHistoryLog(sCurrentUser, "System Parameter Set");
-            rdKernel.WriteOperatorLog("System Parameter Set");
+            rdKernel.WriteOperatorLog(sCurrentUser, "System Parameter Set");
         }
     }
 }

@@ -69,8 +69,5 @@ namespace HyTemplate.components
             }
             this.Update();
         }
-
-        
-
     }
 }

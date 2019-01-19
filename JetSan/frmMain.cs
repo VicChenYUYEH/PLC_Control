@@ -65,7 +65,7 @@ namespace HyTemplate
 
             checkInitialStatus();
 
-            rdKernel.WriteOperatorLog("Program Start ......");
+            rdKernel.WriteOperatorLog("StartMark", "Program Start ......");
             login_out(false);
         }
 
@@ -194,7 +194,7 @@ namespace HyTemplate
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            rdKernel.WriteOperatorLog("Program Close ......");
+            rdKernel.WriteOperatorLog("StartMark", "Program Close ......");
             rdKernel.pPlcKernel.Dispose();
             rdKernel.Dispose();
             System.Threading.Thread.Sleep(500);
@@ -228,7 +228,7 @@ namespace HyTemplate
 
             ecClient.SendMessage(data);
             rdKernel.pPlcKernel["HMI_Alarm_Reset"] = 0;
-            rdKernel.flOperator.WriteLog("Alarm_Reset Click");
+            rdKernel.flOperator.WriteLog("Alarm_Reset", "Click");
         }
 
         #region Form Buttom Click Event
@@ -242,7 +242,7 @@ namespace HyTemplate
             {
                 login_out(false);
                 rdKernel.InsertHistoryLog("N/A", "User Logout");
-                rdKernel.flOperator.WriteLog("User Logout");
+                rdKernel.flOperator.WriteLog("User Logout", "N/A");
             }
             else if (result == DialogResult.OK)
             {
@@ -251,7 +251,7 @@ namespace HyTemplate
                 if (!dicUsers.ContainsKey(id)) //有無該User
                 {
                     MessageBox.Show("User no found", "Warning", MessageBoxButtons.OK);
-                    rdKernel.flOperator.WriteLog("User LogIn Fail...... ");
+                    rdKernel.flOperator.WriteLog("User LogIn", "Fail...... ");
                     return;
                 }
                 int authority = 1;
@@ -262,7 +262,7 @@ namespace HyTemplate
                 {
                     MessageBox.Show("User & Password mismatch", "Warning", MessageBoxButtons.OK);
                     login_out(false, id, authority);
-                    rdKernel.flOperator.WriteLog("User LogIn Fail...... ");
+                    rdKernel.flOperator.WriteLog("User LogIn", "Fail...... ");
                     return;
                 }
 
@@ -283,7 +283,7 @@ namespace HyTemplate
                 //傳送登入訊息給各頁面
                 login_out(true, id, authority);
                 rdKernel.InsertHistoryLog(id, "User Login");
-                rdKernel.flOperator.WriteLog("User Login : " + id);
+                rdKernel.flOperator.WriteLog("User Login", id);
             }
         }
 

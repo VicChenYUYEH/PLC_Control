@@ -115,7 +115,7 @@ namespace HyTemplate
                 }
                 catch (Exception ex)
                 {
-                    writeLog("PlcHandler :" + ex.ToString());
+                    writeLog(ex.ToString());
                 }
                 finally
                 {
@@ -401,7 +401,7 @@ namespace HyTemplate
             }
             catch (Exception ex)
             {
-                writeLog("PlcHandler :" + ex.ToString());
+                writeLog(ex.ToString());
             }
         }
 
@@ -623,8 +623,7 @@ namespace HyTemplate
         {
             if (flLog != null)
             {
-                 string sClassName = System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName;
-                 flLog.WriteLog(m_Log);
+                 flLog.WriteLog("PlcHandler", m_Log);
             }
         }
 

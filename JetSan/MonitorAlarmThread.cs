@@ -136,7 +136,7 @@ namespace HyTemplate
                             }
                             new_err = true;
                             dt = null;
-                            flLog.WriteLog(alarm.Value.Address + " : Alarm Occur");
+                            flLog.WriteLog(alarm.Value.Address, "Alarm Occur");
                         }
                     }
                     else
@@ -150,7 +150,7 @@ namespace HyTemplate
                             strSQL = "UPDATE HistoryAlarm SET End_Time = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'" + "WHERE PLC_Adress =" + "'" + alarm.Value.Address +"' AND End_Time is NULL";
 
                             err = dDb.funSQL(strSQL);
-                            flLog.WriteLog(alarm.Value.Address + " : Alarm Clear");
+                            flLog.WriteLog(alarm.Value.Address, "Alarm Clear");
                         }
                     }
                 }
@@ -183,12 +183,12 @@ namespace HyTemplate
                 }
                 if (err != "")
                 {
-                    flLog.WriteLog("DB_Fail : doMonitorAlarm => " + err);
+                    flLog.WriteLog("DB_Fail", err);
                 }
             }
             catch(Exception ex)
             {
-                flLog.WriteLog("MonitorAlarmThread : " + ex.ToString());
+                flLog.WriteLog("MonitorAlarmThread", ex.ToString());
             }
         }
 

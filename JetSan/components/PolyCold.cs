@@ -110,15 +110,22 @@ namespace HyTemplate.components
 
         private void polyCold_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (_PlcRunDevice.Trim() == "" || _EqBase == null || !ReadyToStart) return;
+            try
+            {
+                if (_PlcRunDevice.Trim() == "" || _EqBase == null || !ReadyToStart) return;
 
-            DlgSwitch dlg = new DlgSwitch((_EqBase.pPlcKernel[_PlcRunDevice] == 1 ? true : false));
-            dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcRunDevice);
-            dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcRunDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
-            DialogResult result = dlg.ShowDialog();
-            _EqBase.pPlcKernel[_PlcRunDevice] = (result == DialogResult.Yes) ? 1 : 0;
-            _EqBase.flOperator.WriteLog(_PlcRunDevice + " : DoubleClick : " + result);
-            dlg.Dispose();
+                DlgSwitch dlg = new DlgSwitch((_EqBase.pPlcKernel[_PlcRunDevice] == 1 ? true : false));
+                dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcRunDevice);
+                dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcRunDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
+                DialogResult result = dlg.ShowDialog();
+                _EqBase.pPlcKernel[_PlcRunDevice] = (result == DialogResult.Yes) ? 1 : 0;
+                _EqBase.flOperator.WriteLog(_PlcRunDevice, "DoubleClick " + result);
+                dlg.Dispose();
+            }
+            catch (Exception ex)
+            {
+                _EqBase.flDebug.WriteLog(_PlcRunDevice, ex.ToString());
+            }
         }
 
         private void polyCold_HandleCreated(object sender, EventArgs e)

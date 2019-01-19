@@ -13,13 +13,13 @@ namespace HyTemplate
         {
             eqThread = new RdEqThread(this);
         }
-        public void WriteDebugLog(string m_Log)
+        public void WriteDebugLog(string m_body, string m_Log)
         {
-            flDebug.WriteLog(m_Log);
+            flDebug.WriteLog(m_body, m_Log);
         }
-        public void WriteOperatorLog(string m_Log)
+        public void WriteOperatorLog(string m_body, string m_Log)
         {
-            flOperator.WriteLog(m_Log);
+            flOperator.WriteLog(m_body, m_Log);
         }
 
         public string InsertHistoryLog(string m_User, string m_Description, string m_Address = "N/A", string m_Recipe = "N/A")

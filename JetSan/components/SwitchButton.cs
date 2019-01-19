@@ -35,11 +35,18 @@ namespace HyTemplate.components
 
         private void switchButton_MouseClick(object sender, MouseEventArgs e)
         {
-            if (_PlcDevice.Trim() == "" || _EqBase == null) return;
+            try
+            {
+                if (_PlcDevice.Trim() == "" || _EqBase == null) return;
 
-            _EqBase.pPlcKernel[_PlcDevice] = (short)(_EqBase.pPlcKernel[_PlcDevice] == 1 ? 0 : 1);
-            
-            _EqBase.flOperator.WriteLog(_PlcDevice + " Click");
+                _EqBase.pPlcKernel[_PlcDevice] = (short)(_EqBase.pPlcKernel[_PlcDevice] == 1 ? 0 : 1);
+
+                _EqBase.flOperator.WriteLog(_PlcDevice, "Click");
+            }
+            catch (Exception ex)
+            {
+                _EqBase.flDebug.WriteLog(_PlcDevice, ex.ToString());
+            }
         }
 
         private void switchButton_HandleCreated(object sender, EventArgs e)

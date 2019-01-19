@@ -169,24 +169,31 @@ namespace HyTemplate.components
 
         private void plcObject_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (_PlcDevice.Trim() == "" || _EqBase == null) return;
-
-            if(_Limit != "")
+            try
             {
-                if(_EqBase.pPlcKernel[_Limit] != _LimitSignal)
+                if (_PlcDevice.Trim() == "" || _EqBase == null) return;
+
+                if (_Limit != "")
                 {
-                    string LimitMap =_EqBase.pPlcKernel.GetPlcMap(_Limit);
-                    MessageBox.Show(LimitMap + " 狀態錯誤，無法切換 ", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    if (_EqBase.pPlcKernel[_Limit] != _LimitSignal)
+                    {
+                        string LimitMap = _EqBase.pPlcKernel.GetPlcMap(_Limit);
+                        MessageBox.Show(LimitMap + " 狀態錯誤，無法切換 ", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                 }
+                DlgSwitch dlg = new DlgSwitch(_CurrentStatus);
+                dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcDevice);
+                dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
+                DialogResult result = dlg.ShowDialog();
+                _EqBase.pPlcKernel[_PlcDevice] = (result == DialogResult.Yes) ? 1 : 0;
+                _EqBase.flOperator.WriteLog(_PlcDevice, "DoubleClick " + result);
+                dlg.Dispose();
             }
-            DlgSwitch dlg = new DlgSwitch(_CurrentStatus);
-            dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcDevice);
-            dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
-            DialogResult result = dlg.ShowDialog();
-            _EqBase.pPlcKernel[_PlcDevice] = (result == DialogResult.Yes) ? 1 : 0;
-            _EqBase.flOperator.WriteLog(_PlcDevice + " DoubleClick : " + result);
-            dlg.Dispose();
+            catch (Exception ex)
+            {
+                _EqBase.flDebug.WriteLog(_PlcDevice, ex.ToString());
+            }
         }
 
         private void plcObject_HandleCreated(object sender, EventArgs e)

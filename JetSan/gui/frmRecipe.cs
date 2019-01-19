@@ -88,7 +88,7 @@ namespace HyTemplate.gui
                 rdKernel.rRecipe.LoadFile();
                 initialRecipeTable();
                 string err = rdKernel.InsertHistoryLog(sCurrentUser, "Creat New Recipe", m_Recipe: dlg.sConfirmId);
-                rdKernel.WriteOperatorLog("Creat New Recipe : " + dlg.sConfirmId);
+                rdKernel.WriteOperatorLog("Creat New Recipe", dlg.sConfirmId);
             }
             dlg.Dispose();
         }
@@ -106,7 +106,7 @@ namespace HyTemplate.gui
                     initialRecipeTable();
                     string err = rdKernel.InsertHistoryLog(sCurrentUser, "Delete Recipe", m_Recipe: selected[0].Text);
 
-                    rdKernel.WriteOperatorLog("Delete Recipe : " + selected[0].Text);
+                    rdKernel.WriteOperatorLog("Delete Recipe", selected[0].Text);
                 }
             }
         }
@@ -140,10 +140,10 @@ namespace HyTemplate.gui
                 rdKernel.rRecipe.LoadFile();
                 listView1.Refresh();
                 string err = rdKernel.InsertHistoryLog(sCurrentUser, "Recipe Data Change", m_Recipe: selected[0].Text);
-                rdKernel.WriteOperatorLog("Recipe Data Change : " + selected[0].Text);
+                rdKernel.WriteOperatorLog("Recipe Data Change", selected[0].Text);
                 if (err != "")
                 {
-                    rdKernel.WriteDebugLog("DB_Fail: Recipe_Save => " + err);
+                    rdKernel.WriteDebugLog("DB_Fail", err);
                 }
             }
         }
@@ -210,10 +210,10 @@ namespace HyTemplate.gui
                 data.EventData["CurrentRCP"] = current_rcp;
                 ecClient.SendMessage(data);
                 string err = rdKernel.InsertHistoryLog(sCurrentUser, "Recipe Set", m_Recipe: current_rcp);
-                rdKernel.WriteOperatorLog("Recipe Set : " + current_rcp);
+                rdKernel.WriteOperatorLog("Recipe Set", current_rcp);
                 if (err != "")
                 {
-                    rdKernel.WriteDebugLog("DB_Fail: Recipe_Set => " + err);
+                    rdKernel.WriteDebugLog("DB_Fail", err);
                 }
             }
         }

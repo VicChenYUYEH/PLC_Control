@@ -47,12 +47,12 @@ namespace HyTemplate
         {
             try
             {
-                flDebug.WriteLog("EqBase Receive Message [" + m_MessageName + "]");
+                flDebug.WriteLog("Receive Message", m_MessageName);
                 if (m_MessageName == ProxyMessage.MSG_WRITE_LOG)
                 {
                     foreach (KeyValuePair<String, String> data in m_Event.EventData)
                     {
-                        flOperator.WriteLog(data.Key + ", " + data.Value);
+                        flOperator.WriteLog(data.Key, data.Value);
                     }
                 }
                 else if (m_MessageName == ProxyMessage.MSG_RECIPE_SAVE)
@@ -79,7 +79,7 @@ namespace HyTemplate
             }
             catch (Exception ex)
             {
-                flDebug.WriteLog("EqBase Receive Message failed :" + ex);
+                flDebug.WriteLog("Receive Message failed", ex.ToString());
             }
         }
         

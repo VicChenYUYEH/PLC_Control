@@ -43,7 +43,7 @@ namespace HyTemplate
             iLevel = Convert.ToUInt16(ini.GetValue(m_Log, "LogLevel"));
         }
 
-        public void WriteLog(string m_Text, uint m_LogLevel = 1)
+        public void WriteLog(string m_body, string m_Text, uint m_LogLevel = 1)
         {
             if (m_LogLevel > iLevel) return;
 
@@ -55,7 +55,7 @@ namespace HyTemplate
                 using (System.IO.StreamWriter file =
                 new System.IO.StreamWriter(file_name, true))
                 {
-                    string log_txt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " | " + mb.DeclaringType.Name + " | " + m_Text;
+                    string log_txt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " | " + mb.DeclaringType.Name + " | " + m_body + " : " + m_Text;
                     file.WriteLine(log_txt);
                 }
 

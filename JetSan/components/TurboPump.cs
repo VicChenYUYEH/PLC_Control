@@ -113,15 +113,22 @@ namespace HyTemplate.components
 
         private void turboPump_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (_PlcStartDevice.Trim() == "" || _EqBase == null || !bReadyToStart) return;
+            try
+            {
+                if (_PlcStartDevice.Trim() == "" || _EqBase == null || !bReadyToStart) return;
 
-            DlgSwitch dlg = new DlgSwitch((_EqBase.pPlcKernel[_PlcStartDevice] == 1 ? true : false));
-            dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcStartDevice);
-            dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcStartDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
-            DialogResult result = dlg.ShowDialog();
-            _EqBase.pPlcKernel[_PlcStartDevice] = (result == DialogResult.Yes) ? 1 : 0;
-            _EqBase.flOperator.WriteLog(_PlcStartDevice + " DoubleClick : " + result);
-            dlg.Dispose();
+                DlgSwitch dlg = new DlgSwitch((_EqBase.pPlcKernel[_PlcStartDevice] == 1 ? true : false));
+                dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcStartDevice);
+                dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcStartDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
+                DialogResult result = dlg.ShowDialog();
+                _EqBase.pPlcKernel[_PlcStartDevice] = (result == DialogResult.Yes) ? 1 : 0;
+                _EqBase.flOperator.WriteLog(_PlcStartDevice, "DoubleClick " + result);
+                dlg.Dispose();
+            }
+            catch (Exception ex)
+            {
+                _EqBase.flDebug.WriteLog(_PlcStartDevice, ex.ToString());
+            }
         }
 
         private void turboPump_HandleCreated(object sender, EventArgs e)

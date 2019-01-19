@@ -43,7 +43,7 @@ namespace HyTemplate.gui
             
             if (err != "")
             {
-                rdKernel.WriteDebugLog("DB_Fail: HistoryLog_Query => " + err);
+                rdKernel.WriteDebugLog("DB_Fail", err);
             }
         }
     }

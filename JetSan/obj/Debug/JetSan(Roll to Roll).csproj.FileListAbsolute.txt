@@ -32,3 +32,4 @@ D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.frmDeviceConstant
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.CoreCompileInputs.cache
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.CopyComplete
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.gui.FrmPIDExplain.resources
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojAssemblyReference.cache

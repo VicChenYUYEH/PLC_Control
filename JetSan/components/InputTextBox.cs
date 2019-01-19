@@ -74,26 +74,33 @@ namespace HyTemplate.components
 
         private void inputTextBox_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            try
             {
-                double result = 0;
-                bool check_text = double.TryParse(this.Text, out result);
+                if (e.KeyCode == Keys.Enter)
+                {
+                    double result = 0;
+                    bool check_text = double.TryParse(this.Text, out result);
 
-                if (_EqBase == null || !check_text) return;
+                    if (_EqBase == null || !check_text) return;
 
-                if (result > _MaxLimit) result = _MaxLimit;
-                if (result < _MinLimit) result = _MinLimit;
+                    if (result > _MaxLimit) result = _MaxLimit;
+                    if (result < _MinLimit) result = _MinLimit;
 
-                if (_Multiplication <= 0) _Multiplication = 1;
-                if (_Division <= 0) _Division = 1;
+                    if (_Multiplication <= 0) _Multiplication = 1;
+                    if (_Division <= 0) _Division = 1;
 
-                result = result * _Multiplication / _Division;
-                _EqBase.pPlcKernel[_PlcDevice] = (int)result;
+                    result = result * _Multiplication / _Division;
+                    _EqBase.pPlcKernel[_PlcDevice] = (int)result;
 
-                _EqBase.flOperator.WriteLog(_PlcDevice + " : InputTextBox_KeyEnter : " + result);
+                    _EqBase.flOperator.WriteLog(_PlcDevice, "InputTextBox_KeyEnter : " + result);
 
-                this.Parent.Focus();
-                inputTextBox_Leave(sender, e);
+                    this.Parent.Focus();
+                    inputTextBox_Leave(sender, e);
+                }
+            }
+            catch (Exception ex)
+            {
+                _EqBase.flDebug.WriteLog(_PlcDevice, ex.ToString());
             }
         }
 
