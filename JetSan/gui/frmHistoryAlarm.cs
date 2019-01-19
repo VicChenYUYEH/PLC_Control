@@ -4,24 +4,24 @@ using System.Windows.Forms;
 
 namespace HyTemplate.gui
 {
-    public partial class frmHistoryAlarm : Form
+    public partial class FrmHistoryAlarm : Form
     {
-        DBControl db;
         private EventClient ecClient;
+        private RdEqKernel rdKernel;
 
-        public frmHistoryAlarm()
+        public FrmHistoryAlarm(RdEqKernel m_Kernel)
         {
             InitializeComponent();
-            db = new DBControl();
             ecClient = new EventClient(this);
+            rdKernel = m_Kernel;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            Query();
+            query();
         }
 
-        private void Query()
+        private void query()
         {
             string t_sDate, t_sTime, t_eDate, t_eTime;
             t_sDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
@@ -35,19 +35,15 @@ namespace HyTemplate.gui
 
             DateTime dtStart = DateTime.Parse(s_datetime);
             DateTime dtEnd = DateTime.Parse(e_datetime);
-            DataTable DT;
+            DataTable dt;
             string strSQL = "SELECT * FROM HistoryAlarm WHERE Start_Time BETWEEN '" + dtStart.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'" + "AND '" + dtEnd.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'";
-            string err = db.funSQL(strSQL, out DT); //從DB 取得該區段時間的 Data Table
-            dataGridView1.DataSource = DT;
-            DT = null;
+            string err = rdKernel.dDb.funSQL(strSQL, out dt); //從DB 取得該區段時間的 Data Table
+            dataGridView1.DataSource = dt;
+            dt = null;
 
             if (err != "")
             {
-                TEvent data = new TEvent();
-                data.MessageName = ProxyMessage.MSG_WRITE_LOG;
-                data.EventData["DB_Fail : HistoryAlarm_Query "] = err;
-
-                ecClient.SendMessage(data);
+                rdKernel.WriteDebugLog("DB_Fail : HistoryAlarm_Query => " + err);
             }
         }
     }

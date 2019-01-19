@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmRecipe
+    partial class FrmRecipe
     {
         /// <summary>
         /// Required designer variable.

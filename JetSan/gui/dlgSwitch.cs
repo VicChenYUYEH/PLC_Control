@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace HyTemplate.gui
 {
-    public partial class dlgSwitch : Form
+    public partial class DlgSwitch : Form
     {
-        public string PlcDevice { get { return textBox1.Text; } set { textBox1.Text = value; } }
+        public string _PlcDevice { get { return textBox1.Text; } set { textBox1.Text = value; } }
 
-        public dlgSwitch(bool m_Status)
+        public DlgSwitch(bool m_Status)
         {
             InitializeComponent();
 

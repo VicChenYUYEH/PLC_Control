@@ -35,10 +35,10 @@ namespace HyTemplate.components
             this.SizeMode = PictureBoxSizeMode.AutoSize;
             this.Image = STATUS_IMAGE[false];
 
-            this.HandleCreated += StatusPictureBox_HandleCreated;
+            this.HandleCreated += statusPictureBox_HandleCreated;
         }
 
-        private void StatusPictureBox_HandleCreated(object sender, EventArgs e)
+        private void statusPictureBox_HandleCreated(object sender, EventArgs e)
         {
             if (_PlcDevice.Trim() == "")
                 this.BackColor = Color.Red;
@@ -46,23 +46,23 @@ namespace HyTemplate.components
                 this.BackColor = SystemColors.Control;
         }
 
-        public void refreshStatus(bool m_Status)
+        public void RefreshStatus(bool m_Status)
         {
-            UpdateStatus(m_Status);
+            updateStatus(m_Status);
         }
 
-        public void refreshStatus(short m_Status)
+        public void RefreshStatus(short m_Status)
         {
             bool status = m_Status > 0 ? true : false;
 
-            UpdateStatus(status);
+            updateStatus(status);
         }
 
-        public void refreshStatus()
+        public void RefreshStatus()
         {
             if (_PlcDevice.Trim() == "" || _EqBase == null ) return;
 
-            bool status = _EqBase.PlcKernel[_PlcDevice] == 1 ? true : false;
+            bool status = _EqBase.pPlcKernel[_PlcDevice] == 1 ? true : false;
 
             _CurrentStatus = status;
 
@@ -75,9 +75,9 @@ namespace HyTemplate.components
                 this.Image = STATUS_IMAGE[false];
             }
         }
-        public void refreshStatus(EqBase _EqBase)
+        public void RefreshStatus(EqBase m_EqBase)
         {
-            bool status = _EqBase.PlcKernel.IsConnect;
+            bool status = m_EqBase.pPlcKernel.bConnect;
 
             this.Image = null;
             if (status)
@@ -90,10 +90,10 @@ namespace HyTemplate.components
             }
         }
 
-        private void UpdateStatus(bool m_Status)
+        private void updateStatus(bool m_Status)
         {
             if (_CurrentStatus == m_Status || _PlcDevice.Trim() == "") return;
-            if (!_EqBase.PlcKernel.IsConnect) m_Status = false;
+            if (!_EqBase.pPlcKernel.bConnect) m_Status = false;
 
             _CurrentStatus = m_Status;
 

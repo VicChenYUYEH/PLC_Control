@@ -80,14 +80,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="class\ConstDefine.cs" />
-    <Compile Include="class\ConstPlcDefine.cs" />
-    <Compile Include="class\DBControl.cs" />
+    <Compile Include="ConstDefine.cs" />
+    <Compile Include="ConstPlcDefine.cs" />
     <Compile Include="class\EqBase.cs" />
     <Compile Include="class\FileLog.cs" />
     <Compile Include="class\IniFile.cs" />
     <Compile Include="class\MelsecAccessor.cs" />
-    <Compile Include="class\MonitorAlarmThread.cs" />
+    <Compile Include="MonitorAlarmThread.cs" />
     <Compile Include="class\PlcHandler.cs" />
     <Compile Include="class\EventClient.cs" />
     <Compile Include="class\Recipe.cs" />

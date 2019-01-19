@@ -50,12 +50,11 @@ namespace HyTemplate
         private Thread thExecute;
         private EventClient ecClient;
         private FileLog flLog;
-        private bool isConnect = false;
-        private bool isChange = true;
-        private bool needRetry = true;
-        private frmLoading loading = new frmLoading();
+        private bool bChange = true;
+        private bool bNeedRetry = true;
+        private FrmLoading lLoading = new FrmLoading();
 
-        public bool IsConnect { get { return isConnect; } }
+        public bool bConnect { get; private set; } = false;
         bool bDisponse = false;
 
         Dictionary<PlcDeviceType, PlcDataInfo> dicPlcInfo = new Dictionary<PlcDeviceType, PlcDataInfo>();
@@ -78,16 +77,16 @@ namespace HyTemplate
                 melPlcAccessor = new MelsecAccessor(iLogicalStationNumber);
                 if (melPlcAccessor.Open() == 0)
                 {
-                    needRetry = false;
+                    bNeedRetry = false;
                 }
-                thExecute = new Thread(DoExecute);
+                thExecute = new Thread(doExecute);
                 thExecute.Start();
                 Thread.Sleep(100);
 #endif
             }
 
             ecClient = new EventClient(this);
-            ecClient.OnEventHandler += OnReceiveMessage;            
+            ecClient.OnEventHandler += onReceiveMessage;            
         }
         
         ~PlcHandler()
@@ -99,28 +98,24 @@ namespace HyTemplate
                 thExecute.Abort();
         }
 
-        private void OnReceiveMessage(string m_MessageName, TEvent args)
+        private void onReceiveMessage(string m_MessageName, TEvent args)
         {
             //System.Threading.Thread.Sleep(100);
         }
 
-        private void DoExecute()
+        private void doExecute()
         {
             while (true && !bDisponse)
             {
                 try
                 {
-                    CheckPLCConnect();
-                    ReadPlcData(dicPlcInfo);
-                    ReadPlcData(dicAlarmInfo, true);
+                    checkPLCConnect();
+                    readPlcData(dicPlcInfo);
+                    readPlcData(dicAlarmInfo, true);
                 }
                 catch (Exception ex)
                 {
-                    TEvent data = new TEvent();
-                    data.MessageName = ProxyMessage.MSG_WRITE_LOG;
-                    data.EventData["PlcHandler"] = ex.ToString();
-
-                    ecClient.SendMessage(data);
+                    writeLog("PlcHandler :" + ex.ToString());
                 }
                 finally
                 {
@@ -129,33 +124,33 @@ namespace HyTemplate
             }
         }
 
-        private void CheckPLCConnect()
+        private void checkPLCConnect()
         {
             short[] values;
-            bool plcStatusReg = isConnect;
-            isConnect = (melPlcAccessor.readDeviceBlock("W0100", 24, out values) == 0) ? true : false;
-            isChange = (plcStatusReg != isConnect) ? true : false;
+            bool bPlcStatusReg = bConnect;
+            bConnect = (melPlcAccessor.ReadDeviceBlock("W0100", 24, out values) == 0) ? true : false;
+            bChange = (bPlcStatusReg != bConnect) ? true : false;
 
-            if (isChange) //Update Signal
+            if (bChange) //Update Signal
             {
-                if (!isConnect)
+                if (!bConnect)
                 {
-                    needRetry = true;
+                    bNeedRetry = true;
                 }
-                isChange = false;
+                bChange = false;
                 TEvent data = new TEvent();
-                data.MessageName = (isConnect)? ProxyMessage.MSG_PLC_CONNECT : ProxyMessage.MSG_PLC_DISCONNECT;
+                data.MessageName = (bConnect)? ProxyMessage.MSG_PLC_CONNECT : ProxyMessage.MSG_PLC_DISCONNECT;
                 ecClient.SendMessage(data);
             }
-            if (!isConnect && needRetry)
+            if (!bConnect && bNeedRetry)
             {
-                loading.ShowDialog();
-                loading.Refresh();
-                if(loading.DialogResult == System.Windows.Forms.DialogResult.OK)
+                lLoading.ShowDialog();
+                lLoading.Refresh();
+                if(lLoading.DialogResult == System.Windows.Forms.DialogResult.OK)
                 {
                     if (melPlcAccessor.Open() == 0)
                     {
-                        needRetry = false;
+                        bNeedRetry = false;
                     }                
                 }
                 else
@@ -199,7 +194,7 @@ namespace HyTemplate
 
                     dicPlcBuffer.Add(device_name, new KeyValuePair<string, int>(device, 0));
 
-                    StorePlcInfo(device_type, device, dicPlcInfo);
+                    storePlcInfo(device_type, device, dicPlcInfo);
                 }
             }
 
@@ -262,7 +257,7 @@ namespace HyTemplate
                 DicAlarmStatus.Add(address, false);
                 if (!entity)//有實體PLC點位 因PLC XML已有該資料就不重複建立
                 {
-                    StorePlcInfo(device_type, address, dicAlarmInfo);
+                    storePlcInfo(device_type, address, dicAlarmInfo);
                 }
             }
 
@@ -303,16 +298,16 @@ namespace HyTemplate
             return true;
         }
         
-        private void ReadPlcData(Dictionary<PlcDeviceType, PlcDataInfo> DicSearchPlc, bool bAlarm =false)
+        private void readPlcData(Dictionary<PlcDeviceType, PlcDataInfo> m_DicSearchPlc, bool m_bAlarm =false)
         {
             const uint BATCH_READ_LENGTH = 320;
             try
             {
-                foreach (KeyValuePair<PlcDeviceType, PlcDataInfo> info in DicSearchPlc)
+                foreach (KeyValuePair<PlcDeviceType, PlcDataInfo> info in m_DicSearchPlc)
                 {
-                    int TypeLength = (info.Key == PlcDeviceType.pdtM) ? (info.Value.Length / 16) + 1 : info.Value.Length;
+                    int type_length = (info.Key == PlcDeviceType.pdtM) ? (info.Value.Length / 16) + 1 : info.Value.Length;
 
-                    int loop_count = (int)((TypeLength / BATCH_READ_LENGTH) + 1);
+                    int loop_count = (int)((type_length / BATCH_READ_LENGTH) + 1);
 
                     int device_type_count = info.Key == PlcDeviceType.pdtZR ? 2 : 1;
                     for (int loop = 0; loop < loop_count; loop++)
@@ -322,11 +317,11 @@ namespace HyTemplate
 
                         start_adr = info.Value.FirstDevice.Substring(0, device_type_count) + (info.Value.Id + (loop * BATCH_READ_LENGTH)).ToString(device_type);
 
-                        int length = (int)(TypeLength - ((loop + 1) * BATCH_READ_LENGTH) > 0 ? (int)BATCH_READ_LENGTH : TypeLength);
+                        int length = (int)(type_length - ((loop + 1) * BATCH_READ_LENGTH) > 0 ? (int)BATCH_READ_LENGTH : type_length);
                         short[] values;
 
                         if (melPlcAccessor == null) return;
-                        if (melPlcAccessor.readDeviceBlock(start_adr, length, out values) == 0)
+                        if (melPlcAccessor.ReadDeviceBlock(start_adr, length, out values) == 0)
                         {
                             if (   info.Key == PlcDeviceType.pdtX
                                 || info.Key == PlcDeviceType.pdtY
@@ -346,7 +341,7 @@ namespace HyTemplate
                                         if (DicAlarmStatus.ContainsKey(buf_adr)) 
                                         { DicAlarmStatus[buf_adr] = (arr_binary[binary_index] == '1') ? true : false; }
                                         /////////////////////////////////////////////////////////////////////////////////
-                                        if (!bAlarm) //更新PLC XML對應的Infomation
+                                        if (!m_bAlarm) //更新PLC XML對應的Infomation
                                         {
                                             KeyValuePair<string, KeyValuePair<string, int>> data = dicPlcBuffer.FirstOrDefault(address => address.Value.Key == buf_adr);
                                             if (data.Value.Key == null)
@@ -401,20 +396,12 @@ namespace HyTemplate
                                 }
                             }
                         }
-                        else
-                        {
-                            //isConnect = false;
-                        }
                     }
                 }
             }
             catch (Exception ex)
             {
-                TEvent data = new TEvent();
-                data.MessageName = ProxyMessage.MSG_WRITE_LOG;
-                data.EventData["PlcHandler"] = ex.ToString();
-
-                ecClient.SendMessage(data);
+                writeLog("PlcHandler :" + ex.ToString());
             }
         }
 
@@ -492,7 +479,7 @@ namespace HyTemplate
             return type;
         }
         
-        private void StorePlcInfo(PlcDeviceType m_DeviceType, string m_Device, Dictionary<PlcDeviceType, PlcDataInfo> m_Container)
+        private void storePlcInfo(PlcDeviceType m_DeviceType, string m_Device, Dictionary<PlcDeviceType, PlcDataInfo> m_Container)
         {
             int index = 1;
             int device_id = 0;
@@ -538,21 +525,21 @@ namespace HyTemplate
             }
         }
 
-        public short getPlcValue(string m_DeviceName)
+        public short GetPlcValue(string m_DeviceName)
         {
             if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return 0;
 
             return (short)dicPlcBuffer[m_DeviceName].Value;
         }
 
-        public void setPlcValue(string m_DeviceName, short m_Value)
+        public void SetPlcValue(string m_DeviceName, short m_Value)
         {
             if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return;
             
-            melPlcAccessor.writeDeviceRandom2(dicPlcBuffer[m_DeviceName].Key, m_Value);
+            melPlcAccessor.WriteDeviceRandom2(dicPlcBuffer[m_DeviceName].Key, m_Value);
         }
 
-        public int getPlcDbValue(string m_DeviceName)
+        public int GetPlcDbValue(string m_DeviceName)
         {
             if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return 0;
 
@@ -560,17 +547,17 @@ namespace HyTemplate
             string high_device = plc_device.Substring(0, 1) + ((Convert.ToInt16(plc_device.Substring(1)) + 1).ToString()).PadLeft(5, '0'); //找LowDevice下一個Word並補滿5個數字
             string low_device = m_DeviceName;
             short[] values;
-            melPlcAccessor.readDeviceBlock(high_device, 1, out values); //直接從PLC讀取，不從Dictionary獲得
+            melPlcAccessor.ReadDeviceBlock(high_device, 1, out values); //直接從PLC讀取，不從Dictionary獲得
             
             string high_value = values[0].ToString("X").PadLeft(4, '0');
-            string low_value = getPlcValue(low_device).ToString("X").PadLeft(4, '0');
+            string low_value = GetPlcValue(low_device).ToString("X").PadLeft(4, '0');
 
             string value = "0x" + high_value + low_value;
             
             return Convert.ToInt32(value, 16);
         }
         
-        public void setPlcDbValue(string m_DeviceName, int m_Value)
+        public void SetPlcDbValue(string m_DeviceName, int m_Value)
         {
             if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return;
 
@@ -589,8 +576,8 @@ namespace HyTemplate
 
             long low_value = m_Value & 0xFFFF;
             
-            melPlcAccessor.writeDeviceRandom2(dicPlcBuffer[high_device].Key, (short)high_value);
-            melPlcAccessor.writeDeviceRandom2(dicPlcBuffer[low_device].Key, (short)low_value);
+            melPlcAccessor.WriteDeviceRandom2(dicPlcBuffer[high_device].Key, (short)high_value);
+            melPlcAccessor.WriteDeviceRandom2(dicPlcBuffer[low_device].Key, (short)low_value);
         }
 
         public int this[string m_DeviceName]
@@ -600,11 +587,11 @@ namespace HyTemplate
                 if (!dicPlcValueType.ContainsKey(m_DeviceName)) return 0;
                 if (dicPlcValueType[m_DeviceName] == PlcValueType.pvtDoubleWord)
                 {
-                    return getPlcDbValue(m_DeviceName);
+                    return GetPlcDbValue(m_DeviceName);
                 }
                 else
                 {
-                    return getPlcValue(m_DeviceName);
+                    return GetPlcValue(m_DeviceName);
                 }
             }
             set
@@ -612,21 +599,21 @@ namespace HyTemplate
                 if (!dicPlcValueType.ContainsKey(m_DeviceName)) return;
                 if (dicPlcValueType[m_DeviceName] == PlcValueType.pvtDoubleWord)
                 {
-                    setPlcDbValue(m_DeviceName, value);
+                    SetPlcDbValue(m_DeviceName, value);
                 }
                 else
                 {
-                    setPlcValue(m_DeviceName, (short)value);
+                    SetPlcValue(m_DeviceName, (short)value);
                 }
             }
         }
 
-        public Dictionary<string, KeyValuePair<string, int>> getPlcMap()
+        public Dictionary<string, KeyValuePair<string, int>> GetPlcMap()
         {
             return dicPlcBuffer;
         }
 
-        public string getPlcMap(string m_DeviceName)
+        public string GetPlcMap(string m_DeviceName)
         {
             if (!dicPlcBuffer.ContainsKey(m_DeviceName)) return "InVaild Address";
             return dicPlcBuffer[m_DeviceName].Key;
@@ -636,7 +623,8 @@ namespace HyTemplate
         {
             if (flLog != null)
             {
-                flLog.writeLog("PlcHandler, " + m_Log);
+                 string sClassName = System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName;
+                 flLog.WriteLog(m_Log);
             }
         }
 

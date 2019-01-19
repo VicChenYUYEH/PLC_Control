@@ -42,9 +42,10 @@ namespace HyTemplate.components
 
         public bool ReadyToStart { get; set; }
         #endregion
+
         ToolTip trackTip;
-        private int lastX;
-        private int lastY;
+        private int iLastX;
+        private int iLastY;
         PolycoldStatus tsCurrentStatus;
 
         Dictionary<ImageSize, Dictionary<PolycoldStatus, Bitmap>> OBJECT_IMAGE = new Dictionary<ImageSize, Dictionary<PolycoldStatus, Bitmap>>();
@@ -91,58 +92,59 @@ namespace HyTemplate.components
 
             trackTip = new ToolTip();
 
-            this.HandleCreated += PolyCold_HandleCreated;
-            this.MouseDoubleClick += PolyCold_MouseDoubleClick;
-            this.MouseMove += PolyCold_MouseMove;
+            this.HandleCreated += polyCold_HandleCreated;
+            this.MouseDoubleClick += polyCold_MouseDoubleClick;
+            this.MouseMove += polyCold_MouseMove;
         }
         
 
-        private void PolyCold_MouseMove(object sender, MouseEventArgs e)
+        private void polyCold_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.X != this.lastX || e.Y != this.lastY)
+            if (e.X != this.iLastX || e.Y != this.iLastY)
             {
-                trackTip.SetToolTip(this, "Device: " + _EqBase.PlcKernel.getPlcMap(_PlcRunDevice));
-                this.lastX = e.X;
-                this.lastY = e.Y;
+                trackTip.SetToolTip(this, "Device: " + _EqBase.pPlcKernel.GetPlcMap(_PlcRunDevice));
+                this.iLastX = e.X;
+                this.iLastY = e.Y;
             }
         }
 
-        private void PolyCold_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void polyCold_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (_PlcRunDevice.Trim() == "" || _EqBase == null || !ReadyToStart) return;
 
-            dlgSwitch dlg = new dlgSwitch((_EqBase.PlcKernel[_PlcRunDevice] == 1 ? true : false));
-            dlg.PlcDevice = _EqBase.PlcKernel.getPlcMap(_PlcRunDevice);
-            dlg.PlcDevice = (_EqBase.PlcKernel[_PlcRunDevice] == 1) ? dlg.PlcDevice + " Opening" : dlg.PlcDevice;
+            DlgSwitch dlg = new DlgSwitch((_EqBase.pPlcKernel[_PlcRunDevice] == 1 ? true : false));
+            dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcRunDevice);
+            dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcRunDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
             DialogResult result = dlg.ShowDialog();
-            _EqBase.PlcKernel[_PlcRunDevice] = (result == DialogResult.Yes) ? 1 : 0;
+            _EqBase.pPlcKernel[_PlcRunDevice] = (result == DialogResult.Yes) ? 1 : 0;
+            _EqBase.flOperator.WriteLog(_PlcRunDevice + " : DoubleClick : " + result);
             dlg.Dispose();
         }
 
-        private void PolyCold_HandleCreated(object sender, EventArgs e)
+        private void polyCold_HandleCreated(object sender, EventArgs e)
         {
             this.Image = OBJECT_IMAGE[_ImageSize][PolycoldStatus.tsOff];
         }
 
-        public void refreshStatus()
+        public void RefreshStatus()
         {
             if (_EqBase == null) return;
            
             PolycoldStatus status = PolycoldStatus.tsOff;
 
-            if (_PlcAlarmDevice.Trim() != "" && _EqBase.PlcKernel[_PlcAlarmDevice] == 1)
+            if (_PlcAlarmDevice.Trim() != "" && _EqBase.pPlcKernel[_PlcAlarmDevice] == 1)
             {
                 status = PolycoldStatus.tsAlarm;
             }
-            else if (_PlcCoolingDevice.Trim() != "" && _EqBase.PlcKernel[_PlcCoolingDevice] == 1)
+            else if (_PlcCoolingDevice.Trim() != "" && _EqBase.pPlcKernel[_PlcCoolingDevice] == 1)
             {
                 status = PolycoldStatus.tsCooling;
             }
-            else if (_PlcDefrostingDevice.Trim() != "" && _EqBase.PlcKernel[_PlcDefrostingDevice] == 1)
+            else if (_PlcDefrostingDevice.Trim() != "" && _EqBase.pPlcKernel[_PlcDefrostingDevice] == 1)
             {
                 status = PolycoldStatus.tsDefrosting;
             }
-            else if (_PlcRunDevice.Trim() != "" && _EqBase.PlcKernel[_PlcRunDevice] == 1)
+            else if (_PlcRunDevice.Trim() != "" && _EqBase.pPlcKernel[_PlcRunDevice] == 1)
             {
                 status = PolycoldStatus.tsRun;
             }

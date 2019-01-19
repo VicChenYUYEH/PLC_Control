@@ -41,7 +41,7 @@ namespace HyTemplate.components
         }      
         
 
-        public void refreshData()
+        public void RefreshData()
         {
             if (_PlcDevice.Trim() == "" || /*_CurrentStatus == m_Status || */_EqBase == null) return;
 
@@ -53,7 +53,7 @@ namespace HyTemplate.components
             //else
             //    this.Text = (value * _Multiplication / _Division).ToString();
 
-            int value = (_DoubleWord ? _EqBase.PlcKernel.getPlcDbValue(_PlcDevice) : _EqBase.PlcKernel[_PlcDevice]);
+            int value = (_DoubleWord ? _EqBase.pPlcKernel.GetPlcDbValue(_PlcDevice) : _EqBase.pPlcKernel[_PlcDevice]);
             if (value == 0 || _Multiplication == 0 || _Division == 0)
                 this.Text = "0";
             else

@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmMaintenance
+    partial class FrmMaintenance
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMaintenance));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMaintenance));
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.TabControl_Main = new System.Windows.Forms.TabControl();
             this.TabPage1 = new System.Windows.Forms.TabPage();

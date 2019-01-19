@@ -14,67 +14,64 @@ using System.Xml;
 
 namespace HyTemplate
 {
-    public partial class frmMain : Form
+    public partial class FrmMain : Form
     {
         private string sUserRegisterFileName = Directory.GetCurrentDirectory() + "\\config\\UserRegister.xml";
 
         EventClient ecClient;
-        Recipe rRecipe;
         Dictionary<String, KeyValuePair<String, String>> dicUsers = new Dictionary<string, KeyValuePair<string, string>>();
 
-        frmHistoryLog log;
-        frmHistoryAlarm alarm;
-        frmLogin login;
-        frmSystemParameter sysPara;
-        frmRecipe recipe;
-        frmOverview overview;
-        frmControl control;
-        frmGasview gasView;
-        frmProcess process;
-        frmDeviceConstant deviceConstant;
-        frmMaintenance maintenance;
-
-        DBControl db; 
+        FrmHistoryLog frmLog;
+        FrmHistoryAlarm frmAlarm;
+        FrmLogin frmLogin;
+        FrmSystemParameter frmSysPara;
+        FrmRecipe frmRecipe;
+        FrmOverview frmOverview;
+        FrmControl frmControl;
+        FrmGasview frmGasView;
+        FrmProcess frmProcess;
+        FrmDeviceConstant frmDeviceConstant;
+        FrmMaintenance frmMaintenance;
+        
         RdEqKernel rdKernel;
-        Form currentForm = null;
+        Form frmCurrent = null;
 
-        public frmMain()
+        public FrmMain()
         {
             InitializeComponent();
 
             ecClient = new EventClient(this);
-            ecClient.OnEventHandler += OnReceiveMessage;
+            ecClient.OnEventHandler += onReceiveMessage;
 
             rdKernel = new RdEqKernel();
-            rRecipe = new Recipe();
 
-            log = new frmHistoryLog();
-            alarm = new frmHistoryAlarm();
-            recipe = new frmRecipe(rRecipe);
-            sysPara = new frmSystemParameter(rRecipe);
-            login = new frmLogin();
-            overview = new frmOverview(rdKernel);
-            control = new frmControl(rdKernel);
-            gasView = new frmGasview(rdKernel);
-            process = new frmProcess(rdKernel);
-            deviceConstant = new frmDeviceConstant(rdKernel);
-            maintenance = new frmMaintenance(rdKernel);
-            db = new DBControl();
+            frmLog = new FrmHistoryLog(rdKernel);
+            frmAlarm = new FrmHistoryAlarm(rdKernel);
+            frmRecipe = new FrmRecipe(rdKernel);
+            frmSysPara = new FrmSystemParameter(rdKernel);
+            frmLogin = new FrmLogin();
+            frmOverview = new FrmOverview(rdKernel);
+            frmControl = new FrmControl(rdKernel);
+            frmGasView = new FrmGasview(rdKernel);
+            frmProcess = new FrmProcess(rdKernel);
+            frmDeviceConstant = new FrmDeviceConstant(rdKernel);
+            frmMaintenance = new FrmMaintenance(rdKernel);
 
-            this.LoadUserRegister();
+            this.loadUserRegister();
 
             System.Threading.Thread.Sleep(1000);
 
-            ReloadGui(overview);
+            reloadGui(frmOverview);
 
             checkInitialStatus();
 
-            Login_out(false);
+            rdKernel.WriteOperatorLog("Program Start ......");
+            login_out(false);
         }
 
         private void checkInitialStatus()
         {
-            if (rdKernel.PlcKernel["X00024"] == 1 || rdKernel.PlcKernel["X00024"] == 1 || rdKernel.PlcKernel["X00025"] == 1)
+            if (rdKernel.pPlcKernel["X00024"] == 1 || rdKernel.pPlcKernel["X00024"] == 1 || rdKernel.pPlcKernel["X00025"] == 1)
             {
 
                 TEvent data = new TEvent();
@@ -84,51 +81,49 @@ namespace HyTemplate
             }
         }
 
-        private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
+        private void onReceiveMessage(string m_MessageName, TEvent m_Event)
         {
-            if (m_MessageName == ProxyMessage.MSG_USER_REGISTER_CHANGED)
+            switch (m_MessageName)
             {
-                this.LoadUserRegister();
-            }
-            else if (m_MessageName == ProxyMessage.MSG_ALARM_OCCURE || m_MessageName == ProxyMessage.MSG_ALARM_CLEAR)
-            {
-                DataTable dt = CreatAlarmTable();
-                int alarm_count = Convert.ToInt16(m_Event.EventData["Count"]);
-                for (int index = 1; index <=alarm_count; index++)
-                {
-                    DateTime alarm_time = Convert.ToDateTime(m_Event.EventData["OccurTime" + index.ToString()]);
-                    string alarm_level = m_Event.EventData["Level" + index.ToString()];
-                    string alarm_text = m_Event.EventData["Description" + index.ToString()];
-                    string alarm_solution = m_Event.EventData["Solution" + index.ToString()];
+                case ProxyMessage.MSG_USER_REGISTER_CHANGED:
+                    loadUserRegister();
+                    break;
+                case ProxyMessage.MSG_ALARM_OCCURE:
+                case ProxyMessage.MSG_ALARM_CLEAR:
+                    DataTable dt = creatAlarmTable();
+                    int alarm_count = Convert.ToInt16(m_Event.EventData["Count"]);
+                    for (int index = 1; index <= alarm_count; index++)
+                    {
+                        DateTime alarm_time = Convert.ToDateTime(m_Event.EventData["OccurTime" + index.ToString()]);
+                        string alarm_level = m_Event.EventData["Level" + index.ToString()];
+                        string alarm_text = m_Event.EventData["Description" + index.ToString()];
+                        string alarm_solution = m_Event.EventData["Solution" + index.ToString()];
 
-                    string alarm_msg = alarm_level + " - " + alarm_time + " - " + alarm_text + "";
-                    dt.Rows.Add(new Object[] { alarm_time, alarm_level, alarm_text, alarm_solution });
-                }
-                dataGrdAlarm.Invoke(new Action(()=>
-                {
-                    SetAlarmGridFormat(dt);
-                }));
-
-            }
-            else if (m_MessageName == ProxyMessage.MSG_ALARM_RESET)
-            {
-                ;
-            }
-            else if (m_MessageName == ProxyMessage.MSG_PLC_CONNECT || m_MessageName == ProxyMessage.MSG_PLC_DISCONNECT)
-            {
-                statusPictureBox1.Invoke(new Action(() =>
-                {
-                    statusPictureBox1.refreshStatus(rdKernel);
-                }));
-            }
-            else if (m_MessageName == ProxyMessage.MSG_RECIPE_SET)
-            {
-                string Current_rcp = m_Event.EventData["CurrentRCP"];
-                TxtRecipeName.Text = Current_rcp;
+                        string alarm_msg = alarm_level + " - " + alarm_time + " - " + alarm_text + "";
+                        dt.Rows.Add(new Object[] { alarm_time, alarm_level, alarm_text, alarm_solution });
+                    }
+                    dataGrdAlarm.Invoke(new Action(() =>
+                    {
+                        setAlarmGridFormat(dt);
+                    }));
+                    break;
+                case ProxyMessage.MSG_PLC_CONNECT:
+                case ProxyMessage.MSG_PLC_DISCONNECT:
+                    statusPictureBox1.Invoke(new Action(() =>
+                    {
+                        statusPictureBox1.RefreshStatus(rdKernel);
+                    }));
+                    break;
+                case ProxyMessage.MSG_RECIPE_SET:
+                    string Current_rcp = m_Event.EventData["CurrentRCP"];
+                    TxtRecipeName.Text = Current_rcp;
+                    break;
+                default:
+                    break;
             }
         }
 
-        private DataTable CreatAlarmTable()
+        private DataTable creatAlarmTable()
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("發生時間");
@@ -138,9 +133,9 @@ namespace HyTemplate
             return dt;
         }
 
-        private void SetAlarmGridFormat(DataTable DT)
+        private void setAlarmGridFormat(DataTable m_Dt)
         {
-            dataGrdAlarm.DataSource = DT;
+            dataGrdAlarm.DataSource = m_Dt;
             dataGrdAlarm.Columns[0].Width = 200;
             dataGrdAlarm.Columns[1].Width = 80;
             dataGrdAlarm.Columns[2].Width = 200;
@@ -148,36 +143,36 @@ namespace HyTemplate
             dataGrdAlarm.Refresh();
         }
 
-        private void ReloadGui(Form m_Form)
+        private void reloadGui(Form m_Form)
         {
-            if (currentForm == m_Form) return;
-            if (currentForm != null)
+            if (frmCurrent == m_Form) return;
+            if (frmCurrent != null)
             {
-                currentForm.Hide();
+                frmCurrent.Hide();
             }
 
-            if (m_Form != null && currentForm != m_Form)
+            if (m_Form != null && frmCurrent != m_Form)
             {
                 m_Form.FormBorderStyle = FormBorderStyle.None;
                 m_Form.TopLevel = false;
                 panel1.Controls.Add(m_Form);
                 m_Form.Show();
 
-                currentForm = m_Form;
+                frmCurrent = m_Form;
             }
         }
 
-        private void Login_out(bool success, string id = "", int authority = 1)
+        private void login_out(bool m_Success, string m_Id = "", int m_Authority = 1)
         {
             TEvent data = new TEvent();
-            data.MessageName = (success) ? ProxyMessage.MSG_USER_LOGIN : ProxyMessage.MSG_USER_LOGOUT;
-            data.EventData["Authority"] = authority.ToString();           
-            lblID.Text = (success)? id : "N/A";
+            data.MessageName = (m_Success) ? ProxyMessage.MSG_USER_LOGIN : ProxyMessage.MSG_USER_LOGOUT;
+            data.EventData["Authority"] = m_Authority.ToString();           
+            lblID.Text = (m_Success)? m_Id : "N/A";
             data.EventData["UserName"] = lblID.Text;
             ecClient.SendMessage(data);
         }
 
-        private void LoadUserRegister()
+        private void loadUserRegister()
         {
             dicUsers.Clear();
 
@@ -199,7 +194,8 @@ namespace HyTemplate
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            rdKernel.PlcKernel.Dispose();
+            rdKernel.WriteOperatorLog("Program Close ......");
+            rdKernel.pPlcKernel.Dispose();
             rdKernel.Dispose();
             System.Threading.Thread.Sleep(500);
             System.Environment.Exit(System.Environment.ExitCode);
@@ -207,8 +203,8 @@ namespace HyTemplate
 
         private void btnVacuum_Click(object sender, EventArgs e)
         {
-            if (   rdKernel.PlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_1] == 0
-                || rdKernel.PlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_2] == 0)
+            if (   rdKernel.pPlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_1] == 0
+                || rdKernel.pPlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_2] == 0)
             {
                 MessageBox.Show("Please Check Water Flow !!");
                 return;
@@ -224,35 +220,38 @@ namespace HyTemplate
         private void button8_Click(object sender, EventArgs e)
         {
             
-            rdKernel.PlcKernel["HMI_Alarm_Reset"] = 1;
+            rdKernel.pPlcKernel["HMI_Alarm_Reset"] = 1;
             System.Threading.Thread.Sleep(1000);
 
             TEvent data = new TEvent();
             data.MessageName = ProxyMessage.MSG_ALARM_RESET;
 
             ecClient.SendMessage(data);
-            rdKernel.PlcKernel["HMI_Alarm_Reset"] = 0;
+            rdKernel.pPlcKernel["HMI_Alarm_Reset"] = 0;
+            rdKernel.flOperator.WriteLog("Alarm_Reset Click");
         }
 
         #region Form Buttom Click Event
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            login.LoginId = "";
-            login.LoginPwd = "";
-            DialogResult result = login.ShowDialog();
+            frmLogin.sLoginId = "";
+            frmLogin.sLoginPwd = "";
+            DialogResult result = frmLogin.ShowDialog();
 
             if (result == DialogResult.Abort)
             {
-                Login_out(false);
-                db.InsertHistoryLog("N/A", "User Logout"); 
+                login_out(false);
+                rdKernel.InsertHistoryLog("N/A", "User Logout");
+                rdKernel.flOperator.WriteLog("User Logout");
             }
             else if (result == DialogResult.OK)
             {
-                string id = login.LoginId;
-                string pwd = login.LoginPwd;
+                string id = frmLogin.sLoginId;
+                string pwd = frmLogin.sLoginPwd;
                 if (!dicUsers.ContainsKey(id)) //有無該User
                 {
                     MessageBox.Show("User no found", "Warning", MessageBoxButtons.OK);
+                    rdKernel.flOperator.WriteLog("User LogIn Fail...... ");
                     return;
                 }
                 int authority = 1;
@@ -262,7 +261,8 @@ namespace HyTemplate
                 if (!dicUsers.ContainsValue(dicLogin[id])) //查詢User對應密碼是否正確，錯誤則登出
                 {
                     MessageBox.Show("User & Password mismatch", "Warning", MessageBoxButtons.OK);
-                    Login_out(false, id, authority);
+                    login_out(false, id, authority);
+                    rdKernel.flOperator.WriteLog("User LogIn Fail...... ");
                     return;
                 }
 
@@ -281,65 +281,66 @@ namespace HyTemplate
                 }
 
                 //傳送登入訊息給各頁面
-                Login_out(true, id, authority);
-                db.InsertHistoryLog(id, "User Login");
+                login_out(true, id, authority);
+                rdKernel.InsertHistoryLog(id, "User Login");
+                rdKernel.flOperator.WriteLog("User Login : " + id);
             }
         }
 
         private void btnHistoryLog_Click(object sender, EventArgs e)
         {
-            ReloadGui(log);
+            reloadGui(frmLog);
         }
 
         private void BtnAlarm_Click(object sender, EventArgs e)
         {
-            ReloadGui(alarm);
+            reloadGui(frmAlarm);
         }
 
         private void btnRecipe_Click(object sender, EventArgs e)
         {
-            ReloadGui(recipe);
+            reloadGui(frmRecipe);
         }
 
         private void btnSysPara_Click(object sender, EventArgs e)
         {
-            ReloadGui(sysPara);
+            reloadGui(frmSysPara);
         }
 
         private void btnOverview_Click(object sender, EventArgs e)
         {
-            ReloadGui(overview);
-            overview.Show();
+            reloadGui(frmOverview);
+            frmOverview.Show();
         }
 
         private void Control_Click(object sender, EventArgs e)
         {
-            ReloadGui(control);
-            control.Show();
+            reloadGui(frmControl);
+            frmControl.Show();
         }
 
         private void btnGasView_Click(object sender, EventArgs e)
         {
-            ReloadGui(gasView);
-            gasView.Show();
+            reloadGui(frmGasView);
+            frmGasView.Show();
         }
 
         private void btnProcView_Click(object sender, EventArgs e)
         {
-            ReloadGui(process);
-            process.Show();
+            reloadGui(frmProcess);
+            frmProcess.Show();
         }
 
         private void btnDeviceConstant_Click(object sender, EventArgs e)
         {
-            ReloadGui(deviceConstant);
-            deviceConstant.Show();
+            reloadGui(frmDeviceConstant);
+            frmDeviceConstant.Show();
         }
 
         private void btnMaintenance_Click(object sender, EventArgs e)
         {
-            ReloadGui(maintenance);
-            maintenance.Show();
+            reloadGui(frmMaintenance);
+            frmMaintenance.Show();
         }
         #endregion
     }

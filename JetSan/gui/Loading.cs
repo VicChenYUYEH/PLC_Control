@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace HyTemplate.gui
 {
-    public partial class frmLoading : Form
+    public partial class FrmLoading : Form
     {
-        public frmLoading()
+        public FrmLoading()
         {
             InitializeComponent();
             pictureBox1.Image = Properties.Resources.PLC;

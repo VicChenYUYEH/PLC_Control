@@ -12,11 +12,11 @@ using System.Xml;
 
 namespace HyTemplate.gui
 {
-    public partial class frmUserRegister : Form
+    public partial class FrmUserRegister : Form
     { 
         private string sUserRegisterFileName = Directory.GetCurrentDirectory() + "\\config\\UserRegister.xml";
         private EventClient ecClient;
-        public frmUserRegister()
+        public FrmUserRegister()
         {
             InitializeComponent();
 

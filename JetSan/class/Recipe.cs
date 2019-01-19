@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
+using DB;
 
 namespace HyTemplate
 {
@@ -16,26 +17,24 @@ namespace HyTemplate
 
     public class Recipe : XmlList
     {
-        Dictionary<String, RecipeInfo> dicRecipe = new Dictionary<string, RecipeInfo>();
-        Dictionary<String, RecipeInfo> dicSystem = new Dictionary<string, RecipeInfo>();
-        public Dictionary<String, RecipeInfo> RecipeDetail { get { return dicRecipe; } }
-        public Dictionary<String, RecipeInfo> SystemDetail { get { return dicSystem; } }
-        public string FileName { get; set; }
-        public string CurrentRecipeId { get; set; }
+        public Dictionary<String, RecipeInfo> DicRecipeDetail { get; } = new Dictionary<string, RecipeInfo>();
+        public Dictionary<String, RecipeInfo> DicSystemDetail { get; } = new Dictionary<string, RecipeInfo>();
+        public string sFileName { get; set; }
+        public string sCurrentRecipeId { get; set; }
 
         public Recipe(string m_Xml = "Recipe.xml")
         {
-            FileName = System.IO.Directory.GetCurrentDirectory() + "\\config\\" + m_Xml;
+            sFileName = System.IO.Directory.GetCurrentDirectory() + "\\config\\" + m_Xml;
 
-            InitialRecipeDetail();
+            initialRecipeDetail();
         }
 
-        private void InitialRecipeDetail()
+        private void initialRecipeDetail()
         {
-            if (!System.IO.File.Exists(FileName)) return;
+            if (!System.IO.File.Exists(sFileName)) return;
             
             XmlDocument XmlDoc = new XmlDocument();
-            XmlDoc.Load(FileName);
+            XmlDoc.Load(sFileName);
 
             XmlNodeList nodes = XmlDoc.SelectNodes("Recipe/Group");
             foreach (XmlNode chile_node in nodes)
@@ -49,14 +48,14 @@ namespace HyTemplate
                         {
                             String para_id = node.Attributes["Name"].Value;
                             RecipeInfo info = new RecipeInfo();
-                            if (!dicSystem.ContainsKey(para_id))
+                            if (!DicSystemDetail.ContainsKey(para_id))
                             {
                                 info.DeviceName = para_id;
                                 info.Unit = node.Attributes["Unit"].Value;
                                 info.SetPoint = 0;
                                 info.Description = node.Attributes["Description"].Value;
                                 info.Address = node.Attributes["DeviceName"].Value;
-                                dicSystem.Add(para_id, info);
+                                DicSystemDetail.Add(para_id, info);
                             }
                         }
                     }
@@ -69,14 +68,14 @@ namespace HyTemplate
                         {
                             String para_id = node.Attributes["Name"].Value;
                             RecipeInfo info = new RecipeInfo();
-                            if (!dicRecipe.ContainsKey(para_id))
+                            if (!DicRecipeDetail.ContainsKey(para_id))
                             {
                                 info.DeviceName = para_id;
                                 info.Unit = node.Attributes["Unit"].Value;
                                 info.SetPoint = 0;
                                 info.Description = node.Attributes["Description"].Value;
                                 info.Address = node.Attributes["DeviceName"].Value;
-                                dicRecipe.Add(para_id, info);
+                                DicRecipeDetail.Add(para_id, info);
                             }
                         }
                     }
@@ -84,53 +83,57 @@ namespace HyTemplate
             }
         }
 
-        public bool loadFile(string recipe = "")
+        public bool LoadFile(string m_Recipe = "")
         {
-            if (!System.IO.File.Exists(FileName)) return false;
+            if (!System.IO.File.Exists(sFileName)) return false;
 
-            this.getNodes().Clear();
+            this.GetNodes().Clear();
 
             XmlDocument XmlDoc = new XmlDocument();
-            XmlDoc.Load(FileName);
+            XmlDoc.Load(sFileName);
 
             XmlNodeList nodes = XmlDoc.SelectNodes("Recipe/Group");
             foreach (XmlNode chile_node in nodes)
             {
-                String rcp_id = chile_node.Attributes["ID"].Value;
-                String rcp_in_use = chile_node.Attributes["In_Use"].Value;
+                string rcp_id = chile_node.Attributes["ID"].Value;
+                string rcp_in_use = chile_node.Attributes["In_Use"].Value;
 
-                this.addNode(rcp_id, rcp_in_use);
+                this.AddNode(rcp_id, rcp_in_use);
 
                 if (chile_node.HasChildNodes)
                 {
                     foreach (XmlNode node in chile_node)
                     {
-                        String para_id = node.Attributes["Name"].Value;
-                        String para_value = node.Attributes["Value"].Value;
+                        string para_id = node.Attributes["Name"].Value;
+                        string para_value = node.Attributes["Value"].Value;
 
                         this[rcp_id].addChildNode(para_id, para_value);
 
                         if(rcp_id == "System")
                         {
-                            dicSystem.Remove(para_id);
-                            RecipeInfo info = new RecipeInfo();
-                            info.DeviceName = para_id;
-                            info.Unit = node.Attributes["Unit"].Value;
-                            info.SetPoint = Convert.ToDouble(para_value);
-                            info.Address = node.Attributes["DeviceName"].Value;
-                            info.Description = node.Attributes["Description"].Value;
-                            dicSystem.Add(para_id, info);
+                            DicSystemDetail.Remove(para_id);
+                            RecipeInfo info = new RecipeInfo
+                            {
+                                DeviceName = para_id,
+                                Unit = node.Attributes["Unit"].Value,
+                                SetPoint = Convert.ToDouble(para_value),
+                                Address = node.Attributes["DeviceName"].Value,
+                                Description = node.Attributes["Description"].Value
+                            };
+                            DicSystemDetail.Add(para_id, info);
                         }
-                        else if(recipe == rcp_id)//寫入Dictionary
+                        else if(m_Recipe == rcp_id)//寫入Dictionary
                         {
-                            dicRecipe.Remove(para_id);
-                            RecipeInfo info = new RecipeInfo();
-                            info.DeviceName = para_id;
-                            info.Unit = node.Attributes["Unit"].Value;
-                            info.SetPoint = Convert.ToDouble(para_value);
-                            info.Address = node.Attributes["DeviceName"].Value;
-                            info.Description = node.Attributes["Description"].Value;
-                            dicRecipe.Add(para_id, info);
+                            DicRecipeDetail.Remove(para_id);
+                            RecipeInfo info = new RecipeInfo
+                            {
+                                DeviceName = para_id,
+                                Unit = node.Attributes["Unit"].Value,
+                                SetPoint = Convert.ToDouble(para_value),
+                                Address = node.Attributes["DeviceName"].Value,
+                                Description = node.Attributes["Description"].Value
+                            };
+                            DicRecipeDetail.Add(para_id, info);
                         }
                     }
                 }
@@ -139,16 +142,16 @@ namespace HyTemplate
             return true;
         }
 
-        public bool saveFile()
+        public bool SaveFile()
         {
-            if (!System.IO.File.Exists(FileName)) return false;
+            if (!System.IO.File.Exists(sFileName)) return false;
 
             XmlDocument XmlDoc = new XmlDocument();
-            XmlDoc.Load(FileName);
+            XmlDoc.Load(sFileName);
 
             XmlNodeList nodes = XmlDoc.SelectNodes("Recipe/Group");
 
-            List<XmlItem> current = this.getNodes();
+            List<XmlItem> current = this.GetNodes();
             foreach (XmlItem item in current)
             {
                 bool find = false;
@@ -180,16 +183,16 @@ namespace HyTemplate
                 }
             }
 
-            XmlDoc.Save(FileName);
+            XmlDoc.Save(sFileName);
             return true;
         }
 
-        public void appendRecipe(string m_RcpId, string m_RcpInUse)
+        public void AppendRecipe(string m_RcpId, string m_RcpInUse)
         {
-            this.addNode(m_RcpId, m_RcpInUse);
+            this.AddNode(m_RcpId, m_RcpInUse);
 
             //Create new recipe Body
-            List<XmlItem> nodes = this.getNodes();
+            List<XmlItem> nodes = this.GetNodes();
             if (nodes.Count > 0)
             {
                 foreach (XmlItem tmp_node in nodes[0].Nodes)
@@ -199,10 +202,10 @@ namespace HyTemplate
             }
         }
 
-        public void eraseRecipe(string m_RecipeId)
+        public void EraseRecipe(string m_RecipeId)
         {
             XmlDocument XmlDoc = new XmlDocument();
-            XmlDoc.Load(FileName);
+            XmlDoc.Load(sFileName);
 
             foreach (XmlNode node in XmlDoc.SelectNodes("Recipe/Group"))
             {
@@ -213,7 +216,8 @@ namespace HyTemplate
                     break;
                 }
             }
-            XmlDoc.Save(FileName);
+            XmlDoc.Save(sFileName);
         }
+        
     }
 }

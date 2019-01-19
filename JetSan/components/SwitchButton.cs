@@ -29,18 +29,20 @@ namespace HyTemplate.components
             _Reverse = false;
             _CurrentStatus = false;
 
-            this.HandleCreated += SwitchButton_HandleCreated;
-            this.MouseClick += SwitchButton_MouseClick;
+            this.HandleCreated += switchButton_HandleCreated;
+            this.MouseClick += switchButton_MouseClick;
         }
 
-        private void SwitchButton_MouseClick(object sender, MouseEventArgs e)
+        private void switchButton_MouseClick(object sender, MouseEventArgs e)
         {
             if (_PlcDevice.Trim() == "" || _EqBase == null) return;
 
-            _EqBase.PlcKernel[_PlcDevice] = (short)(_EqBase.PlcKernel[_PlcDevice] == 1 ? 0 : 1);            
+            _EqBase.pPlcKernel[_PlcDevice] = (short)(_EqBase.pPlcKernel[_PlcDevice] == 1 ? 0 : 1);
+            
+            _EqBase.flOperator.WriteLog(_PlcDevice + " Click");
         }
 
-        private void SwitchButton_HandleCreated(object sender, EventArgs e)
+        private void switchButton_HandleCreated(object sender, EventArgs e)
         {
             if (_PlcDisplayDevice.Trim() == "")
                 _PlcDisplayDevice = _PlcDevice;
@@ -49,12 +51,12 @@ namespace HyTemplate.components
                 this.BackColor = Color.Red;
         }
 
-        public void refreshStatus()
+        public void RefreshStatus()
         {
             if (_PlcDisplayDevice.Trim() == "" || _EqBase == null) return;
 
             //_CurrentStatus = m_Status;
-            bool status = _EqBase.PlcKernel[_PlcDisplayDevice] == 1 ? true : false;
+            bool status = _EqBase.pPlcKernel[_PlcDisplayDevice] == 1 ? true : false;
 
             _CurrentStatus = status;
             if ((status && !_Reverse) || (!status && _Reverse))

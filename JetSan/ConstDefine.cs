@@ -15,8 +15,8 @@ namespace HyTemplate
         public const string MSG_PLC_CONNECT = "MSG_PLC_CONNECT";
         public const string MSG_PLC_DISCONNECT = "MSG_PLC_DISCONNECT";
         public const string MSG_USER_REGISTER_CHANGED = "MSG_USER_REGISTER_CHANGED";
-        public const string MSG_USER_LOGIN = "MSG_USER_LOGOUT";
-        public const string MSG_USER_LOGOUT = "MSG_USER_LOGIN";
+        public const string MSG_USER_LOGIN = "MSG_USER_LOGIN";
+        public const string MSG_USER_LOGOUT = "MSG_USER_LOGOUT";
         public const string MSG_ALARM_OCCURE = "MSG_ALARM_OCCURE";
         public const string MSG_ALARM_CLEAR = "MSG_ALARM_CLEAR";
         public const string MSG_ALARM_RESET = "MSG_ALARM_RESET";

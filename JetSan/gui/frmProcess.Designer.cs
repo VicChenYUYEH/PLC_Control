@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmProcess
+    partial class FrmProcess
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProcess));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProcess));
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
             this.displayTextBox31 = new HyTemplate.components.DisplayTextBox();

@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmGasview
+    partial class FrmGasview
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGasview));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGasview));
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.Label236 = new System.Windows.Forms.Label();
             this.Label237 = new System.Windows.Forms.Label();

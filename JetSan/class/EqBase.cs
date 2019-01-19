@@ -3,30 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DB;
 
 namespace HyTemplate
 {
     public class EqBase : IDisposable
     {
+
         #region 宣告變數
-        private PlcHandler phPlcKernel;
-        private Recipe rcpKernel;
-        private FileLog flDebug;
         private EventClient ecClient;
         private MonitorAlarmThread matAlarm;
+        public FileLog flDebug;
+        public FileLog flOperator;
 
-        public PlcHandler PlcKernel { get { return phPlcKernel; } }
-        public Recipe Recipe { get { return rcpKernel; } }
+        public PlcHandler pPlcKernel { get; }
+        public Recipe rRecipe { get; private set; }
+        public Db dDb;
         #endregion
 
         public EqBase()
         {
-            flDebug = new FileLog("DebugLog");            
-
-            writeLog("EqBase Initial Start");
-            phPlcKernel = new PlcHandler(flDebug);
-            matAlarm = new MonitorAlarmThread(PlcKernel);
-            rcpKernel = new Recipe();
+            flDebug = new FileLog("DebugLog");
+            flOperator = new FileLog("OperatorLog");
+            dDb = new Db("JetSan");
+            
+            pPlcKernel = new PlcHandler(flDebug);
+            matAlarm = new MonitorAlarmThread(pPlcKernel,flDebug);
+            rRecipe = new Recipe();
 
             ecClient = new EventClient(this);
             ecClient.OnEventHandler += OnReceiveMessage;
@@ -34,8 +37,9 @@ namespace HyTemplate
 
         ~EqBase()
         {
-            phPlcKernel.Dispose();
-            rcpKernel = null;
+            pPlcKernel.Dispose();
+            dDb = null;
+            rRecipe = null;
             ecClient = null;
         }
 
@@ -43,48 +47,42 @@ namespace HyTemplate
         {
             try
             {
-                writeLog("EqBase Receive Message [" + m_MessageName + "]");
-
+                flDebug.WriteLog("EqBase Receive Message [" + m_MessageName + "]");
                 if (m_MessageName == ProxyMessage.MSG_WRITE_LOG)
                 {
                     foreach (KeyValuePair<String, String> data in m_Event.EventData)
                     {
-                        writeLog(data.Key + ", " + data.Value);
+                        flOperator.WriteLog(data.Key + ", " + data.Value);
                     }
                 }
                 else if (m_MessageName == ProxyMessage.MSG_RECIPE_SAVE)
                 {
-                    rcpKernel.saveFile();
+                    rRecipe.SaveFile();
                 }
                 else if (m_MessageName == ProxyMessage.MSG_RECIPE_SET)
                 {
                     string rcp_id = m_Event.EventData["RecipeId"];
-                    rcpKernel.loadFile(rcp_id);
-                    foreach (KeyValuePair<string, RecipeInfo> info in rcpKernel.RecipeDetail)
+                    rRecipe.LoadFile(rcp_id);
+                    foreach (KeyValuePair<string, RecipeInfo> info in rRecipe.DicRecipeDetail)
                     {
-                        phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.RecipeDetail[info.Value.DeviceName].SetPoint;
+                        pPlcKernel[info.Value.DeviceName] = (short)rRecipe.DicRecipeDetail[info.Value.DeviceName].SetPoint;
                     }
                 }
                 else if (m_MessageName == ProxyMessage.MSG_PARAMETER_SET)
                 {
-                    rcpKernel.loadFile("System");
-                    foreach (KeyValuePair<string, RecipeInfo> info in rcpKernel.SystemDetail)
+                    rRecipe.LoadFile("System");
+                    foreach (KeyValuePair<string, RecipeInfo> info in rRecipe.DicSystemDetail)
                     {
-                        phPlcKernel[info.Value.DeviceName] = (short)rcpKernel.SystemDetail[info.Value.DeviceName].SetPoint;
+                        pPlcKernel[info.Value.DeviceName] = (short)rRecipe.DicSystemDetail[info.Value.DeviceName].SetPoint;
                     }
                 }
             }
             catch (Exception ex)
             {
-                writeLog("EqBase Receive Message failed :" + ex);
+                flDebug.WriteLog("EqBase Receive Message failed :" + ex);
             }
         }
-
-        public void writeLog(string m_Log)
-        {
-            flDebug.writeLog(m_Log);
-        }
-
+        
         #region IDisposable Support
         private bool disposedValue = false; // 偵測多餘的呼叫
 

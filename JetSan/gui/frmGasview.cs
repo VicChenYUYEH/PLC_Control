@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace HyTemplate.gui
 {
-    public partial class frmGasview : Form
+    public partial class FrmGasview : Form
     {
         private EqBase ebKernel;
 
-        public frmGasview(EqBase m_EqBase)
+        public FrmGasview(EqBase m_EqBase)
         {
             InitializeComponent();
 
@@ -43,23 +43,23 @@ namespace HyTemplate.gui
             {
                 if (obj.GetType().Equals(typeof(PlcObject)))
                 {
-                    ((PlcObject)obj).refreshStatus();
+                    ((PlcObject)obj).RefreshStatus();
                 }
                 else if (obj.GetType().Equals(typeof(DisplayTextBox)))
                 {
-                    ((DisplayTextBox)obj).refreshData();
+                    ((DisplayTextBox)obj).RefreshData();
                 }
                 else if (obj.GetType().Equals(typeof(StatusPictureBox)))
                 {
-                    ((StatusPictureBox)obj).refreshStatus();
+                    ((StatusPictureBox)obj).RefreshStatus();
                 }
                 else if (obj.GetType().Equals(typeof(InputTextBox)))
                 {
-                    ((InputTextBox)obj).refreshData();
+                    ((InputTextBox)obj).RefreshData();
                 }
                 else if (obj.GetType().Equals(typeof(ControlBtn)))
                 {
-                    ((ControlBtn)obj).refreshStatus();
+                    ((ControlBtn)obj).RefreshStatus();
                 }
                 else if (obj.GetType().Equals(typeof(GroupBox)))
                 {

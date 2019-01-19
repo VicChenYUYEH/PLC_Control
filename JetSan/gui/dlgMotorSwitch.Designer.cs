@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class dlgMotorSwitch
+    partial class DlgMotorSwitch
     {
         /// <summary>
         /// Required designer variable.

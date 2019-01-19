@@ -3,19 +3,19 @@ using System.Windows.Forms;
 
 namespace HyTemplate.gui
 {
-    public partial class dlgMotorSwitch : Form
+    public partial class DlgMotorSwitch : Form
     {
-        public string jogForwardDevice { get; set; }
-        public string jogBackDevice { get; set; }
-        public string speedDevice { get; set; }
-        public int maxMotorRpm { get; set; }
-        public int maxMotorPlcValue { get; set; }
+        public string _JogForwardDevice { get; set; }
+        public string _JogBackDevice { get; set; }
+        public string _SpeedDevice { get; set; }
+        public int _MaxMotorRpm { get; set; }
+        public int _MaxMotorPlcValue { get; set; }
         public int _Division { get; set; }
         public int _Multiplication { get; set; }
 
         private EqBase ebKernel;
 
-        public dlgMotorSwitch(int m_Status, EqBase m_EqBase)
+        public DlgMotorSwitch(int m_Status, EqBase m_EqBase)
         {
             InitializeComponent();
 
@@ -41,45 +41,45 @@ namespace HyTemplate.gui
 
         private void button4_MouseDown(object sender, MouseEventArgs e)
         {
-            if (ebKernel == null || jogForwardDevice.Trim() == "") return;
+            if (ebKernel == null || _JogForwardDevice.Trim() == "") return;
 
-            ebKernel.PlcKernel[jogForwardDevice] = 1;
+            ebKernel.pPlcKernel[_JogForwardDevice] = 1;
         }
 
         private void button4_MouseUp(object sender, MouseEventArgs e)
         {
-            if (ebKernel == null || jogForwardDevice.Trim() == "") return;
+            if (ebKernel == null || _JogForwardDevice.Trim() == "") return;
 
-            ebKernel.PlcKernel[jogForwardDevice] = 0;
+            ebKernel.pPlcKernel[_JogForwardDevice] = 0;
         }
 
         private void button5_MouseDown(object sender, MouseEventArgs e)
         {
-            if (ebKernel == null || jogBackDevice.Trim() == "") return;
+            if (ebKernel == null || _JogBackDevice.Trim() == "") return;
 
-            ebKernel.PlcKernel[jogBackDevice] = 1;
+            ebKernel.pPlcKernel[_JogBackDevice] = 1;
         }
 
         private void button5_MouseUp(object sender, MouseEventArgs e)
         {
-            if (ebKernel == null || jogBackDevice.Trim() == "") return;
+            if (ebKernel == null || _JogBackDevice.Trim() == "") return;
 
-            ebKernel.PlcKernel[jogBackDevice] = 0;
+            ebKernel.pPlcKernel[_JogBackDevice] = 0;
         }
 
         private void dlgMotorSwitch_Shown(object sender, System.EventArgs e)
         {
-            if (ebKernel != null && speedDevice != "")
+            if (ebKernel != null && _SpeedDevice != "")
             {
-                inputTextBox_MotoSpeed._PlcDevice = speedDevice;
+                inputTextBox_MotoSpeed._PlcDevice = _SpeedDevice;
                 inputTextBox_MotoSpeed._EqBase = ebKernel;
-                inputTextBox_MotoSpeed._MaxLimit = maxMotorRpm;
+                inputTextBox_MotoSpeed._MaxLimit = _MaxMotorRpm;
                 //inputTextBox_MotoSpeed._Multiplication = maxMotorPlcValue;
                 
                 inputTextBox_MotoSpeed._Division = _Division;
                 inputTextBox_MotoSpeed._Multiplication = _Multiplication;
                 
-                inputTextBox_MotoSpeed.refreshData();
+                inputTextBox_MotoSpeed.RefreshData();
             }
         }
 
@@ -87,17 +87,17 @@ namespace HyTemplate.gui
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (ebKernel.PlcKernel[jogForwardDevice] == 1)
+                if (ebKernel.pPlcKernel[_JogForwardDevice] == 1)
                 {
-                    ebKernel.PlcKernel[jogForwardDevice] = 0;
+                    ebKernel.pPlcKernel[_JogForwardDevice] = 0;
                     System.Threading.Thread.Sleep(50);
-                    ebKernel.PlcKernel[jogForwardDevice] = 1;
+                    ebKernel.pPlcKernel[_JogForwardDevice] = 1;
                 }
-                else if (ebKernel.PlcKernel[jogBackDevice] == 1)
+                else if (ebKernel.pPlcKernel[_JogBackDevice] == 1)
                 {
-                    ebKernel.PlcKernel[jogBackDevice] = 0;
+                    ebKernel.pPlcKernel[_JogBackDevice] = 0;
                     System.Threading.Thread.Sleep(50);
-                    ebKernel.PlcKernel[jogBackDevice] = 1;
+                    ebKernel.pPlcKernel[_JogBackDevice] = 1;
                 }
             }
         }

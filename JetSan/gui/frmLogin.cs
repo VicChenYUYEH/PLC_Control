@@ -14,22 +14,22 @@ using HyTemplate.gui;
 
 namespace HyTemplate.gui
 {
-    public partial class frmLogin : Form
+    public partial class FrmLogin : Form
     {
         private string sUserRegisterFileName = Directory.GetCurrentDirectory() + "\\config\\UserRegister.xml";
         EventClient ecClient;
 
-        public string LoginId { get { return textBox1.Text; } set { textBox1.Text = value; } }
-        public string LoginPwd { get { return textBox2.Text; } set { textBox2.Text = value; } }
+        public string sLoginId { get { return textBox1.Text; } set { textBox1.Text = value; } }
+        public string sLoginPwd { get { return textBox2.Text; } set { textBox2.Text = value; } }
 
-        frmUserRegister frmRegister;
-        public frmLogin()
+        FrmUserRegister frmRegister;
+        public FrmLogin()
         {
             InitializeComponent();
             ecClient = new EventClient(this);
-            ecClient.OnEventHandler += OnReceiveMessage;
+            ecClient.OnEventHandler += onReceiveMessage;
 
-            frmRegister = new frmUserRegister();
+            frmRegister = new FrmUserRegister();
         }
 
         private bool loadFile()
@@ -55,7 +55,7 @@ namespace HyTemplate.gui
             frmRegister.Show();      
         }
 
-        private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
+        private void onReceiveMessage(string m_MessageName, TEvent m_Event)
         {
             // System.Threading.Thread.Sleep(100);
             if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
@@ -72,7 +72,7 @@ namespace HyTemplate.gui
                         break;
                 }
             }
-            else if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
+            else if (m_MessageName == ProxyMessage.MSG_USER_LOGOUT)
             {
                 btn_Control(false);
             }

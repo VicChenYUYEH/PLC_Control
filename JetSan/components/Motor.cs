@@ -67,18 +67,18 @@ namespace HyTemplate.components
             //pictureBox3.Image = STATUS_FORWARD_IMAGE[false];
         }
 
-        public void refreshStatus()
+        public void RefreshStatus()
         {
             if (_PlcForwardDevice.Trim() == "" || _PlcBackDevice.Trim() == "" || _EqBase == null) return;
 
             //_CurrentStatus = m_Status;
             int status = 0;
 
-            if (_EqBase.PlcKernel[_PlcForwardDevice] == 1)
+            if (_EqBase.pPlcKernel[_PlcForwardDevice] == 1)
             {
                 status = 1;
             }
-            else if (_EqBase.PlcKernel[_PlcBackDevice] == 1)
+            else if (_EqBase.pPlcKernel[_PlcBackDevice] == 1)
             {
                 status = 2;
             }
@@ -141,21 +141,21 @@ namespace HyTemplate.components
             if (_PlcForwardDevice.Trim() == "" || _PlcBackDevice.Trim() == "" || _EqBase == null) return;
 
             int status = 0;
-            if (_EqBase.PlcKernel[_PlcForwardDevice] == 1)
+            if (_EqBase.pPlcKernel[_PlcForwardDevice] == 1)
             {
                 status = 1;
             }
-            else if (_EqBase.PlcKernel[_PlcBackDevice] == 1)
+            else if (_EqBase.pPlcKernel[_PlcBackDevice] == 1)
             {
                 status = 2;
             }
 
-            dlgMotorSwitch dlg = new dlgMotorSwitch(status, _EqBase);
-            dlg.jogForwardDevice = _PlcForwardDevice;
-            dlg.jogBackDevice = _PlcBackDevice;
-            dlg.speedDevice = _PlcSpeedDevice;
-            dlg.maxMotorRpm = _MotorMaxRpm;
-            dlg.maxMotorPlcValue = _MotorMaxPlcValue;
+            DlgMotorSwitch dlg = new DlgMotorSwitch(status, _EqBase);
+            dlg._JogForwardDevice = _PlcForwardDevice;
+            dlg._JogBackDevice = _PlcBackDevice;
+            dlg._SpeedDevice = _PlcSpeedDevice;
+            dlg._MaxMotorRpm = _MotorMaxRpm;
+            dlg._MaxMotorPlcValue = _MotorMaxPlcValue;
             dlg._Division = _Division;
             dlg._Multiplication = _Multiplication;
 
@@ -163,18 +163,18 @@ namespace HyTemplate.components
 
             if (result == DialogResult.Yes)
             {
-                _EqBase.PlcKernel[_PlcBackDevice] = 0;
-                _EqBase.PlcKernel[_PlcForwardDevice] = 1;
+                _EqBase.pPlcKernel[_PlcBackDevice] = 0;
+                _EqBase.pPlcKernel[_PlcForwardDevice] = 1;
             }
             else if (result == DialogResult.No)
             {
-                _EqBase.PlcKernel[_PlcForwardDevice] = 0;
-                _EqBase.PlcKernel[_PlcBackDevice] = 1;
+                _EqBase.pPlcKernel[_PlcForwardDevice] = 0;
+                _EqBase.pPlcKernel[_PlcBackDevice] = 1;
             }
             else if (result == DialogResult.Abort)
             {
-                _EqBase.PlcKernel[_PlcForwardDevice] = 0;
-                _EqBase.PlcKernel[_PlcBackDevice] = 0;
+                _EqBase.pPlcKernel[_PlcForwardDevice] = 0;
+                _EqBase.pPlcKernel[_PlcBackDevice] = 0;
             }
         }
     }

@@ -32,7 +32,7 @@ namespace HyTemplate
             dicEventClients.Add(m_Object, this);
         }
 
-        private void DoProcessMessage(TEvent m_Event)
+        private void doProcessMessage(TEvent m_Event)
         {
             foreach (KeyValuePair<object, EventClient> client in dicEventClients)
             {
@@ -46,7 +46,7 @@ namespace HyTemplate
 
         public void SendMessage(TEvent m_Event)
         {
-            DoProcessMessage(m_Event);
+            doProcessMessage(m_Event);
         }
     }
 }

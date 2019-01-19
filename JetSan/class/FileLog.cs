@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,23 +37,25 @@ namespace HyTemplate
             //file = Path.GetFileNameWithoutExtension(file);
             IniFile ini = new IniFile(path + "\\Config\\" + file + ".ini");
             sFileName = m_Log;
-            sPath = ini.getValue(m_Log, "FilePath");
-            fType = (LogFolderType) Convert.ToInt16(ini.getValue(m_Log, "FolderType"));
-            lFileSize = Convert.ToInt64(ini.getValue(m_Log, "FileSize"));
-            iLevel = Convert.ToUInt16(ini.getValue(m_Log, "LogLevel"));
+            sPath = ini.GetValue(m_Log, "FilePath");
+            fType = (LogFolderType) Convert.ToInt16(ini.GetValue(m_Log, "FolderType"));
+            lFileSize = Convert.ToInt64(ini.GetValue(m_Log, "FileSize"));
+            iLevel = Convert.ToUInt16(ini.GetValue(m_Log, "LogLevel"));
         }
 
-        public void writeLog(string m_Text, uint m_LogLevel = 1)
+        public void WriteLog(string m_Text, uint m_LogLevel = 1)
         {
             if (m_LogLevel > iLevel) return;
 
             string file_name = GetLogFileName();
+            StackTrace ss = new StackTrace(true);
+            MethodBase mb = ss.GetFrame(1).GetMethod();
             try
             {
                 using (System.IO.StreamWriter file =
                 new System.IO.StreamWriter(file_name, true))
                 {
-                    string log_txt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ", " + m_Text;
+                    string log_txt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " | " + mb.DeclaringType.Name + " | " + m_Text;
                     file.WriteLine(log_txt);
                 }
 

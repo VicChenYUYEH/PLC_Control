@@ -3,32 +3,30 @@ using System.Windows.Forms;
 
 namespace HyTemplate.gui
 {
-    public partial class frmRecipe : Form
+    public partial class FrmRecipe : Form
     {
-        DBControl db;
-        Recipe rRecipe;
-        EventClient ecClient;
-        string currentUser ="";
-        int authority = 1;
-        public frmRecipe(Recipe m_Recipe)
+        private RdEqKernel rdKernel;
+        private EventClient ecClient;
+        string sCurrentUser ="";
+        int iAuthority = 1;
+        public FrmRecipe(RdEqKernel m_Kernel)
         {
             InitializeComponent();
 
             ecClient = new EventClient(this);
-            ecClient.OnEventHandler += OnReceiveMessage;
+            ecClient.OnEventHandler += onReceiveMessage;
 
-            rRecipe = m_Recipe;
-            rRecipe.loadFile();
+            rdKernel = m_Kernel;
+            rdKernel.rRecipe.LoadFile();
 
-            InitialRecipeTable();
-            db = new DBControl();
+            initialRecipeTable();
         }
 
-        private void InitialRecipeTable()
+        private void initialRecipeTable()
         {
             listView1.Items.Clear();
 
-            foreach (XmlItem rcp_item in rRecipe.getNodes())
+            foreach (XmlItem rcp_item in rdKernel.rRecipe.GetNodes())
             {
                 if (rcp_item.Key == "System") continue;
 
@@ -44,20 +42,20 @@ namespace HyTemplate.gui
             }
             else
             {   //有權限才解鎖
-                if(authority == 4) btnDelete.Enabled = true;
+                if(iAuthority == 4) btnDelete.Enabled = true;
             }
             listView1.Focus();
             listView1.Items[0].Selected = true;
         }
 
-        private void InitialRecipeBody(string m_RcpId)
+        private void initialRecipeBody(string m_RcpId)
         {
             dataGridView1.Rows.Clear();
             DataGridViewRowCollection rows = dataGridView1.Rows;
 
-            foreach (XmlItem item in rRecipe[m_RcpId].Nodes)
+            foreach (XmlItem item in rdKernel.rRecipe[m_RcpId].Nodes)
             {
-                rows.Add(new Object[] { item.Key, item.Value, rRecipe.RecipeDetail[item.Key].Unit, rRecipe.RecipeDetail[item.Key].Address, rRecipe.RecipeDetail[item.Key].Description });
+                rows.Add(new Object[] { item.Key, item.Value, rdKernel.rRecipe.DicRecipeDetail[item.Key].Unit, rdKernel.rRecipe.DicRecipeDetail[item.Key].Address, rdKernel.rRecipe.DicRecipeDetail[item.Key].Description });
             }
         }
 
@@ -78,18 +76,19 @@ namespace HyTemplate.gui
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            dlgConfirm dlg = new dlgConfirm();
-            dlg.ConfirmId = "";
+            DlgConfirm dlg = new DlgConfirm();
+            dlg.sConfirmId = "";
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-                if (dlg.ConfirmId.Trim() == "") return;
-                
-                rRecipe.appendRecipe(dlg.ConfirmId, "false");
-                rRecipe.saveFile();
-                rRecipe.loadFile();
-                InitialRecipeTable();
-                string err = db.InsertHistoryLog(currentUser, "Creat New Recipe", Recipe: dlg.ConfirmId);
+                if (dlg.sConfirmId.Trim() == "") return;
+
+                rdKernel.rRecipe.AppendRecipe(dlg.sConfirmId, "false");
+                rdKernel.rRecipe.SaveFile();
+                rdKernel.rRecipe.LoadFile();
+                initialRecipeTable();
+                string err = rdKernel.InsertHistoryLog(sCurrentUser, "Creat New Recipe", m_Recipe: dlg.sConfirmId);
+                rdKernel.WriteOperatorLog("Creat New Recipe : " + dlg.sConfirmId);
             }
             dlg.Dispose();
         }
@@ -102,10 +101,12 @@ namespace HyTemplate.gui
             {
                 if (MessageBox.Show("Really want to delete Recipe[" + selected[0].Text + "]", "Warning", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    rRecipe.eraseRecipe(selected[0].Text);
-                    rRecipe.loadFile();
-                    InitialRecipeTable();
-                    string err = db.InsertHistoryLog(currentUser, "Delete Recipe", Recipe: selected[0].Text);
+                    rdKernel.rRecipe.EraseRecipe(selected[0].Text);
+                    rdKernel.rRecipe.LoadFile();
+                    initialRecipeTable();
+                    string err = rdKernel.InsertHistoryLog(sCurrentUser, "Delete Recipe", m_Recipe: selected[0].Text);
+
+                    rdKernel.WriteOperatorLog("Delete Recipe : " + selected[0].Text);
                 }
             }
         }
@@ -116,7 +117,7 @@ namespace HyTemplate.gui
 
             if (selected.Count > 0)
             {
-                InitialRecipeBody(selected[0].Text);
+                initialRecipeBody(selected[0].Text);
             }            
         }
 
@@ -133,22 +134,27 @@ namespace HyTemplate.gui
                 {
                     string key = row.Cells[0].Value.ToString();
                     string value = row.Cells[1].Value.ToString();
-                    rRecipe[selected[0].Text][key].Value = value;
+                    rdKernel.rRecipe[selected[0].Text][key].Value = value;
                 }
-                rRecipe.saveFile();
-                rRecipe.loadFile();
+                rdKernel.rRecipe.SaveFile();
+                rdKernel.rRecipe.LoadFile();
                 listView1.Refresh();
-                string err = db.InsertHistoryLog(currentUser, "Recipe Data Change", Recipe: selected[0].Text);
+                string err = rdKernel.InsertHistoryLog(sCurrentUser, "Recipe Data Change", m_Recipe: selected[0].Text);
+                rdKernel.WriteOperatorLog("Recipe Data Change : " + selected[0].Text);
+                if (err != "")
+                {
+                    rdKernel.WriteDebugLog("DB_Fail: Recipe_Save => " + err);
+                }
             }
         }
 
-        private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
+        private void onReceiveMessage(string m_MessageName, TEvent m_Event)
         {
             if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
             {
-                authority = int.Parse(m_Event.EventData["Authority"]);
-                currentUser = m_Event.EventData["UserName"];
-                switch (authority)
+                iAuthority = int.Parse(m_Event.EventData["Authority"]);
+                sCurrentUser = m_Event.EventData["UserName"];
+                switch (iAuthority)
                 {
                     case 1: //OP
                         btn_Control(false);
@@ -160,17 +166,21 @@ namespace HyTemplate.gui
                         break;
                 }
             }
+            else if (m_MessageName == ProxyMessage.MSG_USER_LOGOUT)
+            {
+                btn_Control(false);
+            }
         }
 
-        private void btn_Control(bool enable)
+        private void btn_Control(bool m_enable)
         {
-            btnCreate.Enabled = enable;
+            btnCreate.Enabled = m_enable;
             if (listView1.Items.Count <= 1)//少於1個不可刪除
             {
                 btnDelete.Enabled = false;
             }
-            else btnDelete.Enabled = enable;
-            btnSaveChange.Enabled = enable;
+            else btnDelete.Enabled = m_enable;
+            btnSaveChange.Enabled = m_enable;
         }
 
         private void btnSet_Click(object sender, EventArgs e)
@@ -186,20 +196,25 @@ namespace HyTemplate.gui
                 data.MessageName = ProxyMessage.MSG_RECIPE_SET;
                 data.EventData["RecipeId"] = selected[0].Text;
                 //寫入使用中參數
-                foreach (XmlItem rcp_item in rRecipe.getNodes())
+                foreach (XmlItem rcp_item in rdKernel.rRecipe.GetNodes())
                 {
                     if (rcp_item.Key == "System") continue;
 
-                    rRecipe[rcp_item.Key].Value = "false"; //皆改為關閉
+                    rdKernel.rRecipe[rcp_item.Key].Value = "false"; //皆改為關閉
                 }
-                rRecipe[selected[0].Text].Value = "true";
-                rRecipe.saveFile();
-                rRecipe.loadFile();
-                InitialRecipeTable();
-                getCurrentRecipeName(out current_rcp);
+                rdKernel.rRecipe[selected[0].Text].Value = "true";
+                rdKernel.rRecipe.SaveFile();
+                rdKernel.rRecipe.LoadFile();
+                initialRecipeTable();
+                GetCurrentRecipeName(out current_rcp);
                 data.EventData["CurrentRCP"] = current_rcp;
                 ecClient.SendMessage(data);
-                string err = db.InsertHistoryLog(currentUser,"Recipe Set",Recipe: current_rcp);
+                string err = rdKernel.InsertHistoryLog(sCurrentUser, "Recipe Set", m_Recipe: current_rcp);
+                rdKernel.WriteOperatorLog("Recipe Set : " + current_rcp);
+                if (err != "")
+                {
+                    rdKernel.WriteDebugLog("DB_Fail: Recipe_Set => " + err);
+                }
             }
         }
 
@@ -209,16 +224,16 @@ namespace HyTemplate.gui
             listView1.Items[0].Selected = true;
         }
 
-        public void getCurrentRecipeName(out string rcp)
+        public void GetCurrentRecipeName(out string m_rcp)
         {
-            rcp = "";
-            foreach (XmlItem rcp_item in rRecipe.getNodes())
+            m_rcp = "";
+            foreach (XmlItem rcp_item in rdKernel.rRecipe.GetNodes())
             {
                 if (rcp_item.Key == "System") continue;
 
-                if(rRecipe[rcp_item.Key].Value == "true")
+                if(rdKernel.rRecipe[rcp_item.Key].Value == "true")
                 {
-                    rcp = rRecipe[rcp_item.Key].Key;
+                    m_rcp = rdKernel.rRecipe[rcp_item.Key].Key;
                 }
             }
         }

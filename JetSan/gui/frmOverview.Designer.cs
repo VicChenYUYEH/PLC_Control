@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmOverview
+    partial class FrmOverview
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOverview));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOverview));
             this.timerStatus = new System.Windows.Forms.Timer(this.components);
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
             this.displayTextBox31 = new HyTemplate.components.DisplayTextBox();
@@ -4690,7 +4690,7 @@
             this.turboPump26.Image = ((System.Drawing.Image)(resources.GetObject("turboPump26.Image")));
             this.turboPump26.Location = new System.Drawing.Point(1245, 547);
             this.turboPump26.Name = "turboPump26";
-            this.turboPump26.ReadyToStart = true;
+            this.turboPump26.bReadyToStart = true;
             this.turboPump26.Size = new System.Drawing.Size(36, 39);
             this.turboPump26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump26.TabIndex = 2317;
@@ -4730,7 +4730,7 @@
             this.turboPump25.Image = ((System.Drawing.Image)(resources.GetObject("turboPump25.Image")));
             this.turboPump25.Location = new System.Drawing.Point(1244, 612);
             this.turboPump25.Name = "turboPump25";
-            this.turboPump25.ReadyToStart = true;
+            this.turboPump25.bReadyToStart = true;
             this.turboPump25.Size = new System.Drawing.Size(36, 39);
             this.turboPump25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump25.TabIndex = 2315;
@@ -4930,7 +4930,7 @@
             this.turboPump22.Image = ((System.Drawing.Image)(resources.GetObject("turboPump22.Image")));
             this.turboPump22.Location = new System.Drawing.Point(1036, 718);
             this.turboPump22.Name = "turboPump22";
-            this.turboPump22.ReadyToStart = true;
+            this.turboPump22.bReadyToStart = true;
             this.turboPump22.Size = new System.Drawing.Size(36, 39);
             this.turboPump22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump22.TabIndex = 2289;
@@ -4970,7 +4970,7 @@
             this.turboPump23.Image = ((System.Drawing.Image)(resources.GetObject("turboPump23.Image")));
             this.turboPump23.Location = new System.Drawing.Point(1036, 654);
             this.turboPump23.Name = "turboPump23";
-            this.turboPump23.ReadyToStart = true;
+            this.turboPump23.bReadyToStart = true;
             this.turboPump23.Size = new System.Drawing.Size(36, 39);
             this.turboPump23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump23.TabIndex = 2285;
@@ -5010,7 +5010,7 @@
             this.turboPump24.Image = ((System.Drawing.Image)(resources.GetObject("turboPump24.Image")));
             this.turboPump24.Location = new System.Drawing.Point(1036, 595);
             this.turboPump24.Name = "turboPump24";
-            this.turboPump24.ReadyToStart = true;
+            this.turboPump24.bReadyToStart = true;
             this.turboPump24.Size = new System.Drawing.Size(36, 39);
             this.turboPump24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump24.TabIndex = 2281;
@@ -5050,7 +5050,7 @@
             this.turboPump19.Image = ((System.Drawing.Image)(resources.GetObject("turboPump19.Image")));
             this.turboPump19.Location = new System.Drawing.Point(861, 667);
             this.turboPump19.Name = "turboPump19";
-            this.turboPump19.ReadyToStart = true;
+            this.turboPump19.bReadyToStart = true;
             this.turboPump19.Size = new System.Drawing.Size(36, 39);
             this.turboPump19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump19.TabIndex = 2279;
@@ -5090,7 +5090,7 @@
             this.turboPump20.Image = ((System.Drawing.Image)(resources.GetObject("turboPump20.Image")));
             this.turboPump20.Location = new System.Drawing.Point(861, 603);
             this.turboPump20.Name = "turboPump20";
-            this.turboPump20.ReadyToStart = true;
+            this.turboPump20.bReadyToStart = true;
             this.turboPump20.Size = new System.Drawing.Size(36, 39);
             this.turboPump20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump20.TabIndex = 2275;
@@ -5130,7 +5130,7 @@
             this.turboPump21.Image = ((System.Drawing.Image)(resources.GetObject("turboPump21.Image")));
             this.turboPump21.Location = new System.Drawing.Point(861, 544);
             this.turboPump21.Name = "turboPump21";
-            this.turboPump21.ReadyToStart = true;
+            this.turboPump21.bReadyToStart = true;
             this.turboPump21.Size = new System.Drawing.Size(36, 39);
             this.turboPump21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump21.TabIndex = 2271;
@@ -5230,7 +5230,7 @@
             this.turboPump16.Image = ((System.Drawing.Image)(resources.GetObject("turboPump16.Image")));
             this.turboPump16.Location = new System.Drawing.Point(713, 718);
             this.turboPump16.Name = "turboPump16";
-            this.turboPump16.ReadyToStart = true;
+            this.turboPump16.bReadyToStart = true;
             this.turboPump16.Size = new System.Drawing.Size(36, 39);
             this.turboPump16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump16.TabIndex = 2261;
@@ -5270,7 +5270,7 @@
             this.turboPump17.Image = ((System.Drawing.Image)(resources.GetObject("turboPump17.Image")));
             this.turboPump17.Location = new System.Drawing.Point(713, 654);
             this.turboPump17.Name = "turboPump17";
-            this.turboPump17.ReadyToStart = true;
+            this.turboPump17.bReadyToStart = true;
             this.turboPump17.Size = new System.Drawing.Size(36, 39);
             this.turboPump17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump17.TabIndex = 2257;
@@ -5310,7 +5310,7 @@
             this.turboPump18.Image = ((System.Drawing.Image)(resources.GetObject("turboPump18.Image")));
             this.turboPump18.Location = new System.Drawing.Point(713, 595);
             this.turboPump18.Name = "turboPump18";
-            this.turboPump18.ReadyToStart = true;
+            this.turboPump18.bReadyToStart = true;
             this.turboPump18.Size = new System.Drawing.Size(36, 39);
             this.turboPump18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump18.TabIndex = 2253;
@@ -5410,7 +5410,7 @@
             this.turboPump13.Image = ((System.Drawing.Image)(resources.GetObject("turboPump13.Image")));
             this.turboPump13.Location = new System.Drawing.Point(589, 718);
             this.turboPump13.Name = "turboPump13";
-            this.turboPump13.ReadyToStart = true;
+            this.turboPump13.bReadyToStart = true;
             this.turboPump13.Size = new System.Drawing.Size(36, 39);
             this.turboPump13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump13.TabIndex = 2243;
@@ -5450,7 +5450,7 @@
             this.turboPump14.Image = ((System.Drawing.Image)(resources.GetObject("turboPump14.Image")));
             this.turboPump14.Location = new System.Drawing.Point(589, 654);
             this.turboPump14.Name = "turboPump14";
-            this.turboPump14.ReadyToStart = true;
+            this.turboPump14.bReadyToStart = true;
             this.turboPump14.Size = new System.Drawing.Size(36, 39);
             this.turboPump14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump14.TabIndex = 2239;
@@ -5490,7 +5490,7 @@
             this.turboPump15.Image = ((System.Drawing.Image)(resources.GetObject("turboPump15.Image")));
             this.turboPump15.Location = new System.Drawing.Point(589, 595);
             this.turboPump15.Name = "turboPump15";
-            this.turboPump15.ReadyToStart = true;
+            this.turboPump15.bReadyToStart = true;
             this.turboPump15.Size = new System.Drawing.Size(36, 39);
             this.turboPump15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump15.TabIndex = 2235;
@@ -5550,7 +5550,7 @@
             this.turboPump12.Image = ((System.Drawing.Image)(resources.GetObject("turboPump12.Image")));
             this.turboPump12.Location = new System.Drawing.Point(302, 705);
             this.turboPump12.Name = "turboPump12";
-            this.turboPump12.ReadyToStart = true;
+            this.turboPump12.bReadyToStart = true;
             this.turboPump12.Size = new System.Drawing.Size(36, 39);
             this.turboPump12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump12.TabIndex = 2226;
@@ -5590,7 +5590,7 @@
             this.turboPump11.Image = ((System.Drawing.Image)(resources.GetObject("turboPump11.Image")));
             this.turboPump11.Location = new System.Drawing.Point(302, 642);
             this.turboPump11.Name = "turboPump11";
-            this.turboPump11.ReadyToStart = true;
+            this.turboPump11.bReadyToStart = true;
             this.turboPump11.Size = new System.Drawing.Size(36, 39);
             this.turboPump11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump11.TabIndex = 2222;
@@ -5630,7 +5630,7 @@
             this.turboPump10.Image = ((System.Drawing.Image)(resources.GetObject("turboPump10.Image")));
             this.turboPump10.Location = new System.Drawing.Point(302, 578);
             this.turboPump10.Name = "turboPump10";
-            this.turboPump10.ReadyToStart = true;
+            this.turboPump10.bReadyToStart = true;
             this.turboPump10.Size = new System.Drawing.Size(36, 39);
             this.turboPump10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump10.TabIndex = 2218;
@@ -5890,7 +5890,7 @@
             this.turboPump8.Image = ((System.Drawing.Image)(resources.GetObject("turboPump8.Image")));
             this.turboPump8.Location = new System.Drawing.Point(13, 655);
             this.turboPump8.Name = "turboPump8";
-            this.turboPump8.ReadyToStart = true;
+            this.turboPump8.bReadyToStart = true;
             this.turboPump8.Size = new System.Drawing.Size(36, 39);
             this.turboPump8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump8.TabIndex = 2188;
@@ -5930,7 +5930,7 @@
             this.turboPump9.Image = ((System.Drawing.Image)(resources.GetObject("turboPump9.Image")));
             this.turboPump9.Location = new System.Drawing.Point(13, 596);
             this.turboPump9.Name = "turboPump9";
-            this.turboPump9.ReadyToStart = true;
+            this.turboPump9.bReadyToStart = true;
             this.turboPump9.Size = new System.Drawing.Size(36, 39);
             this.turboPump9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump9.TabIndex = 2184;
@@ -5970,7 +5970,7 @@
             this.turboPump7.Image = ((System.Drawing.Image)(resources.GetObject("turboPump7.Image")));
             this.turboPump7.Location = new System.Drawing.Point(186, 684);
             this.turboPump7.Name = "turboPump7";
-            this.turboPump7.ReadyToStart = true;
+            this.turboPump7.bReadyToStart = true;
             this.turboPump7.Size = new System.Drawing.Size(36, 39);
             this.turboPump7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump7.TabIndex = 2180;
@@ -6010,7 +6010,7 @@
             this.turboPump6.Image = ((System.Drawing.Image)(resources.GetObject("turboPump6.Image")));
             this.turboPump6.Location = new System.Drawing.Point(186, 620);
             this.turboPump6.Name = "turboPump6";
-            this.turboPump6.ReadyToStart = true;
+            this.turboPump6.bReadyToStart = true;
             this.turboPump6.Size = new System.Drawing.Size(36, 39);
             this.turboPump6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump6.TabIndex = 2176;
@@ -6050,7 +6050,7 @@
             this.turboPump5.Image = ((System.Drawing.Image)(resources.GetObject("turboPump5.Image")));
             this.turboPump5.Location = new System.Drawing.Point(186, 561);
             this.turboPump5.Name = "turboPump5";
-            this.turboPump5.ReadyToStart = true;
+            this.turboPump5.bReadyToStart = true;
             this.turboPump5.Size = new System.Drawing.Size(36, 39);
             this.turboPump5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump5.TabIndex = 2172;
@@ -6130,7 +6130,7 @@
             this.turboPump4.Image = ((System.Drawing.Image)(resources.GetObject("turboPump4.Image")));
             this.turboPump4.Location = new System.Drawing.Point(725, 162);
             this.turboPump4.Name = "turboPump4";
-            this.turboPump4.ReadyToStart = true;
+            this.turboPump4.bReadyToStart = true;
             this.turboPump4.Size = new System.Drawing.Size(36, 39);
             this.turboPump4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump4.TabIndex = 2154;
@@ -6250,7 +6250,7 @@
             this.turboPump3.Image = ((System.Drawing.Image)(resources.GetObject("turboPump3.Image")));
             this.turboPump3.Location = new System.Drawing.Point(563, 139);
             this.turboPump3.Name = "turboPump3";
-            this.turboPump3.ReadyToStart = true;
+            this.turboPump3.bReadyToStart = true;
             this.turboPump3.Size = new System.Drawing.Size(36, 39);
             this.turboPump3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump3.TabIndex = 2140;
@@ -6290,7 +6290,7 @@
             this.turboPump2.Image = ((System.Drawing.Image)(resources.GetObject("turboPump2.Image")));
             this.turboPump2.Location = new System.Drawing.Point(504, 139);
             this.turboPump2.Name = "turboPump2";
-            this.turboPump2.ReadyToStart = true;
+            this.turboPump2.bReadyToStart = true;
             this.turboPump2.Size = new System.Drawing.Size(36, 39);
             this.turboPump2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump2.TabIndex = 2134;
@@ -6390,7 +6390,7 @@
             this.turboPump1.Image = ((System.Drawing.Image)(resources.GetObject("turboPump1.Image")));
             this.turboPump1.Location = new System.Drawing.Point(332, 159);
             this.turboPump1.Name = "turboPump1";
-            this.turboPump1.ReadyToStart = true;
+            this.turboPump1.bReadyToStart = true;
             this.turboPump1.Size = new System.Drawing.Size(36, 39);
             this.turboPump1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump1.TabIndex = 2065;

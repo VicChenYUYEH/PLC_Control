@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmLoading
+    partial class FrmLoading
     {
         /// <summary>
         /// Required designer variable.

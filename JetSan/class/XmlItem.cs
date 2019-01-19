@@ -67,17 +67,16 @@ namespace HyTemplate
 
     public class XmlList
     {
-        private Dictionary<String, String> dicAttribute = new Dictionary<string, string>();
         private List<XmlItem> lsXml = new List<XmlItem>();
 
-        public Dictionary<String, String> Attributes { get { return dicAttribute; } }
+        public Dictionary<String, String> Attributes { get; } = new Dictionary<string, string>();
 
-        public List<XmlItem> getNodes()
+        public List<XmlItem> GetNodes()
         {
             return lsXml;
         }
 
-        public XmlItem getNode(string m_Key)
+        public XmlItem GetNode(string m_Key)
         {
             foreach (XmlItem nod in lsXml)
             {
@@ -89,7 +88,7 @@ namespace HyTemplate
             return null;
         }
 
-        public void addNode(string m_Key, string m_Value)
+        public void AddNode(string m_Key, string m_Value)
         {
             XmlItem nod = new XmlItem();
             nod.Key = m_Key;
@@ -99,7 +98,7 @@ namespace HyTemplate
 
         public XmlItem this[string m_Key]
         {
-            get { return getNode(m_Key); }
+            get { return GetNode(m_Key); }
            // set { setNode(this); }
         }
 

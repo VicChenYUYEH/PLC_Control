@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmHistoryLog
+    partial class FrmHistoryLog
     {
         /// <summary>
         /// Required designer variable.

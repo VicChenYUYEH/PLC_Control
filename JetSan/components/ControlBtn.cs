@@ -39,18 +39,18 @@ namespace HyTemplate.components
             _Reverse = false;
             _CurrentStatus = false;
 
-            this.HandleCreated += ControlBtn_HandleCreated;
-            this.Click += Btn_ClickAsync;
+            this.HandleCreated += controlBtn_HandleCreated;
+            this.Click += btn_ClickAsync;
 
         }
-        private void ControlBtn_HandleCreated(object sender, EventArgs e)
+        private void controlBtn_HandleCreated(object sender, EventArgs e)
         {
             this.Text = _Text;
             this.BackColor = (_ReadOnly)? Color.WhiteSmoke : Color.Transparent;
             this.Enabled = (_ReadOnly) ? false : true;
         }        
 
-        private async void Btn_ClickAsync(object sender, EventArgs e)
+        private async void btn_ClickAsync(object sender, EventArgs e)
         {
             if (_PlcDevice.Trim() == "" || _EqBase == null) return;
 
@@ -60,26 +60,27 @@ namespace HyTemplate.components
                 if (result != DialogResult.Yes) return;
             }
 
+            _EqBase.flOperator.WriteLog(_PlcDevice + " : ControlButton_Click");
             if (_AutoOff)
             {
-                _EqBase.PlcKernel[_PlcDevice] = 1;
-                await PutTaskDelay();
-                _EqBase.PlcKernel[_PlcDevice] = 0;
+                _EqBase.pPlcKernel[_PlcDevice] = 1;
+                await putTaskDelay();
+                _EqBase.pPlcKernel[_PlcDevice] = 0;
                 return;
             }
-            _EqBase.PlcKernel[_PlcDevice] = (_CurrentStatus) ? 0 : 1;
+            _EqBase.pPlcKernel[_PlcDevice] = (_CurrentStatus) ? 0 : 1;
         }
 
-        public void refreshStatus()
+        public void RefreshStatus()
         {
             if (_PlcDisplayOnDevice.Trim() == "" || _EqBase == null) return;
             
-            bool status = _EqBase.PlcKernel[_PlcDisplayOnDevice] == 1 ? true : false;
+            bool status = _EqBase.pPlcKernel[_PlcDisplayOnDevice] == 1 ? true : false;
 
             if (_PlcDisplayOffDevice != null && _PlcDisplayOffDevice.Trim() != "")
             {
-                if ((!status && _EqBase.PlcKernel[_PlcDisplayOffDevice] == 0)
-                    || (status && _EqBase.PlcKernel[_PlcDisplayOffDevice] == 1))
+                if ((!status && _EqBase.pPlcKernel[_PlcDisplayOffDevice] == 0)
+                    || (status && _EqBase.pPlcKernel[_PlcDisplayOffDevice] == 1))
                 {
                     this.BackColor = (this.BackColor == Color.Green) ? Color.WhiteSmoke : Color.Green;
 
@@ -98,7 +99,7 @@ namespace HyTemplate.components
                 this.BackColor = (_ReadOnly) ? Color.WhiteSmoke : Color.Transparent;
             }
         }
-        async Task PutTaskDelay()
+        async Task putTaskDelay()
         {
             await Task.Delay(1000);
         }

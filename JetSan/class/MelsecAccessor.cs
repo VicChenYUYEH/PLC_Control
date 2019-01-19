@@ -41,7 +41,7 @@ namespace HyTemplate
             return iReturnCode;
         }
 
-        public int readDeviceBlock(string m_Device, int m_Size, out short[] m_Values)
+        public int ReadDeviceBlock(string m_Device, int m_Size, out short[] m_Values)
         {
             int iReturnCode = -1;			    //Return code
             String szDeviceName = m_Device;		//List data for 'DeviceName'
@@ -76,7 +76,7 @@ namespace HyTemplate
         }
 
         
-        public int writeDeviceRandom2(string m_Device, short m_Value)
+        public int WriteDeviceRandom2(string m_Device, short m_Value)
         {
             int iReturnCode = -1;		    //Return code
             String szDeviceName = m_Device;	//List data for 'DeviceName'

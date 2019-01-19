@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class dlgConfirm
+    partial class DlgConfirm
     {
         /// <summary>
         /// Required designer variable.

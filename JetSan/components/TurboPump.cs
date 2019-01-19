@@ -41,12 +41,12 @@ namespace HyTemplate.components
         public ImageSize _ImageSize { get; set; }
         public EqBase _EqBase { get; set; }
 
-        public bool ReadyToStart { get; set; }
+        public bool bReadyToStart { get; set; }
         #endregion
 
         ToolTip trackTip;
-        private int lastX;
-        private int lastY;
+        private int iLastX;
+        private int iLastY;
         TurboStatus tsCurrentStatus;
 
         Dictionary<ImageSize, Dictionary<TurboStatus, Bitmap>> OBJECT_IMAGE = new Dictionary<ImageSize, Dictionary<TurboStatus, Bitmap>>();
@@ -65,7 +65,7 @@ namespace HyTemplate.components
             tsCurrentStatus = TurboStatus.tsStop;
             _ImageSize = ImageSize.isSmall;
 
-            ReadyToStart = true;
+            bReadyToStart = true;
 
             #region Small
             Dictionary<TurboStatus, Bitmap> on_small_image = new Dictionary<TurboStatus, Bitmap>();
@@ -95,58 +95,59 @@ namespace HyTemplate.components
 
             trackTip = new ToolTip();
 
-            this.HandleCreated += TurboPump_HandleCreated;
-            this.MouseDoubleClick += TurboPump_MouseDoubleClick;
-            this.MouseMove += TurboPump_MouseMove;
+            this.HandleCreated += turboPump_HandleCreated;
+            this.MouseDoubleClick += turboPump_MouseDoubleClick;
+            this.MouseMove += turboPump_MouseMove;
         }
         
 
-        private void TurboPump_MouseMove(object sender, MouseEventArgs e)
+        private void turboPump_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.X != this.lastX || e.Y != this.lastY)
+            if (e.X != this.iLastX || e.Y != this.iLastY)
             {
-                trackTip.SetToolTip(this, "Device: " + _EqBase.PlcKernel.getPlcMap(_PlcStartDevice));
-                this.lastX = e.X;
-                this.lastY = e.Y;
+                trackTip.SetToolTip(this, "Device: " + _EqBase.pPlcKernel.GetPlcMap(_PlcStartDevice));
+                this.iLastX = e.X;
+                this.iLastY = e.Y;
             }
         }
 
-        private void TurboPump_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void turboPump_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (_PlcStartDevice.Trim() == "" || _EqBase == null || !ReadyToStart) return;
+            if (_PlcStartDevice.Trim() == "" || _EqBase == null || !bReadyToStart) return;
 
-            dlgSwitch dlg = new dlgSwitch((_EqBase.PlcKernel[_PlcStartDevice] == 1 ? true : false));
-            dlg.PlcDevice = _EqBase.PlcKernel.getPlcMap(_PlcStartDevice);
-            dlg.PlcDevice = (_EqBase.PlcKernel[_PlcStartDevice] == 1) ? dlg.PlcDevice + " Opening" : dlg.PlcDevice;
+            DlgSwitch dlg = new DlgSwitch((_EqBase.pPlcKernel[_PlcStartDevice] == 1 ? true : false));
+            dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcStartDevice);
+            dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcStartDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
             DialogResult result = dlg.ShowDialog();
-            _EqBase.PlcKernel[_PlcStartDevice] = (result == DialogResult.Yes) ? 1 : 0;
+            _EqBase.pPlcKernel[_PlcStartDevice] = (result == DialogResult.Yes) ? 1 : 0;
+            _EqBase.flOperator.WriteLog(_PlcStartDevice + " DoubleClick : " + result);
             dlg.Dispose();
         }
 
-        private void TurboPump_HandleCreated(object sender, EventArgs e)
+        private void turboPump_HandleCreated(object sender, EventArgs e)
         {
             this.Image = OBJECT_IMAGE[_ImageSize][TurboStatus.tsStop];
         }
 
-        public void refreshStatus()
+        public void RefreshStatus()
         {
             if (_PlcReadyDevice.Trim() == "" || _EqBase == null) return;
            
             TurboStatus status = TurboStatus.tsStop;
 
-            if (_PlcAlarmDevice.Trim() != "" && _EqBase.PlcKernel[_PlcAlarmDevice] == 1)
+            if (_PlcAlarmDevice.Trim() != "" && _EqBase.pPlcKernel[_PlcAlarmDevice] == 1)
             {
                 status = TurboStatus.tsAlarm;
             }
-            else if (_PlcDecDevice.Trim() != "" && _EqBase.PlcKernel[_PlcDecDevice] == 1)
+            else if (_PlcDecDevice.Trim() != "" && _EqBase.pPlcKernel[_PlcDecDevice] == 1)
             {
                 status = TurboStatus.tsDec;
             }
-            else if (_PlcReadyDevice.Trim() != "" && _EqBase.PlcKernel[_PlcReadyDevice] == 1)
+            else if (_PlcReadyDevice.Trim() != "" && _EqBase.pPlcKernel[_PlcReadyDevice] == 1)
             {
                 status = TurboStatus.tsReady;
             }
-            else if (_PlcAccDevice.Trim() != "" && _EqBase.PlcKernel[_PlcAccDevice] == 1)
+            else if (_PlcAccDevice.Trim() != "" && _EqBase.pPlcKernel[_PlcAccDevice] == 1)
             {
                 status = TurboStatus.tsAcc;
             }

@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmUserRegister
+    partial class FrmUserRegister
     {
         /// <summary>
         /// Required designer variable.

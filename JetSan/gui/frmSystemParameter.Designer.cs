@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmSystemParameter
+    partial class FrmSystemParameter
     {
         /// <summary>
         /// Required designer variable.

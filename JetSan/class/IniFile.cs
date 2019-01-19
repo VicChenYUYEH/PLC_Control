@@ -29,12 +29,12 @@ namespace HyTemplate
             sIniFile = m_IniFile;
         }
 
-        public void setIniFile(string m_IniFile)
+        public void SetIniFile(string m_IniFile)
         {
             sIniFile = m_IniFile;
         }
 
-        public bool setValue(string m_Section, string m_Key, string m_Value)
+        public bool SetValue(string m_Section, string m_Key, string m_Value)
         {
             if (sIniFile.Trim() == "") return false;
 
@@ -45,7 +45,7 @@ namespace HyTemplate
             return true;
         }
 
-        public string getValue(string m_Section, string m_Key)
+        public string GetValue(string m_Section, string m_Key)
         {
             if (sIniFile.Trim() == "") return "";
 
@@ -58,7 +58,7 @@ namespace HyTemplate
         }
 
         #region 取得檔案中所有Section名稱
-        public List<string> getSectionNames()
+        public List<string> GetSectionNames()
         {
             if (sIniFile.Trim() == "") return null;
 
@@ -66,7 +66,7 @@ namespace HyTemplate
             IntPtr pReturnedString = Marshal.AllocCoTaskMem((int)MAX_BUFFER);
 
             uint bytesReturned = GetPrivateProfileSectionNames(pReturnedString, MAX_BUFFER, sIniFile);
-            string[] sections = IntPtrToStringArray(pReturnedString, bytesReturned);
+            string[] sections = intPtrToStringArray(pReturnedString, bytesReturned);
 
             List<string> result = new List<string>();
             for ( int index = 0; index < sections.Length; index++)
@@ -78,19 +78,19 @@ namespace HyTemplate
         #endregion
 
         #region 取得Section中的所有資料
-        public string[] getSectionValues(string m_Section)
+        public string[] GetSectionValues(string m_Section)
         {
             if (sIniFile.Trim() == "") return null;
 
             uint MAX_BUFFER = 32767;
             IntPtr pReturnedString = Marshal.AllocCoTaskMem((int)MAX_BUFFER);
             uint bytesReturned = GetPrivateProfileSection(m_Section, pReturnedString, MAX_BUFFER, sIniFile);
-            return IntPtrToStringArray(pReturnedString, bytesReturned);
+            return intPtrToStringArray(pReturnedString, bytesReturned);
         }
         #endregion
 
         //指標資料轉字串陣列
-        private string[] IntPtrToStringArray(IntPtr pReturnedString, uint bytesReturned)
+        private string[] intPtrToStringArray(IntPtr pReturnedString, uint bytesReturned)
         {
             //use of Substring below removes terminating null for split
             if (bytesReturned == 0)

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Recipe>
   <Group ID="System" In_Use="true">
-    <Link Name="VacStarttime" Value="231" DeviceName="R1456" Unit="s" Description="主腔 RV開啟時間" />
+    <Link Name="VacStarttime" Value="22" DeviceName="R1456" Unit="s" Description="主腔 RV開啟時間" />
   </Group>
-  <Group ID="RCP_Ｃ8763" In_Use="false">
+  <Group ID="RCP_Ｃ8763" In_Use="true">
     <Link Name="SET_MFC_Pre01_N2" Value="10" Unit="s" DeviceName="R1000" Description="MFC_Pre01_N2設定值" />
     <Link Name="SET_MFC_Pre02_O2" Value="20" Unit="s" DeviceName="R1001" Description="MFC_Pre02_O2設定值" />
     <Link Name="SET_MFC_Pre03_Ar" Value="1" Unit="s" DeviceName="R1002" Description="MFC_Pre03_Ar設定值" />
@@ -20,7 +20,7 @@
     <Link Name="SET_MFC_0311_O2" Value="22" Unit="s" DeviceName="R1013" Description="MFC_0311_O2設定值" />
     <Link Name="SET_MFC_0312_Ar" Value="20" Unit="s" DeviceName="R1014" Description="MFC_0312_Ar設定值" />
     <Link Name="MF1_Proc_STEP" Value="20" Unit="kw" DeviceName="R1052" Description="MF1_功率設定值" />
-    <Link Name="MF2_Proc_STEP" Value="20" Unit="kw" DeviceName="R1055" Description="MF2_功率設定值" />
+    <Link Name="MF2_Proc_STEP" Value="222" Unit="kw" DeviceName="R1055" Description="MF2_功率設定值" />
     <Link Name="DC1_Proc_STEP" Value="20" Unit="kw" DeviceName="R1058" Description="DC1_功率設定值" />
     <Link Name="DC2_Proc_STEP" Value="20" Unit="kw" DeviceName="R1061" Description="DC2_功率設定值" />
     <Link Name="DC3_Proc_STEP" Value="20" Unit="kw" DeviceName="R1064" Description="DC3_功率設定值" />
@@ -36,7 +36,7 @@
     <Link Name="Heater3_SV" Value="45" Unit="度" DeviceName="D3506" Description="Heater3_加熱溫度" />
     <Link Name="Heater4_SV" Value="20" Unit="度" DeviceName="D3507" Description="Heater4_加熱溫度" />
   </Group>
-  <Group ID="RCP_123" In_Use="true">
+  <Group ID="RCP_123" In_Use="false">
     <Link Name="SET_MFC_Pre01_N2" Value="10" Unit="s" DeviceName="R1000" Description="MFC_Pre01_N2設定值" />
     <Link Name="SET_MFC_Pre02_O2" Value="20" Unit="s" DeviceName="R1001" Description="MFC_Pre02_O2設定值" />
     <Link Name="SET_MFC_Pre03_Ar" Value="20" Unit="s" DeviceName="R1002" Description="MFC_Pre03_Ar設定值" />

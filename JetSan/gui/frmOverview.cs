@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace HyTemplate.gui
 {
-    public partial class frmOverview : Form
+    public partial class FrmOverview : Form
     {
         private EqBase ebKernel;
 
-        public frmOverview(EqBase m_EqBase)
+        public FrmOverview(EqBase m_EqBase)
         {
             InitializeComponent();
 
@@ -189,22 +189,22 @@ namespace HyTemplate.gui
 
         private bool checkTpStartCondition()
         {
-            if (   ebKernel.PlcKernel[ConstPlcDefine.PLC_DI_RP_1_ON] == 0
+            if (   ebKernel.pPlcKernel[ConstPlcDefine.PLC_DI_RP_1_ON] == 0
                 //|| ebKernel.PlcKernel[ConstPlcDefine.PLC_DI_RP_2_ON] == 0
-                || ebKernel.PlcKernel[ConstPlcDefine.PLC_DI_RP_3_ON] == 0)
+                || ebKernel.pPlcKernel[ConstPlcDefine.PLC_DI_RP_3_ON] == 0)
             {
                 MessageBox.Show("RP is not open !!");
                 return false;
             }
-            else if (   ebKernel.PlcKernel[ConstPlcDefine.PLC_DI_LVG_2_ON] == 0
-                     || ebKernel.PlcKernel[ConstPlcDefine.PLC_DI_LVG_3_ON] == 0
-                     || ebKernel.PlcKernel[ConstPlcDefine.PLC_DI_HVG_L] == 0)
+            else if (   ebKernel.pPlcKernel[ConstPlcDefine.PLC_DI_LVG_2_ON] == 0
+                     || ebKernel.pPlcKernel[ConstPlcDefine.PLC_DI_LVG_3_ON] == 0
+                     || ebKernel.pPlcKernel[ConstPlcDefine.PLC_DI_HVG_L] == 0)
             {//Check LVG
                 MessageBox.Show("LVG not ready !!");
                 return false;
             }
-            else if (   ebKernel.PlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_1] == 0
-                     || ebKernel.PlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_1] == 0)
+            else if (   ebKernel.pPlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_1] == 0
+                     || ebKernel.pPlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_1] == 0)
             {//Check Water
                 MessageBox.Show("Please Check Water !!");
                 return false;
@@ -255,27 +255,27 @@ namespace HyTemplate.gui
             {
                 if (obj.GetType().Equals(typeof(PlcObject)))
                 {
-                    ((PlcObject)obj).refreshStatus();
+                    ((PlcObject)obj).RefreshStatus();
                 }
                 else if (obj.GetType().Equals(typeof(DisplayTextBox)))
                 {
-                    ((DisplayTextBox)obj).refreshData();
+                    ((DisplayTextBox)obj).RefreshData();
                 }
                 else if (obj.GetType().Equals(typeof(StatusPictureBox)))
                 {
-                    ((StatusPictureBox)obj).refreshStatus();
+                    ((StatusPictureBox)obj).RefreshStatus();
                 }
                 else if (obj.GetType().Equals(typeof(TurboPump)))
                 {
-                    ((TurboPump)obj).refreshStatus();
+                    ((TurboPump)obj).RefreshStatus();
                 }
                 else if (obj.GetType().Equals(typeof(Motor)))
                 {
-                    ((Motor)obj).refreshStatus();
+                    ((Motor)obj).RefreshStatus();
                 }
                 else if (obj.GetType().Equals(typeof(PolyCold)))
                 {
-                    ((PolyCold)obj).refreshStatus();
+                    ((PolyCold)obj).RefreshStatus();
                 }
                 else if (obj.GetType().Equals(typeof(GroupBox)))
                 {

@@ -22,7 +22,7 @@ namespace HyTemplate.components
         public double _MinLimit { get; set; }
         public EqBase _EqBase { get; set; }
         #endregion
-        private bool isSetting = false;
+        private bool bSetting = false;
 
         public InputTextBox()
         {
@@ -36,16 +36,16 @@ namespace HyTemplate.components
             _MaxLimit = 999;
             _MinLimit = 0;
 
-            this.HandleCreated += InputTextBox_HandleCreated;
-            this.Enter += InputTextBox_Enter;
-            this.Leave += InputTextBox_Leave;
-            this.KeyUp += InputTextBox_KeyUp;
+            this.HandleCreated += inputTextBox_HandleCreated;
+            this.Enter += inputTextBox_Enter;
+            this.Leave += inputTextBox_Leave;
+            this.KeyUp += inputTextBox_KeyUp;
 
             this.TextAlign = HorizontalAlignment.Center;
 
         }
 
-        private void InputTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void inputTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (Char)48 || e.KeyChar == (Char)49 ||
                e.KeyChar == (Char)50 || e.KeyChar == (Char)51 ||
@@ -72,7 +72,7 @@ namespace HyTemplate.components
             }
         }
 
-        private void InputTextBox_KeyUp(object sender, KeyEventArgs e)
+        private void inputTextBox_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -88,15 +88,16 @@ namespace HyTemplate.components
                 if (_Division <= 0) _Division = 1;
 
                 result = result * _Multiplication / _Division;
-                _EqBase.PlcKernel[_PlcDevice] = (int)result;
-                
+                _EqBase.pPlcKernel[_PlcDevice] = (int)result;
+
+                _EqBase.flOperator.WriteLog(_PlcDevice + " : InputTextBox_KeyEnter : " + result);
 
                 this.Parent.Focus();
-                InputTextBox_Leave(sender, e);
+                inputTextBox_Leave(sender, e);
             }
         }
 
-        private void InputTextBox_HandleCreated(object sender, EventArgs e)
+        private void inputTextBox_HandleCreated(object sender, EventArgs e)
         {
             if (this.ReadOnly)
                 this.BackColor = Color.CornflowerBlue;
@@ -104,30 +105,30 @@ namespace HyTemplate.components
                 this.BackColor = Color.White;
 
             if (_NumberOnly)
-                this.KeyPress += InputTextBox_KeyPress;
+                this.KeyPress += inputTextBox_KeyPress;
         }
 
-        private void InputTextBox_Leave(object sender, EventArgs e)
+        private void inputTextBox_Leave(object sender, EventArgs e)
         {
             if (this.ReadOnly) return;
 
             this.BackColor = Color.White;
-            isSetting = false;
+            bSetting = false;
         }
 
-        private void InputTextBox_Enter(object sender, EventArgs e)
+        private void inputTextBox_Enter(object sender, EventArgs e)
         {
             if (this.ReadOnly) return;
 
-            isSetting = true;
+            bSetting = true;
             this.BackColor = Color.FromArgb(255, 255, 192);
         }
 
-        public void refreshData()
+        public void RefreshData()
         {
-            if (_EqBase == null || _PlcDevice == null || _PlcDevice == "" || isSetting) return;
+            if (_EqBase == null || _PlcDevice == null || _PlcDevice == "" || bSetting) return;
 
-            float value = _EqBase.PlcKernel[_PlcDevice];
+            float value = _EqBase.pPlcKernel[_PlcDevice];
             if (value == 0 || _Multiplication == 0 || _Division == 0)
                 this.Text = "0";
             else
@@ -139,9 +140,9 @@ namespace HyTemplate.components
             }
         }
 
-        public string getSetValue()
+        public string GetSetValue()
         {
-            refreshData();
+            RefreshData();
             return this.Text;
         }
 

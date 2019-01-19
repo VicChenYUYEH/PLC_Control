@@ -19,15 +19,15 @@ namespace HyTemplate.components
             timer1.Start();
 
             //this.HandleCreated += CurrentDateTime_HandleCreated;
-            this.HandleDestroyed += CurrentDateTime_HandleDestroyed;
+            this.HandleDestroyed += currentDateTime_HandleDestroyed;
         }
 
-        private void CurrentDateTime_HandleDestroyed(object sender, EventArgs e)
+        private void currentDateTime_HandleDestroyed(object sender, EventArgs e)
         {
             timer1.Stop();
         }
 
-        private void CurrentDateTime_HandleCreated(object sender, EventArgs e)
+        private void currentDateTime_HandleCreated(object sender, EventArgs e)
         {
             timer1.Start();
         }

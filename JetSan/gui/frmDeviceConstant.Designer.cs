@@ -1,6 +1,6 @@
 ﻿namespace HyTemplate.gui
 {
-    partial class frmDeviceConstant
+    partial class FrmDeviceConstant
     {
         /// <summary>
         /// Required designer variable.

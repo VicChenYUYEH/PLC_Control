@@ -3,34 +3,32 @@ using System.Windows.Forms;
 
 namespace HyTemplate.gui
 {
-    public partial class frmSystemParameter : Form
+    public partial class FrmSystemParameter : Form
     {
-        Recipe rRecipe;
-        EventClient ecClient;
-        DBControl db;
-        string currentUser = "";
+        private RdEqKernel rdKernel;
+        private EventClient ecClient;
+        string sCurrentUser = "";
 
-        public frmSystemParameter(Recipe m_Recipe)
+        public FrmSystemParameter(RdEqKernel m_Kernel)
         {
             InitializeComponent();
             ecClient = new EventClient(this);
-            ecClient.OnEventHandler += OnReceiveMessage;
+            ecClient.OnEventHandler += onReceiveMessage;
 
-            rRecipe = m_Recipe;
-            rRecipe.loadFile();
+            rdKernel = m_Kernel;
+            rdKernel.rRecipe.LoadFile();
 
-            InitialRecipeBody("System");
-            db = new DBControl();
+            initialRecipeBody("System");
         }
         
-        private void InitialRecipeBody(string m_RcpId)
+        private void initialRecipeBody(string m_RcpId)
         {
             dataGridView1.Rows.Clear();
             DataGridViewRowCollection rows = dataGridView1.Rows;
 
-            foreach (XmlItem item in rRecipe[m_RcpId].Nodes)
+            foreach (XmlItem item in rdKernel.rRecipe[m_RcpId].Nodes)
             {
-                rows.Add(new Object[] { item.Key, item.Value, rRecipe.SystemDetail[item.Key].Unit, rRecipe.SystemDetail[item.Key].Address, rRecipe.SystemDetail[item.Key].Description });
+                rows.Add(new Object[] { item.Key, item.Value, rdKernel.rRecipe.DicSystemDetail[item.Key].Unit, rdKernel.rRecipe.DicSystemDetail[item.Key].Address, rdKernel.rRecipe.DicSystemDetail[item.Key].Description });
             }
         }
 
@@ -49,7 +47,7 @@ namespace HyTemplate.gui
             }
         }
 
-        private void OnReceiveMessage(string m_MessageName, TEvent m_Event)
+        private void onReceiveMessage(string m_MessageName, TEvent m_Event)
         {
             if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
             {
@@ -72,9 +70,9 @@ namespace HyTemplate.gui
                 btn_Control(false);
             }
         }
-        private void btn_Control(bool enable)
+        private void btn_Control(bool m_enable)
         {
-            button6.Enabled = enable;
+            button6.Enabled = m_enable;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -86,13 +84,14 @@ namespace HyTemplate.gui
             {
                 string key = row.Cells[0].Value.ToString();
                 string value = row.Cells[1].Value.ToString();
-                rRecipe["System"][key].Value = value;
+                rdKernel.rRecipe["System"][key].Value = value;
             }
-            rRecipe.saveFile();
+            rdKernel.rRecipe.SaveFile();
             TEvent data = new TEvent();
             data.MessageName = ProxyMessage.MSG_PARAMETER_SET;
             ecClient.SendMessage(data);
-            db.InsertHistoryLog(currentUser, "System Parameter Set");
+            rdKernel.InsertHistoryLog(sCurrentUser, "System Parameter Set");
+            rdKernel.WriteOperatorLog("System Parameter Set");
         }
     }
 }

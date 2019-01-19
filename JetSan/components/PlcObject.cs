@@ -49,8 +49,8 @@ namespace HyTemplate.components
         Dictionary<ImageSize, Dictionary<ObjectType, Bitmap>> OBJECT_OFF_IMAGE = new Dictionary<ImageSize, Dictionary<ObjectType, Bitmap>>();
 
         ToolTip trackTip;
-        private int lastX;
-        private int lastY;
+        private int iLastX;
+        private int iLastY;
 
         public PlcObject()
         {
@@ -61,7 +61,7 @@ namespace HyTemplate.components
             _PlcDisplayOffDevice = "";
             _Limit = "";
             _LimitSignal = 0;
-             _Reverse = false;
+            _Reverse = false;
             _CurrentStatus = false;
             _ImageSize = ImageSize.isSmall;
             _ObjectType = ObjectType.otBP;
@@ -143,59 +143,53 @@ namespace HyTemplate.components
 
             trackTip = new ToolTip();
 
-            this.HandleCreated += PlcObject_HandleCreated;
-            this.MouseDoubleClick += PlcObject_MouseDoubleClick;
-            this.MouseMove += PlcObject_MouseMove;
+            this.HandleCreated += plcObject_HandleCreated;
+            this.MouseDoubleClick += plcObject_MouseDoubleClick;
+            this.MouseMove += plcObject_MouseMove;
             //this.MouseLeave += PlcObject_MouseLeave;
         }
 
-        private void PlcObject_MouseLeave(object sender, EventArgs e)
+        private void plcObject_MouseLeave(object sender, EventArgs e)
         {
             //trackTip.Hide(this);
             //bTipDisplay = false;
         }
 
-        private void PlcObject_MouseMove(object sender, MouseEventArgs e)
+        private void plcObject_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.X != this.lastX || e.Y != this.lastY)
+            if (e.X != this.iLastX || e.Y != this.iLastY)
             {
                 //if (bTipDisplay) return;
-                trackTip.SetToolTip(this, "Device: " + _EqBase.PlcKernel.getPlcMap(_PlcDevice));
+                trackTip.SetToolTip(this, "Device: " + _EqBase.pPlcKernel.GetPlcMap(_PlcDevice));
                 //bTipDisplay = true;
-                this.lastX = e.X;
-                this.lastY = e.Y;
+                this.iLastX = e.X;
+                this.iLastY = e.Y;
             }
         }
 
-        private void PlcObject_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void plcObject_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (_PlcDevice.Trim() == "" || _EqBase == null) return;
 
             if(_Limit != "")
             {
-                if(_EqBase.PlcKernel[_Limit] != _LimitSignal)
+                if(_EqBase.pPlcKernel[_Limit] != _LimitSignal)
                 {
-                    string LimitMap =_EqBase.PlcKernel.getPlcMap(_Limit);
+                    string LimitMap =_EqBase.pPlcKernel.GetPlcMap(_Limit);
                     MessageBox.Show(LimitMap + " 狀態錯誤，無法切換 ", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
-            dlgSwitch dlg = new dlgSwitch(_CurrentStatus);
-            dlg.PlcDevice = _EqBase.PlcKernel.getPlcMap(_PlcDevice);
-            dlg.PlcDevice = (_EqBase.PlcKernel[_PlcDevice] == 1) ? dlg.PlcDevice + " Opening" : dlg.PlcDevice;
+            DlgSwitch dlg = new DlgSwitch(_CurrentStatus);
+            dlg._PlcDevice = _EqBase.pPlcKernel.GetPlcMap(_PlcDevice);
+            dlg._PlcDevice = (_EqBase.pPlcKernel[_PlcDevice] == 1) ? dlg._PlcDevice + " Opening" : dlg._PlcDevice;
             DialogResult result = dlg.ShowDialog();
-            if (result == DialogResult.Yes)
-            {
-                _EqBase.PlcKernel[_PlcDevice] = 1;
-            }
-            else if (result == DialogResult.No)
-            {
-                _EqBase.PlcKernel[_PlcDevice] = 0;
-            }
+            _EqBase.pPlcKernel[_PlcDevice] = (result == DialogResult.Yes) ? 1 : 0;
+            _EqBase.flOperator.WriteLog(_PlcDevice + " DoubleClick : " + result);
             dlg.Dispose();
         }
 
-        private void PlcObject_HandleCreated(object sender, EventArgs e)
+        private void plcObject_HandleCreated(object sender, EventArgs e)
         {
             if (_CurrentStatus)
             {
@@ -210,16 +204,16 @@ namespace HyTemplate.components
                 _PlcDisplayOnDevice = _PlcDevice;
         }
 
-        public void refreshStatus()
+        public void RefreshStatus()
         {
             if (_PlcDisplayOnDevice.Trim() == "" || /*_CurrentStatus == m_Status || */_EqBase == null) return;
             
-            bool status = _EqBase.PlcKernel[_PlcDisplayOnDevice] == 1 ? true : false;
+            bool status = _EqBase.pPlcKernel[_PlcDisplayOnDevice] == 1 ? true : false;
 
             if (_PlcDisplayOffDevice != null && _PlcDisplayOffDevice.Trim() != "")
             {
-                if ((!status && _EqBase.PlcKernel[_PlcDisplayOffDevice] == 0)
-                    || (status && _EqBase.PlcKernel[_PlcDisplayOffDevice] == 1))
+                if ((!status && _EqBase.pPlcKernel[_PlcDisplayOffDevice] == 0)
+                    || (status && _EqBase.pPlcKernel[_PlcDisplayOffDevice] == 1))
                 {
                     this.Image = this.Image == OBJECT_ON_IMAGE[_ImageSize][_ObjectType] ? this.Image = OBJECT_OFF_IMAGE[_ImageSize][_ObjectType] : OBJECT_ON_IMAGE[_ImageSize][_ObjectType];
                     
