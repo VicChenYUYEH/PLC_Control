@@ -52,7 +52,7 @@ namespace HyTemplate
 
             thExecute = new Thread(doExecute);
             thExecute.Start();
-            tmPLCRecord = new Timer(new TimerCallback(doDataRecord), null, 500, 150);
+            //tmPLCRecord = new Timer(new TimerCallback(doDataRecord), null, 500, 150);
             Thread.Sleep(100);
 
         }
@@ -323,7 +323,7 @@ namespace HyTemplate
             }
             finally
             {
-                tmPLCRecord.Change(60000, 1000);
+                tmPLCRecord.Change(60000, 1000); //參數第一個為DB寫入間隔 EX: 2000 = 2sec
             }
         }
 

@@ -32,6 +32,7 @@ namespace HyTemplate
         FrmProcess frmProcess;
         FrmDeviceConstant frmDeviceConstant;
         FrmMaintenance frmMaintenance;
+        FrmOxyPlot frmOxyPlot;
         
         RdEqKernel rdKernel;
         Form frmCurrent = null;
@@ -40,8 +41,6 @@ namespace HyTemplate
         {
             InitializeComponent();
 
-            ecClient = new EventClient(this);
-            ecClient.OnEventHandler += onReceiveMessage;
 
             rdKernel = new RdEqKernel();
 
@@ -56,6 +55,7 @@ namespace HyTemplate
             frmProcess = new FrmProcess(rdKernel);
             frmDeviceConstant = new FrmDeviceConstant(rdKernel);
             frmMaintenance = new FrmMaintenance(rdKernel);
+            frmOxyPlot = new FrmOxyPlot(rdKernel);
 
             this.loadUserRegister();
 
@@ -64,6 +64,9 @@ namespace HyTemplate
             reloadGui(frmOverview);
 
             checkInitialStatus();
+
+            ecClient = new EventClient(this);
+            ecClient.OnEventHandler += onReceiveMessage;
 
             rdKernel.WriteOperatorLog("StartMark", "Program Start ......");
             login_out(false);
@@ -102,6 +105,7 @@ namespace HyTemplate
                         string alarm_msg = alarm_level + " - " + alarm_time + " - " + alarm_text + "";
                         dt.Rows.Add(new Object[] { alarm_time, alarm_level, alarm_text, alarm_solution });
                     }
+                    System.Threading.Thread.Sleep(500);
                     dataGrdAlarm.Invoke(new Action(() =>
                     {
                         setAlarmGridFormat(dt);
@@ -109,6 +113,7 @@ namespace HyTemplate
                     break;
                 case ProxyMessage.MSG_PLC_CONNECT:
                 case ProxyMessage.MSG_PLC_DISCONNECT:
+                    System.Threading.Thread.Sleep(500);
                     statusPictureBox1.Invoke(new Action(() =>
                     {
                         statusPictureBox1.RefreshStatus(rdKernel);
@@ -342,6 +347,11 @@ namespace HyTemplate
             reloadGui(frmMaintenance);
             frmMaintenance.Show();
         }
+        private void btnOxyPlot_Click(object sender, EventArgs e)
+        {
+            reloadGui(frmOxyPlot);
+        }
         #endregion
+
     }
 }
