@@ -385,7 +385,7 @@
             this.TabControl_Main.Location = new System.Drawing.Point(33, 43);
             this.TabControl_Main.Name = "TabControl_Main";
             this.TabControl_Main.SelectedIndex = 0;
-            this.TabControl_Main.Size = new System.Drawing.Size(1287, 693);
+            this.TabControl_Main.Size = new System.Drawing.Size(1287, 687);
             this.TabControl_Main.TabIndex = 2447;
             // 
             // TabPage1
@@ -492,7 +492,7 @@
             this.TabPage1.Location = new System.Drawing.Point(4, 26);
             this.TabPage1.Name = "TabPage1";
             this.TabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage1.Size = new System.Drawing.Size(1279, 663);
+            this.TabPage1.Size = new System.Drawing.Size(1279, 657);
             this.TabPage1.TabIndex = 0;
             this.TabPage1.Text = "BP/RP維護時間";
             // 
@@ -2285,7 +2285,7 @@
             this.TabPage2.Location = new System.Drawing.Point(4, 26);
             this.TabPage2.Name = "TabPage2";
             this.TabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage2.Size = new System.Drawing.Size(1279, 663);
+            this.TabPage2.Size = new System.Drawing.Size(1252, 657);
             this.TabPage2.TabIndex = 1;
             this.TabPage2.Text = "TP維護時間";
             // 
@@ -4143,7 +4143,7 @@
             this.tabPage4.Controls.Add(this.controlBtn55);
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1279, 663);
+            this.tabPage4.Size = new System.Drawing.Size(1279, 657);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "其他";
             // 
@@ -4942,7 +4942,7 @@
             this.tabPage5.Controls.Add(this.displayTextBox1);
             this.tabPage5.Location = new System.Drawing.Point(4, 26);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1279, 663);
+            this.tabPage5.Size = new System.Drawing.Size(1279, 657);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "狀態/溫度";
             // 
@@ -4951,9 +4951,9 @@
             this.label74.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label74.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label74.ForeColor = System.Drawing.Color.Black;
-            this.label74.Location = new System.Drawing.Point(83, 429);
+            this.label74.Location = new System.Drawing.Point(96, 429);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(207, 28);
+            this.label74.Size = new System.Drawing.Size(207, 60);
             this.label74.TabIndex = 2065;
             this.label74.Text = "M4_TP_Water_Sensor";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4974,9 +4974,9 @@
             this.label70.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label70.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label70.ForeColor = System.Drawing.Color.Black;
-            this.label70.Location = new System.Drawing.Point(83, 382);
+            this.label70.Location = new System.Drawing.Point(96, 382);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(207, 28);
+            this.label70.Size = new System.Drawing.Size(207, 60);
             this.label70.TabIndex = 2064;
             this.label70.Text = "M3_2_TP_Water_Sensor";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4997,9 +4997,9 @@
             this.label71.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label71.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label71.ForeColor = System.Drawing.Color.Black;
-            this.label71.Location = new System.Drawing.Point(83, 337);
+            this.label71.Location = new System.Drawing.Point(96, 337);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(207, 28);
+            this.label71.Size = new System.Drawing.Size(207, 60);
             this.label71.TabIndex = 2063;
             this.label71.Text = "M3_1_TP_Water_Sensor";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5028,9 +5028,9 @@
             this.label72.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label72.ForeColor = System.Drawing.Color.Black;
             this.label72.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label72.Location = new System.Drawing.Point(83, 291);
+            this.label72.Location = new System.Drawing.Point(96, 291);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(207, 28);
+            this.label72.Size = new System.Drawing.Size(207, 60);
             this.label72.TabIndex = 2062;
             this.label72.Text = "M2_TP_Water_Sensor";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5056,9 +5056,9 @@
             this.label73.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label73.ForeColor = System.Drawing.Color.Black;
             this.label73.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label73.Location = new System.Drawing.Point(89, 244);
+            this.label73.Location = new System.Drawing.Point(102, 244);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(207, 28);
+            this.label73.Size = new System.Drawing.Size(207, 60);
             this.label73.TabIndex = 2061;
             this.label73.Text = "M1_TP_Water_Sensor";
             this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5068,9 +5068,9 @@
             this.label69.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label69.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label69.ForeColor = System.Drawing.Color.Black;
-            this.label69.Location = new System.Drawing.Point(89, 198);
+            this.label69.Location = new System.Drawing.Point(102, 198);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(207, 28);
+            this.label69.Size = new System.Drawing.Size(207, 60);
             this.label69.TabIndex = 2060;
             this.label69.Text = "M4_Pump_Water_Sensor";
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5095,9 +5095,9 @@
             this.label68.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label68.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label68.ForeColor = System.Drawing.Color.Black;
-            this.label68.Location = new System.Drawing.Point(89, 153);
+            this.label68.Location = new System.Drawing.Point(102, 153);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(207, 28);
+            this.label68.Size = new System.Drawing.Size(207, 60);
             this.label68.TabIndex = 2059;
             this.label68.Text = "M3_Pump_Water_Sensor";
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5107,9 +5107,9 @@
             this.label67.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label67.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label67.ForeColor = System.Drawing.Color.Black;
-            this.label67.Location = new System.Drawing.Point(89, 107);
+            this.label67.Location = new System.Drawing.Point(102, 107);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(207, 28);
+            this.label67.Size = new System.Drawing.Size(207, 60);
             this.label67.TabIndex = 2058;
             this.label67.Text = "M2_Pump_Water_Sensor";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5137,9 +5137,9 @@
             this.label66.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label66.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label66.ForeColor = System.Drawing.Color.Black;
-            this.label66.Location = new System.Drawing.Point(89, 61);
+            this.label66.Location = new System.Drawing.Point(102, 61);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(207, 28);
+            this.label66.Size = new System.Drawing.Size(207, 60);
             this.label66.TabIndex = 2057;
             this.label66.Text = "M1_Pump_Water_Sensor";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5204,9 +5204,9 @@
             this.label83.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label83.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label83.ForeColor = System.Drawing.Color.Black;
-            this.label83.Location = new System.Drawing.Point(450, 436);
+            this.label83.Location = new System.Drawing.Point(463, 436);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(262, 33);
+            this.label83.Size = new System.Drawing.Size(262, 65);
             this.label83.TabIndex = 2095;
             this.label83.Text = "MF1_Water_Sensor_1";
             this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5261,9 +5261,9 @@
             this.label84.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label84.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label84.ForeColor = System.Drawing.Color.Black;
-            this.label84.Location = new System.Drawing.Point(450, 484);
+            this.label84.Location = new System.Drawing.Point(463, 484);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(262, 33);
+            this.label84.Size = new System.Drawing.Size(262, 65);
             this.label84.TabIndex = 2096;
             this.label84.Text = "MF1_Water_Sensor_2";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5351,9 +5351,9 @@
             this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label75.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label75.ForeColor = System.Drawing.Color.Black;
-            this.label75.Location = new System.Drawing.Point(450, 61);
+            this.label75.Location = new System.Drawing.Point(463, 61);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(222, 33);
+            this.label75.Size = new System.Drawing.Size(222, 65);
             this.label75.TabIndex = 2087;
             this.label75.Text = "MF1_Cath_Water_Sensor_1";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5418,9 +5418,9 @@
             this.label82.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label82.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label82.ForeColor = System.Drawing.Color.Black;
-            this.label82.Location = new System.Drawing.Point(450, 390);
+            this.label82.Location = new System.Drawing.Point(463, 390);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(262, 33);
+            this.label82.Size = new System.Drawing.Size(262, 65);
             this.label82.TabIndex = 2094;
             this.label82.Text = "DC3_DC4_Cath_Water_Sensor_1";
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5448,9 +5448,9 @@
             this.label85.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label85.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label85.ForeColor = System.Drawing.Color.Black;
-            this.label85.Location = new System.Drawing.Point(450, 530);
+            this.label85.Location = new System.Drawing.Point(463, 530);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(262, 33);
+            this.label85.Size = new System.Drawing.Size(262, 65);
             this.label85.TabIndex = 2097;
             this.label85.Text = "MF2_Water_Sensor_1";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5460,9 +5460,9 @@
             this.label76.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label76.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label76.ForeColor = System.Drawing.Color.Black;
-            this.label76.Location = new System.Drawing.Point(450, 110);
+            this.label76.Location = new System.Drawing.Point(463, 110);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(222, 33);
+            this.label76.Size = new System.Drawing.Size(222, 65);
             this.label76.TabIndex = 2088;
             this.label76.Text = "MF1_Cath_Water_Sensor_2";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5522,9 +5522,9 @@
             this.label81.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label81.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label81.ForeColor = System.Drawing.Color.Black;
-            this.label81.Location = new System.Drawing.Point(450, 343);
+            this.label81.Location = new System.Drawing.Point(463, 343);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(262, 33);
+            this.label81.Size = new System.Drawing.Size(262, 65);
             this.label81.TabIndex = 2093;
             this.label81.Text = "DC3_DC4_Cath_Water_Sensor_1";
             this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5552,9 +5552,9 @@
             this.label86.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label86.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label86.ForeColor = System.Drawing.Color.Black;
-            this.label86.Location = new System.Drawing.Point(450, 577);
+            this.label86.Location = new System.Drawing.Point(463, 577);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(262, 33);
+            this.label86.Size = new System.Drawing.Size(262, 65);
             this.label86.TabIndex = 2098;
             this.label86.Text = "MF2_Water_Sensor_2";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5564,9 +5564,9 @@
             this.label77.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label77.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label77.ForeColor = System.Drawing.Color.Black;
-            this.label77.Location = new System.Drawing.Point(450, 155);
+            this.label77.Location = new System.Drawing.Point(463, 155);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(222, 33);
+            this.label77.Size = new System.Drawing.Size(222, 65);
             this.label77.TabIndex = 2089;
             this.label77.Text = "MF2_Cath_Water_Sensor_1";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5626,9 +5626,9 @@
             this.label80.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label80.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label80.ForeColor = System.Drawing.Color.Black;
-            this.label80.Location = new System.Drawing.Point(450, 296);
+            this.label80.Location = new System.Drawing.Point(463, 296);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(262, 33);
+            this.label80.Size = new System.Drawing.Size(262, 65);
             this.label80.TabIndex = 2092;
             this.label80.Text = "DC1_DC2_Cath_Water_Sensor_2";
             this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5674,9 +5674,9 @@
             this.label78.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label78.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label78.ForeColor = System.Drawing.Color.Black;
-            this.label78.Location = new System.Drawing.Point(450, 200);
+            this.label78.Location = new System.Drawing.Point(463, 200);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(222, 33);
+            this.label78.Size = new System.Drawing.Size(222, 65);
             this.label78.TabIndex = 2090;
             this.label78.Text = "MF2_Cath_Water_Sensor_2";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5736,9 +5736,9 @@
             this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label79.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label79.ForeColor = System.Drawing.Color.Black;
-            this.label79.Location = new System.Drawing.Point(450, 248);
+            this.label79.Location = new System.Drawing.Point(463, 248);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(262, 33);
+            this.label79.Size = new System.Drawing.Size(262, 65);
             this.label79.TabIndex = 2091;
             this.label79.Text = "DC1_DC2_Cath_Water_Sensor_1";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -5761,7 +5761,7 @@
             this.displayTextBox1.TabIndex = 2165;
             this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // frmMaintenance
+            // FrmMaintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -5769,7 +5769,7 @@
             this.Controls.Add(this.TabControl_Main);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmMaintenance";
+            this.Name = "FrmMaintenance";
             this.Text = "維護參數";
             this.Shown += new System.EventHandler(this.frmMaintenance_Shown);
             this.TabControl_Main.ResumeLayout(false);

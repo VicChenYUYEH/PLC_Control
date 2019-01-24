@@ -140,7 +140,7 @@ namespace HyTemplate
                 bChange = false;
                 TEvent data = new TEvent();
                 data.MessageName = (bConnect)? ProxyMessage.MSG_PLC_CONNECT : ProxyMessage.MSG_PLC_DISCONNECT;
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 ecClient.SendMessage(data);
             }
             if (!bConnect && bNeedRetry)

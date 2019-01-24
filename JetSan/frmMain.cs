@@ -113,7 +113,7 @@ namespace HyTemplate
                     break;
                 case ProxyMessage.MSG_PLC_CONNECT:
                 case ProxyMessage.MSG_PLC_DISCONNECT:
-                    System.Threading.Thread.Sleep(500);
+                    System.Threading.Thread.Sleep(1000);
                     statusPictureBox1.Invoke(new Action(() =>
                     {
                         statusPictureBox1.RefreshStatus(rdKernel);

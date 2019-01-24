@@ -24,7 +24,7 @@ namespace HyTemplate
 
         public string InsertHistoryLog(string m_User, string m_Description, string m_Address = "N/A", string m_Recipe = "N/A")
         {
-            string strSQL = "INSERT INTO HistoryLog(Occur_Time, PLC_Adress, Description, Recipe, [User])VALUES(" + "'" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff") + "', '" + m_Address
+            string strSQL = "INSERT INTO HistoryLog(Occur_Time, PLC_Adress, Description, Recipe, [User])VALUES(" + "'" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + "', '" + m_Address
                                       + "', '" + m_Description + "', '" + m_Recipe + "', '" + m_User + "')";
             string err = dDb.funSQL(strSQL);
             return err;

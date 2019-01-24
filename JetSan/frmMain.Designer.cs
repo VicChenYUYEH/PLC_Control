@@ -152,9 +152,9 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button8.Location = new System.Drawing.Point(1256, 967);
+            this.button8.Location = new System.Drawing.Point(1338, 920);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(115, 40);
+            this.button8.Size = new System.Drawing.Size(68, 87);
             this.button8.TabIndex = 12;
             this.button8.Text = "Alarm Reset";
             this.button8.UseVisualStyleBackColor = true;
@@ -295,7 +295,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(1520, 967);
+            this.label1.Location = new System.Drawing.Point(1535, 967);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 29);
             this.label1.TabIndex = 2708;
@@ -305,7 +305,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(1520, 893);
+            this.label2.Location = new System.Drawing.Point(1530, 893);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 45);
             this.label2.TabIndex = 2709;
@@ -315,7 +315,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(1516, 825);
+            this.label3.Location = new System.Drawing.Point(1520, 825);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 48);
             this.label3.TabIndex = 2710;
@@ -407,7 +407,7 @@
             this.label90.AutoSize = true;
             this.label90.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label90.ForeColor = System.Drawing.Color.Maroon;
-            this.label90.Location = new System.Drawing.Point(1389, 934);
+            this.label90.Location = new System.Drawing.Point(1412, 925);
             this.label90.Name = "label90";
             this.label90.Size = new System.Drawing.Size(114, 21);
             this.label90.TabIndex = 2725;
@@ -420,10 +420,10 @@
             this.TxtRecipeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtRecipeName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.TxtRecipeName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.TxtRecipeName.Location = new System.Drawing.Point(1377, 967);
+            this.TxtRecipeName.Location = new System.Drawing.Point(1412, 967);
             this.TxtRecipeName.Name = "TxtRecipeName";
             this.TxtRecipeName.ReadOnly = true;
-            this.TxtRecipeName.Size = new System.Drawing.Size(137, 29);
+            this.TxtRecipeName.Size = new System.Drawing.Size(117, 29);
             this.TxtRecipeName.TabIndex = 2720;
             this.TxtRecipeName.Text = "N/A";
             this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -484,12 +484,13 @@
             // 
             // btnOxyPlot
             // 
+            this.btnOxyPlot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOxyPlot.BackgroundImage")));
+            this.btnOxyPlot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnOxyPlot.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnOxyPlot.Location = new System.Drawing.Point(1256, 920);
             this.btnOxyPlot.Name = "btnOxyPlot";
-            this.btnOxyPlot.Size = new System.Drawing.Size(115, 40);
+            this.btnOxyPlot.Size = new System.Drawing.Size(76, 87);
             this.btnOxyPlot.TabIndex = 2727;
-            this.btnOxyPlot.Text = "Value Trend";
             this.btnOxyPlot.UseVisualStyleBackColor = true;
             this.btnOxyPlot.Click += new System.EventHandler(this.btnOxyPlot_Click);
             // 

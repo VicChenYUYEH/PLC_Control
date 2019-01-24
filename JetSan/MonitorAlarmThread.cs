@@ -130,7 +130,7 @@ namespace HyTemplate
                             err = dDb.funSQL(strSQL, out dt);
                             if(dt.Rows.Count == 0)// 找尋DB是否有當下正發生的Alarm，若有則不新增
                             {
-                                strSQL = "INSERT INTO HistoryAlarm (Start_Time, PLC_Adress, [Level], Description, Solution)VALUES(" + "'" + currentAlarm[alarm.Value].ToString("yyyy/MM/dd HH:mm:ss.fff") + "', '" + alarm.Value.Address
+                                strSQL = "INSERT INTO HistoryAlarm (Start_Time, PLC_Adress, [Level], Description, Solution)VALUES(" + "'" + currentAlarm[alarm.Value].ToString("yyyy/MM/dd HH:mm:ss") + "', '" + alarm.Value.Address
                                        + "', '" + alarm.Value.Level + "', '" + alarm.Value.Description + "', '" + alarm.Value.Solution + "')";
                                 err = dDb.funSQL(strSQL);
                             }
@@ -147,7 +147,7 @@ namespace HyTemplate
                             currentAlarm.Remove(alarm.Value);
                             err_clear = true;
                             //Alarm清除時，更新DB內資料(End_Time為NULL即當前異常)
-                            strSQL = "UPDATE HistoryAlarm SET End_Time = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") + "'" + "WHERE PLC_Adress =" + "'" + alarm.Value.Address +"' AND End_Time is NULL";
+                            strSQL = "UPDATE HistoryAlarm SET End_Time = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'" + "WHERE PLC_Adress =" + "'" + alarm.Value.Address +"' AND End_Time is NULL";
 
                             err = dDb.funSQL(strSQL);
                             flLog.WriteLog(alarm.Value.Address, "Alarm Clear");

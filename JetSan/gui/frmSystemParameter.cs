@@ -7,7 +7,7 @@ namespace HyTemplate.gui
     {
         private RdEqKernel rdKernel;
         private EventClient ecClient;
-        string sCurrentUser = "";
+        string sCurrentUser = "N/A";
 
         public FrmSystemParameter(RdEqKernel m_Kernel)
         {
@@ -52,7 +52,7 @@ namespace HyTemplate.gui
             if (m_MessageName == ProxyMessage.MSG_USER_LOGIN)
             {
                 int authority = int.Parse(m_Event.EventData["Authority"]);
-                string currentUser = m_Event.EventData["UserName"];
+                sCurrentUser = m_Event.EventData["UserName"];
                 switch (authority)
                 {
                     case 1: //OP

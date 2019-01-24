@@ -45,7 +45,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(381, 28);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(121, 33);
+            this.dateTimePicker1.Size = new System.Drawing.Size(121, 25);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // dateTimePicker2
@@ -54,7 +54,7 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(754, 28);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(121, 33);
+            this.dateTimePicker2.Size = new System.Drawing.Size(121, 25);
             this.dateTimePicker2.TabIndex = 1;
             // 
             // dateTimePicker3
@@ -65,7 +65,7 @@
             this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.ShowUpDown = true;
-            this.dateTimePicker3.Size = new System.Drawing.Size(94, 33);
+            this.dateTimePicker3.Size = new System.Drawing.Size(94, 25);
             this.dateTimePicker3.TabIndex = 2;
             // 
             // dateTimePicker4
@@ -76,7 +76,7 @@
             this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.ShowUpDown = true;
-            this.dateTimePicker4.Size = new System.Drawing.Size(94, 33);
+            this.dateTimePicker4.Size = new System.Drawing.Size(94, 25);
             this.dateTimePicker4.TabIndex = 3;
             // 
             // dataGridView1
@@ -89,6 +89,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(258, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(845, 773);
             this.dataGridView1.TabIndex = 4;
@@ -108,7 +109,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(255, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.Size = new System.Drawing.Size(107, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "Start Date Time :";
             // 
@@ -117,13 +118,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(634, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 25);
+            this.label2.Size = new System.Drawing.Size(101, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "End Date Time :";
             // 
-            // frmHistoryLog
+            // FrmHistoryLog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1128, 869);
             this.Controls.Add(this.label2);
@@ -138,7 +139,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmHistoryLog";
+            this.Name = "FrmHistoryLog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHistoryLog";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

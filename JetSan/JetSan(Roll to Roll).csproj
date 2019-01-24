@@ -51,10 +51,6 @@
     <ApplicationIcon>506700-factory.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>dll\DB.dll</HintPath>
-    </Reference>
     <Reference Include="Interop.ActProgTypeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -86,6 +82,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="class\db.cs" />
     <Compile Include="ConstDefine.cs" />
     <Compile Include="ConstPlcDefine.cs" />
     <Compile Include="class\EqBase.cs" />

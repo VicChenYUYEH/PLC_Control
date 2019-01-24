@@ -7,7 +7,7 @@ namespace HyTemplate.gui
     {
         private RdEqKernel rdKernel;
         private EventClient ecClient;
-        string sCurrentUser ="";
+        string sCurrentUser ="N/A";
         int iAuthority = 1;
         public FrmRecipe(RdEqKernel m_Kernel)
         {

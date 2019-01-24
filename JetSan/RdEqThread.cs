@@ -52,7 +52,7 @@ namespace HyTemplate
 
             thExecute = new Thread(doExecute);
             thExecute.Start();
-            //tmPLCRecord = new Timer(new TimerCallback(doDataRecord), null, 500, 150);
+            tmPLCRecord = new Timer(new TimerCallback(doDataRecord), null, 500, 150);
             Thread.Sleep(100);
 
         }
