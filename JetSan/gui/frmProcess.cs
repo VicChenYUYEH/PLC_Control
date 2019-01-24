@@ -21,7 +21,7 @@ namespace HyTemplate.gui
                 #endregion
             }
 
-            System.Threading.Thread.Sleep(1000);
+            //System.Threading.Thread.Sleep(1000);
         }
 
         private void timerStatus_Tick(object sender, EventArgs e)

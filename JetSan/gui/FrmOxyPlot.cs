@@ -141,7 +141,7 @@ namespace HyTemplate.gui
             string start ="'" + m_Start.ToString("yyyy/MM/dd HH:mm:ss.fff") + "'";
             string end = "'" + m_End.ToString("yyyy/MM/dd HH:mm:ss.fff") + "'";
             string strSQL = "SELECT * FROM " + m_TableName + " WHERE Insert_Time BETWEEN " + start + " AND " + end;
-            string err = rdKernel.dDb.funSQL(strSQL, out m_DT);
+            string err = rdKernel.dDb.FunSQL(strSQL, out m_DT);
             if (err != "")
             {
                 rdKernel.flDebug.WriteLog("DBfail", err);

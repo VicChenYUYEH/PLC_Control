@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using HyTemplate.gui;
+using HongYuDLL;
 using System.IO;
 using System.Xml;
 
@@ -59,7 +60,7 @@ namespace HyTemplate
 
             this.loadUserRegister();
 
-            System.Threading.Thread.Sleep(1000);
+            //System.Threading.Thread.Sleep(1000);
 
             reloadGui(frmOverview);
 
@@ -199,7 +200,7 @@ namespace HyTemplate
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            rdKernel.WriteOperatorLog("StartMark", "Program Close ......");
+            rdKernel.WriteOperatorLog("CloseMark", "Program Close ......");
             rdKernel.pPlcKernel.Dispose();
             rdKernel.Dispose();
             System.Threading.Thread.Sleep(500);

@@ -7,9 +7,7 @@ using System.Linq;
 using System.Threading;
 using System.Xml;
 using HyTemplate.gui;
-using System.Collections;
-using System.Threading.Tasks;
-
+using HongYuDLL;
 namespace HyTemplate
 {
     enum PlcDeviceType

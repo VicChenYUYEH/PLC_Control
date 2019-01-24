@@ -9,8 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-
-using HyTemplate.gui;
+using HongYuDLL;
 
 namespace HyTemplate.gui
 {

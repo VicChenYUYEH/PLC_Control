@@ -82,13 +82,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="class\db.cs" />
     <Compile Include="ConstDefine.cs" />
     <Compile Include="ConstPlcDefine.cs" />
     <Compile Include="class\EqBase.cs" />
-    <Compile Include="class\FileLog.cs" />
-    <Compile Include="class\IniFile.cs" />
-    <Compile Include="class\MelsecAccessor.cs" />
     <Compile Include="gui\FrmOxyPlot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,9 +93,7 @@
     </Compile>
     <Compile Include="MonitorAlarmThread.cs" />
     <Compile Include="class\PlcHandler.cs" />
-    <Compile Include="class\EventClient.cs" />
     <Compile Include="class\Recipe.cs" />
-    <Compile Include="class\XmlItem.cs" />
     <Compile Include="components\CurrentDateTime.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -450,6 +444,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HongYu\HongYuDLL.csproj">
+      <Project>{2d775ba9-acd8-4428-baea-17f9913c8d9f}</Project>
+      <Name>HongYuDLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

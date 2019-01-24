@@ -1,0 +1,5 @@
+D:\傑聖\傑聖(Roll to Roll)\HongYu\obj\Debug\HongYuDLL.csproj.CoreCompileInputs.cache
+D:\傑聖\傑聖(Roll to Roll)\HongYu\bin\Debug\HongYu.dll
+D:\傑聖\傑聖(Roll to Roll)\HongYu\bin\Debug\HongYu.pdb
+D:\傑聖\傑聖(Roll to Roll)\HongYu\obj\Debug\HongYu.dll
+D:\傑聖\傑聖(Roll to Roll)\HongYu\obj\Debug\HongYu.pdb

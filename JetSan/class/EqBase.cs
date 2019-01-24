@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DB;
+using HongYuDLL;
 
 namespace HyTemplate
 {
@@ -25,7 +25,7 @@ namespace HyTemplate
         {
             flDebug = new FileLog("DebugLog");
             flOperator = new FileLog("OperatorLog");
-            dDb = new Db("JetSan");
+            dDb = new Db();
             
             pPlcKernel = new PlcHandler(flDebug);
             matAlarm = new MonitorAlarmThread(pPlcKernel,flDebug);

@@ -39,3 +39,5 @@ D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.exe
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.pdb
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.pdb
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojAssemblyReference.cache
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HongYu.dll
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HongYu.pdb

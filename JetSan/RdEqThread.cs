@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using HongYuDLL;
 
 namespace HyTemplate
 {
@@ -362,7 +363,7 @@ namespace HyTemplate
             }
             values = values +"', '" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff") + "')";
             string strSQL = "INSERT INTO " + m_TableName + rowsName + "VALUES" + values;
-            string err = eqKernel.dDb.funSQL(strSQL);
+            string err = eqKernel.dDb.FunSQL(strSQL);
             if(err !="")
             {
                 eqKernel.flDebug.WriteLog("DBfail", err);
