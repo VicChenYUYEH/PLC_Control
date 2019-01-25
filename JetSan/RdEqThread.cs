@@ -408,7 +408,7 @@ namespace HyTemplate
             string err = eqKernel.dDb.FunSQL(strSQL);
             if(err !="")
             {
-                eqKernel.flDebug.WriteLog("DBfail", err);
+                eqKernel.flDebug.WriteLog("DB_fail", err);
             }
         }
 

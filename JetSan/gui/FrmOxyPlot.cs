@@ -145,7 +145,7 @@ namespace HyTemplate.gui
             string err = rdKernel.dDb.FunSQL(strSQL, out m_DT);
             if (err != "")
             {
-                rdKernel.flDebug.WriteLog("DBfail", err);
+                rdKernel.flDebug.WriteLog("DB_fail", err);
             }
         }
         
