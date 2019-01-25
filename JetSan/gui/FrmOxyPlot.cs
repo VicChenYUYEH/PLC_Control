@@ -95,7 +95,7 @@ namespace HyTemplate.gui
 
             DataTable dt;
             getPLCDataFromDB(comBoxVauleType.Text, dtStart, dtEnd, out dt);
-            if (dt.Rows.Count != 0)
+            if (dt.Rows.Count > 0)
             {
                 chkList.Visible = true;
                 dateAxis.Minimum = DateTimeAxis.ToDouble(dt.Rows[0]["Insert_Time"]);
@@ -129,6 +129,7 @@ namespace HyTemplate.gui
                 plotViewPLCRaw.Model = plotModel;
                 plotViewPLCRaw.Refresh();
             }
+            else { MessageBox.Show("No Data Record!", "Warning", MessageBoxButtons.OK); }
         }
         
         private void btnSearch_Click(object sender, EventArgs e)
@@ -140,7 +141,7 @@ namespace HyTemplate.gui
         {
             string start ="'" + m_Start.ToString("yyyy/MM/dd HH:mm:ss.fff") + "'";
             string end = "'" + m_End.ToString("yyyy/MM/dd HH:mm:ss.fff") + "'";
-            string strSQL = "SELECT * FROM " + m_TableName + " WHERE Insert_Time BETWEEN " + start + " AND " + end;
+            string strSQL = "SELECT * FROM " + m_TableName + " WHERE Insert_Time BETWEEN " + start + " AND " + end + " ORDER BY Insert_Time ASC";
             string err = rdKernel.dDb.FunSQL(strSQL, out m_DT);
             if (err != "")
             {

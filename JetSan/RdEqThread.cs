@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -36,6 +37,8 @@ namespace HyTemplate
         private Thread thExecute;
         private EventClient ecClient;
         private DateTime dtStart;
+        int iInterval;
+        int iDeleteDay;
 
         ProcessVacuumSequence pvsVacuumSequence;
         ProcessVentSequence pvsVentSequence;
@@ -53,7 +56,32 @@ namespace HyTemplate
 
             thExecute = new Thread(doExecute);
             thExecute.Start();
-            tmPLCRecord = new Timer(new TimerCallback(doDataRecord), null, 500, 150);
+
+            string path = Directory.GetCurrentDirectory();
+            string file = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
+
+            while (file != Path.GetFileNameWithoutExtension(file))
+            {
+                file = Path.GetFileNameWithoutExtension(file);
+            }
+
+            IniFile ini = new IniFile(path + "\\Config\\" + file + ".ini");
+            bool record = Convert.ToBoolean(ini.GetValue("PLCRawData", "Record"));
+            iInterval = Convert.ToInt32(ini.GetValue("PLCRawData", "Interval"));
+            iDeleteDay = Convert.ToInt32(ini.GetValue("PLCRawData", "DB_Delete_Interval"));
+
+            if(record)
+            {
+                tmPLCRecord = new Timer(new TimerCallback(doDataRecord), null, 500, 150);
+            }
+            if(iDeleteDay > 0)
+            {
+                System.Timers.Timer tmDelete = new System.Timers.Timer();
+                tmDelete.Enabled = true;
+                tmDelete.Interval = 60000;
+                tmDelete.Start();
+                tmDelete.Elapsed += new System.Timers.ElapsedEventHandler(tmDelete_Elapsed);
+            }
             Thread.Sleep(100);
 
         }
@@ -307,16 +335,17 @@ namespace HyTemplate
             {
                 tmPLCRecord.Change(-1, -1);
                 string[] listheater = { "Heater1_PV", "Heater2_PV", "Heater3_PV", "Heater4_PV" };
-                insertPLCDataToDB("HeaterData", listheater);
+                insertPLCDataDB("HeaterData", listheater);
 
                 string[] listpressure = { "HVG1_M1", "HVG2_M2", "HVG3_M3_1", "HVG4_M4", "LVG1_M1", "LVG2_M2", "LVG3_M3", "LVG4_M4"};
-                insertPLCDataToDB("PressureData", listpressure);
+                insertPLCDataDB("PressureData", listpressure);
 
                 string[] listMfc = { "MFC_0303_Ar" ,"MFC_0304_O2", "MFC_0305_Ar", "MFC_0306_O2", "MFC_0307_Ar", "MFC_0308_O2","MFC_0309_Ar", "MFC_0310_O2"};
-                insertPLCDataToDB("MfcFlowData", listMfc);
+                insertPLCDataDB("MfcFlowData", listMfc);
 
                 string[] listpower = { "MF1_Power", "MF2_Power", "DC1_Power", "DC2_Power", "DC3_Power" , "DC4_Power" };
-                insertPLCDataToDB("PowerData", listpower);
+                insertPLCDataDB("PowerData", listpower);
+
             }
             catch (Exception ex)
             {
@@ -324,7 +353,20 @@ namespace HyTemplate
             }
             finally
             {
-                tmPLCRecord.Change(60000, 1000); //參數第一個為DB寫入間隔 EX: 2000 = 2sec
+                tmPLCRecord.Change(iInterval, 1000); //參數第一個為DB寫入間隔 EX: 2000 = 2sec
+            }
+        }
+
+ 
+        private void tmDelete_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            //取得hh:mm
+            int hour = e.SignalTime.Hour;
+            int minute = e.SignalTime.Minute;
+            
+            if (hour == 0 && minute == 0)
+            {
+                deletePLCDataDB(iDeleteDay);
             }
         }
 
@@ -333,7 +375,7 @@ namespace HyTemplate
         /// </summary>
         /// <param name="m_TableName">DB 目標Table</param>
         /// <param name="m_Value">DB 欄位名稱(同PLC Device)</param>
-        private void insertPLCDataToDB(string m_TableName, string[] m_Value)
+        private void insertPLCDataDB(string m_TableName, string[] m_Value)
         {
             string rowsName = "(";
             for(int i = 0; i< m_Value.Length; i++)
@@ -368,6 +410,19 @@ namespace HyTemplate
             {
                 eqKernel.flDebug.WriteLog("DBfail", err);
             }
+        }
+
+        private void deletePLCDataDB(int m_DB_Delete)
+        {
+            DateTime datetime = DateTime.Now.AddDays(-m_DB_Delete);
+            string strSQL = "DELETE FROM HeaterData WHERE Insert_Time < '" + datetime.ToString("yyyy/MM/dd HH:mm:ss.fff") +" '";
+            string err = eqKernel.dDb.FunSQL(strSQL);
+            strSQL = "DELETE FROM PressureData WHERE Insert_Time < '" + datetime.ToString("yyyy/MM/dd HH:mm:ss.fff") + " '";
+            err = eqKernel.dDb.FunSQL(strSQL);
+            strSQL = "DELETE FROM MfcFlowData WHERE Insert_Time < '" + datetime.ToString("yyyy/MM/dd HH:mm:ss.fff") + " '";
+            err = eqKernel.dDb.FunSQL(strSQL);
+            strSQL = "DELETE FROM PowerData WHERE Insert_Time < '" + datetime.ToString("yyyy/MM/dd HH:mm:ss.fff") + " '";
+            err = eqKernel.dDb.FunSQL(strSQL);
         }
 
         #region IDisposable Support

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HongYuDLL
 {
-    class IniFile
+    public class IniFile
     {
         private string sIniFile = "";
         [DllImport("kernel32", CharSet = CharSet.Unicode)]

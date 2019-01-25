@@ -37,7 +37,7 @@ namespace HyTemplate.gui
             DateTime dtStart = DateTime.Parse(s_datetime);
             DateTime dtEnd = DateTime.Parse(e_datetime);
             DataTable dt;
-            string strSQL = "SELECT * FROM HistoryAlarm WHERE Start_Time BETWEEN '" + dtStart.ToString("yyyy-MM-dd HH:mm:ss") + "'" + "AND '" + dtEnd.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+            string strSQL = "SELECT * FROM HistoryAlarm WHERE Start_Time BETWEEN '" + dtStart.ToString("yyyy-MM-dd HH:mm:ss") + "'" + "AND '" + dtEnd.ToString("yyyy-MM-dd HH:mm:ss") + "'" + " ORDER BY Start_Time ASC";
             string err = rdKernel.dDb.FunSQL(strSQL, out dt); //從DB 取得該區段時間的 Data Table
             dataGridView1.DataSource = dt;
             dataGridView1.Columns[0].DefaultCellStyle.Format = "yyyy-MM-dd HH:mm:ss";
