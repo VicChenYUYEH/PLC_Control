@@ -69,7 +69,7 @@ namespace HyTemplate.gui
             plotModel.Series.Clear();
             var dateAxis = new DateTimeAxis()
             {
-                StringFormat = "hh:mm:ss",
+                StringFormat = "M-d hh:mm",
                 IntervalType = DateTimeIntervalType.Seconds,
                 MajorGridlineStyle = LineStyle.DashDotDot,
                 MinorGridlineStyle = LineStyle.Dot

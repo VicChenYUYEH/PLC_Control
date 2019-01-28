@@ -334,18 +334,20 @@ namespace HyTemplate
             try
             {
                 tmPLCRecord.Change(-1, -1);
-                string[] listheater = { "Heater1_PV", "Heater2_PV", "Heater3_PV", "Heater4_PV" };
-                insertPLCDataDB("HeaterData", listheater);
+                if(eqKernel.pPlcKernel.bConnect)
+                { 
+                    string[] listheater = { "Heater1_PV", "Heater2_PV", "Heater3_PV", "Heater4_PV" };
+                    insertPLCDataDB("HeaterData", listheater);
 
-                string[] listpressure = { "HVG1_M1", "HVG2_M2", "HVG3_M3_1", "HVG4_M4", "LVG1_M1", "LVG2_M2", "LVG3_M3", "LVG4_M4"};
-                insertPLCDataDB("PressureData", listpressure);
+                    string[] listpressure = { "HVG1_M1", "HVG2_M2", "HVG3_M3_1", "HVG4_M4", "LVG1_M1", "LVG2_M2", "LVG3_M3", "LVG4_M4"};
+                    insertPLCDataDB("PressureData", listpressure);
 
-                string[] listMfc = { "MFC_0303_Ar" ,"MFC_0304_O2", "MFC_0305_Ar", "MFC_0306_O2", "MFC_0307_Ar", "MFC_0308_O2","MFC_0309_Ar", "MFC_0310_O2"};
-                insertPLCDataDB("MfcFlowData", listMfc);
+                    string[] listMfc = { "MFC_0303_Ar" ,"MFC_0304_O2", "MFC_0305_Ar", "MFC_0306_O2", "MFC_0307_Ar", "MFC_0308_O2","MFC_0309_Ar", "MFC_0310_O2"};
+                    insertPLCDataDB("MfcFlowData", listMfc);
 
-                string[] listpower = { "MF1_Power", "MF2_Power", "DC1_Power", "DC2_Power", "DC3_Power" , "DC4_Power" };
-                insertPLCDataDB("PowerData", listpower);
-
+                    string[] listpower = { "MF1_Power", "MF2_Power", "DC1_Power", "DC2_Power", "DC3_Power" , "DC4_Power" };
+                    insertPLCDataDB("PowerData", listpower);
+                }
             }
             catch (Exception ex)
             {
