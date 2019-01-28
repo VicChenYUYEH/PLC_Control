@@ -356,15 +356,15 @@ namespace HyTemplate
                 tmPLCRecord.Change(iInterval, 1000); //參數第一個為DB寫入間隔 EX: 2000 = 2sec
             }
         }
-
- 
+        
         private void tmDelete_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             //取得hh:mm
             int hour = e.SignalTime.Hour;
             int minute = e.SignalTime.Minute;
             
-            if (hour == 0 && minute == 0)
+            //中午12時0分
+            if (hour == 12 && minute == 0)
             {
                 deletePLCDataDB(iDeleteDay);
             }
@@ -412,6 +412,10 @@ namespace HyTemplate
             }
         }
 
+        /// <summary>
+        /// 刪除DB內PLC Raw資料依Config
+        /// </summary>
+        /// <param name="m_DB_Delete">刪除天數(N天前)</param>
         private void deletePLCDataDB(int m_DB_Delete)
         {
             DateTime datetime = DateTime.Now.AddDays(-m_DB_Delete);
