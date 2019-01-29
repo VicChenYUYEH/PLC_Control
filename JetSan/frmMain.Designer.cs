@@ -185,7 +185,7 @@
             this.lblaccount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblaccount.Location = new System.Drawing.Point(1520, 151);
             this.lblaccount.Name = "lblaccount";
-            this.lblaccount.Size = new System.Drawing.Size(90, 21);
+            this.lblaccount.Size = new System.Drawing.Size(133, 31);
             this.lblaccount.TabIndex = 16;
             this.lblaccount.Text = "Account  : ";
             this.lblaccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,7 +196,7 @@
             this.lblID.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblID.Location = new System.Drawing.Point(1628, 151);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(52, 21);
+            this.lblID.Size = new System.Drawing.Size(78, 31);
             this.lblID.TabIndex = 17;
             this.lblID.Text = "None";
             this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -207,7 +207,7 @@
             this.lblPLC_Connect.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblPLC_Connect.Location = new System.Drawing.Point(1520, 185);
             this.lblPLC_Connect.Name = "lblPLC_Connect";
-            this.lblPLC_Connect.Size = new System.Drawing.Size(107, 21);
+            this.lblPLC_Connect.Size = new System.Drawing.Size(160, 31);
             this.lblPLC_Connect.TabIndex = 25;
             this.lblPLC_Connect.Text = "PLC Connect";
             this.lblPLC_Connect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -409,7 +409,7 @@
             this.label90.ForeColor = System.Drawing.Color.Maroon;
             this.label90.Location = new System.Drawing.Point(1412, 925);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(114, 21);
+            this.label90.Size = new System.Drawing.Size(170, 31);
             this.label90.TabIndex = 2725;
             this.label90.Text = "製程 匯入 配方";
             this.label90.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -423,7 +423,7 @@
             this.TxtRecipeName.Location = new System.Drawing.Point(1412, 967);
             this.TxtRecipeName.Name = "TxtRecipeName";
             this.TxtRecipeName.ReadOnly = true;
-            this.TxtRecipeName.Size = new System.Drawing.Size(117, 29);
+            this.TxtRecipeName.Size = new System.Drawing.Size(117, 39);
             this.TxtRecipeName.TabIndex = 2720;
             this.TxtRecipeName.Text = "N/A";
             this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -496,7 +496,7 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1703, 1019);
             this.Controls.Add(this.btnOxyPlot);

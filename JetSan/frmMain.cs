@@ -12,6 +12,8 @@ using HyTemplate.gui;
 using HongYuDLL;
 using System.IO;
 using System.Xml;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 namespace HyTemplate
 {
@@ -38,11 +40,16 @@ namespace HyTemplate
         RdEqKernel rdKernel;
         Form frmCurrent = null;
 
+        [DllImport("kernel32.dll")]
+        private static extern uint SetThreadExecutionState(uint esFlags);
+        private const uint ES_CONTINUOUS = 0x80000000;
+        private const uint ES_DISPLAY_REQUIRED = 0x00000002;
+
         public FrmMain()
         {
+            if (Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length > 1) Close();
             InitializeComponent();
-
-
+            
             rdKernel = new RdEqKernel();
 
             frmLog = new FrmHistoryLog(rdKernel);
@@ -59,9 +66,7 @@ namespace HyTemplate
             frmOxyPlot = new FrmOxyPlot(rdKernel);
 
             this.loadUserRegister();
-
-            //System.Threading.Thread.Sleep(1000);
-
+            
             reloadGui(frmOverview);
 
             checkInitialStatus();
@@ -71,6 +76,7 @@ namespace HyTemplate
 
             rdKernel.WriteOperatorLog("StartMark", "Program Start ......");
             login_out(false);
+            SetThreadExecutionState(ES_CONTINUOUS | ES_DISPLAY_REQUIRED);//關閉休眠
         }
 
         private void checkInitialStatus()
@@ -200,11 +206,19 @@ namespace HyTemplate
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            rdKernel.WriteOperatorLog("CloseMark", "Program Close ......");
-            rdKernel.pPlcKernel.Dispose();
-            rdKernel.Dispose();
-            System.Threading.Thread.Sleep(500);
-            System.Environment.Exit(System.Environment.ExitCode);
+            if (MessageBox.Show("是否確定要關閉程式", "關閉程式", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                rdKernel.WriteOperatorLog("CloseMark", "Program Close ......");
+                rdKernel.pPlcKernel.Dispose();
+                rdKernel.Dispose();
+                SetThreadExecutionState(ES_CONTINUOUS);
+                System.Threading.Thread.Sleep(500);
+                Environment.Exit(Environment.ExitCode);
+            }
         }
 
         private void btnVacuum_Click(object sender, EventArgs e)
@@ -353,6 +367,6 @@ namespace HyTemplate
             reloadGui(frmOxyPlot);
         }
         #endregion
-
+        
     }
 }
