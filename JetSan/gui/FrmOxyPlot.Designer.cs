@@ -79,7 +79,7 @@
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnSearch.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSearch.Location = new System.Drawing.Point(2001, 128);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(180, 40);
             this.btnSearch.TabIndex = 20;
@@ -93,7 +93,7 @@
             this.dateTimePicker4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker4.Location = new System.Drawing.Point(1497, 132);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.ShowUpDown = true;
             this.dateTimePicker4.Size = new System.Drawing.Size(139, 33);
@@ -105,7 +105,7 @@
             this.dateTimePicker3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker3.Location = new System.Drawing.Point(795, 135);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.ShowUpDown = true;
             this.dateTimePicker3.Size = new System.Drawing.Size(139, 33);
@@ -116,7 +116,7 @@
             this.dateTimePicker2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(1286, 132);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(180, 33);
             this.dateTimePicker2.TabIndex = 17;
@@ -126,7 +126,7 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(530, 135);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(180, 33);
             this.dateTimePicker1.TabIndex = 16;
@@ -141,7 +141,7 @@
             "PowerData",
             "PressureData"});
             this.comBoxVauleType.Location = new System.Drawing.Point(1689, 132);
-            this.comBoxVauleType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comBoxVauleType.Margin = new System.Windows.Forms.Padding(4);
             this.comBoxVauleType.Name = "comBoxVauleType";
             this.comBoxVauleType.Size = new System.Drawing.Size(175, 33);
             this.comBoxVauleType.TabIndex = 23;
@@ -153,12 +153,13 @@
             this.chkList.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.chkList.FormattingEnabled = true;
             this.chkList.Location = new System.Drawing.Point(2001, 259);
-            this.chkList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkList.Margin = new System.Windows.Forms.Padding(4);
             this.chkList.Name = "chkList";
             this.chkList.Size = new System.Drawing.Size(178, 508);
             this.chkList.TabIndex = 24;
             this.chkList.Visible = false;
             this.chkList.SelectedValueChanged += new System.EventHandler(this.chkList_SelectedValueChanged);
+            this.chkList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.chkList_MouseDoubleClick);
             // 
             // btnExport
             // 

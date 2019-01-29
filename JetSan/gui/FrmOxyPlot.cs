@@ -166,6 +166,15 @@ namespace HyTemplate.gui
             plotViewPLCRaw.Refresh();
         }
 
+        private void chkList_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            for (int i = 0; i < plotModel.Series.Count; i++)
+            {
+                plotModel.Series[i].IsVisible = chkList.GetItemChecked(i);
+            }
+            plotViewPLCRaw.Refresh();
+        }
+
         private void btnExport_Click(object sender, EventArgs e)
         {
             string t_sDate, t_sTime, t_eDate, t_eTime;
@@ -265,5 +274,6 @@ namespace HyTemplate.gui
         }
 
         #endregion
+
     }
 }
