@@ -65,7 +65,7 @@ namespace HyTemplate
                     rRecipe.LoadFile(rcp_id);
                     foreach (KeyValuePair<string, RecipeInfo> info in rRecipe.DicRecipeDetail)
                     {
-                        pPlcKernel[info.Value.DeviceName] = (short)rRecipe.DicRecipeDetail[info.Value.DeviceName].SetPoint;
+                        pPlcKernel[info.Value.DeviceName] = (short)(rRecipe.DicRecipeDetail[info.Value.DeviceName].SetPoint * rRecipe.DicRecipeDetail[info.Value.DeviceName].Ratio);
                     }
                 }
                 else if (m_MessageName == ProxyMessage.MSG_PARAMETER_SET)
@@ -73,7 +73,7 @@ namespace HyTemplate
                     rRecipe.LoadFile("System");
                     foreach (KeyValuePair<string, RecipeInfo> info in rRecipe.DicSystemDetail)
                     {
-                        pPlcKernel[info.Value.DeviceName] = (short)rRecipe.DicSystemDetail[info.Value.DeviceName].SetPoint;
+                        pPlcKernel[info.Value.DeviceName] = (short)(rRecipe.DicSystemDetail[info.Value.DeviceName].SetPoint * rRecipe.DicSystemDetail[info.Value.DeviceName].Ratio);
                     }
                 }
             }

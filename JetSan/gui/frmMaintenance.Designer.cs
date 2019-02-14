@@ -2285,7 +2285,7 @@
             this.TabPage2.Location = new System.Drawing.Point(4, 26);
             this.TabPage2.Name = "TabPage2";
             this.TabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage2.Size = new System.Drawing.Size(1252, 657);
+            this.TabPage2.Size = new System.Drawing.Size(1279, 657);
             this.TabPage2.TabIndex = 1;
             this.TabPage2.Text = "TP維護時間";
             // 
@@ -4251,7 +4251,7 @@
             // 
             // inputTextBox101
             // 
-            this.inputTextBox101._Division = 1;
+            this.inputTextBox101._Division = 10;
             this.inputTextBox101._EqBase = null;
             this.inputTextBox101._FloatNumber = false;
             this.inputTextBox101._MaxLimit = 999D;
@@ -4358,7 +4358,7 @@
             this.inputTextBox102._FloatNumber = false;
             this.inputTextBox102._MaxLimit = 999D;
             this.inputTextBox102._MinLimit = 0D;
-            this.inputTextBox102._Multiplication = 1;
+            this.inputTextBox102._Multiplication = 10;
             this.inputTextBox102._NumberOnly = true;
             this.inputTextBox102._PlcDevice = "DC4_Target_Life_Db";
             this.inputTextBox102.BackColor = System.Drawing.Color.White;
@@ -4426,7 +4426,7 @@
             this.inputTextBox103._FloatNumber = false;
             this.inputTextBox103._MaxLimit = 999D;
             this.inputTextBox103._MinLimit = 0D;
-            this.inputTextBox103._Multiplication = 1;
+            this.inputTextBox103._Multiplication = 10;
             this.inputTextBox103._NumberOnly = true;
             this.inputTextBox103._PlcDevice = "DC3_Target_Life_SETP_Db";
             this.inputTextBox103.BackColor = System.Drawing.Color.White;
@@ -4519,7 +4519,7 @@
             this.inputTextBox124._Multiplication = 1;
             this.inputTextBox124._NumberOnly = true;
             this.inputTextBox124._PlcDevice = "MF1_ARC_Total";
-            this.inputTextBox124.BackColor = System.Drawing.Color.White;
+            this.inputTextBox124.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.inputTextBox124.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.inputTextBox124.Location = new System.Drawing.Point(558, 88);
             this.inputTextBox124.Name = "inputTextBox124";
@@ -4554,7 +4554,7 @@
             this.inputTextBox104._FloatNumber = false;
             this.inputTextBox104._MaxLimit = 999D;
             this.inputTextBox104._MinLimit = 0D;
-            this.inputTextBox104._Multiplication = 1;
+            this.inputTextBox104._Multiplication = 10;
             this.inputTextBox104._NumberOnly = true;
             this.inputTextBox104._PlcDevice = "DC3_Target_Life_Db";
             this.inputTextBox104.BackColor = System.Drawing.Color.White;
@@ -4602,7 +4602,7 @@
             this.inputTextBox105._FloatNumber = false;
             this.inputTextBox105._MaxLimit = 999D;
             this.inputTextBox105._MinLimit = 0D;
-            this.inputTextBox105._Multiplication = 1;
+            this.inputTextBox105._Multiplication = 10;
             this.inputTextBox105._NumberOnly = true;
             this.inputTextBox105._PlcDevice = "DC2_Target_Life_SETP_Db";
             this.inputTextBox105.BackColor = System.Drawing.Color.White;
@@ -4692,7 +4692,7 @@
             this.inputTextBox106._FloatNumber = false;
             this.inputTextBox106._MaxLimit = 999D;
             this.inputTextBox106._MinLimit = 0D;
-            this.inputTextBox106._Multiplication = 1;
+            this.inputTextBox106._Multiplication = 10;
             this.inputTextBox106._NumberOnly = true;
             this.inputTextBox106._PlcDevice = "DC2_Target_Life_Db";
             this.inputTextBox106.BackColor = System.Drawing.Color.White;
@@ -4710,7 +4710,7 @@
             this.inputTextBox112._FloatNumber = false;
             this.inputTextBox112._MaxLimit = 65538D;
             this.inputTextBox112._MinLimit = 0D;
-            this.inputTextBox112._Multiplication = 1;
+            this.inputTextBox112._Multiplication = 10;
             this.inputTextBox112._NumberOnly = true;
             this.inputTextBox112._PlcDevice = "MF1_Target_Life_Db";
             this.inputTextBox112.BackColor = System.Drawing.Color.White;
@@ -4728,7 +4728,7 @@
             this.inputTextBox107._FloatNumber = false;
             this.inputTextBox107._MaxLimit = 999D;
             this.inputTextBox107._MinLimit = 0D;
-            this.inputTextBox107._Multiplication = 1;
+            this.inputTextBox107._Multiplication = 10;
             this.inputTextBox107._NumberOnly = true;
             this.inputTextBox107._PlcDevice = "DC1_Target_Life_SETP_Db";
             this.inputTextBox107.BackColor = System.Drawing.Color.White;
@@ -4790,7 +4790,7 @@
             this.inputTextBox111._FloatNumber = false;
             this.inputTextBox111._MaxLimit = 999D;
             this.inputTextBox111._MinLimit = 0D;
-            this.inputTextBox111._Multiplication = 1;
+            this.inputTextBox111._Multiplication = 10;
             this.inputTextBox111._NumberOnly = true;
             this.inputTextBox111._PlcDevice = "MF1_Target_Life_SETP_Db";
             this.inputTextBox111.BackColor = System.Drawing.Color.White;
@@ -4808,7 +4808,7 @@
             this.inputTextBox108._FloatNumber = false;
             this.inputTextBox108._MaxLimit = 999D;
             this.inputTextBox108._MinLimit = 0D;
-            this.inputTextBox108._Multiplication = 1;
+            this.inputTextBox108._Multiplication = 10;
             this.inputTextBox108._NumberOnly = true;
             this.inputTextBox108._PlcDevice = "DC1_Target_Life_Db";
             this.inputTextBox108.BackColor = System.Drawing.Color.White;
@@ -4826,7 +4826,7 @@
             this.inputTextBox110._FloatNumber = false;
             this.inputTextBox110._MaxLimit = 999D;
             this.inputTextBox110._MinLimit = 0D;
-            this.inputTextBox110._Multiplication = 1;
+            this.inputTextBox110._Multiplication = 10;
             this.inputTextBox110._NumberOnly = true;
             this.inputTextBox110._PlcDevice = "MF2_Target_Life_Db";
             this.inputTextBox110.BackColor = System.Drawing.Color.White;
@@ -4844,7 +4844,7 @@
             this.inputTextBox109._FloatNumber = false;
             this.inputTextBox109._MaxLimit = 999D;
             this.inputTextBox109._MinLimit = 0D;
-            this.inputTextBox109._Multiplication = 1;
+            this.inputTextBox109._Multiplication = 10;
             this.inputTextBox109._NumberOnly = true;
             this.inputTextBox109._PlcDevice = "MF2_Target_Life_SETP_Db";
             this.inputTextBox109.BackColor = System.Drawing.Color.White;
@@ -4951,7 +4951,7 @@
             this.label74.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label74.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label74.ForeColor = System.Drawing.Color.Black;
-            this.label74.Location = new System.Drawing.Point(96, 429);
+            this.label74.Location = new System.Drawing.Point(84, 417);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(207, 60);
             this.label74.TabIndex = 2065;
@@ -4974,7 +4974,7 @@
             this.label70.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label70.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label70.ForeColor = System.Drawing.Color.Black;
-            this.label70.Location = new System.Drawing.Point(96, 382);
+            this.label70.Location = new System.Drawing.Point(84, 370);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(207, 60);
             this.label70.TabIndex = 2064;
@@ -4997,7 +4997,7 @@
             this.label71.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label71.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label71.ForeColor = System.Drawing.Color.Black;
-            this.label71.Location = new System.Drawing.Point(96, 337);
+            this.label71.Location = new System.Drawing.Point(84, 325);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(207, 60);
             this.label71.TabIndex = 2063;
@@ -5006,13 +5006,15 @@
             // 
             // displayTextBox7
             // 
-            this.displayTextBox7._Division = ((short)(1));
+            this.displayTextBox7._Division = 1D;
             this.displayTextBox7._DoubleWord = false;
             this.displayTextBox7._EqBase = null;
+            this.displayTextBox7._ITR = false;
             this.displayTextBox7._MaxLimit = 999D;
             this.displayTextBox7._MinLimit = 0D;
-            this.displayTextBox7._Multiplication = ((short)(1));
+            this.displayTextBox7._Multiplication = 1D;
             this.displayTextBox7._PlcDevice = "DC3_4_CaWT_2_M3_2";
+            this.displayTextBox7._TTR = false;
             this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox7.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox7.Location = new System.Drawing.Point(942, 396);
@@ -5028,7 +5030,7 @@
             this.label72.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label72.ForeColor = System.Drawing.Color.Black;
             this.label72.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label72.Location = new System.Drawing.Point(96, 291);
+            this.label72.Location = new System.Drawing.Point(84, 279);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(207, 60);
             this.label72.TabIndex = 2062;
@@ -5056,7 +5058,7 @@
             this.label73.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label73.ForeColor = System.Drawing.Color.Black;
             this.label73.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label73.Location = new System.Drawing.Point(102, 244);
+            this.label73.Location = new System.Drawing.Point(84, 232);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(207, 60);
             this.label73.TabIndex = 2061;
@@ -5068,7 +5070,7 @@
             this.label69.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label69.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label69.ForeColor = System.Drawing.Color.Black;
-            this.label69.Location = new System.Drawing.Point(102, 198);
+            this.label69.Location = new System.Drawing.Point(84, 186);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(207, 60);
             this.label69.TabIndex = 2060;
@@ -5095,7 +5097,7 @@
             this.label68.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label68.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label68.ForeColor = System.Drawing.Color.Black;
-            this.label68.Location = new System.Drawing.Point(102, 153);
+            this.label68.Location = new System.Drawing.Point(84, 141);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(207, 60);
             this.label68.TabIndex = 2059;
@@ -5107,7 +5109,7 @@
             this.label67.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label67.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label67.ForeColor = System.Drawing.Color.Black;
-            this.label67.Location = new System.Drawing.Point(102, 107);
+            this.label67.Location = new System.Drawing.Point(84, 95);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(207, 60);
             this.label67.TabIndex = 2058;
@@ -5116,13 +5118,15 @@
             // 
             // displayTextBox6
             // 
-            this.displayTextBox6._Division = ((short)(1));
+            this.displayTextBox6._Division = 1D;
             this.displayTextBox6._DoubleWord = false;
             this.displayTextBox6._EqBase = null;
+            this.displayTextBox6._ITR = false;
             this.displayTextBox6._MaxLimit = 999D;
             this.displayTextBox6._MinLimit = 0D;
-            this.displayTextBox6._Multiplication = ((short)(1));
+            this.displayTextBox6._Multiplication = 1D;
             this.displayTextBox6._PlcDevice = "DC3_4_CaWT_1_M3_2";
+            this.displayTextBox6._TTR = false;
             this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox6.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox6.Location = new System.Drawing.Point(942, 349);
@@ -5137,7 +5141,7 @@
             this.label66.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label66.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label66.ForeColor = System.Drawing.Color.Black;
-            this.label66.Location = new System.Drawing.Point(102, 61);
+            this.label66.Location = new System.Drawing.Point(84, 49);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(207, 60);
             this.label66.TabIndex = 2057;
@@ -5204,7 +5208,7 @@
             this.label83.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label83.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label83.ForeColor = System.Drawing.Color.Black;
-            this.label83.Location = new System.Drawing.Point(463, 436);
+            this.label83.Location = new System.Drawing.Point(448, 419);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(262, 65);
             this.label83.TabIndex = 2095;
@@ -5261,7 +5265,7 @@
             this.label84.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label84.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label84.ForeColor = System.Drawing.Color.Black;
-            this.label84.Location = new System.Drawing.Point(463, 484);
+            this.label84.Location = new System.Drawing.Point(448, 467);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(262, 65);
             this.label84.TabIndex = 2096;
@@ -5285,13 +5289,15 @@
             // 
             // displayTextBox5
             // 
-            this.displayTextBox5._Division = ((short)(1));
+            this.displayTextBox5._Division = 1D;
             this.displayTextBox5._DoubleWord = false;
             this.displayTextBox5._EqBase = null;
+            this.displayTextBox5._ITR = false;
             this.displayTextBox5._MaxLimit = 999D;
             this.displayTextBox5._MinLimit = 0D;
-            this.displayTextBox5._Multiplication = ((short)(1));
+            this.displayTextBox5._Multiplication = 1D;
             this.displayTextBox5._PlcDevice = "DC1_2_CaWT_2_M3_2";
+            this.displayTextBox5._TTR = false;
             this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox5.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox5.Location = new System.Drawing.Point(942, 301);
@@ -5351,7 +5357,7 @@
             this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label75.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label75.ForeColor = System.Drawing.Color.Black;
-            this.label75.Location = new System.Drawing.Point(463, 61);
+            this.label75.Location = new System.Drawing.Point(448, 44);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(222, 65);
             this.label75.TabIndex = 2087;
@@ -5418,7 +5424,7 @@
             this.label82.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label82.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label82.ForeColor = System.Drawing.Color.Black;
-            this.label82.Location = new System.Drawing.Point(463, 390);
+            this.label82.Location = new System.Drawing.Point(448, 373);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(262, 65);
             this.label82.TabIndex = 2094;
@@ -5427,13 +5433,15 @@
             // 
             // displayTextBox4
             // 
-            this.displayTextBox4._Division = ((short)(1));
+            this.displayTextBox4._Division = 1D;
             this.displayTextBox4._DoubleWord = false;
             this.displayTextBox4._EqBase = null;
+            this.displayTextBox4._ITR = false;
             this.displayTextBox4._MaxLimit = 999D;
             this.displayTextBox4._MinLimit = 0D;
-            this.displayTextBox4._Multiplication = ((short)(1));
+            this.displayTextBox4._Multiplication = 1D;
             this.displayTextBox4._PlcDevice = "DC1_2_CaWT_1_M3_2";
+            this.displayTextBox4._TTR = false;
             this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox4.Location = new System.Drawing.Point(942, 254);
@@ -5448,7 +5456,7 @@
             this.label85.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label85.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label85.ForeColor = System.Drawing.Color.Black;
-            this.label85.Location = new System.Drawing.Point(463, 530);
+            this.label85.Location = new System.Drawing.Point(448, 513);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(262, 65);
             this.label85.TabIndex = 2097;
@@ -5460,7 +5468,7 @@
             this.label76.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label76.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label76.ForeColor = System.Drawing.Color.Black;
-            this.label76.Location = new System.Drawing.Point(463, 110);
+            this.label76.Location = new System.Drawing.Point(448, 93);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(222, 65);
             this.label76.TabIndex = 2088;
@@ -5522,7 +5530,7 @@
             this.label81.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label81.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label81.ForeColor = System.Drawing.Color.Black;
-            this.label81.Location = new System.Drawing.Point(463, 343);
+            this.label81.Location = new System.Drawing.Point(448, 326);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(262, 65);
             this.label81.TabIndex = 2093;
@@ -5531,13 +5539,15 @@
             // 
             // displayTextBox3
             // 
-            this.displayTextBox3._Division = ((short)(1));
+            this.displayTextBox3._Division = 1D;
             this.displayTextBox3._DoubleWord = false;
             this.displayTextBox3._EqBase = null;
+            this.displayTextBox3._ITR = false;
             this.displayTextBox3._MaxLimit = 999D;
             this.displayTextBox3._MinLimit = 0D;
-            this.displayTextBox3._Multiplication = ((short)(1));
+            this.displayTextBox3._Multiplication = 1D;
             this.displayTextBox3._PlcDevice = "MF2_CaWT_2_M3_2";
+            this.displayTextBox3._TTR = false;
             this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox3.Location = new System.Drawing.Point(942, 206);
@@ -5552,7 +5562,7 @@
             this.label86.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label86.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label86.ForeColor = System.Drawing.Color.Black;
-            this.label86.Location = new System.Drawing.Point(463, 577);
+            this.label86.Location = new System.Drawing.Point(448, 560);
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(262, 65);
             this.label86.TabIndex = 2098;
@@ -5564,7 +5574,7 @@
             this.label77.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label77.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label77.ForeColor = System.Drawing.Color.Black;
-            this.label77.Location = new System.Drawing.Point(463, 155);
+            this.label77.Location = new System.Drawing.Point(448, 138);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(222, 65);
             this.label77.TabIndex = 2089;
@@ -5626,7 +5636,7 @@
             this.label80.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label80.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label80.ForeColor = System.Drawing.Color.Black;
-            this.label80.Location = new System.Drawing.Point(463, 296);
+            this.label80.Location = new System.Drawing.Point(448, 279);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(262, 65);
             this.label80.TabIndex = 2092;
@@ -5635,13 +5645,15 @@
             // 
             // displayTextBox2
             // 
-            this.displayTextBox2._Division = ((short)(1));
+            this.displayTextBox2._Division = 1D;
             this.displayTextBox2._DoubleWord = false;
             this.displayTextBox2._EqBase = null;
+            this.displayTextBox2._ITR = false;
             this.displayTextBox2._MaxLimit = 999D;
             this.displayTextBox2._MinLimit = 0D;
-            this.displayTextBox2._Multiplication = ((short)(1));
+            this.displayTextBox2._Multiplication = 1D;
             this.displayTextBox2._PlcDevice = "MF2_CaWT_1_M3_2";
+            this.displayTextBox2._TTR = false;
             this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox2.Location = new System.Drawing.Point(942, 159);
@@ -5653,13 +5665,15 @@
             // 
             // displayTextBox9
             // 
-            this.displayTextBox9._Division = ((short)(1));
+            this.displayTextBox9._Division = 1D;
             this.displayTextBox9._DoubleWord = false;
             this.displayTextBox9._EqBase = null;
+            this.displayTextBox9._ITR = false;
             this.displayTextBox9._MaxLimit = 999D;
             this.displayTextBox9._MinLimit = 0D;
-            this.displayTextBox9._Multiplication = ((short)(1));
+            this.displayTextBox9._Multiplication = 1D;
             this.displayTextBox9._PlcDevice = "MF1_CaWT_1_M3_2";
+            this.displayTextBox9._TTR = false;
             this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox9.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox9.Location = new System.Drawing.Point(942, 66);
@@ -5674,7 +5688,7 @@
             this.label78.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label78.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label78.ForeColor = System.Drawing.Color.Black;
-            this.label78.Location = new System.Drawing.Point(463, 200);
+            this.label78.Location = new System.Drawing.Point(448, 183);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(222, 65);
             this.label78.TabIndex = 2090;
@@ -5736,7 +5750,7 @@
             this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label79.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label79.ForeColor = System.Drawing.Color.Black;
-            this.label79.Location = new System.Drawing.Point(463, 248);
+            this.label79.Location = new System.Drawing.Point(448, 231);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(262, 65);
             this.label79.TabIndex = 2091;
@@ -5745,13 +5759,15 @@
             // 
             // displayTextBox1
             // 
-            this.displayTextBox1._Division = ((short)(1));
+            this.displayTextBox1._Division = 1D;
             this.displayTextBox1._DoubleWord = false;
             this.displayTextBox1._EqBase = null;
+            this.displayTextBox1._ITR = false;
             this.displayTextBox1._MaxLimit = 999D;
             this.displayTextBox1._MinLimit = 0D;
-            this.displayTextBox1._Multiplication = ((short)(1));
+            this.displayTextBox1._Multiplication = 1D;
             this.displayTextBox1._PlcDevice = "MF1_CaWT_2_M3_2";
+            this.displayTextBox1._TTR = false;
             this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox1.Location = new System.Drawing.Point(942, 116);

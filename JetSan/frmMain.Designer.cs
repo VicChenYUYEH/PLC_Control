@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnHistoryLog = new System.Windows.Forms.Button();
             this.btnRecipe = new System.Windows.Forms.Button();
@@ -185,7 +185,7 @@
             this.lblaccount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblaccount.Location = new System.Drawing.Point(1520, 151);
             this.lblaccount.Name = "lblaccount";
-            this.lblaccount.Size = new System.Drawing.Size(133, 31);
+            this.lblaccount.Size = new System.Drawing.Size(90, 21);
             this.lblaccount.TabIndex = 16;
             this.lblaccount.Text = "Account  : ";
             this.lblaccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,7 +196,7 @@
             this.lblID.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblID.Location = new System.Drawing.Point(1628, 151);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(78, 31);
+            this.lblID.Size = new System.Drawing.Size(52, 21);
             this.lblID.TabIndex = 17;
             this.lblID.Text = "None";
             this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -207,7 +207,7 @@
             this.lblPLC_Connect.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblPLC_Connect.Location = new System.Drawing.Point(1520, 185);
             this.lblPLC_Connect.Name = "lblPLC_Connect";
-            this.lblPLC_Connect.Size = new System.Drawing.Size(160, 31);
+            this.lblPLC_Connect.Size = new System.Drawing.Size(107, 21);
             this.lblPLC_Connect.TabIndex = 25;
             this.lblPLC_Connect.Text = "PLC Connect";
             this.lblPLC_Connect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -409,7 +409,7 @@
             this.label90.ForeColor = System.Drawing.Color.Maroon;
             this.label90.Location = new System.Drawing.Point(1412, 925);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(170, 31);
+            this.label90.Size = new System.Drawing.Size(114, 21);
             this.label90.TabIndex = 2725;
             this.label90.Text = "製程 匯入 配方";
             this.label90.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -423,7 +423,7 @@
             this.TxtRecipeName.Location = new System.Drawing.Point(1412, 967);
             this.TxtRecipeName.Name = "TxtRecipeName";
             this.TxtRecipeName.ReadOnly = true;
-            this.TxtRecipeName.Size = new System.Drawing.Size(117, 39);
+            this.TxtRecipeName.Size = new System.Drawing.Size(117, 29);
             this.TxtRecipeName.TabIndex = 2720;
             this.TxtRecipeName.Text = "N/A";
             this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -458,18 +458,18 @@
             // 
             this.dataGrdAlarm.AllowUserToAddRows = false;
             this.dataGrdAlarm.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGrdAlarm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrdAlarm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGrdAlarm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrdAlarm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGrdAlarm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrdAlarm.Location = new System.Drawing.Point(12, 920);
             this.dataGrdAlarm.Name = "dataGrdAlarm";
@@ -496,8 +496,8 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1703, 1019);
             this.Controls.Add(this.btnOxyPlot);
             this.Controls.Add(this.label90);

@@ -13,6 +13,7 @@ namespace HyTemplate
         public string Unit { get; set; }
         public string Description { get; set; }
         public string Address { get; set; }
+        public double Ratio { get; set; }
     }
 
     public class Recipe : XmlList
@@ -55,6 +56,7 @@ namespace HyTemplate
                                 info.SetPoint = 0;
                                 info.Description = node.Attributes["Description"].Value;
                                 info.Address = node.Attributes["DeviceName"].Value;
+                                info.Ratio = 1;
                                 DicSystemDetail.Add(para_id, info);
                             }
                         }
@@ -75,6 +77,7 @@ namespace HyTemplate
                                 info.SetPoint = 0;
                                 info.Description = node.Attributes["Description"].Value;
                                 info.Address = node.Attributes["DeviceName"].Value;
+                                info.Ratio = 1;
                                 DicRecipeDetail.Add(para_id, info);
                             }
                         }
@@ -106,7 +109,6 @@ namespace HyTemplate
                     {
                         string para_id = node.Attributes["Name"].Value;
                         string para_value = node.Attributes["Value"].Value;
-
                         this[rcp_id].addChildNode(para_id, para_value);
 
                         if(rcp_id == "System")
@@ -118,6 +120,7 @@ namespace HyTemplate
                                 Unit = node.Attributes["Unit"].Value,
                                 SetPoint = Convert.ToDouble(para_value),
                                 Address = node.Attributes["DeviceName"].Value,
+                                Ratio = Convert.ToDouble(node.Attributes["Ratio"].Value),
                                 Description = node.Attributes["Description"].Value
                             };
                             DicSystemDetail.Add(para_id, info);
@@ -131,6 +134,7 @@ namespace HyTemplate
                                 Unit = node.Attributes["Unit"].Value,
                                 SetPoint = Convert.ToDouble(para_value),
                                 Address = node.Attributes["DeviceName"].Value,
+                                Ratio = Convert.ToDouble(node.Attributes["Ratio"].Value),
                                 Description = node.Attributes["Description"].Value
                             };
                             DicRecipeDetail.Add(para_id, info);
@@ -138,7 +142,6 @@ namespace HyTemplate
                     }
                 }
             }
-
             return true;
         }
 
@@ -157,7 +160,7 @@ namespace HyTemplate
                 bool find = false;
                 foreach (XmlNode chile_node in nodes)
                 {
-                    String rcp_id = chile_node.Attributes["ID"].Value;
+                    string rcp_id = chile_node.Attributes["ID"].Value;
                     if (item.Key != rcp_id) continue;
 
                     find = true;

@@ -70,15 +70,17 @@ namespace HyTemplate
             iInterval = Convert.ToInt32(ini.GetValue("PLCRawData", "Interval"));
             iDeleteDay = Convert.ToInt32(ini.GetValue("PLCRawData", "DB_Delete_Interval"));
 
-            if(record)
+            if(record) //根據INI決定是否紀錄
             {
                 tmPLCRecord = new Timer(new TimerCallback(doDataRecord), null, 500, 150);
             }
-            if(iDeleteDay > 0)
+            if(iDeleteDay > 0) //根據INI決定幾天刪除Database資料
             {
-                System.Timers.Timer tmDelete = new System.Timers.Timer();
-                tmDelete.Enabled = true;
-                tmDelete.Interval = 60000;
+                System.Timers.Timer tmDelete = new System.Timers.Timer
+                {
+                    Enabled = true,
+                    Interval = 60000
+                };
                 tmDelete.Start();
                 tmDelete.Elapsed += new System.Timers.ElapsedEventHandler(tmDelete_Elapsed);
             }
@@ -329,6 +331,7 @@ namespace HyTemplate
             }
         }
 
+        #region Record PLC RawData To Database
         private void doDataRecord(object m_ObjKey)
         {
             try
@@ -343,7 +346,8 @@ namespace HyTemplate
                     insertPLCDataDB("PressureData", listpressure);
 
                     string[] listMfc = { "MFC_0303_Ar" ,"MFC_0304_O2", "MFC_0305_Ar", "MFC_0306_O2", "MFC_0307_Ar", "MFC_0308_O2","MFC_0309_Ar", "MFC_0310_O2"};
-                    insertPLCDataDB("MfcFlowData", listMfc);
+                    double[] listRatio = {4, 20, 4, 200, 4, 20, 4, 200};
+                    insertPLCDataDB("MfcFlowData", listMfc, listRatio);
 
                     string[] listpower = { "MF1_Power", "MF2_Power", "DC1_Power", "DC2_Power", "DC3_Power" , "DC4_Power" };
                     insertPLCDataDB("PowerData", listpower);
@@ -377,7 +381,8 @@ namespace HyTemplate
         /// </summary>
         /// <param name="m_TableName">DB 目標Table</param>
         /// <param name="m_Value">DB 欄位名稱(同PLC Device)</param>
-        private void insertPLCDataDB(string m_TableName, string[] m_Value)
+        /// <param name="m_Ratio">單位比率</param>
+        private void insertPLCDataDB(string m_TableName, string[] m_Value, double[] m_Ratio = null)
         {
             string rowsName = "(";
             for(int i = 0; i< m_Value.Length; i++)
@@ -398,11 +403,42 @@ namespace HyTemplate
             {
                 if (i == m_Value.Length - 1)
                 {
-                    values = values + eqKernel.pPlcKernel[m_Value[i]];
+                    switch(m_TableName)
+                    {
+                        case "PressureData":
+                            values = values + ConvertFormat.GetTTR(eqKernel.pPlcKernel[m_Value[i]]);
+                            break;
+                        case "PowerData":
+                            values = values + Convert.ToDouble(eqKernel.pPlcKernel[m_Value[i]]) / 100;
+                            break;
+                        case "MfcFlowData":
+                            values = values + Convert.ToDouble(eqKernel.pPlcKernel[m_Value[i]]) / m_Ratio[i];
+                            break;
+                        default:
+                            values = values + eqKernel.pPlcKernel[m_Value[i]];
+                            break;
+                    }
                 }
                 else
                 {
-                    values = values + eqKernel.pPlcKernel[m_Value[i]] + "', '";
+                    switch (m_TableName)
+                    {
+                        case "PressureData":
+                            if (i < 4)
+                                values = values + ConvertFormat.GetITR(eqKernel.pPlcKernel[m_Value[i]]) + "', '";
+                            else
+                                values = values + ConvertFormat.GetTTR(eqKernel.pPlcKernel[m_Value[i]]) + "', '";
+                            break;
+                        case "PowerData":
+                            values = values + Convert.ToDouble(eqKernel.pPlcKernel[m_Value[i]]) / 100 + "', '";
+                            break;
+                        case "MfcFlowData":
+                            values = values + Convert.ToDouble(eqKernel.pPlcKernel[m_Value[i]]) / m_Ratio[i] + "', '";
+                            break;
+                        default:
+                            values = values + eqKernel.pPlcKernel[m_Value[i]] + "', '";
+                            break;
+                    }
                 }
             }
             values = values +"', '" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff") + "')";
@@ -430,6 +466,7 @@ namespace HyTemplate
             strSQL = "DELETE FROM PowerData WHERE Insert_Time < '" + datetime.ToString("yyyy/MM/dd HH:mm:ss.fff") + " '";
             err = eqKernel.dDb.FunSQL(strSQL);
         }
+        #endregion
 
         #region IDisposable Support
         private bool disposedValue = false; // 偵測多餘的呼叫

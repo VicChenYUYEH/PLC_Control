@@ -145,7 +145,8 @@ namespace HyTemplate
             {
                 lLoading.ShowDialog();
                 lLoading.Refresh();
-                if(lLoading.DialogResult == System.Windows.Forms.DialogResult.OK)
+                lLoading.TopMost = true;
+                if (lLoading.DialogResult == System.Windows.Forms.DialogResult.OK)
                 {
                     if (melPlcAccessor.Open() == 0)
                     {
@@ -322,22 +323,22 @@ namespace HyTemplate
                         if (melPlcAccessor == null) return;
                         if (melPlcAccessor.ReadDeviceBlock(start_adr, length, out values) == 0)
                         {
-                            if (   info.Key == PlcDeviceType.pdtX
+                            if (info.Key == PlcDeviceType.pdtX
                                 || info.Key == PlcDeviceType.pdtY
                                 || info.Key == PlcDeviceType.pdtB
                                 || info.Key == PlcDeviceType.pdtM)
-                            {                      
-                                for (int index = 0; index < length; )
+                            {
+                                for (int index = 0; index < length;)
                                 {
                                     string binary = Convert.ToString(values[index], 2).PadLeft(16, '0');
                                     char[] arr_binary = binary.ToCharArray();
                                     Array.Reverse(arr_binary);
                                     for (int binary_index = 0; binary_index < 16; binary_index++)
-                                    {                                        
+                                    {
                                         string buf_adr = start_adr.Substring(0, device_type_count) + (info.Value.Id + (loop * BATCH_READ_LENGTH) + (16 * index) + binary_index).ToString(device_type).PadLeft(5, '0');
 
                                         /////////dicPlcInfo || dicAlarmInfo 皆會更新 (PLC實體 與 PLC軟體的異常) /////////
-                                        if (DicAlarmStatus.ContainsKey(buf_adr)) 
+                                        if (DicAlarmStatus.ContainsKey(buf_adr))
                                         { DicAlarmStatus[buf_adr] = (arr_binary[binary_index] == '1') ? true : false; }
                                         /////////////////////////////////////////////////////////////////////////////////
                                         if (!m_bAlarm) //更新PLC XML對應的Infomation
@@ -351,7 +352,7 @@ namespace HyTemplate
                                             dicPlcBuffer[data.Key] = new_data;
                                         }
                                     }
-                                    if (!(info.Value.DeviceType == NumberStyles.HexNumber || info.Key == PlcDeviceType.pdtM)) 
+                                    if (!(info.Value.DeviceType == NumberStyles.HexNumber || info.Key == PlcDeviceType.pdtM))
                                         index += 16;
                                     else//M type回傳資料型態為一個陣列內有16Bit的Bool值  ex:[0] = 2 M0與M1皆為為ON，其他M2~M15為OFF
                                         index++;
@@ -394,6 +395,11 @@ namespace HyTemplate
                                     dicPlcBuffer[data.Key] = new_data;
                                 }
                             }
+                        }
+                        else
+                        {
+                            checkPLCConnect();
+                            return;
                         }
                     }
                 }

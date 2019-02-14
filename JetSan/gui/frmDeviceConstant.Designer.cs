@@ -418,10 +418,10 @@
             // 
             // inputTextBox16
             // 
-            this.inputTextBox16._Division = 1;
+            this.inputTextBox16._Division = 10;
             this.inputTextBox16._EqBase = null;
             this.inputTextBox16._FloatNumber = false;
-            this.inputTextBox16._MaxLimit = 999D;
+            this.inputTextBox16._MaxLimit = 3000D;
             this.inputTextBox16._MinLimit = 0D;
             this.inputTextBox16._Multiplication = 1;
             this.inputTextBox16._NumberOnly = true;
@@ -474,8 +474,8 @@
             // 
             this.inputTextBox13._Division = 1;
             this.inputTextBox13._EqBase = null;
-            this.inputTextBox13._FloatNumber = false;
-            this.inputTextBox13._MaxLimit = 999D;
+            this.inputTextBox13._FloatNumber = true;
+            this.inputTextBox13._MaxLimit = 701D;
             this.inputTextBox13._MinLimit = 0D;
             this.inputTextBox13._Multiplication = 1;
             this.inputTextBox13._NumberOnly = true;
@@ -492,8 +492,8 @@
             // 
             this.inputTextBox12._Division = 1;
             this.inputTextBox12._EqBase = null;
-            this.inputTextBox12._FloatNumber = false;
-            this.inputTextBox12._MaxLimit = 999D;
+            this.inputTextBox12._FloatNumber = true;
+            this.inputTextBox12._MaxLimit = 701D;
             this.inputTextBox12._MinLimit = 0D;
             this.inputTextBox12._Multiplication = 1;
             this.inputTextBox12._NumberOnly = true;
@@ -510,8 +510,8 @@
             // 
             this.inputTextBox11._Division = 1;
             this.inputTextBox11._EqBase = null;
-            this.inputTextBox11._FloatNumber = false;
-            this.inputTextBox11._MaxLimit = 999D;
+            this.inputTextBox11._FloatNumber = true;
+            this.inputTextBox11._MaxLimit = 701D;
             this.inputTextBox11._MinLimit = 0D;
             this.inputTextBox11._Multiplication = 1;
             this.inputTextBox11._NumberOnly = true;
@@ -528,8 +528,8 @@
             // 
             this.inputTextBox10._Division = 1;
             this.inputTextBox10._EqBase = null;
-            this.inputTextBox10._FloatNumber = false;
-            this.inputTextBox10._MaxLimit = 999D;
+            this.inputTextBox10._FloatNumber = true;
+            this.inputTextBox10._MaxLimit = 701D;
             this.inputTextBox10._MinLimit = 0D;
             this.inputTextBox10._Multiplication = 1;
             this.inputTextBox10._NumberOnly = true;
@@ -544,10 +544,10 @@
             // 
             // inputTextBox9
             // 
-            this.inputTextBox9._Division = 1;
+            this.inputTextBox9._Division = 10;
             this.inputTextBox9._EqBase = null;
             this.inputTextBox9._FloatNumber = false;
-            this.inputTextBox9._MaxLimit = 999D;
+            this.inputTextBox9._MaxLimit = 3000D;
             this.inputTextBox9._MinLimit = 0D;
             this.inputTextBox9._Multiplication = 1;
             this.inputTextBox9._NumberOnly = true;
@@ -562,10 +562,10 @@
             // 
             // inputTextBox8
             // 
-            this.inputTextBox8._Division = 1;
+            this.inputTextBox8._Division = 10;
             this.inputTextBox8._EqBase = null;
             this.inputTextBox8._FloatNumber = false;
-            this.inputTextBox8._MaxLimit = 999D;
+            this.inputTextBox8._MaxLimit = 3000D;
             this.inputTextBox8._MinLimit = 0D;
             this.inputTextBox8._Multiplication = 1;
             this.inputTextBox8._NumberOnly = true;
@@ -580,10 +580,10 @@
             // 
             // inputTextBox7
             // 
-            this.inputTextBox7._Division = 1;
+            this.inputTextBox7._Division = 10;
             this.inputTextBox7._EqBase = null;
             this.inputTextBox7._FloatNumber = false;
-            this.inputTextBox7._MaxLimit = 999D;
+            this.inputTextBox7._MaxLimit = 3000D;
             this.inputTextBox7._MinLimit = 0D;
             this.inputTextBox7._Multiplication = 1;
             this.inputTextBox7._NumberOnly = true;
@@ -598,10 +598,10 @@
             // 
             // inputTextBox6
             // 
-            this.inputTextBox6._Division = 1;
+            this.inputTextBox6._Division = 10;
             this.inputTextBox6._EqBase = null;
             this.inputTextBox6._FloatNumber = false;
-            this.inputTextBox6._MaxLimit = 999D;
+            this.inputTextBox6._MaxLimit = 3000D;
             this.inputTextBox6._MinLimit = 0D;
             this.inputTextBox6._Multiplication = 1;
             this.inputTextBox6._NumberOnly = true;
@@ -805,13 +805,15 @@
             // 
             // displayTextBox11
             // 
-            this.displayTextBox11._Division = ((short)(1));
+            this.displayTextBox11._Division = 1D;
             this.displayTextBox11._DoubleWord = false;
             this.displayTextBox11._EqBase = null;
-            this.displayTextBox11._MaxLimit = 999D;
+            this.displayTextBox11._ITR = false;
+            this.displayTextBox11._MaxLimit = 36000D;
             this.displayTextBox11._MinLimit = 0D;
-            this.displayTextBox11._Multiplication = ((short)(1));
+            this.displayTextBox11._Multiplication = 60D;
             this.displayTextBox11._PlcDevice = "TP26_Rotating_Speed";
+            this.displayTextBox11._TTR = false;
             this.displayTextBox11.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox11.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox11.Location = new System.Drawing.Point(627, 459);
@@ -823,13 +825,15 @@
             // 
             // displayTextBox12
             // 
-            this.displayTextBox12._Division = ((short)(1));
+            this.displayTextBox12._Division = 1D;
             this.displayTextBox12._DoubleWord = false;
             this.displayTextBox12._EqBase = null;
-            this.displayTextBox12._MaxLimit = 999D;
+            this.displayTextBox12._ITR = false;
+            this.displayTextBox12._MaxLimit = 36000D;
             this.displayTextBox12._MinLimit = 0D;
-            this.displayTextBox12._Multiplication = ((short)(1));
+            this.displayTextBox12._Multiplication = 60D;
             this.displayTextBox12._PlcDevice = "TP25_Rotating_Speed";
+            this.displayTextBox12._TTR = false;
             this.displayTextBox12.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox12.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox12.Location = new System.Drawing.Point(627, 404);
@@ -841,13 +845,15 @@
             // 
             // displayTextBox13
             // 
-            this.displayTextBox13._Division = ((short)(1));
+            this.displayTextBox13._Division = 1D;
             this.displayTextBox13._DoubleWord = false;
             this.displayTextBox13._EqBase = null;
-            this.displayTextBox13._MaxLimit = 999D;
+            this.displayTextBox13._ITR = false;
+            this.displayTextBox13._MaxLimit = 36000D;
             this.displayTextBox13._MinLimit = 0D;
-            this.displayTextBox13._Multiplication = ((short)(1));
+            this.displayTextBox13._Multiplication = 60D;
             this.displayTextBox13._PlcDevice = "TP24_Rotating_Speed";
+            this.displayTextBox13._TTR = false;
             this.displayTextBox13.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox13.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox13.Location = new System.Drawing.Point(627, 349);
@@ -859,13 +865,15 @@
             // 
             // displayTextBox14
             // 
-            this.displayTextBox14._Division = ((short)(1));
+            this.displayTextBox14._Division = 1D;
             this.displayTextBox14._DoubleWord = false;
             this.displayTextBox14._EqBase = null;
-            this.displayTextBox14._MaxLimit = 999D;
+            this.displayTextBox14._ITR = false;
+            this.displayTextBox14._MaxLimit = 36000D;
             this.displayTextBox14._MinLimit = 0D;
-            this.displayTextBox14._Multiplication = ((short)(1));
+            this.displayTextBox14._Multiplication = 60D;
             this.displayTextBox14._PlcDevice = "TP20_Rotating_Speed";
+            this.displayTextBox14._TTR = false;
             this.displayTextBox14.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox14.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox14.Location = new System.Drawing.Point(627, 129);
@@ -877,13 +885,15 @@
             // 
             // displayTextBox15
             // 
-            this.displayTextBox15._Division = ((short)(1));
+            this.displayTextBox15._Division = 1D;
             this.displayTextBox15._DoubleWord = false;
             this.displayTextBox15._EqBase = null;
-            this.displayTextBox15._MaxLimit = 999D;
+            this.displayTextBox15._ITR = false;
+            this.displayTextBox15._MaxLimit = 36000D;
             this.displayTextBox15._MinLimit = 0D;
-            this.displayTextBox15._Multiplication = ((short)(1));
+            this.displayTextBox15._Multiplication = 60D;
             this.displayTextBox15._PlcDevice = "TP21_Rotating_Speed";
+            this.displayTextBox15._TTR = false;
             this.displayTextBox15.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox15.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox15.Location = new System.Drawing.Point(627, 184);
@@ -895,13 +905,15 @@
             // 
             // displayTextBox16
             // 
-            this.displayTextBox16._Division = ((short)(1));
+            this.displayTextBox16._Division = 1D;
             this.displayTextBox16._DoubleWord = false;
             this.displayTextBox16._EqBase = null;
-            this.displayTextBox16._MaxLimit = 999D;
+            this.displayTextBox16._ITR = false;
+            this.displayTextBox16._MaxLimit = 36000D;
             this.displayTextBox16._MinLimit = 0D;
-            this.displayTextBox16._Multiplication = ((short)(1));
+            this.displayTextBox16._Multiplication = 60D;
             this.displayTextBox16._PlcDevice = "TP22_Rotating_Speed";
+            this.displayTextBox16._TTR = false;
             this.displayTextBox16.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox16.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox16.Location = new System.Drawing.Point(627, 239);
@@ -913,13 +925,15 @@
             // 
             // displayTextBox17
             // 
-            this.displayTextBox17._Division = ((short)(1));
+            this.displayTextBox17._Division = 1D;
             this.displayTextBox17._DoubleWord = false;
             this.displayTextBox17._EqBase = null;
-            this.displayTextBox17._MaxLimit = 999D;
+            this.displayTextBox17._ITR = false;
+            this.displayTextBox17._MaxLimit = 36000D;
             this.displayTextBox17._MinLimit = 0D;
-            this.displayTextBox17._Multiplication = ((short)(1));
+            this.displayTextBox17._Multiplication = 60D;
             this.displayTextBox17._PlcDevice = "TP23_Rotating_Speed";
+            this.displayTextBox17._TTR = false;
             this.displayTextBox17.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox17.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox17.Location = new System.Drawing.Point(627, 294);
@@ -931,13 +945,15 @@
             // 
             // displayTextBox18
             // 
-            this.displayTextBox18._Division = ((short)(1));
+            this.displayTextBox18._Division = 1D;
             this.displayTextBox18._DoubleWord = false;
             this.displayTextBox18._EqBase = null;
-            this.displayTextBox18._MaxLimit = 999D;
+            this.displayTextBox18._ITR = false;
+            this.displayTextBox18._MaxLimit = 36000D;
             this.displayTextBox18._MinLimit = 0D;
-            this.displayTextBox18._Multiplication = ((short)(1));
+            this.displayTextBox18._Multiplication = 60D;
             this.displayTextBox18._PlcDevice = "TP19_Rotating_Speed";
+            this.displayTextBox18._TTR = false;
             this.displayTextBox18.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox18.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox18.Location = new System.Drawing.Point(627, 74);
@@ -949,13 +965,15 @@
             // 
             // displayTextBox1
             // 
-            this.displayTextBox1._Division = ((short)(1));
+            this.displayTextBox1._Division = 1D;
             this.displayTextBox1._DoubleWord = false;
             this.displayTextBox1._EqBase = null;
-            this.displayTextBox1._MaxLimit = 999D;
+            this.displayTextBox1._ITR = false;
+            this.displayTextBox1._MaxLimit = 36000D;
             this.displayTextBox1._MinLimit = 0D;
-            this.displayTextBox1._Multiplication = ((short)(1));
+            this.displayTextBox1._Multiplication = 60D;
             this.displayTextBox1._PlcDevice = "TP18_Rotating_Speed";
+            this.displayTextBox1._TTR = false;
             this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox1.Location = new System.Drawing.Point(364, 514);
@@ -967,13 +985,15 @@
             // 
             // displayTextBox2
             // 
-            this.displayTextBox2._Division = ((short)(1));
+            this.displayTextBox2._Division = 1D;
             this.displayTextBox2._DoubleWord = false;
             this.displayTextBox2._EqBase = null;
-            this.displayTextBox2._MaxLimit = 999D;
+            this.displayTextBox2._ITR = false;
+            this.displayTextBox2._MaxLimit = 36000D;
             this.displayTextBox2._MinLimit = 0D;
-            this.displayTextBox2._Multiplication = ((short)(1));
+            this.displayTextBox2._Multiplication = 60D;
             this.displayTextBox2._PlcDevice = "TP17_Rotating_Speed";
+            this.displayTextBox2._TTR = false;
             this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox2.Location = new System.Drawing.Point(364, 459);
@@ -985,13 +1005,15 @@
             // 
             // displayTextBox3
             // 
-            this.displayTextBox3._Division = ((short)(1));
+            this.displayTextBox3._Division = 1D;
             this.displayTextBox3._DoubleWord = false;
             this.displayTextBox3._EqBase = null;
-            this.displayTextBox3._MaxLimit = 999D;
+            this.displayTextBox3._ITR = false;
+            this.displayTextBox3._MaxLimit = 36000D;
             this.displayTextBox3._MinLimit = 0D;
-            this.displayTextBox3._Multiplication = ((short)(1));
+            this.displayTextBox3._Multiplication = 60D;
             this.displayTextBox3._PlcDevice = "TP16_Rotating_Speed";
+            this.displayTextBox3._TTR = false;
             this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox3.Location = new System.Drawing.Point(364, 404);
@@ -1003,13 +1025,15 @@
             // 
             // displayTextBox4
             // 
-            this.displayTextBox4._Division = ((short)(1));
+            this.displayTextBox4._Division = 1D;
             this.displayTextBox4._DoubleWord = false;
             this.displayTextBox4._EqBase = null;
-            this.displayTextBox4._MaxLimit = 999D;
+            this.displayTextBox4._ITR = false;
+            this.displayTextBox4._MaxLimit = 36000D;
             this.displayTextBox4._MinLimit = 0D;
-            this.displayTextBox4._Multiplication = ((short)(1));
+            this.displayTextBox4._Multiplication = 60D;
             this.displayTextBox4._PlcDevice = "TP15_Rotating_Speed";
+            this.displayTextBox4._TTR = false;
             this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox4.Location = new System.Drawing.Point(364, 349);
@@ -1021,13 +1045,15 @@
             // 
             // displayTextBox5
             // 
-            this.displayTextBox5._Division = ((short)(1));
+            this.displayTextBox5._Division = 1D;
             this.displayTextBox5._DoubleWord = false;
             this.displayTextBox5._EqBase = null;
-            this.displayTextBox5._MaxLimit = 999D;
+            this.displayTextBox5._ITR = false;
+            this.displayTextBox5._MaxLimit = 36000D;
             this.displayTextBox5._MinLimit = 0D;
-            this.displayTextBox5._Multiplication = ((short)(1));
+            this.displayTextBox5._Multiplication = 60D;
             this.displayTextBox5._PlcDevice = "TP11_Rotating_Speed";
+            this.displayTextBox5._TTR = false;
             this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox5.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox5.Location = new System.Drawing.Point(364, 129);
@@ -1039,13 +1065,15 @@
             // 
             // displayTextBox6
             // 
-            this.displayTextBox6._Division = ((short)(1));
+            this.displayTextBox6._Division = 1D;
             this.displayTextBox6._DoubleWord = false;
             this.displayTextBox6._EqBase = null;
-            this.displayTextBox6._MaxLimit = 999D;
+            this.displayTextBox6._ITR = false;
+            this.displayTextBox6._MaxLimit = 36000D;
             this.displayTextBox6._MinLimit = 0D;
-            this.displayTextBox6._Multiplication = ((short)(1));
+            this.displayTextBox6._Multiplication = 60D;
             this.displayTextBox6._PlcDevice = "TP12_Rotating_Speed";
+            this.displayTextBox6._TTR = false;
             this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox6.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox6.Location = new System.Drawing.Point(364, 184);
@@ -1057,13 +1085,15 @@
             // 
             // displayTextBox7
             // 
-            this.displayTextBox7._Division = ((short)(1));
+            this.displayTextBox7._Division = 1D;
             this.displayTextBox7._DoubleWord = false;
             this.displayTextBox7._EqBase = null;
-            this.displayTextBox7._MaxLimit = 999D;
+            this.displayTextBox7._ITR = false;
+            this.displayTextBox7._MaxLimit = 36000D;
             this.displayTextBox7._MinLimit = 0D;
-            this.displayTextBox7._Multiplication = ((short)(1));
+            this.displayTextBox7._Multiplication = 60D;
             this.displayTextBox7._PlcDevice = "TP13_Rotating_Speed";
+            this.displayTextBox7._TTR = false;
             this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox7.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox7.Location = new System.Drawing.Point(364, 239);
@@ -1075,13 +1105,15 @@
             // 
             // displayTextBox8
             // 
-            this.displayTextBox8._Division = ((short)(1));
+            this.displayTextBox8._Division = 1D;
             this.displayTextBox8._DoubleWord = false;
             this.displayTextBox8._EqBase = null;
-            this.displayTextBox8._MaxLimit = 999D;
+            this.displayTextBox8._ITR = false;
+            this.displayTextBox8._MaxLimit = 36000D;
             this.displayTextBox8._MinLimit = 0D;
-            this.displayTextBox8._Multiplication = ((short)(1));
+            this.displayTextBox8._Multiplication = 60D;
             this.displayTextBox8._PlcDevice = "TP14_Rotating_Speed";
+            this.displayTextBox8._TTR = false;
             this.displayTextBox8.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox8.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox8.Location = new System.Drawing.Point(364, 294);
@@ -1093,13 +1125,15 @@
             // 
             // displayTextBox9
             // 
-            this.displayTextBox9._Division = ((short)(1));
+            this.displayTextBox9._Division = 1D;
             this.displayTextBox9._DoubleWord = false;
             this.displayTextBox9._EqBase = null;
-            this.displayTextBox9._MaxLimit = 999D;
+            this.displayTextBox9._ITR = false;
+            this.displayTextBox9._MaxLimit = 36000D;
             this.displayTextBox9._MinLimit = 0D;
-            this.displayTextBox9._Multiplication = ((short)(1));
+            this.displayTextBox9._Multiplication = 60D;
             this.displayTextBox9._PlcDevice = "TP10_Rotating_Speed";
+            this.displayTextBox9._TTR = false;
             this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox9.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox9.Location = new System.Drawing.Point(364, 74);
@@ -1111,13 +1145,15 @@
             // 
             // displayTextBox19
             // 
-            this.displayTextBox19._Division = ((short)(1));
+            this.displayTextBox19._Division = 1D;
             this.displayTextBox19._DoubleWord = false;
             this.displayTextBox19._EqBase = null;
-            this.displayTextBox19._MaxLimit = 999D;
+            this.displayTextBox19._ITR = false;
+            this.displayTextBox19._MaxLimit = 36000D;
             this.displayTextBox19._MinLimit = 0D;
-            this.displayTextBox19._Multiplication = ((short)(1));
+            this.displayTextBox19._Multiplication = 60D;
             this.displayTextBox19._PlcDevice = "TP9_Rotating_Speed";
+            this.displayTextBox19._TTR = false;
             this.displayTextBox19.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox19.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox19.Location = new System.Drawing.Point(97, 514);
@@ -1129,13 +1165,15 @@
             // 
             // displayTextBox20
             // 
-            this.displayTextBox20._Division = ((short)(1));
+            this.displayTextBox20._Division = 1D;
             this.displayTextBox20._DoubleWord = false;
             this.displayTextBox20._EqBase = null;
-            this.displayTextBox20._MaxLimit = 999D;
+            this.displayTextBox20._ITR = false;
+            this.displayTextBox20._MaxLimit = 36000D;
             this.displayTextBox20._MinLimit = 0D;
-            this.displayTextBox20._Multiplication = ((short)(1));
+            this.displayTextBox20._Multiplication = 60D;
             this.displayTextBox20._PlcDevice = "TP8_Rotating_Speed";
+            this.displayTextBox20._TTR = false;
             this.displayTextBox20.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox20.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox20.Location = new System.Drawing.Point(97, 459);
@@ -1147,13 +1185,15 @@
             // 
             // displayTextBox21
             // 
-            this.displayTextBox21._Division = ((short)(1));
+            this.displayTextBox21._Division = 1D;
             this.displayTextBox21._DoubleWord = false;
             this.displayTextBox21._EqBase = null;
-            this.displayTextBox21._MaxLimit = 999D;
+            this.displayTextBox21._ITR = false;
+            this.displayTextBox21._MaxLimit = 36000D;
             this.displayTextBox21._MinLimit = 0D;
-            this.displayTextBox21._Multiplication = ((short)(1));
+            this.displayTextBox21._Multiplication = 60D;
             this.displayTextBox21._PlcDevice = "TP7_Rotating_Speed";
+            this.displayTextBox21._TTR = false;
             this.displayTextBox21.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox21.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox21.Location = new System.Drawing.Point(97, 404);
@@ -1165,13 +1205,15 @@
             // 
             // displayTextBox22
             // 
-            this.displayTextBox22._Division = ((short)(1));
+            this.displayTextBox22._Division = 1D;
             this.displayTextBox22._DoubleWord = false;
             this.displayTextBox22._EqBase = null;
-            this.displayTextBox22._MaxLimit = 999D;
+            this.displayTextBox22._ITR = false;
+            this.displayTextBox22._MaxLimit = 36000D;
             this.displayTextBox22._MinLimit = 0D;
-            this.displayTextBox22._Multiplication = ((short)(1));
+            this.displayTextBox22._Multiplication = 60D;
             this.displayTextBox22._PlcDevice = "TP6_Rotating_Speed";
+            this.displayTextBox22._TTR = false;
             this.displayTextBox22.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox22.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox22.Location = new System.Drawing.Point(97, 349);
@@ -1183,13 +1225,15 @@
             // 
             // displayTextBox23
             // 
-            this.displayTextBox23._Division = ((short)(1));
+            this.displayTextBox23._Division = 1D;
             this.displayTextBox23._DoubleWord = false;
             this.displayTextBox23._EqBase = null;
-            this.displayTextBox23._MaxLimit = 999D;
+            this.displayTextBox23._ITR = false;
+            this.displayTextBox23._MaxLimit = 36000D;
             this.displayTextBox23._MinLimit = 0D;
-            this.displayTextBox23._Multiplication = ((short)(1));
+            this.displayTextBox23._Multiplication = 60D;
             this.displayTextBox23._PlcDevice = "TP2_Rotating_Speed";
+            this.displayTextBox23._TTR = false;
             this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox23.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox23.Location = new System.Drawing.Point(97, 129);
@@ -1201,13 +1245,15 @@
             // 
             // displayTextBox24
             // 
-            this.displayTextBox24._Division = ((short)(1));
+            this.displayTextBox24._Division = 1D;
             this.displayTextBox24._DoubleWord = false;
             this.displayTextBox24._EqBase = null;
-            this.displayTextBox24._MaxLimit = 999D;
+            this.displayTextBox24._ITR = false;
+            this.displayTextBox24._MaxLimit = 36000D;
             this.displayTextBox24._MinLimit = 0D;
-            this.displayTextBox24._Multiplication = ((short)(1));
+            this.displayTextBox24._Multiplication = 60D;
             this.displayTextBox24._PlcDevice = "TP3_Rotating_Speed";
+            this.displayTextBox24._TTR = false;
             this.displayTextBox24.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox24.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox24.Location = new System.Drawing.Point(97, 184);
@@ -1219,13 +1265,15 @@
             // 
             // displayTextBox25
             // 
-            this.displayTextBox25._Division = ((short)(1));
+            this.displayTextBox25._Division = 1D;
             this.displayTextBox25._DoubleWord = false;
             this.displayTextBox25._EqBase = null;
-            this.displayTextBox25._MaxLimit = 999D;
+            this.displayTextBox25._ITR = false;
+            this.displayTextBox25._MaxLimit = 36000D;
             this.displayTextBox25._MinLimit = 0D;
-            this.displayTextBox25._Multiplication = ((short)(1));
+            this.displayTextBox25._Multiplication = 60D;
             this.displayTextBox25._PlcDevice = "TP4_Rotating_Speed";
+            this.displayTextBox25._TTR = false;
             this.displayTextBox25.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox25.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox25.Location = new System.Drawing.Point(97, 239);
@@ -1237,13 +1285,15 @@
             // 
             // displayTextBox26
             // 
-            this.displayTextBox26._Division = ((short)(1));
+            this.displayTextBox26._Division = 1D;
             this.displayTextBox26._DoubleWord = false;
             this.displayTextBox26._EqBase = null;
-            this.displayTextBox26._MaxLimit = 999D;
+            this.displayTextBox26._ITR = false;
+            this.displayTextBox26._MaxLimit = 36000D;
             this.displayTextBox26._MinLimit = 0D;
-            this.displayTextBox26._Multiplication = ((short)(1));
+            this.displayTextBox26._Multiplication = 60D;
             this.displayTextBox26._PlcDevice = "TP5_Rotating_Speed";
+            this.displayTextBox26._TTR = false;
             this.displayTextBox26.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox26.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox26.Location = new System.Drawing.Point(97, 294);
@@ -1255,13 +1305,15 @@
             // 
             // displayTextBox27
             // 
-            this.displayTextBox27._Division = ((short)(1));
+            this.displayTextBox27._Division = 1D;
             this.displayTextBox27._DoubleWord = false;
             this.displayTextBox27._EqBase = null;
-            this.displayTextBox27._MaxLimit = 999D;
+            this.displayTextBox27._ITR = false;
+            this.displayTextBox27._MaxLimit = 36000D;
             this.displayTextBox27._MinLimit = 0D;
-            this.displayTextBox27._Multiplication = ((short)(1));
+            this.displayTextBox27._Multiplication = 60D;
             this.displayTextBox27._PlcDevice = "TP1_Rotating_Speed";
+            this.displayTextBox27._TTR = false;
             this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox27.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox27.Location = new System.Drawing.Point(97, 74);
@@ -1276,9 +1328,9 @@
             this.inputTextBox21._Division = 1;
             this.inputTextBox21._EqBase = null;
             this.inputTextBox21._FloatNumber = false;
-            this.inputTextBox21._MaxLimit = 999D;
+            this.inputTextBox21._MaxLimit = 36000D;
             this.inputTextBox21._MinLimit = 0D;
-            this.inputTextBox21._Multiplication = 1;
+            this.inputTextBox21._Multiplication = 60;
             this.inputTextBox21._NumberOnly = true;
             this.inputTextBox21._PlcDevice = "SETP_Rotating_Speed_TP04";
             this.inputTextBox21.BackColor = System.Drawing.Color.White;
@@ -1294,9 +1346,9 @@
             this.inputTextBox33._Division = 1;
             this.inputTextBox33._EqBase = null;
             this.inputTextBox33._FloatNumber = false;
-            this.inputTextBox33._MaxLimit = 999D;
+            this.inputTextBox33._MaxLimit = 36000D;
             this.inputTextBox33._MinLimit = 0D;
-            this.inputTextBox33._Multiplication = 1;
+            this.inputTextBox33._Multiplication = 60;
             this.inputTextBox33._NumberOnly = true;
             this.inputTextBox33._PlcDevice = "SETP_Rotating_Speed_TP16";
             this.inputTextBox33.BackColor = System.Drawing.Color.White;
@@ -1356,9 +1408,9 @@
             this.inputTextBox25._Division = 1;
             this.inputTextBox25._EqBase = null;
             this.inputTextBox25._FloatNumber = false;
-            this.inputTextBox25._MaxLimit = 999D;
+            this.inputTextBox25._MaxLimit = 36000D;
             this.inputTextBox25._MinLimit = 0D;
-            this.inputTextBox25._Multiplication = 1;
+            this.inputTextBox25._Multiplication = 60;
             this.inputTextBox25._NumberOnly = true;
             this.inputTextBox25._PlcDevice = "SETP_Rotating_Speed_TP09";
             this.inputTextBox25.BackColor = System.Drawing.Color.White;
@@ -1374,9 +1426,9 @@
             this.inputTextBox28._Division = 1;
             this.inputTextBox28._EqBase = null;
             this.inputTextBox28._FloatNumber = false;
-            this.inputTextBox28._MaxLimit = 999D;
+            this.inputTextBox28._MaxLimit = 36000D;
             this.inputTextBox28._MinLimit = 0D;
-            this.inputTextBox28._Multiplication = 1;
+            this.inputTextBox28._Multiplication = 60;
             this.inputTextBox28._NumberOnly = true;
             this.inputTextBox28._PlcDevice = "SETP_Rotating_Speed_TP14";
             this.inputTextBox28.BackColor = System.Drawing.Color.White;
@@ -1392,9 +1444,9 @@
             this.inputTextBox18._Division = 1;
             this.inputTextBox18._EqBase = null;
             this.inputTextBox18._FloatNumber = false;
-            this.inputTextBox18._MaxLimit = 999D;
+            this.inputTextBox18._MaxLimit = 36000D;
             this.inputTextBox18._MinLimit = 0D;
-            this.inputTextBox18._Multiplication = 1;
+            this.inputTextBox18._Multiplication = 60;
             this.inputTextBox18._NumberOnly = true;
             this.inputTextBox18._PlcDevice = "SETP_Rotating_Speed_TP02";
             this.inputTextBox18.BackColor = System.Drawing.Color.White;
@@ -1432,9 +1484,9 @@
             this.inputTextBox17._Division = 1;
             this.inputTextBox17._EqBase = null;
             this.inputTextBox17._FloatNumber = false;
-            this.inputTextBox17._MaxLimit = 999D;
+            this.inputTextBox17._MaxLimit = 36000D;
             this.inputTextBox17._MinLimit = 0D;
-            this.inputTextBox17._Multiplication = 1;
+            this.inputTextBox17._Multiplication = 60;
             this.inputTextBox17._NumberOnly = true;
             this.inputTextBox17._PlcDevice = "SETP_Rotating_Speed_TP01";
             this.inputTextBox17.BackColor = System.Drawing.Color.White;
@@ -1450,9 +1502,9 @@
             this.inputTextBox32._Division = 1;
             this.inputTextBox32._EqBase = null;
             this.inputTextBox32._FloatNumber = false;
-            this.inputTextBox32._MaxLimit = 999D;
+            this.inputTextBox32._MaxLimit = 36000D;
             this.inputTextBox32._MinLimit = 0D;
-            this.inputTextBox32._Multiplication = 1;
+            this.inputTextBox32._Multiplication = 60;
             this.inputTextBox32._NumberOnly = true;
             this.inputTextBox32._PlcDevice = "SETP_Rotating_Speed_TP15";
             this.inputTextBox32.BackColor = System.Drawing.Color.White;
@@ -1468,9 +1520,9 @@
             this.inputTextBox43._Division = 1;
             this.inputTextBox43._EqBase = null;
             this.inputTextBox43._FloatNumber = false;
-            this.inputTextBox43._MaxLimit = 999D;
+            this.inputTextBox43._MaxLimit = 36000D;
             this.inputTextBox43._MinLimit = 0D;
-            this.inputTextBox43._Multiplication = 1;
+            this.inputTextBox43._Multiplication = 60;
             this.inputTextBox43._NumberOnly = true;
             this.inputTextBox43._PlcDevice = "SETP_Rotating_Speed_TP26";
             this.inputTextBox43.BackColor = System.Drawing.Color.White;
@@ -1486,9 +1538,9 @@
             this.inputTextBox42._Division = 1;
             this.inputTextBox42._EqBase = null;
             this.inputTextBox42._FloatNumber = false;
-            this.inputTextBox42._MaxLimit = 999D;
+            this.inputTextBox42._MaxLimit = 36000D;
             this.inputTextBox42._MinLimit = 0D;
-            this.inputTextBox42._Multiplication = 1;
+            this.inputTextBox42._Multiplication = 60;
             this.inputTextBox42._NumberOnly = true;
             this.inputTextBox42._PlcDevice = "SETP_Rotating_Speed_TP25";
             this.inputTextBox42.BackColor = System.Drawing.Color.White;
@@ -1504,9 +1556,9 @@
             this.inputTextBox31._Division = 1;
             this.inputTextBox31._EqBase = null;
             this.inputTextBox31._FloatNumber = false;
-            this.inputTextBox31._MaxLimit = 999D;
+            this.inputTextBox31._MaxLimit = 36000D;
             this.inputTextBox31._MinLimit = 0D;
-            this.inputTextBox31._Multiplication = 1;
+            this.inputTextBox31._Multiplication = 60;
             this.inputTextBox31._NumberOnly = true;
             this.inputTextBox31._PlcDevice = "SETP_Rotating_Speed_TP18";
             this.inputTextBox31.BackColor = System.Drawing.Color.White;
@@ -1566,9 +1618,9 @@
             this.inputTextBox19._Division = 1;
             this.inputTextBox19._EqBase = null;
             this.inputTextBox19._FloatNumber = false;
-            this.inputTextBox19._MaxLimit = 999D;
+            this.inputTextBox19._MaxLimit = 36000D;
             this.inputTextBox19._MinLimit = 0D;
-            this.inputTextBox19._Multiplication = 1;
+            this.inputTextBox19._Multiplication = 60;
             this.inputTextBox19._NumberOnly = true;
             this.inputTextBox19._PlcDevice = "SETP_Rotating_Speed_TP03";
             this.inputTextBox19.BackColor = System.Drawing.Color.White;
@@ -1584,9 +1636,9 @@
             this.inputTextBox41._Division = 1;
             this.inputTextBox41._EqBase = null;
             this.inputTextBox41._FloatNumber = false;
-            this.inputTextBox41._MaxLimit = 999D;
+            this.inputTextBox41._MaxLimit = 36000D;
             this.inputTextBox41._MinLimit = 0D;
-            this.inputTextBox41._Multiplication = 1;
+            this.inputTextBox41._Multiplication = 60;
             this.inputTextBox41._NumberOnly = true;
             this.inputTextBox41._PlcDevice = "SETP_Rotating_Speed_TP24";
             this.inputTextBox41.BackColor = System.Drawing.Color.White;
@@ -1602,9 +1654,9 @@
             this.inputTextBox26._Division = 1;
             this.inputTextBox26._EqBase = null;
             this.inputTextBox26._FloatNumber = false;
-            this.inputTextBox26._MaxLimit = 999D;
+            this.inputTextBox26._MaxLimit = 36000D;
             this.inputTextBox26._MinLimit = 0D;
-            this.inputTextBox26._Multiplication = 1;
+            this.inputTextBox26._Multiplication = 60;
             this.inputTextBox26._NumberOnly = true;
             this.inputTextBox26._PlcDevice = "SETP_Rotating_Speed_TP12";
             this.inputTextBox26.BackColor = System.Drawing.Color.White;
@@ -1620,9 +1672,9 @@
             this.inputTextBox24._Division = 1;
             this.inputTextBox24._EqBase = null;
             this.inputTextBox24._FloatNumber = false;
-            this.inputTextBox24._MaxLimit = 999D;
+            this.inputTextBox24._MaxLimit = 36000D;
             this.inputTextBox24._MinLimit = 0D;
-            this.inputTextBox24._Multiplication = 1;
+            this.inputTextBox24._Multiplication = 60;
             this.inputTextBox24._NumberOnly = true;
             this.inputTextBox24._PlcDevice = "SETP_Rotating_Speed_TP07";
             this.inputTextBox24.BackColor = System.Drawing.Color.White;
@@ -1638,9 +1690,9 @@
             this.inputTextBox20._Division = 1;
             this.inputTextBox20._EqBase = null;
             this.inputTextBox20._FloatNumber = false;
-            this.inputTextBox20._MaxLimit = 999D;
+            this.inputTextBox20._MaxLimit = 36000D;
             this.inputTextBox20._MinLimit = 0D;
-            this.inputTextBox20._Multiplication = 1;
+            this.inputTextBox20._Multiplication = 60;
             this.inputTextBox20._NumberOnly = true;
             this.inputTextBox20._PlcDevice = "SETP_Rotating_Speed_TP05";
             this.inputTextBox20.BackColor = System.Drawing.Color.White;
@@ -1744,9 +1796,9 @@
             this.inputTextBox35._Division = 1;
             this.inputTextBox35._EqBase = null;
             this.inputTextBox35._FloatNumber = false;
-            this.inputTextBox35._MaxLimit = 999D;
+            this.inputTextBox35._MaxLimit = 36000D;
             this.inputTextBox35._MinLimit = 0D;
-            this.inputTextBox35._Multiplication = 1;
+            this.inputTextBox35._Multiplication = 60;
             this.inputTextBox35._NumberOnly = true;
             this.inputTextBox35._PlcDevice = "SETP_Rotating_Speed_TP21";
             this.inputTextBox35.BackColor = System.Drawing.Color.White;
@@ -1762,9 +1814,9 @@
             this.inputTextBox34._Division = 1;
             this.inputTextBox34._EqBase = null;
             this.inputTextBox34._FloatNumber = false;
-            this.inputTextBox34._MaxLimit = 999D;
+            this.inputTextBox34._MaxLimit = 36000D;
             this.inputTextBox34._MinLimit = 0D;
-            this.inputTextBox34._Multiplication = 1;
+            this.inputTextBox34._Multiplication = 60;
             this.inputTextBox34._NumberOnly = true;
             this.inputTextBox34._PlcDevice = "SETP_Rotating_Speed_TP17";
             this.inputTextBox34.BackColor = System.Drawing.Color.White;
@@ -1802,9 +1854,9 @@
             this.inputTextBox22._Division = 1;
             this.inputTextBox22._EqBase = null;
             this.inputTextBox22._FloatNumber = false;
-            this.inputTextBox22._MaxLimit = 999D;
+            this.inputTextBox22._MaxLimit = 36000D;
             this.inputTextBox22._MinLimit = 0D;
-            this.inputTextBox22._Multiplication = 1;
+            this.inputTextBox22._Multiplication = 60;
             this.inputTextBox22._NumberOnly = true;
             this.inputTextBox22._PlcDevice = "SETP_Rotating_Speed_TP06";
             this.inputTextBox22.BackColor = System.Drawing.Color.White;
@@ -1908,9 +1960,9 @@
             this.inputTextBox30._Division = 1;
             this.inputTextBox30._EqBase = null;
             this.inputTextBox30._FloatNumber = false;
-            this.inputTextBox30._MaxLimit = 999D;
+            this.inputTextBox30._MaxLimit = 36000D;
             this.inputTextBox30._MinLimit = 0D;
-            this.inputTextBox30._Multiplication = 1;
+            this.inputTextBox30._Multiplication = 60;
             this.inputTextBox30._NumberOnly = true;
             this.inputTextBox30._PlcDevice = "SETP_Rotating_Speed_TP11";
             this.inputTextBox30.BackColor = System.Drawing.Color.White;
@@ -1948,9 +2000,9 @@
             this.inputTextBox39._Division = 1;
             this.inputTextBox39._EqBase = null;
             this.inputTextBox39._FloatNumber = false;
-            this.inputTextBox39._MaxLimit = 999D;
+            this.inputTextBox39._MaxLimit = 36000D;
             this.inputTextBox39._MinLimit = 0D;
-            this.inputTextBox39._Multiplication = 1;
+            this.inputTextBox39._Multiplication = 60;
             this.inputTextBox39._NumberOnly = true;
             this.inputTextBox39._PlcDevice = "SETP_Rotating_Speed_TP20";
             this.inputTextBox39.BackColor = System.Drawing.Color.White;
@@ -2120,9 +2172,9 @@
             this.inputTextBox37._Division = 1;
             this.inputTextBox37._EqBase = null;
             this.inputTextBox37._FloatNumber = false;
-            this.inputTextBox37._MaxLimit = 999D;
+            this.inputTextBox37._MaxLimit = 36000D;
             this.inputTextBox37._MinLimit = 0D;
-            this.inputTextBox37._Multiplication = 1;
+            this.inputTextBox37._Multiplication = 60;
             this.inputTextBox37._NumberOnly = true;
             this.inputTextBox37._PlcDevice = "SETP_Rotating_Speed_TP23";
             this.inputTextBox37.BackColor = System.Drawing.Color.White;
@@ -2160,9 +2212,9 @@
             this.inputTextBox27._Division = 1;
             this.inputTextBox27._EqBase = null;
             this.inputTextBox27._FloatNumber = false;
-            this.inputTextBox27._MaxLimit = 999D;
+            this.inputTextBox27._MaxLimit = 36000D;
             this.inputTextBox27._MinLimit = 0D;
-            this.inputTextBox27._Multiplication = 1;
+            this.inputTextBox27._Multiplication = 60;
             this.inputTextBox27._NumberOnly = true;
             this.inputTextBox27._PlcDevice = "SETP_Rotating_Speed_TP13";
             this.inputTextBox27.BackColor = System.Drawing.Color.White;
@@ -2222,9 +2274,9 @@
             this.inputTextBox23._Division = 1;
             this.inputTextBox23._EqBase = null;
             this.inputTextBox23._FloatNumber = false;
-            this.inputTextBox23._MaxLimit = 999D;
+            this.inputTextBox23._MaxLimit = 36000D;
             this.inputTextBox23._MinLimit = 0D;
-            this.inputTextBox23._Multiplication = 1;
+            this.inputTextBox23._Multiplication = 60;
             this.inputTextBox23._NumberOnly = true;
             this.inputTextBox23._PlcDevice = "SETP_Rotating_Speed_TP08";
             this.inputTextBox23.BackColor = System.Drawing.Color.White;
@@ -2262,9 +2314,9 @@
             this.inputTextBox36._Division = 1;
             this.inputTextBox36._EqBase = null;
             this.inputTextBox36._FloatNumber = false;
-            this.inputTextBox36._MaxLimit = 999D;
+            this.inputTextBox36._MaxLimit = 36000D;
             this.inputTextBox36._MinLimit = 0D;
-            this.inputTextBox36._Multiplication = 1;
+            this.inputTextBox36._Multiplication = 60;
             this.inputTextBox36._NumberOnly = true;
             this.inputTextBox36._PlcDevice = "SETP_Rotating_Speed_TP22";
             this.inputTextBox36.BackColor = System.Drawing.Color.White;
@@ -2324,9 +2376,9 @@
             this.inputTextBox29._Division = 1;
             this.inputTextBox29._EqBase = null;
             this.inputTextBox29._FloatNumber = false;
-            this.inputTextBox29._MaxLimit = 999D;
+            this.inputTextBox29._MaxLimit = 36000D;
             this.inputTextBox29._MinLimit = 0D;
-            this.inputTextBox29._Multiplication = 1;
+            this.inputTextBox29._Multiplication = 60;
             this.inputTextBox29._NumberOnly = true;
             this.inputTextBox29._PlcDevice = "SETP_Rotating_Speed_TP10";
             this.inputTextBox29.BackColor = System.Drawing.Color.White;
@@ -2386,9 +2438,9 @@
             this.inputTextBox38._Division = 1;
             this.inputTextBox38._EqBase = null;
             this.inputTextBox38._FloatNumber = false;
-            this.inputTextBox38._MaxLimit = 999D;
+            this.inputTextBox38._MaxLimit = 36000D;
             this.inputTextBox38._MinLimit = 0D;
-            this.inputTextBox38._Multiplication = 1;
+            this.inputTextBox38._Multiplication = 60;
             this.inputTextBox38._NumberOnly = true;
             this.inputTextBox38._PlcDevice = "SETP_Rotating_Speed_TP19";
             this.inputTextBox38.BackColor = System.Drawing.Color.White;
@@ -2661,7 +2713,7 @@
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.48837F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
-            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
             this.TableLayoutPanel1.Controls.Add(this.Label86, 4, 7);
             this.TableLayoutPanel1.Controls.Add(this.Label87, 3, 7);
@@ -2721,7 +2773,7 @@
             // 
             this.Label86.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label86.AutoSize = true;
-            this.Label86.Location = new System.Drawing.Point(459, 229);
+            this.Label86.Location = new System.Drawing.Point(456, 229);
             this.Label86.Name = "Label86";
             this.Label86.Size = new System.Drawing.Size(115, 17);
             this.Label86.TabIndex = 401;
@@ -2731,7 +2783,7 @@
             // 
             this.Label87.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label87.AutoSize = true;
-            this.Label87.Location = new System.Drawing.Point(302, 229);
+            this.Label87.Location = new System.Drawing.Point(296, 229);
             this.Label87.Name = "Label87";
             this.Label87.Size = new System.Drawing.Size(115, 17);
             this.Label87.TabIndex = 402;
@@ -2741,7 +2793,7 @@
             // 
             this.Label88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label88.AutoSize = true;
-            this.Label88.Location = new System.Drawing.Point(166, 229);
+            this.Label88.Location = new System.Drawing.Point(160, 229);
             this.Label88.Name = "Label88";
             this.Label88.Size = new System.Drawing.Size(115, 17);
             this.Label88.TabIndex = 403;
@@ -2751,7 +2803,7 @@
             // 
             this.Label85.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label85.AutoSize = true;
-            this.Label85.Location = new System.Drawing.Point(101, 229);
+            this.Label85.Location = new System.Drawing.Point(96, 229);
             this.Label85.Name = "Label85";
             this.Label85.Size = new System.Drawing.Size(35, 17);
             this.Label85.TabIndex = 393;
@@ -2761,7 +2813,7 @@
             // 
             this.Label84.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label84.AutoSize = true;
-            this.Label84.Location = new System.Drawing.Point(30, 229);
+            this.Label84.Location = new System.Drawing.Point(29, 229);
             this.Label84.Name = "Label84";
             this.Label84.Size = new System.Drawing.Size(16, 17);
             this.Label84.TabIndex = 384;
@@ -2771,7 +2823,7 @@
             // 
             this.Label78.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label78.AutoSize = true;
-            this.Label78.Location = new System.Drawing.Point(459, 200);
+            this.Label78.Location = new System.Drawing.Point(456, 200);
             this.Label78.Name = "Label78";
             this.Label78.Size = new System.Drawing.Size(115, 17);
             this.Label78.TabIndex = 400;
@@ -2781,7 +2833,7 @@
             // 
             this.Label79.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label79.AutoSize = true;
-            this.Label79.Location = new System.Drawing.Point(459, 168);
+            this.Label79.Location = new System.Drawing.Point(456, 168);
             this.Label79.Name = "Label79";
             this.Label79.Size = new System.Drawing.Size(115, 17);
             this.Label79.TabIndex = 401;
@@ -2791,7 +2843,7 @@
             // 
             this.Label60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label60.AutoSize = true;
-            this.Label60.Location = new System.Drawing.Point(302, 200);
+            this.Label60.Location = new System.Drawing.Point(296, 200);
             this.Label60.Name = "Label60";
             this.Label60.Size = new System.Drawing.Size(115, 17);
             this.Label60.TabIndex = 383;
@@ -2801,7 +2853,7 @@
             // 
             this.Label80.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label80.AutoSize = true;
-            this.Label80.Location = new System.Drawing.Point(459, 136);
+            this.Label80.Location = new System.Drawing.Point(456, 136);
             this.Label80.Name = "Label80";
             this.Label80.Size = new System.Drawing.Size(115, 17);
             this.Label80.TabIndex = 402;
@@ -2811,7 +2863,7 @@
             // 
             this.Label61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label61.AutoSize = true;
-            this.Label61.Location = new System.Drawing.Point(302, 168);
+            this.Label61.Location = new System.Drawing.Point(296, 168);
             this.Label61.Name = "Label61";
             this.Label61.Size = new System.Drawing.Size(115, 17);
             this.Label61.TabIndex = 384;
@@ -2821,7 +2873,7 @@
             // 
             this.Label81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label81.AutoSize = true;
-            this.Label81.Location = new System.Drawing.Point(459, 104);
+            this.Label81.Location = new System.Drawing.Point(456, 104);
             this.Label81.Name = "Label81";
             this.Label81.Size = new System.Drawing.Size(115, 17);
             this.Label81.TabIndex = 403;
@@ -2831,7 +2883,7 @@
             // 
             this.Label62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label62.AutoSize = true;
-            this.Label62.Location = new System.Drawing.Point(302, 136);
+            this.Label62.Location = new System.Drawing.Point(296, 136);
             this.Label62.Name = "Label62";
             this.Label62.Size = new System.Drawing.Size(115, 17);
             this.Label62.TabIndex = 385;
@@ -2841,7 +2893,7 @@
             // 
             this.Label82.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label82.AutoSize = true;
-            this.Label82.Location = new System.Drawing.Point(459, 72);
+            this.Label82.Location = new System.Drawing.Point(456, 72);
             this.Label82.Name = "Label82";
             this.Label82.Size = new System.Drawing.Size(115, 17);
             this.Label82.TabIndex = 404;
@@ -2851,7 +2903,7 @@
             // 
             this.Label63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label63.AutoSize = true;
-            this.Label63.Location = new System.Drawing.Point(302, 104);
+            this.Label63.Location = new System.Drawing.Point(296, 104);
             this.Label63.Name = "Label63";
             this.Label63.Size = new System.Drawing.Size(115, 17);
             this.Label63.TabIndex = 386;
@@ -2861,7 +2913,7 @@
             // 
             this.Label83.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label83.AutoSize = true;
-            this.Label83.Location = new System.Drawing.Point(459, 40);
+            this.Label83.Location = new System.Drawing.Point(456, 40);
             this.Label83.Name = "Label83";
             this.Label83.Size = new System.Drawing.Size(115, 17);
             this.Label83.TabIndex = 405;
@@ -2871,7 +2923,7 @@
             // 
             this.Label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label64.AutoSize = true;
-            this.Label64.Location = new System.Drawing.Point(302, 72);
+            this.Label64.Location = new System.Drawing.Point(296, 72);
             this.Label64.Name = "Label64";
             this.Label64.Size = new System.Drawing.Size(115, 17);
             this.Label64.TabIndex = 387;
@@ -2881,7 +2933,7 @@
             // 
             this.Label65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label65.AutoSize = true;
-            this.Label65.Location = new System.Drawing.Point(166, 200);
+            this.Label65.Location = new System.Drawing.Point(160, 200);
             this.Label65.Name = "Label65";
             this.Label65.Size = new System.Drawing.Size(115, 17);
             this.Label65.TabIndex = 388;
@@ -2891,7 +2943,7 @@
             // 
             this.Label66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label66.AutoSize = true;
-            this.Label66.Location = new System.Drawing.Point(166, 168);
+            this.Label66.Location = new System.Drawing.Point(160, 168);
             this.Label66.Name = "Label66";
             this.Label66.Size = new System.Drawing.Size(115, 17);
             this.Label66.TabIndex = 389;
@@ -2901,7 +2953,7 @@
             // 
             this.Label67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label67.AutoSize = true;
-            this.Label67.Location = new System.Drawing.Point(166, 136);
+            this.Label67.Location = new System.Drawing.Point(160, 136);
             this.Label67.Name = "Label67";
             this.Label67.Size = new System.Drawing.Size(115, 17);
             this.Label67.TabIndex = 390;
@@ -2911,7 +2963,7 @@
             // 
             this.Label68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label68.AutoSize = true;
-            this.Label68.Location = new System.Drawing.Point(166, 104);
+            this.Label68.Location = new System.Drawing.Point(160, 104);
             this.Label68.Name = "Label68";
             this.Label68.Size = new System.Drawing.Size(115, 17);
             this.Label68.TabIndex = 391;
@@ -2921,7 +2973,7 @@
             // 
             this.Label69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label69.AutoSize = true;
-            this.Label69.Location = new System.Drawing.Point(101, 200);
+            this.Label69.Location = new System.Drawing.Point(96, 200);
             this.Label69.Name = "Label69";
             this.Label69.Size = new System.Drawing.Size(35, 17);
             this.Label69.TabIndex = 392;
@@ -2931,7 +2983,7 @@
             // 
             this.Label70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label70.AutoSize = true;
-            this.Label70.Location = new System.Drawing.Point(166, 72);
+            this.Label70.Location = new System.Drawing.Point(160, 72);
             this.Label70.Name = "Label70";
             this.Label70.Size = new System.Drawing.Size(115, 17);
             this.Label70.TabIndex = 393;
@@ -2941,7 +2993,7 @@
             // 
             this.Label71.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label71.AutoSize = true;
-            this.Label71.Location = new System.Drawing.Point(101, 168);
+            this.Label71.Location = new System.Drawing.Point(96, 168);
             this.Label71.Name = "Label71";
             this.Label71.Size = new System.Drawing.Size(35, 17);
             this.Label71.TabIndex = 394;
@@ -2951,7 +3003,7 @@
             // 
             this.Label72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label72.AutoSize = true;
-            this.Label72.Location = new System.Drawing.Point(101, 136);
+            this.Label72.Location = new System.Drawing.Point(96, 136);
             this.Label72.Name = "Label72";
             this.Label72.Size = new System.Drawing.Size(35, 17);
             this.Label72.TabIndex = 395;
@@ -2961,7 +3013,7 @@
             // 
             this.Label73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label73.AutoSize = true;
-            this.Label73.Location = new System.Drawing.Point(101, 104);
+            this.Label73.Location = new System.Drawing.Point(96, 104);
             this.Label73.Name = "Label73";
             this.Label73.Size = new System.Drawing.Size(35, 17);
             this.Label73.TabIndex = 396;
@@ -2971,7 +3023,7 @@
             // 
             this.Label74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label74.AutoSize = true;
-            this.Label74.Location = new System.Drawing.Point(101, 72);
+            this.Label74.Location = new System.Drawing.Point(96, 72);
             this.Label74.Name = "Label74";
             this.Label74.Size = new System.Drawing.Size(35, 17);
             this.Label74.TabIndex = 397;
@@ -2981,7 +3033,7 @@
             // 
             this.Label75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label75.AutoSize = true;
-            this.Label75.Location = new System.Drawing.Point(101, 40);
+            this.Label75.Location = new System.Drawing.Point(96, 40);
             this.Label75.Name = "Label75";
             this.Label75.Size = new System.Drawing.Size(35, 17);
             this.Label75.TabIndex = 398;
@@ -2991,7 +3043,7 @@
             // 
             this.Label76.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label76.AutoSize = true;
-            this.Label76.Location = new System.Drawing.Point(302, 40);
+            this.Label76.Location = new System.Drawing.Point(296, 40);
             this.Label76.Name = "Label76";
             this.Label76.Size = new System.Drawing.Size(115, 17);
             this.Label76.TabIndex = 399;
@@ -3001,7 +3053,7 @@
             // 
             this.Label77.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label77.AutoSize = true;
-            this.Label77.Location = new System.Drawing.Point(170, 40);
+            this.Label77.Location = new System.Drawing.Point(164, 40);
             this.Label77.Name = "Label77";
             this.Label77.Size = new System.Drawing.Size(107, 17);
             this.Label77.TabIndex = 400;
@@ -3011,7 +3063,7 @@
             // 
             this.Label59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label59.AutoSize = true;
-            this.Label59.Location = new System.Drawing.Point(30, 200);
+            this.Label59.Location = new System.Drawing.Point(29, 200);
             this.Label59.Name = "Label59";
             this.Label59.Size = new System.Drawing.Size(16, 17);
             this.Label59.TabIndex = 383;
@@ -3021,7 +3073,7 @@
             // 
             this.Label58.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label58.AutoSize = true;
-            this.Label58.Location = new System.Drawing.Point(30, 168);
+            this.Label58.Location = new System.Drawing.Point(29, 168);
             this.Label58.Name = "Label58";
             this.Label58.Size = new System.Drawing.Size(16, 17);
             this.Label58.TabIndex = 383;
@@ -3031,7 +3083,7 @@
             // 
             this.Label57.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label57.AutoSize = true;
-            this.Label57.Location = new System.Drawing.Point(30, 136);
+            this.Label57.Location = new System.Drawing.Point(29, 136);
             this.Label57.Name = "Label57";
             this.Label57.Size = new System.Drawing.Size(16, 17);
             this.Label57.TabIndex = 383;
@@ -3041,7 +3093,7 @@
             // 
             this.Label56.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label56.AutoSize = true;
-            this.Label56.Location = new System.Drawing.Point(30, 104);
+            this.Label56.Location = new System.Drawing.Point(29, 104);
             this.Label56.Name = "Label56";
             this.Label56.Size = new System.Drawing.Size(16, 17);
             this.Label56.TabIndex = 383;
@@ -3051,7 +3103,7 @@
             // 
             this.Label55.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label55.AutoSize = true;
-            this.Label55.Location = new System.Drawing.Point(30, 72);
+            this.Label55.Location = new System.Drawing.Point(29, 72);
             this.Label55.Name = "Label55";
             this.Label55.Size = new System.Drawing.Size(16, 17);
             this.Label55.TabIndex = 383;
@@ -3061,7 +3113,7 @@
             // 
             this.Label54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label54.AutoSize = true;
-            this.Label54.Location = new System.Drawing.Point(30, 40);
+            this.Label54.Location = new System.Drawing.Point(29, 40);
             this.Label54.Name = "Label54";
             this.Label54.Size = new System.Drawing.Size(16, 17);
             this.Label54.TabIndex = 383;
@@ -3072,7 +3124,7 @@
             this.Label53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label53.AutoSize = true;
             this.Label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label53.Location = new System.Drawing.Point(466, 8);
+            this.Label53.Location = new System.Drawing.Point(463, 8);
             this.Label53.Name = "Label53";
             this.Label53.Size = new System.Drawing.Size(101, 17);
             this.Label53.TabIndex = 385;
@@ -3083,7 +3135,7 @@
             this.Label52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label52.AutoSize = true;
             this.Label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label52.Location = new System.Drawing.Point(299, 8);
+            this.Label52.Location = new System.Drawing.Point(293, 8);
             this.Label52.Name = "Label52";
             this.Label52.Size = new System.Drawing.Size(122, 17);
             this.Label52.TabIndex = 385;
@@ -3094,7 +3146,7 @@
             this.Label51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label51.AutoSize = true;
             this.Label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label51.Location = new System.Drawing.Point(173, 8);
+            this.Label51.Location = new System.Drawing.Point(167, 8);
             this.Label51.Name = "Label51";
             this.Label51.Size = new System.Drawing.Size(101, 17);
             this.Label51.TabIndex = 384;
@@ -3105,7 +3157,7 @@
             this.Label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label50.AutoSize = true;
             this.Label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label50.Location = new System.Drawing.Point(99, 8);
+            this.Label50.Location = new System.Drawing.Point(94, 8);
             this.Label50.Name = "Label50";
             this.Label50.Size = new System.Drawing.Size(39, 17);
             this.Label50.TabIndex = 383;
@@ -3116,7 +3168,7 @@
             this.Label49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label49.AutoSize = true;
             this.Label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Label49.Location = new System.Drawing.Point(20, 8);
+            this.Label49.Location = new System.Drawing.Point(19, 8);
             this.Label49.Name = "Label49";
             this.Label49.Size = new System.Drawing.Size(36, 17);
             this.Label49.TabIndex = 0;
@@ -3181,10 +3233,10 @@
             // 
             // inputTextBox65
             // 
-            this.inputTextBox65._Division = 1;
+            this.inputTextBox65._Division = 10;
             this.inputTextBox65._EqBase = null;
             this.inputTextBox65._FloatNumber = false;
-            this.inputTextBox65._MaxLimit = 999D;
+            this.inputTextBox65._MaxLimit = 3000D;
             this.inputTextBox65._MinLimit = 0D;
             this.inputTextBox65._Multiplication = 1;
             this.inputTextBox65._NumberOnly = true;
@@ -3199,10 +3251,10 @@
             // 
             // inputTextBox64
             // 
-            this.inputTextBox64._Division = 1;
+            this.inputTextBox64._Division = 10;
             this.inputTextBox64._EqBase = null;
             this.inputTextBox64._FloatNumber = false;
-            this.inputTextBox64._MaxLimit = 999D;
+            this.inputTextBox64._MaxLimit = 3000D;
             this.inputTextBox64._MinLimit = 0D;
             this.inputTextBox64._Multiplication = 1;
             this.inputTextBox64._NumberOnly = true;
@@ -3217,10 +3269,10 @@
             // 
             // inputTextBox63
             // 
-            this.inputTextBox63._Division = 1;
+            this.inputTextBox63._Division = 10;
             this.inputTextBox63._EqBase = null;
             this.inputTextBox63._FloatNumber = false;
-            this.inputTextBox63._MaxLimit = 999D;
+            this.inputTextBox63._MaxLimit = 3000D;
             this.inputTextBox63._MinLimit = 0D;
             this.inputTextBox63._Multiplication = 1;
             this.inputTextBox63._NumberOnly = true;
@@ -3235,10 +3287,10 @@
             // 
             // inputTextBox62
             // 
-            this.inputTextBox62._Division = 1;
+            this.inputTextBox62._Division = 10;
             this.inputTextBox62._EqBase = null;
             this.inputTextBox62._FloatNumber = false;
-            this.inputTextBox62._MaxLimit = 999D;
+            this.inputTextBox62._MaxLimit = 3000D;
             this.inputTextBox62._MinLimit = 0D;
             this.inputTextBox62._Multiplication = 1;
             this.inputTextBox62._NumberOnly = true;
@@ -3314,7 +3366,7 @@
             this.inputTextBox59._Division = 1;
             this.inputTextBox59._EqBase = null;
             this.inputTextBox59._FloatNumber = false;
-            this.inputTextBox59._MaxLimit = 999D;
+            this.inputTextBox59._MaxLimit = 10D;
             this.inputTextBox59._MinLimit = 0D;
             this.inputTextBox59._Multiplication = 1;
             this.inputTextBox59._NumberOnly = true;
@@ -3329,13 +3381,15 @@
             // 
             // displayTextBox50
             // 
-            this.displayTextBox50._Division = ((short)(1));
+            this.displayTextBox50._Division = 1D;
             this.displayTextBox50._DoubleWord = false;
             this.displayTextBox50._EqBase = null;
+            this.displayTextBox50._ITR = false;
             this.displayTextBox50._MaxLimit = 999D;
             this.displayTextBox50._MinLimit = 0D;
-            this.displayTextBox50._Multiplication = ((short)(1));
+            this.displayTextBox50._Multiplication = 1D;
             this.displayTextBox50._PlcDevice = "QD75_Axis02_Speed";
+            this.displayTextBox50._TTR = false;
             this.displayTextBox50.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox50.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox50.Location = new System.Drawing.Point(163, 50);
@@ -3643,13 +3697,15 @@
             // 
             // displayTextBox49
             // 
-            this.displayTextBox49._Division = ((short)(1));
+            this.displayTextBox49._Division = 10D;
             this.displayTextBox49._DoubleWord = false;
             this.displayTextBox49._EqBase = null;
+            this.displayTextBox49._ITR = false;
             this.displayTextBox49._MaxLimit = 999D;
             this.displayTextBox49._MinLimit = 0D;
-            this.displayTextBox49._Multiplication = ((short)(1));
+            this.displayTextBox49._Multiplication = 1D;
             this.displayTextBox49._PlcDevice = "Heater1_P_PV";
+            this.displayTextBox49._TTR = false;
             this.displayTextBox49.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox49.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox49.Location = new System.Drawing.Point(617, 33);
@@ -3683,13 +3739,15 @@
             // 
             // displayTextBox48
             // 
-            this.displayTextBox48._Division = ((short)(1));
+            this.displayTextBox48._Division = 10D;
             this.displayTextBox48._DoubleWord = false;
             this.displayTextBox48._EqBase = null;
+            this.displayTextBox48._ITR = false;
             this.displayTextBox48._MaxLimit = 999D;
             this.displayTextBox48._MinLimit = 0D;
-            this.displayTextBox48._Multiplication = ((short)(1));
+            this.displayTextBox48._Multiplication = 1D;
             this.displayTextBox48._PlcDevice = "Heater1_P_PV";
+            this.displayTextBox48._TTR = false;
             this.displayTextBox48.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox48.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox48.Location = new System.Drawing.Point(354, 34);
@@ -3723,13 +3781,15 @@
             // 
             // displayTextBox47
             // 
-            this.displayTextBox47._Division = ((short)(1));
+            this.displayTextBox47._Division = 10D;
             this.displayTextBox47._DoubleWord = false;
             this.displayTextBox47._EqBase = null;
+            this.displayTextBox47._ITR = false;
             this.displayTextBox47._MaxLimit = 999D;
             this.displayTextBox47._MinLimit = 0D;
-            this.displayTextBox47._Multiplication = ((short)(1));
+            this.displayTextBox47._Multiplication = 1D;
             this.displayTextBox47._PlcDevice = "Heater1_P_PV";
+            this.displayTextBox47._TTR = false;
             this.displayTextBox47.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox47.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox47.Location = new System.Drawing.Point(103, 35);
@@ -3839,13 +3899,15 @@
             // 
             // displayTextBox33
             // 
-            this.displayTextBox33._Division = ((short)(1));
+            this.displayTextBox33._Division = 10D;
             this.displayTextBox33._DoubleWord = false;
             this.displayTextBox33._EqBase = null;
+            this.displayTextBox33._ITR = false;
             this.displayTextBox33._MaxLimit = 999D;
             this.displayTextBox33._MinLimit = 0D;
-            this.displayTextBox33._Multiplication = ((short)(1));
+            this.displayTextBox33._Multiplication = 1D;
             this.displayTextBox33._PlcDevice = "Heater_4_MV";
+            this.displayTextBox33._TTR = false;
             this.displayTextBox33.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox33.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox33.Location = new System.Drawing.Point(508, 95);
@@ -3857,13 +3919,15 @@
             // 
             // displayTextBox34
             // 
-            this.displayTextBox34._Division = ((short)(1));
+            this.displayTextBox34._Division = 1D;
             this.displayTextBox34._DoubleWord = false;
             this.displayTextBox34._EqBase = null;
+            this.displayTextBox34._ITR = false;
             this.displayTextBox34._MaxLimit = 999D;
             this.displayTextBox34._MinLimit = 0D;
-            this.displayTextBox34._Multiplication = ((short)(1));
+            this.displayTextBox34._Multiplication = 1D;
             this.displayTextBox34._PlcDevice = "Heater4_PV";
+            this.displayTextBox34._TTR = false;
             this.displayTextBox34.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox34.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox34.Location = new System.Drawing.Point(508, 25);
@@ -3877,8 +3941,8 @@
             // 
             this.inputTextBox46._Division = 1;
             this.inputTextBox46._EqBase = null;
-            this.inputTextBox46._FloatNumber = false;
-            this.inputTextBox46._MaxLimit = 999D;
+            this.inputTextBox46._FloatNumber = true;
+            this.inputTextBox46._MaxLimit = 180D;
             this.inputTextBox46._MinLimit = 0D;
             this.inputTextBox46._Multiplication = 1;
             this.inputTextBox46._NumberOnly = true;
@@ -3893,13 +3957,15 @@
             // 
             // displayTextBox31
             // 
-            this.displayTextBox31._Division = ((short)(1));
+            this.displayTextBox31._Division = 10D;
             this.displayTextBox31._DoubleWord = false;
             this.displayTextBox31._EqBase = null;
+            this.displayTextBox31._ITR = false;
             this.displayTextBox31._MaxLimit = 999D;
             this.displayTextBox31._MinLimit = 0D;
-            this.displayTextBox31._Multiplication = ((short)(1));
+            this.displayTextBox31._Multiplication = 1D;
             this.displayTextBox31._PlcDevice = "Heater_3_MV";
+            this.displayTextBox31._TTR = false;
             this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox31.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox31.Location = new System.Drawing.Point(411, 95);
@@ -3911,13 +3977,15 @@
             // 
             // displayTextBox32
             // 
-            this.displayTextBox32._Division = ((short)(1));
+            this.displayTextBox32._Division = 1D;
             this.displayTextBox32._DoubleWord = false;
             this.displayTextBox32._EqBase = null;
+            this.displayTextBox32._ITR = false;
             this.displayTextBox32._MaxLimit = 999D;
             this.displayTextBox32._MinLimit = 0D;
-            this.displayTextBox32._Multiplication = ((short)(1));
+            this.displayTextBox32._Multiplication = 1D;
             this.displayTextBox32._PlcDevice = "Heater3_PV";
+            this.displayTextBox32._TTR = false;
             this.displayTextBox32.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox32.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox32.Location = new System.Drawing.Point(411, 25);
@@ -3931,8 +3999,8 @@
             // 
             this.inputTextBox45._Division = 1;
             this.inputTextBox45._EqBase = null;
-            this.inputTextBox45._FloatNumber = false;
-            this.inputTextBox45._MaxLimit = 999D;
+            this.inputTextBox45._FloatNumber = true;
+            this.inputTextBox45._MaxLimit = 180D;
             this.inputTextBox45._MinLimit = 0D;
             this.inputTextBox45._Multiplication = 1;
             this.inputTextBox45._NumberOnly = true;
@@ -3947,13 +4015,15 @@
             // 
             // displayTextBox29
             // 
-            this.displayTextBox29._Division = ((short)(1));
+            this.displayTextBox29._Division = 10D;
             this.displayTextBox29._DoubleWord = false;
             this.displayTextBox29._EqBase = null;
+            this.displayTextBox29._ITR = false;
             this.displayTextBox29._MaxLimit = 999D;
             this.displayTextBox29._MinLimit = 0D;
-            this.displayTextBox29._Multiplication = ((short)(1));
+            this.displayTextBox29._Multiplication = 1D;
             this.displayTextBox29._PlcDevice = "Heater_2_MV";
+            this.displayTextBox29._TTR = false;
             this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox29.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox29.Location = new System.Drawing.Point(308, 96);
@@ -3965,13 +4035,15 @@
             // 
             // displayTextBox30
             // 
-            this.displayTextBox30._Division = ((short)(1));
+            this.displayTextBox30._Division = 1D;
             this.displayTextBox30._DoubleWord = false;
             this.displayTextBox30._EqBase = null;
+            this.displayTextBox30._ITR = false;
             this.displayTextBox30._MaxLimit = 999D;
             this.displayTextBox30._MinLimit = 0D;
-            this.displayTextBox30._Multiplication = ((short)(1));
+            this.displayTextBox30._Multiplication = 1D;
             this.displayTextBox30._PlcDevice = "Heater2_PV";
+            this.displayTextBox30._TTR = false;
             this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox30.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox30.Location = new System.Drawing.Point(308, 26);
@@ -3985,8 +4057,8 @@
             // 
             this.inputTextBox44._Division = 1;
             this.inputTextBox44._EqBase = null;
-            this.inputTextBox44._FloatNumber = false;
-            this.inputTextBox44._MaxLimit = 999D;
+            this.inputTextBox44._FloatNumber = true;
+            this.inputTextBox44._MaxLimit = 180D;
             this.inputTextBox44._MinLimit = 0D;
             this.inputTextBox44._Multiplication = 1;
             this.inputTextBox44._NumberOnly = true;
@@ -4001,13 +4073,15 @@
             // 
             // displayTextBox28
             // 
-            this.displayTextBox28._Division = ((short)(1));
+            this.displayTextBox28._Division = 10D;
             this.displayTextBox28._DoubleWord = false;
             this.displayTextBox28._EqBase = null;
+            this.displayTextBox28._ITR = false;
             this.displayTextBox28._MaxLimit = 999D;
             this.displayTextBox28._MinLimit = 0D;
-            this.displayTextBox28._Multiplication = ((short)(1));
+            this.displayTextBox28._Multiplication = 1D;
             this.displayTextBox28._PlcDevice = "Heater_1_MV";
+            this.displayTextBox28._TTR = false;
             this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox28.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox28.Location = new System.Drawing.Point(212, 95);
@@ -4019,13 +4093,15 @@
             // 
             // displayTextBox10
             // 
-            this.displayTextBox10._Division = ((short)(1));
+            this.displayTextBox10._Division = 1D;
             this.displayTextBox10._DoubleWord = false;
             this.displayTextBox10._EqBase = null;
+            this.displayTextBox10._ITR = false;
             this.displayTextBox10._MaxLimit = 999D;
             this.displayTextBox10._MinLimit = 0D;
-            this.displayTextBox10._Multiplication = ((short)(1));
+            this.displayTextBox10._Multiplication = 1D;
             this.displayTextBox10._PlcDevice = "Heater1_PV";
+            this.displayTextBox10._TTR = false;
             this.displayTextBox10.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox10.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox10.Location = new System.Drawing.Point(212, 25);
@@ -4039,8 +4115,8 @@
             // 
             this.inputTextBox40._Division = 1;
             this.inputTextBox40._EqBase = null;
-            this.inputTextBox40._FloatNumber = false;
-            this.inputTextBox40._MaxLimit = 999D;
+            this.inputTextBox40._FloatNumber = true;
+            this.inputTextBox40._MaxLimit = 180D;
             this.inputTextBox40._MinLimit = 0D;
             this.inputTextBox40._Multiplication = 1;
             this.inputTextBox40._NumberOnly = true;
@@ -4169,13 +4245,15 @@
             // 
             // displayTextBox44
             // 
-            this.displayTextBox44._Division = ((short)(1));
+            this.displayTextBox44._Division = 1D;
             this.displayTextBox44._DoubleWord = false;
             this.displayTextBox44._EqBase = null;
+            this.displayTextBox44._ITR = false;
             this.displayTextBox44._MaxLimit = 999D;
             this.displayTextBox44._MinLimit = 0D;
-            this.displayTextBox44._Multiplication = ((short)(1));
+            this.displayTextBox44._Multiplication = 1D;
             this.displayTextBox44._PlcDevice = "Heater4_D_PV";
+            this.displayTextBox44._TTR = false;
             this.displayTextBox44.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox44.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox44.Location = new System.Drawing.Point(513, 158);
@@ -4190,7 +4268,7 @@
             this.inputTextBox57._Division = 1;
             this.inputTextBox57._EqBase = null;
             this.inputTextBox57._FloatNumber = false;
-            this.inputTextBox57._MaxLimit = 999D;
+            this.inputTextBox57._MaxLimit = 3999D;
             this.inputTextBox57._MinLimit = 0D;
             this.inputTextBox57._Multiplication = 1;
             this.inputTextBox57._NumberOnly = true;
@@ -4205,13 +4283,15 @@
             // 
             // displayTextBox45
             // 
-            this.displayTextBox45._Division = ((short)(1));
+            this.displayTextBox45._Division = 1D;
             this.displayTextBox45._DoubleWord = false;
             this.displayTextBox45._EqBase = null;
+            this.displayTextBox45._ITR = false;
             this.displayTextBox45._MaxLimit = 999D;
             this.displayTextBox45._MinLimit = 0D;
-            this.displayTextBox45._Multiplication = ((short)(1));
+            this.displayTextBox45._Multiplication = 1D;
             this.displayTextBox45._PlcDevice = "Heater4_I_PV";
+            this.displayTextBox45._TTR = false;
             this.displayTextBox45.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox45.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox45.Location = new System.Drawing.Point(513, 94);
@@ -4223,13 +4303,15 @@
             // 
             // displayTextBox46
             // 
-            this.displayTextBox46._Division = ((short)(1));
+            this.displayTextBox46._Division = 1D;
             this.displayTextBox46._DoubleWord = false;
             this.displayTextBox46._EqBase = null;
+            this.displayTextBox46._ITR = false;
             this.displayTextBox46._MaxLimit = 999D;
             this.displayTextBox46._MinLimit = 0D;
-            this.displayTextBox46._Multiplication = ((short)(1));
+            this.displayTextBox46._Multiplication = 1D;
             this.displayTextBox46._PlcDevice = "Heater4_P_PV";
+            this.displayTextBox46._TTR = false;
             this.displayTextBox46.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox46.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox46.Location = new System.Drawing.Point(513, 24);
@@ -4244,7 +4326,7 @@
             this.inputTextBox58._Division = 1;
             this.inputTextBox58._EqBase = null;
             this.inputTextBox58._FloatNumber = false;
-            this.inputTextBox58._MaxLimit = 999D;
+            this.inputTextBox58._MaxLimit = 9999D;
             this.inputTextBox58._MinLimit = 0D;
             this.inputTextBox58._Multiplication = 1;
             this.inputTextBox58._NumberOnly = true;
@@ -4277,13 +4359,15 @@
             // 
             // displayTextBox41
             // 
-            this.displayTextBox41._Division = ((short)(1));
+            this.displayTextBox41._Division = 1D;
             this.displayTextBox41._DoubleWord = false;
             this.displayTextBox41._EqBase = null;
+            this.displayTextBox41._ITR = false;
             this.displayTextBox41._MaxLimit = 999D;
             this.displayTextBox41._MinLimit = 0D;
-            this.displayTextBox41._Multiplication = ((short)(1));
+            this.displayTextBox41._Multiplication = 1D;
             this.displayTextBox41._PlcDevice = "Heater3_D_PV";
+            this.displayTextBox41._TTR = false;
             this.displayTextBox41.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox41.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox41.Location = new System.Drawing.Point(416, 157);
@@ -4298,7 +4382,7 @@
             this.inputTextBox54._Division = 1;
             this.inputTextBox54._EqBase = null;
             this.inputTextBox54._FloatNumber = false;
-            this.inputTextBox54._MaxLimit = 999D;
+            this.inputTextBox54._MaxLimit = 3999D;
             this.inputTextBox54._MinLimit = 0D;
             this.inputTextBox54._Multiplication = 1;
             this.inputTextBox54._NumberOnly = true;
@@ -4313,13 +4397,15 @@
             // 
             // displayTextBox42
             // 
-            this.displayTextBox42._Division = ((short)(1));
+            this.displayTextBox42._Division = 1D;
             this.displayTextBox42._DoubleWord = false;
             this.displayTextBox42._EqBase = null;
+            this.displayTextBox42._ITR = false;
             this.displayTextBox42._MaxLimit = 999D;
             this.displayTextBox42._MinLimit = 0D;
-            this.displayTextBox42._Multiplication = ((short)(1));
+            this.displayTextBox42._Multiplication = 1D;
             this.displayTextBox42._PlcDevice = "Heater3_I_PV";
+            this.displayTextBox42._TTR = false;
             this.displayTextBox42.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox42.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox42.Location = new System.Drawing.Point(416, 93);
@@ -4331,13 +4417,15 @@
             // 
             // displayTextBox43
             // 
-            this.displayTextBox43._Division = ((short)(1));
+            this.displayTextBox43._Division = 1D;
             this.displayTextBox43._DoubleWord = false;
             this.displayTextBox43._EqBase = null;
+            this.displayTextBox43._ITR = false;
             this.displayTextBox43._MaxLimit = 999D;
             this.displayTextBox43._MinLimit = 0D;
-            this.displayTextBox43._Multiplication = ((short)(1));
+            this.displayTextBox43._Multiplication = 1D;
             this.displayTextBox43._PlcDevice = "Heater3_P_PV";
+            this.displayTextBox43._TTR = false;
             this.displayTextBox43.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox43.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox43.Location = new System.Drawing.Point(416, 23);
@@ -4352,7 +4440,7 @@
             this.inputTextBox55._Division = 1;
             this.inputTextBox55._EqBase = null;
             this.inputTextBox55._FloatNumber = false;
-            this.inputTextBox55._MaxLimit = 999D;
+            this.inputTextBox55._MaxLimit = 9999D;
             this.inputTextBox55._MinLimit = 0D;
             this.inputTextBox55._Multiplication = 1;
             this.inputTextBox55._NumberOnly = true;
@@ -4385,13 +4473,15 @@
             // 
             // displayTextBox38
             // 
-            this.displayTextBox38._Division = ((short)(1));
+            this.displayTextBox38._Division = 1D;
             this.displayTextBox38._DoubleWord = false;
             this.displayTextBox38._EqBase = null;
+            this.displayTextBox38._ITR = false;
             this.displayTextBox38._MaxLimit = 999D;
             this.displayTextBox38._MinLimit = 0D;
-            this.displayTextBox38._Multiplication = ((short)(1));
+            this.displayTextBox38._Multiplication = 1D;
             this.displayTextBox38._PlcDevice = "Heater2_D_PV";
+            this.displayTextBox38._TTR = false;
             this.displayTextBox38.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox38.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox38.Location = new System.Drawing.Point(313, 158);
@@ -4406,7 +4496,7 @@
             this.inputTextBox51._Division = 1;
             this.inputTextBox51._EqBase = null;
             this.inputTextBox51._FloatNumber = false;
-            this.inputTextBox51._MaxLimit = 999D;
+            this.inputTextBox51._MaxLimit = 3999D;
             this.inputTextBox51._MinLimit = 0D;
             this.inputTextBox51._Multiplication = 1;
             this.inputTextBox51._NumberOnly = true;
@@ -4421,13 +4511,15 @@
             // 
             // displayTextBox39
             // 
-            this.displayTextBox39._Division = ((short)(1));
+            this.displayTextBox39._Division = 1D;
             this.displayTextBox39._DoubleWord = false;
             this.displayTextBox39._EqBase = null;
+            this.displayTextBox39._ITR = false;
             this.displayTextBox39._MaxLimit = 999D;
             this.displayTextBox39._MinLimit = 0D;
-            this.displayTextBox39._Multiplication = ((short)(1));
+            this.displayTextBox39._Multiplication = 1D;
             this.displayTextBox39._PlcDevice = "Heater2_I_PV";
+            this.displayTextBox39._TTR = false;
             this.displayTextBox39.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox39.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox39.Location = new System.Drawing.Point(313, 94);
@@ -4439,13 +4531,15 @@
             // 
             // displayTextBox40
             // 
-            this.displayTextBox40._Division = ((short)(1));
+            this.displayTextBox40._Division = 1D;
             this.displayTextBox40._DoubleWord = false;
             this.displayTextBox40._EqBase = null;
+            this.displayTextBox40._ITR = false;
             this.displayTextBox40._MaxLimit = 999D;
             this.displayTextBox40._MinLimit = 0D;
-            this.displayTextBox40._Multiplication = ((short)(1));
+            this.displayTextBox40._Multiplication = 1D;
             this.displayTextBox40._PlcDevice = "Heater2_P_PV";
+            this.displayTextBox40._TTR = false;
             this.displayTextBox40.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox40.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox40.Location = new System.Drawing.Point(313, 24);
@@ -4460,7 +4554,7 @@
             this.inputTextBox52._Division = 1;
             this.inputTextBox52._EqBase = null;
             this.inputTextBox52._FloatNumber = false;
-            this.inputTextBox52._MaxLimit = 999D;
+            this.inputTextBox52._MaxLimit = 9999D;
             this.inputTextBox52._MinLimit = 0D;
             this.inputTextBox52._Multiplication = 1;
             this.inputTextBox52._NumberOnly = true;
@@ -4493,13 +4587,15 @@
             // 
             // displayTextBox37
             // 
-            this.displayTextBox37._Division = ((short)(1));
+            this.displayTextBox37._Division = 1D;
             this.displayTextBox37._DoubleWord = false;
             this.displayTextBox37._EqBase = null;
+            this.displayTextBox37._ITR = false;
             this.displayTextBox37._MaxLimit = 999D;
             this.displayTextBox37._MinLimit = 0D;
-            this.displayTextBox37._Multiplication = ((short)(1));
+            this.displayTextBox37._Multiplication = 1D;
             this.displayTextBox37._PlcDevice = "Heater1_D_PV";
+            this.displayTextBox37._TTR = false;
             this.displayTextBox37.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox37.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox37.Location = new System.Drawing.Point(217, 157);
@@ -4514,7 +4610,7 @@
             this.inputTextBox48._Division = 1;
             this.inputTextBox48._EqBase = null;
             this.inputTextBox48._FloatNumber = false;
-            this.inputTextBox48._MaxLimit = 999D;
+            this.inputTextBox48._MaxLimit = 3999D;
             this.inputTextBox48._MinLimit = 0D;
             this.inputTextBox48._Multiplication = 1;
             this.inputTextBox48._NumberOnly = true;
@@ -4529,13 +4625,15 @@
             // 
             // displayTextBox35
             // 
-            this.displayTextBox35._Division = ((short)(1));
+            this.displayTextBox35._Division = 1D;
             this.displayTextBox35._DoubleWord = false;
             this.displayTextBox35._EqBase = null;
+            this.displayTextBox35._ITR = false;
             this.displayTextBox35._MaxLimit = 999D;
             this.displayTextBox35._MinLimit = 0D;
-            this.displayTextBox35._Multiplication = ((short)(1));
+            this.displayTextBox35._Multiplication = 1D;
             this.displayTextBox35._PlcDevice = "Heater1_I_PV";
+            this.displayTextBox35._TTR = false;
             this.displayTextBox35.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox35.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox35.Location = new System.Drawing.Point(217, 93);
@@ -4547,13 +4645,15 @@
             // 
             // displayTextBox36
             // 
-            this.displayTextBox36._Division = ((short)(1));
+            this.displayTextBox36._Division = 1D;
             this.displayTextBox36._DoubleWord = false;
             this.displayTextBox36._EqBase = null;
+            this.displayTextBox36._ITR = false;
             this.displayTextBox36._MaxLimit = 999D;
             this.displayTextBox36._MinLimit = 0D;
-            this.displayTextBox36._Multiplication = ((short)(1));
+            this.displayTextBox36._Multiplication = 1D;
             this.displayTextBox36._PlcDevice = "Heater1_P_PV";
+            this.displayTextBox36._TTR = false;
             this.displayTextBox36.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox36.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.displayTextBox36.Location = new System.Drawing.Point(217, 23);
@@ -4568,7 +4668,7 @@
             this.inputTextBox47._Division = 1;
             this.inputTextBox47._EqBase = null;
             this.inputTextBox47._FloatNumber = false;
-            this.inputTextBox47._MaxLimit = 999D;
+            this.inputTextBox47._MaxLimit = 9999D;
             this.inputTextBox47._MinLimit = 0D;
             this.inputTextBox47._Multiplication = 1;
             this.inputTextBox47._NumberOnly = true;
@@ -4774,10 +4874,10 @@
             // 
             // inputTextBox78
             // 
-            this.inputTextBox78._Division = 1;
+            this.inputTextBox78._Division = 10;
             this.inputTextBox78._EqBase = null;
             this.inputTextBox78._FloatNumber = false;
-            this.inputTextBox78._MaxLimit = 999D;
+            this.inputTextBox78._MaxLimit = 3000D;
             this.inputTextBox78._MinLimit = 0D;
             this.inputTextBox78._Multiplication = 1;
             this.inputTextBox78._NumberOnly = true;
@@ -4793,10 +4893,10 @@
             // 
             // inputTextBox77
             // 
-            this.inputTextBox77._Division = 1;
+            this.inputTextBox77._Division = 10;
             this.inputTextBox77._EqBase = null;
             this.inputTextBox77._FloatNumber = false;
-            this.inputTextBox77._MaxLimit = 999D;
+            this.inputTextBox77._MaxLimit = 3000D;
             this.inputTextBox77._MinLimit = 0D;
             this.inputTextBox77._Multiplication = 1;
             this.inputTextBox77._NumberOnly = true;
@@ -4812,10 +4912,10 @@
             // 
             // inputTextBox76
             // 
-            this.inputTextBox76._Division = 1;
+            this.inputTextBox76._Division = 10;
             this.inputTextBox76._EqBase = null;
             this.inputTextBox76._FloatNumber = false;
-            this.inputTextBox76._MaxLimit = 999D;
+            this.inputTextBox76._MaxLimit = 3000D;
             this.inputTextBox76._MinLimit = 0D;
             this.inputTextBox76._Multiplication = 1;
             this.inputTextBox76._NumberOnly = true;
@@ -4831,10 +4931,10 @@
             // 
             // inputTextBox75
             // 
-            this.inputTextBox75._Division = 1;
+            this.inputTextBox75._Division = 10;
             this.inputTextBox75._EqBase = null;
             this.inputTextBox75._FloatNumber = false;
-            this.inputTextBox75._MaxLimit = 999D;
+            this.inputTextBox75._MaxLimit = 3000D;
             this.inputTextBox75._MinLimit = 0D;
             this.inputTextBox75._Multiplication = 1;
             this.inputTextBox75._NumberOnly = true;
@@ -4850,10 +4950,10 @@
             // 
             // inputTextBox74
             // 
-            this.inputTextBox74._Division = 1;
+            this.inputTextBox74._Division = 10;
             this.inputTextBox74._EqBase = null;
             this.inputTextBox74._FloatNumber = false;
-            this.inputTextBox74._MaxLimit = 999D;
+            this.inputTextBox74._MaxLimit = 3000D;
             this.inputTextBox74._MinLimit = 0D;
             this.inputTextBox74._Multiplication = 1;
             this.inputTextBox74._NumberOnly = true;
@@ -4869,10 +4969,10 @@
             // 
             // inputTextBox73
             // 
-            this.inputTextBox73._Division = 1;
+            this.inputTextBox73._Division = 10;
             this.inputTextBox73._EqBase = null;
             this.inputTextBox73._FloatNumber = false;
-            this.inputTextBox73._MaxLimit = 999D;
+            this.inputTextBox73._MaxLimit = 3000D;
             this.inputTextBox73._MinLimit = 0D;
             this.inputTextBox73._Multiplication = 1;
             this.inputTextBox73._NumberOnly = true;
@@ -4888,10 +4988,10 @@
             // 
             // inputTextBox72
             // 
-            this.inputTextBox72._Division = 1;
+            this.inputTextBox72._Division = 10;
             this.inputTextBox72._EqBase = null;
             this.inputTextBox72._FloatNumber = false;
-            this.inputTextBox72._MaxLimit = 999D;
+            this.inputTextBox72._MaxLimit = 3000D;
             this.inputTextBox72._MinLimit = 0D;
             this.inputTextBox72._Multiplication = 1;
             this.inputTextBox72._NumberOnly = true;
@@ -4907,10 +5007,10 @@
             // 
             // inputTextBox71
             // 
-            this.inputTextBox71._Division = 1;
+            this.inputTextBox71._Division = 10;
             this.inputTextBox71._EqBase = null;
             this.inputTextBox71._FloatNumber = false;
-            this.inputTextBox71._MaxLimit = 999D;
+            this.inputTextBox71._MaxLimit = 3000D;
             this.inputTextBox71._MinLimit = 0D;
             this.inputTextBox71._Multiplication = 1;
             this.inputTextBox71._NumberOnly = true;
@@ -4926,10 +5026,10 @@
             // 
             // inputTextBox70
             // 
-            this.inputTextBox70._Division = 1;
+            this.inputTextBox70._Division = 10;
             this.inputTextBox70._EqBase = null;
             this.inputTextBox70._FloatNumber = false;
-            this.inputTextBox70._MaxLimit = 999D;
+            this.inputTextBox70._MaxLimit = 3000D;
             this.inputTextBox70._MinLimit = 0D;
             this.inputTextBox70._Multiplication = 1;
             this.inputTextBox70._NumberOnly = true;
@@ -4945,10 +5045,10 @@
             // 
             // inputTextBox69
             // 
-            this.inputTextBox69._Division = 1;
+            this.inputTextBox69._Division = 10;
             this.inputTextBox69._EqBase = null;
             this.inputTextBox69._FloatNumber = false;
-            this.inputTextBox69._MaxLimit = 999D;
+            this.inputTextBox69._MaxLimit = 3000D;
             this.inputTextBox69._MinLimit = 0D;
             this.inputTextBox69._Multiplication = 1;
             this.inputTextBox69._NumberOnly = true;
@@ -4964,10 +5064,10 @@
             // 
             // inputTextBox68
             // 
-            this.inputTextBox68._Division = 1;
+            this.inputTextBox68._Division = 10;
             this.inputTextBox68._EqBase = null;
             this.inputTextBox68._FloatNumber = false;
-            this.inputTextBox68._MaxLimit = 999D;
+            this.inputTextBox68._MaxLimit = 3000D;
             this.inputTextBox68._MinLimit = 0D;
             this.inputTextBox68._Multiplication = 1;
             this.inputTextBox68._NumberOnly = true;
@@ -4983,10 +5083,10 @@
             // 
             // inputTextBox67
             // 
-            this.inputTextBox67._Division = 1;
+            this.inputTextBox67._Division = 10;
             this.inputTextBox67._EqBase = null;
             this.inputTextBox67._FloatNumber = false;
-            this.inputTextBox67._MaxLimit = 999D;
+            this.inputTextBox67._MaxLimit = 3000D;
             this.inputTextBox67._MinLimit = 0D;
             this.inputTextBox67._Multiplication = 1;
             this.inputTextBox67._NumberOnly = true;
@@ -5002,10 +5102,10 @@
             // 
             // inputTextBox66
             // 
-            this.inputTextBox66._Division = 1;
+            this.inputTextBox66._Division = 10;
             this.inputTextBox66._EqBase = null;
             this.inputTextBox66._FloatNumber = false;
-            this.inputTextBox66._MaxLimit = 999D;
+            this.inputTextBox66._MaxLimit = 3000D;
             this.inputTextBox66._MinLimit = 0D;
             this.inputTextBox66._Multiplication = 1;
             this.inputTextBox66._NumberOnly = true;
@@ -5207,10 +5307,10 @@
             // 
             // inputTextBox84
             // 
-            this.inputTextBox84._Division = 1;
+            this.inputTextBox84._Division = 10;
             this.inputTextBox84._EqBase = null;
             this.inputTextBox84._FloatNumber = false;
-            this.inputTextBox84._MaxLimit = 999D;
+            this.inputTextBox84._MaxLimit = 101D;
             this.inputTextBox84._MinLimit = 0D;
             this.inputTextBox84._Multiplication = 1;
             this.inputTextBox84._NumberOnly = true;
@@ -5229,7 +5329,7 @@
             this.inputTextBox85._Division = 1;
             this.inputTextBox85._EqBase = null;
             this.inputTextBox85._FloatNumber = false;
-            this.inputTextBox85._MaxLimit = 999D;
+            this.inputTextBox85._MaxLimit = 101D;
             this.inputTextBox85._MinLimit = 0D;
             this.inputTextBox85._Multiplication = 1;
             this.inputTextBox85._NumberOnly = true;
@@ -5245,10 +5345,10 @@
             // 
             // inputTextBox86
             // 
-            this.inputTextBox86._Division = 1;
+            this.inputTextBox86._Division = 10;
             this.inputTextBox86._EqBase = null;
             this.inputTextBox86._FloatNumber = false;
-            this.inputTextBox86._MaxLimit = 999D;
+            this.inputTextBox86._MaxLimit = 101D;
             this.inputTextBox86._MinLimit = 0D;
             this.inputTextBox86._Multiplication = 1;
             this.inputTextBox86._NumberOnly = true;
@@ -5264,10 +5364,10 @@
             // 
             // inputTextBox87
             // 
-            this.inputTextBox87._Division = 1;
+            this.inputTextBox87._Division = 10;
             this.inputTextBox87._EqBase = null;
             this.inputTextBox87._FloatNumber = false;
-            this.inputTextBox87._MaxLimit = 999D;
+            this.inputTextBox87._MaxLimit = 101D;
             this.inputTextBox87._MinLimit = 0D;
             this.inputTextBox87._Multiplication = 1;
             this.inputTextBox87._NumberOnly = true;
@@ -5283,10 +5383,10 @@
             // 
             // inputTextBox88
             // 
-            this.inputTextBox88._Division = 1;
+            this.inputTextBox88._Division = 10;
             this.inputTextBox88._EqBase = null;
             this.inputTextBox88._FloatNumber = false;
-            this.inputTextBox88._MaxLimit = 999D;
+            this.inputTextBox88._MaxLimit = 101D;
             this.inputTextBox88._MinLimit = 0D;
             this.inputTextBox88._Multiplication = 1;
             this.inputTextBox88._NumberOnly = true;
@@ -5302,10 +5402,10 @@
             // 
             // inputTextBox89
             // 
-            this.inputTextBox89._Division = 1;
+            this.inputTextBox89._Division = 10;
             this.inputTextBox89._EqBase = null;
             this.inputTextBox89._FloatNumber = false;
-            this.inputTextBox89._MaxLimit = 999D;
+            this.inputTextBox89._MaxLimit = 101D;
             this.inputTextBox89._MinLimit = 0D;
             this.inputTextBox89._Multiplication = 1;
             this.inputTextBox89._NumberOnly = true;
@@ -5321,10 +5421,10 @@
             // 
             // inputTextBox90
             // 
-            this.inputTextBox90._Division = 1;
+            this.inputTextBox90._Division = 10;
             this.inputTextBox90._EqBase = null;
             this.inputTextBox90._FloatNumber = false;
-            this.inputTextBox90._MaxLimit = 999D;
+            this.inputTextBox90._MaxLimit = 101D;
             this.inputTextBox90._MinLimit = 0D;
             this.inputTextBox90._Multiplication = 1;
             this.inputTextBox90._NumberOnly = true;
@@ -5340,10 +5440,10 @@
             // 
             // inputTextBox91
             // 
-            this.inputTextBox91._Division = 1;
+            this.inputTextBox91._Division = 10;
             this.inputTextBox91._EqBase = null;
             this.inputTextBox91._FloatNumber = false;
-            this.inputTextBox91._MaxLimit = 999D;
+            this.inputTextBox91._MaxLimit = 101D;
             this.inputTextBox91._MinLimit = 0D;
             this.inputTextBox91._Multiplication = 1;
             this.inputTextBox91._NumberOnly = true;
@@ -5359,10 +5459,10 @@
             // 
             // inputTextBox92
             // 
-            this.inputTextBox92._Division = 1;
+            this.inputTextBox92._Division = 10;
             this.inputTextBox92._EqBase = null;
             this.inputTextBox92._FloatNumber = false;
-            this.inputTextBox92._MaxLimit = 999D;
+            this.inputTextBox92._MaxLimit = 101D;
             this.inputTextBox92._MinLimit = 0D;
             this.inputTextBox92._Multiplication = 1;
             this.inputTextBox92._NumberOnly = true;
@@ -5378,10 +5478,10 @@
             // 
             // inputTextBox93
             // 
-            this.inputTextBox93._Division = 1;
+            this.inputTextBox93._Division = 10;
             this.inputTextBox93._EqBase = null;
             this.inputTextBox93._FloatNumber = false;
-            this.inputTextBox93._MaxLimit = 999D;
+            this.inputTextBox93._MaxLimit = 101D;
             this.inputTextBox93._MinLimit = 0D;
             this.inputTextBox93._Multiplication = 1;
             this.inputTextBox93._NumberOnly = true;

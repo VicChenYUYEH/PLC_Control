@@ -578,7 +578,7 @@
             this.Label236.Location = new System.Drawing.Point(960, 480);
             this.Label236.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label236.Name = "Label236";
-            this.Label236.Size = new System.Drawing.Size(50, 23);
+            this.Label236.Size = new System.Drawing.Size(40, 16);
             this.Label236.TabIndex = 2314;
             this.Label236.Text = "手閥";
             // 
@@ -590,7 +590,7 @@
             this.Label237.Location = new System.Drawing.Point(960, 323);
             this.Label237.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label237.Name = "Label237";
-            this.Label237.Size = new System.Drawing.Size(70, 23);
+            this.Label237.Size = new System.Drawing.Size(56, 16);
             this.Label237.TabIndex = 2313;
             this.Label237.Text = "比例閥";
             // 
@@ -602,7 +602,7 @@
             this.Label234.Location = new System.Drawing.Point(663, 480);
             this.Label234.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label234.Name = "Label234";
-            this.Label234.Size = new System.Drawing.Size(50, 23);
+            this.Label234.Size = new System.Drawing.Size(40, 16);
             this.Label234.TabIndex = 2312;
             this.Label234.Text = "手閥";
             // 
@@ -614,7 +614,7 @@
             this.Label235.Location = new System.Drawing.Point(663, 323);
             this.Label235.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label235.Name = "Label235";
-            this.Label235.Size = new System.Drawing.Size(70, 23);
+            this.Label235.Size = new System.Drawing.Size(56, 16);
             this.Label235.TabIndex = 2311;
             this.Label235.Text = "比例閥";
             // 
@@ -626,7 +626,7 @@
             this.Label232.Location = new System.Drawing.Point(355, 480);
             this.Label232.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label232.Name = "Label232";
-            this.Label232.Size = new System.Drawing.Size(50, 23);
+            this.Label232.Size = new System.Drawing.Size(40, 16);
             this.Label232.TabIndex = 2310;
             this.Label232.Text = "手閥";
             // 
@@ -638,7 +638,7 @@
             this.Label233.Location = new System.Drawing.Point(355, 323);
             this.Label233.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label233.Name = "Label233";
-            this.Label233.Size = new System.Drawing.Size(70, 23);
+            this.Label233.Size = new System.Drawing.Size(56, 16);
             this.Label233.TabIndex = 2309;
             this.Label233.Text = "比例閥";
             // 
@@ -650,7 +650,7 @@
             this.Label231.Location = new System.Drawing.Point(35, 480);
             this.Label231.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label231.Name = "Label231";
-            this.Label231.Size = new System.Drawing.Size(50, 23);
+            this.Label231.Size = new System.Drawing.Size(40, 16);
             this.Label231.TabIndex = 2308;
             this.Label231.Text = "手閥";
             // 
@@ -662,7 +662,7 @@
             this.Label230.Location = new System.Drawing.Point(37, 323);
             this.Label230.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label230.Name = "Label230";
-            this.Label230.Size = new System.Drawing.Size(70, 23);
+            this.Label230.Size = new System.Drawing.Size(56, 16);
             this.Label230.TabIndex = 2307;
             this.Label230.Text = "比例閥";
             // 
@@ -673,7 +673,7 @@
             this.Label154.Location = new System.Drawing.Point(1167, 409);
             this.Label154.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label154.Name = "Label154";
-            this.Label154.Size = new System.Drawing.Size(57, 18);
+            this.Label154.Size = new System.Drawing.Size(38, 14);
             this.Label154.TabIndex = 2285;
             this.Label154.Text = "CN411";
             // 
@@ -684,7 +684,7 @@
             this.Label155.Location = new System.Drawing.Point(1121, 409);
             this.Label155.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label155.Name = "Label155";
-            this.Label155.Size = new System.Drawing.Size(58, 18);
+            this.Label155.Size = new System.Drawing.Size(39, 14);
             this.Label155.TabIndex = 2284;
             this.Label155.Text = "CN410";
             // 
@@ -695,7 +695,7 @@
             this.Label156.Location = new System.Drawing.Point(1077, 409);
             this.Label156.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label156.Name = "Label156";
-            this.Label156.Size = new System.Drawing.Size(58, 18);
+            this.Label156.Size = new System.Drawing.Size(39, 14);
             this.Label156.TabIndex = 2283;
             this.Label156.Text = "CN409";
             // 
@@ -706,7 +706,7 @@
             this.Label157.Location = new System.Drawing.Point(1030, 409);
             this.Label157.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label157.Name = "Label157";
-            this.Label157.Size = new System.Drawing.Size(58, 18);
+            this.Label157.Size = new System.Drawing.Size(39, 14);
             this.Label157.TabIndex = 2282;
             this.Label157.Text = "CN408";
             // 
@@ -717,7 +717,7 @@
             this.Label158.Location = new System.Drawing.Point(989, 409);
             this.Label158.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label158.Name = "Label158";
-            this.Label158.Size = new System.Drawing.Size(58, 18);
+            this.Label158.Size = new System.Drawing.Size(39, 14);
             this.Label158.TabIndex = 2281;
             this.Label158.Text = "CN407";
             // 
@@ -728,7 +728,7 @@
             this.Label159.Location = new System.Drawing.Point(995, 223);
             this.Label159.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label159.Name = "Label159";
-            this.Label159.Size = new System.Drawing.Size(51, 18);
+            this.Label159.Size = new System.Drawing.Size(34, 14);
             this.Label159.TabIndex = 2280;
             this.Label159.Text = "CPV1";
             // 
@@ -739,7 +739,7 @@
             this.Label160.Location = new System.Drawing.Point(1151, 294);
             this.Label160.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label160.Name = "Label160";
-            this.Label160.Size = new System.Drawing.Size(58, 18);
+            this.Label160.Size = new System.Drawing.Size(40, 14);
             this.Label160.TabIndex = 2279;
             this.Label160.Text = "CA406";
             // 
@@ -750,7 +750,7 @@
             this.Label161.Location = new System.Drawing.Point(1071, 294);
             this.Label161.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label161.Name = "Label161";
-            this.Label161.Size = new System.Drawing.Size(58, 18);
+            this.Label161.Size = new System.Drawing.Size(40, 14);
             this.Label161.TabIndex = 2278;
             this.Label161.Text = "CA405";
             // 
@@ -761,7 +761,7 @@
             this.Label162.Location = new System.Drawing.Point(1217, 147);
             this.Label162.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label162.Name = "Label162";
-            this.Label162.Size = new System.Drawing.Size(58, 18);
+            this.Label162.Size = new System.Drawing.Size(40, 14);
             this.Label162.TabIndex = 2277;
             this.Label162.Text = "CA404";
             // 
@@ -772,7 +772,7 @@
             this.Label163.Location = new System.Drawing.Point(1158, 147);
             this.Label163.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label163.Name = "Label163";
-            this.Label163.Size = new System.Drawing.Size(58, 18);
+            this.Label163.Size = new System.Drawing.Size(40, 14);
             this.Label163.TabIndex = 2276;
             this.Label163.Text = "CA403";
             // 
@@ -783,7 +783,7 @@
             this.Label164.Location = new System.Drawing.Point(1005, 147);
             this.Label164.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label164.Name = "Label164";
-            this.Label164.Size = new System.Drawing.Size(58, 18);
+            this.Label164.Size = new System.Drawing.Size(40, 14);
             this.Label164.TabIndex = 2274;
             this.Label164.Text = "CA401";
             // 
@@ -804,7 +804,7 @@
             this.Label165.Location = new System.Drawing.Point(46, 7);
             this.Label165.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label165.Name = "Label165";
-            this.Label165.Size = new System.Drawing.Size(157, 27);
+            this.Label165.Size = new System.Drawing.Size(105, 18);
             this.Label165.TabIndex = 1599;
             this.Label165.Text = "DC Cathode4";
             // 
@@ -825,7 +825,7 @@
             this.Label166.Location = new System.Drawing.Point(49, 7);
             this.Label166.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label166.Name = "Label166";
-            this.Label166.Size = new System.Drawing.Size(150, 27);
+            this.Label166.Size = new System.Drawing.Size(99, 18);
             this.Label166.TabIndex = 1599;
             this.Label166.Text = "M3 Chamber";
             // 
@@ -963,7 +963,7 @@
             this.Label180.Location = new System.Drawing.Point(20, 22);
             this.Label180.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label180.Name = "Label180";
-            this.Label180.Size = new System.Drawing.Size(84, 27);
+            this.Label180.Size = new System.Drawing.Size(56, 18);
             this.Label180.TabIndex = 1638;
             this.Label180.Text = "混和槽";
             // 
@@ -1019,7 +1019,7 @@
             this.Label186.Location = new System.Drawing.Point(1044, 13);
             this.Label186.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label186.Name = "Label186";
-            this.Label186.Size = new System.Drawing.Size(118, 18);
+            this.Label186.Size = new System.Drawing.Size(78, 14);
             this.Label186.TabIndex = 2246;
             this.Label186.Text = "MFC_0310_O2";
             // 
@@ -1030,7 +1030,7 @@
             this.Label187.Location = new System.Drawing.Point(1141, 13);
             this.Label187.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label187.Name = "Label187";
-            this.Label187.Size = new System.Drawing.Size(113, 18);
+            this.Label187.Size = new System.Drawing.Size(76, 14);
             this.Label187.TabIndex = 2245;
             this.Label187.Text = "MFC_0309_Ar";
             // 
@@ -1077,7 +1077,7 @@
             this.Label193.Location = new System.Drawing.Point(1064, 147);
             this.Label193.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label193.Name = "Label193";
-            this.Label193.Size = new System.Drawing.Size(58, 18);
+            this.Label193.Size = new System.Drawing.Size(40, 14);
             this.Label193.TabIndex = 2275;
             this.Label193.Text = "CA402";
             // 
@@ -1088,7 +1088,7 @@
             this.Label113.Location = new System.Drawing.Point(870, 409);
             this.Label113.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label113.Name = "Label113";
-            this.Label113.Size = new System.Drawing.Size(57, 18);
+            this.Label113.Size = new System.Drawing.Size(38, 14);
             this.Label113.TabIndex = 2240;
             this.Label113.Text = "CN311";
             // 
@@ -1099,7 +1099,7 @@
             this.Label114.Location = new System.Drawing.Point(824, 409);
             this.Label114.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label114.Name = "Label114";
-            this.Label114.Size = new System.Drawing.Size(58, 18);
+            this.Label114.Size = new System.Drawing.Size(39, 14);
             this.Label114.TabIndex = 2239;
             this.Label114.Text = "CN310";
             // 
@@ -1110,7 +1110,7 @@
             this.Label115.Location = new System.Drawing.Point(780, 409);
             this.Label115.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label115.Name = "Label115";
-            this.Label115.Size = new System.Drawing.Size(58, 18);
+            this.Label115.Size = new System.Drawing.Size(39, 14);
             this.Label115.TabIndex = 2238;
             this.Label115.Text = "CN309";
             // 
@@ -1121,7 +1121,7 @@
             this.Label116.Location = new System.Drawing.Point(733, 409);
             this.Label116.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label116.Name = "Label116";
-            this.Label116.Size = new System.Drawing.Size(58, 18);
+            this.Label116.Size = new System.Drawing.Size(39, 14);
             this.Label116.TabIndex = 2237;
             this.Label116.Text = "CN308";
             // 
@@ -1132,7 +1132,7 @@
             this.Label117.Location = new System.Drawing.Point(692, 409);
             this.Label117.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label117.Name = "Label117";
-            this.Label117.Size = new System.Drawing.Size(58, 18);
+            this.Label117.Size = new System.Drawing.Size(39, 14);
             this.Label117.TabIndex = 2236;
             this.Label117.Text = "CN307";
             // 
@@ -1143,7 +1143,7 @@
             this.Label118.Location = new System.Drawing.Point(698, 223);
             this.Label118.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label118.Name = "Label118";
-            this.Label118.Size = new System.Drawing.Size(51, 18);
+            this.Label118.Size = new System.Drawing.Size(34, 14);
             this.Label118.TabIndex = 2235;
             this.Label118.Text = "CPV1";
             // 
@@ -1154,7 +1154,7 @@
             this.Label119.Location = new System.Drawing.Point(854, 294);
             this.Label119.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label119.Name = "Label119";
-            this.Label119.Size = new System.Drawing.Size(58, 18);
+            this.Label119.Size = new System.Drawing.Size(40, 14);
             this.Label119.TabIndex = 2234;
             this.Label119.Text = "CA306";
             // 
@@ -1165,7 +1165,7 @@
             this.Label120.Location = new System.Drawing.Point(774, 294);
             this.Label120.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label120.Name = "Label120";
-            this.Label120.Size = new System.Drawing.Size(58, 18);
+            this.Label120.Size = new System.Drawing.Size(40, 14);
             this.Label120.TabIndex = 2233;
             this.Label120.Text = "CA305";
             // 
@@ -1176,7 +1176,7 @@
             this.Label121.Location = new System.Drawing.Point(920, 147);
             this.Label121.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label121.Name = "Label121";
-            this.Label121.Size = new System.Drawing.Size(58, 18);
+            this.Label121.Size = new System.Drawing.Size(40, 14);
             this.Label121.TabIndex = 2232;
             this.Label121.Text = "CA304";
             // 
@@ -1187,7 +1187,7 @@
             this.Label122.Location = new System.Drawing.Point(861, 147);
             this.Label122.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label122.Name = "Label122";
-            this.Label122.Size = new System.Drawing.Size(58, 18);
+            this.Label122.Size = new System.Drawing.Size(40, 14);
             this.Label122.TabIndex = 2231;
             this.Label122.Text = "CA303";
             // 
@@ -1198,7 +1198,7 @@
             this.Label123.Location = new System.Drawing.Point(708, 147);
             this.Label123.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label123.Name = "Label123";
-            this.Label123.Size = new System.Drawing.Size(58, 18);
+            this.Label123.Size = new System.Drawing.Size(40, 14);
             this.Label123.TabIndex = 2229;
             this.Label123.Text = "CA301";
             // 
@@ -1219,7 +1219,7 @@
             this.Label124.Location = new System.Drawing.Point(46, 7);
             this.Label124.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label124.Name = "Label124";
-            this.Label124.Size = new System.Drawing.Size(157, 27);
+            this.Label124.Size = new System.Drawing.Size(105, 18);
             this.Label124.TabIndex = 1599;
             this.Label124.Text = "DC Cathode3";
             // 
@@ -1240,7 +1240,7 @@
             this.Label125.Location = new System.Drawing.Point(49, 7);
             this.Label125.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label125.Name = "Label125";
-            this.Label125.Size = new System.Drawing.Size(150, 27);
+            this.Label125.Size = new System.Drawing.Size(99, 18);
             this.Label125.TabIndex = 1599;
             this.Label125.Text = "M3 Chamber";
             // 
@@ -1378,7 +1378,7 @@
             this.Label139.Location = new System.Drawing.Point(20, 22);
             this.Label139.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label139.Name = "Label139";
-            this.Label139.Size = new System.Drawing.Size(84, 27);
+            this.Label139.Size = new System.Drawing.Size(56, 18);
             this.Label139.TabIndex = 1638;
             this.Label139.Text = "混和槽";
             // 
@@ -1434,7 +1434,7 @@
             this.Label146.Location = new System.Drawing.Point(747, 13);
             this.Label146.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label146.Name = "Label146";
-            this.Label146.Size = new System.Drawing.Size(118, 18);
+            this.Label146.Size = new System.Drawing.Size(78, 14);
             this.Label146.TabIndex = 2201;
             this.Label146.Text = "MFC_0308_O2";
             // 
@@ -1445,7 +1445,7 @@
             this.Label147.Location = new System.Drawing.Point(845, 13);
             this.Label147.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label147.Name = "Label147";
-            this.Label147.Size = new System.Drawing.Size(113, 18);
+            this.Label147.Size = new System.Drawing.Size(76, 14);
             this.Label147.TabIndex = 2200;
             this.Label147.Text = "MFC_0307_Ar";
             // 
@@ -1492,7 +1492,7 @@
             this.Label153.Location = new System.Drawing.Point(767, 147);
             this.Label153.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label153.Name = "Label153";
-            this.Label153.Size = new System.Drawing.Size(58, 18);
+            this.Label153.Size = new System.Drawing.Size(40, 14);
             this.Label153.TabIndex = 2230;
             this.Label153.Text = "CA302";
             // 
@@ -1503,7 +1503,7 @@
             this.Label70.Location = new System.Drawing.Point(562, 409);
             this.Label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label70.Name = "Label70";
-            this.Label70.Size = new System.Drawing.Size(57, 18);
+            this.Label70.Size = new System.Drawing.Size(38, 14);
             this.Label70.TabIndex = 2195;
             this.Label70.Text = "CN211";
             // 
@@ -1514,7 +1514,7 @@
             this.Label71.Location = new System.Drawing.Point(516, 409);
             this.Label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label71.Name = "Label71";
-            this.Label71.Size = new System.Drawing.Size(58, 18);
+            this.Label71.Size = new System.Drawing.Size(39, 14);
             this.Label71.TabIndex = 2194;
             this.Label71.Text = "CN210";
             // 
@@ -1525,7 +1525,7 @@
             this.Label72.Location = new System.Drawing.Point(472, 409);
             this.Label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label72.Name = "Label72";
-            this.Label72.Size = new System.Drawing.Size(58, 18);
+            this.Label72.Size = new System.Drawing.Size(39, 14);
             this.Label72.TabIndex = 2193;
             this.Label72.Text = "CN209";
             // 
@@ -1536,7 +1536,7 @@
             this.Label73.Location = new System.Drawing.Point(425, 409);
             this.Label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label73.Name = "Label73";
-            this.Label73.Size = new System.Drawing.Size(58, 18);
+            this.Label73.Size = new System.Drawing.Size(39, 14);
             this.Label73.TabIndex = 2192;
             this.Label73.Text = "CN208";
             // 
@@ -1547,7 +1547,7 @@
             this.Label74.Location = new System.Drawing.Point(384, 409);
             this.Label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label74.Name = "Label74";
-            this.Label74.Size = new System.Drawing.Size(58, 18);
+            this.Label74.Size = new System.Drawing.Size(39, 14);
             this.Label74.TabIndex = 2191;
             this.Label74.Text = "CN207";
             // 
@@ -1558,7 +1558,7 @@
             this.Label75.Location = new System.Drawing.Point(390, 223);
             this.Label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label75.Name = "Label75";
-            this.Label75.Size = new System.Drawing.Size(51, 18);
+            this.Label75.Size = new System.Drawing.Size(34, 14);
             this.Label75.TabIndex = 2190;
             this.Label75.Text = "CPV1";
             // 
@@ -1569,7 +1569,7 @@
             this.Label76.Location = new System.Drawing.Point(546, 294);
             this.Label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label76.Name = "Label76";
-            this.Label76.Size = new System.Drawing.Size(58, 18);
+            this.Label76.Size = new System.Drawing.Size(40, 14);
             this.Label76.TabIndex = 2189;
             this.Label76.Text = "CA206";
             // 
@@ -1580,7 +1580,7 @@
             this.Label77.Location = new System.Drawing.Point(466, 294);
             this.Label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label77.Name = "Label77";
-            this.Label77.Size = new System.Drawing.Size(58, 18);
+            this.Label77.Size = new System.Drawing.Size(40, 14);
             this.Label77.TabIndex = 2188;
             this.Label77.Text = "CA205";
             // 
@@ -1591,7 +1591,7 @@
             this.Label78.Location = new System.Drawing.Point(612, 147);
             this.Label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label78.Name = "Label78";
-            this.Label78.Size = new System.Drawing.Size(58, 18);
+            this.Label78.Size = new System.Drawing.Size(40, 14);
             this.Label78.TabIndex = 2187;
             this.Label78.Text = "CA204";
             // 
@@ -1602,7 +1602,7 @@
             this.Label79.Location = new System.Drawing.Point(553, 147);
             this.Label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label79.Name = "Label79";
-            this.Label79.Size = new System.Drawing.Size(58, 18);
+            this.Label79.Size = new System.Drawing.Size(40, 14);
             this.Label79.TabIndex = 2186;
             this.Label79.Text = "CA203";
             // 
@@ -1613,7 +1613,7 @@
             this.Label80.Location = new System.Drawing.Point(400, 147);
             this.Label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label80.Name = "Label80";
-            this.Label80.Size = new System.Drawing.Size(58, 18);
+            this.Label80.Size = new System.Drawing.Size(40, 14);
             this.Label80.TabIndex = 2184;
             this.Label80.Text = "CA201";
             // 
@@ -1634,7 +1634,7 @@
             this.Label81.Location = new System.Drawing.Point(46, 7);
             this.Label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label81.Name = "Label81";
-            this.Label81.Size = new System.Drawing.Size(157, 27);
+            this.Label81.Size = new System.Drawing.Size(104, 18);
             this.Label81.TabIndex = 1599;
             this.Label81.Text = "MF Cathode2";
             // 
@@ -1655,7 +1655,7 @@
             this.Label82.Location = new System.Drawing.Point(49, 7);
             this.Label82.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label82.Name = "Label82";
-            this.Label82.Size = new System.Drawing.Size(150, 27);
+            this.Label82.Size = new System.Drawing.Size(99, 18);
             this.Label82.TabIndex = 1599;
             this.Label82.Text = "M3 Chamber";
             // 
@@ -1793,7 +1793,7 @@
             this.Label98.Location = new System.Drawing.Point(20, 22);
             this.Label98.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label98.Name = "Label98";
-            this.Label98.Size = new System.Drawing.Size(84, 27);
+            this.Label98.Size = new System.Drawing.Size(56, 18);
             this.Label98.TabIndex = 1638;
             this.Label98.Text = "混和槽";
             // 
@@ -1849,7 +1849,7 @@
             this.Label105.Location = new System.Drawing.Point(438, 13);
             this.Label105.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label105.Name = "Label105";
-            this.Label105.Size = new System.Drawing.Size(118, 18);
+            this.Label105.Size = new System.Drawing.Size(78, 14);
             this.Label105.TabIndex = 2156;
             this.Label105.Text = "MFC_0306_O2";
             // 
@@ -1860,7 +1860,7 @@
             this.Label106.Location = new System.Drawing.Point(537, 13);
             this.Label106.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label106.Name = "Label106";
-            this.Label106.Size = new System.Drawing.Size(113, 18);
+            this.Label106.Size = new System.Drawing.Size(76, 14);
             this.Label106.TabIndex = 2155;
             this.Label106.Text = "MFC_0305_Ar";
             // 
@@ -1907,7 +1907,7 @@
             this.Label112.Location = new System.Drawing.Point(459, 147);
             this.Label112.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label112.Name = "Label112";
-            this.Label112.Size = new System.Drawing.Size(58, 18);
+            this.Label112.Size = new System.Drawing.Size(40, 14);
             this.Label112.TabIndex = 2185;
             this.Label112.Text = "CA202";
             // 
@@ -1918,7 +1918,7 @@
             this.Label69.Location = new System.Drawing.Point(242, 409);
             this.Label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label69.Name = "Label69";
-            this.Label69.Size = new System.Drawing.Size(56, 18);
+            this.Label69.Size = new System.Drawing.Size(37, 14);
             this.Label69.TabIndex = 2150;
             this.Label69.Text = "CN111";
             // 
@@ -1929,7 +1929,7 @@
             this.Label68.Location = new System.Drawing.Point(196, 409);
             this.Label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label68.Name = "Label68";
-            this.Label68.Size = new System.Drawing.Size(57, 18);
+            this.Label68.Size = new System.Drawing.Size(38, 14);
             this.Label68.TabIndex = 2149;
             this.Label68.Text = "CN110";
             // 
@@ -1940,7 +1940,7 @@
             this.Label67.Location = new System.Drawing.Point(152, 409);
             this.Label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label67.Name = "Label67";
-            this.Label67.Size = new System.Drawing.Size(58, 18);
+            this.Label67.Size = new System.Drawing.Size(39, 14);
             this.Label67.TabIndex = 2148;
             this.Label67.Text = "CN109";
             // 
@@ -1951,7 +1951,7 @@
             this.Label66.Location = new System.Drawing.Point(105, 409);
             this.Label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label66.Name = "Label66";
-            this.Label66.Size = new System.Drawing.Size(58, 18);
+            this.Label66.Size = new System.Drawing.Size(39, 14);
             this.Label66.TabIndex = 2147;
             this.Label66.Text = "CN108";
             // 
@@ -1962,7 +1962,7 @@
             this.Label65.Location = new System.Drawing.Point(64, 409);
             this.Label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label65.Name = "Label65";
-            this.Label65.Size = new System.Drawing.Size(58, 18);
+            this.Label65.Size = new System.Drawing.Size(39, 14);
             this.Label65.TabIndex = 2146;
             this.Label65.Text = "CN107";
             // 
@@ -1973,7 +1973,7 @@
             this.Label64.Location = new System.Drawing.Point(70, 223);
             this.Label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label64.Name = "Label64";
-            this.Label64.Size = new System.Drawing.Size(51, 18);
+            this.Label64.Size = new System.Drawing.Size(34, 14);
             this.Label64.TabIndex = 2145;
             this.Label64.Text = "CPV1";
             // 
@@ -1984,7 +1984,7 @@
             this.Label63.Location = new System.Drawing.Point(226, 294);
             this.Label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label63.Name = "Label63";
-            this.Label63.Size = new System.Drawing.Size(58, 18);
+            this.Label63.Size = new System.Drawing.Size(40, 14);
             this.Label63.TabIndex = 2144;
             this.Label63.Text = "CA106";
             // 
@@ -1995,7 +1995,7 @@
             this.Label62.Location = new System.Drawing.Point(146, 294);
             this.Label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label62.Name = "Label62";
-            this.Label62.Size = new System.Drawing.Size(58, 18);
+            this.Label62.Size = new System.Drawing.Size(40, 14);
             this.Label62.TabIndex = 2143;
             this.Label62.Text = "CA105";
             // 
@@ -2006,7 +2006,7 @@
             this.Label61.Location = new System.Drawing.Point(292, 147);
             this.Label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label61.Name = "Label61";
-            this.Label61.Size = new System.Drawing.Size(58, 18);
+            this.Label61.Size = new System.Drawing.Size(40, 14);
             this.Label61.TabIndex = 2142;
             this.Label61.Text = "CA104";
             // 
@@ -2017,7 +2017,7 @@
             this.Label53.Location = new System.Drawing.Point(233, 147);
             this.Label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label53.Name = "Label53";
-            this.Label53.Size = new System.Drawing.Size(58, 18);
+            this.Label53.Size = new System.Drawing.Size(40, 14);
             this.Label53.TabIndex = 2141;
             this.Label53.Text = "CA103";
             // 
@@ -2028,7 +2028,7 @@
             this.Label51.Location = new System.Drawing.Point(80, 147);
             this.Label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label51.Name = "Label51";
-            this.Label51.Size = new System.Drawing.Size(58, 18);
+            this.Label51.Size = new System.Drawing.Size(40, 14);
             this.Label51.TabIndex = 2139;
             this.Label51.Text = "CA101";
             // 
@@ -2049,7 +2049,7 @@
             this.Label32.Location = new System.Drawing.Point(46, 7);
             this.Label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label32.Name = "Label32";
-            this.Label32.Size = new System.Drawing.Size(157, 27);
+            this.Label32.Size = new System.Drawing.Size(104, 18);
             this.Label32.TabIndex = 1599;
             this.Label32.Text = "MF Cathode1";
             // 
@@ -2070,7 +2070,7 @@
             this.Label31.Location = new System.Drawing.Point(49, 7);
             this.Label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label31.Name = "Label31";
-            this.Label31.Size = new System.Drawing.Size(150, 27);
+            this.Label31.Size = new System.Drawing.Size(99, 18);
             this.Label31.TabIndex = 1599;
             this.Label31.Text = "M3 Chamber";
             // 
@@ -2208,7 +2208,7 @@
             this.Label30.Location = new System.Drawing.Point(20, 22);
             this.Label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label30.Name = "Label30";
-            this.Label30.Size = new System.Drawing.Size(84, 27);
+            this.Label30.Size = new System.Drawing.Size(56, 18);
             this.Label30.TabIndex = 1638;
             this.Label30.Text = "混和槽";
             // 
@@ -2264,7 +2264,7 @@
             this.Label20.Location = new System.Drawing.Point(118, 13);
             this.Label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label20.Name = "Label20";
-            this.Label20.Size = new System.Drawing.Size(118, 18);
+            this.Label20.Size = new System.Drawing.Size(78, 14);
             this.Label20.TabIndex = 2111;
             this.Label20.Text = "MFC_0304_O2";
             // 
@@ -2275,7 +2275,7 @@
             this.Label19.Location = new System.Drawing.Point(216, 13);
             this.Label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label19.Name = "Label19";
-            this.Label19.Size = new System.Drawing.Size(113, 18);
+            this.Label19.Size = new System.Drawing.Size(76, 14);
             this.Label19.TabIndex = 2110;
             this.Label19.Text = "MFC_0303_Ar";
             // 
@@ -2322,7 +2322,7 @@
             this.Label52.Location = new System.Drawing.Point(139, 147);
             this.Label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label52.Name = "Label52";
-            this.Label52.Size = new System.Drawing.Size(58, 18);
+            this.Label52.Size = new System.Drawing.Size(40, 14);
             this.Label52.TabIndex = 2140;
             this.Label52.Text = "CA102";
             // 
@@ -2749,7 +2749,7 @@
             this.Label220.Location = new System.Drawing.Point(966, 587);
             this.Label220.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label220.Name = "Label220";
-            this.Label220.Size = new System.Drawing.Size(149, 27);
+            this.Label220.Size = new System.Drawing.Size(98, 18);
             this.Label220.TabIndex = 2362;
             this.Label220.Text = "O2 (10sccm)";
             // 
@@ -2760,7 +2760,7 @@
             this.Label221.Location = new System.Drawing.Point(966, 621);
             this.Label221.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label221.Name = "Label221";
-            this.Label221.Size = new System.Drawing.Size(153, 27);
+            this.Label221.Size = new System.Drawing.Size(102, 18);
             this.Label221.TabIndex = 2361;
             this.Label221.Text = "Ar (500sccm)";
             // 
@@ -2771,7 +2771,7 @@
             this.Label213.Location = new System.Drawing.Point(664, 587);
             this.Label213.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label213.Name = "Label213";
-            this.Label213.Size = new System.Drawing.Size(162, 27);
+            this.Label213.Size = new System.Drawing.Size(107, 18);
             this.Label213.TabIndex = 2360;
             this.Label213.Text = "O2 (100sccm)";
             // 
@@ -2782,7 +2782,7 @@
             this.Label214.Location = new System.Drawing.Point(664, 621);
             this.Label214.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label214.Name = "Label214";
-            this.Label214.Size = new System.Drawing.Size(153, 27);
+            this.Label214.Size = new System.Drawing.Size(102, 18);
             this.Label214.TabIndex = 2359;
             this.Label214.Text = "Ar (500sccm)";
             // 
@@ -2793,7 +2793,7 @@
             this.Label206.Location = new System.Drawing.Point(355, 587);
             this.Label206.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label206.Name = "Label206";
-            this.Label206.Size = new System.Drawing.Size(149, 27);
+            this.Label206.Size = new System.Drawing.Size(98, 18);
             this.Label206.TabIndex = 2358;
             this.Label206.Text = "O2 (10sccm)";
             // 
@@ -2804,7 +2804,7 @@
             this.Label207.Location = new System.Drawing.Point(355, 621);
             this.Label207.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label207.Name = "Label207";
-            this.Label207.Size = new System.Drawing.Size(153, 27);
+            this.Label207.Size = new System.Drawing.Size(102, 18);
             this.Label207.TabIndex = 2357;
             this.Label207.Text = "Ar (500sccm)";
             // 
@@ -2815,7 +2815,7 @@
             this.Label195.Location = new System.Drawing.Point(38, 587);
             this.Label195.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label195.Name = "Label195";
-            this.Label195.Size = new System.Drawing.Size(162, 27);
+            this.Label195.Size = new System.Drawing.Size(107, 18);
             this.Label195.TabIndex = 2356;
             this.Label195.Text = "O2 (100sccm)";
             // 
@@ -2826,7 +2826,7 @@
             this.Label194.Location = new System.Drawing.Point(38, 621);
             this.Label194.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label194.Name = "Label194";
-            this.Label194.Size = new System.Drawing.Size(153, 27);
+            this.Label194.Size = new System.Drawing.Size(102, 18);
             this.Label194.TabIndex = 2355;
             this.Label194.Text = "Ar (500sccm)";
             // 
@@ -2864,7 +2864,7 @@
             this.Label215.Location = new System.Drawing.Point(841, 259);
             this.Label215.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label215.Name = "Label215";
-            this.Label215.Size = new System.Drawing.Size(127, 27);
+            this.Label215.Size = new System.Drawing.Size(85, 18);
             this.Label215.TabIndex = 2408;
             this.Label215.Text = "CN411 (%)";
             // 
@@ -2875,7 +2875,7 @@
             this.Label216.Location = new System.Drawing.Point(841, 217);
             this.Label216.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label216.Name = "Label216";
-            this.Label216.Size = new System.Drawing.Size(129, 27);
+            this.Label216.Size = new System.Drawing.Size(86, 18);
             this.Label216.TabIndex = 2407;
             this.Label216.Text = "CN410 (%)";
             // 
@@ -2886,7 +2886,7 @@
             this.Label217.Location = new System.Drawing.Point(841, 175);
             this.Label217.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label217.Name = "Label217";
-            this.Label217.Size = new System.Drawing.Size(129, 27);
+            this.Label217.Size = new System.Drawing.Size(86, 18);
             this.Label217.TabIndex = 2406;
             this.Label217.Text = "CN409 (%)";
             // 
@@ -2897,7 +2897,7 @@
             this.Label218.Location = new System.Drawing.Point(841, 133);
             this.Label218.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label218.Name = "Label218";
-            this.Label218.Size = new System.Drawing.Size(129, 27);
+            this.Label218.Size = new System.Drawing.Size(86, 18);
             this.Label218.TabIndex = 2405;
             this.Label218.Text = "CN408 (%)";
             // 
@@ -2908,7 +2908,7 @@
             this.Label219.Location = new System.Drawing.Point(841, 91);
             this.Label219.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label219.Name = "Label219";
-            this.Label219.Size = new System.Drawing.Size(129, 27);
+            this.Label219.Size = new System.Drawing.Size(86, 18);
             this.Label219.TabIndex = 2404;
             this.Label219.Text = "CN407 (%)";
             // 
@@ -2919,7 +2919,7 @@
             this.Label208.Location = new System.Drawing.Point(592, 260);
             this.Label208.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label208.Name = "Label208";
-            this.Label208.Size = new System.Drawing.Size(127, 27);
+            this.Label208.Size = new System.Drawing.Size(85, 18);
             this.Label208.TabIndex = 2403;
             this.Label208.Text = "CN311 (%)";
             // 
@@ -2930,7 +2930,7 @@
             this.Label209.Location = new System.Drawing.Point(592, 218);
             this.Label209.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label209.Name = "Label209";
-            this.Label209.Size = new System.Drawing.Size(129, 27);
+            this.Label209.Size = new System.Drawing.Size(86, 18);
             this.Label209.TabIndex = 2402;
             this.Label209.Text = "CN310 (%)";
             // 
@@ -2941,7 +2941,7 @@
             this.Label210.Location = new System.Drawing.Point(592, 176);
             this.Label210.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label210.Name = "Label210";
-            this.Label210.Size = new System.Drawing.Size(129, 27);
+            this.Label210.Size = new System.Drawing.Size(86, 18);
             this.Label210.TabIndex = 2401;
             this.Label210.Text = "CN309 (%)";
             // 
@@ -2952,7 +2952,7 @@
             this.Label211.Location = new System.Drawing.Point(592, 134);
             this.Label211.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label211.Name = "Label211";
-            this.Label211.Size = new System.Drawing.Size(129, 27);
+            this.Label211.Size = new System.Drawing.Size(86, 18);
             this.Label211.TabIndex = 2400;
             this.Label211.Text = "CN308 (%)";
             // 
@@ -2963,7 +2963,7 @@
             this.Label212.Location = new System.Drawing.Point(592, 92);
             this.Label212.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label212.Name = "Label212";
-            this.Label212.Size = new System.Drawing.Size(129, 27);
+            this.Label212.Size = new System.Drawing.Size(86, 18);
             this.Label212.TabIndex = 2399;
             this.Label212.Text = "CN307 (%)";
             // 
@@ -2974,7 +2974,7 @@
             this.Label201.Location = new System.Drawing.Point(315, 259);
             this.Label201.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label201.Name = "Label201";
-            this.Label201.Size = new System.Drawing.Size(127, 27);
+            this.Label201.Size = new System.Drawing.Size(85, 18);
             this.Label201.TabIndex = 2398;
             this.Label201.Text = "CN211 (%)";
             // 
@@ -2985,7 +2985,7 @@
             this.Label202.Location = new System.Drawing.Point(315, 217);
             this.Label202.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label202.Name = "Label202";
-            this.Label202.Size = new System.Drawing.Size(129, 27);
+            this.Label202.Size = new System.Drawing.Size(86, 18);
             this.Label202.TabIndex = 2397;
             this.Label202.Text = "CN210 (%)";
             // 
@@ -2996,7 +2996,7 @@
             this.Label203.Location = new System.Drawing.Point(315, 175);
             this.Label203.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label203.Name = "Label203";
-            this.Label203.Size = new System.Drawing.Size(129, 27);
+            this.Label203.Size = new System.Drawing.Size(86, 18);
             this.Label203.TabIndex = 2396;
             this.Label203.Text = "CN209 (%)";
             // 
@@ -3007,7 +3007,7 @@
             this.Label204.Location = new System.Drawing.Point(315, 133);
             this.Label204.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label204.Name = "Label204";
-            this.Label204.Size = new System.Drawing.Size(129, 27);
+            this.Label204.Size = new System.Drawing.Size(86, 18);
             this.Label204.TabIndex = 2395;
             this.Label204.Text = "CN208 (%)";
             // 
@@ -3018,7 +3018,7 @@
             this.Label205.Location = new System.Drawing.Point(315, 91);
             this.Label205.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label205.Name = "Label205";
-            this.Label205.Size = new System.Drawing.Size(129, 27);
+            this.Label205.Size = new System.Drawing.Size(86, 18);
             this.Label205.TabIndex = 2394;
             this.Label205.Text = "CN207 (%)";
             // 
@@ -3029,7 +3029,7 @@
             this.Label200.Location = new System.Drawing.Point(54, 260);
             this.Label200.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label200.Name = "Label200";
-            this.Label200.Size = new System.Drawing.Size(125, 27);
+            this.Label200.Size = new System.Drawing.Size(84, 18);
             this.Label200.TabIndex = 2393;
             this.Label200.Text = "CN111 (%)";
             // 
@@ -3040,7 +3040,7 @@
             this.Label199.Location = new System.Drawing.Point(54, 218);
             this.Label199.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label199.Name = "Label199";
-            this.Label199.Size = new System.Drawing.Size(127, 27);
+            this.Label199.Size = new System.Drawing.Size(85, 18);
             this.Label199.TabIndex = 2392;
             this.Label199.Text = "CN110 (%)";
             // 
@@ -3051,7 +3051,7 @@
             this.Label198.Location = new System.Drawing.Point(54, 176);
             this.Label198.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label198.Name = "Label198";
-            this.Label198.Size = new System.Drawing.Size(129, 27);
+            this.Label198.Size = new System.Drawing.Size(86, 18);
             this.Label198.TabIndex = 2391;
             this.Label198.Text = "CN109 (%)";
             // 
@@ -3062,7 +3062,7 @@
             this.Label196.Location = new System.Drawing.Point(54, 134);
             this.Label196.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label196.Name = "Label196";
-            this.Label196.Size = new System.Drawing.Size(129, 27);
+            this.Label196.Size = new System.Drawing.Size(86, 18);
             this.Label196.TabIndex = 2390;
             this.Label196.Text = "CN108 (%)";
             // 
@@ -3073,7 +3073,7 @@
             this.Label197.Location = new System.Drawing.Point(54, 92);
             this.Label197.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label197.Name = "Label197";
-            this.Label197.Size = new System.Drawing.Size(129, 27);
+            this.Label197.Size = new System.Drawing.Size(86, 18);
             this.Label197.TabIndex = 2389;
             this.Label197.Text = "CN107 (%)";
             // 
@@ -3359,10 +3359,10 @@
             this.TabPage1.Controls.Add(this.Label160);
             this.TabPage1.Controls.Add(this.Label162);
             this.TabPage1.Controls.Add(this.Label161);
-            this.TabPage1.Location = new System.Drawing.Point(4, 34);
+            this.TabPage1.Location = new System.Drawing.Point(4, 26);
             this.TabPage1.Name = "TabPage1";
             this.TabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage1.Size = new System.Drawing.Size(1279, 655);
+            this.TabPage1.Size = new System.Drawing.Size(1279, 663);
             this.TabPage1.TabIndex = 0;
             this.TabPage1.Text = "Gas flow chart - 流量設定 / 控制";
             this.TabPage1.UseVisualStyleBackColor = true;
@@ -3749,273 +3749,289 @@
             // 
             // inputTextBox7
             // 
-            this.inputTextBox7._Division = 1;
+            this.inputTextBox7._Division = 2000;
             this.inputTextBox7._EqBase = null;
             this.inputTextBox7._FloatNumber = false;
-            this.inputTextBox7._MaxLimit = 999D;
+            this.inputTextBox7._MaxLimit = 501D;
             this.inputTextBox7._MinLimit = 0D;
-            this.inputTextBox7._Multiplication = 1;
+            this.inputTextBox7._Multiplication = 500;
             this.inputTextBox7._NumberOnly = true;
             this.inputTextBox7._PlcDevice = "SET_MFC_0309_Ar";
             this.inputTextBox7.BackColor = System.Drawing.Color.White;
             this.inputTextBox7.Location = new System.Drawing.Point(1136, 620);
             this.inputTextBox7.Name = "inputTextBox7";
-            this.inputTextBox7.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox7.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox7.TabIndex = 2386;
             this.inputTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox6
             // 
-            this.displayTextBox6._Division = ((short)(1));
+            this.displayTextBox6._Division = 2000D;
             this.displayTextBox6._DoubleWord = false;
             this.displayTextBox6._EqBase = null;
+            this.displayTextBox6._ITR = false;
             this.displayTextBox6._MaxLimit = 999D;
             this.displayTextBox6._MinLimit = 0D;
-            this.displayTextBox6._Multiplication = ((short)(1));
+            this.displayTextBox6._Multiplication = 500D;
             this.displayTextBox6._PlcDevice = "MFC_0309_Ar";
+            this.displayTextBox6._TTR = false;
             this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox6.Location = new System.Drawing.Point(1072, 620);
             this.displayTextBox6.Name = "displayTextBox6";
             this.displayTextBox6.ReadOnly = true;
-            this.displayTextBox6.Size = new System.Drawing.Size(60, 33);
+            this.displayTextBox6.Size = new System.Drawing.Size(60, 25);
             this.displayTextBox6.TabIndex = 2385;
             this.displayTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox8
             // 
-            this.inputTextBox8._Division = 1;
+            this.inputTextBox8._Division = 2000;
             this.inputTextBox8._EqBase = null;
             this.inputTextBox8._FloatNumber = false;
-            this.inputTextBox8._MaxLimit = 999D;
+            this.inputTextBox8._MaxLimit = 11D;
             this.inputTextBox8._MinLimit = 0D;
-            this.inputTextBox8._Multiplication = 1;
+            this.inputTextBox8._Multiplication = 10;
             this.inputTextBox8._NumberOnly = true;
             this.inputTextBox8._PlcDevice = "SET_MFC_0310_O2";
             this.inputTextBox8.BackColor = System.Drawing.Color.White;
             this.inputTextBox8.Location = new System.Drawing.Point(1136, 586);
             this.inputTextBox8.Name = "inputTextBox8";
-            this.inputTextBox8.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox8.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox8.TabIndex = 2384;
             this.inputTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox7
             // 
-            this.displayTextBox7._Division = ((short)(1));
+            this.displayTextBox7._Division = 2000D;
             this.displayTextBox7._DoubleWord = false;
             this.displayTextBox7._EqBase = null;
+            this.displayTextBox7._ITR = false;
             this.displayTextBox7._MaxLimit = 999D;
             this.displayTextBox7._MinLimit = 0D;
-            this.displayTextBox7._Multiplication = ((short)(1));
+            this.displayTextBox7._Multiplication = 10D;
             this.displayTextBox7._PlcDevice = "MFC_0310_O2";
+            this.displayTextBox7._TTR = false;
             this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox7.Location = new System.Drawing.Point(1072, 586);
             this.displayTextBox7.Name = "displayTextBox7";
             this.displayTextBox7.ReadOnly = true;
-            this.displayTextBox7.Size = new System.Drawing.Size(60, 33);
+            this.displayTextBox7.Size = new System.Drawing.Size(60, 25);
             this.displayTextBox7.TabIndex = 2383;
             this.displayTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox5
             // 
-            this.inputTextBox5._Division = 1;
+            this.inputTextBox5._Division = 2000;
             this.inputTextBox5._EqBase = null;
             this.inputTextBox5._FloatNumber = false;
-            this.inputTextBox5._MaxLimit = 999D;
+            this.inputTextBox5._MaxLimit = 501D;
             this.inputTextBox5._MinLimit = 0D;
-            this.inputTextBox5._Multiplication = 1;
+            this.inputTextBox5._Multiplication = 500;
             this.inputTextBox5._NumberOnly = true;
             this.inputTextBox5._PlcDevice = "SET_MFC_0307_Ar";
             this.inputTextBox5.BackColor = System.Drawing.Color.White;
             this.inputTextBox5.Location = new System.Drawing.Point(839, 620);
             this.inputTextBox5.Name = "inputTextBox5";
-            this.inputTextBox5.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox5.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox5.TabIndex = 2382;
             this.inputTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox4
             // 
-            this.displayTextBox4._Division = ((short)(1));
+            this.displayTextBox4._Division = 2000D;
             this.displayTextBox4._DoubleWord = false;
             this.displayTextBox4._EqBase = null;
+            this.displayTextBox4._ITR = false;
             this.displayTextBox4._MaxLimit = 999D;
             this.displayTextBox4._MinLimit = 0D;
-            this.displayTextBox4._Multiplication = ((short)(1));
+            this.displayTextBox4._Multiplication = 500D;
             this.displayTextBox4._PlcDevice = "MFC_0307_Ar";
+            this.displayTextBox4._TTR = false;
             this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox4.Location = new System.Drawing.Point(775, 620);
             this.displayTextBox4.Name = "displayTextBox4";
             this.displayTextBox4.ReadOnly = true;
-            this.displayTextBox4.Size = new System.Drawing.Size(60, 33);
+            this.displayTextBox4.Size = new System.Drawing.Size(60, 25);
             this.displayTextBox4.TabIndex = 2381;
             this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox6
             // 
-            this.inputTextBox6._Division = 1;
+            this.inputTextBox6._Division = 2000;
             this.inputTextBox6._EqBase = null;
             this.inputTextBox6._FloatNumber = false;
-            this.inputTextBox6._MaxLimit = 999D;
+            this.inputTextBox6._MaxLimit = 101D;
             this.inputTextBox6._MinLimit = 0D;
-            this.inputTextBox6._Multiplication = 1;
+            this.inputTextBox6._Multiplication = 100;
             this.inputTextBox6._NumberOnly = true;
             this.inputTextBox6._PlcDevice = "SET_MFC_0308_O2";
             this.inputTextBox6.BackColor = System.Drawing.Color.White;
             this.inputTextBox6.Location = new System.Drawing.Point(839, 586);
             this.inputTextBox6.Name = "inputTextBox6";
-            this.inputTextBox6.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox6.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox6.TabIndex = 2380;
             this.inputTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox5
             // 
-            this.displayTextBox5._Division = ((short)(1));
+            this.displayTextBox5._Division = 2000D;
             this.displayTextBox5._DoubleWord = false;
             this.displayTextBox5._EqBase = null;
+            this.displayTextBox5._ITR = false;
             this.displayTextBox5._MaxLimit = 999D;
             this.displayTextBox5._MinLimit = 0D;
-            this.displayTextBox5._Multiplication = ((short)(1));
+            this.displayTextBox5._Multiplication = 100D;
             this.displayTextBox5._PlcDevice = "MFC_0308_O2";
+            this.displayTextBox5._TTR = false;
             this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox5.Location = new System.Drawing.Point(775, 586);
             this.displayTextBox5.Name = "displayTextBox5";
             this.displayTextBox5.ReadOnly = true;
-            this.displayTextBox5.Size = new System.Drawing.Size(60, 33);
+            this.displayTextBox5.Size = new System.Drawing.Size(60, 25);
             this.displayTextBox5.TabIndex = 2379;
             this.displayTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox2
             // 
-            this.inputTextBox2._Division = 1;
+            this.inputTextBox2._Division = 2000;
             this.inputTextBox2._EqBase = null;
             this.inputTextBox2._FloatNumber = false;
-            this.inputTextBox2._MaxLimit = 999D;
+            this.inputTextBox2._MaxLimit = 501D;
             this.inputTextBox2._MinLimit = 0D;
-            this.inputTextBox2._Multiplication = 1;
+            this.inputTextBox2._Multiplication = 500;
             this.inputTextBox2._NumberOnly = true;
             this.inputTextBox2._PlcDevice = "SET_MFC_0305_Ar";
             this.inputTextBox2.BackColor = System.Drawing.Color.White;
             this.inputTextBox2.Location = new System.Drawing.Point(530, 620);
             this.inputTextBox2.Name = "inputTextBox2";
-            this.inputTextBox2.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox2.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox2.TabIndex = 2378;
             this.inputTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox2
             // 
-            this.displayTextBox2._Division = ((short)(1));
+            this.displayTextBox2._Division = 2000D;
             this.displayTextBox2._DoubleWord = false;
             this.displayTextBox2._EqBase = null;
+            this.displayTextBox2._ITR = false;
             this.displayTextBox2._MaxLimit = 999D;
             this.displayTextBox2._MinLimit = 0D;
-            this.displayTextBox2._Multiplication = ((short)(1));
+            this.displayTextBox2._Multiplication = 500D;
             this.displayTextBox2._PlcDevice = "MFC_0305_Ar";
+            this.displayTextBox2._TTR = false;
             this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox2.Location = new System.Drawing.Point(466, 620);
             this.displayTextBox2.Name = "displayTextBox2";
             this.displayTextBox2.ReadOnly = true;
-            this.displayTextBox2.Size = new System.Drawing.Size(60, 33);
+            this.displayTextBox2.Size = new System.Drawing.Size(60, 25);
             this.displayTextBox2.TabIndex = 2377;
             this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox3
             // 
-            this.inputTextBox3._Division = 1;
+            this.inputTextBox3._Division = 2000;
             this.inputTextBox3._EqBase = null;
             this.inputTextBox3._FloatNumber = false;
-            this.inputTextBox3._MaxLimit = 999D;
+            this.inputTextBox3._MaxLimit = 11D;
             this.inputTextBox3._MinLimit = 0D;
-            this.inputTextBox3._Multiplication = 1;
+            this.inputTextBox3._Multiplication = 10;
             this.inputTextBox3._NumberOnly = true;
             this.inputTextBox3._PlcDevice = "SET_MFC_0306_O2";
             this.inputTextBox3.BackColor = System.Drawing.Color.White;
             this.inputTextBox3.Location = new System.Drawing.Point(530, 586);
             this.inputTextBox3.Name = "inputTextBox3";
-            this.inputTextBox3.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox3.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox3.TabIndex = 2376;
             this.inputTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox3
             // 
-            this.displayTextBox3._Division = ((short)(1));
+            this.displayTextBox3._Division = 2000D;
             this.displayTextBox3._DoubleWord = false;
             this.displayTextBox3._EqBase = null;
+            this.displayTextBox3._ITR = false;
             this.displayTextBox3._MaxLimit = 999D;
             this.displayTextBox3._MinLimit = 0D;
-            this.displayTextBox3._Multiplication = ((short)(1));
+            this.displayTextBox3._Multiplication = 10D;
             this.displayTextBox3._PlcDevice = "MFC_0306_O2";
+            this.displayTextBox3._TTR = false;
             this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox3.Location = new System.Drawing.Point(466, 586);
             this.displayTextBox3.Name = "displayTextBox3";
             this.displayTextBox3.ReadOnly = true;
-            this.displayTextBox3.Size = new System.Drawing.Size(60, 33);
+            this.displayTextBox3.Size = new System.Drawing.Size(60, 25);
             this.displayTextBox3.TabIndex = 2375;
             this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox1
             // 
-            this.inputTextBox1._Division = 1;
+            this.inputTextBox1._Division = 2000;
             this.inputTextBox1._EqBase = null;
             this.inputTextBox1._FloatNumber = false;
-            this.inputTextBox1._MaxLimit = 999D;
+            this.inputTextBox1._MaxLimit = 501D;
             this.inputTextBox1._MinLimit = 0D;
-            this.inputTextBox1._Multiplication = 1;
+            this.inputTextBox1._Multiplication = 500;
             this.inputTextBox1._NumberOnly = true;
             this.inputTextBox1._PlcDevice = "SET_MFC_0303_Ar";
             this.inputTextBox1.BackColor = System.Drawing.Color.White;
             this.inputTextBox1.Location = new System.Drawing.Point(216, 620);
             this.inputTextBox1.Name = "inputTextBox1";
-            this.inputTextBox1.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox1.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox1.TabIndex = 2374;
             this.inputTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox1
             // 
-            this.displayTextBox1._Division = ((short)(1));
+            this.displayTextBox1._Division = 2000D;
             this.displayTextBox1._DoubleWord = false;
             this.displayTextBox1._EqBase = null;
+            this.displayTextBox1._ITR = false;
             this.displayTextBox1._MaxLimit = 999D;
             this.displayTextBox1._MinLimit = 0D;
-            this.displayTextBox1._Multiplication = ((short)(1));
+            this.displayTextBox1._Multiplication = 500D;
             this.displayTextBox1._PlcDevice = "MFC_0303_Ar";
+            this.displayTextBox1._TTR = false;
             this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox1.Location = new System.Drawing.Point(152, 620);
             this.displayTextBox1.Name = "displayTextBox1";
             this.displayTextBox1.ReadOnly = true;
-            this.displayTextBox1.Size = new System.Drawing.Size(60, 33);
+            this.displayTextBox1.Size = new System.Drawing.Size(60, 25);
             this.displayTextBox1.TabIndex = 2373;
             this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox4
             // 
-            this.inputTextBox4._Division = 1;
+            this.inputTextBox4._Division = 2000;
             this.inputTextBox4._EqBase = null;
             this.inputTextBox4._FloatNumber = false;
-            this.inputTextBox4._MaxLimit = 999D;
+            this.inputTextBox4._MaxLimit = 101D;
             this.inputTextBox4._MinLimit = 0D;
-            this.inputTextBox4._Multiplication = 1;
+            this.inputTextBox4._Multiplication = 100;
             this.inputTextBox4._NumberOnly = true;
             this.inputTextBox4._PlcDevice = "SET_MFC_0304_O2";
             this.inputTextBox4.BackColor = System.Drawing.Color.White;
             this.inputTextBox4.Location = new System.Drawing.Point(216, 586);
             this.inputTextBox4.Name = "inputTextBox4";
-            this.inputTextBox4.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox4.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox4.TabIndex = 2372;
             this.inputTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox23
             // 
-            this.displayTextBox23._Division = ((short)(1));
+            this.displayTextBox23._Division = 2000D;
             this.displayTextBox23._DoubleWord = false;
             this.displayTextBox23._EqBase = null;
+            this.displayTextBox23._ITR = false;
             this.displayTextBox23._MaxLimit = 999D;
             this.displayTextBox23._MinLimit = 0D;
-            this.displayTextBox23._Multiplication = ((short)(1));
+            this.displayTextBox23._Multiplication = 100D;
             this.displayTextBox23._PlcDevice = "MFC_0304_O2";
+            this.displayTextBox23._TTR = false;
             this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox23.Location = new System.Drawing.Point(152, 586);
             this.displayTextBox23.Name = "displayTextBox23";
             this.displayTextBox23.ReadOnly = true;
-            this.displayTextBox23.Size = new System.Drawing.Size(60, 33);
+            this.displayTextBox23.Size = new System.Drawing.Size(60, 25);
             this.displayTextBox23.TabIndex = 2371;
             this.displayTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4404,10 +4420,10 @@
             this.TabPage2.Controls.Add(this.inputTextBox13);
             this.TabPage2.Controls.Add(this.inputTextBox17);
             this.TabPage2.Controls.Add(this.inputTextBox18);
-            this.TabPage2.Location = new System.Drawing.Point(4, 34);
+            this.TabPage2.Location = new System.Drawing.Point(4, 26);
             this.TabPage2.Name = "TabPage2";
             this.TabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage2.Size = new System.Drawing.Size(1279, 655);
+            this.TabPage2.Size = new System.Drawing.Size(1279, 663);
             this.TabPage2.TabIndex = 1;
             this.TabPage2.Text = "比例式電磁閥 - 輸出百分比設定";
             this.TabPage2.UseVisualStyleBackColor = true;
@@ -4425,7 +4441,7 @@
             this.inputTextBox9.BackColor = System.Drawing.Color.White;
             this.inputTextBox9.Location = new System.Drawing.Point(155, 132);
             this.inputTextBox9.Name = "inputTextBox9";
-            this.inputTextBox9.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox9.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox9.TabIndex = 2433;
             this.inputTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4442,7 +4458,7 @@
             this.inputTextBox24.BackColor = System.Drawing.Color.White;
             this.inputTextBox24.Location = new System.Drawing.Point(948, 258);
             this.inputTextBox24.Name = "inputTextBox24";
-            this.inputTextBox24.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox24.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox24.TabIndex = 2432;
             this.inputTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4459,7 +4475,7 @@
             this.inputTextBox25.BackColor = System.Drawing.Color.White;
             this.inputTextBox25.Location = new System.Drawing.Point(948, 216);
             this.inputTextBox25.Name = "inputTextBox25";
-            this.inputTextBox25.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox25.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox25.TabIndex = 2431;
             this.inputTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4476,7 +4492,7 @@
             this.inputTextBox26.BackColor = System.Drawing.Color.White;
             this.inputTextBox26.Location = new System.Drawing.Point(948, 174);
             this.inputTextBox26.Name = "inputTextBox26";
-            this.inputTextBox26.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox26.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox26.TabIndex = 2430;
             this.inputTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4493,7 +4509,7 @@
             this.inputTextBox27.BackColor = System.Drawing.Color.White;
             this.inputTextBox27.Location = new System.Drawing.Point(948, 132);
             this.inputTextBox27.Name = "inputTextBox27";
-            this.inputTextBox27.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox27.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox27.TabIndex = 2429;
             this.inputTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4510,7 +4526,7 @@
             this.inputTextBox28.BackColor = System.Drawing.Color.White;
             this.inputTextBox28.Location = new System.Drawing.Point(948, 90);
             this.inputTextBox28.Name = "inputTextBox28";
-            this.inputTextBox28.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox28.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox28.TabIndex = 2428;
             this.inputTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4527,7 +4543,7 @@
             this.inputTextBox19.BackColor = System.Drawing.Color.White;
             this.inputTextBox19.Location = new System.Drawing.Point(695, 258);
             this.inputTextBox19.Name = "inputTextBox19";
-            this.inputTextBox19.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox19.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox19.TabIndex = 2427;
             this.inputTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4544,7 +4560,7 @@
             this.inputTextBox20.BackColor = System.Drawing.Color.White;
             this.inputTextBox20.Location = new System.Drawing.Point(695, 216);
             this.inputTextBox20.Name = "inputTextBox20";
-            this.inputTextBox20.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox20.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox20.TabIndex = 2426;
             this.inputTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4561,7 +4577,7 @@
             this.inputTextBox21.BackColor = System.Drawing.Color.White;
             this.inputTextBox21.Location = new System.Drawing.Point(695, 174);
             this.inputTextBox21.Name = "inputTextBox21";
-            this.inputTextBox21.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox21.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox21.TabIndex = 2425;
             this.inputTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4578,7 +4594,7 @@
             this.inputTextBox22.BackColor = System.Drawing.Color.White;
             this.inputTextBox22.Location = new System.Drawing.Point(695, 132);
             this.inputTextBox22.Name = "inputTextBox22";
-            this.inputTextBox22.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox22.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox22.TabIndex = 2424;
             this.inputTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4595,7 +4611,7 @@
             this.inputTextBox23.BackColor = System.Drawing.Color.White;
             this.inputTextBox23.Location = new System.Drawing.Point(695, 90);
             this.inputTextBox23.Name = "inputTextBox23";
-            this.inputTextBox23.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox23.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox23.TabIndex = 2423;
             this.inputTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4612,7 +4628,7 @@
             this.inputTextBox10.BackColor = System.Drawing.Color.White;
             this.inputTextBox10.Location = new System.Drawing.Point(155, 90);
             this.inputTextBox10.Name = "inputTextBox10";
-            this.inputTextBox10.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox10.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox10.TabIndex = 2414;
             this.inputTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4629,7 +4645,7 @@
             this.inputTextBox14.BackColor = System.Drawing.Color.White;
             this.inputTextBox14.Location = new System.Drawing.Point(418, 259);
             this.inputTextBox14.Name = "inputTextBox14";
-            this.inputTextBox14.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox14.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox14.TabIndex = 2422;
             this.inputTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4646,7 +4662,7 @@
             this.inputTextBox11.BackColor = System.Drawing.Color.White;
             this.inputTextBox11.Location = new System.Drawing.Point(155, 175);
             this.inputTextBox11.Name = "inputTextBox11";
-            this.inputTextBox11.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox11.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox11.TabIndex = 2415;
             this.inputTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4663,7 +4679,7 @@
             this.inputTextBox15.BackColor = System.Drawing.Color.White;
             this.inputTextBox15.Location = new System.Drawing.Point(418, 217);
             this.inputTextBox15.Name = "inputTextBox15";
-            this.inputTextBox15.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox15.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox15.TabIndex = 2421;
             this.inputTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4680,7 +4696,7 @@
             this.inputTextBox12.BackColor = System.Drawing.Color.White;
             this.inputTextBox12.Location = new System.Drawing.Point(155, 217);
             this.inputTextBox12.Name = "inputTextBox12";
-            this.inputTextBox12.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox12.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox12.TabIndex = 2416;
             this.inputTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4697,7 +4713,7 @@
             this.inputTextBox16.BackColor = System.Drawing.Color.White;
             this.inputTextBox16.Location = new System.Drawing.Point(418, 175);
             this.inputTextBox16.Name = "inputTextBox16";
-            this.inputTextBox16.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox16.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox16.TabIndex = 2420;
             this.inputTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4714,7 +4730,7 @@
             this.inputTextBox13.BackColor = System.Drawing.Color.White;
             this.inputTextBox13.Location = new System.Drawing.Point(155, 259);
             this.inputTextBox13.Name = "inputTextBox13";
-            this.inputTextBox13.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox13.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox13.TabIndex = 2417;
             this.inputTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4731,7 +4747,7 @@
             this.inputTextBox17.BackColor = System.Drawing.Color.White;
             this.inputTextBox17.Location = new System.Drawing.Point(418, 133);
             this.inputTextBox17.Name = "inputTextBox17";
-            this.inputTextBox17.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox17.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox17.TabIndex = 2419;
             this.inputTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4748,7 +4764,7 @@
             this.inputTextBox18.BackColor = System.Drawing.Color.White;
             this.inputTextBox18.Location = new System.Drawing.Point(418, 91);
             this.inputTextBox18.Name = "inputTextBox18";
-            this.inputTextBox18.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox18.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox18.TabIndex = 2418;
             this.inputTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4782,10 +4798,10 @@
             this.tabPage3.Controls.Add(this.inputTextBox31);
             this.tabPage3.Controls.Add(this.inputTextBox30);
             this.tabPage3.Controls.Add(this.inputTextBox29);
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1279, 655);
+            this.tabPage3.Size = new System.Drawing.Size(1279, 663);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Chamber Gas  - 流量設定 / 控制";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -4797,7 +4813,7 @@
             this.Label141.Location = new System.Drawing.Point(392, 139);
             this.Label141.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label141.Name = "Label141";
-            this.Label141.Size = new System.Drawing.Size(99, 27);
+            this.Label141.Size = new System.Drawing.Size(67, 18);
             this.Label141.TabIndex = 2049;
             this.Label141.Text = "M3_2 Ar";
             // 
@@ -4808,7 +4824,7 @@
             this.Label224.Location = new System.Drawing.Point(392, 74);
             this.Label224.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label224.Name = "Label224";
-            this.Label224.Size = new System.Drawing.Size(109, 27);
+            this.Label224.Size = new System.Drawing.Size(73, 18);
             this.Label224.TabIndex = 2048;
             this.Label224.Text = "M3_1 O2";
             // 
@@ -4819,7 +4835,7 @@
             this.Label60.Location = new System.Drawing.Point(392, 273);
             this.Label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label60.Name = "Label60";
-            this.Label60.Size = new System.Drawing.Size(99, 27);
+            this.Label60.Size = new System.Drawing.Size(67, 18);
             this.Label60.TabIndex = 2051;
             this.Label60.Text = "M3_4 Ar";
             // 
@@ -4830,7 +4846,7 @@
             this.Label87.Location = new System.Drawing.Point(392, 214);
             this.Label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label87.Name = "Label87";
-            this.Label87.Size = new System.Drawing.Size(109, 27);
+            this.Label87.Size = new System.Drawing.Size(73, 18);
             this.Label87.TabIndex = 2050;
             this.Label87.Text = "M3_3 O2";
             // 
@@ -4841,7 +4857,7 @@
             this.label56.Location = new System.Drawing.Point(28, 202);
             this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(79, 27);
+            this.label56.Size = new System.Drawing.Size(52, 18);
             this.label56.TabIndex = 2047;
             this.label56.Text = "H2 N2";
             // 
@@ -4852,7 +4868,7 @@
             this.label59.Location = new System.Drawing.Point(28, 141);
             this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(81, 27);
+            this.label59.Size = new System.Drawing.Size(53, 18);
             this.label59.TabIndex = 2046;
             this.label59.Text = "H2 O2";
             // 
@@ -4863,7 +4879,7 @@
             this.label99.Location = new System.Drawing.Point(33, 75);
             this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(71, 27);
+            this.label99.Size = new System.Drawing.Size(47, 18);
             this.label99.TabIndex = 2045;
             this.label99.Text = "H2 Ar";
             // 
@@ -5016,239 +5032,253 @@
             // 
             // displayTextBox14
             // 
-            this.displayTextBox14._Division = ((short)(1));
+            this.displayTextBox14._Division = 2000D;
             this.displayTextBox14._DoubleWord = false;
             this.displayTextBox14._EqBase = null;
+            this.displayTextBox14._ITR = false;
             this.displayTextBox14._MaxLimit = 999D;
             this.displayTextBox14._MinLimit = 0D;
-            this.displayTextBox14._Multiplication = ((short)(1));
+            this.displayTextBox14._Multiplication = 2000D;
             this.displayTextBox14._PlcDevice = "MFC_0302_Ar";
+            this.displayTextBox14._TTR = false;
             this.displayTextBox14.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox14.Location = new System.Drawing.Point(490, 140);
             this.displayTextBox14.Name = "displayTextBox14";
             this.displayTextBox14.ReadOnly = true;
-            this.displayTextBox14.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox14.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox14.TabIndex = 2428;
             this.displayTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox13
             // 
-            this.displayTextBox13._Division = ((short)(1));
+            this.displayTextBox13._Division = 2000D;
             this.displayTextBox13._DoubleWord = false;
             this.displayTextBox13._EqBase = null;
+            this.displayTextBox13._ITR = false;
             this.displayTextBox13._MaxLimit = 999D;
             this.displayTextBox13._MinLimit = 0D;
-            this.displayTextBox13._Multiplication = ((short)(1));
+            this.displayTextBox13._Multiplication = 100D;
             this.displayTextBox13._PlcDevice = "MFC_0301_O2";
+            this.displayTextBox13._TTR = false;
             this.displayTextBox13.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox13.Location = new System.Drawing.Point(490, 75);
             this.displayTextBox13.Name = "displayTextBox13";
             this.displayTextBox13.ReadOnly = true;
-            this.displayTextBox13.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox13.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox13.TabIndex = 2427;
             this.displayTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox12
             // 
-            this.displayTextBox12._Division = ((short)(1));
+            this.displayTextBox12._Division = 2000D;
             this.displayTextBox12._DoubleWord = false;
             this.displayTextBox12._EqBase = null;
+            this.displayTextBox12._ITR = false;
             this.displayTextBox12._MaxLimit = 999D;
             this.displayTextBox12._MinLimit = 0D;
-            this.displayTextBox12._Multiplication = ((short)(1));
+            this.displayTextBox12._Multiplication = 2000D;
             this.displayTextBox12._PlcDevice = "MFC_0312_Ar";
+            this.displayTextBox12._TTR = false;
             this.displayTextBox12.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox12.Location = new System.Drawing.Point(490, 274);
             this.displayTextBox12.Name = "displayTextBox12";
             this.displayTextBox12.ReadOnly = true;
-            this.displayTextBox12.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox12.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox12.TabIndex = 2426;
             this.displayTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox11
             // 
-            this.displayTextBox11._Division = ((short)(1));
+            this.displayTextBox11._Division = 2000D;
             this.displayTextBox11._DoubleWord = false;
             this.displayTextBox11._EqBase = null;
+            this.displayTextBox11._ITR = false;
             this.displayTextBox11._MaxLimit = 999D;
             this.displayTextBox11._MinLimit = 0D;
-            this.displayTextBox11._Multiplication = ((short)(1));
+            this.displayTextBox11._Multiplication = 100D;
             this.displayTextBox11._PlcDevice = "MFC_0311_O2";
+            this.displayTextBox11._TTR = false;
             this.displayTextBox11.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox11.Location = new System.Drawing.Point(490, 202);
             this.displayTextBox11.Name = "displayTextBox11";
             this.displayTextBox11.ReadOnly = true;
-            this.displayTextBox11.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox11.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox11.TabIndex = 2425;
             this.displayTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox10
             // 
-            this.displayTextBox10._Division = ((short)(1));
+            this.displayTextBox10._Division = 2000D;
             this.displayTextBox10._DoubleWord = false;
             this.displayTextBox10._EqBase = null;
+            this.displayTextBox10._ITR = false;
             this.displayTextBox10._MaxLimit = 999D;
             this.displayTextBox10._MinLimit = 0D;
-            this.displayTextBox10._Multiplication = ((short)(1));
+            this.displayTextBox10._Multiplication = 500D;
             this.displayTextBox10._PlcDevice = "MFC_Pre01_N2";
+            this.displayTextBox10._TTR = false;
             this.displayTextBox10.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox10.Location = new System.Drawing.Point(95, 201);
             this.displayTextBox10.Name = "displayTextBox10";
             this.displayTextBox10.ReadOnly = true;
-            this.displayTextBox10.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox10.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox10.TabIndex = 2424;
             this.displayTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox9
             // 
-            this.displayTextBox9._Division = ((short)(1));
+            this.displayTextBox9._Division = 2000D;
             this.displayTextBox9._DoubleWord = false;
             this.displayTextBox9._EqBase = null;
+            this.displayTextBox9._ITR = false;
             this.displayTextBox9._MaxLimit = 999D;
             this.displayTextBox9._MinLimit = 0D;
-            this.displayTextBox9._Multiplication = ((short)(1));
+            this.displayTextBox9._Multiplication = 100D;
             this.displayTextBox9._PlcDevice = "MFC_Pre02_O2";
+            this.displayTextBox9._TTR = false;
             this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox9.Location = new System.Drawing.Point(95, 140);
             this.displayTextBox9.Name = "displayTextBox9";
             this.displayTextBox9.ReadOnly = true;
-            this.displayTextBox9.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox9.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox9.TabIndex = 2423;
             this.displayTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox8
             // 
-            this.displayTextBox8._Division = ((short)(1));
+            this.displayTextBox8._Division = 2000D;
             this.displayTextBox8._DoubleWord = false;
             this.displayTextBox8._EqBase = null;
+            this.displayTextBox8._ITR = false;
             this.displayTextBox8._MaxLimit = 999D;
             this.displayTextBox8._MinLimit = 0D;
-            this.displayTextBox8._Multiplication = ((short)(1));
+            this.displayTextBox8._Multiplication = 2000D;
             this.displayTextBox8._PlcDevice = "MFC_Pre03_Ar";
+            this.displayTextBox8._TTR = false;
             this.displayTextBox8.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox8.Location = new System.Drawing.Point(95, 74);
             this.displayTextBox8.Name = "displayTextBox8";
             this.displayTextBox8.ReadOnly = true;
-            this.displayTextBox8.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox8.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox8.TabIndex = 2422;
             this.displayTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox35
             // 
-            this.inputTextBox35._Division = 1;
+            this.inputTextBox35._Division = 2000;
             this.inputTextBox35._EqBase = null;
             this.inputTextBox35._FloatNumber = false;
-            this.inputTextBox35._MaxLimit = 999D;
+            this.inputTextBox35._MaxLimit = 2000D;
             this.inputTextBox35._MinLimit = 0D;
-            this.inputTextBox35._Multiplication = 1;
+            this.inputTextBox35._Multiplication = 2000;
             this.inputTextBox35._NumberOnly = true;
             this.inputTextBox35._PlcDevice = "SET_MFC_0302_Ar";
             this.inputTextBox35.BackColor = System.Drawing.Color.White;
             this.inputTextBox35.Location = new System.Drawing.Point(564, 140);
             this.inputTextBox35.Name = "inputTextBox35";
-            this.inputTextBox35.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox35.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox35.TabIndex = 2421;
             this.inputTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox34
             // 
-            this.inputTextBox34._Division = 1;
+            this.inputTextBox34._Division = 2000;
             this.inputTextBox34._EqBase = null;
             this.inputTextBox34._FloatNumber = false;
-            this.inputTextBox34._MaxLimit = 999D;
+            this.inputTextBox34._MaxLimit = 100D;
             this.inputTextBox34._MinLimit = 0D;
-            this.inputTextBox34._Multiplication = 1;
+            this.inputTextBox34._Multiplication = 100;
             this.inputTextBox34._NumberOnly = true;
             this.inputTextBox34._PlcDevice = "SET_MFC_0301_O2";
             this.inputTextBox34.BackColor = System.Drawing.Color.White;
             this.inputTextBox34.Location = new System.Drawing.Point(564, 75);
             this.inputTextBox34.Name = "inputTextBox34";
-            this.inputTextBox34.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox34.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox34.TabIndex = 2420;
             this.inputTextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox33
             // 
-            this.inputTextBox33._Division = 1;
+            this.inputTextBox33._Division = 2000;
             this.inputTextBox33._EqBase = null;
             this.inputTextBox33._FloatNumber = false;
-            this.inputTextBox33._MaxLimit = 999D;
+            this.inputTextBox33._MaxLimit = 2000D;
             this.inputTextBox33._MinLimit = 0D;
-            this.inputTextBox33._Multiplication = 1;
+            this.inputTextBox33._Multiplication = 2000;
             this.inputTextBox33._NumberOnly = true;
             this.inputTextBox33._PlcDevice = "SET_MFC_0312_Ar";
             this.inputTextBox33.BackColor = System.Drawing.Color.White;
             this.inputTextBox33.Location = new System.Drawing.Point(564, 274);
             this.inputTextBox33.Name = "inputTextBox33";
-            this.inputTextBox33.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox33.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox33.TabIndex = 2419;
             this.inputTextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox32
             // 
-            this.inputTextBox32._Division = 1;
+            this.inputTextBox32._Division = 2000;
             this.inputTextBox32._EqBase = null;
             this.inputTextBox32._FloatNumber = false;
-            this.inputTextBox32._MaxLimit = 999D;
+            this.inputTextBox32._MaxLimit = 100D;
             this.inputTextBox32._MinLimit = 0D;
-            this.inputTextBox32._Multiplication = 1;
+            this.inputTextBox32._Multiplication = 100;
             this.inputTextBox32._NumberOnly = true;
             this.inputTextBox32._PlcDevice = "SET_MFC_0311_O2";
             this.inputTextBox32.BackColor = System.Drawing.Color.White;
             this.inputTextBox32.Location = new System.Drawing.Point(564, 202);
             this.inputTextBox32.Name = "inputTextBox32";
-            this.inputTextBox32.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox32.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox32.TabIndex = 2418;
             this.inputTextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox31
             // 
-            this.inputTextBox31._Division = 1;
+            this.inputTextBox31._Division = 2000;
             this.inputTextBox31._EqBase = null;
             this.inputTextBox31._FloatNumber = false;
-            this.inputTextBox31._MaxLimit = 999D;
+            this.inputTextBox31._MaxLimit = 500D;
             this.inputTextBox31._MinLimit = 0D;
-            this.inputTextBox31._Multiplication = 1;
+            this.inputTextBox31._Multiplication = 500;
             this.inputTextBox31._NumberOnly = true;
             this.inputTextBox31._PlcDevice = "SET_MFC_Pre01_N2";
             this.inputTextBox31.BackColor = System.Drawing.Color.White;
             this.inputTextBox31.Location = new System.Drawing.Point(171, 201);
             this.inputTextBox31.Name = "inputTextBox31";
-            this.inputTextBox31.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox31.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox31.TabIndex = 2417;
             this.inputTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox30
             // 
-            this.inputTextBox30._Division = 1;
+            this.inputTextBox30._Division = 2000;
             this.inputTextBox30._EqBase = null;
             this.inputTextBox30._FloatNumber = false;
-            this.inputTextBox30._MaxLimit = 999D;
+            this.inputTextBox30._MaxLimit = 100D;
             this.inputTextBox30._MinLimit = 0D;
-            this.inputTextBox30._Multiplication = 1;
+            this.inputTextBox30._Multiplication = 100;
             this.inputTextBox30._NumberOnly = true;
             this.inputTextBox30._PlcDevice = "SET_MFC_Pre02_O2";
             this.inputTextBox30.BackColor = System.Drawing.Color.White;
             this.inputTextBox30.Location = new System.Drawing.Point(171, 140);
             this.inputTextBox30.Name = "inputTextBox30";
-            this.inputTextBox30.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox30.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox30.TabIndex = 2416;
             this.inputTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox29
             // 
-            this.inputTextBox29._Division = 1;
+            this.inputTextBox29._Division = 2000;
             this.inputTextBox29._EqBase = null;
             this.inputTextBox29._FloatNumber = false;
-            this.inputTextBox29._MaxLimit = 999D;
+            this.inputTextBox29._MaxLimit = 2000D;
             this.inputTextBox29._MinLimit = 0D;
-            this.inputTextBox29._Multiplication = 1;
+            this.inputTextBox29._Multiplication = 2000;
             this.inputTextBox29._NumberOnly = true;
             this.inputTextBox29._PlcDevice = "SET_MFC_Pre03_Ar";
             this.inputTextBox29.BackColor = System.Drawing.Color.White;
             this.inputTextBox29.Location = new System.Drawing.Point(171, 74);
             this.inputTextBox29.Name = "inputTextBox29";
-            this.inputTextBox29.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox29.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox29.TabIndex = 2415;
             this.inputTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -5324,10 +5354,10 @@
             this.tabPage4.Controls.Add(this.Label7);
             this.tabPage4.Controls.Add(this.Label6);
             this.tabPage4.Controls.Add(this.Label5);
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1279, 655);
+            this.tabPage4.Size = new System.Drawing.Size(1279, 663);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Power Supply";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -5460,415 +5490,463 @@
             // 
             // displayTextBox44
             // 
-            this.displayTextBox44._Division = ((short)(1));
+            this.displayTextBox44._Division = 100D;
             this.displayTextBox44._DoubleWord = false;
             this.displayTextBox44._EqBase = null;
+            this.displayTextBox44._ITR = false;
             this.displayTextBox44._MaxLimit = 999D;
             this.displayTextBox44._MinLimit = 0D;
-            this.displayTextBox44._Multiplication = ((short)(1));
+            this.displayTextBox44._Multiplication = 1D;
             this.displayTextBox44._PlcDevice = "DC4_Current";
+            this.displayTextBox44._TTR = false;
             this.displayTextBox44.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox44.Location = new System.Drawing.Point(736, 372);
             this.displayTextBox44.Name = "displayTextBox44";
             this.displayTextBox44.ReadOnly = true;
-            this.displayTextBox44.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox44.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox44.TabIndex = 2538;
             this.displayTextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox45
             // 
-            this.displayTextBox45._Division = ((short)(1));
+            this.displayTextBox45._Division = 1D;
             this.displayTextBox45._DoubleWord = false;
             this.displayTextBox45._EqBase = null;
+            this.displayTextBox45._ITR = false;
             this.displayTextBox45._MaxLimit = 999D;
             this.displayTextBox45._MinLimit = 0D;
-            this.displayTextBox45._Multiplication = ((short)(1));
+            this.displayTextBox45._Multiplication = 1D;
             this.displayTextBox45._PlcDevice = "DC4_Voltage";
+            this.displayTextBox45._TTR = false;
             this.displayTextBox45.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox45.Location = new System.Drawing.Point(736, 327);
             this.displayTextBox45.Name = "displayTextBox45";
             this.displayTextBox45.ReadOnly = true;
-            this.displayTextBox45.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox45.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox45.TabIndex = 2537;
             this.displayTextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox46
             // 
-            this.displayTextBox46._Division = ((short)(1));
+            this.displayTextBox46._Division = 100D;
             this.displayTextBox46._DoubleWord = false;
             this.displayTextBox46._EqBase = null;
+            this.displayTextBox46._ITR = false;
             this.displayTextBox46._MaxLimit = 999D;
             this.displayTextBox46._MinLimit = 0D;
-            this.displayTextBox46._Multiplication = ((short)(1));
+            this.displayTextBox46._Multiplication = 1D;
             this.displayTextBox46._PlcDevice = "DC4_Power";
+            this.displayTextBox46._TTR = false;
             this.displayTextBox46.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox46.Location = new System.Drawing.Point(736, 285);
             this.displayTextBox46.Name = "displayTextBox46";
             this.displayTextBox46.ReadOnly = true;
-            this.displayTextBox46.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox46.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox46.TabIndex = 2536;
             this.displayTextBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox47
             // 
-            this.displayTextBox47._Division = ((short)(1));
+            this.displayTextBox47._Division = 100D;
             this.displayTextBox47._DoubleWord = false;
             this.displayTextBox47._EqBase = null;
+            this.displayTextBox47._ITR = false;
             this.displayTextBox47._MaxLimit = 999D;
             this.displayTextBox47._MinLimit = 0D;
-            this.displayTextBox47._Multiplication = ((short)(1));
+            this.displayTextBox47._Multiplication = 1D;
             this.displayTextBox47._PlcDevice = "DC4_STEP";
+            this.displayTextBox47._TTR = false;
             this.displayTextBox47.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox47.Location = new System.Drawing.Point(736, 245);
             this.displayTextBox47.Name = "displayTextBox47";
             this.displayTextBox47.ReadOnly = true;
-            this.displayTextBox47.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox47.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox47.TabIndex = 2535;
             this.displayTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox40
             // 
-            this.displayTextBox40._Division = ((short)(1));
+            this.displayTextBox40._Division = 100D;
             this.displayTextBox40._DoubleWord = false;
             this.displayTextBox40._EqBase = null;
+            this.displayTextBox40._ITR = false;
             this.displayTextBox40._MaxLimit = 999D;
             this.displayTextBox40._MinLimit = 0D;
-            this.displayTextBox40._Multiplication = ((short)(1));
+            this.displayTextBox40._Multiplication = 1D;
             this.displayTextBox40._PlcDevice = "DC3_Current";
+            this.displayTextBox40._TTR = false;
             this.displayTextBox40.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox40.Location = new System.Drawing.Point(620, 372);
             this.displayTextBox40.Name = "displayTextBox40";
             this.displayTextBox40.ReadOnly = true;
-            this.displayTextBox40.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox40.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox40.TabIndex = 2534;
             this.displayTextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox41
             // 
-            this.displayTextBox41._Division = ((short)(1));
+            this.displayTextBox41._Division = 1D;
             this.displayTextBox41._DoubleWord = false;
             this.displayTextBox41._EqBase = null;
+            this.displayTextBox41._ITR = false;
             this.displayTextBox41._MaxLimit = 999D;
             this.displayTextBox41._MinLimit = 0D;
-            this.displayTextBox41._Multiplication = ((short)(1));
+            this.displayTextBox41._Multiplication = 1D;
             this.displayTextBox41._PlcDevice = "DC3_Voltage";
+            this.displayTextBox41._TTR = false;
             this.displayTextBox41.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox41.Location = new System.Drawing.Point(620, 327);
             this.displayTextBox41.Name = "displayTextBox41";
             this.displayTextBox41.ReadOnly = true;
-            this.displayTextBox41.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox41.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox41.TabIndex = 2533;
             this.displayTextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox42
             // 
-            this.displayTextBox42._Division = ((short)(1));
+            this.displayTextBox42._Division = 100D;
             this.displayTextBox42._DoubleWord = false;
             this.displayTextBox42._EqBase = null;
+            this.displayTextBox42._ITR = false;
             this.displayTextBox42._MaxLimit = 999D;
             this.displayTextBox42._MinLimit = 0D;
-            this.displayTextBox42._Multiplication = ((short)(1));
+            this.displayTextBox42._Multiplication = 1D;
             this.displayTextBox42._PlcDevice = "DC3_Power";
+            this.displayTextBox42._TTR = false;
             this.displayTextBox42.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox42.Location = new System.Drawing.Point(620, 285);
             this.displayTextBox42.Name = "displayTextBox42";
             this.displayTextBox42.ReadOnly = true;
-            this.displayTextBox42.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox42.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox42.TabIndex = 2532;
             this.displayTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox43
             // 
-            this.displayTextBox43._Division = ((short)(1));
+            this.displayTextBox43._Division = 100D;
             this.displayTextBox43._DoubleWord = false;
             this.displayTextBox43._EqBase = null;
+            this.displayTextBox43._ITR = false;
             this.displayTextBox43._MaxLimit = 999D;
             this.displayTextBox43._MinLimit = 0D;
-            this.displayTextBox43._Multiplication = ((short)(1));
+            this.displayTextBox43._Multiplication = 1D;
             this.displayTextBox43._PlcDevice = "DC3_STEP";
+            this.displayTextBox43._TTR = false;
             this.displayTextBox43.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox43.Location = new System.Drawing.Point(620, 245);
             this.displayTextBox43.Name = "displayTextBox43";
             this.displayTextBox43.ReadOnly = true;
-            this.displayTextBox43.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox43.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox43.TabIndex = 2531;
             this.displayTextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox36
             // 
-            this.displayTextBox36._Division = ((short)(1));
+            this.displayTextBox36._Division = 100D;
             this.displayTextBox36._DoubleWord = false;
             this.displayTextBox36._EqBase = null;
+            this.displayTextBox36._ITR = false;
             this.displayTextBox36._MaxLimit = 999D;
             this.displayTextBox36._MinLimit = 0D;
-            this.displayTextBox36._Multiplication = ((short)(1));
+            this.displayTextBox36._Multiplication = 1D;
             this.displayTextBox36._PlcDevice = "DC2_Current";
+            this.displayTextBox36._TTR = false;
             this.displayTextBox36.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox36.Location = new System.Drawing.Point(506, 372);
             this.displayTextBox36.Name = "displayTextBox36";
             this.displayTextBox36.ReadOnly = true;
-            this.displayTextBox36.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox36.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox36.TabIndex = 2530;
             this.displayTextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox37
             // 
-            this.displayTextBox37._Division = ((short)(1));
+            this.displayTextBox37._Division = 1D;
             this.displayTextBox37._DoubleWord = false;
             this.displayTextBox37._EqBase = null;
+            this.displayTextBox37._ITR = false;
             this.displayTextBox37._MaxLimit = 999D;
             this.displayTextBox37._MinLimit = 0D;
-            this.displayTextBox37._Multiplication = ((short)(1));
+            this.displayTextBox37._Multiplication = 1D;
             this.displayTextBox37._PlcDevice = "DC2_Voltage";
+            this.displayTextBox37._TTR = false;
             this.displayTextBox37.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox37.Location = new System.Drawing.Point(506, 327);
             this.displayTextBox37.Name = "displayTextBox37";
             this.displayTextBox37.ReadOnly = true;
-            this.displayTextBox37.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox37.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox37.TabIndex = 2529;
             this.displayTextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox38
             // 
-            this.displayTextBox38._Division = ((short)(1));
+            this.displayTextBox38._Division = 100D;
             this.displayTextBox38._DoubleWord = false;
             this.displayTextBox38._EqBase = null;
+            this.displayTextBox38._ITR = false;
             this.displayTextBox38._MaxLimit = 999D;
             this.displayTextBox38._MinLimit = 0D;
-            this.displayTextBox38._Multiplication = ((short)(1));
+            this.displayTextBox38._Multiplication = 1D;
             this.displayTextBox38._PlcDevice = "DC2_Power";
+            this.displayTextBox38._TTR = false;
             this.displayTextBox38.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox38.Location = new System.Drawing.Point(506, 285);
             this.displayTextBox38.Name = "displayTextBox38";
             this.displayTextBox38.ReadOnly = true;
-            this.displayTextBox38.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox38.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox38.TabIndex = 2528;
             this.displayTextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox39
             // 
-            this.displayTextBox39._Division = ((short)(1));
+            this.displayTextBox39._Division = 100D;
             this.displayTextBox39._DoubleWord = false;
             this.displayTextBox39._EqBase = null;
+            this.displayTextBox39._ITR = false;
             this.displayTextBox39._MaxLimit = 999D;
             this.displayTextBox39._MinLimit = 0D;
-            this.displayTextBox39._Multiplication = ((short)(1));
+            this.displayTextBox39._Multiplication = 1D;
             this.displayTextBox39._PlcDevice = "DC2_STEP";
+            this.displayTextBox39._TTR = false;
             this.displayTextBox39.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox39.Location = new System.Drawing.Point(506, 245);
             this.displayTextBox39.Name = "displayTextBox39";
             this.displayTextBox39.ReadOnly = true;
-            this.displayTextBox39.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox39.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox39.TabIndex = 2527;
             this.displayTextBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox32
             // 
-            this.displayTextBox32._Division = ((short)(1));
+            this.displayTextBox32._Division = 100D;
             this.displayTextBox32._DoubleWord = false;
             this.displayTextBox32._EqBase = null;
+            this.displayTextBox32._ITR = false;
             this.displayTextBox32._MaxLimit = 999D;
             this.displayTextBox32._MinLimit = 0D;
-            this.displayTextBox32._Multiplication = ((short)(1));
+            this.displayTextBox32._Multiplication = 1D;
             this.displayTextBox32._PlcDevice = "DC1_Current";
+            this.displayTextBox32._TTR = false;
             this.displayTextBox32.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox32.Location = new System.Drawing.Point(393, 372);
             this.displayTextBox32.Name = "displayTextBox32";
             this.displayTextBox32.ReadOnly = true;
-            this.displayTextBox32.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox32.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox32.TabIndex = 2526;
             this.displayTextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox33
             // 
-            this.displayTextBox33._Division = ((short)(1));
+            this.displayTextBox33._Division = 1D;
             this.displayTextBox33._DoubleWord = false;
             this.displayTextBox33._EqBase = null;
+            this.displayTextBox33._ITR = false;
             this.displayTextBox33._MaxLimit = 999D;
             this.displayTextBox33._MinLimit = 0D;
-            this.displayTextBox33._Multiplication = ((short)(1));
+            this.displayTextBox33._Multiplication = 1D;
             this.displayTextBox33._PlcDevice = "DC1_Voltage";
+            this.displayTextBox33._TTR = false;
             this.displayTextBox33.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox33.Location = new System.Drawing.Point(393, 327);
             this.displayTextBox33.Name = "displayTextBox33";
             this.displayTextBox33.ReadOnly = true;
-            this.displayTextBox33.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox33.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox33.TabIndex = 2525;
             this.displayTextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox34
             // 
-            this.displayTextBox34._Division = ((short)(1));
+            this.displayTextBox34._Division = 100D;
             this.displayTextBox34._DoubleWord = false;
             this.displayTextBox34._EqBase = null;
+            this.displayTextBox34._ITR = false;
             this.displayTextBox34._MaxLimit = 999D;
             this.displayTextBox34._MinLimit = 0D;
-            this.displayTextBox34._Multiplication = ((short)(1));
+            this.displayTextBox34._Multiplication = 1D;
             this.displayTextBox34._PlcDevice = "DC1_Power";
+            this.displayTextBox34._TTR = false;
             this.displayTextBox34.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox34.Location = new System.Drawing.Point(393, 285);
             this.displayTextBox34.Name = "displayTextBox34";
             this.displayTextBox34.ReadOnly = true;
-            this.displayTextBox34.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox34.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox34.TabIndex = 2524;
             this.displayTextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox35
             // 
-            this.displayTextBox35._Division = ((short)(1));
+            this.displayTextBox35._Division = 100D;
             this.displayTextBox35._DoubleWord = false;
             this.displayTextBox35._EqBase = null;
+            this.displayTextBox35._ITR = false;
             this.displayTextBox35._MaxLimit = 999D;
             this.displayTextBox35._MinLimit = 0D;
-            this.displayTextBox35._Multiplication = ((short)(1));
+            this.displayTextBox35._Multiplication = 1D;
             this.displayTextBox35._PlcDevice = "DC1_STEP";
+            this.displayTextBox35._TTR = false;
             this.displayTextBox35.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox35.Location = new System.Drawing.Point(393, 245);
             this.displayTextBox35.Name = "displayTextBox35";
             this.displayTextBox35.ReadOnly = true;
-            this.displayTextBox35.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox35.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox35.TabIndex = 2523;
             this.displayTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox19
             // 
-            this.displayTextBox19._Division = ((short)(1));
+            this.displayTextBox19._Division = 100D;
             this.displayTextBox19._DoubleWord = false;
             this.displayTextBox19._EqBase = null;
+            this.displayTextBox19._ITR = false;
             this.displayTextBox19._MaxLimit = 999D;
             this.displayTextBox19._MinLimit = 0D;
-            this.displayTextBox19._Multiplication = ((short)(1));
+            this.displayTextBox19._Multiplication = 1D;
             this.displayTextBox19._PlcDevice = "MF2_Current";
+            this.displayTextBox19._TTR = false;
             this.displayTextBox19.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox19.Location = new System.Drawing.Point(272, 372);
             this.displayTextBox19.Name = "displayTextBox19";
             this.displayTextBox19.ReadOnly = true;
-            this.displayTextBox19.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox19.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox19.TabIndex = 2514;
             this.displayTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox20
             // 
-            this.displayTextBox20._Division = ((short)(1));
+            this.displayTextBox20._Division = 1D;
             this.displayTextBox20._DoubleWord = false;
             this.displayTextBox20._EqBase = null;
+            this.displayTextBox20._ITR = false;
             this.displayTextBox20._MaxLimit = 999D;
             this.displayTextBox20._MinLimit = 0D;
-            this.displayTextBox20._Multiplication = ((short)(1));
+            this.displayTextBox20._Multiplication = 1D;
             this.displayTextBox20._PlcDevice = "MF2_Voltage";
+            this.displayTextBox20._TTR = false;
             this.displayTextBox20.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox20.Location = new System.Drawing.Point(272, 327);
             this.displayTextBox20.Name = "displayTextBox20";
             this.displayTextBox20.ReadOnly = true;
-            this.displayTextBox20.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox20.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox20.TabIndex = 2513;
             this.displayTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox21
             // 
-            this.displayTextBox21._Division = ((short)(1));
+            this.displayTextBox21._Division = 100D;
             this.displayTextBox21._DoubleWord = false;
             this.displayTextBox21._EqBase = null;
+            this.displayTextBox21._ITR = false;
             this.displayTextBox21._MaxLimit = 999D;
             this.displayTextBox21._MinLimit = 0D;
-            this.displayTextBox21._Multiplication = ((short)(1));
+            this.displayTextBox21._Multiplication = 1D;
             this.displayTextBox21._PlcDevice = "MF2_Power";
+            this.displayTextBox21._TTR = false;
             this.displayTextBox21.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox21.Location = new System.Drawing.Point(272, 285);
             this.displayTextBox21.Name = "displayTextBox21";
             this.displayTextBox21.ReadOnly = true;
-            this.displayTextBox21.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox21.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox21.TabIndex = 2512;
             this.displayTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox22
             // 
-            this.displayTextBox22._Division = ((short)(1));
+            this.displayTextBox22._Division = 100D;
             this.displayTextBox22._DoubleWord = false;
             this.displayTextBox22._EqBase = null;
+            this.displayTextBox22._ITR = false;
             this.displayTextBox22._MaxLimit = 999D;
             this.displayTextBox22._MinLimit = 0D;
-            this.displayTextBox22._Multiplication = ((short)(1));
+            this.displayTextBox22._Multiplication = 1D;
             this.displayTextBox22._PlcDevice = "MF2_STEP";
+            this.displayTextBox22._TTR = false;
             this.displayTextBox22.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox22.Location = new System.Drawing.Point(272, 245);
             this.displayTextBox22.Name = "displayTextBox22";
             this.displayTextBox22.ReadOnly = true;
-            this.displayTextBox22.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox22.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox22.TabIndex = 2511;
             this.displayTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox18
             // 
-            this.displayTextBox18._Division = ((short)(1));
+            this.displayTextBox18._Division = 100D;
             this.displayTextBox18._DoubleWord = false;
             this.displayTextBox18._EqBase = null;
+            this.displayTextBox18._ITR = false;
             this.displayTextBox18._MaxLimit = 999D;
             this.displayTextBox18._MinLimit = 0D;
-            this.displayTextBox18._Multiplication = ((short)(1));
+            this.displayTextBox18._Multiplication = 1D;
             this.displayTextBox18._PlcDevice = "MF1_Current";
+            this.displayTextBox18._TTR = false;
             this.displayTextBox18.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox18.Location = new System.Drawing.Point(154, 372);
             this.displayTextBox18.Name = "displayTextBox18";
             this.displayTextBox18.ReadOnly = true;
-            this.displayTextBox18.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox18.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox18.TabIndex = 2510;
             this.displayTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox17
             // 
-            this.displayTextBox17._Division = ((short)(1));
+            this.displayTextBox17._Division = 1D;
             this.displayTextBox17._DoubleWord = false;
             this.displayTextBox17._EqBase = null;
+            this.displayTextBox17._ITR = false;
             this.displayTextBox17._MaxLimit = 999D;
             this.displayTextBox17._MinLimit = 0D;
-            this.displayTextBox17._Multiplication = ((short)(1));
+            this.displayTextBox17._Multiplication = 1D;
             this.displayTextBox17._PlcDevice = "MF1_Voltage";
+            this.displayTextBox17._TTR = false;
             this.displayTextBox17.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox17.Location = new System.Drawing.Point(154, 327);
             this.displayTextBox17.Name = "displayTextBox17";
             this.displayTextBox17.ReadOnly = true;
-            this.displayTextBox17.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox17.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox17.TabIndex = 2509;
             this.displayTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox16
             // 
-            this.displayTextBox16._Division = ((short)(1));
+            this.displayTextBox16._Division = 100D;
             this.displayTextBox16._DoubleWord = false;
             this.displayTextBox16._EqBase = null;
+            this.displayTextBox16._ITR = false;
             this.displayTextBox16._MaxLimit = 999D;
             this.displayTextBox16._MinLimit = 0D;
-            this.displayTextBox16._Multiplication = ((short)(1));
+            this.displayTextBox16._Multiplication = 1D;
             this.displayTextBox16._PlcDevice = "MF1_Power";
+            this.displayTextBox16._TTR = false;
             this.displayTextBox16.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox16.Location = new System.Drawing.Point(154, 285);
             this.displayTextBox16.Name = "displayTextBox16";
             this.displayTextBox16.ReadOnly = true;
-            this.displayTextBox16.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox16.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox16.TabIndex = 2508;
             this.displayTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox15
             // 
-            this.displayTextBox15._Division = ((short)(1));
+            this.displayTextBox15._Division = 100D;
             this.displayTextBox15._DoubleWord = false;
             this.displayTextBox15._EqBase = null;
+            this.displayTextBox15._ITR = false;
             this.displayTextBox15._MaxLimit = 999D;
             this.displayTextBox15._MinLimit = 0D;
-            this.displayTextBox15._Multiplication = ((short)(1));
+            this.displayTextBox15._Multiplication = 1D;
             this.displayTextBox15._PlcDevice = "MF1_STEP";
+            this.displayTextBox15._TTR = false;
             this.displayTextBox15.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox15.Location = new System.Drawing.Point(154, 245);
             this.displayTextBox15.Name = "displayTextBox15";
             this.displayTextBox15.ReadOnly = true;
-            this.displayTextBox15.Size = new System.Drawing.Size(77, 33);
+            this.displayTextBox15.Size = new System.Drawing.Size(77, 25);
             this.displayTextBox15.TabIndex = 2507;
             this.displayTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox70
             // 
-            this.inputTextBox70._Division = 1;
+            this.inputTextBox70._Division = 10;
             this.inputTextBox70._EqBase = null;
             this.inputTextBox70._FloatNumber = false;
             this.inputTextBox70._MaxLimit = 999D;
@@ -5879,16 +5957,16 @@
             this.inputTextBox70.BackColor = System.Drawing.Color.White;
             this.inputTextBox70.Location = new System.Drawing.Point(737, 203);
             this.inputTextBox70.Name = "inputTextBox70";
-            this.inputTextBox70.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox70.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox70.TabIndex = 2506;
             this.inputTextBox70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox71
             // 
-            this.inputTextBox71._Division = 1;
+            this.inputTextBox71._Division = 100;
             this.inputTextBox71._EqBase = null;
             this.inputTextBox71._FloatNumber = false;
-            this.inputTextBox71._MaxLimit = 999D;
+            this.inputTextBox71._MaxLimit = 31D;
             this.inputTextBox71._MinLimit = 0D;
             this.inputTextBox71._Multiplication = 1;
             this.inputTextBox71._NumberOnly = true;
@@ -5896,16 +5974,16 @@
             this.inputTextBox71.BackColor = System.Drawing.Color.White;
             this.inputTextBox71.Location = new System.Drawing.Point(737, 162);
             this.inputTextBox71.Name = "inputTextBox71";
-            this.inputTextBox71.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox71.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox71.TabIndex = 2505;
             this.inputTextBox71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox72
             // 
-            this.inputTextBox72._Division = 1;
+            this.inputTextBox72._Division = 100;
             this.inputTextBox72._EqBase = null;
             this.inputTextBox72._FloatNumber = false;
-            this.inputTextBox72._MaxLimit = 999D;
+            this.inputTextBox72._MaxLimit = 31D;
             this.inputTextBox72._MinLimit = 0D;
             this.inputTextBox72._Multiplication = 1;
             this.inputTextBox72._NumberOnly = true;
@@ -5913,16 +5991,16 @@
             this.inputTextBox72.BackColor = System.Drawing.Color.White;
             this.inputTextBox72.Location = new System.Drawing.Point(737, 127);
             this.inputTextBox72.Name = "inputTextBox72";
-            this.inputTextBox72.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox72.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox72.TabIndex = 2504;
             this.inputTextBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox73
             // 
-            this.inputTextBox73._Division = 1;
+            this.inputTextBox73._Division = 100;
             this.inputTextBox73._EqBase = null;
             this.inputTextBox73._FloatNumber = false;
-            this.inputTextBox73._MaxLimit = 999D;
+            this.inputTextBox73._MaxLimit = 31D;
             this.inputTextBox73._MinLimit = 0D;
             this.inputTextBox73._Multiplication = 1;
             this.inputTextBox73._NumberOnly = true;
@@ -5930,13 +6008,13 @@
             this.inputTextBox73.BackColor = System.Drawing.Color.White;
             this.inputTextBox73.Location = new System.Drawing.Point(737, 90);
             this.inputTextBox73.Name = "inputTextBox73";
-            this.inputTextBox73.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox73.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox73.TabIndex = 2503;
             this.inputTextBox73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox66
             // 
-            this.inputTextBox66._Division = 1;
+            this.inputTextBox66._Division = 10;
             this.inputTextBox66._EqBase = null;
             this.inputTextBox66._FloatNumber = false;
             this.inputTextBox66._MaxLimit = 999D;
@@ -5947,16 +6025,16 @@
             this.inputTextBox66.BackColor = System.Drawing.Color.White;
             this.inputTextBox66.Location = new System.Drawing.Point(620, 203);
             this.inputTextBox66.Name = "inputTextBox66";
-            this.inputTextBox66.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox66.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox66.TabIndex = 2502;
             this.inputTextBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox67
             // 
-            this.inputTextBox67._Division = 1;
+            this.inputTextBox67._Division = 100;
             this.inputTextBox67._EqBase = null;
             this.inputTextBox67._FloatNumber = false;
-            this.inputTextBox67._MaxLimit = 999D;
+            this.inputTextBox67._MaxLimit = 31D;
             this.inputTextBox67._MinLimit = 0D;
             this.inputTextBox67._Multiplication = 1;
             this.inputTextBox67._NumberOnly = true;
@@ -5964,16 +6042,16 @@
             this.inputTextBox67.BackColor = System.Drawing.Color.White;
             this.inputTextBox67.Location = new System.Drawing.Point(620, 162);
             this.inputTextBox67.Name = "inputTextBox67";
-            this.inputTextBox67.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox67.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox67.TabIndex = 2501;
             this.inputTextBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox68
             // 
-            this.inputTextBox68._Division = 1;
+            this.inputTextBox68._Division = 100;
             this.inputTextBox68._EqBase = null;
             this.inputTextBox68._FloatNumber = false;
-            this.inputTextBox68._MaxLimit = 999D;
+            this.inputTextBox68._MaxLimit = 31D;
             this.inputTextBox68._MinLimit = 0D;
             this.inputTextBox68._Multiplication = 1;
             this.inputTextBox68._NumberOnly = true;
@@ -5981,16 +6059,16 @@
             this.inputTextBox68.BackColor = System.Drawing.Color.White;
             this.inputTextBox68.Location = new System.Drawing.Point(620, 127);
             this.inputTextBox68.Name = "inputTextBox68";
-            this.inputTextBox68.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox68.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox68.TabIndex = 2500;
             this.inputTextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox69
             // 
-            this.inputTextBox69._Division = 1;
+            this.inputTextBox69._Division = 100;
             this.inputTextBox69._EqBase = null;
             this.inputTextBox69._FloatNumber = false;
-            this.inputTextBox69._MaxLimit = 999D;
+            this.inputTextBox69._MaxLimit = 31D;
             this.inputTextBox69._MinLimit = 0D;
             this.inputTextBox69._Multiplication = 1;
             this.inputTextBox69._NumberOnly = true;
@@ -5998,13 +6076,13 @@
             this.inputTextBox69.BackColor = System.Drawing.Color.White;
             this.inputTextBox69.Location = new System.Drawing.Point(620, 90);
             this.inputTextBox69.Name = "inputTextBox69";
-            this.inputTextBox69.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox69.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox69.TabIndex = 2499;
             this.inputTextBox69.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox62
             // 
-            this.inputTextBox62._Division = 1;
+            this.inputTextBox62._Division = 10;
             this.inputTextBox62._EqBase = null;
             this.inputTextBox62._FloatNumber = false;
             this.inputTextBox62._MaxLimit = 999D;
@@ -6015,16 +6093,16 @@
             this.inputTextBox62.BackColor = System.Drawing.Color.White;
             this.inputTextBox62.Location = new System.Drawing.Point(506, 203);
             this.inputTextBox62.Name = "inputTextBox62";
-            this.inputTextBox62.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox62.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox62.TabIndex = 2498;
             this.inputTextBox62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox63
             // 
-            this.inputTextBox63._Division = 1;
+            this.inputTextBox63._Division = 100;
             this.inputTextBox63._EqBase = null;
             this.inputTextBox63._FloatNumber = false;
-            this.inputTextBox63._MaxLimit = 999D;
+            this.inputTextBox63._MaxLimit = 31D;
             this.inputTextBox63._MinLimit = 0D;
             this.inputTextBox63._Multiplication = 1;
             this.inputTextBox63._NumberOnly = true;
@@ -6032,16 +6110,16 @@
             this.inputTextBox63.BackColor = System.Drawing.Color.White;
             this.inputTextBox63.Location = new System.Drawing.Point(506, 162);
             this.inputTextBox63.Name = "inputTextBox63";
-            this.inputTextBox63.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox63.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox63.TabIndex = 2497;
             this.inputTextBox63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox64
             // 
-            this.inputTextBox64._Division = 1;
+            this.inputTextBox64._Division = 100;
             this.inputTextBox64._EqBase = null;
             this.inputTextBox64._FloatNumber = false;
-            this.inputTextBox64._MaxLimit = 999D;
+            this.inputTextBox64._MaxLimit = 31D;
             this.inputTextBox64._MinLimit = 0D;
             this.inputTextBox64._Multiplication = 1;
             this.inputTextBox64._NumberOnly = true;
@@ -6049,16 +6127,16 @@
             this.inputTextBox64.BackColor = System.Drawing.Color.White;
             this.inputTextBox64.Location = new System.Drawing.Point(506, 127);
             this.inputTextBox64.Name = "inputTextBox64";
-            this.inputTextBox64.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox64.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox64.TabIndex = 2496;
             this.inputTextBox64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox65
             // 
-            this.inputTextBox65._Division = 1;
+            this.inputTextBox65._Division = 100;
             this.inputTextBox65._EqBase = null;
             this.inputTextBox65._FloatNumber = false;
-            this.inputTextBox65._MaxLimit = 999D;
+            this.inputTextBox65._MaxLimit = 31D;
             this.inputTextBox65._MinLimit = 0D;
             this.inputTextBox65._Multiplication = 1;
             this.inputTextBox65._NumberOnly = true;
@@ -6066,13 +6144,13 @@
             this.inputTextBox65.BackColor = System.Drawing.Color.White;
             this.inputTextBox65.Location = new System.Drawing.Point(506, 90);
             this.inputTextBox65.Name = "inputTextBox65";
-            this.inputTextBox65.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox65.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox65.TabIndex = 2495;
             this.inputTextBox65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox58
             // 
-            this.inputTextBox58._Division = 1;
+            this.inputTextBox58._Division = 10;
             this.inputTextBox58._EqBase = null;
             this.inputTextBox58._FloatNumber = false;
             this.inputTextBox58._MaxLimit = 999D;
@@ -6083,16 +6161,16 @@
             this.inputTextBox58.BackColor = System.Drawing.Color.White;
             this.inputTextBox58.Location = new System.Drawing.Point(393, 203);
             this.inputTextBox58.Name = "inputTextBox58";
-            this.inputTextBox58.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox58.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox58.TabIndex = 2494;
             this.inputTextBox58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox59
             // 
-            this.inputTextBox59._Division = 1;
+            this.inputTextBox59._Division = 100;
             this.inputTextBox59._EqBase = null;
             this.inputTextBox59._FloatNumber = false;
-            this.inputTextBox59._MaxLimit = 999D;
+            this.inputTextBox59._MaxLimit = 31D;
             this.inputTextBox59._MinLimit = 0D;
             this.inputTextBox59._Multiplication = 1;
             this.inputTextBox59._NumberOnly = true;
@@ -6100,16 +6178,16 @@
             this.inputTextBox59.BackColor = System.Drawing.Color.White;
             this.inputTextBox59.Location = new System.Drawing.Point(393, 162);
             this.inputTextBox59.Name = "inputTextBox59";
-            this.inputTextBox59.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox59.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox59.TabIndex = 2493;
             this.inputTextBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox60
             // 
-            this.inputTextBox60._Division = 1;
+            this.inputTextBox60._Division = 100;
             this.inputTextBox60._EqBase = null;
             this.inputTextBox60._FloatNumber = false;
-            this.inputTextBox60._MaxLimit = 999D;
+            this.inputTextBox60._MaxLimit = 31D;
             this.inputTextBox60._MinLimit = 0D;
             this.inputTextBox60._Multiplication = 1;
             this.inputTextBox60._NumberOnly = true;
@@ -6117,16 +6195,16 @@
             this.inputTextBox60.BackColor = System.Drawing.Color.White;
             this.inputTextBox60.Location = new System.Drawing.Point(393, 127);
             this.inputTextBox60.Name = "inputTextBox60";
-            this.inputTextBox60.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox60.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox60.TabIndex = 2492;
             this.inputTextBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox61
             // 
-            this.inputTextBox61._Division = 1;
+            this.inputTextBox61._Division = 100;
             this.inputTextBox61._EqBase = null;
             this.inputTextBox61._FloatNumber = false;
-            this.inputTextBox61._MaxLimit = 999D;
+            this.inputTextBox61._MaxLimit = 31D;
             this.inputTextBox61._MinLimit = 0D;
             this.inputTextBox61._Multiplication = 1;
             this.inputTextBox61._NumberOnly = true;
@@ -6134,13 +6212,13 @@
             this.inputTextBox61.BackColor = System.Drawing.Color.White;
             this.inputTextBox61.Location = new System.Drawing.Point(393, 90);
             this.inputTextBox61.Name = "inputTextBox61";
-            this.inputTextBox61.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox61.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox61.TabIndex = 2491;
             this.inputTextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox46
             // 
-            this.inputTextBox46._Division = 1;
+            this.inputTextBox46._Division = 10;
             this.inputTextBox46._EqBase = null;
             this.inputTextBox46._FloatNumber = false;
             this.inputTextBox46._MaxLimit = 999D;
@@ -6151,16 +6229,16 @@
             this.inputTextBox46.BackColor = System.Drawing.Color.White;
             this.inputTextBox46.Location = new System.Drawing.Point(273, 203);
             this.inputTextBox46.Name = "inputTextBox46";
-            this.inputTextBox46.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox46.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox46.TabIndex = 2482;
             this.inputTextBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox47
             // 
-            this.inputTextBox47._Division = 1;
+            this.inputTextBox47._Division = 100;
             this.inputTextBox47._EqBase = null;
             this.inputTextBox47._FloatNumber = false;
-            this.inputTextBox47._MaxLimit = 999D;
+            this.inputTextBox47._MaxLimit = 31D;
             this.inputTextBox47._MinLimit = 0D;
             this.inputTextBox47._Multiplication = 1;
             this.inputTextBox47._NumberOnly = true;
@@ -6168,16 +6246,16 @@
             this.inputTextBox47.BackColor = System.Drawing.Color.White;
             this.inputTextBox47.Location = new System.Drawing.Point(273, 162);
             this.inputTextBox47.Name = "inputTextBox47";
-            this.inputTextBox47.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox47.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox47.TabIndex = 2481;
             this.inputTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox48
             // 
-            this.inputTextBox48._Division = 1;
+            this.inputTextBox48._Division = 100;
             this.inputTextBox48._EqBase = null;
             this.inputTextBox48._FloatNumber = false;
-            this.inputTextBox48._MaxLimit = 999D;
+            this.inputTextBox48._MaxLimit = 31D;
             this.inputTextBox48._MinLimit = 0D;
             this.inputTextBox48._Multiplication = 1;
             this.inputTextBox48._NumberOnly = true;
@@ -6185,16 +6263,16 @@
             this.inputTextBox48.BackColor = System.Drawing.Color.White;
             this.inputTextBox48.Location = new System.Drawing.Point(273, 127);
             this.inputTextBox48.Name = "inputTextBox48";
-            this.inputTextBox48.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox48.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox48.TabIndex = 2480;
             this.inputTextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox49
             // 
-            this.inputTextBox49._Division = 1;
+            this.inputTextBox49._Division = 100;
             this.inputTextBox49._EqBase = null;
             this.inputTextBox49._FloatNumber = false;
-            this.inputTextBox49._MaxLimit = 999D;
+            this.inputTextBox49._MaxLimit = 31D;
             this.inputTextBox49._MinLimit = 0D;
             this.inputTextBox49._Multiplication = 1;
             this.inputTextBox49._NumberOnly = true;
@@ -6202,13 +6280,13 @@
             this.inputTextBox49.BackColor = System.Drawing.Color.White;
             this.inputTextBox49.Location = new System.Drawing.Point(273, 90);
             this.inputTextBox49.Name = "inputTextBox49";
-            this.inputTextBox49.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox49.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox49.TabIndex = 2479;
             this.inputTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox45
             // 
-            this.inputTextBox45._Division = 1;
+            this.inputTextBox45._Division = 10;
             this.inputTextBox45._EqBase = null;
             this.inputTextBox45._FloatNumber = false;
             this.inputTextBox45._MaxLimit = 999D;
@@ -6219,16 +6297,16 @@
             this.inputTextBox45.BackColor = System.Drawing.Color.White;
             this.inputTextBox45.Location = new System.Drawing.Point(154, 203);
             this.inputTextBox45.Name = "inputTextBox45";
-            this.inputTextBox45.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox45.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox45.TabIndex = 2478;
             this.inputTextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox44
             // 
-            this.inputTextBox44._Division = 1;
+            this.inputTextBox44._Division = 100;
             this.inputTextBox44._EqBase = null;
             this.inputTextBox44._FloatNumber = false;
-            this.inputTextBox44._MaxLimit = 999D;
+            this.inputTextBox44._MaxLimit = 31D;
             this.inputTextBox44._MinLimit = 0D;
             this.inputTextBox44._Multiplication = 1;
             this.inputTextBox44._NumberOnly = true;
@@ -6236,16 +6314,16 @@
             this.inputTextBox44.BackColor = System.Drawing.Color.White;
             this.inputTextBox44.Location = new System.Drawing.Point(154, 162);
             this.inputTextBox44.Name = "inputTextBox44";
-            this.inputTextBox44.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox44.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox44.TabIndex = 2477;
             this.inputTextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox43
             // 
-            this.inputTextBox43._Division = 1;
+            this.inputTextBox43._Division = 100;
             this.inputTextBox43._EqBase = null;
             this.inputTextBox43._FloatNumber = false;
-            this.inputTextBox43._MaxLimit = 999D;
+            this.inputTextBox43._MaxLimit = 31D;
             this.inputTextBox43._MinLimit = 0D;
             this.inputTextBox43._Multiplication = 1;
             this.inputTextBox43._NumberOnly = true;
@@ -6253,24 +6331,24 @@
             this.inputTextBox43.BackColor = System.Drawing.Color.White;
             this.inputTextBox43.Location = new System.Drawing.Point(154, 127);
             this.inputTextBox43.Name = "inputTextBox43";
-            this.inputTextBox43.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox43.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox43.TabIndex = 2476;
             this.inputTextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox42
             // 
-            this.inputTextBox42._Division = 1;
+            this.inputTextBox42._Division = 100;
             this.inputTextBox42._EqBase = null;
             this.inputTextBox42._FloatNumber = false;
-            this.inputTextBox42._MaxLimit = 999D;
+            this.inputTextBox42._MaxLimit = 31D;
             this.inputTextBox42._MinLimit = 0D;
             this.inputTextBox42._Multiplication = 1;
             this.inputTextBox42._NumberOnly = true;
             this.inputTextBox42._PlcDevice = "MF1_Start_STEP";
-            this.inputTextBox42.BackColor = System.Drawing.Color.White;
+            this.inputTextBox42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.inputTextBox42.Location = new System.Drawing.Point(154, 90);
             this.inputTextBox42.Name = "inputTextBox42";
-            this.inputTextBox42.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox42.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox42.TabIndex = 2475;
             this.inputTextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -6297,7 +6375,7 @@
             // 
             // inputTextBox41
             // 
-            this.inputTextBox41._Division = 1;
+            this.inputTextBox41._Division = 10;
             this.inputTextBox41._EqBase = null;
             this.inputTextBox41._FloatNumber = false;
             this.inputTextBox41._MaxLimit = 999D;
@@ -6308,13 +6386,13 @@
             this.inputTextBox41.BackColor = System.Drawing.Color.White;
             this.inputTextBox41.Location = new System.Drawing.Point(95, 269);
             this.inputTextBox41.Name = "inputTextBox41";
-            this.inputTextBox41.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox41.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox41.TabIndex = 2480;
             this.inputTextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox40
             // 
-            this.inputTextBox40._Division = 1;
+            this.inputTextBox40._Division = 10;
             this.inputTextBox40._EqBase = null;
             this.inputTextBox40._FloatNumber = false;
             this.inputTextBox40._MaxLimit = 999D;
@@ -6325,13 +6403,13 @@
             this.inputTextBox40.BackColor = System.Drawing.Color.White;
             this.inputTextBox40.Location = new System.Drawing.Point(95, 224);
             this.inputTextBox40.Name = "inputTextBox40";
-            this.inputTextBox40.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox40.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox40.TabIndex = 2479;
             this.inputTextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox39
             // 
-            this.inputTextBox39._Division = 1;
+            this.inputTextBox39._Division = 10;
             this.inputTextBox39._EqBase = null;
             this.inputTextBox39._FloatNumber = false;
             this.inputTextBox39._MaxLimit = 999D;
@@ -6342,13 +6420,13 @@
             this.inputTextBox39.BackColor = System.Drawing.Color.White;
             this.inputTextBox39.Location = new System.Drawing.Point(95, 179);
             this.inputTextBox39.Name = "inputTextBox39";
-            this.inputTextBox39.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox39.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox39.TabIndex = 2478;
             this.inputTextBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox38
             // 
-            this.inputTextBox38._Division = 1;
+            this.inputTextBox38._Division = 10;
             this.inputTextBox38._EqBase = null;
             this.inputTextBox38._FloatNumber = false;
             this.inputTextBox38._MaxLimit = 999D;
@@ -6359,13 +6437,13 @@
             this.inputTextBox38.BackColor = System.Drawing.Color.White;
             this.inputTextBox38.Location = new System.Drawing.Point(95, 134);
             this.inputTextBox38.Name = "inputTextBox38";
-            this.inputTextBox38.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox38.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox38.TabIndex = 2477;
             this.inputTextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox37
             // 
-            this.inputTextBox37._Division = 1;
+            this.inputTextBox37._Division = 10;
             this.inputTextBox37._EqBase = null;
             this.inputTextBox37._FloatNumber = false;
             this.inputTextBox37._MaxLimit = 999D;
@@ -6376,13 +6454,13 @@
             this.inputTextBox37.BackColor = System.Drawing.Color.White;
             this.inputTextBox37.Location = new System.Drawing.Point(95, 89);
             this.inputTextBox37.Name = "inputTextBox37";
-            this.inputTextBox37.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox37.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox37.TabIndex = 2476;
             this.inputTextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inputTextBox36
             // 
-            this.inputTextBox36._Division = 1;
+            this.inputTextBox36._Division = 10;
             this.inputTextBox36._EqBase = null;
             this.inputTextBox36._FloatNumber = false;
             this.inputTextBox36._MaxLimit = 999D;
@@ -6393,7 +6471,7 @@
             this.inputTextBox36.BackColor = System.Drawing.Color.White;
             this.inputTextBox36.Location = new System.Drawing.Point(95, 44);
             this.inputTextBox36.Name = "inputTextBox36";
-            this.inputTextBox36.Size = new System.Drawing.Size(76, 33);
+            this.inputTextBox36.Size = new System.Drawing.Size(76, 25);
             this.inputTextBox36.TabIndex = 2475;
             this.inputTextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -6402,7 +6480,7 @@
             this.Label246.AutoSize = true;
             this.Label246.Location = new System.Drawing.Point(25, 272);
             this.Label246.Name = "Label246";
-            this.Label246.Size = new System.Drawing.Size(73, 25);
+            this.Label246.Size = new System.Drawing.Size(49, 17);
             this.Label246.TabIndex = 2085;
             this.Label246.Text = "DC4_2";
             // 
@@ -6411,7 +6489,7 @@
             this.Label245.AutoSize = true;
             this.Label245.Location = new System.Drawing.Point(25, 227);
             this.Label245.Name = "Label245";
-            this.Label245.Size = new System.Drawing.Size(73, 25);
+            this.Label245.Size = new System.Drawing.Size(49, 17);
             this.Label245.TabIndex = 2083;
             this.Label245.Text = "DC4_1";
             // 
@@ -6420,7 +6498,7 @@
             this.Label244.AutoSize = true;
             this.Label244.Location = new System.Drawing.Point(25, 182);
             this.Label244.Name = "Label244";
-            this.Label244.Size = new System.Drawing.Size(73, 25);
+            this.Label244.Size = new System.Drawing.Size(49, 17);
             this.Label244.TabIndex = 2081;
             this.Label244.Text = "DC3_2";
             // 
@@ -6429,7 +6507,7 @@
             this.Label243.AutoSize = true;
             this.Label243.Location = new System.Drawing.Point(25, 137);
             this.Label243.Name = "Label243";
-            this.Label243.Size = new System.Drawing.Size(73, 25);
+            this.Label243.Size = new System.Drawing.Size(49, 17);
             this.Label243.TabIndex = 2079;
             this.Label243.Text = "DC3_1";
             // 
@@ -6438,7 +6516,7 @@
             this.Label242.AutoSize = true;
             this.Label242.Location = new System.Drawing.Point(25, 92);
             this.Label242.Name = "Label242";
-            this.Label242.Size = new System.Drawing.Size(75, 25);
+            this.Label242.Size = new System.Drawing.Size(50, 17);
             this.Label242.TabIndex = 2077;
             this.Label242.Text = "MF2_1";
             // 
@@ -6447,7 +6525,7 @@
             this.Label241.AutoSize = true;
             this.Label241.Location = new System.Drawing.Point(25, 47);
             this.Label241.Name = "Label241";
-            this.Label241.Size = new System.Drawing.Size(75, 25);
+            this.Label241.Size = new System.Drawing.Size(50, 17);
             this.Label241.TabIndex = 2075;
             this.Label241.Text = "MF1_1";
             // 
@@ -6456,7 +6534,7 @@
             this.Label228.AutoSize = true;
             this.Label228.Location = new System.Drawing.Point(30, 206);
             this.Label228.Name = "Label228";
-            this.Label228.Size = new System.Drawing.Size(161, 25);
+            this.Label228.Size = new System.Drawing.Size(106, 17);
             this.Label228.TabIndex = 2471;
             this.Label228.Text = "Pre_Sputter(sec)";
             // 
@@ -6466,7 +6544,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(270, 61);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(122, 25);
+            this.label9.Size = new System.Drawing.Size(80, 17);
             this.label9.TabIndex = 2469;
             this.label9.Text = "MF2 (10kw)";
             // 
@@ -6476,7 +6554,7 @@
             this.Label83.ForeColor = System.Drawing.Color.Black;
             this.Label83.Location = new System.Drawing.Point(151, 61);
             this.Label83.Name = "Label83";
-            this.Label83.Size = new System.Drawing.Size(122, 25);
+            this.Label83.Size = new System.Drawing.Size(80, 17);
             this.Label83.TabIndex = 2467;
             this.Label83.Text = "MF1 (10kw)";
             // 
@@ -6485,7 +6563,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(29, 426);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(110, 25);
+            this.label11.Size = new System.Drawing.Size(71, 17);
             this.label11.TabIndex = 2466;
             this.label11.Text = "啟動 / 關閉";
             // 
@@ -6494,7 +6572,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(30, 330);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(119, 25);
+            this.label12.Size = new System.Drawing.Size(78, 17);
             this.label12.TabIndex = 2465;
             this.label12.Text = "實際電壓 (v)";
             // 
@@ -6503,7 +6581,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(30, 375);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(123, 25);
+            this.label13.Size = new System.Drawing.Size(80, 17);
             this.label13.TabIndex = 2464;
             this.label13.Text = "實際電流 (A)";
             // 
@@ -6512,7 +6590,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(30, 288);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(136, 25);
+            this.label14.Size = new System.Drawing.Size(88, 17);
             this.label14.TabIndex = 2463;
             this.label14.Text = "實際功率 (kw)";
             // 
@@ -6521,7 +6599,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(29, 90);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(136, 25);
+            this.label15.Size = new System.Drawing.Size(88, 17);
             this.label15.TabIndex = 2459;
             this.label15.Text = "開始功率 (kw)";
             // 
@@ -6530,7 +6608,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(29, 127);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(136, 25);
+            this.label16.Size = new System.Drawing.Size(88, 17);
             this.label16.TabIndex = 2460;
             this.label16.Text = "結束功率 (kw)";
             // 
@@ -6539,7 +6617,7 @@
             this.label54.AutoSize = true;
             this.label54.Location = new System.Drawing.Point(30, 248);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(136, 25);
+            this.label54.Size = new System.Drawing.Size(88, 17);
             this.label54.TabIndex = 2462;
             this.label54.Text = "設定功率 (kw)";
             // 
@@ -6548,7 +6626,7 @@
             this.label55.AutoSize = true;
             this.label55.Location = new System.Drawing.Point(30, 170);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(136, 25);
+            this.label55.Size = new System.Drawing.Size(88, 17);
             this.label55.TabIndex = 2461;
             this.label55.Text = "製程功率 (kw)";
             // 
@@ -6558,7 +6636,7 @@
             this.Label8.ForeColor = System.Drawing.Color.Black;
             this.Label8.Location = new System.Drawing.Point(617, 61);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(136, 25);
+            this.Label8.Size = new System.Drawing.Size(90, 17);
             this.Label8.TabIndex = 2449;
             this.Label8.Text = "DC4_1(20kw)";
             // 
@@ -6568,7 +6646,7 @@
             this.Label7.ForeColor = System.Drawing.Color.Black;
             this.Label7.Location = new System.Drawing.Point(734, 61);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(136, 25);
+            this.Label7.Size = new System.Drawing.Size(90, 17);
             this.Label7.TabIndex = 2448;
             this.Label7.Text = "DC4_2(20kw)";
             // 
@@ -6578,7 +6656,7 @@
             this.Label6.ForeColor = System.Drawing.Color.Black;
             this.Label6.Location = new System.Drawing.Point(390, 61);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(136, 25);
+            this.Label6.Size = new System.Drawing.Size(90, 17);
             this.Label6.TabIndex = 2447;
             this.Label6.Text = "DC3_1(20kw)";
             // 
@@ -6588,13 +6666,13 @@
             this.Label5.ForeColor = System.Drawing.Color.Black;
             this.Label5.Location = new System.Drawing.Point(503, 61);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(136, 25);
+            this.Label5.Size = new System.Drawing.Size(90, 17);
             this.Label5.TabIndex = 2446;
             this.Label5.Text = "DC3_2(20kw)";
             // 
             // FrmGasview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1320, 725);
             this.Controls.Add(this.TabControl_Main);

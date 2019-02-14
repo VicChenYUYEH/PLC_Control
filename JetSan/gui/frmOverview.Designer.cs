@@ -635,13 +635,18 @@
             // 
             // displayTextBox31
             // 
-            this.displayTextBox31._Division = ((short)(1));
+            this.displayTextBox31._Division = 10D;
             this.displayTextBox31._DoubleWord = false;
             this.displayTextBox31._EqBase = null;
-            this.displayTextBox31._MaxLimit = 999D;
+            this.displayTextBox31._Float = true;
+            this.displayTextBox31._ITR = false;
+            this.displayTextBox31._Limit = "";
+            this.displayTextBox31._LimitSignal = 0;
+            this.displayTextBox31._MaxLimit = 100D;
             this.displayTextBox31._MinLimit = 0D;
-            this.displayTextBox31._Multiplication = ((short)(1));
+            this.displayTextBox31._Multiplication = 1D;
             this.displayTextBox31._PlcDevice = "Compressed_Air";
+            this.displayTextBox31._TTR = false;
             this.displayTextBox31.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox31.Location = new System.Drawing.Point(327, 51);
             this.displayTextBox31.Name = "displayTextBox31";
@@ -652,13 +657,18 @@
             // 
             // displayTextBox30
             // 
-            this.displayTextBox30._Division = ((short)(1));
+            this.displayTextBox30._Division = 10D;
             this.displayTextBox30._DoubleWord = false;
             this.displayTextBox30._EqBase = null;
-            this.displayTextBox30._MaxLimit = 999D;
+            this.displayTextBox30._Float = true;
+            this.displayTextBox30._ITR = false;
+            this.displayTextBox30._Limit = "";
+            this.displayTextBox30._LimitSignal = 0;
+            this.displayTextBox30._MaxLimit = 100D;
             this.displayTextBox30._MinLimit = 0D;
-            this.displayTextBox30._Multiplication = ((short)(1));
+            this.displayTextBox30._Multiplication = 1D;
             this.displayTextBox30._PlcDevice = "Water_Pressureof_Outlet";
+            this.displayTextBox30._TTR = false;
             this.displayTextBox30.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox30.Location = new System.Drawing.Point(327, 24);
             this.displayTextBox30.Name = "displayTextBox30";
@@ -669,13 +679,18 @@
             // 
             // displayTextBox29
             // 
-            this.displayTextBox29._Division = ((short)(1));
+            this.displayTextBox29._Division = 10D;
             this.displayTextBox29._DoubleWord = false;
             this.displayTextBox29._EqBase = null;
-            this.displayTextBox29._MaxLimit = 999D;
+            this.displayTextBox29._Float = true;
+            this.displayTextBox29._ITR = false;
+            this.displayTextBox29._Limit = "";
+            this.displayTextBox29._LimitSignal = 0;
+            this.displayTextBox29._MaxLimit = 100D;
             this.displayTextBox29._MinLimit = 0D;
-            this.displayTextBox29._Multiplication = ((short)(1));
+            this.displayTextBox29._Multiplication = 1D;
             this.displayTextBox29._PlcDevice = "Water_Teof_Inlet";
+            this.displayTextBox29._TTR = false;
             this.displayTextBox29.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox29.Location = new System.Drawing.Point(127, 25);
             this.displayTextBox29.Name = "displayTextBox29";
@@ -686,13 +701,18 @@
             // 
             // displayTextBox28
             // 
-            this.displayTextBox28._Division = ((short)(1));
+            this.displayTextBox28._Division = 10D;
             this.displayTextBox28._DoubleWord = false;
             this.displayTextBox28._EqBase = null;
-            this.displayTextBox28._MaxLimit = 999D;
+            this.displayTextBox28._Float = true;
+            this.displayTextBox28._ITR = false;
+            this.displayTextBox28._Limit = "";
+            this.displayTextBox28._LimitSignal = 0;
+            this.displayTextBox28._MaxLimit = 100D;
             this.displayTextBox28._MinLimit = 0D;
-            this.displayTextBox28._Multiplication = ((short)(1));
+            this.displayTextBox28._Multiplication = 1D;
             this.displayTextBox28._PlcDevice = "Water_Teof_Outlet";
+            this.displayTextBox28._TTR = false;
             this.displayTextBox28.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox28.Location = new System.Drawing.Point(127, 51);
             this.displayTextBox28.Name = "displayTextBox28";
@@ -703,13 +723,18 @@
             // 
             // displayTextBox27
             // 
-            this.displayTextBox27._Division = ((short)(1));
+            this.displayTextBox27._Division = 1D;
             this.displayTextBox27._DoubleWord = false;
             this.displayTextBox27._EqBase = null;
+            this.displayTextBox27._Float = true;
+            this.displayTextBox27._ITR = false;
+            this.displayTextBox27._Limit = "";
+            this.displayTextBox27._LimitSignal = 0;
             this.displayTextBox27._MaxLimit = 999D;
             this.displayTextBox27._MinLimit = 0D;
-            this.displayTextBox27._Multiplication = ((short)(1));
+            this.displayTextBox27._Multiplication = 1D;
             this.displayTextBox27._PlcDevice = "Water_Pressureof_Inlet";
+            this.displayTextBox27._TTR = false;
             this.displayTextBox27.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox27.Location = new System.Drawing.Point(127, 77);
             this.displayTextBox27.Name = "displayTextBox27";
@@ -3228,69 +3253,89 @@
             // 
             // displayTextBox4
             // 
-            this.displayTextBox4._Division = ((short)(1));
+            this.displayTextBox4._Division = 100000D;
             this.displayTextBox4._DoubleWord = false;
             this.displayTextBox4._EqBase = null;
+            this.displayTextBox4._Float = true;
+            this.displayTextBox4._ITR = false;
+            this.displayTextBox4._Limit = "";
+            this.displayTextBox4._LimitSignal = 0;
             this.displayTextBox4._MaxLimit = 999D;
             this.displayTextBox4._MinLimit = 0D;
-            this.displayTextBox4._Multiplication = ((short)(1));
+            this.displayTextBox4._Multiplication = 1.33D;
             this.displayTextBox4._PlcDevice = "MKS_BTG2_M3_2";
+            this.displayTextBox4._TTR = false;
             this.displayTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox4.Location = new System.Drawing.Point(94, 93);
             this.displayTextBox4.Name = "displayTextBox4";
             this.displayTextBox4.ReadOnly = true;
-            this.displayTextBox4.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox4.Size = new System.Drawing.Size(66, 22);
             this.displayTextBox4.TabIndex = 2352;
             this.displayTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox3
             // 
-            this.displayTextBox3._Division = ((short)(1));
+            this.displayTextBox3._Division = 100000D;
             this.displayTextBox3._DoubleWord = false;
             this.displayTextBox3._EqBase = null;
+            this.displayTextBox3._Float = false;
+            this.displayTextBox3._ITR = false;
+            this.displayTextBox3._Limit = "";
+            this.displayTextBox3._LimitSignal = 0;
             this.displayTextBox3._MaxLimit = 999D;
             this.displayTextBox3._MinLimit = 0D;
-            this.displayTextBox3._Multiplication = ((short)(1));
+            this.displayTextBox3._Multiplication = 1.33D;
             this.displayTextBox3._PlcDevice = "MKS_BTG3_M3_2";
+            this.displayTextBox3._TTR = false;
             this.displayTextBox3.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox3.Location = new System.Drawing.Point(18, 93);
+            this.displayTextBox3.Location = new System.Drawing.Point(9, 92);
             this.displayTextBox3.Name = "displayTextBox3";
             this.displayTextBox3.ReadOnly = true;
-            this.displayTextBox3.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox3.Size = new System.Drawing.Size(64, 22);
             this.displayTextBox3.TabIndex = 1952;
             this.displayTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox2
             // 
-            this.displayTextBox2._Division = ((short)(1));
+            this.displayTextBox2._Division = 100000D;
             this.displayTextBox2._DoubleWord = false;
             this.displayTextBox2._EqBase = null;
+            this.displayTextBox2._Float = true;
+            this.displayTextBox2._ITR = false;
+            this.displayTextBox2._Limit = "";
+            this.displayTextBox2._LimitSignal = 0;
             this.displayTextBox2._MaxLimit = 999D;
             this.displayTextBox2._MinLimit = 0D;
-            this.displayTextBox2._Multiplication = ((short)(1));
+            this.displayTextBox2._Multiplication = 1.33D;
             this.displayTextBox2._PlcDevice = "MKS_BTG1_M3_2";
+            this.displayTextBox2._TTR = false;
             this.displayTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox2.Location = new System.Drawing.Point(94, 43);
             this.displayTextBox2.Name = "displayTextBox2";
             this.displayTextBox2.ReadOnly = true;
-            this.displayTextBox2.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox2.Size = new System.Drawing.Size(66, 22);
             this.displayTextBox2.TabIndex = 1951;
             this.displayTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox1
             // 
-            this.displayTextBox1._Division = ((short)(1));
+            this.displayTextBox1._Division = 100000D;
             this.displayTextBox1._DoubleWord = false;
             this.displayTextBox1._EqBase = null;
+            this.displayTextBox1._Float = true;
+            this.displayTextBox1._ITR = false;
+            this.displayTextBox1._Limit = "";
+            this.displayTextBox1._LimitSignal = 0;
             this.displayTextBox1._MaxLimit = 999D;
             this.displayTextBox1._MinLimit = 0D;
-            this.displayTextBox1._Multiplication = ((short)(1));
+            this.displayTextBox1._Multiplication = 1.33D;
             this.displayTextBox1._PlcDevice = "MKS_BTG4_M3_2";
+            this.displayTextBox1._TTR = false;
             this.displayTextBox1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox1.Location = new System.Drawing.Point(18, 43);
+            this.displayTextBox1.Location = new System.Drawing.Point(9, 43);
             this.displayTextBox1.Name = "displayTextBox1";
             this.displayTextBox1.ReadOnly = true;
-            this.displayTextBox1.Size = new System.Drawing.Size(51, 22);
+            this.displayTextBox1.Size = new System.Drawing.Size(64, 22);
             this.displayTextBox1.TabIndex = 1950;
             this.displayTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -3794,375 +3839,485 @@
             // 
             // displayTextBox26
             // 
-            this.displayTextBox26._Division = ((short)(1));
+            this.displayTextBox26._Division = 1D;
             this.displayTextBox26._DoubleWord = false;
             this.displayTextBox26._EqBase = null;
+            this.displayTextBox26._Float = false;
+            this.displayTextBox26._ITR = false;
+            this.displayTextBox26._Limit = "";
+            this.displayTextBox26._LimitSignal = 0;
             this.displayTextBox26._MaxLimit = 999D;
             this.displayTextBox26._MinLimit = 0D;
-            this.displayTextBox26._Multiplication = ((short)(1));
+            this.displayTextBox26._Multiplication = 1D;
             this.displayTextBox26._PlcDevice = "PLVG7_M3_1";
+            this.displayTextBox26._TTR = true;
             this.displayTextBox26.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox26.Location = new System.Drawing.Point(456, 30);
             this.displayTextBox26.Name = "displayTextBox26";
             this.displayTextBox26.ReadOnly = true;
-            this.displayTextBox26.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox26.Size = new System.Drawing.Size(74, 25);
             this.displayTextBox26.TabIndex = 2373;
             this.displayTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox25
             // 
-            this.displayTextBox25._Division = ((short)(1));
+            this.displayTextBox25._Division = 1D;
             this.displayTextBox25._DoubleWord = false;
             this.displayTextBox25._EqBase = null;
+            this.displayTextBox25._Float = false;
+            this.displayTextBox25._ITR = false;
+            this.displayTextBox25._Limit = "";
+            this.displayTextBox25._LimitSignal = 0;
             this.displayTextBox25._MaxLimit = 999D;
             this.displayTextBox25._MinLimit = 0D;
-            this.displayTextBox25._Multiplication = ((short)(1));
+            this.displayTextBox25._Multiplication = 1D;
             this.displayTextBox25._PlcDevice = "PLVG6_M3_1";
+            this.displayTextBox25._TTR = true;
             this.displayTextBox25.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox25.Location = new System.Drawing.Point(567, 30);
             this.displayTextBox25.Name = "displayTextBox25";
             this.displayTextBox25.ReadOnly = true;
-            this.displayTextBox25.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox25.Size = new System.Drawing.Size(72, 25);
             this.displayTextBox25.TabIndex = 2372;
             this.displayTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox24
             // 
-            this.displayTextBox24._Division = ((short)(1));
+            this.displayTextBox24._Division = 1D;
             this.displayTextBox24._DoubleWord = false;
             this.displayTextBox24._EqBase = null;
+            this.displayTextBox24._Float = false;
+            this.displayTextBox24._ITR = false;
+            this.displayTextBox24._Limit = "HVG4_Change";
+            this.displayTextBox24._LimitSignal = 0;
             this.displayTextBox24._MaxLimit = 999D;
             this.displayTextBox24._MinLimit = 0D;
-            this.displayTextBox24._Multiplication = ((short)(1));
+            this.displayTextBox24._Multiplication = 1D;
             this.displayTextBox24._PlcDevice = "LVG4_M4";
+            this.displayTextBox24._TTR = true;
             this.displayTextBox24.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox24.Location = new System.Drawing.Point(78, 405);
             this.displayTextBox24.Name = "displayTextBox24";
             this.displayTextBox24.ReadOnly = true;
-            this.displayTextBox24.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox24.Size = new System.Drawing.Size(68, 25);
             this.displayTextBox24.TabIndex = 2371;
             this.displayTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox23
             // 
-            this.displayTextBox23._Division = ((short)(1));
+            this.displayTextBox23._Division = 1D;
             this.displayTextBox23._DoubleWord = false;
             this.displayTextBox23._EqBase = null;
+            this.displayTextBox23._Float = false;
+            this.displayTextBox23._ITR = true;
+            this.displayTextBox23._Limit = "HVG4_Change";
+            this.displayTextBox23._LimitSignal = 1;
             this.displayTextBox23._MaxLimit = 999D;
             this.displayTextBox23._MinLimit = 0D;
-            this.displayTextBox23._Multiplication = ((short)(1));
+            this.displayTextBox23._Multiplication = 1D;
             this.displayTextBox23._PlcDevice = "HVG4_M4";
+            this.displayTextBox23._TTR = false;
             this.displayTextBox23.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox23.Location = new System.Drawing.Point(78, 354);
             this.displayTextBox23.Name = "displayTextBox23";
             this.displayTextBox23.ReadOnly = true;
-            this.displayTextBox23.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox23.Size = new System.Drawing.Size(68, 25);
             this.displayTextBox23.TabIndex = 2370;
             this.displayTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox22
             // 
-            this.displayTextBox22._Division = ((short)(1));
+            this.displayTextBox22._Division = 1D;
             this.displayTextBox22._DoubleWord = false;
             this.displayTextBox22._EqBase = null;
+            this.displayTextBox22._Float = false;
+            this.displayTextBox22._ITR = false;
+            this.displayTextBox22._Limit = "HVG4_LVG1_Change";
+            this.displayTextBox22._LimitSignal = 0;
             this.displayTextBox22._MaxLimit = 999D;
             this.displayTextBox22._MinLimit = 0D;
-            this.displayTextBox22._Multiplication = ((short)(1));
+            this.displayTextBox22._Multiplication = 1D;
             this.displayTextBox22._PlcDevice = "LVG3_M3";
+            this.displayTextBox22._TTR = true;
             this.displayTextBox22.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox22.Location = new System.Drawing.Point(514, 399);
+            this.displayTextBox22.Location = new System.Drawing.Point(503, 399);
             this.displayTextBox22.Name = "displayTextBox22";
             this.displayTextBox22.ReadOnly = true;
-            this.displayTextBox22.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox22.Size = new System.Drawing.Size(71, 25);
             this.displayTextBox22.TabIndex = 2369;
             this.displayTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox21
             // 
-            this.displayTextBox21._Division = ((short)(1));
+            this.displayTextBox21._Division = 1D;
             this.displayTextBox21._DoubleWord = false;
             this.displayTextBox21._EqBase = null;
+            this.displayTextBox21._Float = false;
+            this.displayTextBox21._ITR = true;
+            this.displayTextBox21._Limit = "HVG4_LVG1_Change";
+            this.displayTextBox21._LimitSignal = 1;
             this.displayTextBox21._MaxLimit = 999D;
             this.displayTextBox21._MinLimit = 0D;
-            this.displayTextBox21._Multiplication = ((short)(1));
+            this.displayTextBox21._Multiplication = 1D;
             this.displayTextBox21._PlcDevice = "HVG3_M3_1";
+            this.displayTextBox21._TTR = false;
             this.displayTextBox21.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox21.Location = new System.Drawing.Point(514, 355);
+            this.displayTextBox21.Location = new System.Drawing.Point(504, 355);
             this.displayTextBox21.Name = "displayTextBox21";
             this.displayTextBox21.ReadOnly = true;
-            this.displayTextBox21.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox21.Size = new System.Drawing.Size(70, 25);
             this.displayTextBox21.TabIndex = 2368;
             this.displayTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox20
             // 
-            this.displayTextBox20._Division = ((short)(1));
+            this.displayTextBox20._Division = 1D;
             this.displayTextBox20._DoubleWord = false;
             this.displayTextBox20._EqBase = null;
+            this.displayTextBox20._Float = false;
+            this.displayTextBox20._ITR = true;
+            this.displayTextBox20._Limit = "HVG4_LVG1_Change";
+            this.displayTextBox20._LimitSignal = 1;
             this.displayTextBox20._MaxLimit = 999D;
             this.displayTextBox20._MinLimit = 0D;
-            this.displayTextBox20._Multiplication = ((short)(1));
+            this.displayTextBox20._Multiplication = 1D;
             this.displayTextBox20._PlcDevice = "DC4_HVG";
+            this.displayTextBox20._TTR = false;
             this.displayTextBox20.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox20.Location = new System.Drawing.Point(369, 378);
             this.displayTextBox20.Name = "displayTextBox20";
             this.displayTextBox20.ReadOnly = true;
-            this.displayTextBox20.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox20.Size = new System.Drawing.Size(71, 25);
             this.displayTextBox20.TabIndex = 2367;
             this.displayTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox19
             // 
-            this.displayTextBox19._Division = ((short)(1));
+            this.displayTextBox19._Division = 1D;
             this.displayTextBox19._DoubleWord = false;
             this.displayTextBox19._EqBase = null;
+            this.displayTextBox19._Float = false;
+            this.displayTextBox19._ITR = true;
+            this.displayTextBox19._Limit = "HVG4_LVG1_Change";
+            this.displayTextBox19._LimitSignal = 1;
             this.displayTextBox19._MaxLimit = 999D;
             this.displayTextBox19._MinLimit = 0D;
-            this.displayTextBox19._Multiplication = ((short)(1));
+            this.displayTextBox19._Multiplication = 1D;
             this.displayTextBox19._PlcDevice = "DC3_HVG";
+            this.displayTextBox19._TTR = false;
             this.displayTextBox19.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox19.Location = new System.Drawing.Point(442, 477);
             this.displayTextBox19.Name = "displayTextBox19";
             this.displayTextBox19.ReadOnly = true;
-            this.displayTextBox19.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox19.Size = new System.Drawing.Size(70, 25);
             this.displayTextBox19.TabIndex = 2366;
             this.displayTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox18
             // 
-            this.displayTextBox18._Division = ((short)(1));
+            this.displayTextBox18._Division = 1D;
             this.displayTextBox18._DoubleWord = false;
             this.displayTextBox18._EqBase = null;
+            this.displayTextBox18._Float = false;
+            this.displayTextBox18._ITR = true;
+            this.displayTextBox18._Limit = "HVG4_LVG1_Change";
+            this.displayTextBox18._LimitSignal = 1;
             this.displayTextBox18._MaxLimit = 999D;
             this.displayTextBox18._MinLimit = 0D;
-            this.displayTextBox18._Multiplication = ((short)(1));
+            this.displayTextBox18._Multiplication = 1D;
             this.displayTextBox18._PlcDevice = "MF2_HVG";
+            this.displayTextBox18._TTR = false;
             this.displayTextBox18.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox18.Location = new System.Drawing.Point(588, 477);
+            this.displayTextBox18.Location = new System.Drawing.Point(577, 477);
             this.displayTextBox18.Name = "displayTextBox18";
             this.displayTextBox18.ReadOnly = true;
-            this.displayTextBox18.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox18.Size = new System.Drawing.Size(71, 25);
             this.displayTextBox18.TabIndex = 2365;
             this.displayTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox17
             // 
-            this.displayTextBox17._Division = ((short)(1));
+            this.displayTextBox17._Division = 1D;
             this.displayTextBox17._DoubleWord = false;
             this.displayTextBox17._EqBase = null;
+            this.displayTextBox17._Float = false;
+            this.displayTextBox17._ITR = true;
+            this.displayTextBox17._Limit = "HVG4_LVG1_Change";
+            this.displayTextBox17._LimitSignal = 1;
             this.displayTextBox17._MaxLimit = 999D;
             this.displayTextBox17._MinLimit = 0D;
-            this.displayTextBox17._Multiplication = ((short)(1));
+            this.displayTextBox17._Multiplication = 1D;
             this.displayTextBox17._PlcDevice = "MF1_HVG";
+            this.displayTextBox17._TTR = false;
             this.displayTextBox17.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox17.Location = new System.Drawing.Point(644, 374);
+            this.displayTextBox17.Location = new System.Drawing.Point(635, 374);
             this.displayTextBox17.Name = "displayTextBox17";
             this.displayTextBox17.ReadOnly = true;
-            this.displayTextBox17.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox17.Size = new System.Drawing.Size(69, 25);
             this.displayTextBox17.TabIndex = 2364;
             this.displayTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox16
             // 
-            this.displayTextBox16._Division = ((short)(1));
+            this.displayTextBox16._Division = 1D;
             this.displayTextBox16._DoubleWord = false;
             this.displayTextBox16._EqBase = null;
+            this.displayTextBox16._Float = false;
+            this.displayTextBox16._ITR = false;
+            this.displayTextBox16._Limit = "HVG23_LVG1_Change";
+            this.displayTextBox16._LimitSignal = 0;
             this.displayTextBox16._MaxLimit = 999D;
             this.displayTextBox16._MinLimit = 0D;
-            this.displayTextBox16._Multiplication = ((short)(1));
+            this.displayTextBox16._Multiplication = 1D;
             this.displayTextBox16._PlcDevice = "LVG2_M2";
+            this.displayTextBox16._TTR = true;
             this.displayTextBox16.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox16.Location = new System.Drawing.Point(1134, 449);
             this.displayTextBox16.Name = "displayTextBox16";
             this.displayTextBox16.ReadOnly = true;
-            this.displayTextBox16.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox16.Size = new System.Drawing.Size(70, 25);
             this.displayTextBox16.TabIndex = 2363;
             this.displayTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox15
             // 
-            this.displayTextBox15._Division = ((short)(1));
+            this.displayTextBox15._Division = 1D;
             this.displayTextBox15._DoubleWord = false;
             this.displayTextBox15._EqBase = null;
+            this.displayTextBox15._Float = false;
+            this.displayTextBox15._ITR = true;
+            this.displayTextBox15._Limit = "HVG23_LVG1_Change";
+            this.displayTextBox15._LimitSignal = 1;
             this.displayTextBox15._MaxLimit = 999D;
             this.displayTextBox15._MinLimit = 0D;
-            this.displayTextBox15._Multiplication = ((short)(1));
+            this.displayTextBox15._Multiplication = 1D;
             this.displayTextBox15._PlcDevice = "HVG2_M2";
+            this.displayTextBox15._TTR = false;
             this.displayTextBox15.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox15.Location = new System.Drawing.Point(1134, 399);
             this.displayTextBox15.Name = "displayTextBox15";
             this.displayTextBox15.ReadOnly = true;
-            this.displayTextBox15.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox15.Size = new System.Drawing.Size(70, 25);
             this.displayTextBox15.TabIndex = 2362;
             this.displayTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox14
             // 
-            this.displayTextBox14._Division = ((short)(1));
+            this.displayTextBox14._Division = 1D;
             this.displayTextBox14._DoubleWord = false;
             this.displayTextBox14._EqBase = null;
+            this.displayTextBox14._Float = false;
+            this.displayTextBox14._ITR = false;
+            this.displayTextBox14._Limit = "HVG1_LVG1_Change";
+            this.displayTextBox14._LimitSignal = 0;
             this.displayTextBox14._MaxLimit = 999D;
             this.displayTextBox14._MinLimit = 0D;
-            this.displayTextBox14._Multiplication = ((short)(1));
+            this.displayTextBox14._Multiplication = 1D;
             this.displayTextBox14._PlcDevice = "LVG1_M1";
+            this.displayTextBox14._TTR = true;
             this.displayTextBox14.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox14.Location = new System.Drawing.Point(1343, 426);
             this.displayTextBox14.Name = "displayTextBox14";
             this.displayTextBox14.ReadOnly = true;
-            this.displayTextBox14.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox14.Size = new System.Drawing.Size(68, 25);
             this.displayTextBox14.TabIndex = 2361;
             this.displayTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox13
             // 
-            this.displayTextBox13._Division = ((short)(1));
+            this.displayTextBox13._Division = 1D;
             this.displayTextBox13._DoubleWord = false;
             this.displayTextBox13._EqBase = null;
+            this.displayTextBox13._Float = false;
+            this.displayTextBox13._ITR = true;
+            this.displayTextBox13._Limit = "HVG1_LVG1_Change";
+            this.displayTextBox13._LimitSignal = 1;
             this.displayTextBox13._MaxLimit = 999D;
             this.displayTextBox13._MinLimit = 0D;
-            this.displayTextBox13._Multiplication = ((short)(1));
+            this.displayTextBox13._Multiplication = 1D;
             this.displayTextBox13._PlcDevice = "HVG1_M1";
+            this.displayTextBox13._TTR = false;
             this.displayTextBox13.BackColor = System.Drawing.SystemColors.InfoText;
             this.displayTextBox13.Location = new System.Drawing.Point(1343, 371);
             this.displayTextBox13.Name = "displayTextBox13";
             this.displayTextBox13.ReadOnly = true;
-            this.displayTextBox13.Size = new System.Drawing.Size(60, 25);
+            this.displayTextBox13.Size = new System.Drawing.Size(68, 25);
             this.displayTextBox13.TabIndex = 2360;
             this.displayTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox12
             // 
-            this.displayTextBox12._Division = ((short)(1));
+            this.displayTextBox12._Division = 1D;
             this.displayTextBox12._DoubleWord = false;
             this.displayTextBox12._EqBase = null;
+            this.displayTextBox12._Float = false;
+            this.displayTextBox12._ITR = false;
+            this.displayTextBox12._Limit = "";
+            this.displayTextBox12._LimitSignal = 0;
             this.displayTextBox12._MaxLimit = 999D;
             this.displayTextBox12._MinLimit = 0D;
-            this.displayTextBox12._Multiplication = ((short)(1));
+            this.displayTextBox12._Multiplication = 1D;
             this.displayTextBox12._PlcDevice = "PLVG1_M1";
+            this.displayTextBox12._TTR = true;
             this.displayTextBox12.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox12.Location = new System.Drawing.Point(1273, 785);
+            this.displayTextBox12.Location = new System.Drawing.Point(1266, 785);
             this.displayTextBox12.Name = "displayTextBox12";
             this.displayTextBox12.ReadOnly = true;
-            this.displayTextBox12.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox12.Size = new System.Drawing.Size(69, 25);
             this.displayTextBox12.TabIndex = 2359;
             this.displayTextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox11
             // 
-            this.displayTextBox11._Division = ((short)(1));
+            this.displayTextBox11._Division = 1D;
             this.displayTextBox11._DoubleWord = false;
             this.displayTextBox11._EqBase = null;
+            this.displayTextBox11._Float = false;
+            this.displayTextBox11._ITR = false;
+            this.displayTextBox11._Limit = "";
+            this.displayTextBox11._LimitSignal = 0;
             this.displayTextBox11._MaxLimit = 999D;
             this.displayTextBox11._MinLimit = 0D;
-            this.displayTextBox11._Multiplication = ((short)(1));
+            this.displayTextBox11._Multiplication = 1D;
             this.displayTextBox11._PlcDevice = "PLVG2_M2";
+            this.displayTextBox11._TTR = true;
             this.displayTextBox11.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox11.Location = new System.Drawing.Point(1070, 811);
+            this.displayTextBox11.Location = new System.Drawing.Point(1059, 811);
             this.displayTextBox11.Name = "displayTextBox11";
             this.displayTextBox11.ReadOnly = true;
-            this.displayTextBox11.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox11.Size = new System.Drawing.Size(70, 25);
             this.displayTextBox11.TabIndex = 2358;
             this.displayTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox10
             // 
-            this.displayTextBox10._Division = ((short)(1));
+            this.displayTextBox10._Division = 1D;
             this.displayTextBox10._DoubleWord = false;
             this.displayTextBox10._EqBase = null;
+            this.displayTextBox10._Float = false;
+            this.displayTextBox10._ITR = false;
+            this.displayTextBox10._Limit = "";
+            this.displayTextBox10._LimitSignal = 0;
             this.displayTextBox10._MaxLimit = 999D;
             this.displayTextBox10._MinLimit = 0D;
-            this.displayTextBox10._Multiplication = ((short)(1));
+            this.displayTextBox10._Multiplication = 1D;
             this.displayTextBox10._PlcDevice = "PLVG3_M2";
+            this.displayTextBox10._TTR = true;
             this.displayTextBox10.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox10.Location = new System.Drawing.Point(887, 789);
+            this.displayTextBox10.Location = new System.Drawing.Point(879, 789);
             this.displayTextBox10.Name = "displayTextBox10";
             this.displayTextBox10.ReadOnly = true;
-            this.displayTextBox10.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox10.Size = new System.Drawing.Size(69, 25);
             this.displayTextBox10.TabIndex = 2357;
             this.displayTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox9
             // 
-            this.displayTextBox9._Division = ((short)(1));
+            this.displayTextBox9._Division = 1D;
             this.displayTextBox9._DoubleWord = false;
             this.displayTextBox9._EqBase = null;
+            this.displayTextBox9._Float = false;
+            this.displayTextBox9._ITR = false;
+            this.displayTextBox9._Limit = "";
+            this.displayTextBox9._LimitSignal = 0;
             this.displayTextBox9._MaxLimit = 999D;
             this.displayTextBox9._MinLimit = 0D;
-            this.displayTextBox9._Multiplication = ((short)(1));
+            this.displayTextBox9._Multiplication = 1D;
             this.displayTextBox9._PlcDevice = "PLVG4_M3_1";
+            this.displayTextBox9._TTR = true;
             this.displayTextBox9.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox9.Location = new System.Drawing.Point(743, 808);
+            this.displayTextBox9.Location = new System.Drawing.Point(735, 808);
             this.displayTextBox9.Name = "displayTextBox9";
             this.displayTextBox9.ReadOnly = true;
-            this.displayTextBox9.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox9.Size = new System.Drawing.Size(64, 25);
             this.displayTextBox9.TabIndex = 2356;
             this.displayTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox8
             // 
-            this.displayTextBox8._Division = ((short)(1));
+            this.displayTextBox8._Division = 1D;
             this.displayTextBox8._DoubleWord = false;
             this.displayTextBox8._EqBase = null;
+            this.displayTextBox8._Float = false;
+            this.displayTextBox8._ITR = false;
+            this.displayTextBox8._Limit = "";
+            this.displayTextBox8._LimitSignal = 0;
             this.displayTextBox8._MaxLimit = 999D;
             this.displayTextBox8._MinLimit = 0D;
-            this.displayTextBox8._Multiplication = ((short)(1));
+            this.displayTextBox8._Multiplication = 1D;
             this.displayTextBox8._PlcDevice = "PLVG5_M3_1";
+            this.displayTextBox8._TTR = true;
             this.displayTextBox8.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox8.Location = new System.Drawing.Point(593, 803);
+            this.displayTextBox8.Location = new System.Drawing.Point(588, 803);
             this.displayTextBox8.Name = "displayTextBox8";
             this.displayTextBox8.ReadOnly = true;
-            this.displayTextBox8.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox8.Size = new System.Drawing.Size(61, 25);
             this.displayTextBox8.TabIndex = 2355;
             this.displayTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox7
             // 
-            this.displayTextBox7._Division = ((short)(1));
+            this.displayTextBox7._Division = 1D;
             this.displayTextBox7._DoubleWord = false;
             this.displayTextBox7._EqBase = null;
+            this.displayTextBox7._Float = false;
+            this.displayTextBox7._ITR = false;
+            this.displayTextBox7._Limit = "";
+            this.displayTextBox7._LimitSignal = 0;
             this.displayTextBox7._MaxLimit = 999D;
             this.displayTextBox7._MinLimit = 0D;
-            this.displayTextBox7._Multiplication = ((short)(1));
+            this.displayTextBox7._Multiplication = 1D;
             this.displayTextBox7._PlcDevice = "PLVG8_M3_1";
+            this.displayTextBox7._TTR = true;
             this.displayTextBox7.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox7.Location = new System.Drawing.Point(311, 799);
+            this.displayTextBox7.Location = new System.Drawing.Point(304, 802);
             this.displayTextBox7.Name = "displayTextBox7";
             this.displayTextBox7.ReadOnly = true;
-            this.displayTextBox7.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox7.Size = new System.Drawing.Size(64, 25);
             this.displayTextBox7.TabIndex = 2354;
             this.displayTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox6
             // 
-            this.displayTextBox6._Division = ((short)(1));
+            this.displayTextBox6._Division = 1D;
             this.displayTextBox6._DoubleWord = false;
             this.displayTextBox6._EqBase = null;
+            this.displayTextBox6._Float = false;
+            this.displayTextBox6._ITR = false;
+            this.displayTextBox6._Limit = "";
+            this.displayTextBox6._LimitSignal = 0;
             this.displayTextBox6._MaxLimit = 999D;
             this.displayTextBox6._MinLimit = 0D;
-            this.displayTextBox6._Multiplication = ((short)(1));
+            this.displayTextBox6._Multiplication = 1D;
             this.displayTextBox6._PlcDevice = "PLVG9_M3_1";
+            this.displayTextBox6._TTR = true;
             this.displayTextBox6.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox6.Location = new System.Drawing.Point(206, 811);
+            this.displayTextBox6.Location = new System.Drawing.Point(198, 811);
             this.displayTextBox6.Name = "displayTextBox6";
             this.displayTextBox6.ReadOnly = true;
-            this.displayTextBox6.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox6.Size = new System.Drawing.Size(62, 25);
             this.displayTextBox6.TabIndex = 2353;
             this.displayTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // displayTextBox5
             // 
-            this.displayTextBox5._Division = ((short)(1));
+            this.displayTextBox5._Division = 1D;
             this.displayTextBox5._DoubleWord = false;
             this.displayTextBox5._EqBase = null;
+            this.displayTextBox5._Float = false;
+            this.displayTextBox5._ITR = false;
+            this.displayTextBox5._Limit = "";
+            this.displayTextBox5._LimitSignal = 0;
             this.displayTextBox5._MaxLimit = 999D;
             this.displayTextBox5._MinLimit = 0D;
-            this.displayTextBox5._Multiplication = ((short)(1));
+            this.displayTextBox5._Multiplication = 1D;
             this.displayTextBox5._PlcDevice = "PLVG10_M4";
+            this.displayTextBox5._TTR = true;
             this.displayTextBox5.BackColor = System.Drawing.SystemColors.InfoText;
-            this.displayTextBox5.Location = new System.Drawing.Point(23, 754);
+            this.displayTextBox5.Location = new System.Drawing.Point(17, 754);
             this.displayTextBox5.Name = "displayTextBox5";
             this.displayTextBox5.ReadOnly = true;
-            this.displayTextBox5.Size = new System.Drawing.Size(51, 25);
+            this.displayTextBox5.Size = new System.Drawing.Size(62, 25);
             this.displayTextBox5.TabIndex = 2352;
             this.displayTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4687,10 +4842,10 @@
             this.turboPump26._PlcStartDevice = "TP1_Run_YMC_101";
             this.turboPump26._PlcStopDevice = "";
             this.turboPump26._Reverse = false;
+            this.turboPump26.bReadyToStart = true;
             this.turboPump26.Image = ((System.Drawing.Image)(resources.GetObject("turboPump26.Image")));
             this.turboPump26.Location = new System.Drawing.Point(1245, 547);
             this.turboPump26.Name = "turboPump26";
-            this.turboPump26.bReadyToStart = true;
             this.turboPump26.Size = new System.Drawing.Size(36, 39);
             this.turboPump26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump26.TabIndex = 2317;
@@ -4727,10 +4882,10 @@
             this.turboPump25._PlcStartDevice = "TP2_Run_YMC_102";
             this.turboPump25._PlcStopDevice = "";
             this.turboPump25._Reverse = false;
+            this.turboPump25.bReadyToStart = true;
             this.turboPump25.Image = ((System.Drawing.Image)(resources.GetObject("turboPump25.Image")));
             this.turboPump25.Location = new System.Drawing.Point(1244, 612);
             this.turboPump25.Name = "turboPump25";
-            this.turboPump25.bReadyToStart = true;
             this.turboPump25.Size = new System.Drawing.Size(36, 39);
             this.turboPump25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump25.TabIndex = 2315;
@@ -4927,10 +5082,10 @@
             this.turboPump22._PlcStartDevice = "TP5_Run_YMC_203";
             this.turboPump22._PlcStopDevice = "";
             this.turboPump22._Reverse = false;
+            this.turboPump22.bReadyToStart = true;
             this.turboPump22.Image = ((System.Drawing.Image)(resources.GetObject("turboPump22.Image")));
             this.turboPump22.Location = new System.Drawing.Point(1036, 718);
             this.turboPump22.Name = "turboPump22";
-            this.turboPump22.bReadyToStart = true;
             this.turboPump22.Size = new System.Drawing.Size(36, 39);
             this.turboPump22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump22.TabIndex = 2289;
@@ -4967,10 +5122,10 @@
             this.turboPump23._PlcStartDevice = "TP4_Run_YMC_202";
             this.turboPump23._PlcStopDevice = "";
             this.turboPump23._Reverse = false;
+            this.turboPump23.bReadyToStart = true;
             this.turboPump23.Image = ((System.Drawing.Image)(resources.GetObject("turboPump23.Image")));
             this.turboPump23.Location = new System.Drawing.Point(1036, 654);
             this.turboPump23.Name = "turboPump23";
-            this.turboPump23.bReadyToStart = true;
             this.turboPump23.Size = new System.Drawing.Size(36, 39);
             this.turboPump23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump23.TabIndex = 2285;
@@ -5007,10 +5162,10 @@
             this.turboPump24._PlcStartDevice = "TP3_Run_YMC_201";
             this.turboPump24._PlcStopDevice = "";
             this.turboPump24._Reverse = false;
+            this.turboPump24.bReadyToStart = true;
             this.turboPump24.Image = ((System.Drawing.Image)(resources.GetObject("turboPump24.Image")));
             this.turboPump24.Location = new System.Drawing.Point(1036, 595);
             this.turboPump24.Name = "turboPump24";
-            this.turboPump24.bReadyToStart = true;
             this.turboPump24.Size = new System.Drawing.Size(36, 39);
             this.turboPump24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump24.TabIndex = 2281;
@@ -5047,10 +5202,10 @@
             this.turboPump19._PlcStartDevice = "TP8_Run_YMC_213";
             this.turboPump19._PlcStopDevice = "";
             this.turboPump19._Reverse = false;
+            this.turboPump19.bReadyToStart = true;
             this.turboPump19.Image = ((System.Drawing.Image)(resources.GetObject("turboPump19.Image")));
             this.turboPump19.Location = new System.Drawing.Point(861, 667);
             this.turboPump19.Name = "turboPump19";
-            this.turboPump19.bReadyToStart = true;
             this.turboPump19.Size = new System.Drawing.Size(36, 39);
             this.turboPump19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump19.TabIndex = 2279;
@@ -5087,10 +5242,10 @@
             this.turboPump20._PlcStartDevice = "TP7_Run_YMC_212";
             this.turboPump20._PlcStopDevice = "";
             this.turboPump20._Reverse = false;
+            this.turboPump20.bReadyToStart = true;
             this.turboPump20.Image = ((System.Drawing.Image)(resources.GetObject("turboPump20.Image")));
             this.turboPump20.Location = new System.Drawing.Point(861, 603);
             this.turboPump20.Name = "turboPump20";
-            this.turboPump20.bReadyToStart = true;
             this.turboPump20.Size = new System.Drawing.Size(36, 39);
             this.turboPump20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump20.TabIndex = 2275;
@@ -5127,10 +5282,10 @@
             this.turboPump21._PlcStartDevice = "TP6_Run_YMC_211";
             this.turboPump21._PlcStopDevice = "";
             this.turboPump21._Reverse = false;
+            this.turboPump21.bReadyToStart = true;
             this.turboPump21.Image = ((System.Drawing.Image)(resources.GetObject("turboPump21.Image")));
             this.turboPump21.Location = new System.Drawing.Point(861, 544);
             this.turboPump21.Name = "turboPump21";
-            this.turboPump21.bReadyToStart = true;
             this.turboPump21.Size = new System.Drawing.Size(36, 39);
             this.turboPump21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump21.TabIndex = 2271;
@@ -5227,10 +5382,10 @@
             this.turboPump16._PlcStartDevice = "TP11_Run_YMC_303";
             this.turboPump16._PlcStopDevice = "";
             this.turboPump16._Reverse = false;
+            this.turboPump16.bReadyToStart = true;
             this.turboPump16.Image = ((System.Drawing.Image)(resources.GetObject("turboPump16.Image")));
             this.turboPump16.Location = new System.Drawing.Point(713, 718);
             this.turboPump16.Name = "turboPump16";
-            this.turboPump16.bReadyToStart = true;
             this.turboPump16.Size = new System.Drawing.Size(36, 39);
             this.turboPump16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump16.TabIndex = 2261;
@@ -5267,10 +5422,10 @@
             this.turboPump17._PlcStartDevice = "TP10_Run_YMC_302";
             this.turboPump17._PlcStopDevice = "";
             this.turboPump17._Reverse = false;
+            this.turboPump17.bReadyToStart = true;
             this.turboPump17.Image = ((System.Drawing.Image)(resources.GetObject("turboPump17.Image")));
             this.turboPump17.Location = new System.Drawing.Point(713, 654);
             this.turboPump17.Name = "turboPump17";
-            this.turboPump17.bReadyToStart = true;
             this.turboPump17.Size = new System.Drawing.Size(36, 39);
             this.turboPump17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump17.TabIndex = 2257;
@@ -5307,10 +5462,10 @@
             this.turboPump18._PlcStartDevice = "TP9_Run_YMC_301";
             this.turboPump18._PlcStopDevice = "";
             this.turboPump18._Reverse = false;
+            this.turboPump18.bReadyToStart = true;
             this.turboPump18.Image = ((System.Drawing.Image)(resources.GetObject("turboPump18.Image")));
             this.turboPump18.Location = new System.Drawing.Point(713, 595);
             this.turboPump18.Name = "turboPump18";
-            this.turboPump18.bReadyToStart = true;
             this.turboPump18.Size = new System.Drawing.Size(36, 39);
             this.turboPump18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump18.TabIndex = 2253;
@@ -5407,10 +5562,10 @@
             this.turboPump13._PlcStartDevice = "TP14_Run_YMC_313";
             this.turboPump13._PlcStopDevice = "";
             this.turboPump13._Reverse = false;
+            this.turboPump13.bReadyToStart = true;
             this.turboPump13.Image = ((System.Drawing.Image)(resources.GetObject("turboPump13.Image")));
             this.turboPump13.Location = new System.Drawing.Point(589, 718);
             this.turboPump13.Name = "turboPump13";
-            this.turboPump13.bReadyToStart = true;
             this.turboPump13.Size = new System.Drawing.Size(36, 39);
             this.turboPump13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump13.TabIndex = 2243;
@@ -5447,10 +5602,10 @@
             this.turboPump14._PlcStartDevice = "TP13_Run_YMC_312";
             this.turboPump14._PlcStopDevice = "";
             this.turboPump14._Reverse = false;
+            this.turboPump14.bReadyToStart = true;
             this.turboPump14.Image = ((System.Drawing.Image)(resources.GetObject("turboPump14.Image")));
             this.turboPump14.Location = new System.Drawing.Point(589, 654);
             this.turboPump14.Name = "turboPump14";
-            this.turboPump14.bReadyToStart = true;
             this.turboPump14.Size = new System.Drawing.Size(36, 39);
             this.turboPump14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump14.TabIndex = 2239;
@@ -5487,10 +5642,10 @@
             this.turboPump15._PlcStartDevice = "TP12_Run_YMC_311";
             this.turboPump15._PlcStopDevice = "";
             this.turboPump15._Reverse = false;
+            this.turboPump15.bReadyToStart = true;
             this.turboPump15.Image = ((System.Drawing.Image)(resources.GetObject("turboPump15.Image")));
             this.turboPump15.Location = new System.Drawing.Point(589, 595);
             this.turboPump15.Name = "turboPump15";
-            this.turboPump15.bReadyToStart = true;
             this.turboPump15.Size = new System.Drawing.Size(36, 39);
             this.turboPump15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump15.TabIndex = 2235;
@@ -5547,10 +5702,10 @@
             this.turboPump12._PlcStartDevice = "TP21_Run_YMC_343";
             this.turboPump12._PlcStopDevice = "";
             this.turboPump12._Reverse = false;
+            this.turboPump12.bReadyToStart = true;
             this.turboPump12.Image = ((System.Drawing.Image)(resources.GetObject("turboPump12.Image")));
             this.turboPump12.Location = new System.Drawing.Point(302, 705);
             this.turboPump12.Name = "turboPump12";
-            this.turboPump12.bReadyToStart = true;
             this.turboPump12.Size = new System.Drawing.Size(36, 39);
             this.turboPump12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump12.TabIndex = 2226;
@@ -5587,10 +5742,10 @@
             this.turboPump11._PlcStartDevice = "TP20_Run_YMC_342";
             this.turboPump11._PlcStopDevice = "";
             this.turboPump11._Reverse = false;
+            this.turboPump11.bReadyToStart = true;
             this.turboPump11.Image = ((System.Drawing.Image)(resources.GetObject("turboPump11.Image")));
             this.turboPump11.Location = new System.Drawing.Point(302, 642);
             this.turboPump11.Name = "turboPump11";
-            this.turboPump11.bReadyToStart = true;
             this.turboPump11.Size = new System.Drawing.Size(36, 39);
             this.turboPump11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump11.TabIndex = 2222;
@@ -5627,10 +5782,10 @@
             this.turboPump10._PlcStartDevice = "TP19_Run_YMC_341";
             this.turboPump10._PlcStopDevice = "";
             this.turboPump10._Reverse = false;
+            this.turboPump10.bReadyToStart = true;
             this.turboPump10.Image = ((System.Drawing.Image)(resources.GetObject("turboPump10.Image")));
             this.turboPump10.Location = new System.Drawing.Point(302, 578);
             this.turboPump10.Name = "turboPump10";
-            this.turboPump10.bReadyToStart = true;
             this.turboPump10.Size = new System.Drawing.Size(36, 39);
             this.turboPump10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump10.TabIndex = 2218;
@@ -5887,10 +6042,10 @@
             this.turboPump8._PlcStartDevice = "TP26_Run_YMC_411";
             this.turboPump8._PlcStopDevice = "";
             this.turboPump8._Reverse = false;
+            this.turboPump8.bReadyToStart = true;
             this.turboPump8.Image = ((System.Drawing.Image)(resources.GetObject("turboPump8.Image")));
             this.turboPump8.Location = new System.Drawing.Point(13, 655);
             this.turboPump8.Name = "turboPump8";
-            this.turboPump8.bReadyToStart = true;
             this.turboPump8.Size = new System.Drawing.Size(36, 39);
             this.turboPump8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump8.TabIndex = 2188;
@@ -5927,10 +6082,10 @@
             this.turboPump9._PlcStartDevice = "TP25_Run_YMC_401";
             this.turboPump9._PlcStopDevice = "";
             this.turboPump9._Reverse = false;
+            this.turboPump9.bReadyToStart = true;
             this.turboPump9.Image = ((System.Drawing.Image)(resources.GetObject("turboPump9.Image")));
             this.turboPump9.Location = new System.Drawing.Point(13, 596);
             this.turboPump9.Name = "turboPump9";
-            this.turboPump9.bReadyToStart = true;
             this.turboPump9.Size = new System.Drawing.Size(36, 39);
             this.turboPump9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump9.TabIndex = 2184;
@@ -5967,10 +6122,10 @@
             this.turboPump7._PlcStartDevice = "TP24_Run_YMC_353";
             this.turboPump7._PlcStopDevice = "";
             this.turboPump7._Reverse = false;
+            this.turboPump7.bReadyToStart = true;
             this.turboPump7.Image = ((System.Drawing.Image)(resources.GetObject("turboPump7.Image")));
             this.turboPump7.Location = new System.Drawing.Point(186, 684);
             this.turboPump7.Name = "turboPump7";
-            this.turboPump7.bReadyToStart = true;
             this.turboPump7.Size = new System.Drawing.Size(36, 39);
             this.turboPump7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump7.TabIndex = 2180;
@@ -6007,10 +6162,10 @@
             this.turboPump6._PlcStartDevice = "TP23_Run_YMC_352";
             this.turboPump6._PlcStopDevice = "";
             this.turboPump6._Reverse = false;
+            this.turboPump6.bReadyToStart = true;
             this.turboPump6.Image = ((System.Drawing.Image)(resources.GetObject("turboPump6.Image")));
             this.turboPump6.Location = new System.Drawing.Point(186, 620);
             this.turboPump6.Name = "turboPump6";
-            this.turboPump6.bReadyToStart = true;
             this.turboPump6.Size = new System.Drawing.Size(36, 39);
             this.turboPump6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump6.TabIndex = 2176;
@@ -6047,10 +6202,10 @@
             this.turboPump5._PlcStartDevice = "TP22_Run_YMC_351";
             this.turboPump5._PlcStopDevice = "";
             this.turboPump5._Reverse = false;
+            this.turboPump5.bReadyToStart = true;
             this.turboPump5.Image = ((System.Drawing.Image)(resources.GetObject("turboPump5.Image")));
             this.turboPump5.Location = new System.Drawing.Point(186, 561);
             this.turboPump5.Name = "turboPump5";
-            this.turboPump5.bReadyToStart = true;
             this.turboPump5.Size = new System.Drawing.Size(36, 39);
             this.turboPump5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump5.TabIndex = 2172;
@@ -6127,10 +6282,10 @@
             this.turboPump4._PlcStartDevice = "TP15_Run_YMC_321";
             this.turboPump4._PlcStopDevice = "";
             this.turboPump4._Reverse = false;
+            this.turboPump4.bReadyToStart = true;
             this.turboPump4.Image = ((System.Drawing.Image)(resources.GetObject("turboPump4.Image")));
             this.turboPump4.Location = new System.Drawing.Point(725, 162);
             this.turboPump4.Name = "turboPump4";
-            this.turboPump4.bReadyToStart = true;
             this.turboPump4.Size = new System.Drawing.Size(36, 39);
             this.turboPump4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump4.TabIndex = 2154;
@@ -6247,10 +6402,10 @@
             this.turboPump3._PlcStartDevice = "TP16_Run_YMC_322";
             this.turboPump3._PlcStopDevice = "";
             this.turboPump3._Reverse = false;
+            this.turboPump3.bReadyToStart = true;
             this.turboPump3.Image = ((System.Drawing.Image)(resources.GetObject("turboPump3.Image")));
             this.turboPump3.Location = new System.Drawing.Point(563, 139);
             this.turboPump3.Name = "turboPump3";
-            this.turboPump3.bReadyToStart = true;
             this.turboPump3.Size = new System.Drawing.Size(36, 39);
             this.turboPump3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump3.TabIndex = 2140;
@@ -6287,10 +6442,10 @@
             this.turboPump2._PlcStartDevice = "TP18_Run_YMC_332";
             this.turboPump2._PlcStopDevice = "";
             this.turboPump2._Reverse = false;
+            this.turboPump2.bReadyToStart = true;
             this.turboPump2.Image = ((System.Drawing.Image)(resources.GetObject("turboPump2.Image")));
             this.turboPump2.Location = new System.Drawing.Point(504, 139);
             this.turboPump2.Name = "turboPump2";
-            this.turboPump2.bReadyToStart = true;
             this.turboPump2.Size = new System.Drawing.Size(36, 39);
             this.turboPump2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump2.TabIndex = 2134;
@@ -6387,10 +6542,10 @@
             this.turboPump1._PlcStartDevice = "TP17_Run_YMC_331";
             this.turboPump1._PlcStopDevice = "";
             this.turboPump1._Reverse = false;
+            this.turboPump1.bReadyToStart = true;
             this.turboPump1.Image = ((System.Drawing.Image)(resources.GetObject("turboPump1.Image")));
             this.turboPump1.Location = new System.Drawing.Point(332, 159);
             this.turboPump1.Name = "turboPump1";
-            this.turboPump1.bReadyToStart = true;
             this.turboPump1.Size = new System.Drawing.Size(36, 39);
             this.turboPump1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.turboPump1.TabIndex = 2065;
@@ -6476,10 +6631,9 @@
             this.plcObject5.TabIndex = 2055;
             this.plcObject5.TabStop = false;
             // 
-            // frmOverview
+            // FrmOverview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1475, 967);
             this.Controls.Add(this.displayTextBox26);
             this.Controls.Add(this.displayTextBox25);
@@ -6763,7 +6917,7 @@
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmOverview";
+            this.Name = "FrmOverview";
             this.Text = "Overview";
             this.Shown += new System.EventHandler(this.frmOverview_Shown);
             this.GroupBox3.ResumeLayout(false);

@@ -118,6 +118,7 @@ namespace HyTemplate.gui
 
             if (selected.Count > 0)
             {
+                rdKernel.rRecipe.LoadFile(selected[0].Text);
                 initialRecipeBody(selected[0].Text);
             }            
         }

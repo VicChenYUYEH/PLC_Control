@@ -30,10 +30,10 @@ namespace HyTemplate.gui
                 for (int i = 0; i < m_DT.Rows.Count; i++)
                 {
                     object dateTime = m_DT.Rows[i]["Insert_Time"];
-                    List<int> value = new List<int> { };
+                    List<double> value = new List<double> { };
                     for (int j = 0; j < m_DT.Columns.Count - 1; j++)
                     {
-                        int val = Convert.ToInt32(m_DT.Rows[i][j]);
+                        double val = Convert.ToDouble(m_DT.Rows[i][j]);
                         value.Add(val);
                         rawdatas.Add(new PLCRawData() { DetectorId = j, DateTime = dateTime, Value = value[j] });
                     }
@@ -46,7 +46,7 @@ namespace HyTemplate.gui
         {
             public int DetectorId { get; set; }
             public object DateTime { get; set; }
-            public int Value { get; set; }
+            public double Value { get; set; }
         }
 
         #region Method
@@ -78,7 +78,7 @@ namespace HyTemplate.gui
             {
                 MajorGridlineStyle = LineStyle.DashDotDot,
                 MinorGridlineStyle = LineStyle.Dot,
-                IntervalLength = 20
+                IntervalLength = 20,
             };
 
             string t_sDate, t_sTime, t_eDate, t_eTime;
@@ -94,8 +94,8 @@ namespace HyTemplate.gui
             DateTime dtStart = DateTime.Parse(s_datetime);
             DateTime dtEnd = DateTime.Parse(e_datetime);
 
-            DataTable dt;
-            getPLCDataFromDB(comBoxVauleType.Text, dtStart, dtEnd, out dt);
+            getPLCDataFromDB(comBoxVauleType.Text, dtStart, dtEnd, out DataTable dt);
+            if (comBoxVauleType.Text == "PressureData") valueAxis.StringFormat = "0.00E+0";
             if (dt.Rows.Count > 0)
             {
                 chkList.Visible = true;

@@ -89,7 +89,7 @@ namespace HyTemplate.components
                     if (_Multiplication <= 0) _Multiplication = 1;
                     if (_Division <= 0) _Division = 1;
 
-                    result = result * _Multiplication / _Division;
+                    result = result / _Multiplication * _Division;
                     _EqBase.pPlcKernel[_PlcDevice] = (int)result;
 
                     _EqBase.flOperator.WriteLog(_PlcDevice, "InputTextBox_KeyEnter : " + result);
@@ -141,9 +141,9 @@ namespace HyTemplate.components
             else
             { 
                 if (_FloatNumber)
-                    this.Text = ((value / (float)_Multiplication) * (float)_Division).ToString();
+                    this.Text = ((value * (float)_Multiplication) / (float)_Division).ToString("0.0");
                 else
-                    this.Text = Convert.ToInt32((value / (float)_Multiplication) * (float)_Division).ToString();
+                    this.Text = Convert.ToInt32((value * (float)_Multiplication) / (float)_Division).ToString();
             }
         }
 
