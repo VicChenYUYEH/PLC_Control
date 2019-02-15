@@ -62,8 +62,9 @@ namespace HyTemplate.gui
 
         private void dataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
-            if (e.ColumnIndex == 1) 
+            if (e.ColumnIndex == 1)
             {
+                btnSet.Enabled = false;
                 //儲存編輯前的文字，可以用來復原編輯前的狀態
                 //若Value為null，則會設為空字串
                 //textBeforeEdit = (dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value ?? "").ToString();
@@ -120,6 +121,7 @@ namespace HyTemplate.gui
             {
                 rdKernel.rRecipe.LoadFile(selected[0].Text);
                 initialRecipeBody(selected[0].Text);
+                btnSet.Enabled = true;
             }            
         }
 
@@ -147,6 +149,7 @@ namespace HyTemplate.gui
                 {
                     rdKernel.WriteDebugLog("DB_Fail", err);
                 }
+                btnSet.Enabled = true;
             }
         }
 

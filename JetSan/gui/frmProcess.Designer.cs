@@ -4680,7 +4680,7 @@
             this.displayTextBox25._Division = 100D;
             this.displayTextBox25._DoubleWord = false;
             this.displayTextBox25._EqBase = null;
-            this.displayTextBox25._Float = false;
+            this.displayTextBox25._Float = true;
             this.displayTextBox25._ITR = false;
             this.displayTextBox25._Limit = "";
             this.displayTextBox25._LimitSignal = 0;
@@ -4702,7 +4702,7 @@
             this.displayTextBox26._Division = 100D;
             this.displayTextBox26._DoubleWord = false;
             this.displayTextBox26._EqBase = null;
-            this.displayTextBox26._Float = false;
+            this.displayTextBox26._Float = true;
             this.displayTextBox26._ITR = false;
             this.displayTextBox26._Limit = "";
             this.displayTextBox26._LimitSignal = 0;
@@ -4724,7 +4724,7 @@
             this.displayTextBox48._Division = 100D;
             this.displayTextBox48._DoubleWord = false;
             this.displayTextBox48._EqBase = null;
-            this.displayTextBox48._Float = false;
+            this.displayTextBox48._Float = true;
             this.displayTextBox48._ITR = false;
             this.displayTextBox48._Limit = "";
             this.displayTextBox48._LimitSignal = 0;
@@ -4746,7 +4746,7 @@
             this.displayTextBox49._Division = 100D;
             this.displayTextBox49._DoubleWord = false;
             this.displayTextBox49._EqBase = null;
-            this.displayTextBox49._Float = false;
+            this.displayTextBox49._Float = true;
             this.displayTextBox49._ITR = false;
             this.displayTextBox49._Limit = "";
             this.displayTextBox49._LimitSignal = 0;
@@ -4768,7 +4768,7 @@
             this.displayTextBox54._Division = 100D;
             this.displayTextBox54._DoubleWord = false;
             this.displayTextBox54._EqBase = null;
-            this.displayTextBox54._Float = false;
+            this.displayTextBox54._Float = true;
             this.displayTextBox54._ITR = false;
             this.displayTextBox54._Limit = "";
             this.displayTextBox54._LimitSignal = 0;
@@ -4790,7 +4790,7 @@
             this.displayTextBox55._Division = 100D;
             this.displayTextBox55._DoubleWord = false;
             this.displayTextBox55._EqBase = null;
-            this.displayTextBox55._Float = false;
+            this.displayTextBox55._Float = true;
             this.displayTextBox55._ITR = false;
             this.displayTextBox55._Limit = "";
             this.displayTextBox55._LimitSignal = 0;
@@ -7581,7 +7581,7 @@
             this.displayTextBox46._Division = 100D;
             this.displayTextBox46._DoubleWord = false;
             this.displayTextBox46._EqBase = null;
-            this.displayTextBox46._Float = false;
+            this.displayTextBox46._Float = true;
             this.displayTextBox46._ITR = false;
             this.displayTextBox46._Limit = "";
             this.displayTextBox46._LimitSignal = 0;
@@ -7669,7 +7669,7 @@
             this.displayTextBox42._Division = 100D;
             this.displayTextBox42._DoubleWord = false;
             this.displayTextBox42._EqBase = null;
-            this.displayTextBox42._Float = false;
+            this.displayTextBox42._Float = true;
             this.displayTextBox42._ITR = false;
             this.displayTextBox42._Limit = "";
             this.displayTextBox42._LimitSignal = 0;
@@ -7757,7 +7757,7 @@
             this.displayTextBox38._Division = 100D;
             this.displayTextBox38._DoubleWord = false;
             this.displayTextBox38._EqBase = null;
-            this.displayTextBox38._Float = false;
+            this.displayTextBox38._Float = true;
             this.displayTextBox38._ITR = false;
             this.displayTextBox38._Limit = "";
             this.displayTextBox38._LimitSignal = 0;
@@ -7845,7 +7845,7 @@
             this.displayTextBox34._Division = 100D;
             this.displayTextBox34._DoubleWord = false;
             this.displayTextBox34._EqBase = null;
-            this.displayTextBox34._Float = false;
+            this.displayTextBox34._Float = true;
             this.displayTextBox34._ITR = false;
             this.displayTextBox34._Limit = "";
             this.displayTextBox34._LimitSignal = 0;
@@ -7933,7 +7933,7 @@
             this.displayTextBox52._Division = 100D;
             this.displayTextBox52._DoubleWord = false;
             this.displayTextBox52._EqBase = null;
-            this.displayTextBox52._Float = false;
+            this.displayTextBox52._Float = true;
             this.displayTextBox52._ITR = false;
             this.displayTextBox52._Limit = "";
             this.displayTextBox52._LimitSignal = 0;
@@ -8021,7 +8021,7 @@
             this.displayTextBox60._Division = 100D;
             this.displayTextBox60._DoubleWord = false;
             this.displayTextBox60._EqBase = null;
-            this.displayTextBox60._Float = false;
+            this.displayTextBox60._Float = true;
             this.displayTextBox60._ITR = false;
             this.displayTextBox60._Limit = "";
             this.displayTextBox60._LimitSignal = 0;
@@ -8081,7 +8081,7 @@
             // 
             this.inputTextBox71._Division = 100;
             this.inputTextBox71._EqBase = null;
-            this.inputTextBox71._FloatNumber = false;
+            this.inputTextBox71._FloatNumber = true;
             this.inputTextBox71._MaxLimit = 999D;
             this.inputTextBox71._MinLimit = 0D;
             this.inputTextBox71._Multiplication = 1;
@@ -8115,7 +8115,7 @@
             // 
             this.inputTextBox67._Division = 100;
             this.inputTextBox67._EqBase = null;
-            this.inputTextBox67._FloatNumber = false;
+            this.inputTextBox67._FloatNumber = true;
             this.inputTextBox67._MaxLimit = 999D;
             this.inputTextBox67._MinLimit = 0D;
             this.inputTextBox67._Multiplication = 1;
@@ -8149,7 +8149,7 @@
             // 
             this.inputTextBox63._Division = 100;
             this.inputTextBox63._EqBase = null;
-            this.inputTextBox63._FloatNumber = false;
+            this.inputTextBox63._FloatNumber = true;
             this.inputTextBox63._MaxLimit = 999D;
             this.inputTextBox63._MinLimit = 0D;
             this.inputTextBox63._Multiplication = 1;
@@ -8183,7 +8183,7 @@
             // 
             this.inputTextBox59._Division = 100;
             this.inputTextBox59._EqBase = null;
-            this.inputTextBox59._FloatNumber = false;
+            this.inputTextBox59._FloatNumber = true;
             this.inputTextBox59._MaxLimit = 999D;
             this.inputTextBox59._MinLimit = 0D;
             this.inputTextBox59._Multiplication = 1;
@@ -8217,7 +8217,7 @@
             // 
             this.inputTextBox51._Division = 100;
             this.inputTextBox51._EqBase = null;
-            this.inputTextBox51._FloatNumber = false;
+            this.inputTextBox51._FloatNumber = true;
             this.inputTextBox51._MaxLimit = 999D;
             this.inputTextBox51._MinLimit = 0D;
             this.inputTextBox51._Multiplication = 1;
@@ -8251,13 +8251,13 @@
             // 
             this.inputTextBox44._Division = 100;
             this.inputTextBox44._EqBase = null;
-            this.inputTextBox44._FloatNumber = false;
+            this.inputTextBox44._FloatNumber = true;
             this.inputTextBox44._MaxLimit = 999D;
             this.inputTextBox44._MinLimit = 0D;
             this.inputTextBox44._Multiplication = 1;
             this.inputTextBox44._NumberOnly = true;
             this.inputTextBox44._PlcDevice = "MF1_Proc_STEP";
-            this.inputTextBox44.BackColor = System.Drawing.Color.White;
+            this.inputTextBox44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.inputTextBox44.Location = new System.Drawing.Point(525, 288);
             this.inputTextBox44.Name = "inputTextBox44";
             this.inputTextBox44.Size = new System.Drawing.Size(76, 25);

@@ -1,13 +1,17 @@
-D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.exe
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.exe.config
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.exe
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.pdb
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HongYu.dll
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\OxyPlot.dll
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\OxyPlot.WindowsForms.dll
+D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HongYu.pdb
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\OxyPlot.pdb
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\OxyPlot.xml
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\OxyPlot.WindowsForms.pdb
 D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\OxyPlot.WindowsForms.xml
+D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojAssemblyReference.cache
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.components.CurrentDateTime.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.components.ControlBtn.resources
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.components.InputTextBox.resources
@@ -37,7 +41,3 @@ D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.Core
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csproj.CopyComplete
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.exe
 D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\HyTemplate.pdb
-D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HyTemplate.pdb
-D:\傑聖\傑聖(Roll to Roll)\JetSan\obj\Debug\JetSan(Roll to Roll).csprojAssemblyReference.cache
-D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HongYu.dll
-D:\傑聖\傑聖(Roll to Roll)\JetSan\bin\Debug\HongYu.pdb

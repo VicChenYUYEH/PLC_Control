@@ -221,36 +221,6 @@ namespace HyTemplate
             }
         }
 
-        private void btnVacuum_Click(object sender, EventArgs e)
-        {
-            if (   rdKernel.pPlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_1] == 0
-                || rdKernel.pPlcKernel[ConstPlcDefine.PLC_DI_WATER_FLOW_2] == 0)
-            {
-                MessageBox.Show("Please Check Water Flow !!");
-                return;
-            }
-            
-
-            TEvent data = new TEvent();
-            data.MessageName = ProxyMessage.MSG_PROCESS_VACUUM;
-
-            ecClient.SendMessage(data);
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            
-            rdKernel.pPlcKernel["HMI_Alarm_Reset"] = 1;
-            System.Threading.Thread.Sleep(1000);
-
-            TEvent data = new TEvent();
-            data.MessageName = ProxyMessage.MSG_ALARM_RESET;
-
-            ecClient.SendMessage(data);
-            rdKernel.pPlcKernel["HMI_Alarm_Reset"] = 0;
-            rdKernel.flOperator.WriteLog("Alarm_Reset", "Click");
-        }
-
         #region Form Buttom Click Event
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -366,7 +336,53 @@ namespace HyTemplate
         {
             reloadGui(frmOxyPlot);
         }
-        #endregion
         
+        private void Power_RunStart_Click(object sender, EventArgs e)
+        {
+            rdKernel.pPlcKernel["MF1_ON_YMC"] = 1;
+            rdKernel.pPlcKernel["MF2_ON_YMC"] = 1;
+            rdKernel.pPlcKernel["DC1_ON_YMC"] = 1;
+            rdKernel.pPlcKernel["DC2_ON_YMC"] = 1;
+            rdKernel.pPlcKernel["DC3_ON_YMC"] = 1;
+            rdKernel.pPlcKernel["DC4_ON_YMC"] = 1;
+
+            Power_RunStart.Enabled = false;
+            rdKernel.flOperator.WriteLog("RunStart", "Click");
+        }
+
+        private void Power_RunStop_Click(object sender, EventArgs e)
+        {
+
+            rdKernel.pPlcKernel["MF1_ON_YMC"] = 0;
+            rdKernel.pPlcKernel["MF2_ON_YMC"] = 0;
+            rdKernel.pPlcKernel["DC1_ON_YMC"] = 0;
+            rdKernel.pPlcKernel["DC2_ON_YMC"] = 0;
+            rdKernel.pPlcKernel["DC3_ON_YMC"] = 0;
+            rdKernel.pPlcKernel["DC4_ON_YMC"] = 0;
+
+            Power_RunStart.Enabled = true;
+            rdKernel.flOperator.WriteLog("RunStop", "Click");
+        }
+
+        private void btnBuzzer_Click(object sender, EventArgs e)
+        {
+            rdKernel.flOperator.WriteLog("Buzzer", "Click : Original Singal " + rdKernel.pPlcKernel["HMI_Buzzer_off"]);
+            rdKernel.pPlcKernel["HMI_Buzzer_off"] = (rdKernel.pPlcKernel["HMI_Buzzer_off"] == 0) ? 1 : 0;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            rdKernel.pPlcKernel["HMI_Alarm_Reset"] = 1;
+            System.Threading.Thread.Sleep(1000);
+
+            TEvent data = new TEvent();
+            data.MessageName = ProxyMessage.MSG_ALARM_RESET;
+
+            ecClient.SendMessage(data);
+            rdKernel.pPlcKernel["HMI_Alarm_Reset"] = 0;
+            rdKernel.flOperator.WriteLog("Alarm_Reset", "Click");
+        }
+        #endregion
+
     }
 }

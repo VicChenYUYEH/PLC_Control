@@ -1,5 +1,6 @@
 ﻿using HyTemplate.components;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace HyTemplate.gui
@@ -66,6 +67,10 @@ namespace HyTemplate.gui
                     refreshStatus(obj);
                 }
             }
+            ADD_Panel_1.BackColor = (ebKernel.pPlcKernel["CaNC_0102_Open"] == 1 || ebKernel.pPlcKernel["CaNC_0103_Open"] == 1) ? Color.Lime : Color.LightSkyBlue;
+            ADD_Panel_2.BackColor = (ebKernel.pPlcKernel["CaNC_0202_Open"] == 1 || ebKernel.pPlcKernel["CaNC_0203_Open"] == 1) ? Color.Lime : Color.LightSkyBlue;
+            ADD_Panel_3.BackColor = (ebKernel.pPlcKernel["CaNC_0302_Open"] == 1 || ebKernel.pPlcKernel["CaNC_0303_Open"] == 1) ? Color.Lime : Color.LightSkyBlue;
+            ADD_Panel_4.BackColor = (ebKernel.pPlcKernel["CaNC_0402_Open"] == 1 || ebKernel.pPlcKernel["CaNC_0403_Open"] == 1) ? Color.Lime : Color.LightSkyBlue;
         }
 
         private void initialComponents(Control m_Object)

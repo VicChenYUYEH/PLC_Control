@@ -66,6 +66,27 @@ namespace HyTemplate.gui
                     refreshStatus(obj);
                 }
             }
+
+            if (ebKernel.pPlcKernel["HMI_Service_OnOff"] == 1)
+            {
+                controlBtn2.Enabled = false;
+                controlBtn8.Enabled = false;
+                controlBtn3.Enabled = false;
+                controlBtn9.Enabled = false;
+                controlBtn4.Enabled = false;
+                controlBtn10.Enabled = false;
+                controlBtn5.Enabled = false;
+            }
+            else
+            {
+                controlBtn3.Enabled = true;
+                controlBtn9.Enabled = true;
+                controlBtn4.Enabled = true;
+                controlBtn10.Enabled = true;
+                controlBtn5.Enabled = true;
+                controlBtn2.Enabled = (ebKernel.pPlcKernel["HMI_Process_Start"] == 1)? false: true;
+                controlBtn8.Enabled = (ebKernel.pPlcKernel["HMI_Process_Stop"] == 1) ? false : true;
+            }
         }
 
         private void initialComponents(Control m_Object)

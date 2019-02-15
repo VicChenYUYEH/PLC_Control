@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnHistoryLog = new System.Windows.Forms.Button();
             this.btnRecipe = new System.Windows.Forms.Button();
@@ -38,7 +38,7 @@
             this.btnSysPara = new System.Windows.Forms.Button();
             this.btnOverview1 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblaccount = new System.Windows.Forms.Label();
@@ -64,13 +64,14 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
             this.TxtRecipeName = new System.Windows.Forms.TextBox();
-            this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
-            this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
             this.dataGrdAlarm = new System.Windows.Forms.DataGridView();
             this.btnOxyPlot = new System.Windows.Forms.Button();
+            this.statusPictureBox1 = new HyTemplate.components.StatusPictureBox();
+            this.currentDateTime1 = new HyTemplate.components.CurrentDateTime();
+            this.btnBuzzer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrdAlarm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHistoryLog
@@ -149,16 +150,16 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // button8
+            // btnReset
             // 
-            this.button8.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button8.Location = new System.Drawing.Point(1338, 920);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(68, 87);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "Alarm Reset";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btnReset.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnReset.Location = new System.Drawing.Point(1329, 920);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(77, 41);
+            this.btnReset.TabIndex = 12;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.button8_Click);
             // 
             // panel1
             // 
@@ -245,6 +246,7 @@
             this.Power_RunStop.TabIndex = 2705;
             this.Power_RunStop.Text = "Run Stop";
             this.Power_RunStop.UseVisualStyleBackColor = true;
+            this.Power_RunStop.Click += new System.EventHandler(this.Power_RunStop_Click);
             // 
             // Power_RunStart
             // 
@@ -255,6 +257,7 @@
             this.Power_RunStart.TabIndex = 2704;
             this.Power_RunStart.Text = "Run Start";
             this.Power_RunStart.UseVisualStyleBackColor = true;
+            this.Power_RunStart.Click += new System.EventHandler(this.Power_RunStart_Click);
             // 
             // btnProcView
             // 
@@ -428,6 +431,46 @@
             this.TxtRecipeName.Text = "N/A";
             this.TxtRecipeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // dataGrdAlarm
+            // 
+            this.dataGrdAlarm.AllowUserToAddRows = false;
+            this.dataGrdAlarm.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGrdAlarm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrdAlarm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGrdAlarm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrdAlarm.Location = new System.Drawing.Point(12, 920);
+            this.dataGrdAlarm.Name = "dataGrdAlarm";
+            this.dataGrdAlarm.ReadOnly = true;
+            this.dataGrdAlarm.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
+            this.dataGrdAlarm.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.dataGrdAlarm.RowTemplate.Height = 24;
+            this.dataGrdAlarm.RowTemplate.ReadOnly = true;
+            this.dataGrdAlarm.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGrdAlarm.Size = new System.Drawing.Size(1238, 92);
+            this.dataGrdAlarm.TabIndex = 2726;
+            // 
+            // btnOxyPlot
+            // 
+            this.btnOxyPlot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOxyPlot.BackgroundImage")));
+            this.btnOxyPlot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnOxyPlot.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnOxyPlot.Location = new System.Drawing.Point(1256, 920);
+            this.btnOxyPlot.Name = "btnOxyPlot";
+            this.btnOxyPlot.Size = new System.Drawing.Size(67, 87);
+            this.btnOxyPlot.TabIndex = 2727;
+            this.btnOxyPlot.UseVisualStyleBackColor = true;
+            this.btnOxyPlot.Click += new System.EventHandler(this.btnOxyPlot_Click);
+            // 
             // statusPictureBox1
             // 
             this.statusPictureBox1._CurrentStatus = false;
@@ -454,51 +497,23 @@
             this.currentDateTime1.Size = new System.Drawing.Size(173, 73);
             this.currentDateTime1.TabIndex = 0;
             // 
-            // dataGrdAlarm
+            // btnBuzzer
             // 
-            this.dataGrdAlarm.AllowUserToAddRows = false;
-            this.dataGrdAlarm.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGrdAlarm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrdAlarm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGrdAlarm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrdAlarm.Location = new System.Drawing.Point(12, 920);
-            this.dataGrdAlarm.Name = "dataGrdAlarm";
-            this.dataGrdAlarm.ReadOnly = true;
-            this.dataGrdAlarm.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
-            this.dataGrdAlarm.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.dataGrdAlarm.RowTemplate.Height = 24;
-            this.dataGrdAlarm.RowTemplate.ReadOnly = true;
-            this.dataGrdAlarm.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGrdAlarm.Size = new System.Drawing.Size(1238, 92);
-            this.dataGrdAlarm.TabIndex = 2726;
-            // 
-            // btnOxyPlot
-            // 
-            this.btnOxyPlot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOxyPlot.BackgroundImage")));
-            this.btnOxyPlot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnOxyPlot.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnOxyPlot.Location = new System.Drawing.Point(1256, 920);
-            this.btnOxyPlot.Name = "btnOxyPlot";
-            this.btnOxyPlot.Size = new System.Drawing.Size(76, 87);
-            this.btnOxyPlot.TabIndex = 2727;
-            this.btnOxyPlot.UseVisualStyleBackColor = true;
-            this.btnOxyPlot.Click += new System.EventHandler(this.btnOxyPlot_Click);
+            this.btnBuzzer.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBuzzer.Location = new System.Drawing.Point(1329, 967);
+            this.btnBuzzer.Name = "btnBuzzer";
+            this.btnBuzzer.Size = new System.Drawing.Size(77, 40);
+            this.btnBuzzer.TabIndex = 2728;
+            this.btnBuzzer.Text = "Buzzer";
+            this.btnBuzzer.UseVisualStyleBackColor = true;
+            this.btnBuzzer.Click += new System.EventHandler(this.btnBuzzer_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1703, 1019);
+            this.Controls.Add(this.btnBuzzer);
             this.Controls.Add(this.btnOxyPlot);
             this.Controls.Add(this.label90);
             this.Controls.Add(this.dataGrdAlarm);
@@ -526,7 +541,7 @@
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.lblaccount);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnOverview1);
@@ -542,8 +557,8 @@
             this.Text = "Hongyu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrdAlarm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -561,7 +576,7 @@
         private System.Windows.Forms.Button btnOverview1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblaccount;
         private System.Windows.Forms.Label lblID;
@@ -589,6 +604,7 @@
         internal System.Windows.Forms.TextBox TxtRecipeName;
         private System.Windows.Forms.DataGridView dataGrdAlarm;
         private System.Windows.Forms.Button btnOxyPlot;
+        private System.Windows.Forms.Button btnBuzzer;
     }
 }
 
