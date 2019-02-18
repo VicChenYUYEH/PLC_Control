@@ -723,7 +723,7 @@
             // 
             // displayTextBox27
             // 
-            this.displayTextBox27._Division = 1D;
+            this.displayTextBox27._Division = 10D;
             this.displayTextBox27._DoubleWord = false;
             this.displayTextBox27._EqBase = null;
             this.displayTextBox27._Float = true;
