@@ -70,7 +70,7 @@ namespace HyTemplate.components
                 this.Text = (_EqBase.pPlcKernel[_Limit] != _LimitSignal) ? "N/A" : "";
                 this.ForeColor = Color.Lime;
             }
-            if(this.Text == "" || this.Text == "0")
+            if(this.Text != "N/A")
             {
                 if (_ITR)
                 {
